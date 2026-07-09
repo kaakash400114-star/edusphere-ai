@@ -1,0 +1,28 @@
+# EduSphere AI — Workspace Configuration
+# This config overrides defaults when Hermes runs from this workspace directory.
+
+model:
+  default: glm-5-turbo
+  provider: zai
+  base_url: https://api.z.ai/api/coding/paas/v4
+  context_length: 32768
+
+agent:
+  max_turns: 90
+  tool_use_enforcement: true
+
+display:
+  show_reasoning: false
+  show_cost: true
+
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+
+compression:
+  enabled: true
+  threshold: 0.50
+  target_ratio: 0.20
+
+terminal:
+  timeout: 180
