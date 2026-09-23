@@ -58,6 +58,7 @@ class ChatRequest(BaseModel):
     pid: str
     message: str = Field(min_length=1, max_length=2000)
     history: list[dict] = Field(default_factory=list, max_length=20)
+    mode: str | None = None
 
 
 class PinRequest(BaseModel):
@@ -101,6 +102,43 @@ def list_characters():
     return {"characters": characters.roster()}
 
 
+@app.get("/api/wardrobe")
+def list_wardrobe():
+    """Dress-up shop catalog with star costs."""
+    return {"items": characters.accessories_public()}
+
+
+class AccessoryRequest(BaseModel):
+    pid: str
+    item: str = Field(max_length=20)
+
+
+@app.post("/api/profile/{pid}/wear")
+def wear_accessory(pid: str, body: AccessoryRequest):
+    item = body.item
+    if not characters.valid_outfit(item):
+        raise HTTPException(400, "unknown accessory")
+    try:
+        profile = profiles.update_profile(pid, accessory=item)
+    except ValueError as exc:
+        raise HTTPException(400, str(exc))
+    if profile is None:
+        raise HTTPException(404, "profile not found")
+    return {"profile": profile}
+
+
+@app.post("/api/profile/{pid}/buy")
+def buy_accessory(pid: str, body: AccessoryRequest):
+    acc = characters.ACCESSORIES.get(body.item)
+    if not acc:
+        raise HTTPException(400, "unknown accessory")
+    try:
+        profile = profiles.buy_item(pid, body.item, acc["cost"])
+    except ValueError as exc:
+        raise HTTPException(400, str(exc))
+    return {"profile": profile}
+
+
 @app.post("/api/chat")
 def chat(body: ChatRequest):
     profile = profiles.get_profile(body.pid)
@@ -115,7 +153,8 @@ def chat(body: ChatRequest):
         name=profile["name"], grade=profile["grade"],
         buddy=profile.get("character") or "auto",
         question=body.message, history=body.history, subject=subject,
-        weak_areas=list(profile.get("weak_areas", {}).keys()))
+        weak_areas=list(profile.get("weak_areas", {}).keys()),
+        mode=body.mode)
     topic = _topic_from(subject, body.message)
     updated = profiles.record_activity(body.pid, "chat", topic)
     buddy = characters.public(profile.get("character") or "leo")

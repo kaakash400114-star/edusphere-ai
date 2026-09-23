@@ -58,6 +58,37 @@ body{
 .buddy-grid .char-card{padding:8px 4px}
 .buddy-grid .em{font-size:1.5rem}
 .modal-sub{font-size:.85rem;color:var(--muted)}
+.mode-chip{border:1.5px solid #c7d2fe;background:#fff;border-radius:999px;
+  padding:4px 10px;font-size:.72rem;font-weight:700;color:var(--brand);
+  font-family:inherit;cursor:pointer;max-width:120px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.mode-chip.on{background:linear-gradient(90deg,var(--brand),var(--brand2));
+  color:#fff;border-color:transparent}
+.info-hero{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.info-avatar{width:64px;height:64px;border-radius:50%;display:flex;
+  align-items:center;justify-content:center;font-size:2rem;
+  background:#eef2ff;border:3px solid var(--bc,#4f46e5)}
+.info-name{font-size:1.2rem;font-weight:800}
+.info-sub{font-size:.78rem;color:var(--muted)}
+.info-sec{margin:10px 0;font-size:.85rem;line-height:1.45}
+.info-sec h4{font-size:.72rem;color:var(--brand);text-transform:uppercase;
+  letter-spacing:.4px;margin-bottom:3px}
+.info-mode{display:flex;align-items:center;gap:8px;background:#fef3c7;
+  border-radius:12px;padding:8px 12px;font-size:.85rem;font-weight:700;
+  margin:10px 0}
+.info-backstory{font-size:.8rem;color:var(--muted);font-style:italic}
+.wardrobe-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px}
+.wardrobe-item{border:2px solid #e0e7ff;border-radius:14px;background:#fff;
+  padding:12px 6px;text-align:center;cursor:pointer;font-family:inherit}
+.wardrobe-item .em{font-size:1.8rem;display:block}
+.wardrobe-item .cost{font-size:.75rem;color:var(--muted)}
+.wardrobe-item.owned{border-color:#86efac}
+.wardrobe-item.wearing{border-color:var(--brand);background:#eef2ff}
+.wardrobe-item button{margin-top:6px;border:none;border-radius:8px;
+  padding:5px 12px;font-family:inherit;font-weight:700;cursor:pointer}
+.wardrobe-item .buy{background:#fef3c7}
+.wardrobe-item .wear{background:#dcfce7}
+.mascot{cursor:pointer}
 .consent{display:flex;gap:8px;align-items:flex-start;font-size:.78rem;
   color:var(--muted);margin:16px 0;line-height:1.4}
 .consent input{margin-top:3px;width:16px;height:16px}
@@ -76,6 +107,9 @@ body{
   border-bottom:1px solid #e0e7ff;position:sticky;top:0;z-index:5}
 .mascot{font-size:2rem;width:48px;height:48px;display:flex;align-items:center;
   justify-content:center;background:#eef2ff;border-radius:50%}
+.mascot-wrap{position:relative;width:48px;height:48px}
+.accessory{position:absolute;top:-10px;right:-8px;font-size:1.1rem;
+  filter:drop-shadow(0 1px 1px rgba(0,0,0,.25));z-index:2}
 .titles{flex:1;min-width:0}
 .buddy-name{font-weight:800}
 .kid-line{font-size:.75rem;color:var(--muted)}
@@ -168,7 +202,10 @@ body{
 <!-- CHAT SCREEN -->
 <div id="chatapp" class="screen hidden">
   <header class="topbar">
-    <div class="mascot" id="mascot">🧑‍🏫</div>
+    <div class="mascot-wrap">
+      <span id="accessory" class="accessory hidden"></span>
+      <div class="mascot" id="mascot">🧑‍🏫</div>
+    </div>
     <div class="titles">
       <div class="buddy-name" id="buddy-name">Professor Nova</div>
       <div class="kid-line" id="kid-line"></div>
@@ -176,6 +213,7 @@ body{
     <div class="badges">
       <span class="badge" id="star-badge">⭐ 0</span>
       <span class="badge" id="streak-badge">🔥 0</span>
+      <button id="mode-chip" class="mode-chip hidden" title="Special mode"></button>
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
     </div>
@@ -214,6 +252,24 @@ body{
     <h2>Choose your buddy</h2>
     <p class="modal-sub">Pick a friend — you can switch anytime!</p>
     <div id="buddy-grid" class="buddy-grid"></div>
+  </div>
+</div>
+
+<!-- BUDDY INFO MODAL -->
+<div id="info-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="info-x">✕</button>
+    <div id="info-body"></div>
+  </div>
+</div>
+
+<!-- WARDROBE MODAL -->
+<div id="wardrobe-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="wardrobe-x">✕</button>
+    <h2 id="wardrobe-title">Dress-up shop</h2>
+    <p class="modal-sub" id="wardrobe-stars"></p>
+    <div id="wardrobe-grid" class="wardrobe-grid"></div>
   </div>
 </div>
 
@@ -273,6 +329,7 @@ function buildOnboard() {
         [...cr.children].forEach(x => x.classList.remove("sel"));
         card.classList.add("sel");
       };
+      card.oncontextmenu = (e) => { e.preventDefault(); showBuddyInfo(c.id, true); };
       cr.appendChild(card);
     });
   });
@@ -316,6 +373,8 @@ function applyBuddyUI(profile) {
   const b = state.buddies.find(x => x.id === bid);
   $("buddy-name").textContent = b ? b.name : "Leo";
   $("kid-line").textContent = `${profile.name} · Grade ${profile.grade}`;
+  applyAccessoryUI();
+  updateModeChip();
 }
 
 function greet(p) {
@@ -381,7 +440,7 @@ async function send(preset) {
     const r = await fetch("/api/chat", {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pid: state.pid, message: text,
-        history: state.history.slice(-8) }),
+        history: state.history.slice(-8), mode: activeMode }),
     });
     const data = await r.json();
     t.textContent = r.ok ? data.answer : (data.detail || data.error || "Oops, try again!");
@@ -399,6 +458,82 @@ async function send(preset) {
   $("messages").scrollTop = $("messages").scrollHeight;
 }
 
+// ---------- special modes + buddy info ----------
+let activeMode = null;
+
+function currentBuddyObj() {
+  const bid = state.profile && state.profile.character &&
+    EMOJI[state.profile.character] ? state.profile.character : "leo";
+  return state.buddies.find(x => x.id === bid) || null;
+}
+
+function updateModeChip() {
+  const chip = $("mode-chip");
+  const b = currentBuddyObj();
+  if (!b || !b.mode) { chip.classList.add("hidden"); activeMode = null; return; }
+  chip.classList.remove("hidden");
+  chip.textContent = `${b.mode.emoji} ${activeMode ? b.mode.label : b.mode.label + ": off"}`;
+  chip.classList.toggle("on", !!activeMode);
+}
+
+function toggleMode() {
+  const b = currentBuddyObj();
+  if (!b || !b.mode || !b.mode.trigger) return;
+  activeMode = activeMode ? null : b.mode.trigger;
+  updateModeChip();
+  addMsg(activeMode
+    ? `${b.mode.emoji} ${b.mode.label} is ON! Ask me anything.`
+    : `${b.mode.label} is off. Back to normal chat!`, "bot");
+}
+
+function showBuddyInfo(cid, chooseMode) {
+  const b = state.buddies.find(x => x.id === cid);
+  if (!b) return;
+  const sig = b.signature ? b.signature : "";
+  $("info-body").innerHTML = `
+    <div class="info-hero" style="--bc:${b.color || '#4f46e5'}">
+      <div class="info-avatar">${b.emoji}</div>
+      <div>
+        <div class="info-name">${b.name}</div>
+        <div class="info-sub">${b.species} · ${b.ages}</div>
+      </div>
+    </div>
+    <div class="info-sec"><b>${b.tagline}</b></div>
+    ${b.mode ? `<div class="info-mode">${b.mode.emoji} Special mode: ${b.mode.label}</div>` : ""}
+    <div class="info-sec"><h4>What I say</h4>${sig}</div>
+    <div class="info-sec info-backstory">${b.backstory}</div>
+    <button id="info-choose" class="btn-primary">${chooseMode
+      ? "Choose " + b.name + " ▶" : "Switch to " + b.name + " ▶"}</button>`;
+  $("info-modal").classList.remove("hidden");
+  $("info-choose").onclick = () => chooseBuddy(cid);
+}
+
+async function chooseBuddy(cid) {
+  if (!state.pid) {
+    // signup screen: just select this buddy locally
+    state.character = cid;
+    const cards = document.querySelectorAll("#ob-chars .char-card");
+    const idx = state.buddies.findIndex(b => b.id === cid);
+    [...cards].forEach(x => x.classList.remove("sel"));
+    if (cards[idx]) cards[idx].classList.add("sel");
+    $("info-modal").classList.add("hidden");
+    return;
+  }
+  const r = await fetch("/api/profile/" + state.pid + "/update", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ character: cid }),
+  });
+  if (!r.ok) return;
+  state.profile.character = cid;
+  activeMode = null;
+  applyBuddyUI(state.profile);
+  updateModeChip();
+  $("info-modal").classList.add("hidden");
+  $("buddy-modal").classList.add("hidden");
+  const b = state.buddies.find(x => x.id === cid);
+  addMsg(b && b.greeting ? b.greeting : `Hi, I'm ${cid}!`, "bot");
+}
+
 // ---------- buddy switcher ----------
 async function openBuddyModal() {
   const buddies = await loadBuddies();
@@ -412,18 +547,7 @@ async function openBuddyModal() {
     card.className = "char-card" + (c.id === cur ? " sel" : "");
     card.innerHTML = `<span class="em">${c.emoji}</span>` +
       `<span class="nm">${c.name}</span><span class="tg">${c.special || c.tagline}</span>`;
-    card.onclick = async () => {
-      if (c.id === cur) { $("buddy-modal").classList.add("hidden"); return; }
-      const r = await fetch("/api/profile/" + state.pid + "/update", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ character: c.id }),
-      });
-      if (!r.ok) return;
-      state.profile.character = c.id;
-      applyBuddyUI(state.profile);
-      $("buddy-modal").classList.add("hidden");
-      addMsg(c.greeting || `Hi, I'm ${c.name}!`, "bot");
-    };
+    card.onclick = () => showBuddyInfo(c.id, false);
     grid.appendChild(card);
   });
   $("buddy-modal").classList.remove("hidden");
@@ -455,6 +579,67 @@ async function openReport() {
   $("parent-report").classList.remove("hidden");
 }
 
+// ---------- wardrobe (dress-up shop) ----------
+async function openWardrobe() {
+  const r = await fetch("/api/wardrobe");
+  const d = await r.json();
+  const items = d.items || [];
+  const grid = $("wardrobe-grid");
+  grid.innerHTML = "";
+  const owned = state.profile.wardrobe || [];
+  const wearing = state.profile.accessory || "";
+  $("wardrobe-stars").textContent = `Your stars: ⭐ ${state.profile.stars || 0}`;
+  items.forEach(it => {
+    const card = document.createElement("div");
+    card.className = "wardrobe-item" + (owned.includes(it.id) ? " owned" : "")
+      + (wearing === it.id ? " wearing" : "");
+    card.innerHTML = `<span class="em">${it.emoji}</span>${it.id}` +
+      `<div class="cost">${owned.includes(it.id) ? "owned" : "⭐ " + it.cost}</div>`;
+    const btn = document.createElement("button");
+    if (owned.includes(it.id)) {
+      btn.className = "wear";
+      btn.textContent = wearing === it.id ? "Take off" : "Wear";
+      btn.onclick = async () => {
+        const r2 = await fetch("/api/profile/" + state.pid + "/wear", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ pid: state.pid, item: wearing === it.id ? "" : it.id }),
+        });
+        if (!r2.ok) return;
+        const d2 = await r2.json();
+        state.profile = d2.profile;
+        applyBuddyUI(state.profile);
+        openWardrobe();
+      };
+    } else {
+      btn.className = "buy";
+      btn.textContent = "Buy ⭐ " + it.cost;
+      btn.onclick = async () => {
+        const r2 = await fetch("/api/profile/" + state.pid + "/buy", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ pid: state.pid, item: it.id }),
+        });
+        const d2 = await r2.json();
+        if (!r2.ok) return alert(d2.detail || "Cannot buy");
+        state.profile = d2.profile;
+        $("star-badge").textContent = "⭐ " + state.profile.stars;
+        applyBuddyUI(state.profile);
+        openWardrobe();
+      };
+    }
+    card.appendChild(btn);
+    grid.appendChild(card);
+  });
+  $("wardrobe-modal").classList.remove("hidden");
+}
+
+function applyAccessoryUI() {
+  const acc = $("accessory");
+  const map = { hat: "🎩", cape: "🦸", glasses: "🕶️", crown: "👑" };
+  const item = state.profile && state.profile.accessory;
+  if (item && map[item]) { acc.textContent = map[item]; acc.classList.remove("hidden"); }
+  else acc.classList.add("hidden");
+}
+
 // ---------- wire up ----------
 function wire() {
   $("ob-start").onclick = startLearning;
@@ -462,8 +647,12 @@ function wire() {
   $("chat-input").addEventListener("keydown", e => {
     if (e.key === "Enter") send();
   });
+  $("mascot").onclick = () => { if (state.pid) openWardrobe(); };
+  $("wardrobe-x").onclick = () => $("wardrobe-modal").classList.add("hidden");
   $("buddy-btn").onclick = openBuddyModal;
   $("buddy-x").onclick = () => $("buddy-modal").classList.add("hidden");
+  $("info-x").onclick = () => $("info-modal").classList.add("hidden");
+  $("mode-chip").onclick = toggleMode;
   $("parent-btn").onclick = () => {
     $("parent-modal").classList.remove("hidden");
     $("parent-pin-row").classList.remove("hidden");

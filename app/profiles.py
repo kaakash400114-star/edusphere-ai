@@ -78,7 +78,29 @@ def update_profile(pid: str, **changes) -> dict | None:
     for key in ("grade", "character"):
         if key in changes and changes[key] is not None:
             raw[key] = changes[key]
+    if "accessory" in changes and changes["accessory"] is not None:
+        item = changes["accessory"]
+        if item and item not in raw.get("wardrobe", []):
+            raise ValueError("accessory not owned")
+        raw["accessory"] = item
     raw["updated_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+    p.write_text(json.dumps(raw, indent=2), encoding="utf-8")
+    return _public(raw)
+
+
+def buy_item(pid: str, item: str, cost: int) -> dict:
+    """Buy a wardrobe item with stars. Raises ValueError on bad buys."""
+    p = _path(pid)
+    if not p.exists():
+        raise ValueError("profile not found")
+    raw = json.loads(p.read_text(encoding="utf-8"))
+    wardrobe = raw.setdefault("wardrobe", [])
+    if item in wardrobe:
+        raise ValueError("already owned")
+    if raw.get("stars", 0) < cost:
+        raise ValueError("not enough stars")
+    raw["stars"] -= cost
+    wardrobe.append(item)
     p.write_text(json.dumps(raw, indent=2), encoding="utf-8")
     return _public(raw)
 

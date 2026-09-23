@@ -54,11 +54,14 @@ def _extract_content(data: dict) -> str:
 
 def ask(name: str, grade: int, buddy: str, question: str,
         history: list[dict] | None = None, subject: str = "general",
-        weak_areas: list[str] | None = None) -> str:
-    """One tutor turn: buddy persona + curriculum excerpt + history -> answer."""
+        weak_areas: list[str] | None = None, mode: str | None = None) -> str:
+    """One tutor turn: buddy persona + special mode + curriculum excerpt -> answer."""
     buddy = characters.character_for(grade, buddy)["id"]
     excerpt = knowledge.extract_relevant(subject, grade, question)
     system = _system_prompt(name, grade, buddy, weak_areas or [])
+    mode_def = characters.MODES.get(buddy)
+    if mode and mode_def and mode_def["trigger"] == mode:
+        system += "\n" + mode_def["instructions"] + "\n"
     if excerpt:
         system += ("\n\nCURRICULUM EXCERPT (authoritative for this grade):\n"
                    + excerpt)
