@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>EduSphere AI — Learn & Play</title>
+<style>
+:root{
+  --bg:#eef2ff; --card:#ffffff; --ink:#1e1b4b; --muted:#6b7280;
+  --brand:#4f46e5; --brand2:#7c3aed; --accent:#f59e0b;
+  --good:#16a34a; --bad:#dc2626; --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:"Comic Sans MS","Segoe UI",system-ui,sans-serif;
+  background:linear-gradient(160deg,#eef2ff 0%,#fdf4ff 60%,#ecfeff 100%);
+  color:var(--ink); display:flex; flex-direction:column;
+}
+.hidden{display:none!important}
+.screen{flex:1;display:flex;flex-direction:column;min-height:100dvh}
+
+/* onboarding */
+.onboard-card{
+  margin:auto;width:min(480px,94vw);background:var(--card);
+  border-radius:24px;padding:28px 26px;box-shadow:0 12px 40px rgba(79,70,229,.18);
+}
+.logo{font-size:1.7rem;font-weight:800;text-align:center;
+  background:linear-gradient(90deg,var(--brand),var(--brand2));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{text-align:center;color:var(--muted);margin:8px 0 18px;font-size:.95rem}
+.fld{display:block;font-weight:700;font-size:.9rem;margin:14px 0 6px}
+.fld input{width:100%;padding:12px 14px;border:2px solid #e0e7ff;
+  border-radius:12px;font-size:1rem;font-family:inherit}
+.fld input:focus{outline:none;border-color:var(--brand)}
+.grade-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:4px}
+.grade-grid button{padding:9px 0;border:2px solid #e0e7ff;border-radius:10px;
+  background:#fff;font-family:inherit;font-weight:700;cursor:pointer}
+.grade-grid button.sel{background:var(--brand);color:#fff;border-color:var(--brand)}
+.char-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:4px;
+  max-height:300px;overflow-y:auto;padding:2px}
+.char-card{border:2px solid #e0e7ff;border-radius:14px;background:#fff;
+  cursor:pointer;padding:10px 6px;text-align:center;font-family:inherit}
+.char-card .em{font-size:1.9rem;display:block}
+.char-card .nm{font-weight:800;font-size:.85rem}
+.char-card .tg{font-size:.68rem;color:var(--muted);display:block;
+  line-height:1.25;margin-top:2px}
+.char-card:hover{border-color:#a5b4fc}
+.char-card.sel{border-color:var(--brand);background:#eef2ff}
+.buddy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px;
+  max-height:52dvh;overflow-y:auto}
+.buddy-grid .char-card{padding:8px 4px}
+.buddy-grid .em{font-size:1.5rem}
+.modal-sub{font-size:.85rem;color:var(--muted)}
+.consent{display:flex;gap:8px;align-items:flex-start;font-size:.78rem;
+  color:var(--muted);margin:16px 0;line-height:1.4}
+.consent input{margin-top:3px;width:16px;height:16px}
+.btn-primary{
+  width:100%;padding:14px;border:none;border-radius:14px;cursor:pointer;
+  font-family:inherit;font-size:1.05rem;font-weight:800;color:#fff;
+  background:linear-gradient(90deg,var(--brand),var(--brand2));
+}
+.btn-primary:disabled{opacity:.6}
+.btn-ghost{background:none;border:none;cursor:pointer;font-size:1.1rem}
+.err{color:var(--bad);font-size:.85rem;margin-top:10px;min-height:1em;text-align:center}
+
+/* chat */
+.topbar{display:flex;align-items:center;gap:10px;padding:10px 14px;
+  background:rgba(255,255,255,.85);backdrop-filter:blur(8px);
+  border-bottom:1px solid #e0e7ff;position:sticky;top:0;z-index:5}
+.mascot{font-size:2rem;width:48px;height:48px;display:flex;align-items:center;
+  justify-content:center;background:#eef2ff;border-radius:50%}
+.titles{flex:1;min-width:0}
+.buddy-name{font-weight:800}
+.kid-line{font-size:.75rem;color:var(--muted)}
+.badges{display:flex;gap:6px;align-items:center}
+.badge{background:#fef3c7;border-radius:999px;padding:4px 10px;font-size:.8rem;font-weight:700}
+.messages{flex:1;overflow-y:auto;padding:16px 12px 8px;display:flex;
+  flex-direction:column;gap:10px;max-width:820px;width:100%;margin:0 auto}
+.msg{max-width:85%;padding:11px 14px;border-radius:var(--radius);
+  font-size:.98rem;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}
+.msg.bot{background:#fff;border:1px solid #e0e7ff;border-bottom-left-radius:6px;align-self:flex-start}
+.msg.me{background:linear-gradient(90deg,var(--brand),var(--brand2));
+  color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.msg.bot b{color:var(--brand)}
+.typing{display:flex;gap:4px;padding:14px}
+.typing span{width:8px;height:8px;border-radius:50%;background:#a5b4fc;
+  animation:blink 1s infinite}
+.typing span:nth-child(2){animation-delay:.2s}
+.typing span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.star-fly{position:fixed;font-size:1.6rem;z-index:50;pointer-events:none;
+  animation:fly 1.2s ease-out forwards}
+@keyframes fly{from{opacity:1;transform:translateY(0) scale(.8)}
+  to{opacity:0;transform:translateY(-90px) scale(1.6)}}
+.composer{padding:8px 12px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.9);border-top:1px solid #e0e7ff}
+.suggest{display:flex;gap:6px;overflow-x:auto;padding:4px 0 8px;max-width:820px;margin:0 auto}
+.suggest button{white-space:nowrap;border:1.5px solid #c7d2fe;background:#fff;
+  color:var(--brand);border-radius:999px;padding:6px 12px;font-size:.8rem;
+  font-family:inherit;cursor:pointer;font-weight:600}
+.input-row{display:flex;gap:8px;max-width:820px;margin:0 auto;width:100%}
+.input-row input{flex:1;padding:13px 16px;border:2px solid #e0e7ff;
+  border-radius:999px;font-size:1rem;font-family:inherit}
+.input-row input:focus{outline:none;border-color:var(--brand)}
+.input-row .btn-primary{width:auto;padding:12px 20px;border-radius:999px}
+
+/* parent modal */
+.modal{position:fixed;inset:0;background:rgba(30,27,75,.45);z-index:20;
+  display:flex;align-items:center;justify-content:center;padding:16px}
+.modal-card{position:relative;background:#fff;border-radius:20px;padding:24px;
+  width:min(460px,94vw);max-height:84dvh;overflow-y:auto}
+.modal-x{position:absolute;top:10px;right:12px;background:none;border:none;
+  font-size:1.1rem;cursor:pointer}
+.modal-card h2{margin-bottom:10px}
+.modal-card input{width:100%;padding:12px;border:2px solid #e0e7ff;
+  border-radius:12px;font-size:1rem;margin:8px 0;max-width:200px}
+.report-sec{margin:12px 0}
+.report-sec h3{font-size:.9rem;color:var(--brand);margin-bottom:6px}
+.pill{display:inline-block;background:#eef2ff;border-radius:999px;
+  padding:4px 10px;margin:2px;font-size:.8rem}
+.pill.weak{background:#fee2e2;color:var(--bad)}
+.pill.strong{background:#dcfce7;color:var(--good)}
+@media (min-width:700px){ .msg{font-size:1.02rem} }
+</style>
+</head>
+<body>
+
+<!-- ONBOARDING SCREEN -->
+<div id="onboard" class="screen">
+  <div class="onboard-card">
+    <div class="logo">🎓 EduSphere AI</div>
+    <p class="tag">Learn with your buddy. Parents set a PIN first.</p>
+
+    <label class="fld">What's your first name?
+      <input id="ob-name" maxlength="20" placeholder="e.g. Aarav" autocomplete="off">
+    </label>
+
+    <label class="fld">Pick your grade
+      <div id="ob-grades" class="grade-grid"></div>
+    </label>
+
+    <label class="fld">Choose your study buddy
+      <div id="ob-chars" class="char-grid"></div>
+    </label>
+
+    <label class="fld">Parent: set a 4–8 digit PIN
+      <input id="ob-pin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN">
+    </label>
+
+    <label class="consent">
+      <input id="ob-consent" type="checkbox">
+      I am the parent/guardian and I consent to my child using EduSphere AI
+      (first name + grade only, no ads, no chats with strangers).
+    </label>
+
+    <button id="ob-start" class="btn-primary">Start Learning ▶</button>
+    <p id="ob-error" class="err"></p>
+  </div>
+</div>
+
+<!-- CHAT SCREEN -->
+<div id="chatapp" class="screen hidden">
+  <header class="topbar">
+    <div class="mascot" id="mascot">🧑‍🏫</div>
+    <div class="titles">
+      <div class="buddy-name" id="buddy-name">Professor Nova</div>
+      <div class="kid-line" id="kid-line"></div>
+    </div>
+    <div class="badges">
+      <span class="badge" id="star-badge">⭐ 0</span>
+      <span class="badge" id="streak-badge">🔥 0</span>
+      <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
+      <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
+    </div>
+  </header>
+
+  <main id="messages" class="messages"></main>
+
+  <footer class="composer">
+    <div class="suggest" id="suggest"></div>
+    <div class="input-row">
+      <input id="chat-input" placeholder="Ask me anything about school…" autocomplete="off">
+      <button id="send" class="btn-primary">➤</button>
+    </div>
+  </footer>
+</div>
+
+<!-- PARENT MODAL -->
+<div id="parent-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="parent-x">✕</button>
+    <h2>Parent Corner</h2>
+    <div id="parent-pin-row">
+      <p>Enter your parent PIN to see the learning report.</p>
+      <input id="parent-pin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN">
+      <button id="parent-go" class="btn-primary">Open report</button>
+      <p id="parent-err" class="err"></p>
+    </div>
+    <div id="parent-report" class="hidden"></div>
+  </div>
+</div>
+
+<!-- BUDDY SWITCH MODAL -->
+<div id="buddy-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="buddy-x">✕</button>
+    <h2>Choose your buddy</h2>
+    <p class="modal-sub">Pick a friend — you can switch anytime!</p>
+    <div id="buddy-grid" class="buddy-grid"></div>
+  </div>
+</div>
+
+<script>
+"use strict";
+// ---------- state ----------
+const $ = (id) => document.getElementById(id);
+const state = {
+  pid: localStorage.getItem("es_pid") || "",
+  profile: null,
+  history: [],
+  grade: 0, character: "auto", buddies: [],
+};
+
+const EMOJI = { leo: "🦁", miko: "🐼", pip: "🐿️", chintu: "🐘", zara: "🦊",
+  toko: "🦜", kiko: "🐬", bip: "🤖", dodo: "🐲", nova: "🦉" };
+
+async function loadBuddies() {
+  if (state.buddies.length) return state.buddies;
+  try {
+    const r = await fetch("/api/characters");
+    const d = await r.json();
+    state.buddies = d.characters || [];
+  } catch (e) { state.buddies = []; }
+  return state.buddies;
+}
+
+const SUGGESTIONS = {
+  generic: ["Explain fractions 🍕", "Why is the sky blue? 🌈",
+    "Help with grammar ✏️", "Give me a fun quiz! 🎯"],
+};
+
+// ---------- onboarding ----------
+function buildOnboard() {
+  const gg = $("ob-grades");
+  for (let g = 1; g <= 12; g++) {
+    const b = document.createElement("button");
+    b.textContent = g;
+    b.onclick = () => {
+      state.grade = g;
+      [...gg.children].forEach(x => x.classList.remove("sel"));
+      b.classList.add("sel");
+    };
+    gg.appendChild(b);
+  }
+  const cr = $("ob-chars");
+  cr.innerHTML = "";
+  loadBuddies().then(buddies => {
+    buddies.forEach(c => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "char-card";
+      card.innerHTML = `<span class="em">${c.emoji}</span>` +
+        `<span class="nm">${c.name}</span><span class="tg">${c.tagline}</span>`;
+      card.onclick = () => {
+        state.character = c.id;
+        [...cr.children].forEach(x => x.classList.remove("sel"));
+        card.classList.add("sel");
+      };
+      cr.appendChild(card);
+    });
+  });
+}
+
+async function startLearning() {
+  const name = $("ob-name").value.trim();
+  const pin = $("ob-pin").value.trim();
+  const err = $("ob-error");
+  if (!name) return err.textContent = "Tell me your name first! 😊";
+  if (!state.grade) return err.textContent = "Pick your grade!";
+  if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Parents: PIN must be 4–8 digits.";
+  if (!$("ob-consent").checked) return err.textContent = "Parent consent is required.";
+  err.textContent = "";
+  const r = await fetch("/api/profile", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, grade: state.grade, parent_pin: pin,
+      character: state.character }),
+  });
+  const data = await r.json();
+  if (!r.ok) return err.textContent = data.detail || "Could not create profile.";
+  localStorage.setItem("es_pid", data.pid);
+  enterApp(data.profile);
+}
+
+// ---------- chat app ----------
+function enterApp(profile) {
+  state.profile = profile;
+  state.pid = profile.pid;
+  $("onboard").classList.add("hidden");
+  $("chatapp").classList.remove("hidden");
+  loadBuddies().then(() => applyBuddyUI(profile));
+  renderSuggestions();
+  greet(profile);
+}
+
+function applyBuddyUI(profile) {
+  const bid = profile.character && EMOJI[profile.character]
+    ? profile.character : "leo";
+  $("mascot").textContent = EMOJI[bid];
+  const b = state.buddies.find(x => x.id === bid);
+  $("buddy-name").textContent = b ? b.name : "Leo";
+  $("kid-line").textContent = `${profile.name} · Grade ${profile.grade}`;
+}
+
+function greet(p) {
+  const bid = p.character && EMOJI[p.character] ? p.character : "leo";
+  const b = state.buddies.find(x => x.id === bid);
+  if (b && b.greeting) { addMsg(`${b.greeting} (I'm your buddy, ${p.name}!)`, "bot"); return; }
+  const g = p.grade;
+  const lines = {
+    low: `Hi ${p.name}! I'm your study buddy! What shall we learn today? 🌟`,
+    mid: `Hi ${p.name}! Ready for an adventure in learning? Ask me anything! 🚀`,
+    high: `Hello ${p.name}! What are we exploring today — math, science, or English? 🔭`,
+  };
+  addMsg(lines[g <= 1 ? "low" : g <= 3 ? "mid" : "high"], "bot");
+}
+
+function renderSuggestions() {
+  const wrap = $("suggest");
+  wrap.innerHTML = "";
+  SUGGESTIONS.generic.forEach(s => {
+    const b = document.createElement("button");
+    b.textContent = s;
+    b.onclick = () => send(s);
+    wrap.appendChild(b);
+  });
+}
+
+function addMsg(text, who, els) {
+  const m = document.createElement("div");
+  m.className = "msg " + (who === "me" ? "me" : "bot");
+  m.textContent = text;
+  if (els) els.forEach(([tag, txt]) => {
+    if (tag === "b") { const b = document.createElement("b"); b.textContent = txt; m.appendChild(b); }
+    if (tag === "br") m.appendChild(document.createElement("br"));
+  });
+  $("messages").appendChild(m);
+  $("messages").scrollTop = $("messages").scrollHeight;
+  return m;
+}
+
+function flyStar(fromBadge) {
+  const s = document.createElement("div");
+  s.className = "star-fly";
+  s.textContent = "⭐";
+  const r = fromBadge.getBoundingClientRect();
+  s.style.left = r.left + "px"; s.style.top = r.top + "px";
+  document.body.appendChild(s);
+  setTimeout(() => s.remove(), 1300);
+}
+
+let busy = false;
+async function send(preset) {
+  if (busy) return;
+  const inp = $("chat-input");
+  const text = (preset || inp.value).trim();
+  if (!text) return;
+  if (!preset) inp.value = "";
+  addMsg(text, "me");
+  state.history.push({ role: "user", content: text });
+  const t = addMsg("", "bot"); t.innerHTML =
+    '<span class="typing"><span></span><span></span><span></span></span>';
+  busy = true; $("send").disabled = true;
+  try {
+    const r = await fetch("/api/chat", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ pid: state.pid, message: text,
+        history: state.history.slice(-8) }),
+    });
+    const data = await r.json();
+    t.textContent = r.ok ? data.answer : (data.detail || data.error || "Oops, try again!");
+    if (r.ok) {
+      state.history.push({ role: "assistant", content: data.answer });
+      if (state.history.length > 12) state.history = state.history.slice(-12);
+      if (data.stars > (state.profile.stars || 0)) flyStar($("star-badge"));
+      state.profile.stars = data.stars;
+      $("star-badge").textContent = "⭐ " + data.stars;
+    }
+  } catch (e) {
+    t.textContent = "Network hiccup — check the connection and try again!";
+  }
+  busy = false; $("send").disabled = false;
+  $("messages").scrollTop = $("messages").scrollHeight;
+}
+
+// ---------- buddy switcher ----------
+async function openBuddyModal() {
+  const buddies = await loadBuddies();
+  if (!buddies.length) return;
+  const grid = $("buddy-grid");
+  grid.innerHTML = "";
+  const cur = (state.profile.character || "leo");
+  buddies.forEach(c => {
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "char-card" + (c.id === cur ? " sel" : "");
+    card.innerHTML = `<span class="em">${c.emoji}</span>` +
+      `<span class="nm">${c.name}</span><span class="tg">${c.special || c.tagline}</span>`;
+    card.onclick = async () => {
+      if (c.id === cur) { $("buddy-modal").classList.add("hidden"); return; }
+      const r = await fetch("/api/profile/" + state.pid + "/update", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ character: c.id }),
+      });
+      if (!r.ok) return;
+      state.profile.character = c.id;
+      applyBuddyUI(state.profile);
+      $("buddy-modal").classList.add("hidden");
+      addMsg(c.greeting || `Hi, I'm ${c.name}!`, "bot");
+    };
+    grid.appendChild(card);
+  });
+  $("buddy-modal").classList.remove("hidden");
+}
+
+// ---------- parent corner ----------
+async function openReport() {
+  const pin = $("parent-pin").value.trim();
+  const err = $("parent-err");
+  if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Enter your PIN.";
+  err.textContent = "";
+  const r = await fetch("/api/parent/report", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ pid: state.pid, pin }),
+  });
+  const data = await r.json();
+  if (!r.ok) return err.textContent = data.detail || "Wrong PIN?";
+  const rep = data.report;
+  const pills = (arr, cls) => arr.map(([k, v]) =>
+    `<span class="pill ${cls}">${k} ×${v}</span>`).join("") || "<i>none yet</i>";
+  $("parent-report").innerHTML = `
+    <h3>${rep.name} · Grade ${rep.grade}</h3>
+    <p>⭐ ${rep.stars} stars · 🔥 ${rep.streak.count || 0}-day streak</p>
+    <div class="report-sec"><h3>Needs practice</h3>${pills(rep.weak_areas, "weak")}</div>
+    <div class="report-sec"><h3>Strong areas</h3>${pills(rep.strong_areas, "strong")}</div>
+    <div class="report-sec"><h3>Recent topics</h3>${rep.topics_covered.slice(-10)
+      .map(t => `<span class="pill">${t}</span>`).join("") || "<i>none yet</i>"}</div>`;
+  $("parent-pin-row").classList.add("hidden");
+  $("parent-report").classList.remove("hidden");
+}
+
+// ---------- wire up ----------
+function wire() {
+  $("ob-start").onclick = startLearning;
+  $("send").onclick = () => send();
+  $("chat-input").addEventListener("keydown", e => {
+    if (e.key === "Enter") send();
+  });
+  $("buddy-btn").onclick = openBuddyModal;
+  $("buddy-x").onclick = () => $("buddy-modal").classList.add("hidden");
+  $("parent-btn").onclick = () => {
+    $("parent-modal").classList.remove("hidden");
+    $("parent-pin-row").classList.remove("hidden");
+    $("parent-report").classList.add("hidden");
+    $("parent-pin").value = ""; $("parent-err").textContent = "";
+  };
+  $("parent-x").onclick = () => $("parent-modal").classList.add("hidden");
+  $("parent-go").onclick = openReport;
+  $("parent-pin").addEventListener("keydown", e => {
+    if (e.key === "Enter") openReport();
+  });
+}
+
+async function restore() {
+  if (!state.pid) return buildOnboard() || wire();
+  buildOnboard(); wire();
+  const r = await fetch("/api/profile/" + state.pid);
+  if (r.ok) { const d = await r.json(); enterApp(d.profile); }
+  else { localStorage.removeItem("es_pid"); $("chatapp").classList.add("hidden"); }
+}
+
+restore();
+</script>
+</body>
+</html>
