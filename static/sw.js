@@ -1,5 +1,5 @@
 /* EduSphere AI service worker — app-shell caching for offline opens. */
-const CACHE = "edusphere-v1";
+const CACHE = "edusphere-v2";
 const SHELL = [
   "/", "/index.html", "/manifest.json",
   "/icon-192.png", "/icon-512.png", "/favicon.svg",

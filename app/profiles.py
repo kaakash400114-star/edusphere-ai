@@ -29,16 +29,20 @@ def _path(pid: str) -> Path:
 
 
 def create_profile(name: str, grade: int, parent_pin: str,
-                   character: str = "auto") -> dict:
+                   character: str = "auto", age: int | None = None) -> dict:
     name = name.strip()[:MAX_NAME_LEN]
-    if not name or not (1 <= int(grade) <= 12):
-        raise ValueError("need a name and grade 1-12")
+    grade = int(grade or 0)
+    if not name or not (0 <= grade <= 12):
+        raise ValueError("need a name and grade 0-12 (0 = pre-school)")
+    if grade == 0 and not (age and 2 <= int(age) <= 7):
+        raise ValueError("pre-school learners need an age between 2 and 7")
     PROFILES_DIR.mkdir(parents=True, exist_ok=True)
     pid = f"{name.lower()}-{secrets.token_hex(3)}"
     profile = {
         "pid": pid,
         "name": name,
-        "grade": int(grade),
+        "grade": grade,
+        "age": int(age) if age else None,
         "character": character,
         "parent_pin_hash": _hash_pin(parent_pin),
         "parent_consent": True,
@@ -49,6 +53,8 @@ def create_profile(name: str, grade: int, parent_pin: str,
         "weak_areas": {},   # topic -> miss count
         "strong_areas": {},  # topic -> hit count
         "topics_covered": [],
+        "memories": [],      # stage 2: life details the buddy remembers
+        "stickers": {},      # stage 6: sticker album  sticker-id -> count
         "log": [],           # last N activity entries (capped)
     }
     _path(pid).write_text(json.dumps(profile, indent=2), encoding="utf-8")
@@ -75,7 +81,7 @@ def update_profile(pid: str, **changes) -> dict | None:
     if not p.exists():
         return None
     raw = json.loads(p.read_text(encoding="utf-8"))
-    for key in ("grade", "character"):
+    for key in ("grade", "character", "age"):
         if key in changes and changes[key] is not None:
             raw[key] = changes[key]
     if "accessory" in changes and changes["accessory"] is not None:
@@ -101,6 +107,35 @@ def buy_item(pid: str, item: str, cost: int) -> dict:
         raise ValueError("not enough stars")
     raw["stars"] -= cost
     wardrobe.append(item)
+    p.write_text(json.dumps(raw, indent=2), encoding="utf-8")
+    return _public(raw)
+
+
+def remember(pid: str, text: str) -> dict | None:
+    """Stage 2: the buddy remembers a life detail across days."""
+    p = _path(pid)
+    if not p.exists():
+        return None
+    raw = json.loads(p.read_text(encoding="utf-8"))
+    text = (text or "").strip()[:120]
+    if not text:
+        return _public(raw)
+    mem = raw.setdefault("memories", [])
+    if text not in mem:
+        mem.append(text)
+        raw["memories"] = mem[-10:]  # keep the last 10
+    p.write_text(json.dumps(raw, indent=2), encoding="utf-8")
+    return _public(raw)
+
+
+def award_sticker(pid: str, sticker_id: str) -> dict | None:
+    """Stage 6: drop a sticker into the child's album."""
+    p = _path(pid)
+    if not p.exists():
+        return None
+    raw = json.loads(p.read_text(encoding="utf-8"))
+    stickers = raw.setdefault("stickers", {})
+    stickers[sticker_id] = stickers.get(sticker_id, 0) + 1
     p.write_text(json.dumps(raw, indent=2), encoding="utf-8")
     return _public(raw)
 
@@ -141,12 +176,18 @@ def parent_report(pid: str) -> dict | None:
         return None
     weak = sorted(raw.get("weak_areas", {}).items(), key=lambda kv: -kv[1])[:8]
     strong = sorted(raw.get("strong_areas", {}).items(), key=lambda kv: -kv[1])[:8]
-    recent = [e for e in raw.get("log", [])[-30:]]
+    import collections
+    per_day = collections.Counter(
+        e["t"][:10] for e in raw.get("log", []) if e.get("t"))
+    days = sorted(per_day.items())[-7:]  # last 7 active days
     return {
         "name": raw["name"], "grade": raw["grade"], "stars": raw["stars"],
         "streak": raw.get("streak", {}), "weak_areas": weak,
-        "strong_areas": strong, "recent_activity": recent,
+        "strong_areas": strong,
+        "recent_activity": [e for e in raw.get("log", [])[-30:]],
         "topics_covered": raw.get("topics_covered", [])[-20:],
+        "stickers": raw.get("stickers", {}),
+        "week": {"days": days, "activities": sum(v for _, v in days)},
     }
 
 

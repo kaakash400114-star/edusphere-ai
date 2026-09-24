@@ -9,7 +9,7 @@ import time
 
 import httpx
 
-from . import characters, knowledge
+from . import characters, conversation, knowledge, worlds
 
 BASE_URL = os.environ.get(
     "GLM_BASE_URL", "https://api.z.ai/api/coding/paas/v4").rstrip("/")
@@ -17,28 +17,44 @@ MODEL = os.environ.get("EDUSPHERE_MODEL", "glm-4.5-flash")
 MAX_HISTORY = 8
 
 def _system_prompt(name: str, grade: int, buddy_id: str,
-                   weak_areas: list[str]) -> str:
+                   weak_areas: list[str], world_id: str | None = None,
+                   age: int | None = None, lang: str = "en",
+                   memories: list[str] | None = None) -> str:
     weak = ", ".join(weak_areas[:5]) if weak_areas else "none yet"
+    world = worlds.resolve_world(grade if grade else None, age)
+    if world_id and world_id in worlds.WORLDS:
+        world = worlds.WORLDS[world_id]
+    spoken = (grade or 0) == 0 or (world_id in ("meadow", "kindergarten"))
     return (
         "You are EduSphere AI, a tutor app for children. You fully play one "
         "character:\n"
         + characters.persona_prompt(buddy_id)
-        + f"\nSTUDENT: {name}, grade {grade} (about age {5 + grade}).\n"
-        f"WEAK AREAS to gently revisit: {weak}.\n\n"
+        + worlds.world_prompt(world)
+        + conversation.HUMAN_RULES
+        + conversation.memory_directive(memories or [])
+        + conversation.language_directive(lang)
+        + (f"\nSTUDENT: {name}, grade {grade} (about age {5 + grade}).\n"
+           if grade else
+           f"\nSTUDENT: {name}, pre-school learner (age {age or 4}).\n")
+        + f"WEAK AREAS to gently revisit: {weak}.\n\n"
         "RULES:\n"
         "- Teach ONLY the topic asked, using the CURRICULUM EXCERPT when given. "
         "If the excerpt covers it, follow its definitions and methods.\n"
         "- Never mention that you were given an excerpt or any file.\n"
         "- Stay in character at all times; the persona's style decides your "
         "tone, sentence length, and catchphrases.\n"
+        "- The WORLD STYLE decides how playful, how short, and how gentle "
+        "your replies are — follow it strictly.\n"
         "- Age-appropriate language for the grade. Warm, patient, encouraging.\n"
         "- Keep answers under 180 words unless asked to go deeper.\n"
         "- End with ONE small question to check understanding.\n"
         "- If asked about anything not school-related (violence, adult content, "
         "strangers, personal info), kindly steer back to learning.\n"
         "- Never ask for personal details beyond the first name.\n"
-        "- Format: short paragraphs, bullet points for steps, "
-        "markdown tables for comparisons. Use simple math notation."
+        "- Format: " + ("short spoken sentences only, no lists or tables "
+         "(your words are read aloud)." if spoken else
+         "short paragraphs, bullet points for steps, "
+         "markdown tables for comparisons. Use simple math notation.")
     )
 
 
@@ -54,11 +70,16 @@ def _extract_content(data: dict) -> str:
 
 def ask(name: str, grade: int, buddy: str, question: str,
         history: list[dict] | None = None, subject: str = "general",
-        weak_areas: list[str] | None = None, mode: str | None = None) -> str:
-    """One tutor turn: buddy persona + special mode + curriculum excerpt -> answer."""
+        weak_areas: list[str] | None = None, mode: str | None = None,
+        age: int | None = None, lang: str = "en",
+        memories: list[str] | None = None) -> str:
+    """One tutor turn: buddy persona + world style + human speech -> answer."""
     buddy = characters.character_for(grade, buddy)["id"]
-    excerpt = knowledge.extract_relevant(subject, grade, question)
-    system = _system_prompt(name, grade, buddy, weak_areas or [])
+    world = worlds.resolve_world(grade if grade else None, age)
+    subject_hint = worlds.knowledge_subject_hint(world["id"], subject)
+    excerpt = knowledge.extract_relevant(subject_hint, grade or 0, question)
+    system = _system_prompt(name, grade, buddy, weak_areas or [], age=age,
+                            lang=lang, memories=memories)
     mode_def = characters.MODES.get(buddy)
     if mode and mode_def and mode_def["trigger"] == mode:
         system += "\n" + mode_def["instructions"] + "\n"

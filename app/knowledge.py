@@ -25,6 +25,9 @@ FILE_MAP = {
     "logic": "general/logical_thinking.md",
     "logical thinking": "general/logical_thinking.md",
     "general": "general/social_studies.md",
+    # pre-grade worlds (Sunny Meadow / Rainbow Kindergarten)
+    "meadow": "general/meadow_activities.md",
+    "kindergarten": "general/kindergarten_activities.md",
 }
 
 GRADES_WITH_FILES = {

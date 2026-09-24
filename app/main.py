@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import characters, knowledge, profiles, tutor
+from . import characters, conversation, knowledge, profiles, tutor, worlds
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -37,9 +37,10 @@ def _rate_ok(pid: str, min_gap: float = 2.0) -> bool:
 
 class ProfileCreate(BaseModel):
     name: str = Field(min_length=1, max_length=20)
-    grade: int = Field(ge=1, le=12)
+    grade: int = Field(default=0, ge=0, le=12)  # 0 = pre-school (worlds by age)
     parent_pin: str = Field(min_length=4, max_length=8)
     character: str = "auto"
+    age: int | None = Field(default=None, ge=2, le=7)
 
     @field_validator("character")
     @classmethod
@@ -50,8 +51,9 @@ class ProfileCreate(BaseModel):
 
 
 class ProfileUpdate(BaseModel):
-    grade: int | None = Field(default=None, ge=1, le=12)
+    grade: int | None = Field(default=None, ge=0, le=12)
     character: str | None = None
+    age: int | None = Field(default=None, ge=2, le=7)
 
 
 class ChatRequest(BaseModel):
@@ -59,6 +61,7 @@ class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=2000)
     history: list[dict] = Field(default_factory=list, max_length=20)
     mode: str | None = None
+    lang: str = "en"
 
 
 class PinRequest(BaseModel):
@@ -72,7 +75,8 @@ class PinRequest(BaseModel):
 def create_profile(body: ProfileCreate):
     try:
         profile = profiles.create_profile(
-            body.name, body.grade, body.parent_pin, body.character)
+            body.name, body.grade, body.parent_pin, body.character,
+            age=body.age)
     except ValueError as exc:
         raise HTTPException(400, str(exc))
     return {"pid": profile["pid"], "profile": profile}
@@ -100,6 +104,22 @@ def update_profile(pid: str, body: ProfileUpdate):
 def list_characters():
     """The Character Universe roster, in carousel order."""
     return {"characters": characters.roster()}
+
+
+@app.get("/api/worlds")
+def list_worlds():
+    """The Four Worlds roster, in age order."""
+    return {"worlds": worlds.roster()}
+
+
+@app.get("/api/worlds/for-profile/{pid}")
+def world_for_profile(pid: str):
+    """The world this child belongs to right now."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    w = worlds.world_for_profile(profile)
+    return {"world": worlds.public(w["id"])}
 
 
 @app.get("/api/wardrobe")
@@ -154,14 +174,73 @@ def chat(body: ChatRequest):
         buddy=profile.get("character") or "auto",
         question=body.message, history=body.history, subject=subject,
         weak_areas=list(profile.get("weak_areas", {}).keys()),
-        mode=body.mode)
+        mode=body.mode, age=profile.get("age"),
+        lang=body.lang if body.lang in conversation.LANGUAGES else "en",
+        memories=list(profile.get("memories", [])))
     topic = _topic_from(subject, body.message)
     updated = profiles.record_activity(body.pid, "chat", topic)
     buddy = characters.public(profile.get("character") or "leo")
+    world = worlds.world_for_profile(profile)
+    # stage 1+2: voice profile + speaking pace for the frontend TTS engine
+    voice = conversation.voice_public(buddy["id"])
+    voice["pace"] = conversation.pace_for_grade(profile.get("grade"),
+                                                profile.get("age"))
+    voice["lang"] = conversation.LANGUAGES.get(
+        body.lang, conversation.LANGUAGES["en"])["voice_lang"]
+    # stage 6: sticker for the first chat of the session comes from frontend
     return {"answer": answer, "subject": subject, "topic": topic,
             "stars": updated["stars"] if updated else 0,
             "character": buddy["id"], "character_name": buddy["name"],
-            "character_emoji": buddy["emoji"]}
+            "character_emoji": buddy["emoji"],
+            "world": world["id"], "world_name": world["name"],
+            "world_emoji": world["emoji"],
+            "voice": voice}
+
+
+class StickerRequest(BaseModel):
+    sticker: str = Field(min_length=1, max_length=40)
+
+
+@app.post("/api/profile/{pid}/sticker")
+def award_sticker(pid: str, body: StickerRequest):
+    """Stage 6: drop a sticker into the child's album."""
+    profile = profiles.award_sticker(pid, body.sticker)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    return {"profile": profile}
+
+
+class RememberBody(BaseModel):
+    text: str = Field(min_length=2, max_length=120)
+
+
+@app.post("/api/profile/{pid}/remember")
+def remember(pid: str, body: RememberBody):
+    """Stage 2: buddy remembers a life detail across days."""
+    profile = profiles.remember(pid, body.text)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    return {"profile": profile}
+
+
+class GameResult(BaseModel):
+    pid: str
+    game: str = Field(min_length=1, max_length=40)
+    score: int = Field(ge=0)
+    stars: int = Field(default=0, ge=0, le=20)
+    topic: str = Field(default="", max_length=80)
+
+
+@app.post("/api/game/result")
+def game_result(body: GameResult):
+    """Stage 5: record a game result, award stars + a sticker."""
+    profile = profiles.record_activity(
+        body.pid, "game:" + body.game, body.topic or body.game,
+        stars=body.stars)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    profile = profiles.award_sticker(body.pid, body.game)
+    return {"profile": profile}
 
 
 @app.post("/api/parent/report")
@@ -178,6 +257,13 @@ def parent_report(body: PinRequest):
 def grade_meta():
     return {"subjects": {str(g): knowledge.list_available(g)
                          for g in range(1, 13)}}
+
+
+@app.get("/api/meta/languages")
+def language_meta():
+    """Stage 8: languages buddies can speak."""
+    return {"languages": [{"id": k, "name": v["name"], "voice_lang": v["voice_lang"]}
+                          for k, v in conversation.LANGUAGES.items()]}
 
 
 def _topic_from(subject: str, message: str) -> str:

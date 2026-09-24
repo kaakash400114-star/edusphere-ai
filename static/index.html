@@ -84,6 +84,22 @@ body{
 .wardrobe-item .cost{font-size:.75rem;color:var(--muted)}
 .wardrobe-item.owned{border-color:#86efac}
 .wardrobe-item.wearing{border-color:var(--brand);background:#eef2ff}
+
+/* worlds */
+.world-grid{display:grid;gap:10px;margin-top:12px}
+.world-card{border:2px solid #e0e7ff;border-radius:16px;background:#fff;
+  padding:14px;text-align:left;cursor:pointer;position:relative;
+  transition:border-color .15s}
+.world-card .w-top{display:flex;align-items:center;gap:10px}
+.world-card .w-emoji{font-size:2rem}
+.world-card .w-name{font-weight:800}
+.world-card .w-ages{font-size:.75rem;color:var(--muted)}
+.world-card .w-tag{font-size:.8rem;color:var(--muted);margin-top:6px}
+.world-card.cur{border-color:var(--brand);background:#eef2ff}
+.world-card.locked{opacity:.55;cursor:default}
+.world-card .w-lock{position:absolute;top:10px;right:12px;font-size:.72rem;
+  background:#fef3c7;border-radius:999px;padding:3px 8px;font-weight:700}
+.world-chip{max-width:100%}
 .wardrobe-item button{margin-top:6px;border:none;border-radius:8px;
   padding:5px 12px;font-family:inherit;font-weight:700;cursor:pointer}
 .wardrobe-item .buy{background:#fef3c7}
@@ -176,8 +192,13 @@ body{
       <input id="ob-name" maxlength="20" placeholder="e.g. Aarav" autocomplete="off">
     </label>
 
-    <label class="fld">Pick your grade
+    <label class="fld">How old are you?
+      <input id="ob-age" type="number" min="2" max="18" placeholder="e.g. 7" autocomplete="off">
+    </label>
+
+    <label class="fld">Pick your grade <span style="font-weight:400;font-size:.75rem;color:var(--muted)">(in school? pick it — tiny ones can tap "Not in school yet")</span>
       <div id="ob-grades" class="grade-grid"></div>
+      <button id="ob-preschool" type="button" class="pill" style="margin-top:6px;cursor:pointer;border:none">🍼 Not in school yet</button>
     </label>
 
     <label class="fld">Choose your study buddy
@@ -199,6 +220,18 @@ body{
   </div>
 </div>
 
+<!-- WORLD GATE SCREEN -->
+<div id="worldgate" class="screen hidden">
+  <div class="onboard-card" style="text-align:center">
+    <div class="logo" id="wg-title">🏘️</div>
+    <h2 id="wg-name" style="margin:.2rem 0">Explorer Village</h2>
+    <p id="wg-tagline" style="color:var(--muted);margin:.2rem 0 1rem"></p>
+    <div id="wg-acts" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:1rem"></div>
+    <p style="font-size:.8rem;color:var(--muted);margin:0 0 .6rem" id="wg-hosts"></p>
+    <button id="wg-enter" class="btn-primary">Enter the World ▶</button>
+  </div>
+</div>
+
 <!-- CHAT SCREEN -->
 <div id="chatapp" class="screen hidden">
   <header class="topbar">
@@ -213,6 +246,7 @@ body{
     <div class="badges">
       <span class="badge" id="star-badge">⭐ 0</span>
       <span class="badge" id="streak-badge">🔥 0</span>
+      <button id="world-chip" class="mode-chip" title="The Four Worlds">🌍 Worlds</button>
       <button id="mode-chip" class="mode-chip hidden" title="Special mode"></button>
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
@@ -273,6 +307,16 @@ body{
   </div>
 </div>
 
+<!-- WORLD MAP MODAL -->
+<div id="world-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="world-x">✕</button>
+    <h2>🌍 The Four Worlds</h2>
+    <p class="modal-sub">Growing up = traveling to a new land.</p>
+    <div id="world-grid" class="world-grid"></div>
+  </div>
+</div>
+
 <script>
 "use strict";
 // ---------- state ----------
@@ -281,7 +325,8 @@ const state = {
   pid: localStorage.getItem("es_pid") || "",
   profile: null,
   history: [],
-  grade: 0, character: "auto", buddies: [],
+  grade: 0, age: null, preschool: false, character: "auto", buddies: [],
+  world: null, worlds: [],
 };
 
 const EMOJI = { leo: "🦁", miko: "🐼", pip: "🐿️", chintu: "🐘", zara: "🦊",
@@ -297,6 +342,25 @@ async function loadBuddies() {
   return state.buddies;
 }
 
+async function loadWorlds() {
+  if (state.worlds.length) return state.worlds;
+  try {
+    const r = await fetch("/api/worlds");
+    const d = await r.json();
+    state.worlds = d.worlds || [];
+  } catch (e) { state.worlds = []; }
+  return state.worlds;
+}
+
+function worldForProfileLocal(p) {
+  // mirrors worlds.resolve_world — used for UI before server reply
+  const g = p.grade || 0;
+  if (g >= 1 && g <= 2) return "village";
+  if (g >= 3) return "mountains";
+  const a = p.age || 5;
+  return a <= 3 ? "meadow" : "kindergarten";
+}
+
 const SUGGESTIONS = {
   generic: ["Explain fractions 🍕", "Why is the sky blue? 🌈",
     "Help with grammar ✏️", "Give me a fun quiz! 🎯"],
@@ -310,11 +374,23 @@ function buildOnboard() {
     b.textContent = g;
     b.onclick = () => {
       state.grade = g;
+      state.preschool = false;
+      $("ob-preschool").style.background = "";
       [...gg.children].forEach(x => x.classList.remove("sel"));
       b.classList.add("sel");
     };
     gg.appendChild(b);
   }
+  $("ob-preschool").onclick = () => {
+    state.preschool = !state.preschool;
+    if (state.preschool) {
+      state.grade = 0;
+      [...gg.children].forEach(x => x.classList.remove("sel"));
+      $("ob-preschool").style.background = "#c7d2fe";
+    } else {
+      $("ob-preschool").style.background = "";
+    }
+  };
   const cr = $("ob-chars");
   cr.innerHTML = "";
   loadBuddies().then(buddies => {
@@ -339,27 +415,56 @@ async function startLearning() {
   const name = $("ob-name").value.trim();
   const pin = $("ob-pin").value.trim();
   const err = $("ob-error");
+  const ageVal = parseInt($("ob-age").value, 10);
   if (!name) return err.textContent = "Tell me your name first! 😊";
-  if (!state.grade) return err.textContent = "Pick your grade!";
+  if (!state.grade && !state.preschool) return err.textContent = "Pick your grade (or tap 'Not in school yet')!";
+  if (state.preschool && (!ageVal || ageVal < 2 || ageVal > 7))
+    return err.textContent = "Tiny learners: tell us the age (2–7)!";
   if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Parents: PIN must be 4–8 digits.";
   if (!$("ob-consent").checked) return err.textContent = "Parent consent is required.";
   err.textContent = "";
   const r = await fetch("/api/profile", {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, grade: state.grade, parent_pin: pin,
-      character: state.character }),
+      character: state.character,
+      age: state.preschool ? ageVal : (ageVal || null) }),
   });
   const data = await r.json();
   if (!r.ok) return err.textContent = data.detail || "Could not create profile.";
   localStorage.setItem("es_pid", data.pid);
-  enterApp(data.profile);
+  showWorldGate(data.profile);
+}
+
+// ---------- world gate ----------
+async function showWorldGate(profile) {
+  state.profile = profile;
+  const worlds = await loadWorlds();
+  const wid = worldForProfileLocal(profile);
+  const w = worlds.find(x => x.id === wid) || worlds[2];
+  $("onboard").classList.add("hidden");
+  $("worldgate").classList.remove("hidden");
+  $("wg-title").textContent = w.emoji;
+  $("wg-name").textContent = w.name;
+  $("wg-tagline").textContent = w.tagline + " · " + w.ages;
+  $("wg-hosts").textContent = "Hosted by your buddies";
+  const wrap = $("wg-acts");
+  wrap.innerHTML = "";
+  w.activities.forEach(a => {
+    const p = document.createElement("span");
+    p.className = "pill";
+    p.textContent = `${a.emoji} ${a.label}`;
+    wrap.appendChild(p);
+  });
+  $("wg-enter").onclick = () => enterApp(profile, w);
 }
 
 // ---------- chat app ----------
-function enterApp(profile) {
+function enterApp(profile, world) {
   state.profile = profile;
   state.pid = profile.pid;
+  state.world = world || null;
   $("onboard").classList.add("hidden");
+  $("worldgate").classList.add("hidden");
   $("chatapp").classList.remove("hidden");
   loadBuddies().then(() => applyBuddyUI(profile));
   renderSuggestions();
@@ -393,12 +498,42 @@ function greet(p) {
 function renderSuggestions() {
   const wrap = $("suggest");
   wrap.innerHTML = "";
-  SUGGESTIONS.generic.forEach(s => {
+  const w = state.world || (state.profile ? stateWorld(state.profile) : null);
+  const acts = w ? w.activities.map(a => a.prompt) : [];
+  const list = acts.length ? acts.slice(0, 4) : SUGGESTIONS.generic;
+  list.forEach(s => {
     const b = document.createElement("button");
     b.textContent = s;
     b.onclick = () => send(s);
     wrap.appendChild(b);
   });
+}
+
+function stateWorld(p) {
+  const wid = worldForProfileLocal(p);
+  return state.worlds.find(x => x.id === wid) || null;
+}
+
+// ---------- world map ----------
+async function openWorldModal() {
+  const worlds = await loadWorlds();
+  if (!worlds.length) return;
+  const cur = worldForProfileLocal(state.profile);
+  const grid = $("world-grid");
+  grid.innerHTML = "";
+  worlds.forEach(w => {
+    const isCur = w.id === cur;
+    const card = document.createElement("div");
+    card.className = "world-card" + (isCur ? " cur" : " locked");
+    const lock = isCur ? "" : `<span class="w-lock">🔒 grow up to unlock</span>`;
+    const acts = w.activities.slice(0, 3).map(a => a.emoji + " " + a.label).join(" · ");
+    card.innerHTML = `<div class="w-top"><span class="w-emoji">${w.emoji}</span>` +
+      `<div><div class="w-name">${w.name}${isCur ? " — you are here ⭐" : ""}</div>` +
+      `<div class="w-ages">${w.ages}</div></div></div>` + lock +
+      `<div class="w-tag">${w.tagline}<br><small>${acts}</small></div>`;
+    grid.appendChild(card);
+  });
+  $("world-modal").classList.remove("hidden");
 }
 
 function addMsg(text, who, els) {
@@ -649,6 +784,8 @@ function wire() {
   });
   $("mascot").onclick = () => { if (state.pid) openWardrobe(); };
   $("wardrobe-x").onclick = () => $("wardrobe-modal").classList.add("hidden");
+  $("world-chip").onclick = openWorldModal;
+  $("world-x").onclick = () => $("world-modal").classList.add("hidden");
   $("buddy-btn").onclick = openBuddyModal;
   $("buddy-x").onclick = () => $("buddy-modal").classList.add("hidden");
   $("info-x").onclick = () => $("info-modal").classList.add("hidden");
@@ -667,10 +804,10 @@ function wire() {
 }
 
 async function restore() {
-  if (!state.pid) return buildOnboard() || wire();
   buildOnboard(); wire();
+  if (!state.pid) return;
   const r = await fetch("/api/profile/" + state.pid);
-  if (r.ok) { const d = await r.json(); enterApp(d.profile); }
+  if (r.ok) { const d = await r.json(); await loadWorlds(); enterApp(d.profile); }
   else { localStorage.removeItem("es_pid"); $("chatapp").classList.add("hidden"); }
 }
 
