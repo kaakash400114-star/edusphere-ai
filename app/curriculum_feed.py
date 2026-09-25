@@ -117,6 +117,11 @@ def grade_tasks(grade: int) -> list[dict]:
     return _CACHE[g]
 
 
+def kinder_grade() -> bool:
+    """Grade 0 (KG) has no curriculum files — kinder corner serves it."""
+    return True
+
+
 def topic_by_id(grade: int, task_id: str) -> dict | None:
     for t in grade_tasks(grade):
         if t["id"] == task_id:

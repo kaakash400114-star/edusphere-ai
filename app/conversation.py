@@ -32,7 +32,9 @@ LANGUAGES: dict[str, dict] = {
 # grade -> speaking pace multiplier (Stage speed pass: bumped up on user request;
 # slower for little kids, faster for seniors — but all faster than before)
 def pace_for_grade(grade: int | None, age: int | None = None) -> float:
-    g = grade or 1
+    g = grade or 0
+    if g <= 0:
+        return 0.82
     if g <= 2:
         return 0.90
     if g <= 5:

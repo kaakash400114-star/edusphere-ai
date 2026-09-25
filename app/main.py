@@ -15,7 +15,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from . import (boards, characters, conversation, improvement, knowledge,
-               neural_voice, practice, profiles, tutor, worlds)
+               kinder, neural_voice, practice, profiles, tutor, worlds)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -38,7 +38,7 @@ def _rate_ok(pid: str, min_gap: float = 2.0) -> bool:
 
 class ProfileCreate(BaseModel):
     name: str = Field(min_length=1, max_length=20)
-    grade: int = Field(ge=1, le=12)  # grades 1-12 only (final spec)
+    grade: int = Field(ge=0, le=12)  # grade 0 = KG little learners
     parent_pin: str = Field(min_length=4, max_length=8)
     character: str = "auto"
     board: str = boards.DEFAULT_BOARD
@@ -58,7 +58,7 @@ class ProfileCreate(BaseModel):
 
 class ProfileUpdate(BaseModel):
     name: str | None = Field(default=None, min_length=1, max_length=20)
-    grade: int | None = Field(default=None, ge=1, le=12)
+    grade: int | None = Field(default=None, ge=0, le=12)
     character: str | None = None
     board: str | None = None
     voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
@@ -68,7 +68,7 @@ class ProfileUpdate(BaseModel):
 
 class SettingsUpdate(BaseModel):
     name: str | None = Field(default=None, min_length=1, max_length=20)
-    grade: int | None = Field(default=None, ge=1, le=12)
+    grade: int | None = Field(default=None, ge=0, le=12)
     character: str | None = None
     board: str | None = None
     voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
@@ -246,7 +246,7 @@ def chat(body: ChatRequest):
         return JSONResponse(
             {"error": "easy there! try again in a couple of seconds."},
             status_code=429)
-    subject = tutor.detect_subject(body.message, profile["grade"])
+    subject = tutor.detect_subject(body.message, max(1, profile["grade"]))
     answer = tutor.ask(
         name=profile["name"], grade=profile["grade"],
         buddy=profile.get("character") or "auto",
@@ -458,9 +458,10 @@ def get_practice(pid: str):
     profile = profiles.get_profile(pid)
     if not profile:
         raise HTTPException(404, "profile not found")
+    topics = [] if profile["grade"] < 1 else practice.grade_topics(profile["grade"])
     return {"grade": profile["grade"],
             "points": profiles.get_points(profile),
-            "topics": practice.grade_topics(profile["grade"])}
+            "topics": topics}
 
 
 @app.get("/api/practice/{pid}/{topic_id}")
@@ -495,6 +496,59 @@ def finish_topic(pid: str, topic_id: str, body: TaskDoneRequest):
 def _topic_from(subject: str, message: str) -> str:
     words = [w for w in message.split() if len(w) > 3][:4]
     return f"{subject}: {' '.join(words)}" if words else subject
+
+
+# ---------------- kinder corner (little learners, KG) --------------------
+
+class KinderFinish(BaseModel):
+    kind: str = Field(min_length=1, max_length=20)
+    correct: int = Field(default=0, ge=0, le=50)
+    total: int = Field(default=5, ge=0, le=50)
+
+
+@app.get("/api/kinder/{pid}")
+def kinder_round(pid: str):
+    """A fresh little-learner round: phonics, counting, shapes, colors, rhymes."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    return {"grade": profile["grade"],
+            "points": profiles.get_points(profile),
+            "games": kinder.KINDS,
+            "tasks": kinder.make_round()}
+
+
+@app.get("/api/kinder/{pid}/{kind}")
+def kinder_one(pid: str, kind: str):
+    """More tasks of one kind (e.g. more phonics taps)."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    if kind not in kinder.KINDS:
+        raise HTTPException(404, "unknown kinder game")
+    tasks = [kinder.make_task(kind) for _ in range(kinder.kinder_round_size())]
+    return {"kind": kind, "tasks": [t for t in tasks if t]}
+
+
+@app.post("/api/kinder/{pid}/finish")
+def kinder_finish(pid: str, body: KinderFinish):
+    """One finished kinder round: +2 points for the first correct round of
+    the day per game, one honest practice event."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    raw = profiles._raw(pid)
+    payload = kinder.mark_round(raw, body.kind, body.correct, body.total)
+    profiles._write_raw(pid, raw)
+    if body.correct >= 1:
+        profiles.log_practice(pid,
+                              subject=("english" if body.kind in
+                                       ("phonics", "rhymes") else "math"),
+                              correct=body.correct,
+                              total=max(1, body.total),
+                              source="kinder:" + body.kind)
+    profiles.record_activity(pid, "kinder:" + body.kind, "kinder corner")
+    return {"result": payload, "profile": profiles.get_profile(pid)}
 
 
 # ---------------- neural TTS audio serving ----------------

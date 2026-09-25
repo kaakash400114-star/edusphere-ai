@@ -211,9 +211,9 @@ button:disabled{opacity:.5;cursor:default}
 .input-row input:focus{outline:none;border-color:var(--brand)}
 .input-row .btn-primary{width:auto;padding:12px 20px;border-radius:999px}
 
-/* stage 3: living face */
+/* stage 3: living face — now hosts the full-body mini animal (buddy-life.js) */
 #face-stage{position:relative;width:64px;height:64px;flex:none;cursor:pointer}
-#face-svg{width:64px;height:64px;display:block}
+#face-stage svg{width:64px;height:64px;display:block;overflow:visible}
 .face-blink{animation:faceblink 4.6s infinite}
 @keyframes faceblink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
 .mouth-talk{transform-origin:center;animation:chew .22s infinite alternate}
@@ -352,6 +352,52 @@ button:disabled{opacity:.5;cursor:default}
   padding:4px 10px;margin:2px;font-size:.8rem}
 .pill.weak{background:#fee2e2;color:var(--bad)}
 .pill.strong{background:#dcfce7;color:var(--good)}
+/* ===== little learners (KG) + living animals ===== */
+.an-stage{position:relative;width:100%}
+.an-stage svg{width:100%;height:auto;display:block;overflow:visible}
+.an-stage [data-part="body"]{transition:transform .12s}
+.an-stage .an-excited{animation:anBounce .55s ease infinite alternate}
+.an-stage .an-confused{animation:anTilt 1.4s ease-in-out infinite alternate;transform-origin:50% 85%}
+.an-stage .an-celebrate{animation:anCheer .5s ease infinite alternate;transform-origin:50% 90%}
+.an-stage .an-dance{animation:anDance .9s ease-in-out infinite;transform-origin:50% 90%}
+.an-stage .an-pet{animation:anWiggle .5s ease}
+.an-confetti{position:absolute;font-size:1.05rem;pointer-events:none;animation:anFly 1.3s ease-out forwards;z-index:3}
+.an-heart{position:absolute;font-size:1.1rem;pointer-events:none;animation:anHeart 1.3s ease-out forwards;z-index:3}
+@keyframes anBounce{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+@keyframes anTilt{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+@keyframes anCheer{from{transform:scale(1)}to{transform:scale(1.09)}}
+@keyframes anDance{0%{transform:rotate(-7deg) translateY(0)}25%{transform:rotate(0) translateY(-6px)}50%{transform:rotate(7deg) translateY(0)}75%{transform:rotate(0) translateY(-6px)}100%{transform:rotate(-7deg) translateY(0)}}
+@keyframes anWiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-6deg)}50%{transform:rotate(5deg)}75%{transform:rotate(-3deg)}}
+@keyframes anFly{from{opacity:1;transform:translate(0,0) rotate(0)}to{opacity:0;transform:translate(var(--dx),-60px) rotate(230deg)}}
+@keyframes anHeart{from{opacity:0;transform:translateY(6px) scale(.6)}30%{opacity:1}to{opacity:0;transform:translateY(-56px) scale(1.25)}}
+/* big buddy stage above the chat for little learners */
+#hero-stage{width:min(190px,42vw);margin:2px auto 0;cursor:pointer;filter:drop-shadow(0 6px 10px rgba(30,27,75,.18))}
+#hero-stage .an-stage svg{max-height:190px}
+.karaoke{display:flex;flex-wrap:wrap;gap:2px;font-size:1.02rem;line-height:1.6;font-weight:700}
+.karaoke .kw{border-radius:6px;padding:0 2px;cursor:pointer}
+.karaoke .kw.on{background:#fef08a}
+.karaoke .kw.done{color:var(--brand)}
+.kinder-display{font-size:2.6rem;line-height:1.15;text-align:center;font-weight:800;min-height:1.4em;letter-spacing:.06em}
+#kinder-opts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.kinder-opt{min-width:96px;padding:16px 18px;font-size:1.25rem;font-weight:800;font-family:inherit;
+  border:3px solid #e0e7ff;border-radius:18px;background:#fff;cursor:pointer;box-shadow:0 3px 0 #e0e7ff}
+.kinder-opt:active{transform:translateY(2px);box-shadow:none}
+.kinder-opt.kinder-right{background:#dcfce7;border-color:#22c55e;animation:anCheer .4s ease infinite alternate}
+.kinder-opt.kinder-wrong{background:#fee2e2;border-color:#fca5a5;animation:anWiggle .45s ease;opacity:.7}
+#kinder-qnum{font-size:.8rem;color:var(--muted);text-align:center;font-weight:700}
+/* tracing */
+#trace-canvas{width:min(320px,80vw);height:min(320px,80vw);touch-action:none;border:3px dashed #c7d2fe;
+  border-radius:20px;background:#fff;display:block;margin:8px auto}
+.trace-bar{height:12px;background:#eef2ff;border-radius:999px;overflow:hidden;max-width:320px;margin:6px auto}
+.trace-fill{height:100%;width:0;background:linear-gradient(90deg,#f472b6,#a855f7);transition:width .2s}
+/* KG voice-first composer: hide typing, show big mic */
+body.kg-mode #chat-input,body.kg-mode #send{display:none}
+body.kg-mode .input-row{justify-content:center}
+body.kg-mode .mic-btn{width:72px;height:72px;font-size:1.9rem}
+body.kg-mode .msg{font-size:1.05rem}
+body.kg-mode .msg.bot{font-size:1.12rem}
+.kg-note{font-size:.72rem;color:var(--muted);text-align:center;margin-top:4px}
+
 @media (min-width:700px){ .msg{font-size:1.02rem} }
 </style>
 </head>
@@ -370,7 +416,7 @@ button:disabled{opacity:.5;cursor:default}
     <label class="fld">Pick your grade
       <div id="ob-grades" class="grade-grid"></div>
     </label>
-
+    <p class="modal-sub" id="ob-grade-hint" style="margin:4px 0 0">🌱 "KG" is for little learners (age 3-6).</p>
     <label class="fld">Your board (curriculum)
       <select id="ob-board" class="board-select"></select>
     </label>
@@ -409,16 +455,7 @@ button:disabled{opacity:.5;cursor:default}
 <!-- CHAT SCREEN -->
 <div id="chatapp" class="screen hidden">
   <header class="topbar">
-    <div id="face-stage" title="Tap me!">
-      <svg id="face-svg" viewBox="0 0 64 64" aria-hidden="true">
-        <circle id="face-head" cx="32" cy="32" r="26" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"></circle>
-        <text id="face-core" x="32" y="30" text-anchor="middle" font-size="26" dominant-baseline="middle">🧑‍🏫</text>
-        <text id="face-acc" x="50" y="16" text-anchor="middle" font-size="14"></text>
-        <g id="face-mouth-group">
-          <ellipse id="face-mouth" cx="32" cy="48" rx="7" ry="3.2" fill="#1e1b4b" opacity=".85"></ellipse>
-        </g>
-      </svg>
-    </div>
+    <div id="face-stage" title="Tap me!"><span id="acc-float"></span></div>
     <div class="titles">
       <div class="buddy-name" id="buddy-name">Professor Nova</div>
       <div class="kid-line" id="kid-line"></div>
@@ -427,7 +464,9 @@ button:disabled{opacity:.5;cursor:default}
       <span class="badge" id="star-badge">⭐ 0</span>
       <span class="badge" id="points-badge" title="Points from practice">💠 0</span>
       <span class="badge" id="streak-badge">🔥 0</span>
-      <button id="world-chip" class="mode-chip" title="The Four Worlds">🌍 Worlds</button>
+      <button id="world-chip" class="mode-chip" title="The Worlds">🌍 Worlds</button>
+      <button id="kinder-btn" class="badge badge-btn hidden" title="Kinder Corner">🐣 Kinder</button>
+      <button id="trace-btn" class="badge badge-btn hidden" title="Magic tracing">✏️ Trace</button>
       <button id="practice-btn" class="badge badge-btn" title="Free practice topics">🧭 Practice</button>
       <button id="mode-chip" class="mode-chip hidden" title="Special mode"></button>
       <button id="games-btn" class="badge badge-btn" title="Games arcade">🎮 Games</button>
@@ -438,7 +477,9 @@ button:disabled{opacity:.5;cursor:default}
     </div>
   </header>
 
-  <main id="messages" class="messages"></main>
+  <main id="messages" class="messages">
+    <div id="hero-stage" title="Pet me! 🐾"></div>
+  </main>
 
   <footer class="composer">
     <div class="suggest" id="suggest"></div>
@@ -448,7 +489,42 @@ button:disabled{opacity:.5;cursor:default}
       <button id="send" class="btn-primary">➤</button>
       <button id="stop-talk" class="btn-ghost hidden" title="Buddy, stop!">✋</button>
     </div>
+    <p class="kg-note" id="kg-note"></p>
   </footer>
+</div>
+
+<!-- KINDER CORNER MODAL (little learners) -->
+<div id="kinder-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="kinder-x">✕</button>
+    <h2>🐣 Kinder Corner</h2>
+    <p class="modal-sub" id="kinder-points"></p>
+    <div id="kinder-home">
+      <div id="kinder-grid" class="arcade-grid"></div>
+    </div>
+    <div id="kinder-play" class="hidden">
+      <div id="kinder-qnum"></div>
+      <div id="kinder-stage"></div>
+      <div class="karaoke" id="kinder-karaoke" style="justify-content:center;margin:6px 0"></div>
+      <div id="kinder-opts"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MAGIC TRACING MODAL -->
+<div id="trace-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="trace-x">✕</button>
+    <h2 id="trace-title" style="text-align:center">✏️ Trace</h2>
+    <canvas id="trace-canvas"></canvas>
+    <div class="trace-bar"><div class="trace-fill" id="trace-progress"></div></div>
+    <p class="modal-sub" id="trace-msg" style="text-align:center">Use your finger — follow the dots!</p>
+    <div id="trace-done" class="hidden" style="text-align:center;font-size:1.6rem">⭐🎉⭐</div>
+    <div class="story-ctrl">
+      <button id="trace-clear">🧽 Erase</button>
+      <button id="trace-next">Next ➡</button>
+    </div>
+  </div>
 </div>
 
 <!-- PARENT MODAL -->
@@ -610,6 +686,10 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </div>
 
+<script src="/animals.js"></script>
+<script src="/buddy-life.js"></script>
+<script src="/tracing.js"></script>
+<script src="/kinder.js"></script>
 <script>
 "use strict";
 // ---------- state ----------
@@ -647,7 +727,8 @@ async function loadWorlds() {
 
 function worldForProfileLocal(p) {
   // mirrors worlds.resolve_world (grade bands)
-  const g = p.grade || 1;
+  const g = p.grade || 0;
+  if (g <= 0) return "meadow";
   if (g >= 1 && g <= 2) return "village";
   if (g >= 3 && g <= 5) return "mountains";
   if (g >= 6 && g <= 8) return "academy";
@@ -655,6 +736,7 @@ function worldForProfileLocal(p) {
 }
 
 function worldForGradeBand(g) {
+  if (g <= 0) return "meadow";
   if (g >= 1 && g <= 2) return "village";
   if (g >= 3 && g <= 5) return "mountains";
   if (g >= 6 && g <= 8) return "academy";
@@ -690,6 +772,17 @@ function fillBoardSelect(sel, current) {
 
 function buildOnboard() {
   const gg = $("ob-grades");
+  // KG first — little learners get the biggest, friendliest button
+  const kg = document.createElement("button");
+  kg.textContent = "KG";
+  kg.dataset.band = "meadow";
+  kg.title = "Little learners (age 3-6)";
+  kg.onclick = () => {
+    state.grade = 0;
+    [...gg.children].forEach(x => x.classList.remove("sel"));
+    kg.classList.add("sel");
+  };
+  gg.appendChild(kg);
   for (let g = 1; g <= 12; g++) {
     const b = document.createElement("button");
     b.textContent = g;
@@ -729,7 +822,9 @@ async function startLearning() {
   const pin = $("ob-pin").value.trim();
   const err = $("ob-error");
   if (!name) return err.textContent = "Tell me your name first! 😊";
-  if (!state.grade) return err.textContent = "Pick your grade (1 to 12)!";
+  if (state.grade === null || state.grade === undefined ||
+      !(state.grade >= 0 && state.grade <= 12))
+    return err.textContent = "Pick your grade (KG or 1 to 12)!";
   if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Parents: PIN must be 4–8 digits.";
   if (!$("ob-consent").checked) return err.textContent = "Parent consent is required.";
   err.textContent = "";
@@ -780,6 +875,14 @@ function enterApp(profile, world) {
   $("onboard").classList.add("hidden");
   $("worldgate").classList.add("hidden");
   $("chatapp").classList.remove("hidden");
+  // KG voice-first mode: hide typing, one big mic, kinder + trace buttons
+  const kg = (profile.grade || 0) <= 0;
+  document.body.classList.toggle("kg-mode", kg);
+  if (kg) $("kg-note").textContent =
+    "🎙️ Just tap the mic and talk — I'm listening!";
+  if ($("kinder-btn")) $("kinder-btn").classList.toggle("hidden", !kg);
+  if ($("trace-btn")) $("trace-btn").classList.toggle("hidden", (profile.grade || 0) > 2);
+  if (kg) addMsg("Welcome to Sunny Meadow! 🌸 Tap 🐣 Kinder for fun games, ✏️ Trace to draw letters, or tap the mic and just talk to me!", "bot");
   loadBuddies().then(() => applyBuddyUI(profile));
   renderSuggestions();
   greet(profile);
@@ -788,10 +891,13 @@ function enterApp(profile, world) {
 function applyBuddyUI(profile) {
   const bid = profile.character && EMOJI[profile.character]
     ? profile.character : "leo";
-  $("face-core").textContent = EMOJI[bid];
-  const b = state.buddies.find(x => x.id === bid);
-  $("buddy-name").textContent = b ? b.name : "Leo";
-  $("kid-line").textContent = `${profile.name} · Grade ${profile.grade}`;
+  state.buddyId = bid;
+  $("buddy-name").textContent =
+    (state.buddies.find(x => x.id === bid) || { name: "Leo" }).name;
+  $("kid-line").textContent = `${profile.name} · ` +
+    (profile.grade <= 0 ? "KG" : "Grade " + profile.grade);
+  mountAnimal($("face-stage"), bid, "mini");
+  mountAnimal($("hero-stage"), bid, "hero");
   applyAccessoryUI();
   updateModeChip();
 }
@@ -858,7 +964,22 @@ async function openWorldModal() {
 function addMsg(text, who, els) {
   const m = document.createElement("div");
   m.className = "msg " + (who === "me" ? "me" : "bot");
-  m.textContent = text;
+  // karaoke word-highlight bubbles for little learners (KG + grades 1-2)
+  if (who === "bot" && state.profile && state.profile.grade <= 2 && text &&
+      !m.dataset.plain) {
+    m.classList.add("karaoke");
+    const words = String(text).split(/\s+/).filter(Boolean);
+    words.forEach((w, i) => {
+      const s = document.createElement("span");
+      s.className = "kw";
+      s.textContent = w;
+      s.onclick = () => speakWord(w);
+      m.appendChild(s);
+      if (i < words.length - 1) m.appendChild(document.createTextNode(" "));
+    });
+  } else {
+    m.textContent = text;
+  }
   if (els) els.forEach(([tag, txt]) => {
     if (tag === "b") { const b = document.createElement("b"); b.textContent = txt; m.appendChild(b); }
     if (tag === "br") m.appendChild(document.createElement("br"));
@@ -866,6 +987,18 @@ function addMsg(text, who, els) {
   $("messages").appendChild(m);
   $("messages").scrollTop = $("messages").scrollHeight;
   return m;
+}
+
+// tap-a-word -> buddy says that word alone (pre-reading skill).
+// Forces the browser voice: the neural mp3 is the WHOLE answer, so a word
+// tap must not replay it.
+function speakWord(w) {
+  const clean = String(w).replace(/[^A-Za-z0-9'?-]/g, "");
+  if (!clean) return;
+  const saved = state.lastVoice;
+  state.lastVoice = Object.assign({}, saved, { engine: "browser" });
+  speak(clean, {});
+  state.lastVoice = saved;
 }
 
 function flyStar(fromBadge) {
@@ -1284,42 +1417,87 @@ function toggleMic() {
 }
 
 // ======================================================================
-// STAGE 3 — LIVING FACE: blink, lip-sync, moods
+// STAGE 3 — LIVING ANIMALS (full-body SVG; see animals.js + buddy-life.js)
 // ======================================================================
-const FACE = { blinkTimer: null, moodTimer: null, moods: 0 };
-
 function faceTalk(on) {
-  const m = $("face-mouth-group");
-  if (!m) return;
-  m.innerHTML = '<ellipse id="face-mouth" cx="32" cy="48" rx="7" ry="3.2" fill="#1e1b4b" opacity=".85"></ellipse>';
-  if (on) m.classList.add("mouth-talk"); else m.classList.remove("mouth-talk");
+  setTalking($("face-stage"), on);
+  setTalking($("hero-stage"), on);
   $("stop-talk").classList.toggle("hidden", !on);
 }
 
 function faceMood(mood, secs) {
-  const svg = $("face-svg");
-  svg.classList.remove("mood-bounce", "mood-tilt", "mood-cheer");
-  clearTimeout(FACE.moodTimer);
-  const cls = { excited: "mood-bounce", confused: "mood-tilt", celebrate: "mood-cheer" }[mood];
-  if (!cls) return;
-  svg.classList.add(cls);
+  setMood($("face-stage"), mood, secs);
+  setMood($("hero-stage"), mood, secs);
   if (mood === "celebrate") confetti();
-  FACE.moodTimer = setTimeout(() => svg.classList.remove(cls), (secs || 3) * 1000);
 }
 
 function confetti() {
-  const stage = $("face-stage");
   const bits = ["✨", "⭐", "🎉", "🌟", "💫"];
-  for (let i = 0; i < 7; i++) {
-    const c = document.createElement("span");
-    c.className = "confetti";
-    c.textContent = bits[i % bits.length];
-    c.style.left = (10 + Math.random() * 40) + "px";
-    c.style.top = "10px";
-    c.style.setProperty("--dx", (Math.random() * 70 - 35) + "px");
-    stage.appendChild(c);
-    setTimeout(() => c.remove(), 1200);
+  [$("face-stage"), $("hero-stage")].forEach(stage => {
+    if (!stage) return;
+    for (let i = 0; i < 7; i++) {
+      const c = document.createElement("span");
+      c.className = "an-confetti";
+      c.textContent = bits[i % bits.length];
+      c.style.left = (10 + Math.random() * 40) + "px";
+      c.style.top = "10px";
+      c.style.setProperty("--dx", (Math.random() * 70 - 35) + "px");
+      stage.appendChild(c);
+      setTimeout(() => c.remove(), 1300);
+    }
+  });
+}
+
+// star-earned CELEBRATION: the animal dances + confetti (Stage celebrations)
+function buddyCelebrate(secs) {
+  buddyDance($("hero-stage"), secs || 3);
+  buddyDance($("face-stage"), secs || 3);
+  confetti();
+}
+
+// compat name used by kinder.js / tracing.js (dance + wave = party moves)
+function animalMood(mood, secs) {
+  if (mood === "dance" || mood === "wave") {
+    buddyDance($("hero-stage"), secs || 3);
+    buddyDance($("face-stage"), secs || 3);
+    return;
   }
+  faceMood(mood, secs);
+}
+
+// karaoke: the buddy speaks `text` while words light up one by one.
+// Uses the browser voice (not the mp3) so highlight timing can track it;
+// each word is also tappable to hear it alone.
+function karaokeSpeak(text, elId, onEnd) {
+  const box = $(elId);
+  if (!box) { speak(text, { onEnd }); return; }
+  box.innerHTML = "";
+  const words = String(text).split(/\s+/).filter(Boolean);
+  const spans = words.map((w) => {
+    const s = document.createElement("span");
+    s.className = "kw";
+    s.textContent = w;
+    s.onclick = () => speakWord(w);
+    box.appendChild(s);
+    box.appendChild(document.createTextNode(" "));
+    return s;
+  });
+  const saved = state.lastVoice;
+  state.lastVoice = Object.assign({}, saved, { engine: "browser" });
+  speak(text, { onEnd: () => {
+    spans.forEach(s => s.classList.remove("on"));
+    if (onEnd) onEnd();
+  } });
+  state.lastVoice = saved;
+  let i = 0;
+  const step = () => {
+    if (i >= spans.length) return;
+    const s = spans[i++];
+    spans.forEach(x => x.classList.remove("on"));
+    s.classList.add("on");
+    setTimeout(step, 170 + s.textContent.length * 55);
+  };
+  if (spans.length) setTimeout(step, 120);
 }
 
 // ======================================================================
@@ -1633,15 +1811,19 @@ async function openSettings() {
   if (!r.ok) return;
   const d = await r.json();
   const p = d.profile;
-  $("settings-who").textContent = `${p.name} · Grade ${p.grade} · 💠 ${p.points || 0} points`;
+  $("settings-who").textContent = `${p.name} · ` +
+    (p.grade <= 0 ? "KG" : "Grade " + p.grade) + ` · 💠 ${p.points || 0} points`;
   $("set-name").value = p.name;
-  // grade selector 1-12
+  // grade selector: KG + 1-12
   const gs = $("set-grade");
-  if (!gs.options.length)
+  if (!gs.options.length) {
+    const o = document.createElement("option");
+    o.value = 0; o.textContent = "KG (little learners)"; gs.appendChild(o);
     for (let g = 1; g <= 12; g++) {
-      const o = document.createElement("option");
-      o.value = g; o.textContent = "Grade " + g; gs.appendChild(o);
+      const og = document.createElement("option");
+      og.value = g; og.textContent = "Grade " + g; gs.appendChild(og);
     }
+  }
   gs.value = p.grade;
   // board selector
   await loadBoards();
@@ -1681,7 +1863,9 @@ function wireSettings() {
     state.profile = d.profile;
     applyBuddyUI(state.profile);
     updatePointsBadge();
-    $("settings-who").textContent = `${d.profile.name} · Grade ${d.profile.grade} · 💠 ${d.profile.points || 0} points`;
+    $("settings-who").textContent = `${d.profile.name} · ` +
+      (d.profile.grade <= 0 ? "KG" : "Grade " + d.profile.grade) +
+      ` · 💠 ${d.profile.points || 0} points`;
     $("set-msg").textContent = "Saved ✓";
   };
   $("set-voice-save").onclick = async () => {
@@ -2011,6 +2195,22 @@ function wireStage56789() {
     $("story-list-view").classList.remove("hidden");
   };
   $("face-stage").onclick = () => { if (state.pid) openWardrobe(); };
+  // petting: tap the hero animal -> heart + wiggle + a happy line
+  $("hero-stage").onclick = (e) => {
+    e.stopPropagation();
+    petAnimal($("hero-stage"));
+    const lines = ["Hee hee, that tickles! 🐾", "I love you too! 💛",
+      "More pets, more brain power! ⚡", "Yay! Best friend ever! 🌟"];
+    addMsg(lines[Math.floor(Math.random() * lines.length)], "bot");
+  };
+  if ($("kinder-btn")) $("kinder-btn").onclick = openKinderCorner;
+  if ($("trace-btn")) $("trace-btn").onclick = openTracing;
+  if ($("kinder-x")) $("kinder-x").onclick =
+    () => $("kinder-modal").classList.add("hidden");
+  if ($("trace-x")) $("trace-x").onclick =
+    () => $("trace-modal").classList.add("hidden");
+  if (typeof wireKinder === "function") wireKinder();
+  if (typeof wireTracer === "function") wireTracer();
   loadVoices();
 }
 

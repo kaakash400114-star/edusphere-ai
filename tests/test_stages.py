@@ -19,14 +19,16 @@ def _mkprofile(name="StageTester", grade=3, **kw):
     return r.json()["pid"]
 
 
-# ---------- grade rules (final spec: 1-12 only, English only) ----------
-def test_grade_1_to_12_only():
-    r = client.post("/api/profile", json={
-        "name": "Zero", "grade": 0, "parent_pin": "1234"})
-    assert r.status_code == 422
+# ---------- grade rules (grade 0 = KG little learners, then 1-12) ----------
+def test_grade_0_to_12_only():
     r = client.post("/api/profile", json={
         "name": "Thirteen", "grade": 13, "parent_pin": "1234"})
     assert r.status_code == 422
+    r = client.post("/api/profile", json={
+        "name": "Neg", "grade": -1, "parent_pin": "1234"})
+    assert r.status_code == 422
+    assert client.post("/api/profile", json={
+        "name": "Zero", "grade": 0, "parent_pin": "1234"}).status_code == 200
     assert client.post("/api/profile", json={
         "name": "One", "grade": 1, "parent_pin": "1234"}).status_code == 200
     assert client.post("/api/profile", json={

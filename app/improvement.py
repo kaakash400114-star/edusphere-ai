@@ -109,7 +109,7 @@ def _note(rating: str, trend: str, delta, correct: int, total: int,
 
 def improvement_report(raw: dict, grade: int) -> dict:
     """Public improvement payload for the settings page + parent report."""
-    grade = max(1, min(12, int(grade or 1)))
+    grade = max(0, min(12, int(grade or 0)))
     events = list(raw.get("practice_log", []))
 
     if not events:

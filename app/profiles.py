@@ -32,9 +32,9 @@ def create_profile(name: str, grade: int, parent_pin: str,
                    character: str = "auto", board: str = "cbse") -> dict:
     from . import boards as _boards
     name = name.strip()[:MAX_NAME_LEN]
-    grade = int(grade or 1)
-    if not name or not (1 <= grade <= 12):
-        raise ValueError("need a name and grade 1-12")
+    grade = int(grade or 0)
+    if not name or not (0 <= grade <= 12):
+        raise ValueError("need a name and grade 0-12")
     PROFILES_DIR.mkdir(parents=True, exist_ok=True)
     pid = f"{name.lower()}-{secrets.token_hex(3)}"
     profile = {

@@ -44,10 +44,18 @@ BUDDY_VOICES: dict[str, dict] = {
     "nova":   {"voice": "en-IN-NeerjaNeural",      "rate": "-4%",  "pitch": "+0Hz"},   # calm, precise
 }
 
-# ---- grade-band delivery profiles (Stage 3) -------------------------
+# ---- grade-band delivery profiles (Stage 3 + kinder band) -------------
 # pace multiplies the buddy's base rate (lower = slower, more immature);
 # pause inserts breath breaks into the spoken text at this grade band.
 GRADE_STYLE: dict[str, dict] = {
+    "kinder":  {"grades": (0, 0),   "pace": 0.82, "max_words_per_breath": 6,
+                "style": (
+                    "SPEAKING STYLE: you are talking to a 4-5 year old who "
+                    "may not read. Tiny sentences of 5-7 words. Simplest "
+                    "possible words. Say letter sounds and numbers slowly "
+                    "and joyfully. Sound like a magical, giggly grown-up "
+                    "friend. Ask tiny playful questions. Celebrate "
+                    "everything with warmth.")},
     "little":  {"grades": (1, 2),   "pace": 0.90, "max_words_per_breath": 8,
                 "style": (
                     "SPEAKING STYLE: tiny sentences (max 8 words). Simplest "
@@ -78,7 +86,7 @@ GRADE_STYLE: dict[str, dict] = {
 
 
 def grade_style(grade: int | None) -> dict:
-    g = max(1, min(12, int(grade or 1)))
+    g = max(0, min(12, int(grade or 0)))
     for style in GRADE_STYLE.values():
         lo, hi = style["grades"]
         if lo <= g <= hi:

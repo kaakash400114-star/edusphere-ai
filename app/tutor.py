@@ -9,7 +9,8 @@ import time
 
 import httpx
 
-from . import boards, characters, conversation, knowledge, neural_voice, worlds
+from . import boards, characters, conversation, knowledge, kinder, \
+    neural_voice, worlds
 
 BASE_URL = os.environ.get(
     "GLM_BASE_URL", "https://api.z.ai/api/coding/paas/v4").rstrip("/")
@@ -24,7 +25,7 @@ def _system_prompt(name: str, grade: int, buddy_id: str,
     world = worlds.resolve_world(grade)
     if world_id and world_id in worlds.WORLDS:
         world = worlds.WORLDS[world_id]
-    spoken = world_id in ("meadow", "kindergarten")  # pre-grade worlds no longer exist
+    spoken = grade <= 2  # little learners: pure spoken play, no lists
     return (
         "You are EduSphere AI, a tutor app for children. You fully play one "
         "character:\n"
@@ -34,7 +35,9 @@ def _system_prompt(name: str, grade: int, buddy_id: str,
         + conversation.memory_directive(memories or [])
         + conversation.language_directive()
         + boards.english_directive(board)
-        + (f"\nSTUDENT: {name}, grade {grade} (about age {5 + grade}).\n")
+        + (f"\nSTUDENT: {name}, "
+           + (f"age about {4 + grade}, in kindergarten (play-based learning)"
+              if grade <= 0 else f"grade {grade} (about age {5 + grade}).") + "\n")
         + f"WEAK AREAS to gently revisit: {weak}.\n\n"
         "RULES:\n"
         "- Teach ONLY the topic asked, using the CURRICULUM EXCERPT when given. "
@@ -77,15 +80,24 @@ def ask(name: str, grade: int, buddy: str, question: str,
         weak_areas: list[str] | None = None, mode: str | None = None,
         memories: list[str] | None = None, board: str | None = None) -> str:
     """One tutor turn: buddy persona + world style + human speech -> answer."""
-    grade = max(1, min(12, int(grade or 1)))
+    grade = max(0, min(12, int(grade or 0)))
     buddy = characters.character_for(grade, buddy)["id"]
     world = worlds.resolve_world(grade)
     subject_hint = worlds.knowledge_subject_hint(world["id"], subject)
-    excerpt = knowledge.extract_relevant(
-        subject_hint, grade, question,
-        path=boards.knowledge_path_for(board, subject_hint, grade))
+    excerpt = ""
+    if grade >= 1:
+        excerpt = knowledge.extract_relevant(
+            subject_hint, grade, question,
+            path=boards.knowledge_path_for(board, subject_hint, grade))
+    else:
+        # KG: kindergarten foundations (letters, counting, shapes, colors)
+        kc = kinder.kinder_context(question)
+        if kc:
+            excerpt = kc
     system = _system_prompt(name, grade, buddy, weak_areas or [],
                             memories=memories, board=board)
+    # little learners get the play-based tone directive
+    system += kinder.kinder_tone(grade)
     mode_def = characters.MODES.get(buddy)
     if mode and mode_def and mode_def["trigger"] == mode:
         system += "\n" + mode_def["instructions"] + "\n"

@@ -1,8 +1,7 @@
 """The Four Worlds — Part 2 of EduSphere AI.
 
-One app, four lands. Growing up = traveling to a new land.
-- Sunny Meadow: ages 1-3 (pre-grade, tap-joy, no failure)
-- Rainbow Kindergarten: ages 4-5 (pre-grade, letters/numbers through play)
+One app, five lands. Growing up = traveling to a new land.
+- Sunny Meadow: KG little learners (grade 0) — letters/numbers/shapes/colors/rhymes through play
 - Explorer Village: grades 1-2 (first reading, shop math, nature walks)
 - Champion Mountains: grades 3-5 (multiplication climbs, fraction pizzas,
   grammar quests, science labs, tournaments)
@@ -24,6 +23,31 @@ def _register(**kw) -> None:
     assert wid not in WORLDS, f"duplicate world id {wid}"
     WORLDS[wid] = kw
 
+
+_register(
+    id="meadow",
+    name="Sunny Meadow",
+    emoji="🌸",
+    tagline="Letters, numbers, shapes and songs — learning through play.",
+    ages="Little learners (KG)",
+    grades=(0, 0),
+    color="#f472b6",
+    greeting=("Welcome to Sunny Meadow! Pick a flower, count the "
+              "butterflies, and sing with your buddy!"),
+    mood=("Play-group guide. The child is 5 or 6 and may not read yet. "
+          "Speak in tiny spoken sentences of at most 8 words. Teach "
+          "letters, counting, shapes, colors and rhymes through play. "
+          "Cheer every try. Gentle, slow, magical, zero pressure."),
+    activities=[
+        {"emoji": "🔤", "label": "Letter sounds", "prompt": "Teach me the letter A sound!"},
+        {"emoji": "🍎", "label": "Counting fun", "prompt": "Count apples with me!"},
+        {"emoji": "🔺", "label": "Shape hunt", "prompt": "Show me shapes around us!"},
+        {"emoji": "🌈", "label": "Color splash", "prompt": "What do red and yellow make?"},
+        {"emoji": "🎵", "label": "Rhyme time", "prompt": "Sing a rhyme with me!"},
+        {"emoji": "🎲", "label": "Play a game", "prompt": "Let's play a fun learning game!"},
+    ],
+    host_ids=["pip", "miko", "leo"],
+)
 
 _register(
     id="academy",
@@ -126,12 +150,15 @@ _register(
 
 
 def resolve_world(grade: int | None = None, age: int | None = None) -> dict:
-    """Pick the right world from grade (final spec grade bands).
+    """Pick the right world from grade.
 
-    Grades 1-2 -> Explorer Village, 3-5 -> Champion Mountains,
-    6-8 -> Scholar Academy, 9-12 -> Wisdom Tower. `age` is ignored.
+    Grade 0 (KG) -> Sunny Meadow, 1-2 -> Explorer Village,
+    3-5 -> Champion Mountains, 6-8 -> Scholar Academy, 9-12 -> Wisdom Tower.
+    `age` is ignored.
     """
-    g = int(grade or 1)
+    g = int(grade or 0)
+    if g <= 0:
+        return WORLDS["meadow"]
     for w in WORLDS.values():
         lo, hi = w["grades"]
         if lo and lo <= g <= hi:
@@ -145,7 +172,7 @@ def public(wid: str) -> dict:
 
 
 def roster() -> list[dict]:
-    return [public(w) for w in ("village", "mountains", "academy", "tower")]
+    return [public(w) for w in ("meadow", "village", "mountains", "academy", "tower")]
 
 
 def world_for_profile(profile: dict) -> dict:
