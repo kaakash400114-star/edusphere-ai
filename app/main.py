@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import characters, conversation, knowledge, levels, profiles, tutor, worlds
+from . import characters, conversation, knowledge, levels, neural_voice, profiles, tutor, worlds
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -194,6 +194,13 @@ def chat(body: ChatRequest):
     voice = conversation.voice_public(buddy["id"])
     voice["pace"] = conversation.pace_for_grade(profile.get("grade"))
     voice["lang"] = "en-US"
+    # human-like neural voice: pre-synthesize the reply mp3 server-side
+    audio_url = None
+    mp3 = neural_voice.synth(buddy["id"], answer[:600])
+    if mp3:
+        audio_url = "/tts/" + os.path.basename(mp3)
+    voice["engine"] = "edge" if audio_url else "browser"
+    voice["audio_url"] = audio_url
     # stage 2: the buddy may tuck a 'MEMORY: ...' line into its answer —
     # split it off (case-insensitive), save it, show only the spoken part
     memory_note = ""
@@ -460,6 +467,19 @@ def buy_level(pid: str, body: LevelBuyRequest):
 def _topic_from(subject: str, message: str) -> str:
     words = [w for w in message.split() if len(w) > 3][:4]
     return f"{subject}: {' '.join(words)}" if words else subject
+
+
+# ---------------- neural TTS audio serving ----------------
+
+@app.get("/tts/{fname}")
+def tts_audio(fname: str):
+    import tempfile
+    path = os.path.join(tempfile.gettempdir(), "edusphere_tts", fname)
+    # only hashed mp3 filenames, no traversal
+    if (fname.endswith(".mp3") and "/" not in fname and "\\" not in fname
+            and os.path.exists(path)):
+        return FileResponse(path, media_type="audio/mpeg")
+    raise HTTPException(404)
 
 
 # ---------------- static + PWA ----------------

@@ -814,7 +814,7 @@ async function send(preset) {
         faceMood("confused", 2);
       else faceMood("excited", 1.6);
       // stage 1: speak the answer aloud; walkie-talkie relistens after
-      speak(data.answer, { autoListen: Buddy.autoListen });
+      speak(data.answer, { autoListen: Buddy.autoListen, rawText: data.answer });
       dropSticker("chat");
     }
   } catch (e) {
@@ -1067,16 +1067,22 @@ function speakableText(text) {
     .trim();
 }
 
-// speak with the current buddy's voice profile; opts.onEnd when finished
+// speak with the current buddy's voice; prefers the server's human neural
+// mp3 (edge-tts), falls back to browser Web Speech when unavailable
+let ttsAudio = null;                       // single shared <audio> element
 function speak(text, opts = {}) {
   const clean = speakableText(text);
-  if (!voiceSupported() || !clean) { if (opts.onEnd) opts.onEnd(); return; }
+  if (!clean) { if (opts.onEnd) opts.onEnd(); return; }
+  const prof = state.lastVoice || {};
+  if (prof.engine === "edge" && prof.audio_url) {
+    speakNeural(prof.audio_url, opts); return;
+  }
+  if (!voiceSupported()) { if (opts.onEnd) opts.onEnd(); return; }
   speechSynthesis.cancel();               // interrupt: stop whatever is talking
   const u = new SpeechSynthesisUtterance(clean);
   const v = pickVoice();
   if (v) u.voice = v;
   u.lang = "en-US";
-  const prof = state.lastVoice || {};
   u.rate = Math.max(0.5, Math.min(2, (prof.rate || 0.95) * (prof.pace || 1)));
   u.pitch = Math.max(0, Math.min(2, prof.pitch || 1));
   Buddy.speaking = true;
@@ -1090,7 +1096,29 @@ function speak(text, opts = {}) {
   $("stop-talk").classList.remove("hidden");
 }
 
+function speakNeural(url, opts = {}) {
+  stopSpeaking();
+  if (!ttsAudio) ttsAudio = new Audio();
+  ttsAudio.src = url;
+  Buddy.speaking = true;
+  faceTalk(true);
+  $("stop-talk").classList.remove("hidden");
+  ttsAudio.onended = () => { Buddy.speaking = false; faceTalk(false);
+    if (opts.autoListen && micSupported()) startListening(true);
+    if (opts.onEnd) opts.onEnd(); };
+  ttsAudio.onerror = () => {               // mp3 failed -> browser voice
+    Buddy.speaking = false; faceTalk(false);
+    const prof2 = Object.assign({}, state.lastVoice, { engine: "browser" });
+    const saved = state.lastVoice; state.lastVoice = prof2;
+    speak(opts.rawText || "", opts); state.lastVoice = saved;
+  };
+  ttsAudio.play().catch(() => {            // autoplay blocked -> browser voice
+    Buddy.speaking = false; faceTalk(false);
+  });
+}
+
 function stopSpeaking() {
+  if (ttsAudio) { try { ttsAudio.pause(); ttsAudio.currentTime = 0; } catch (e) {} }
   if (voiceSupported()) speechSynthesis.cancel();
   Buddy.speaking = false;
   faceTalk(false);
