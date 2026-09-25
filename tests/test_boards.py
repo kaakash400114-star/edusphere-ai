@@ -73,10 +73,21 @@ def test_cbse_resolution_prefers_board_files():
     path = boards.knowledge_path_for("cbse", "math", 10)
     assert path is not None
     assert "boards" in str(path) and "cbse" in str(path)
-    # a board without its own files falls back to the default base file
+    # a board WITH its own files resolves to them
     path2 = boards.knowledge_path_for("icse", "math", 10)
     assert path2 is not None
-    assert "icse" not in str(path2)
+    assert "icse" in str(path2)
+
+
+def test_every_board_resolves_all_grades_and_subjects():
+    # all six boards now have full coverage grades 1-12
+    for board in ("cbse", "icse", "matriculation", "tn_state",
+                  "american", "british"):
+        for g in range(1, 13):
+            for sub in ("math", "science", "english"):
+                p = boards.knowledge_path_for(board, sub, g)
+                assert p is not None, f"{board} {sub} {g}: no file"
+                assert p.exists(), f"{board} {sub} {g}: file missing"
 
 
 def test_extract_relevant_uses_resolver():
