@@ -268,6 +268,23 @@ button:disabled{opacity:.5;cursor:default}
 #task-done{background:#dcfce7}
 #task-drop{background:#fee2e2}
 
+/* rework stage 2: account settings */
+.set-sec{border:2px solid #e0e7ff;border-radius:14px;padding:12px 14px;margin:12px 0}
+.set-sec h4{margin:0 0 8px;color:var(--brand)}
+.set-row{display:flex;align-items:center;gap:10px;margin:8px 0}
+.set-row span{font-size:.85rem;font-weight:700;min-width:110px}
+.set-row input[type=text],.set-row input:not([type]),.set-row input[type=password]{
+  flex:1;padding:8px 10px;border:2px solid #e0e7ff;border-radius:10px;
+  font-family:inherit;font-size:.9rem}
+.set-row select{flex:1;padding:8px;border:2px solid #e0e7ff;border-radius:10px;
+  font-family:inherit;font-size:.9rem}
+.imp-big{display:flex;align-items:center;gap:12px;margin:6px 0 10px}
+.imp-badge{font-size:1.5rem;font-weight:900;padding:6px 16px;border-radius:14px;color:#fff}
+.imp-note{font-size:.85rem;color:var(--ink);line-height:1.5}
+.imp-sub{border-top:1.5px dashed #e0e7ff;padding:8px 0;margin-top:6px}
+.imp-sub .l1{display:flex;justify-content:space-between;font-size:.85rem;font-weight:700}
+.imp-sub .l2{font-size:.75rem;color:var(--muted)}
+
 /* parent modal */
 .modal{position:fixed;inset:0;background:rgba(30,27,75,.45);z-index:20;
   display:flex;align-items:center;justify-content:center;padding:16px}
@@ -361,6 +378,7 @@ button:disabled{opacity:.5;cursor:default}
       <button id="games-btn" class="badge badge-btn" title="Games arcade">🎮 Games</button>
       <button id="stories-btn" class="badge badge-btn" title="Read-along stories">📚 Stories</button>
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
+      <button id="settings-btn" class="btn-ghost" title="Account settings">⚙️</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
     </div>
   </header>
@@ -438,6 +456,50 @@ button:disabled{opacity:.5;cursor:default}
     <h2>🧭 Practice</h2>
     <p class="modal-sub" id="practice-points">Points: 💠 0 · every topic is free — finish one to earn points!</p>
     <div id="practice-list"></div>
+  </div>
+</div>
+
+<!-- ACCOUNT SETTINGS MODAL (stage 2 rework) -->
+<div id="settings-modal" class="modal hidden">
+  <div class="modal-card" style="width:min(520px,96vw)">
+    <button class="modal-x" id="settings-x">✕</button>
+    <h2>⚙️ Account Settings</h2>
+    <p class="modal-sub" id="settings-who"></p>
+
+    <div class="set-sec">
+      <h4>Profile</h4>
+      <label class="set-row"><span>Name</span>
+        <input id="set-name" maxlength="20"></label>
+      <label class="set-row"><span>Grade (1–12)</span>
+        <select id="set-grade"></select></label>
+      <label class="set-row"><span>Buddy</span>
+        <select id="set-buddy"></select></label>
+      <button id="set-save" class="btn-primary">Save profile</button>
+      <p id="set-msg" class="err"></p>
+    </div>
+
+    <div class="set-sec">
+      <h4>Voice</h4>
+      <label class="set-row"><span>Buddy voice</span>
+        <input type="checkbox" id="set-voice-on" style="transform:scale(1.4)"></label>
+      <label class="set-row"><span>Speed <b id="set-speed-val"></b></span>
+        <input type="range" id="set-speed" min="0.5" max="2" step="0.05" style="flex:1"></label>
+      <button id="set-voice-save" class="btn-primary">Save voice</button>
+    </div>
+
+    <div class="set-sec">
+      <h4>Parent PIN</h4>
+      <label class="set-row"><span>Current PIN</span>
+        <input id="set-pin-old" type="password" inputmode="numeric" maxlength="8"></label>
+      <label class="set-row"><span>New PIN</span>
+        <input id="set-pin-new" type="password" inputmode="numeric" maxlength="8"></label>
+      <button id="set-pin-save" class="btn-primary">Change PIN</button>
+    </div>
+
+    <div class="set-sec">
+      <h4>Improvement — honest rating</h4>
+      <div id="set-improve"></div>
+    </div>
   </div>
 </div>
 
@@ -902,6 +964,8 @@ async function openReport() {
       ${bars ? `<div class="week-bars">${bars}</div>` : "<i>no activity yet</i>"}</div>
     <div class="report-sec"><h3>Needs practice</h3>${pills(rep.weak_areas, "weak")}</div>
     <div class="report-sec"><h3>Strong areas</h3>${pills(rep.strong_areas, "strong")}</div>
+    <div class="report-sec"><h3>Improvement (honest)</h3>
+      ${rep.improvement ? impBlock(rep.improvement) : "<i>no data yet</i>"}</div>
     <div class="report-sec"><h3>Recent topics</h3>${rep.topics_covered.slice(-10)
       .map(t => `<span class="pill">${t}</span>`).join("") || "<i>none yet</i>"}</div>`;
   $("parent-pin-row").classList.add("hidden");
@@ -1020,6 +1084,9 @@ function speakableText(text) {
 // mp3 (edge-tts), falls back to browser Web Speech when unavailable
 let ttsAudio = null;                       // single shared <audio> element
 function speak(text, opts = {}) {
+  if (state.profile && state.profile.voice_on === false) {
+    if (opts.onEnd) opts.onEnd(); return;      // voice off in settings
+  }
   const clean = speakableText(text);
   if (!clean) { if (opts.onEnd) opts.onEnd(); return; }
   const prof = state.lastVoice || {};
@@ -1032,7 +1099,8 @@ function speak(text, opts = {}) {
   const v = pickVoice();
   if (v) u.voice = v;
   u.lang = "en-US";
-  u.rate = Math.max(0.5, Math.min(2, (prof.rate || 0.95) * (prof.pace || 1)));
+  const speed = (state.profile && state.profile.voice_speed) || 1;
+  u.rate = Math.max(0.5, Math.min(2, (prof.rate || 0.95) * (prof.pace || 1) * speed));
   u.pitch = Math.max(0, Math.min(2, prof.pitch || 1));
   Buddy.speaking = true;
   faceTalk(true);
@@ -1046,9 +1114,14 @@ function speak(text, opts = {}) {
 }
 
 function speakNeural(url, opts = {}) {
+  if (state.profile && state.profile.voice_on === false) {
+    if (opts.onEnd) opts.onEnd(); return;      // voice off in settings
+  }
+  const speed = (state.profile && state.profile.voice_speed) || 1;
   stopSpeaking();
   if (!ttsAudio) ttsAudio = new Audio();
   ttsAudio.src = url;
+  ttsAudio.playbackRate = Math.max(0.5, Math.min(2, speed));
   Buddy.speaking = true;
   faceTalk(true);
   $("stop-talk").classList.remove("hidden");
@@ -1437,6 +1510,111 @@ function checkBoss() {
 }
 
 // ======================================================================
+// STAGE 2 REWORK — ACCOUNT SETTINGS + HONEST IMPROVEMENT RATE
+// ======================================================================
+const IMP_STYLE = {
+  "Amazing":   ["#16a34a", "🌟"], "Very Good": ["#22c55e", "🎉"],
+  "Good":      ["#84cc16", "👍"], "Fair":      ["#eab308", "🙂"],
+  "Bad":       ["#f97316", "😕"], "Worst":     ["#dc2626", "💪"],
+};
+function impBadge(rating) {
+  const [color, emoji] = IMP_STYLE[rating] || ["#94a3b8", "—"];
+  return `<span class="imp-badge" style="background:${color}">${emoji} ${rating}</span>`;
+}
+function impBlock(imp) {
+  if (!imp || !imp.overall) return "<i>No data yet.</i>";
+  const o = imp.overall;
+  let html = `<div class="imp-big">${o.rating ? impBadge(o.rating) :
+    '<span class="imp-badge" style="background:#94a3b8">— no rating yet</span>'}
+    <div class="imp-note">${o.note}</div></div>`;
+  (imp.subjects || []).forEach(s => {
+    const [color, emoji] = IMP_STYLE[s.rating] || ["#94a3b8", "—"];
+    html += `<div class="imp-sub"><div class="l1"><span>${emoji} ${s.subject}</span>` +
+      `<span style="color:${color}">${s.rating}${s.trend === "improving" ? " ▲" :
+      s.trend === "slipping" ? " ▼" : ""}</span></div>` +
+      `<div class="l2">${s.note}</div></div>`;
+  });
+  return html;
+}
+
+async function openSettings() {
+  const r = await fetch("/api/settings/" + state.pid);
+  if (!r.ok) return;
+  const d = await r.json();
+  const p = d.profile;
+  $("settings-who").textContent = `${p.name} · Grade ${p.grade} · 💠 ${p.points || 0} points`;
+  $("set-name").value = p.name;
+  // grade selector 1-12
+  const gs = $("set-grade");
+  if (!gs.options.length)
+    for (let g = 1; g <= 12; g++) {
+      const o = document.createElement("option");
+      o.value = g; o.textContent = "Grade " + g; gs.appendChild(o);
+    }
+  gs.value = p.grade;
+  // buddy selector
+  const bs = $("set-buddy");
+  bs.innerHTML = "";
+  (state.buddies.length ? state.buddies : await loadBuddies()).forEach(b => {
+    const o = document.createElement("option");
+    o.value = b.id; o.textContent = `${b.emoji} ${b.name}`; bs.appendChild(o);
+  });
+  bs.value = p.character && p.character !== "auto" ? p.character : "leo";
+  // voice
+  $("set-voice-on").checked = p.voice_on !== false;
+  $("set-speed").value = p.voice_speed || 1.0;
+  $("set-speed-val").textContent = (p.voice_speed || 1.0).toFixed(2) + "×";
+  $("set-improve").innerHTML = impBlock(d.improvement);
+  $("settings-modal").classList.remove("hidden");
+}
+
+function wireSettings() {
+  $("settings-btn").onclick = openSettings;
+  $("settings-x").onclick = () => $("settings-modal").classList.add("hidden");
+  $("set-speed").oninput = () =>
+    $("set-speed-val").textContent = parseFloat($("set-speed").value).toFixed(2) + "×";
+  $("set-save").onclick = async () => {
+    $("set-msg").textContent = "";
+    const r = await fetch("/api/settings/" + state.pid, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: $("set-name").value.trim(),
+        grade: parseInt($("set-grade").value, 10),
+        character: $("set-buddy").value }),
+    });
+    const d = await r.json();
+    if (!r.ok) return $("set-msg").textContent = d.detail || "Could not save.";
+    state.profile = d.profile;
+    applyBuddyUI(state.profile);
+    updatePointsBadge();
+    $("settings-who").textContent = `${d.profile.name} · Grade ${d.profile.grade} · 💠 ${d.profile.points || 0} points`;
+    $("set-msg").textContent = "Saved ✓";
+  };
+  $("set-voice-save").onclick = async () => {
+    const r = await fetch("/api/settings/" + state.pid, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ voice_on: $("set-voice-on").checked,
+        voice_speed: parseFloat($("set-speed").value) }),
+    });
+    const d = await r.json();
+    if (r.ok) { state.profile = d.profile;
+      addMsg("🔊 Voice settings saved.", "bot"); }
+  };
+  $("set-pin-save").onclick = async () => {
+    const oldPin = $("set-pin-old").value.trim();
+    const newPin = $("set-pin-new").value.trim();
+    if (!/^\d{4,8}$/.test(newPin)) return $("set-msg").textContent = "New PIN must be 4-8 digits.";
+    const r = await fetch("/api/settings/" + state.pid, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ current_pin: oldPin, new_pin: newPin }),
+    });
+    const d = await r.json();
+    if (!r.ok) return $("set-msg").textContent = d.detail || "Could not change PIN.";
+    $("set-msg").textContent = "PIN changed ✓";
+    $("set-pin-old").value = ""; $("set-pin-new").value = "";
+  };
+}
+
+// ======================================================================
 // REWORK — FREE PRACTICE (replaces sticker album + quests + but-why)
 // ======================================================================
 const SUBJ_EMOJI = { math: "🔢", science: "🔬", english: "📖", general: "🌏" };
@@ -1742,6 +1920,7 @@ function wireStage56789() {
 // wire up
 function wire() {
   wireStage56789();
+  wireSettings();
   $("ob-start").onclick = startLearning;
   $("send").onclick = () => send();
   $("chat-input").addEventListener("keydown", e => {

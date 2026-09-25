@@ -14,7 +14,8 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import characters, conversation, knowledge, neural_voice, practice, profiles, tutor, worlds
+from . import (characters, conversation, improvement, knowledge,
+               neural_voice, practice, profiles, tutor, worlds)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -50,8 +51,22 @@ class ProfileCreate(BaseModel):
 
 
 class ProfileUpdate(BaseModel):
+    name: str | None = Field(default=None, min_length=1, max_length=20)
     grade: int | None = Field(default=None, ge=1, le=12)
     character: str | None = None
+    voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
+    voice_on: bool | None = None
+    parent_pin: str | None = Field(default=None, min_length=4, max_length=8)
+
+
+class SettingsUpdate(BaseModel):
+    name: str | None = Field(default=None, min_length=1, max_length=20)
+    grade: int | None = Field(default=None, ge=1, le=12)
+    character: str | None = None
+    voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
+    voice_on: bool | None = None
+    current_pin: str | None = Field(default=None, min_length=4, max_length=8)
+    new_pin: str | None = Field(default=None, min_length=4, max_length=8)
 
 
 class ChatRequest(BaseModel):
@@ -95,10 +110,56 @@ def get_profile(pid: str):
 def update_profile(pid: str, body: ProfileUpdate):
     if body.character is not None and body.character not in characters.CHARACTERS:
         raise HTTPException(400, "unknown buddy")
-    profile = profiles.update_profile(pid, **body.model_dump())
+    changes = body.model_dump()
+    if changes.get("parent_pin") is not None:
+        if not profiles.check_pin(pid, changes.pop("current_pin") or ""):
+            raise HTTPException(403, "current PIN is wrong")
+    profile = profiles.update_profile(pid, **changes)
     if not profile:
         raise HTTPException(404, "profile not found")
     return {"profile": profile}
+
+
+@app.get("/api/settings/{pid}")
+def get_settings(pid: str):
+    """Everything the Account Settings page shows, in one call."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    raw = profiles._raw(pid) or {}
+    return {
+        "profile": profile,
+        "improvement": improvement.improvement_report(raw, profile["grade"]),
+    }
+
+
+@app.post("/api/settings/{pid}")
+def save_settings(pid: str, body: SettingsUpdate):
+    """Save the Account Settings page (PIN change requires the current PIN)."""
+    if body.character is not None and body.character not in characters.CHARACTERS:
+        raise HTTPException(400, "unknown buddy")
+    changes = {"name": body.name, "grade": body.grade,
+               "character": body.character,
+               "voice_speed": body.voice_speed, "voice_on": body.voice_on}
+    changes = {k: v for k, v in changes.items() if v is not None}
+    if body.new_pin is not None:
+        if not profiles.check_pin(pid, body.current_pin or ""):
+            raise HTTPException(403, "current PIN is wrong")
+        changes["parent_pin"] = body.new_pin
+    if changes.get("grade") is not None:
+        raw = profiles._raw(pid)
+        if raw and raw.get("grade") != changes["grade"]:
+            raw["grade_changes"] = raw.get("grade_changes", [])
+            raw["grade_changes"].append(
+                {"t": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                 "from": raw.get("grade"), "to": changes["grade"]})
+            profiles._write_raw(pid, raw)
+    profile = profiles.update_profile(pid, **changes)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    raw = profiles._raw(pid) or {}
+    return {"profile": profile,
+            "improvement": improvement.improvement_report(raw, profile["grade"])}
 
 
 @app.get("/api/characters")
@@ -359,6 +420,7 @@ def parent_report(body: PinRequest):
     report = profiles.parent_report(body.pid)
     if not report:
         raise HTTPException(404, "profile not found")
+    report["improvement"] = profiles.improvement_section(body.pid)
     return {"report": report}
 
 

@@ -47,6 +47,8 @@ def create_profile(name: str, grade: int, parent_pin: str,
         "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "stars": 0,
         "points": 0,
+        "voice_speed": 1.0,
+        "voice_on": True,
         "streak": {"count": 0, "last_day": ""},
         "weak_areas": {},   # topic -> miss count
         "strong_areas": {},  # topic -> hit count
@@ -79,9 +81,15 @@ def update_profile(pid: str, **changes) -> dict | None:
     if not p.exists():
         return None
     raw = json.loads(p.read_text(encoding="utf-8"))
-    for key in ("grade", "character"):
+    for key in ("grade", "character", "name", "voice_speed", "voice_on"):
         if key in changes and changes[key] is not None:
+            if key == "name":
+                changes[key] = str(changes[key]).strip()[:MAX_NAME_LEN]
+                if not changes[key]:
+                    raise ValueError("name cannot be empty")
             raw[key] = changes[key]
+    if "parent_pin" in changes and changes["parent_pin"] is not None:
+        raw["parent_pin_hash"] = _hash_pin(str(changes["parent_pin"]))
     if "accessory" in changes and changes["accessory"] is not None:
         item = changes["accessory"]
         if item and item not in raw.get("wardrobe", []):
@@ -213,6 +221,15 @@ def parent_report(pid: str) -> dict | None:
         "topics_covered": raw.get("topics_covered", [])[-20:],
         "week": {"days": days, "activities": sum(v for _, v in days)},
     }
+
+
+def improvement_section(pid: str) -> dict | None:
+    """The honest improvement block for the parent report (same engine)."""
+    from . import improvement
+    raw = _raw(pid)
+    if raw is None:
+        return None
+    return improvement.improvement_report(raw, raw.get("grade", 1))
 
 
 def _raw(pid: str) -> dict | None:
