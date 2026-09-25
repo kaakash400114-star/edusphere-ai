@@ -59,8 +59,8 @@ def test_voices_exist_for_all_buddies():
 
 def test_pace_for_grade():
     assert conversation.pace_for_grade(1) < conversation.pace_for_grade(6)
-    assert conversation.pace_for_grade(2) == 0.80
-    assert conversation.pace_for_grade(12) == 1.08
+    assert conversation.pace_for_grade(2) == 0.90
+    assert conversation.pace_for_grade(12) == 1.18
 
 
 def test_chat_returns_english_voice_profile():

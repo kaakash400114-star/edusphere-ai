@@ -19,15 +19,15 @@ def test_pace_monotonic_across_all_grades():
     paces = [conversation.pace_for_grade(g) for g in range(1, 13)]
     assert paces == sorted(paces), f"pace not increasing: {paces}"
     assert paces[0] < paces[-1]
-    assert conversation.pace_for_grade(1) == 0.80
-    assert conversation.pace_for_grade(12) == 1.08
+    assert conversation.pace_for_grade(1) == 0.90
+    assert conversation.pace_for_grade(12) == 1.18
 
 
 def test_grade_style_bands():
     assert neural_voice.grade_style(1)["pace"] < neural_voice.grade_style(4)["pace"]
     assert neural_voice.grade_style(4)["pace"] < neural_voice.grade_style(7)["pace"]
     assert neural_voice.grade_style(7)["pace"] < neural_voice.grade_style(11)["pace"]
-    assert neural_voice.grade_style(2)["max_words_per_breath"] == 7
+    assert neural_voice.grade_style(2)["max_words_per_breath"] == 8
     assert neural_voice.grade_style(11)["max_words_per_breath"] == 16
     assert "tiny sentences" in neural_voice.grade_style(1)["style"]
     assert "senior tutor" in neural_voice.grade_style(12)["style"]

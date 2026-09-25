@@ -1959,7 +1959,7 @@ function readStoryLine() {
     const v = pickVoice();
     if (v) u.voice = v;
     u.lang = "en-US";
-    u.rate = 0.75;                                 // slow, crisp
+    u.rate = 0.9;                                  // crisp but lively
     faceTalk(true);
     u.onend = () => setTimeout(nextWord, 140);     // tiny breath between words
     u.onerror = () => setTimeout(nextWord, 140);
@@ -1975,7 +1975,7 @@ function speakWord(w) {
   const v = pickVoice();
   if (v) u.voice = v;
   u.lang = "en-US";
-  u.rate = 0.75;
+  u.rate = 0.9;
   speechSynthesis.speak(u);
 }
 function storyNav(d) {

@@ -48,31 +48,32 @@ BUDDY_VOICES: dict[str, dict] = {
 # pace multiplies the buddy's base rate (lower = slower, more immature);
 # pause inserts breath breaks into the spoken text at this grade band.
 GRADE_STYLE: dict[str, dict] = {
-    "little":  {"grades": (1, 2),   "pace": 0.80, "max_words_per_breath": 7,
+    "little":  {"grades": (1, 2),   "pace": 0.90, "max_words_per_breath": 8,
                 "style": (
                     "SPEAKING STYLE: tiny sentences (max 8 words). Simplest "
                     "everyday words only. One idea per sentence. Sound happy "
                     "and surprised like a fun grown-up friend. Repeat key "
                     "words once with delight. Pronounce everything clearly "
-                    "and slowly.")},
-    "young":   {"grades": (3, 5),   "pace": 0.90, "max_words_per_breath": 9,
+                    "and keep the tempo lively.")},
+    "young":   {"grades": (3, 5),   "pace": 1.00, "max_words_per_breath": 10,
                 "style": (
                     "SPEAKING STYLE: short sentences. Simple words, but the "
                     "real school term is always named and then explained in "
-                    "one line. Warm and lively. Pronounce new words slowly "
-                    "and clearly, syllable by syllable the first time.")},
-    "middle":  {"grades": (6, 8),   "pace": 1.00, "max_words_per_breath": 12,
+                    "one line. Warm and lively. Pronounce new words clearly, "
+                    "syllable by syllable the first time.")},
+    "middle":  {"grades": (6, 8),   "pace": 1.10, "max_words_per_breath": 13,
                 "style": (
                     "SPEAKING STYLE: normal flowing sentences. Use the "
                     "correct academic terms with a quick plain-words gloss "
                     "when a term is new. Confident, friendly, never babyish. "
                     "Precise pronunciation of technical words.")},
-    "senior":  {"grades": (9, 12),  "pace": 1.08, "max_words_per_breath": 16,
+    "senior":  {"grades": (9, 12),  "pace": 1.18, "max_words_per_breath": 16,
                 "style": (
                     "SPEAKING STYLE: mature, precise, exam-aware English. "
                     "Full technical vocabulary, definitions stated exactly, "
                     "no simplification unless asked. Calm, respectful, "
-                    "straight to the point — talk like a sharp senior tutor.")},
+                    "brisk and straight to the point — like a sharp senior "
+                    "tutor who respects your time.")},
 }
 
 
