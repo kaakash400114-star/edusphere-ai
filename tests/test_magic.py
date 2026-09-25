@@ -55,6 +55,7 @@ def test_stories_roster_and_reader():
     assert r2.status_code == 200
     st = r2.json()["story"]
     assert len(st["words"]) >= 8 and all(isinstance(w, str) for w in st["words"])
+    assert "character" in st  # stage G: interactive stories use animal names
     assert client.get("/api/stories/missing_id").status_code == 404
 
 

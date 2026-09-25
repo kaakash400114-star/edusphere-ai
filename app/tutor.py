@@ -82,6 +82,8 @@ def ask(name: str, grade: int, buddy: str, question: str,
         system += "\n" + mode_def["instructions"] + "\n"
     if mode == "why":
         system += "\n" + conversation.WHY_RULES + "\n"
+    if mode == "story":
+        system += "\n" + conversation.STORY_RULES + "\n"
     if excerpt:
         system += ("\n\nCURRICULUM EXCERPT (authoritative for this grade):\n"
                    + excerpt)

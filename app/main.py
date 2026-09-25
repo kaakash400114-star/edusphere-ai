@@ -287,6 +287,86 @@ def list_stories():
     return {"stories": conversation.stories_roster()}
 
 
+class StoryTellRequest(BaseModel):
+    pid: str
+    story: str = Field(min_length=1, max_length=60)
+    beat: int = Field(ge=0, le=10)
+    reply: str = Field(default="", max_length=1000)
+
+
+def _interactive_roster() -> list[dict]:
+    out = []
+    for sid, s in conversation.INTERACTIVE_STORIES.items():
+        out.append({"id": sid, "title": s["title"], "emoji": s["emoji"],
+                    "character": s["character"], "beats": len(s["beats"])})
+    return out
+
+
+@app.get("/api/stories/interactive")
+def list_interactive():
+    """Stage G: conversational stories roster."""
+    return {"stories": _interactive_roster()}
+
+
+@app.get("/api/stories/interactive/{sid}")
+def get_interactive(sid: str):
+    s = conversation.INTERACTIVE_STORIES.get(sid)
+    if not s:
+        raise HTTPException(404, "story not found")
+    return {"story": {"id": sid, **{k: s[k] for k in
+            ("title", "emoji", "character")}, "beats": len(s["beats"]),
+            "moral": s["moral"]}}
+
+
+@app.post("/api/story/tell")
+def story_tell(body: StoryTellRequest):
+    """One interactive story turn: the animal speaks this beat.
+
+    The child's reply to the previous beat is woven in. Returns the
+    animal's spoken line + whether this was the final beat.
+    """
+    profile = profiles.get_profile(body.pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    s = conversation.INTERACTIVE_STORIES.get(body.story)
+    if not s:
+        raise HTTPException(404, "story not found")
+    beats = s["beats"]
+    if body.beat < 0 or body.beat >= len(beats):
+        raise HTTPException(400, "beat out of range")
+    narration = beats[body.beat]
+    final = body.beat == len(beats) - 1
+
+    # Personalize with the child's name in beat 0 and the final beat
+    name = profile["name"]
+    if body.beat == 0:
+        narration = f"Hello {name}! Come close — I have a story for you. {narration}"
+    if final:
+        narration = f"{narration} THE END. Moral of the story: {s['moral']}"
+
+    # If a reply was given, run one live tutor turn so the animal reacts to
+    # the child's idea in-character (best-effort; fall back to narration).
+    spoken = narration
+    if body.reply.strip():
+        reacted = tutor.ask(
+            name=name, grade=profile["grade"],
+            buddy=profile.get("character") or "auto",
+            question=(f"[The child answers the story: '{body.reply.strip()}'] "
+                      f"[Continue this story beat in-character: {narration}]"),
+            history=[], subject="general",
+            weak_areas=[], mode="story",
+            memories=list(profile.get("memories", [])))
+        if reacted and "brain took a nap" not in reacted \
+                and "Setup needed" not in reacted:
+            spoken = reacted
+    profiles.record_activity(body.pid, "story:" + body.story,
+                             "interactive story")
+    if final:
+        profiles.award_sticker(body.pid, "story_" + body.story)
+    return {"beat": body.beat, "final": final, "spoken": spoken,
+            "moral": s["moral"] if final else ""}
+
+
 @app.get("/api/stories/{sid}")
 def get_story(sid: str):
     if sid not in conversation.STORIES:

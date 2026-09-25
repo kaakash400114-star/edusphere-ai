@@ -502,9 +502,25 @@ button:disabled{opacity:.5;cursor:default}
   <div class="modal-card">
     <button class="modal-x" id="stories-x">✕</button>
     <div id="story-list-view">
-      <h2>📚 Read-Along Stories</h2>
-      <p class="modal-sub">Your buddy reads, words light up. Tap a word to hear it again!</p>
-      <div id="story-list"></div>
+      <h2>📚 Stories</h2>
+      <div style="display:flex;gap:8px;margin:8px 0">
+        <button id="tab-talk" class="lang-pill on">🗣️ Talk with animals</button>
+        <button id="tab-read" class="lang-pill">📖 Read-along</button>
+      </div>
+      <div id="talk-list"></div>
+      <div id="story-list" class="hidden"></div>
+    </div>
+    <div id="talk-reader" class="hidden">
+      <h2 id="talk-title" style="text-align:center"></h2>
+      <div id="talk-page" style="font-size:1.05rem;line-height:1.7;margin:14px 0;min-height:5em"></div>
+      <div id="talk-input-row" class="arena-input">
+        <input id="talk-in" placeholder="What do you say? (or tap the mic!)" autocomplete="off">
+        <button id="talk-go">Say ➤</button>
+      </div>
+      <div class="story-ctrl" style="margin-top:10px">
+        <button id="talk-mic">🎙️ Speak</button>
+        <button id="talk-close">✕ Close story</button>
+      </div>
     </div>
     <div id="story-reader" class="hidden">
       <h2 id="story-title" style="text-align:center"></h2>
@@ -1553,8 +1569,27 @@ async function openQuests() {
   $("quests-modal").classList.remove("hidden");
 }
 
-const STORY_STICKER = new Set();  // story ids already rewarded this session
+// ======================================================================
+// STAGE G — INTERACTIVE STORIES: the animal talks WITH the child
+// ======================================================================
+let talk = null;   // {sid, beat, meta}
+let talkRecog = null;
+
 async function openStories() {
+  // load both lists; default to interactive
+  const ri = await fetch("/api/stories/interactive");
+  const di = await ri.json();
+  const talkList = $("talk-list");
+  talkList.innerHTML = "";
+  (di.stories || []).forEach(s => {
+    const card = document.createElement("div");
+    card.className = "story-card";
+    card.innerHTML = `<span class="em">${s.emoji}</span>` +
+      `<div><div class="qt" style="font-weight:800">${s.title}</div>` +
+      `<div class="qh" style="font-size:.75rem;color:var(--muted)">with ${s.character} · ${s.beats} parts</div></div>`;
+    card.onclick = () => startTalk(s.id);
+    talkList.appendChild(card);
+  });
   const r = await fetch("/api/stories");
   const d = await r.json();
   const list = $("story-list");
@@ -1564,14 +1599,91 @@ async function openStories() {
     card.className = "story-card";
     card.innerHTML = `<span class="em">${s.emoji}</span>` +
       `<div><div class="qt" style="font-weight:800">${s.title}</div>` +
-      `<div class="qh" style="font-size:.75rem;color:var(--muted)">Ages ${s.min_age}+ · read-along</div></div>`;
+      `<div class="qh" style="font-size:.75rem;color:var(--muted)">Read-along · word-by-word</div></div>`;
     card.onclick = () => openReader(s.id);
     list.appendChild(card);
   });
+  setStoryTab("talk");
   $("story-reader").classList.add("hidden");
+  $("talk-reader").classList.add("hidden");
   $("story-list-view").classList.remove("hidden");
   $("stories-modal").classList.remove("hidden");
 }
+
+function setStoryTab(tab) {
+  $("tab-talk").classList.toggle("on", tab === "talk");
+  $("tab-read").classList.toggle("on", tab === "read");
+  $("talk-list").classList.toggle("hidden", tab !== "talk");
+  $("story-list").classList.toggle("hidden", tab !== "read");
+}
+
+async function startTalk(sid) {
+  const r = await fetch("/api/stories/interactive/" + sid);
+  const d = await r.json();
+  talk = { sid, beat: 0, meta: d.story };
+  $("story-title").textContent = `${d.story.emoji} ${d.story.title}`;
+  $("talk-title").textContent = `${d.story.emoji} ${d.story.title}`;
+  $("story-list-view").classList.add("hidden");
+  $("talk-reader").classList.remove("hidden");
+  renderTalkBeat();
+}
+
+async function renderTalkBeat() {
+  const page = $("talk-page");
+  page.innerHTML = '<span class="typing"><span></span><span></span><span></span></span>';
+  const r = await fetch("/api/story/tell", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ pid: state.pid, story: talk.sid,
+      beat: talk.beat, reply: talk.lastReply || "" }),
+  });
+  if (!r.ok) { page.textContent = "Hmm, the story paused. Try again!"; return; }
+  const d = await r.json();
+  talk.spoken = d.spoken;
+  page.textContent = d.spoken;
+  $("talk-in").value = "";
+  speakable(d.spoken);
+  if (d.final) {
+    $("talk-input-row").classList.add("hidden");
+    faceMood("celebrate", 3);
+    dropSticker("story");
+    addMsg(`📖 Story finished: ${talk.meta.title}! A new sticker may be in your album!`, "bot");
+  } else {
+    $("talk-input-row").classList.remove("hidden");
+  }
+}
+
+function speakable(text) {
+  // speak through the buddy voice, page highlight on
+  speak(text, {});
+}
+
+async function submitTalk() {
+  if (!talk) return;
+  const v = ($("talk-in").value || "").trim();
+  if (!v) return;
+  talk.lastReply = v;
+  talk.beat += 1;
+  renderTalkBeat();
+}
+
+function talkMic() {
+  if (!micSupported()) { addMsg("This device has no microphone support.", "bot"); return; }
+  if (talkRecog) { try { talkRecog.abort(); } catch (e) {} talkRecog = null; return; }
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  talkRecog = new SR();
+  talkRecog.lang = "en-US";
+  talkRecog.interimResults = false;
+  $("talk-mic").classList.add("listening");
+  talkRecog.onresult = (e) => { $("talk-in").value = e.results[0][0].transcript; };
+  talkRecog.onend = () => {
+    $("talk-mic").classList.remove("listening");
+    talkRecog = null;
+    if (($("talk-in").value || "").trim()) submitTalk();
+  };
+  try { talkRecog.start(); } catch (e) { talkRecog = null; }
+}
+
+const STORY_STICKER = new Set();  // story ids already rewarded this session
 async function openReader(sid) {
   const r = await fetch("/api/stories/" + sid);
   const d = await r.json();
@@ -1681,6 +1793,15 @@ function wireStage56789() {
   $("quests-x").onclick = () => $("quests-modal").classList.add("hidden");
   $("stories-btn").onclick = openStories;
   $("stories-x").onclick = () => $("stories-modal").classList.add("hidden");
+  $("tab-talk").onclick = () => setStoryTab("talk");
+  $("tab-read").onclick = () => setStoryTab("read");
+  $("talk-go").onclick = submitTalk;
+  $("talk-in").addEventListener("keydown", e => { if (e.key === "Enter") submitTalk(); });
+  $("talk-mic").onclick = talkMic;
+  $("talk-close").onclick = () => {
+    $("talk-reader").classList.add("hidden");
+    $("story-list-view").classList.remove("hidden");
+  };
   $("why-chip").onclick = toggleWhy;
   $("story-prev").onclick = () => storyNav(-1);
   $("story-next").onclick = () => storyNav(1);
