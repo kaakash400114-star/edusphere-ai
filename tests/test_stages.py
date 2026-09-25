@@ -1,4 +1,4 @@
-"""Tests for stages 1,2,5,6,7,8 — voices, memory, games, stickers, report, languages."""
+"""Tests for voices, memory, games, stickers, report (English-only app)."""
 import sys
 from pathlib import Path
 
@@ -19,6 +19,27 @@ def _mkprofile(name="StageTester", grade=3, **kw):
     return r.json()["pid"]
 
 
+# ---------- grade rules (final spec: 1-12 only, English only) ----------
+def test_grade_1_to_12_only():
+    r = client.post("/api/profile", json={
+        "name": "Zero", "grade": 0, "parent_pin": "1234"})
+    assert r.status_code == 422
+    r = client.post("/api/profile", json={
+        "name": "Thirteen", "grade": 13, "parent_pin": "1234"})
+    assert r.status_code == 422
+    assert client.post("/api/profile", json={
+        "name": "One", "grade": 1, "parent_pin": "1234"}).status_code == 200
+    assert client.post("/api/profile", json={
+        "name": "Twelve", "grade": 12, "parent_pin": "1234"}).status_code == 200
+
+
+def test_no_age_field_needed():
+    r = client.post("/api/profile", json={
+        "name": "Ageless", "grade": 4, "parent_pin": "1234"})
+    assert r.status_code == 200
+    assert "age" not in r.json()["profile"]
+
+
 # ---------- stage 1: voices ----------
 def test_voices_exist_for_all_buddies():
     from app import characters
@@ -31,15 +52,16 @@ def test_voices_exist_for_all_buddies():
 
 def test_pace_for_grade():
     assert conversation.pace_for_grade(1) < conversation.pace_for_grade(6)
-    assert conversation.pace_for_grade(None, 3) < conversation.pace_for_grade(6)
+    assert conversation.pace_for_grade(2) == 0.85
 
 
-def test_chat_returns_voice_profile():
+def test_chat_returns_english_voice_profile():
     pid = _mkprofile("Voicey", 3)
     r = client.post("/api/chat", json={"pid": pid, "message": "hello there"})
     assert r.status_code == 200
     v = r.json()["voice"]
-    assert "rate" in v and "pace" in v and v["lang"] == "en-US"
+    assert "rate" in v and "pace" in v
+    assert v["lang"] == "en-US"
 
 
 # ---------- stage 2: memory ----------
@@ -80,19 +102,3 @@ def test_report_has_week_and_stickers():
     rep = r.json()["report"]
     assert "week" in rep and "stickers" in rep
     assert rep["stickers"].get("quiz_quest", 0) >= 1
-
-
-# ---------- stage 8: languages ----------
-def test_languages_meta():
-    r = client.get("/api/meta/languages")
-    langs = {l["id"]: l for l in r.json()["languages"]}
-    assert langs["hi"]["voice_lang"] == "hi-IN"
-    assert langs["ta"]["voice_lang"] == "ta-IN"
-
-
-def test_chat_with_hindi_lang():
-    pid = _mkprofile("HindiKid", 3)
-    r = client.post("/api/chat", json={
-        "pid": pid, "message": "hello", "lang": "hi"})
-    assert r.status_code == 200
-    assert r.json()["voice"]["lang"] == "hi-IN"

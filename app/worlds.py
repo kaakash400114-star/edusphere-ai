@@ -127,23 +127,18 @@ _register(
 
 
 def resolve_world(grade: int | None = None, age: int | None = None) -> dict:
-    """Pick the right world from grade (and age for pre-graders).
+    """Pick the right world from grade.
 
     Grades 1-2 -> Explorer Village, 3-5 -> Champion Mountains, 6+ stays in
-    Champion Mountains (it is the top land). Pre-graders route by age:
-    <=3 Sunny Meadow, 4-5 Rainbow Kindergarten. A 6-year-old with no grade
-    also lands in Kindergarten (typical first-grade entry age elsewhere).
+    Champion Mountains (it is the top land). Grade-only routing (final spec):
+    no preschool, no age-based lands.
     """
-    if grade and grade >= 1:
-        for w in WORLDS.values():
-            lo, hi = w["grades"]
-            if lo and lo <= grade <= hi:
-                return w
-        return WORLDS["mountains"]  # grade 6+ tops out in the Mountains
-    age_val = age or 5
-    if age_val <= 3:
-        return WORLDS["meadow"]
-    return WORLDS["kindergarten"]
+    g = int(grade or 1)
+    for w in WORLDS.values():
+        lo, hi = w["grades"]
+        if lo and lo <= g <= hi:
+            return w
+    return WORLDS["mountains"]  # grade 6+ tops out in the Mountains (for now)
 
 
 def public(wid: str) -> dict:

@@ -1,4 +1,4 @@
-"""Stage 9: quests, stories, and why-mode plumbing."""
+"""Stage 9 magic extras + English-only language rules."""
 import sys
 from pathlib import Path
 
@@ -17,6 +17,11 @@ def _mk(name="Questy", grade=2, **kw):
         "name": name, "grade": grade, "parent_pin": "1234", **kw})
     assert r.status_code == 200, r.text
     return r.json()["pid"]
+
+
+def test_english_only_languages():
+    assert list(conversation.LANGUAGES.keys()) == ["en"]
+    assert conversation.LANGUAGES["en"]["voice_lang"] == "en-US"
 
 
 def test_quests_list_and_complete():

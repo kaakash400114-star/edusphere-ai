@@ -29,20 +29,17 @@ def _path(pid: str) -> Path:
 
 
 def create_profile(name: str, grade: int, parent_pin: str,
-                   character: str = "auto", age: int | None = None) -> dict:
+                   character: str = "auto") -> dict:
     name = name.strip()[:MAX_NAME_LEN]
-    grade = int(grade or 0)
-    if not name or not (0 <= grade <= 12):
-        raise ValueError("need a name and grade 0-12 (0 = pre-school)")
-    if grade == 0 and not (age and 2 <= int(age) <= 7):
-        raise ValueError("pre-school learners need an age between 2 and 7")
+    grade = int(grade or 1)
+    if not name or not (1 <= grade <= 12):
+        raise ValueError("need a name and grade 1-12")
     PROFILES_DIR.mkdir(parents=True, exist_ok=True)
     pid = f"{name.lower()}-{secrets.token_hex(3)}"
     profile = {
         "pid": pid,
         "name": name,
         "grade": grade,
-        "age": int(age) if age else None,
         "character": character,
         "parent_pin_hash": _hash_pin(parent_pin),
         "parent_consent": True,
@@ -81,7 +78,7 @@ def update_profile(pid: str, **changes) -> dict | None:
     if not p.exists():
         return None
     raw = json.loads(p.read_text(encoding="utf-8"))
-    for key in ("grade", "character", "age"):
+    for key in ("grade", "character"):
         if key in changes and changes[key] is not None:
             raw[key] = changes[key]
     if "accessory" in changes and changes["accessory"] is not None:

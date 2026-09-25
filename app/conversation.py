@@ -1,8 +1,6 @@
-"""Stage 1+2+8 backend: voices, human-like conversation rules, memory, language.
+"""Stage 1+2 backend: voices, human-like conversation rules, memory.
 
-VOICES: per-buddy Web Speech API profile (rate/pitch picked client-side).
-CONVERSATION: fillers, ask-backs, and memory woven into the system prompt.
-LANGUAGES: reply language instruction (en/hi/ta) — voice follows on frontend.
+ENGLISH-ONLY APP (final spec): one language, clean en-US speech.
 """
 from __future__ import annotations
 
@@ -23,29 +21,25 @@ VOICES: dict[str, dict] = {
 
 LANGUAGES: dict[str, dict] = {
     "en": {"name": "English", "voice_lang": "en-US",
-           "instruction": "Reply in simple English."},
-    "hi": {"name": "हिन्दी", "voice_lang": "hi-IN",
-           "instruction": ("Reply in simple Hindi written in Devanagari, "
-                           "with easy English words kept in English.")},
-    "ta": {"name": "தமிழ்", "voice_lang": "ta-IN",
-           "instruction": ("Reply in simple Tamil written in Tamil script, "
-                           "with easy English words kept in English.")},
+           "instruction": "Reply in simple, clear English."},
 }
 
-# grade -> speaking pace multiplier (stage 2: slow for little kids)
+# grade -> speaking pace multiplier (slower for little kids)
 def pace_for_grade(grade: int | None, age: int | None = None) -> float:
-    if grade and grade >= 1:
-        if grade <= 2:
-            return 0.85
-        if grade <= 5:
-            return 0.95
-        return 1.0
-    a = age or 5
-    return 0.75 if a <= 3 else 0.85
+    g = grade or 1
+    if g <= 2:
+        return 0.85
+    if g <= 5:
+        return 0.95
+    return 1.0
 
 
 HUMAN_RULES = (
-    "SPEAK LIKE A REAL PERSON (you are talking aloud, not writing):\n"
+    "SPEAK LIKE A REAL PERSON (you are talking aloud, and every word you "
+    "write is spoken one word at a time to a child):\n"
+    "- PRONUNCIATION IS sacrosanct: write every word out in full, plainly. "
+    "No ALL-CAPS words, no leetspeak, no symbols read aloud. Write numbers "
+    "small (3 x 4) and say them in words when clearer ('three times four').\n"
     "- Start naturally sometimes: 'Hmm…', 'Ooh!', 'Okay okay, listen—', "
     "'Whaaat?', or a small laugh 'hehe'. Not every message — when it fits.\n"
     "- Short spoken sentences. Contractions (I'm, you're, let's).\n"
@@ -61,8 +55,7 @@ HUMAN_RULES = (
     "- If the child seems stuck or quiet, gently check in: 'Still with "
     "me? Want me to say it again differently?'\n"
     "- Never write markdown tables, bullet lists, or headings — speak in "
-    "flowing spoken sentences. Numbers stay simple (say 'three times "
-    "four', write 3 x 4).\n"
+    "flowing spoken sentences.\n"
 )
 
 
@@ -75,9 +68,9 @@ def memory_directive(memories: list[str]) -> str:
             + "; ".join(memories[:6]) + "\n")
 
 
-def language_directive(lang: str) -> str:
-    l = LANGUAGES.get(lang) or LANGUAGES["en"]
-    return "LANGUAGE: " + l["instruction"] + "\n"
+def language_directive(lang: str = "en") -> str:
+    """English-only app: always English (kept for prompt-shape stability)."""
+    return "LANGUAGE: " + LANGUAGES["en"]["instruction"] + "\n"
 
 
 def voice_public(buddy_id: str) -> dict:

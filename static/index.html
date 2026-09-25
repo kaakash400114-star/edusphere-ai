@@ -288,13 +288,8 @@ button:disabled{opacity:.5;cursor:default}
       <input id="ob-name" maxlength="20" placeholder="e.g. Aarav" autocomplete="off">
     </label>
 
-    <label class="fld">How old are you?
-      <input id="ob-age" type="number" min="2" max="18" placeholder="e.g. 7" autocomplete="off">
-    </label>
-
-    <label class="fld">Pick your grade <span style="font-weight:400;font-size:.75rem;color:var(--muted)">(in school? pick it — tiny ones can tap "Not in school yet")</span>
+    <label class="fld">Pick your grade
       <div id="ob-grades" class="grade-grid"></div>
-      <button id="ob-preschool" type="button" class="pill" style="margin-top:6px;cursor:pointer;border:none">🍼 Not in school yet</button>
     </label>
 
     <label class="fld">Choose your study buddy
@@ -355,7 +350,6 @@ button:disabled{opacity:.5;cursor:default}
       <button id="quests-btn" class="badge badge-btn" title="Home quests">🏠 Quests</button>
       <button id="stories-btn" class="badge badge-btn" title="Read-along stories">📚 Stories</button>
       <button id="stickers-btn" class="badge badge-btn" title="Sticker album">🪅 Stickers</button>
-      <button id="lang-btn" class="badge badge-btn" title="Language">🗣️ EN</button>
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
     </div>
@@ -482,16 +476,6 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </div>
 
-<!-- LANGUAGE MODAL (stage 8) -->
-<div id="lang-modal" class="modal hidden">
-  <div class="modal-card" style="text-align:center">
-    <button class="modal-x" id="lang-x">✕</button>
-    <h2>🗣️ Talk to me in…</h2>
-    <div id="lang-pills" style="display:flex;gap:8px;justify-content:center;margin-top:12px"></div>
-    <p class="modal-sub" style="margin-top:12px">Your buddy will speak and reply in this language.</p>
-  </div>
-</div>
-
 <script>
 "use strict";
 // ---------- state ----------
@@ -500,9 +484,8 @@ const state = {
   pid: localStorage.getItem("es_pid") || "",
   profile: null,
   history: [],
-  grade: 0, age: null, preschool: false, character: "auto", buddies: [],
+  grade: 0, character: "auto", buddies: [],
   world: null, worlds: [],
-  lang: "en",
 };
 
 const EMOJI = { leo: "🦁", miko: "🐼", pip: "🐿️", chintu: "🐘", zara: "🦊",
@@ -529,12 +512,10 @@ async function loadWorlds() {
 }
 
 function worldForProfileLocal(p) {
-  // mirrors worlds.resolve_world — used for UI before server reply
-  const g = p.grade || 0;
+  // mirrors worlds.resolve_world (grade-only routing)
+  const g = p.grade || 1;
   if (g >= 1 && g <= 2) return "village";
-  if (g >= 3) return "mountains";
-  const a = p.age || 5;
-  return a <= 3 ? "meadow" : "kindergarten";
+  return "mountains";  // stage E will add academy/tower bands
 }
 
 const SUGGESTIONS = {
@@ -542,7 +523,7 @@ const SUGGESTIONS = {
     "Help with grammar ✏️", "Give me a fun quiz! 🎯"],
 };
 
-// ---------- onboarding ----------
+// ---------- onboarding (grades 1-12 only) ----------
 function buildOnboard() {
   const gg = $("ob-grades");
   for (let g = 1; g <= 12; g++) {
@@ -550,23 +531,11 @@ function buildOnboard() {
     b.textContent = g;
     b.onclick = () => {
       state.grade = g;
-      state.preschool = false;
-      $("ob-preschool").style.background = "";
       [...gg.children].forEach(x => x.classList.remove("sel"));
       b.classList.add("sel");
     };
     gg.appendChild(b);
   }
-  $("ob-preschool").onclick = () => {
-    state.preschool = !state.preschool;
-    if (state.preschool) {
-      state.grade = 0;
-      [...gg.children].forEach(x => x.classList.remove("sel"));
-      $("ob-preschool").style.background = "#c7d2fe";
-    } else {
-      $("ob-preschool").style.background = "";
-    }
-  };
   const cr = $("ob-chars");
   cr.innerHTML = "";
   loadBuddies().then(buddies => {
@@ -591,19 +560,15 @@ async function startLearning() {
   const name = $("ob-name").value.trim();
   const pin = $("ob-pin").value.trim();
   const err = $("ob-error");
-  const ageVal = parseInt($("ob-age").value, 10);
   if (!name) return err.textContent = "Tell me your name first! 😊";
-  if (!state.grade && !state.preschool) return err.textContent = "Pick your grade (or tap 'Not in school yet')!";
-  if (state.preschool && (!ageVal || ageVal < 2 || ageVal > 7))
-    return err.textContent = "Tiny learners: tell us the age (2–7)!";
+  if (!state.grade) return err.textContent = "Pick your grade (1 to 12)!";
   if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Parents: PIN must be 4–8 digits.";
   if (!$("ob-consent").checked) return err.textContent = "Parent consent is required.";
   err.textContent = "";
   const r = await fetch("/api/profile", {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, grade: state.grade, parent_pin: pin,
-      character: state.character,
-      age: state.preschool ? ageVal : (ageVal || null) }),
+      character: state.character }),
   });
   const data = await r.json();
   if (!r.ok) {
@@ -762,8 +727,7 @@ async function send(preset) {
     const r = await fetch("/api/chat", {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pid: state.pid, message: text,
-        history: state.history.slice(-8), mode: activeMode,
-        lang: state.lang || "en" }),
+        history: state.history.slice(-8), mode: activeMode }),
     });
     const data = await r.json();
     t.textContent = r.ok ? data.answer : (data.detail || data.error || "Oops, try again!");
@@ -776,7 +740,7 @@ async function send(preset) {
       // stage 1+2: buddy's voice profile for this reply
       if (data.voice) {
         state.lastVoice = data.voice;
-        Buddy.lang = data.voice.lang || Buddy.lang;
+        Buddy.lang = "en-US";
       }
       if (data.memory_saved) {
         addMsg("🧠 (I'll remember that: " + data.memory_saved + ")", "bot");
@@ -996,16 +960,16 @@ function applyAccessoryUI() {
 }
 
 // ======================================================================
-// STAGE 1+2+8 — VOICE ENGINE: speak per-buddy, listen via mic, interrupt
+// STAGE 1+2 — VOICE ENGINE: speak per-buddy, listen via mic, interrupt
+// English-only, word-perfect pronunciation
 // ======================================================================
 const Buddy = {
   voices: [],     // loaded speechSynthesis voices
-  lang: "en-US",  // active voice language
+  lang: "en-US",
   speaking: false,
   listening: false,
   recog: null,
   autoListen: false,
-  onDone: null,   // callback after a listen session ends
 };
 
 function voiceSupported() { return "speechSynthesis" in window; }
@@ -1019,21 +983,32 @@ function loadVoices() {
   speechSynthesis.onvoiceschanged = () => { Buddy.voices = speechSynthesis.getVoices() || []; };
 }
 
-function pickVoice(lang) {
-  const want = lang || Buddy.lang;
-  const vs = Buddy.voices.filter(v => v.lang && v.lang.toLowerCase().startsWith(want.slice(0, 2).toLowerCase()));
-  // prefer a natural/non-legacy voice if present
-  return vs.find(v => /natural|online|google/i.test(v.name)) || vs[0] || null;
+// pick the clearest English voice — never a non-en voice
+function pickVoice() {
+  const vs = Buddy.voices.filter(v => /^en[-_]?US/i.test(v.lang) || v.lang === "en");
+  return vs.find(v => /natural|online|premium|enhanced/i.test(v.name))
+      || vs.find(v => /google/i.test(v.name))
+      || vs[0] || null;
+}
+
+// strip anything a TTS engine would read badly (stage A pronunciation rules)
+function speakableText(text) {
+  return (text || "")
+    .replace(/[*_#`>|]/g, " ")                    // markdown noise
+    .replace(/\b(CBSE|NCERT|PDF|API)\b/g, m => m.toLowerCase()) // avoid letter-shouting
+    .replace(/[^\S\r\n]+/g, " ")
+    .trim();
 }
 
 // speak with the current buddy's voice profile; opts.onEnd when finished
 function speak(text, opts = {}) {
-  if (!voiceSupported() || !text) { if (opts.onEnd) opts.onEnd(); return; }
+  const clean = speakableText(text);
+  if (!voiceSupported() || !clean) { if (opts.onEnd) opts.onEnd(); return; }
   speechSynthesis.cancel();               // interrupt: stop whatever is talking
-  const u = new SpeechSynthesisUtterance(text);
+  const u = new SpeechSynthesisUtterance(clean);
   const v = pickVoice();
   if (v) u.voice = v;
-  u.lang = Buddy.lang;
+  u.lang = "en-US";
   const prof = state.lastVoice || {};
   u.rate = Math.max(0.5, Math.min(2, (prof.rate || 0.95) * (prof.pace || 1)));
   u.pitch = Math.max(0, Math.min(2, prof.pitch || 1));
@@ -1055,12 +1030,12 @@ function stopSpeaking() {
   $("stop-talk").classList.add("hidden");
 }
 
-// microphone: speech -> text -> chat
+// microphone: speech -> text -> chat (always en-US)
 function startListening(auto) {
   if (!micSupported() || Buddy.listening) return;
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   Buddy.recog = new SR();
-  Buddy.recog.lang = Buddy.lang;
+  Buddy.recog.lang = "en-US";
   Buddy.recog.interimResults = false;
   Buddy.recog.maxAlternatives = 1;
   Buddy.listening = true;
@@ -1467,37 +1442,6 @@ function dropSticker(kind) {
 }
 
 // ======================================================================
-// STAGE 8 — LANGUAGES
-// ======================================================================
-const LANGS = [
-  { id: "en", name: "English", pill: "EN" },
-  { id: "hi", name: "हिन्दी", pill: "हिं" },
-  { id: "ta", name: "தமிழ்", pill: "த" },
-];
-function openLangs() {
-  const wrap = $("lang-pills");
-  wrap.innerHTML = "";
-  LANGS.forEach(l => {
-    const b = document.createElement("button");
-    b.className = "lang-pill" + (state.lang === l.id ? " on" : "");
-    b.textContent = l.name;
-    b.onclick = () => setLang(l.id);
-    wrap.appendChild(b);
-  });
-  $("lang-modal").classList.remove("hidden");
-}
-async function setLang(id) {
-  state.lang = id;
-  const l = LANGS.find(x => x.id === id);
-  $("lang-btn").textContent = "🗣️ " + l.pill;
-  $("lang-modal").classList.add("hidden");
-  loadVoices();
-  Buddy.lang = id === "hi" ? "hi-IN" : id === "ta" ? "ta-IN" : "en-US";
-  addMsg(`🗣️ We speak ${l.name} now!`, "bot");
-  speak(`We speak ${l.name} now!`, {});
-}
-
-// ======================================================================
 // STAGE 9 — QUESTS + STORIES + BUT-WHY
 // ======================================================================
 async function openQuests() {
@@ -1578,30 +1522,50 @@ function renderStoryPage() {
   $("story-next").disabled = arena.pi >= st.words.length - 1;
   readStoryLine();
 }
+
+// word-by-word reading: each word spoken alone, slowly, highlighted while
+// spoken; the next word starts only after the previous finishes (onend),
+// so pronunciation is always clean and never clipped.
+let storyToken = 0;  // cancels an in-flight read when the page changes
 function readStoryLine() {
+  const myToken = ++storyToken;
   const st = arena.story;
-  const line = st.words[arena.pi] || "";
-  const words = line.split(" ");
+  const line = speakableText(st.words[arena.pi] || "");
+  const words = line.split(" ").filter(Boolean);
+  if (!words.length) return;
+  const page = $("story-page");
   let i = 0;
-  const lightUp = () => {
-    if (i > 0) { const prev = $("story-page").children[i - 1]; prev && prev.classList.remove("on"); }
-    if (i >= words.length) return;
-    const el = $("story-page").children[i];
+  const nextWord = () => {
+    if (myToken !== storyToken) return;           // superseded
+    if (i > 0) { const p = page.children[i - 1]; p && p.classList.remove("on"); }
+    if (i >= words.length) { faceTalk(false); return; }
+    const el = page.children[i];
     el && el.classList.add("on");
-    speakWord(words[i]);
+    const w = words[i];
     i++;
-    setTimeout(lightUp, 480);
+    if (!voiceSupported()) { setTimeout(nextWord, 500); return; }
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(w);
+    const v = pickVoice();
+    if (v) u.voice = v;
+    u.lang = "en-US";
+    u.rate = 0.75;                                 // slow, crisp
+    faceTalk(true);
+    u.onend = () => setTimeout(nextWord, 140);     // tiny breath between words
+    u.onerror = () => setTimeout(nextWord, 140);
+    speechSynthesis.speak(u);
   };
-  lightUp();
+  nextWord();
 }
 function speakWord(w) {
   if (!voiceSupported() || !w) return;
+  storyToken++;                  // stop the line read if one is running
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(w.replace(/[^A-Za-z'-]/g, ""));
+  const u = new SpeechSynthesisUtterance(speakableText(w));
   const v = pickVoice();
   if (v) u.voice = v;
-  u.lang = Buddy.lang;
-  u.rate = 0.8;
+  u.lang = "en-US";
+  u.rate = 0.75;
   speechSynthesis.speak(u);
 }
 function storyNav(d) {
@@ -1637,8 +1601,6 @@ function wireStage56789() {
   $("quests-x").onclick = () => $("quests-modal").classList.add("hidden");
   $("stories-btn").onclick = openStories;
   $("stories-x").onclick = () => $("stories-modal").classList.add("hidden");
-  $("lang-btn").onclick = openLangs;
-  $("lang-x").onclick = () => $("lang-modal").classList.add("hidden");
   $("why-chip").onclick = toggleWhy;
   $("story-prev").onclick = () => storyNav(-1);
   $("story-next").onclick = () => storyNav(1);
@@ -1654,7 +1616,7 @@ function wireStage56789() {
 // ======================================================================
 // wire up
 function wire() {
-  buildOnboard(); wireStage56789();
+  wireStage56789();
   $("ob-start").onclick = startLearning;
   $("send").onclick = () => send();
   $("chat-input").addEventListener("keydown", e => {

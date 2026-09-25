@@ -37,10 +37,9 @@ def _rate_ok(pid: str, min_gap: float = 2.0) -> bool:
 
 class ProfileCreate(BaseModel):
     name: str = Field(min_length=1, max_length=20)
-    grade: int = Field(default=0, ge=0, le=12)  # 0 = pre-school (worlds by age)
+    grade: int = Field(ge=1, le=12)  # grades 1-12 only (final spec)
     parent_pin: str = Field(min_length=4, max_length=8)
     character: str = "auto"
-    age: int | None = Field(default=None, ge=2, le=18)  # required (2-7) only for pre-school
 
     @field_validator("character")
     @classmethod
@@ -51,9 +50,8 @@ class ProfileCreate(BaseModel):
 
 
 class ProfileUpdate(BaseModel):
-    grade: int | None = Field(default=None, ge=0, le=12)
+    grade: int | None = Field(default=None, ge=1, le=12)
     character: str | None = None
-    age: int | None = Field(default=None, ge=2, le=18)
 
 
 class ChatRequest(BaseModel):
@@ -61,7 +59,6 @@ class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=2000)
     history: list[dict] = Field(default_factory=list, max_length=20)
     mode: str | None = None
-    lang: str = "en"
 
 
 class PinRequest(BaseModel):
@@ -79,8 +76,7 @@ class QuestDoneRequest(BaseModel):
 def create_profile(body: ProfileCreate):
     try:
         profile = profiles.create_profile(
-            body.name, body.grade, body.parent_pin, body.character,
-            age=body.age)
+            body.name, body.grade, body.parent_pin, body.character)
     except ValueError as exc:
         raise HTTPException(400, str(exc))
     return {"pid": profile["pid"], "profile": profile}
@@ -112,7 +108,7 @@ def list_characters():
 
 @app.get("/api/worlds")
 def list_worlds():
-    """The Four Worlds roster, in age order."""
+    """The Four Worlds roster, in grade order."""
     return {"worlds": worlds.roster()}
 
 
@@ -178,8 +174,7 @@ def chat(body: ChatRequest):
         buddy=profile.get("character") or "auto",
         question=body.message, history=body.history, subject=subject,
         weak_areas=list(profile.get("weak_areas", {}).keys()),
-        mode=body.mode, age=profile.get("age"),
-        lang=body.lang if body.lang in conversation.LANGUAGES else "en",
+        mode=body.mode,
         memories=list(profile.get("memories", [])))
     topic = _topic_from(subject, body.message)
     updated = profiles.record_activity(body.pid, "chat", topic)
@@ -187,10 +182,8 @@ def chat(body: ChatRequest):
     world = worlds.world_for_profile(profile)
     # stage 1+2: voice profile + speaking pace for the frontend TTS engine
     voice = conversation.voice_public(buddy["id"])
-    voice["pace"] = conversation.pace_for_grade(profile.get("grade"),
-                                                profile.get("age"))
-    voice["lang"] = conversation.LANGUAGES.get(
-        body.lang, conversation.LANGUAGES["en"])["voice_lang"]
+    voice["pace"] = conversation.pace_for_grade(profile.get("grade"))
+    voice["lang"] = "en-US"
     # stage 2: the buddy may tuck a 'MEMORY: ...' line into its answer —
     # split it off (case-insensitive), save it, show only the spoken part
     memory_note = ""
@@ -305,13 +298,6 @@ def parent_report(body: PinRequest):
 def grade_meta():
     return {"subjects": {str(g): knowledge.list_available(g)
                          for g in range(1, 13)}}
-
-
-@app.get("/api/meta/languages")
-def language_meta():
-    """Stage 8: languages buddies can speak."""
-    return {"languages": [{"id": k, "name": v["name"], "voice_lang": v["voice_lang"]}
-                          for k, v in conversation.LANGUAGES.items()]}
 
 
 def _topic_from(subject: str, message: str) -> str:

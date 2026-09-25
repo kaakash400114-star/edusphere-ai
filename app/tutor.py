@@ -18,13 +18,12 @@ MAX_HISTORY = 8
 
 def _system_prompt(name: str, grade: int, buddy_id: str,
                    weak_areas: list[str], world_id: str | None = None,
-                   age: int | None = None, lang: str = "en",
                    memories: list[str] | None = None) -> str:
     weak = ", ".join(weak_areas[:5]) if weak_areas else "none yet"
-    world = worlds.resolve_world(grade if grade else None, age)
+    world = worlds.resolve_world(grade)
     if world_id and world_id in worlds.WORLDS:
         world = worlds.WORLDS[world_id]
-    spoken = (grade or 0) == 0 or (world_id in ("meadow", "kindergarten"))
+    spoken = world_id in ("meadow", "kindergarten")  # pre-grade worlds no longer exist
     return (
         "You are EduSphere AI, a tutor app for children. You fully play one "
         "character:\n"
@@ -32,10 +31,8 @@ def _system_prompt(name: str, grade: int, buddy_id: str,
         + worlds.world_prompt(world)
         + conversation.HUMAN_RULES
         + conversation.memory_directive(memories or [])
-        + conversation.language_directive(lang)
-        + (f"\nSTUDENT: {name}, grade {grade} (about age {5 + grade}).\n"
-           if grade else
-           f"\nSTUDENT: {name}, pre-school learner (age {age or 4}).\n")
+        + conversation.language_directive()
+        + (f"\nSTUDENT: {name}, grade {grade} (about age {5 + grade}).\n")
         + f"WEAK AREAS to gently revisit: {weak}.\n\n"
         "RULES:\n"
         "- Teach ONLY the topic asked, using the CURRICULUM EXCERPT when given. "
@@ -71,15 +68,15 @@ def _extract_content(data: dict) -> str:
 def ask(name: str, grade: int, buddy: str, question: str,
         history: list[dict] | None = None, subject: str = "general",
         weak_areas: list[str] | None = None, mode: str | None = None,
-        age: int | None = None, lang: str = "en",
         memories: list[str] | None = None) -> str:
     """One tutor turn: buddy persona + world style + human speech -> answer."""
+    grade = max(1, min(12, int(grade or 1)))
     buddy = characters.character_for(grade, buddy)["id"]
-    world = worlds.resolve_world(grade if grade else None, age)
+    world = worlds.resolve_world(grade)
     subject_hint = worlds.knowledge_subject_hint(world["id"], subject)
-    excerpt = knowledge.extract_relevant(subject_hint, grade or 0, question)
-    system = _system_prompt(name, grade, buddy, weak_areas or [], age=age,
-                            lang=lang, memories=memories)
+    excerpt = knowledge.extract_relevant(subject_hint, grade, question)
+    system = _system_prompt(name, grade, buddy, weak_areas or [],
+                            memories=memories)
     mode_def = characters.MODES.get(buddy)
     if mode and mode_def and mode_def["trigger"] == mode:
         system += "\n" + mode_def["instructions"] + "\n"
