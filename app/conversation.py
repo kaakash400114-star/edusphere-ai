@@ -55,6 +55,9 @@ HUMAN_RULES = (
     "- If the child shares something about their life (a pet, a trip, "
     "their favourite food), remember it in this chat and ask about it "
     "again later like a friend would.\n"
+    "- If the child shares a lasting life detail (a pet, a sibling, a "
+    "favourite thing, a trip), add one final line exactly 'MEMORY: '<2-6 "
+    "words about it>' so the app remembers it. Only for new lasting facts.\n"
     "- If the child seems stuck or quiet, gently check in: 'Still with "
     "me? Want me to say it again differently?'\n"
     "- Never write markdown tables, bullet lists, or headings — speak in "
@@ -80,3 +83,81 @@ def language_directive(lang: str) -> str:
 def voice_public(buddy_id: str) -> dict:
     v = VOICES.get(buddy_id) or VOICES["leo"]
     return dict(v)
+
+
+# stage 9 magic extras -----------------------------------------------
+
+WHY_RULES = (
+    "BUT WHY MODE: The child may keep asking 'but why?' forever. Every "
+    "'why' gets a real, honest, one-level-deeper answer in one or two "
+    "short spoken sentences — never 'because I said so', never 'that's "
+    "just how it is'. After 4 levels deep, marvel together at how deep "
+    "the question goes and offer to find out more tomorrow. Stay warm "
+    "and delighted that the child keeps asking.\n"
+)
+
+QUEST_POOL = [
+    {"id": "count10", "emoji": "🔢", "title": "Count to 10 out loud",
+     "hint": "Say your numbers 1 to 10 to your buddy!"},
+    {"id": "abcsong", "emoji": "🔤", "title": "Sing the ABC song",
+     "hint": "Sing it to your buddy — it loves songs!"},
+    {"id": "skywatch", "emoji": "☁️", "title": "Look at the sky",
+     "hint": "Look outside, then tell your buddy what the sky looks like."},
+    {"id": "teachback", "emoji": "🧠", "title": "Teach someone something",
+     "hint": "Teach a family member one thing you learned today, then "
+             "tell your buddy how it went!"},
+    {"id": "naturefind", "emoji": "🍂", "title": "Find a leaf or stone",
+     "hint": "Find one outside and describe it to your buddy."},
+    {"id": "drawmath", "emoji": "✏️", "title": "Draw 3 + 2",
+     "hint": "Draw it on paper, count the shapes, tell your buddy the answer!"},
+]
+
+STORIES: dict[str, dict] = {
+    "lion_cub": {
+        "title": "The Lion Cub Who Counted Stars",
+        "emoji": "🦁", "min_age": 3, "lang": "en",
+        "words": [
+            "Little Leo looked at the sky.", "One, two, three — he counted stars.",
+            "But the stars kept twinkling.", "They moved and danced around!",
+            "Mama Lion smiled softly.", "Stars are like numbers, she said.",
+            "Count slowly, and they stay.", "Count with friends, and they shine.",
+            "So Leo counted with his friends.", "And the sky stayed still — one, two, three!",
+        ],
+    },
+    "tortoise": {
+        "title": "Tara the Tortoise Learns to Wait",
+        "emoji": "🐢", "min_age": 3, "lang": "en",
+        "words": [
+            "Tara the tortoise wanted mangoes.", "The tree was far, far away.",
+            "Rabbit laughed, You are too slow!", "Tara kept walking, step by step.",
+            "Slow is steady, she whispered.", "Steady gets there, she smiled.",
+            "Rabbit raced ahead, then napped.", "Tara walked right past him!",
+            "At the tree, sweet mangoes waited.", "Tara shared them with everyone.",
+        ],
+    },
+    "rain": {
+        "title": "Where Does the Rain Go?",
+        "emoji": "🌧️", "min_age": 4, "lang": "en",
+        "words": [
+            "Pitter-patter on the roof!", "The rain danced all day long.",
+            "Where do the drops go, Miko asked?", "Some sink into the happy soil.",
+            "Some run down to the river.", "The river carries them to the sea.",
+            "The sun lifts them up again.", "Up, up into a friendly cloud.",
+            "Then the cloud grows heavy and grey.", "And the rain comes back to play!",
+        ],
+    },
+}
+
+
+def story_public(sid: str) -> dict:
+    s = STORIES.get(sid) or (list(STORIES.values())[0] if STORIES else {})
+    return dict(s) if s else {}
+
+
+def stories_roster() -> list[dict]:
+    return [{"id": sid, **{k: s[k] for k in ("title", "emoji", "min_age")}}
+            for sid, s in STORIES.items()]
+
+
+def quest_public() -> list[dict]:
+    return [dict(q) for q in QUEST_POOL]

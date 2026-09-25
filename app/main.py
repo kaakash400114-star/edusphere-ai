@@ -40,7 +40,7 @@ class ProfileCreate(BaseModel):
     grade: int = Field(default=0, ge=0, le=12)  # 0 = pre-school (worlds by age)
     parent_pin: str = Field(min_length=4, max_length=8)
     character: str = "auto"
-    age: int | None = Field(default=None, ge=2, le=7)
+    age: int | None = Field(default=None, ge=2, le=18)  # required (2-7) only for pre-school
 
     @field_validator("character")
     @classmethod
@@ -53,7 +53,7 @@ class ProfileCreate(BaseModel):
 class ProfileUpdate(BaseModel):
     grade: int | None = Field(default=None, ge=0, le=12)
     character: str | None = None
-    age: int | None = Field(default=None, ge=2, le=7)
+    age: int | None = Field(default=None, ge=2, le=18)
 
 
 class ChatRequest(BaseModel):
@@ -67,6 +67,10 @@ class ChatRequest(BaseModel):
 class PinRequest(BaseModel):
     pid: str
     pin: str = Field(min_length=4, max_length=8)
+
+
+class QuestDoneRequest(BaseModel):
+    quest: str = Field(min_length=1, max_length=40)
 
 
 # ---------------- API ----------------
@@ -187,9 +191,21 @@ def chat(body: ChatRequest):
                                                 profile.get("age"))
     voice["lang"] = conversation.LANGUAGES.get(
         body.lang, conversation.LANGUAGES["en"])["voice_lang"]
+    # stage 2: the buddy may tuck a 'MEMORY: ...' line into its answer —
+    # split it off (case-insensitive), save it, show only the spoken part
+    memory_note = ""
+    upper = answer.upper()
+    pos = upper.find("MEMORY:")
+    if pos != -1:
+        memory_note = answer[pos + len("MEMORY:"):].strip().splitlines()[0][:120]
+        answer = answer[:pos]
+        if memory_note:
+            profiles.remember(body.pid, memory_note)
+    answer = answer.strip()
     # stage 6: sticker for the first chat of the session comes from frontend
     return {"answer": answer, "subject": subject, "topic": topic,
             "stars": updated["stars"] if updated else 0,
+            "memory_saved": memory_note,
             "character": buddy["id"], "character_name": buddy["name"],
             "character_emoji": buddy["emoji"],
             "world": world["id"], "world_name": world["name"],
@@ -241,6 +257,38 @@ def game_result(body: GameResult):
         raise HTTPException(404, "profile not found")
     profile = profiles.award_sticker(body.pid, body.game)
     return {"profile": profile}
+
+
+@app.get("/api/quests")
+def list_quests():
+    """Stage 9: today's home quests (real-world mini missions)."""
+    return {"quests": conversation.quest_public()}
+
+
+@app.post("/api/profile/{pid}/quest/{quest_id}")
+def quest_done(pid: str, quest_id: str):
+    """Stage 9: complete a home quest -> stars + a sticker."""
+    if not any(q["id"] == quest_id for q in conversation.quest_public()):
+        raise HTTPException(400, "unknown quest")
+    profile = profiles.record_activity(pid, "quest:" + quest_id,
+                                       "quest:" + quest_id, stars=2)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    profile = profiles.award_sticker(pid, "quest_" + quest_id)
+    return {"profile": profile}
+
+
+@app.get("/api/stories")
+def list_stories():
+    """Stage 9: read-along stories."""
+    return {"stories": conversation.stories_roster()}
+
+
+@app.get("/api/stories/{sid}")
+def get_story(sid: str):
+    if sid not in conversation.STORIES:
+        raise HTTPException(404, "story not found")
+    return {"story": {"id": sid, **conversation.story_public(sid)}}
 
 
 @app.post("/api/parent/report")
