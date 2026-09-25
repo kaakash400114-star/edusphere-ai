@@ -42,24 +42,25 @@ def test_no_age_field_needed():
 
 # ---------- stage 1: voices ----------
 def test_voices_exist_for_all_buddies():
-    from app import characters
-    seen_hints = []
+    from app import characters, neural_voice
+    seen_voices = []
     for cid in characters.CHARACTERS:
-        v = conversation.voice_public(cid)
-        assert "rate" in v and "pitch" in v and "act" in v
-        assert v.get("voice_hints"), f"{cid} has no voice_hints"
-        seen_hints.append(v["voice_hints"][0])
-    assert conversation.voice_public("chintu")["pitch"] < 0.8  # deep elephant
-    # distinct lead voices: at least 3 different real voices across the cast
-    assert len(set(seen_hints)) >= 3, f"voices too uniform: {seen_hints}"
-    # pitches stay human (no cartoon squeak/deep)
+        v = neural_voice.voice_public(cid)
+        assert "rate" in v and "pitch" in v and "voice_hints" in v
+        assert v.get("voice"), f"{cid} has no neural voice"
+        seen_voices.append(v["voice"])
+    assert len(set(seen_voices)) >= 8, f"voices too uniform: {seen_voices}"
+    # distinct neural speaker per buddy across the cast
+    # pitches stay human (Hz offsets, no cartoon extremes)
     for cid in characters.CHARACTERS:
-        assert 0.6 <= conversation.voice_public(cid)["pitch"] <= 1.3
+        hz = int(neural_voice.BUDDY_VOICES[cid]["pitch"].replace("Hz", ""))
+        assert -20 <= hz <= 20
 
 
 def test_pace_for_grade():
     assert conversation.pace_for_grade(1) < conversation.pace_for_grade(6)
-    assert conversation.pace_for_grade(2) == 0.85
+    assert conversation.pace_for_grade(2) == 0.80
+    assert conversation.pace_for_grade(12) == 1.08
 
 
 def test_chat_returns_english_voice_profile():

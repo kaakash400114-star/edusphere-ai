@@ -242,13 +242,16 @@ def chat(body: ChatRequest):
     updated = profiles.record_activity(body.pid, "chat", topic)
     buddy = characters.public(profile.get("character") or "leo")
     world = worlds.world_for_profile(profile)
-    # stage 1+2: voice profile + speaking pace for the frontend TTS engine
-    voice = conversation.voice_public(buddy["id"])
+    # Stage 3: ONE voice profile shape — neural voice for the mp3 path,
+    # voice_hints kept for the browser Web Speech fallback.
+    voice = neural_voice.voice_public(buddy["id"])
     voice["pace"] = conversation.pace_for_grade(profile.get("grade"))
     voice["lang"] = "en-US"
-    # human-like neural voice: pre-synthesize the reply mp3 server-side
+    # human-like neural voice: pre-synthesize the reply mp3 server-side,
+    # with the grade-scaled pace baked in (Stage 3)
     audio_url = None
-    mp3 = neural_voice.synth(buddy["id"], answer[:600])
+    mp3 = neural_voice.synth(buddy["id"], answer[:600],
+                             pace=conversation.pace_for_grade(profile.get("grade")))
     if mp3:
         audio_url = "/tts/" + os.path.basename(mp3)
     voice["engine"] = "edge" if audio_url else "browser"

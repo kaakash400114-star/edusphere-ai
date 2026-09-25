@@ -29,14 +29,17 @@ LANGUAGES: dict[str, dict] = {
            "instruction": "Reply in simple, clear English."},
 }
 
-# grade -> speaking pace multiplier (slower for little kids)
+# grade -> speaking pace multiplier (slower for little kids; Stage 3 adds
+# neural_voice.GRADE_STYLE with a finer 4-band profile for the mp3 path)
 def pace_for_grade(grade: int | None, age: int | None = None) -> float:
     g = grade or 1
     if g <= 2:
-        return 0.85
+        return 0.80
     if g <= 5:
-        return 0.95
-    return 1.0
+        return 0.90
+    if g <= 8:
+        return 1.0
+    return 1.08
 
 
 HUMAN_RULES = (

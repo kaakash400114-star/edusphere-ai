@@ -9,7 +9,7 @@ import time
 
 import httpx
 
-from . import characters, conversation, knowledge, worlds
+from . import characters, conversation, knowledge, neural_voice, worlds
 
 BASE_URL = os.environ.get(
     "GLM_BASE_URL", "https://api.z.ai/api/coding/paas/v4").rstrip("/")
@@ -82,6 +82,9 @@ def ask(name: str, grade: int, buddy: str, question: str,
         system += "\n" + mode_def["instructions"] + "\n"
     if mode == "story":
         system += "\n" + conversation.STORY_RULES + "\n"
+    # Stage 3: the buddy's WORDS mature with the child's grade —
+    # sentence length, vocabulary and pronunciation precision scale up.
+    system += "\n" + neural_voice.grade_style_directive(grade) + "\n"
     if excerpt:
         system += ("\n\nCURRICULUM EXCERPT (authoritative for this grade):\n"
                    + excerpt)
