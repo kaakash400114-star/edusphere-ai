@@ -5,25 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Rational Numbers](#1-rational-numbers)
-2. [Linear Equations in One Variable](#2-linear-equations-in-one-variable)
-3. [Understanding Quadrilaterals](#3-understanding-quadrilaterals)
-4. [Practical Geometry](#4-practical-geometry)
-5. [Data Handling](#5-data-handling)
-6. [Squares and Square Roots](#6-squares-and-square-roots)
-7. [Cubes and Cube Roots](#7-cubes-and-cube-roots)
-8. [Algebraic Expressions and Identities](#8-algebraic-expressions-and-identities)
-9. [Visualising Solid Shapes](#9-visualising-solid-shapes)
-10. [Mensuration](#10-mensuration)
-11. [Exponents and Powers](#11-exponents-and-powers)
-12. [Direct and Inverse Proportions](#12-direct-and-inverse-proportions)
-13. [Factorisation](#13-factorisation)
-14. [Introduction to Graphs](#14-introduction-to-graphs)
-
----
-
 ## 1. Rational Numbers
 
 ### 1.1 Definition

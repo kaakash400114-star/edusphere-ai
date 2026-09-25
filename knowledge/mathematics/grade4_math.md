@@ -5,21 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Place Value](#1-place-value)
-2. [Operations](#2-operations)
-3. [Factors & Multiples](#3-factors--multiples)
-4. [Fractions](#4-fractions)
-5. [Decimals](#5-decimals)
-6. [Geometry](#6-geometry)
-7. [Measurement](#7-measurement)
-8. [Data](#8-data)
-9. [Algebra & Patterns](#9-algebra--patterns)
-10. [Word Problems](#10-word-problems)
-
----
-
 ## 1. Place Value
 
 ### Key Vocabulary

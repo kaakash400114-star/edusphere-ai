@@ -5,24 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Number Systems](#1-number-systems)
-2. [Polynomials](#2-polynomials)
-3. [Coordinate Geometry](#3-coordinate-geometry)
-4. [Linear Equations in Two Variables](#4-linear-equations-in-two-variables)
-5. [Triangles](#5-triangles)
-6. [Quadrilaterals](#6-quadrilaterals)
-7. [Areas of Parallelograms and Triangles](#7-areas-of-parallelograms-and-triangles)
-8. [Circles](#8-circles)
-9. [Constructions](#9-constructions)
-10. [Heron's Formula](#10-herons-formula)
-11. [Surface Areas and Volumes](#11-surface-areas-and-volumes)
-12. [Statistics](#12-statistics)
-13. [Probability](#13-probability)
-
----
-
 ## 1. Number Systems
 
 ### 1.1 Introduction

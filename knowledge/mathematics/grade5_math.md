@@ -6,23 +6,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Place Value](#1-place-value)
-2. [Operations with Whole Numbers](#2-operations-with-whole-numbers)
-3. [Fractions](#3-fractions)
-4. [Decimals](#4-decimals)
-5. [Number Theory](#5-number-theory)
-6. [Geometry](#6-geometry)
-7. [Measurement](#7-measurement)
-8. [Data and Probability](#8-data-and-probability)
-9. [Ratios](#9-ratios)
-10. [Percentages](#10-percentages)
-11. [Algebra](#11-algebra)
-12. [Word Problems](#12-word-problems)
-
----
-
 ## 1. Place Value
 
 ### 1.1 Definitions

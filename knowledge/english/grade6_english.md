@@ -2,17 +2,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Reading Comprehension](#1-reading-comprehension)
-2. [Vocabulary](#2-vocabulary)
-3. [Grammar](#3-grammar)
-4. [Writing](#4-writing)
-5. [Literature Elements](#5-literature-elements)
-6. [Punctuation Review](#6-punctuation-review)
-
----
-
 ## 1. Reading Comprehension
 
 Reading comprehension is the ability to understand, interpret, and analyse what you read. Questions fall into three main types.

@@ -5,23 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Integers](#1-integers)
-2. [Fractions and Decimals](#2-fractions-and-decimals)
-3. [Rational Numbers](#3-rational-numbers)
-4. [Exponents and Powers](#4-exponents-and-powers)
-5. [Algebraic Expressions](#5-algebraic-expressions)
-6. [Linear Equations in One Variable](#6-linear-equations-in-one-variable)
-7. [Lines and Angles](#7-lines-and-angles)
-8. [Triangles](#8-triangles)
-9. [Comparing Quantities](#9-comparing-quantities)
-10. [Data Handling](#10-data-handling)
-11. [Perimeter and Area](#11-perimeter-and-area)
-12. [Visualising Solid Shapes](#12-visualising-solid-shapes)
-
----
-
 ## 1. Integers
 
 ### 1.1 Recap and Number Line

@@ -5,26 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Sets](#1-sets)
-2. [Relations and Functions](#2-relations-and-functions)
-3. [Trigonometric Functions](#3-trigonometric-functions)
-4. [Mathematical Induction](#4-mathematical-induction)
-5. [Complex Numbers](#5-complex-numbers)
-6. [Linear Inequalities](#6-linear-inequalities)
-7. [Permutations and Combinations](#7-permutations-and-combinations)
-8. [Binomial Theorem](#8-binomial-theorem)
-9. [Sequences and Series](#9-sequences-and-series)
-10. [Straight Lines](#10-straight-lines)
-11. [Conic Sections](#11-conic-sections)
-12. [Introduction to 3D Geometry](#12-introduction-to-3d-geometry)
-13. [Limits and Derivatives](#13-limits-and-derivatives)
-14. [Statistics](#14-statistics)
-15. [Probability](#15-probability)
-
----
-
 ## 1. Sets
 
 ### 1.1 Definitions and Notation

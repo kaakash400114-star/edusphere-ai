@@ -44,6 +44,20 @@ def _sections(subject: str, grade: int) -> list[str]:
                                  "conclusion", "summary", "index"):
                 continue
             out.append(title)
+    if len(out) < levels.LEVELS_PER_GRADE:
+        # thin file: fall back to ### subsections so every grade still gets
+        # a full task pool (grades 3-5 English store topics as ### headings)
+        out = []
+        for line in text.splitlines():
+            if line.startswith("### "):
+                title = line[4:].strip()
+                if not title or title.startswith("#"):
+                    continue
+                if title.lower() in ("table of contents", "contents", "introduction",
+                                     "conclusion", "summary", "index"):
+                    continue
+                if len(out) < 21:      # cap: 3 topics per level at most
+                    out.append(title)
     return out
 
 

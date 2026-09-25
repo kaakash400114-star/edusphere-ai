@@ -4,22 +4,6 @@
 
 ---
 
-## Table of Contents
-1. [Place Value](#1-place-value)
-2. [Addition](#2-addition)
-3. [Subtraction](#3-subtraction)
-4. [Multiplication Introduction](#4-multiplication-introduction)
-5. [Division Introduction](#5-division-introduction)
-6. [Fractions Introduction](#6-fractions-introduction)
-7. [Money](#7-money)
-8. [Time](#8-time)
-9. [Geometry](#9-geometry)
-10. [Measurement](#10-measurement)
-11. [Data](#11-data)
-12. [Word Problems](#12-word-problems)
-
----
-
 ## 1. Place Value
 
 ### 1.1 Understanding Ones, Tens, and Hundreds

@@ -6,30 +6,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Ecosystems](#1-ecosystems)
-2. [Habitats and Adaptations](#2-habitats-and-adaptations)
-3. [Plant Structures and Functions](#3-plant-structures-and-functions)
-4. [Animal Groups](#4-animal-groups)
-5. [Human Body Systems](#5-human-body-systems)
-6. [Physical Science — Matter and Changes](#6-physical-science--matter-and-changes)
-7. [Heat Transfer](#7-heat-transfer)
-8. [Simple Machines](#8-simple-machines)
-9. [Earth Science — Inside the Earth](#9-earth-science--inside-the-earth)
-10. [The Rock Cycle](#10-the-rock-cycle)
-11. [Minerals](#11-minerals)
-12. [Weathering and Erosion](#12-weathering-and-erosion)
-13. [Space — The Solar System](#13-space--the-solar-system)
-14. [Earth's Motion — Rotation, Revolution, and Seasons](#14-earths-motion--rotation-revolution-and-seasons)
-15. [Moon Phases](#15-moon-phases)
-16. [Stars](#16-stars)
-17. [Forces — Balanced, Unbalanced, Speed](#17-forces--balanced-unbalanced-speed)
-18. [Mass vs Weight](#18-mass-vs-weight)
-19. [Forms of Energy](#19-forms-of-energy)
-
----
-
 ## 1. Ecosystems
 
 ### Key Concept

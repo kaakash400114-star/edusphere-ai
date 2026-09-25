@@ -5,24 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Real Numbers](#1-real-numbers)
-2. [Polynomials](#2-polynomials)
-3. [Pair of Linear Equations in Two Variables](#3-pair-of-linear-equations-in-two-variables)
-4. [Quadratic Equations](#4-quadratic-equations)
-5. [Arithmetic Progressions](#5-arithmetic-progressions)
-6. [Triangles](#6-triangles)
-7. [Coordinate Geometry](#7-coordinate-geometry)
-8. [Introduction to Trigonometry](#8-introduction-to-trigonometry)
-9. [Some Applications of Trigonometry (Heights & Distances)](#9-some-applications-of-trigonometry)
-10. [Circles — Tangents](#10-circles--tangents)
-11. [Surface Areas and Volumes](#11-surface-areas-and-volumes)
-12. [Statistics](#12-statistics)
-13. [Probability](#13-probability)
-
----
-
 ## 1. Real Numbers
 
 ### 1.1 Euclid's Division Lemma

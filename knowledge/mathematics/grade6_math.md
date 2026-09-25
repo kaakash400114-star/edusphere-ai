@@ -5,22 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Knowing Our Numbers](#1-knowing-our-numbers)
-2. [Whole Numbers](#2-whole-numbers)
-3. [Playing with Numbers](#3-playing-with-numbers)
-4. [Integers](#4-integers)
-5. [Fractions](#5-fractions)
-6. [Algebra](#6-algebra)
-7. [Basic Geometry](#7-basic-geometry)
-8. [Data Handling](#8-data-handling)
-9. [Mensuration](#9-mensuration)
-10. [Symmetry](#10-symmetry)
-11. [Ratio and Proportion](#11-ratio-and-proportion)
-
----
-
 ## 1. Knowing Our Numbers
 
 ### 1.1 Indian Place Value System

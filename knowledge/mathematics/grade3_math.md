@@ -5,23 +5,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Place Value](#1-place-value)
-2. [Rounding](#2-rounding)
-3. [Multiplication](#3-multiplication)
-4. [Division](#4-division)
-5. [Fractions](#5-fractions)
-6. [Geometry](#6-geometry)
-7. [Measurement & Metric Conversion](#7-measurement--metric-conversion)
-8. [Time & Elapsed Time](#8-time--elapsed-time)
-9. [Data Representation](#9-data-representation)
-10. [Word Problems (Multi-Step)](#10-word-problems-multi-step)
-11. [Patterns](#11-patterns)
-12. [Decimals Introduction](#12-decimals-introduction)
-
----
-
 ## 1. Place Value
 
 ### 1.1 Definitions

@@ -6,20 +6,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Living vs Non-Living Things](#1-living-vs-non-living-things)
-2. [Plants](#2-plants)
-3. [Animals](#3-animals)
-4. [The Human Body](#4-the-human-body)
-5. [Matter Basics](#5-matter-basics)
-6. [Weather](#6-weather)
-7. [Earth and Space](#7-earth-and-space)
-8. [Forces and Motion](#8-forces-and-motion)
-9. [Simple Investigations](#9-simple-investigations)
-
----
-
 ## 1. Living vs Non-Living Things
 
 ### Key Concept

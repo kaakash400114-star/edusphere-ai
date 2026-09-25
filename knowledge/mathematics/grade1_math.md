@@ -4,20 +4,6 @@
 
 ---
 
-## Table of Contents
-1. [Number Sense](#1-number-sense)
-2. [Addition](#2-addition)
-3. [Subtraction](#3-subtraction)
-4. [Shapes](#4-shapes)
-5. [Measurement](#5-measurement)
-6. [Time](#6-time)
-7. [Money](#7-money)
-8. [Patterns](#8-patterns)
-9. [Data](#9-data)
-10. [Word Problems](#10-word-problems)
-
----
-
 ## 1. Number Sense
 
 ### 1.1 Counting 1 to 100

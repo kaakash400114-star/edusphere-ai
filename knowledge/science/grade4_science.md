@@ -6,28 +6,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Cell Structure](#1-cell-structure)
-2. [Photosynthesis Equation](#2-photosynthesis-equation)
-3. [Ecosystems — Biotic and Abiotic](#3-ecosystems--biotic-and-abiotic)
-4. [Food Chains and Food Webs](#4-food-chains-and-food-webs)
-5. [Animal Behavior](#5-animal-behavior)
-6. [Plant Reproduction](#6-plant-reproduction)
-7. [Human Body Systems — Complete Overview](#7-human-body-systems--complete-overview)
-8. [Electricity](#8-electricity)
-9. [Magnetism](#9-magnetism)
-10. [Sound Waves](#10-sound-waves)
-11. [Light — Reflection, Refraction, Prisms, and Rainbows](#11-light--reflection-refraction-prisms-and-rainbows)
-12. [Thermal Energy](#12-thermal-energy)
-13. [Earth Science — Rock Cycle, Fossils, and Resources](#13-earth-science--rock-cycle-fossils-and-resources)
-14. [Atmosphere Layers](#14-atmosphere-layers)
-15. [Space — Planets in Detail](#15-space--planets-in-detail)
-16. [Space Exploration, Comets, and Asteroids](#16-space-exploration-comets-and-asteroids)
-17. [Engineering Design Process](#17-engineering-design-process)
-
----
-
 ## 1. Cell Structure
 
 ### Key Concept

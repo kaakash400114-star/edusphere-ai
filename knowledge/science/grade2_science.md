@@ -6,20 +6,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Plants — Going Deeper](#1-plants--going-deeper)
-2. [Animals — Going Deeper](#2-animals--going-deeper)
-3. [The Human Body — Going Deeper](#3-the-human-body--going-deeper)
-4. [Matter — States and Changes](#4-matter--states-and-changes)
-5. [Weather — Going Deeper](#5-weather--going-deeper)
-6. [Earth — Rocks, Soil, and Fossils](#6-earth--rocks-soil-and-fossils)
-7. [Forces and Motion](#7-forces-and-motion)
-8. [Energy — Light and Sound](#8-energy--light-and-sound)
-9. [Scientific Method Introduction](#9-scientific-method-introduction)
-
----
-
 ## 1. Plants — Going Deeper
 
 ### Photosynthesis (Simple Version)
