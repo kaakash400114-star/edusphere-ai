@@ -101,9 +101,14 @@ def _keywords(question: str) -> list[str]:
 
 
 def extract_relevant(subject: str, grade: int | str, question: str,
-                     max_chars: int = 6000) -> str:
-    """Return the most question-relevant excerpt of the grade's knowledge file."""
-    path = knowledge_path(subject, grade)
+                     max_chars: int = 6000,
+                     path: Path | None = None) -> str:
+    """Return the most question-relevant excerpt of the grade's knowledge file.
+
+    `path` lets callers (e.g. the board system) supply their own knowledge
+    file; defaults to the standard resolution.
+    """
+    path = path or knowledge_path(subject, grade)
     if not path:
         return ""
     sections = load_file(str(path))

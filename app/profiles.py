@@ -29,7 +29,8 @@ def _path(pid: str) -> Path:
 
 
 def create_profile(name: str, grade: int, parent_pin: str,
-                   character: str = "auto") -> dict:
+                   character: str = "auto", board: str = "cbse") -> dict:
+    from . import boards as _boards
     name = name.strip()[:MAX_NAME_LEN]
     grade = int(grade or 1)
     if not name or not (1 <= grade <= 12):
@@ -41,6 +42,7 @@ def create_profile(name: str, grade: int, parent_pin: str,
         "name": name,
         "grade": grade,
         "character": character,
+        "board": _boards.normalize_board(board),
         "parent_pin_hash": _hash_pin(parent_pin),
         "parent_consent": True,
         "consent_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -77,6 +79,7 @@ def check_pin(pid: str, pin: str) -> bool:
 
 
 def update_profile(pid: str, **changes) -> dict | None:
+    from . import boards as _boards
     p = _path(pid)
     if not p.exists():
         return None
@@ -88,6 +91,8 @@ def update_profile(pid: str, **changes) -> dict | None:
                 if not changes[key]:
                     raise ValueError("name cannot be empty")
             raw[key] = changes[key]
+    if "board" in changes and changes["board"] is not None:
+        raw["board"] = _boards.normalize_board(changes["board"])
     if "parent_pin" in changes and changes["parent_pin"] is not None:
         raw["parent_pin_hash"] = _hash_pin(str(changes["parent_pin"]))
     if "accessory" in changes and changes["accessory"] is not None:

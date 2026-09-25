@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import (characters, conversation, improvement, knowledge,
+from . import (boards, characters, conversation, improvement, knowledge,
                neural_voice, practice, profiles, tutor, worlds)
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,6 +41,7 @@ class ProfileCreate(BaseModel):
     grade: int = Field(ge=1, le=12)  # grades 1-12 only (final spec)
     parent_pin: str = Field(min_length=4, max_length=8)
     character: str = "auto"
+    board: str = boards.DEFAULT_BOARD
 
     @field_validator("character")
     @classmethod
@@ -49,11 +50,17 @@ class ProfileCreate(BaseModel):
             raise ValueError("unknown buddy")
         return v
 
+    @field_validator("board")
+    @classmethod
+    def board_exists(cls, v: str) -> str:
+        return boards.normalize_board(v)
+
 
 class ProfileUpdate(BaseModel):
     name: str | None = Field(default=None, min_length=1, max_length=20)
     grade: int | None = Field(default=None, ge=1, le=12)
     character: str | None = None
+    board: str | None = None
     voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
     voice_on: bool | None = None
     parent_pin: str | None = Field(default=None, min_length=4, max_length=8)
@@ -63,6 +70,7 @@ class SettingsUpdate(BaseModel):
     name: str | None = Field(default=None, min_length=1, max_length=20)
     grade: int | None = Field(default=None, ge=1, le=12)
     character: str | None = None
+    board: str | None = None
     voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
     voice_on: bool | None = None
     current_pin: str | None = Field(default=None, min_length=4, max_length=8)
@@ -92,7 +100,8 @@ class TaskDoneRequest(BaseModel):
 def create_profile(body: ProfileCreate):
     try:
         profile = profiles.create_profile(
-            body.name, body.grade, body.parent_pin, body.character)
+            body.name, body.grade, body.parent_pin, body.character,
+            board=body.board)
     except ValueError as exc:
         raise HTTPException(400, str(exc))
     return {"pid": profile["pid"], "profile": profile}
@@ -129,6 +138,7 @@ def get_settings(pid: str):
     raw = profiles._raw(pid) or {}
     return {
         "profile": profile,
+        "boards": boards.board_public(),
         "improvement": improvement.improvement_report(raw, profile["grade"]),
     }
 
@@ -139,7 +149,7 @@ def save_settings(pid: str, body: SettingsUpdate):
     if body.character is not None and body.character not in characters.CHARACTERS:
         raise HTTPException(400, "unknown buddy")
     changes = {"name": body.name, "grade": body.grade,
-               "character": body.character,
+               "character": body.character, "board": body.board,
                "voice_speed": body.voice_speed, "voice_on": body.voice_on}
     changes = {k: v for k, v in changes.items() if v is not None}
     if body.new_pin is not None:
@@ -166,6 +176,12 @@ def save_settings(pid: str, body: SettingsUpdate):
 def list_characters():
     """The Character Universe roster, in carousel order."""
     return {"characters": characters.roster()}
+
+
+@app.get("/api/boards")
+def list_boards():
+    """Curriculum boards for onboarding + settings pickers."""
+    return {"boards": boards.board_public()}
 
 
 @app.get("/api/worlds")
@@ -237,7 +253,8 @@ def chat(body: ChatRequest):
         question=body.message, history=body.history, subject=subject,
         weak_areas=list(profile.get("weak_areas", {}).keys()),
         mode=body.mode,
-        memories=list(profile.get("memories", [])))
+        memories=list(profile.get("memories", [])),
+        board=profile.get("board"))
     topic = _topic_from(subject, body.message)
     updated = profiles.record_activity(body.pid, "chat", topic)
     buddy = characters.public(profile.get("character") or "leo")

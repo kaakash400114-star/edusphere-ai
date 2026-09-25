@@ -9,7 +9,7 @@ import time
 
 import httpx
 
-from . import characters, conversation, knowledge, neural_voice, worlds
+from . import boards, characters, conversation, knowledge, neural_voice, worlds
 
 BASE_URL = os.environ.get(
     "GLM_BASE_URL", "https://api.z.ai/api/coding/paas/v4").rstrip("/")
@@ -18,7 +18,8 @@ MAX_HISTORY = 8
 
 def _system_prompt(name: str, grade: int, buddy_id: str,
                    weak_areas: list[str], world_id: str | None = None,
-                   memories: list[str] | None = None) -> str:
+                   memories: list[str] | None = None,
+                   board: str | None = None) -> str:
     weak = ", ".join(weak_areas[:5]) if weak_areas else "none yet"
     world = worlds.resolve_world(grade)
     if world_id and world_id in worlds.WORLDS:
@@ -32,6 +33,7 @@ def _system_prompt(name: str, grade: int, buddy_id: str,
         + conversation.HUMAN_RULES
         + conversation.memory_directive(memories or [])
         + conversation.language_directive()
+        + boards.english_directive(board)
         + (f"\nSTUDENT: {name}, grade {grade} (about age {5 + grade}).\n")
         + f"WEAK AREAS to gently revisit: {weak}.\n\n"
         "RULES:\n"
@@ -68,15 +70,17 @@ def _extract_content(data: dict) -> str:
 def ask(name: str, grade: int, buddy: str, question: str,
         history: list[dict] | None = None, subject: str = "general",
         weak_areas: list[str] | None = None, mode: str | None = None,
-        memories: list[str] | None = None) -> str:
+        memories: list[str] | None = None, board: str | None = None) -> str:
     """One tutor turn: buddy persona + world style + human speech -> answer."""
     grade = max(1, min(12, int(grade or 1)))
     buddy = characters.character_for(grade, buddy)["id"]
     world = worlds.resolve_world(grade)
     subject_hint = worlds.knowledge_subject_hint(world["id"], subject)
-    excerpt = knowledge.extract_relevant(subject_hint, grade, question)
+    excerpt = knowledge.extract_relevant(
+        subject_hint, grade, question,
+        path=boards.knowledge_path_for(board, subject_hint, grade))
     system = _system_prompt(name, grade, buddy, weak_areas or [],
-                            memories=memories)
+                            memories=memories, board=board)
     mode_def = characters.MODES.get(buddy)
     if mode and mode_def and mode_def["trigger"] == mode:
         system += "\n" + mode_def["instructions"] + "\n"

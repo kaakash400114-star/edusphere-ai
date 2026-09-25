@@ -327,6 +327,8 @@ button:disabled{opacity:.5;cursor:default}
   font-family:inherit;font-size:.9rem}
 .set-row select{flex:1;padding:8px;border:2px solid #e0e7ff;border-radius:10px;
   font-family:inherit;font-size:.9rem}
+.board-select{width:100%;padding:10px 12px;border:2px solid #e0e7ff;
+  border-radius:12px;font-family:inherit;font-size:.95rem;background:#fff}
 .imp-big{display:flex;align-items:center;gap:12px;margin:6px 0 10px}
 .imp-badge{font-size:1.5rem;font-weight:900;padding:6px 16px;border-radius:14px;color:#fff}
 .imp-note{font-size:.85rem;color:var(--ink);line-height:1.5}
@@ -367,6 +369,10 @@ button:disabled{opacity:.5;cursor:default}
 
     <label class="fld">Pick your grade
       <div id="ob-grades" class="grade-grid"></div>
+    </label>
+
+    <label class="fld">Your board (curriculum)
+      <select id="ob-board" class="board-select"></select>
     </label>
 
     <label class="fld">Choose your study buddy
@@ -521,6 +527,8 @@ button:disabled{opacity:.5;cursor:default}
         <input id="set-name" maxlength="20"></label>
       <label class="set-row"><span>Grade (1–12)</span>
         <select id="set-grade"></select></label>
+      <label class="set-row"><span>Board</span>
+        <select id="set-board"></select></label>
       <label class="set-row"><span>Buddy</span>
         <select id="set-buddy"></select></label>
       <button id="set-save" class="btn-primary">Save profile</button>
@@ -659,6 +667,27 @@ const SUGGESTIONS = {
 };
 
 // ---------- onboarding (grades 1-12 only) ----------
+async function loadBoards() {
+  if (state.boards && state.boards.length) return state.boards;
+  try {
+    const r = await fetch("/api/boards");
+    state.boards = (await r.json()).boards || [];
+  } catch (e) { state.boards = []; }
+  return state.boards;
+}
+
+function fillBoardSelect(sel, current) {
+  if (!sel) return;
+  sel.innerHTML = "";
+  (state.boards || []).forEach(b => {
+    const o = document.createElement("option");
+    o.value = b.id;
+    o.textContent = `${b.emoji} ${b.name} — ${b.region}`;
+    sel.appendChild(o);
+  });
+  if (current) sel.value = current;
+}
+
 function buildOnboard() {
   const gg = $("ob-grades");
   for (let g = 1; g <= 12; g++) {
@@ -675,6 +704,7 @@ function buildOnboard() {
   }
   const cr = $("ob-chars");
   cr.innerHTML = "";
+  loadBoards().then(bs => fillBoardSelect($("ob-board"), "cbse"));
   loadBuddies().then(buddies => {
     buddies.forEach(c => {
       const card = document.createElement("button");
@@ -706,7 +736,7 @@ async function startLearning() {
   const r = await fetch("/api/profile", {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, grade: state.grade, parent_pin: pin,
-      character: state.character }),
+      character: state.character, board: $("ob-board").value || "cbse" }),
   });
   const data = await r.json();
   if (!r.ok) {
@@ -1613,6 +1643,9 @@ async function openSettings() {
       o.value = g; o.textContent = "Grade " + g; gs.appendChild(o);
     }
   gs.value = p.grade;
+  // board selector
+  await loadBoards();
+  fillBoardSelect($("set-board"), p.board || "cbse");
   // buddy selector
   const bs = $("set-buddy");
   bs.innerHTML = "";
@@ -1640,7 +1673,8 @@ function wireSettings() {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: $("set-name").value.trim(),
         grade: parseInt($("set-grade").value, 10),
-        character: $("set-buddy").value }),
+        character: $("set-buddy").value,
+        board: $("set-board").value }),
     });
     const d = await r.json();
     if (!r.ok) return $("set-msg").textContent = d.detail || "Could not save.";
