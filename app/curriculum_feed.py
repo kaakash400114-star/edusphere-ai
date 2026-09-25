@@ -37,8 +37,13 @@ def _sections(subject: str, grade: int) -> list[str]:
     for line in text.splitlines():
         if line.startswith("## "):
             title = line[3:].strip()
-            if title and not title.startswith("#"):
-                out.append(title)
+            if not title or title.startswith("#"):
+                continue
+            # skip navigational sections that make poor tasks
+            if title.lower() in ("table of contents", "contents", "introduction",
+                                 "conclusion", "summary", "index"):
+                continue
+            out.append(title)
     return out
 
 
