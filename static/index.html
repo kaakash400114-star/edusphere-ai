@@ -257,6 +257,36 @@ button:disabled{opacity:.5;cursor:default}
 .week-bars .bar span{position:absolute;bottom:-20px;left:0;right:0;text-align:center;
   font-size:.6rem;color:var(--muted)}
 
+/* stage B: levels */
+.level-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.level-card{border:2px solid #e0e7ff;border-radius:16px;background:#fff;
+  padding:12px 6px;text-align:center;cursor:pointer;font-family:inherit;position:relative}
+.level-card .ln{font-weight:800;font-size:.85rem}
+.level-card .lst{font-size:.68rem;color:var(--muted);display:block;margin-top:2px}
+.level-card .lprice{font-size:.7rem;font-weight:700;margin-top:4px;display:block}
+.level-card.unlocked:hover{border-color:var(--brand)}
+.level-card.completed{border-color:#86efac;background:#f0fdf4}
+.level-card.current{border-color:var(--brand);background:#eef2ff}
+.level-card.locked{opacity:.55;cursor:default}
+.level-card .lock{position:absolute;top:6px;right:8px;font-size:.8rem}
+.task-row{display:flex;align-items:center;gap:10px;border:2px solid #e0e7ff;
+  border-radius:14px;padding:10px 12px;margin:8px 0;background:#fff}
+.task-row .em{font-size:1.3rem}
+.task-row .tt{font-weight:800;font-size:.85rem}
+.task-row .tp{font-size:.75rem;color:var(--muted)}
+.task-row .pts{margin-left:auto;font-weight:800;font-size:.8rem;color:var(--brand);white-space:nowrap}
+.task-row.done{opacity:.6;border-color:#86efac}
+.task-row button{margin-left:8px;border:none;border-radius:10px;
+  background:#dcfce7;font-family:inherit;font-weight:700;padding:8px 12px;cursor:pointer;white-space:nowrap}
+#task-banner{display:flex;align-items:center;gap:8px;max-width:820px;margin:0 auto 8px;
+  background:#fef3c7;border:2px solid #fde047;border-radius:14px;padding:8px 12px;
+  font-size:.85rem;font-weight:700}
+#task-banner .tb-text{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#task-banner button{border:none;border-radius:10px;padding:6px 12px;
+  font-family:inherit;font-weight:800;cursor:pointer}
+#task-done{background:#dcfce7}
+#task-drop{background:#fee2e2}
+
 /* parent modal */
 .modal{position:fixed;inset:0;background:rgba(30,27,75,.45);z-index:20;
   display:flex;align-items:center;justify-content:center;padding:16px}
@@ -344,6 +374,7 @@ button:disabled{opacity:.5;cursor:default}
       <span class="badge" id="star-badge">⭐ 0</span>
       <span class="badge" id="streak-badge">🔥 0</span>
       <button id="world-chip" class="mode-chip" title="The Four Worlds">🌍 Worlds</button>
+      <button id="levels-btn" class="badge badge-btn" title="Levels & points">🪜 Levels</button>
       <button id="mode-chip" class="mode-chip hidden" title="Special mode"></button>
       <button id="why-chip" class="mode-chip" title="Unlimited But-Why mode">❓ But why?</button>
       <button id="games-btn" class="badge badge-btn" title="Games arcade">🎮 Games</button>
@@ -421,8 +452,20 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </div>
 
-<!-- GAMES ARCADE MODAL (stage 5) -->
-<div id="games-modal" class="modal hidden">
+<!-- LEVELS MODAL (stage B) -->
+<div id="levels-modal" class="modal hidden">
+  <div class="modal-card" style="width:min(560px,96vw)">
+    <button class="modal-x" id="levels-x">✕</button>
+    <div id="levels-view">
+      <h2>🪜 Your Levels</h2>
+      <p class="modal-sub" id="levels-points">Points: 💠 0 · finish tasks to earn, spend to unlock levels</p>
+      <div id="level-grid" class="level-grid"></div>
+      <div id="level-detail" class="hidden"></div>
+    </div>
+  </div>
+</div>
+
+<!-- GAMES ARCADE MODAL (stage 5) --><div id="games-modal" class="modal hidden">
   <div class="modal-card">
     <button class="modal-x" id="games-x">✕</button>
     <h2>🎮 Dodo's Games Arcade</h2>
@@ -1614,6 +1657,144 @@ function wireStage56789() {
 }
 
 // ======================================================================
+// STAGE B — LEVELS: 7 per grade, tasks earn points, points buy levels
+// ======================================================================
+const SUBJ_EMOJI = { math: "🔢", science: "🔬", english: "📖", general: "🌏" };
+let levelState = null;   // /api/levels/{pid} payload
+let currentLevel = null; // level open in the banner
+
+async function openLevels() {
+  const r = await fetch("/api/levels/" + state.pid);
+  if (!r.ok) return;
+  levelState = await r.json();
+  $("levels-points").textContent =
+    `Grade ${levelState.grade} · Points: 💠 ${levelState.points} — finish tasks to earn, spend to unlock`;
+  renderLevelGrid();
+  $("level-detail").classList.add("hidden");
+  $("levels-modal").classList.remove("hidden");
+}
+
+function renderLevelGrid() {
+  const grid = $("level-grid");
+  grid.innerHTML = "";
+  let firstOpen = null;
+  levelState.levels.forEach(L => {
+    const cls = L.completed ? "completed" : L.unlocked ? (L.tasks_done.length ? "current" : "unlocked") : "locked";
+    if (L.unlocked && !L.completed && !firstOpen) firstOpen = L;
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "level-card " + cls;
+    card.innerHTML = `<span class="lock">${L.completed ? "✅" : L.unlocked ? "▶" : "🔒"}</span>` +
+      `<div class="ln">Level ${L.level}</div><span class="lst">${L.name}</span>` +
+      `<span class="lprice">${L.completed ? "done!" : L.unlocked ? `${L.tasks_done.length} tasks done` : "💠 " + L.price}</span>`;
+    card.onclick = () => {
+      if (L.unlocked) openLevelDetail(L);
+      else buyLevelFlow(L);
+    };
+    grid.appendChild(card);
+  });
+  if (firstOpen && !currentLevel) currentLevel = firstOpen.level;
+  if (firstOpen) showTaskBanner(firstOpen);
+}
+
+async function openLevelDetail(L) {
+  const r = await fetch(`/api/levels/${state.pid}/${L.level}`);
+  if (!r.ok) return;
+  const d = await r.json();
+  const box = $("level-detail");
+  box.classList.remove("hidden");
+  box.innerHTML = `<h3 style="margin-top:12px">Level ${L.level} — ${L.name} ` +
+    `${L.completed ? "✅" : ""}</h3><div id="task-list"></div>`;
+  const list = box.querySelector("#task-list");
+  const done = new Set(L.tasks_done);
+  d.tasks.forEach(t => {
+    const row = document.createElement("div");
+    row.className = "task-row" + (done.has(t.id) ? " done" : "");
+    row.innerHTML = `<span class="em">${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
+      `<div><div class="tt">${t.title}</div><div class="tp">${t.subject}</div></div>` +
+      `<span class="pts">+${t.points} 💠</span>`;
+    if (!done.has(t.id)) {
+      const b = document.createElement("button");
+      b.textContent = "Start ▶";
+      b.onclick = () => startTask(L.level, t);
+      row.appendChild(b);
+    } else {
+      const s = document.createElement("span");
+      s.textContent = "✅";
+      s.style.marginLeft = "8px";
+      row.appendChild(s);
+    }
+    list.appendChild(row);
+  });
+  if (!d.tasks.length) box.innerHTML += "<i>No tasks here yet — more coming!</i>";
+}
+
+async function buyLevelFlow(L) {
+  const need = L.price;
+  const have = levelState.points;
+  if (have < need) {
+    addMsg(`🔒 Level ${L.level} costs 💠 ${need}. You have 💠 ${have} — finish more tasks first!`, "bot");
+    speak(`You need ${need - have} more points for level ${L.level}. Finish some tasks!`, {});
+    return;
+  }
+  const r = await fetch(`/api/levels/${state.pid}/buy`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ level: L.level }),
+  });
+  if (!r.ok) { const d = await r.json(); addMsg("🔒 " + (d.detail || "Cannot unlock yet."), "bot"); return; }
+  const d = await r.json();
+  levelState = null; // refetch
+  faceMood("celebrate", 2.5);
+  speak(`Wow! Level ${L.level}, ${L.name}, unlocked! Let's go!`, {});
+  addMsg(`🔓 Level ${L.level} — ${L.name} unlocked! (−💠 ${d.result.spent})`, "bot");
+  openLevels();
+}
+
+// ---- task banner in chat: the buddy teaches the topic, then Done/Drop ----
+async function startTask(level, t) {
+  $("levels-modal").classList.add("hidden");
+  currentLevel = level;
+  const old = $("task-banner");
+  if (old) old.remove();
+  const banner = document.createElement("div");
+  banner.id = "task-banner";
+  banner.innerHTML = `<span>${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
+    `<span class="tb-text">Task: ${t.title}</span>` +
+    `<button id="task-done">Done ✓ +${t.points} 💠</button>` +
+    `<button id="task-drop">✕</button>`;
+  $("chatapp").insertBefore(banner, $("messages"));
+  addMsg(`🎯 New task: ${t.title}. ${t.prompt}`, "bot");
+  speak(`New task! ${t.title}. ${t.prompt}`, {});
+  $("task-done").onclick = () => finishTask(level, t, true);
+  $("task-drop").onclick = () => { banner.remove(); addMsg("Task saved for later — it stays in your level list.", "bot"); };
+}
+
+async function finishTask(level, t, done) {
+  const banner = $("task-banner");
+  if (!done) return;
+  const r = await fetch(`/api/levels/${state.pid}/${level}/task`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ level, task_id: t.id, score: t.points }),
+  });
+  if (!r.ok) { const d = await r.json(); addMsg("Hmm — " + (d.detail || "try again"), "bot");
+    if (banner) banner.remove(); return; }
+  const d = await r.json();
+  banner.remove();
+  levelState = null;
+  state.profile = d.profile;
+  faceMood("celebrate", 2.2);
+  flyStar($("star-badge"));
+  addMsg("💠 " + d.message, "bot");
+  speak(d.message, {});
+  if (d.result.completed) {
+    setTimeout(() => speak(`Incredible! You finished Level ${level}! A new sticker is in your album!`, {}), 2500);
+    faceMood("celebrate", 4);
+  }
+  // refresh the open level list so finished tasks show as done
+  if (!$("levels-modal").classList.contains("hidden")) await openLevels();
+}
+
+// ======================================================================
 // wire up
 function wire() {
   wireStage56789();
@@ -1626,6 +1807,8 @@ function wire() {
   $("wardrobe-x").onclick = () => $("wardrobe-modal").classList.add("hidden");
   $("world-chip").onclick = openWorldModal;
   $("world-x").onclick = () => $("world-modal").classList.add("hidden");
+  $("levels-btn").onclick = openLevels;
+  $("levels-x").onclick = () => $("levels-modal").classList.add("hidden");
   $("buddy-btn").onclick = openBuddyModal;
   $("buddy-x").onclick = () => $("buddy-modal").classList.add("hidden");
   $("info-x").onclick = () => $("info-modal").classList.add("hidden");

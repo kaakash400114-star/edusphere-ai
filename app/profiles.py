@@ -193,6 +193,12 @@ def _raw(pid: str) -> dict | None:
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
+def _write_raw(pid: str, raw: dict) -> None:
+    """Persist a mutated raw profile (used by the levels engine)."""
+    raw["updated_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+    _path(pid).write_text(json.dumps(raw, indent=2), encoding="utf-8")
+
+
 def _public(raw: dict) -> dict:
     return {k: v for k, v in raw.items() if k != "parent_pin_hash"}
 

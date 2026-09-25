@@ -1,0 +1,116 @@
+"""Stage C feed: level task sets generated from the curriculum files.
+
+Each (grade, level) gets a task set derived from the real knowledge files
+('## ' sections). Deterministic: section i of the subject spread maps to
+level (i % 7) + 1, so every level has 2 tasks (math + science OR english +
+second subject) and every curriculum section reaches a level.
+
+Subject spread per grade band:
+- grades 1-5: math + science + english -> tasks pair math/science/english
+  cycling; each level ends with 3 tasks where material exists.
+- grades 6-12: math + science (english added in stage D when files exist).
+
+Public API used by main.py / levels.py:
+  task_count(grade, level) -> int
+  level_tasks(grade, level) -> [{id, subject, title, prompt, points}]
+"""
+from __future__ import annotations
+
+from pathlib import Path
+
+from . import knowledge, levels
+
+ROOT = Path(__file__).resolve().parent.parent
+
+# section count per (subject, grade) discovered from the knowledge files
+def _sections(subject: str, grade: int) -> list[str]:
+    path = ROOT / "knowledge" / subject / f"grade{grade}_{subject}.md"
+    if subject == "math":  # mathematics dir
+        path = ROOT / "knowledge" / "mathematics" / f"grade{grade}_math.md"
+    if not path.exists():
+        return []
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return []
+    out = []
+    for line in text.splitlines():
+        if line.startswith("## "):
+            title = line[3:].strip()
+            if title and not title.startswith("#"):
+                out.append(title)
+    return out
+
+
+_SUBJECTS_BY_GRADE = {
+    **{g: ["math", "science", "english"] for g in range(1, 6)},
+    **{g: ["math", "science"] for g in range(6, 13)},  # english 7+ lands in stage D
+}
+
+PROMPTS = {
+    "math": "Teach me {topic} with a small example, then quiz me on it!",
+    "science": "Explain {topic} simply, then ask me two check questions!",
+    "english": "Help me practice {topic}, then give me a mini exercise!",
+}
+
+
+def _subject_file_name(subject: str, grade: int) -> str:
+    return {"math": "mathematics", "science": "science", "english": "english"}[subject]
+
+
+def _grade_tasks(grade: int) -> list[dict]:
+    """All tasks for a grade: one per curriculum section, subject-cycled."""
+    subs = _SUBJECTS_BY_GRADE.get(grade, ["math"])
+    streams = []
+    for s in subs:
+        for i, title in enumerate(_sections(s, grade)):
+            streams.append({
+                "subject": s,
+                "title": title,
+                "file": _subject_file_name(s, grade),
+            })
+    if not streams:
+        return []
+    # deterministic order: round-robin subjects so levels get variety
+    streams.sort(key=lambda t: (t["subject"], ))
+    n_levels = levels.LEVELS_PER_GRADE
+    tasks = []
+    for idx, t in enumerate(streams):
+        lvl = (idx % n_levels) + 1
+        s = t["subject"]
+        tasks.append({
+            "id": f"{s}_{idx}_{t['file']}",
+            "grade": grade,
+            "level": lvl,
+            "subject": s,
+            "title": t["title"][:80],
+            "prompt": PROMPTS[s].format(topic=t["title"].lower())[:160],
+            "points": 10,
+            "mode": "chat",   # chat-based task: buddy teaches + quizzes
+        })
+    return tasks
+
+
+_CACHE: dict[int, list[dict]] = {}
+
+def grade_tasks(grade: int) -> list[dict]:
+    g = max(1, min(12, int(grade or 1)))
+    if g not in _CACHE:
+        _CACHE[g] = _grade_tasks(g)
+    return _CACHE[g]
+
+
+def level_tasks(grade: int, level: int) -> list[dict]:
+    lvl = max(1, min(levels.LEVELS_PER_GRADE, int(level)))
+    return [t for t in grade_tasks(grade) if t["level"] == lvl]
+
+
+def task_count(grade: int, level: int) -> int:
+    return len(level_tasks(grade, level))
+
+
+def task_by_id(grade: int, task_id: str) -> dict | None:
+    for t in grade_tasks(grade):
+        if t["id"] == task_id:
+            return t
+    return None

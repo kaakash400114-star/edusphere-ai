@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import characters, conversation, knowledge, profiles, tutor, worlds
+from . import characters, conversation, knowledge, levels, profiles, tutor, worlds
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -68,6 +68,16 @@ class PinRequest(BaseModel):
 
 class QuestDoneRequest(BaseModel):
     quest: str = Field(min_length=1, max_length=40)
+
+
+class TaskDoneRequest(BaseModel):
+    level: int = Field(ge=1, le=7)
+    task_id: str = Field(min_length=1, max_length=80)
+    score: int = Field(default=10, ge=0, le=200)
+
+
+class LevelBuyRequest(BaseModel):
+    level: int = Field(ge=1, le=7)
 
 
 # ---------------- API ----------------
@@ -298,6 +308,68 @@ def parent_report(body: PinRequest):
 def grade_meta():
     return {"subjects": {str(g): knowledge.list_available(g)
                          for g in range(1, 13)}}
+
+
+# ---------------- levels (stage B) ----------------
+
+@app.get("/api/levels/{pid}")
+def get_levels(pid: str):
+    """The 7 levels of the kid's grade with progress + points."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    raw = profiles._raw(pid) or {}
+    return levels.view_levels(raw, profile["grade"])
+
+
+@app.get("/api/levels/{pid}/{level}")
+def get_level_tasks(pid: str, level: int):
+    """Task list for one level of the kid's grade (curriculum-fed)."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    if not 1 <= level <= levels.LEVELS_PER_GRADE:
+        raise HTTPException(400, "bad level")
+    from . import curriculum_feed
+    return {"grade": profile["grade"], "level": level,
+            "theme": levels.level_theme(profile["grade"], level),
+            "tasks": curriculum_feed.level_tasks(profile["grade"], level)}
+
+
+@app.post("/api/levels/{pid}/{level}/task")
+def do_task(pid: str, level: int, body: TaskDoneRequest):
+    """Complete one task inside a level: awards score points."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    from . import curriculum_feed
+    if not curriculum_feed.task_by_id(profile["grade"], body.task_id):
+        raise HTTPException(400, "unknown task")
+    raw = profiles._raw(pid) or {}
+    payload, ok, msg = levels.complete_task(
+        raw, profile["grade"], level, body.task_id, body.score)
+    if not ok:
+        raise HTTPException(400, msg)
+    profiles._write_raw(pid, raw)
+    if payload.get("completed"):
+        profiles.award_sticker(pid, f"grade{profile['grade']}_level{level}")
+        profiles.record_activity(pid, f"level:{level}", f"grade{profile['grade']} L{level}")
+    return {"result": payload, "message": msg,
+            "profile": profiles.get_profile(pid)}
+
+
+@app.post("/api/levels/{pid}/buy")
+def buy_level(pid: str, body: LevelBuyRequest):
+    """Buy the next level with points."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    raw = profiles._raw(pid) or {}
+    payload, ok = levels.unlock_level(raw, profile["grade"], body.level)
+    if not ok:
+        raise HTTPException(400, payload.get("error", "cannot buy"))
+    profiles._write_raw(pid, raw)
+    return {"result": payload, "profile": profiles.get_profile(pid)}
 
 
 def _topic_from(subject: str, message: str) -> str:
