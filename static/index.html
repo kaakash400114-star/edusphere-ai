@@ -555,10 +555,12 @@ async function loadWorlds() {
 }
 
 function worldForProfileLocal(p) {
-  // mirrors worlds.resolve_world (grade-only routing)
+  // mirrors worlds.resolve_world (grade bands)
   const g = p.grade || 1;
   if (g >= 1 && g <= 2) return "village";
-  return "mountains";  // stage E will add academy/tower bands
+  if (g >= 3 && g <= 5) return "mountains";
+  if (g >= 6 && g <= 8) return "academy";
+  return "tower";
 }
 
 const SUGGESTIONS = {

@@ -17,14 +17,23 @@ def test_grades_route_to_bands():
     assert worlds.resolve_world(2)["id"] == "village"
     assert worlds.resolve_world(3)["id"] == "mountains"
     assert worlds.resolve_world(5)["id"] == "mountains"
-    assert worlds.resolve_world(6)["id"] == "mountains"   # until stage E
-    assert worlds.resolve_world(12)["id"] == "mountains"  # until stage E
+    assert worlds.resolve_world(6)["id"] == "academy"
+    assert worlds.resolve_world(8)["id"] == "academy"
+    assert worlds.resolve_world(9)["id"] == "tower"
+    assert worlds.resolve_world(12)["id"] == "tower"
+
+
+def test_four_worlds_no_preschool():
+    ids = {w["id"] for w in worlds.roster()}
+    assert ids == {"village", "mountains", "academy", "tower"}
+    assert "meadow" not in ids and "kindergarten" not in ids
 
 
 def test_no_age_routing():
-    # age argument is ignored entirely now
+    # age argument is ignored; without a grade the default is grade 1 (village)
     assert worlds.resolve_world(None, 3)["id"] == "village"
-    assert worlds.resolve_world(None, 5)["id"] == "village"
+    assert worlds.resolve_world(None, 10)["id"] == "village"
+    assert worlds.resolve_world(10)["id"] == "tower"
 
 
 def test_world_for_profile_uses_grade():

@@ -26,52 +26,51 @@ def _register(**kw) -> None:
 
 
 _register(
-    id="meadow",
-    name="Sunny Meadow",
-    emoji="🌻",
-    tagline="Tap, giggle, surprise! A land of quacks and pop-up colors.",
-    ages="Ages 1–3",
-    grades=(0, 0),  # pre-grade, age <= 3
-    color="#fbbf24",
-    greeting=("Welcome to Sunny Meadow! Tap the duck — QUACK! "
-              "What shall we play?"),
-    mood=("Pure cause-and-effect joy. Everything the child mentions pops, "
-          "quacks, or giggles. SUPER short sentences (max 8 words). "
-          "Celebrate every tap. Nothing is ever wrong."),
+    id="academy",
+    name="Scholar Academy",
+    emoji="🏛️",
+    tagline="Experiments, equations and big ideas for serious minds.",
+    ages="Grades 6–8",
+    grades=(6, 8),
+    color="#38bdf8",
+    greeting=("Welcome to Scholar Academy! Labs, logic and level climbs — "
+              "your knowledge gets sharper here."),
+    mood=("Mentor-coach. Clear explanations with real examples, higher-order "
+          "questions, exam-smart tips. Encourage independent thinking, keep "
+          "answers structured but not childish."),
     activities=[
-        {"emoji": "🦆", "label": "Animal sounds", "prompt": "Duck says quack! What do other animals say?"},
-        {"emoji": "🎈", "label": "Pop the colors", "prompt": "Balloons pop with colors! Red! Blue! Show me more!"},
-        {"emoji": "⭐", "label": "Shapes hide & seek", "prompt": "Circle and star are playing hide and seek!"},
-        {"emoji": "🐻", "label": "Peek-a-boo", "prompt": "Peek-a-boo! Where is the bear?"},
-        {"emoji": "1️⃣", "label": "Count 1 to 5", "prompt": "Let's count little ducks: 1, 2, 3, 4, 5!"},
-        {"emoji": "🎵", "label": "Sing a rhyme", "prompt": "Sing a tiny song about a happy duck!"},
+        {"emoji": "🔬", "label": "Lab explorer", "prompt": "Explain a science concept with a real-life experiment I can picture!"},
+        {"emoji": "🧮", "label": "Math mastery", "prompt": "Teach me a new math chapter with solved examples!"},
+        {"emoji": "📝", "label": "Grammar gym", "prompt": "Give me a grammar workout with corrections!"},
+        {"emoji": "🗺️", "label": "World facts", "prompt": "Quiz me on social studies facts!"},
+        {"emoji": "🏆", "label": "Level challenge", "prompt": "Give me a challenge from my current level!"},
+        {"emoji": "💡", "label": "Why it matters", "prompt": "Where is today's topic used in real life?"},
     ],
-    host_ids=["pip", "miko"],
+    host_ids=["nova", "bip", "kiko"],
 )
 
 _register(
-    id="kindergarten",
-    name="Rainbow Kindergarten",
-    emoji="🌈",
-    tagline="Letters sing, numbers play, magic sand traces A-B-C.",
-    ages="Ages 4–5",
-    grades=(0, 0),  # pre-grade, age 4-5
+    id="tower",
+    name="Wisdom Tower",
+    emoji="🗼",
+    tagline="The summit for senior learners — boards and beyond.",
+    ages="Grades 9–12",
+    grades=(9, 12),
     color="#f472b6",
-    greeting=("Welcome to Rainbow Kindergarten! Toko has a new song — "
-              "and magic sand for tracing letters!"),
-    mood=("Playful teacher. Letters and numbers arrive through songs, "
-          "mangoes, stars, and stories. Very short sentences, lots of "
-          "sound-out words (c-a-t!). Every small win gets a sticker moment. "
-          "Nothing is ever wrong — 'almost! try again with me'."),
+    greeting=("Welcome to the Wisdom Tower. Deep concepts, board-level "
+              "answers and every climb counts toward your future."),
+    mood=("Senior tutor. Board-exam depth, precise definitions, worked "
+          "answers, exam strategy; respects intelligence, no baby talk, "
+          "still warm and encouraging."),
     activities=[
-        {"emoji": "🔤", "label": "Letter of the day", "prompt": "Teach me the letter A with a song!"},
-        {"emoji": "🐱", "label": "c-a-t sounds", "prompt": "Sound out a new word with me: c-a-t!"},
-        {"emoji": "🥭", "label": "Count to 20", "prompt": "Count mangoes with me up to 20!"},
-        {"emoji": "✏️", "label": "Magic sand tracing", "prompt": "How do I write the letter S in magic sand?"},
-        {"emoji": "🎶", "label": "Rhyme time", "prompt": "Sing a rhyme and I will sing along!"},
-        {"emoji": "🔷", "label": "Shapes & colors", "prompt": "What shape is a ball? Teach me shapes!"},
+        {"emoji": "📚", "label": "Board prep", "prompt": "Teach me a board-exam chapter with important questions!"},
+        {"emoji": "🧪", "label": "Physics-Chem-Bio drill", "prompt": "Give me a mixed science drill with solutions!"},
+        {"emoji": "✍️", "label": "Answer writing", "prompt": "Show me how to write full-mark answers!"},
+        {"emoji": "🧠", "label": "Concept deep dive", "prompt": "Explain the hardest concept of my grade simply!"},
+        {"emoji": "📊", "label": "Weekly test", "prompt": "Take a 5-question test from my syllabus!"},
+        {"emoji": "🎯", "label": "Doubt clinic", "prompt": "I have a doubt — explain step by step!"},
     ],
-    host_ids=["toko", "pip"],
+    host_ids=["nova", "zara"],
 )
 
 _register(
@@ -127,18 +126,17 @@ _register(
 
 
 def resolve_world(grade: int | None = None, age: int | None = None) -> dict:
-    """Pick the right world from grade.
+    """Pick the right world from grade (final spec grade bands).
 
-    Grades 1-2 -> Explorer Village, 3-5 -> Champion Mountains, 6+ stays in
-    Champion Mountains (it is the top land). Grade-only routing (final spec):
-    no preschool, no age-based lands.
+    Grades 1-2 -> Explorer Village, 3-5 -> Champion Mountains,
+    6-8 -> Scholar Academy, 9-12 -> Wisdom Tower. `age` is ignored.
     """
     g = int(grade or 1)
     for w in WORLDS.values():
         lo, hi = w["grades"]
         if lo and lo <= g <= hi:
             return w
-    return WORLDS["mountains"]  # grade 6+ tops out in the Mountains (for now)
+    return WORLDS["tower"]  # safety net
 
 
 def public(wid: str) -> dict:
@@ -147,7 +145,7 @@ def public(wid: str) -> dict:
 
 
 def roster() -> list[dict]:
-    return [public(w) for w in ("meadow", "kindergarten", "village", "mountains")]
+    return [public(w) for w in ("village", "mountains", "academy", "tower")]
 
 
 def world_for_profile(profile: dict) -> dict:
@@ -166,9 +164,5 @@ def world_prompt(world: dict) -> str:
 
 
 def knowledge_subject_hint(world_id: str, subject: str) -> str:
-    """Pre-grade worlds teach play-scripts, not graded curriculum files."""
-    if world_id == "meadow":
-        return "meadow"
-    if world_id == "kindergarten":
-        return "kindergarten"
+    """All four worlds teach the graded curriculum files."""
     return subject if subject in ("math", "science", "english") else "general"
