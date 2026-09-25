@@ -354,6 +354,11 @@ def do_task(pid: str, level: int, body: TaskDoneRequest):
     if payload.get("completed"):
         profiles.award_sticker(pid, f"grade{profile['grade']}_level{level}")
         profiles.record_activity(pid, f"level:{level}", f"grade{profile['grade']} L{level}")
+        world = worlds.world_for_profile(profile)
+        if level == 4:  # mid-world milestone -> rare world sticker
+            profiles.award_sticker(pid, f"world_{world['id']}_rare")
+        if level == levels.LEVELS_PER_GRADE:  # grade mastered -> epic sticker
+            profiles.award_sticker(pid, f"grade{profile['grade']}_master_epic")
     return {"result": payload, "message": msg,
             "profile": profiles.get_profile(pid)}
 

@@ -22,8 +22,8 @@ def _mk(name="Leveler", grade=3, **kw):
 # ---------- engine rules ----------
 def test_prices_and_names():
     assert levels.level_price(1) == 0
-    assert levels.level_price(2) == 45
-    assert levels.level_price(7) == 120
+    assert levels.level_price(2) == 28
+    assert levels.level_price(7) == 68
     assert len(levels.level_map(5)) == 7
     assert levels.level_map(5)[6]["name"] == "Legend"
 

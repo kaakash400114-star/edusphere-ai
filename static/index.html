@@ -1446,8 +1446,33 @@ const STICKER_META = {
   boss_battle: ["🐲", "Boss Battle"], story: ["📚", "Story time"],
   why: ["❓", "But-Why star"], courage: ["🦁", "Courage"],
 };
+// Stage F: rarity levels for level stickers
+function stickerRarity(id) {
+  if (id.endsWith("_master_epic")) return "epic";
+  if (id.includes("_rare") || id.startsWith("world_")) return "rare";
+  if (/^grade\d+_level\d+$/.test(id)) return "common";
+  return "none";
+}
+const RARITY_STYLE = {
+  common:  { ring: "#e0e7ff", label: "Common" },
+  rare:    { ring: "#7dd3fc", label: "Rare" },
+  epic:    { ring: "#f0abfc", label: "EPIC" },
+  none:    { ring: "#e0e7ff", label: "" },
+};
 function stickerMeta(id) {
   if (STICKER_META[id]) return STICKER_META[id];
+  const m = id.match(/^grade(\d+)_level(\d+)$/);
+  if (m) return ["🪜", "Grade " + m[1] + " · Level " + m[2]];
+  if (id.endsWith("_master_epic")) {
+    const g = id.match(/^grade(\d+)/);
+    return ["👑", "Grade " + (g ? g[1] : "") + " Master"];
+  }
+  if (id.startsWith("world_")) {
+    const names = { village: "Explorer Village", mountains: "Champion Mountains",
+      academy: "Scholar Academy", tower: "Wisdom Tower" };
+    const w = Object.keys(names).find(k => id.includes(k));
+    return ["🌍", (names[w] || "World") + " Star"];
+  }
   if (id.startsWith("quest_")) return ["🏠", id.replace("quest_", "").replace(/_/g, " ")];
   return ["🌟", id];
 }
@@ -1461,11 +1486,21 @@ async function openStickers() {
   if (!ids.length) {
     grid.innerHTML = `<div class="sticker-empty">No stickers yet! Play a game 🎮 or finish a quest 🏠 to win your first one!</div>`;
   } else {
+    ids.sort((a, b) => {
+      const order = { epic: 0, rare: 1, common: 2, none: 3 };
+      const ra = stickerRarity(a), rb = stickerRarity(b);
+      if (order[ra] !== order[rb]) return order[ra] - order[rb];
+      return a.localeCompare(b);
+    });
     ids.forEach(id => {
       const [em, nm] = stickerMeta(id);
+      const rar = stickerRarity(id);
+      const st = RARITY_STYLE[rar] || RARITY_STYLE.none;
       const d = document.createElement("div");
       d.className = "sticker";
+      d.style.borderColor = st.ring;
       d.innerHTML = `<span class="em">${em}</span><span class="nm">${nm}</span>` +
+        (st.label ? `<span class="ct" style="background:${st.ring};color:#1e1b4b">${st.label}</span>` : "") +
         (s[id] > 1 ? `<span class="ct">×${s[id]}</span>` : "");
       grid.appendChild(d);
     });

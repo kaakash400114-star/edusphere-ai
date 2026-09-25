@@ -7,7 +7,7 @@ bought with points earned from tasks. Each level has a name, a set of tasks
 Points economy (one currency: points; stars remain the wardrobe currency):
 - Task completed            -> score points (defined per task)
 - Level completed (all tasks)-> level bonus points
-- Next level price          -> 30 + 15 * (level-1)  => L2:45 .. L7:120
+- Next level price          -> 20 + 8 * (level-1)   => L2:28 .. L7:68
 Progress is per (grade, level) and stored on the kid profile.
 """
 from __future__ import annotations
@@ -15,10 +15,12 @@ from __future__ import annotations
 LEVELS_PER_GRADE = 7
 
 # Price in points to UNLOCK level n (n = 2..7). Level 1 is free.
+# Curve stays reachable: a level yields ~50-70 points, so after finishing
+# a level the child can nearly always afford the next one.
 def level_price(level: int) -> int:
     if level <= 1:
         return 0
-    return 30 + 15 * (level - 1)
+    return 20 + 8 * (level - 1)
 
 
 # Points awarded for completing a level's full task set.
