@@ -1,4 +1,4 @@
-# ICSE Class 1 Science — CISCE approach
+# ICSE Class 1 Science - CISCE approach
 
 ## Living and non-living with sorting activities
 Movement, food, growth as life signs; sort pictures and objects into groups.

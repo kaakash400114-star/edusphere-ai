@@ -1,4 +1,4 @@
-# CBSE Class 8 Science — NCERT
+# CBSE Class 8 Science - NCERT
 
 ## Crop production and management
 Agricultural steps: ploughing, sowing, manuring-fertilising, irrigation, weeding, harvesting, storage; kharif-rabi crops; nitrogen fixation by pulses; granaries and silos.
@@ -34,7 +34,7 @@ Force as push-pull: change state, shape, direction; contact vs non-contact (grav
 Causes of friction; depends on surfaces and weight; static-sliding-rolling; advantages (walking, brakes) and reduction (oil, ball bearings); drag in fluids.
 
 ## Sound
-Sources are vibrations; needs a medium (no sound in vacuum); amplitude-loudness, frequency-pitch; human range 20 Hz–20,000 Hz; noise pollution and control.
+Sources are vibrations; needs a medium (no sound in vacuum); amplitude-loudness, frequency-pitch; human range 20 Hz-20,000 Hz; noise pollution and control.
 
 ## Chemical effects of electric current
 Conducting liquids; electrodes-electrolyte; electroplating (copper on iron); testing conductivity safely; LED tester.

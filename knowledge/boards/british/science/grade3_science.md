@@ -1,4 +1,4 @@
-# British Year 3 Science — National Curriculum/GCSE
+# British Year 3 Science - National Curriculum/GCSE
 
 ## Plants: parts-functions-life cycle
 

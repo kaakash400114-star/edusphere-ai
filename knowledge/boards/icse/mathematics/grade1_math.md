@@ -1,4 +1,4 @@
-# ICSE Class 1 Mathematics — CISCE approach
+# ICSE Class 1 Mathematics - CISCE approach
 
 ## Numbers 0-100 with place value intro
 Count, read, write 0-100; before-after-between; compare with < > =; tens and ones with bundles.

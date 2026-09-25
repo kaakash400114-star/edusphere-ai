@@ -1,4 +1,4 @@
-# American Grade 1 Mathematics — Common Core
+# American Grade 1 Mathematics - Common Core
 
 ## Counting to 120
 

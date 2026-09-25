@@ -1,4 +1,4 @@
-# American Grade 11 English Language Arts — Common Core
+# American Grade 11 English Language Arts - Common Core
 
 ## American literature analysis
 

@@ -1,4 +1,4 @@
-# CBSE Class 6 English — NCERT (Honeysuckle) approach
+# CBSE Class 6 English - NCERT (Honeysuckle) approach
 
 ## Nouns, number and gender review; case
 Subject/object case; possessive with 's and of; countable-uncountable with much/many/few/little.

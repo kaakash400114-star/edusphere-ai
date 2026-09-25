@@ -1,4 +1,4 @@
-# ICSE Class 12 Science — CISCE (Physics-Chemistry-Biology essentials)
+# ICSE Class 12 Science - CISCE (Physics-Chemistry-Biology essentials)
 
 ## Physics
 Electrostatics-current electricity-capacitors; magnetic effects-EMI-AC; electromagnetic waves preview; ray-wave optics incl. instruments; dual nature-atoms-nuclei; semiconductors-devices.

@@ -1,4 +1,4 @@
-# CBSE Class 5 Mathematics — NCERT (Math-Magic 5)
+# CBSE Class 5 Mathematics - NCERT (Math-Magic 5)
 
 ## The fish tale: large numbers and estimation
 Numbers to lakhs and crores; round and estimate to check answers; multiplication with big numbers in real fishing/market stories.

@@ -1,4 +1,4 @@
-# British Year 5 Science — National Curriculum/GCSE
+# British Year 5 Science - National Curriculum/GCSE
 
 ## Living things: life cycles (mammals-insects-amphibians)
 

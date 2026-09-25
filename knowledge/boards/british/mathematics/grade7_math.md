@@ -1,4 +1,4 @@
-# British Year 7 Mathematics — National Curriculum/GCSE
+# British Year 7 Mathematics - National Curriculum/GCSE
 
 ## Key Stage 3: number operations
 

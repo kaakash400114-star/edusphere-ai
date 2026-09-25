@@ -1,4 +1,4 @@
-# CBSE Class 7 English — NCERT (Honeycomb) approach
+# CBSE Class 7 English - NCERT (Honeycomb) approach
 
 ## Tense mastery: perfect and perfect continuous
 Present/past perfect with since-for-already-yet; continuous perfects; timeline reading of tenses.

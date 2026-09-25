@@ -1,4 +1,4 @@
-# ICSE Class 8 Mathematics — CISCE
+# ICSE Class 8 Mathematics - CISCE
 
 ## Rational and irrational numbers
 Rational ops recap; irrational idea and π; real numbers; exponents including negative; standard form.

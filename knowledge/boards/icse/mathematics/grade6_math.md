@@ -1,4 +1,4 @@
-# ICSE Class 6 Mathematics — CISCE
+# ICSE Class 6 Mathematics - CISCE
 
 ## Numbers and numeration
 Integers on number line; prime factorisation; powers-indices; estimation; rounding.

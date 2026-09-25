@@ -1,4 +1,4 @@
-# ICSE Class 2 English — CISCE approach
+# ICSE Class 2 English - CISCE approach
 
 ## Phonics to fluency
 Long vowels (cake, meet, kite); consonant blends and digraphs (br, pl, ch, th); word families.

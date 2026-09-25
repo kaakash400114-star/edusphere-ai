@@ -1,4 +1,4 @@
-# American Grade 6 English Language Arts — Common Core
+# American Grade 6 English Language Arts - Common Core
 
 ## Central idea and evidence
 

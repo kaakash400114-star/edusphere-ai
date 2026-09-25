@@ -1,4 +1,4 @@
-# ICSE Class 11 Mathematics — CISCE
+# ICSE Class 11 Mathematics - CISCE
 
 ## Sets, relations, functions
 Venn problems; domain-range; function types and composition; inverse functions (ideas).

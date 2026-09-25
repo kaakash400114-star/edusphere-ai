@@ -1,4 +1,4 @@
-# ICSE Class 11 English — CISCE
+# ICSE Class 11 English - CISCE
 
 ## Language skills
 Advanced grammar in context; error-correction; transformations keeping meaning.

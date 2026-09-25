@@ -1,4 +1,4 @@
-# British Year 8 English — National Curriculum/GCSE
+# British Year 8 English - National Curriculum/GCSE
 
 ## Reading: 19th-century texts intro
 

@@ -1,4 +1,4 @@
-# CBSE Class 6 Mathematics — NCERT (Ganita Prakash)
+# CBSE Class 6 Mathematics - NCERT (Ganita Prakash)
 
 ## Knowing our numbers
 Indian vs international place value; compare large numbers; estimation and rounding; Roman numerals; brackets and the order of operations (BODMAS).

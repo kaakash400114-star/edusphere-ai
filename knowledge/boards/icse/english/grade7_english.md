@@ -1,4 +1,4 @@
-# ICSE Class 7 English — CISCE
+# ICSE Class 7 English - CISCE
 
 ## Grammar mastery track
 Perfect tenses; passive voice across tenses; reported speech statements-questions; modals deduction (must have, might have).

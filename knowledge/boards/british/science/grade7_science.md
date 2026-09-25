@@ -1,4 +1,4 @@
-# British Year 7 Science — National Curriculum/GCSE
+# British Year 7 Science - National Curriculum/GCSE
 
 ## Cells-organisation
 

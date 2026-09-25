@@ -1,4 +1,4 @@
-# British Year 8 Mathematics — National Curriculum/GCSE
+# British Year 8 Mathematics - National Curriculum/GCSE
 
 ## Number: indices-standard form
 

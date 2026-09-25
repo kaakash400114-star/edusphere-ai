@@ -1,4 +1,4 @@
-# CBSE Class 9 English — Language & Literature approach
+# CBSE Class 9 English - Language & Literature approach
 
 ## Reading: unseen passages (factual, literary, discursive)
 Skim-scan strategies; MCQ + short answers; vocabulary in context; 20-mark practice format.

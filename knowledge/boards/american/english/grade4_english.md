@@ -1,4 +1,4 @@
-# American Grade 4 English Language Arts — Common Core
+# American Grade 4 English Language Arts - Common Core
 
 ## Theme and summarizing
 

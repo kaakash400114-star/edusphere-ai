@@ -1,4 +1,4 @@
-# ICSE Class 5 English — CISCE approach
+# ICSE Class 5 English - CISCE approach
 
 ## Grammar: tenses full set
 All simple-continuous-perfect forms; timeline diagrams; consistent narration.

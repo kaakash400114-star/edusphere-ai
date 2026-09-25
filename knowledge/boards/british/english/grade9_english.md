@@ -1,4 +1,4 @@
-# British Year 9 English — National Curriculum/GCSE
+# British Year 9 English - National Curriculum/GCSE
 
 ## Reading: unseen fiction analysis
 

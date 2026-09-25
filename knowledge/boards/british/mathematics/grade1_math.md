@@ -1,4 +1,4 @@
-# British Year 1 Mathematics — National Curriculum/GCSE
+# British Year 1 Mathematics - National Curriculum/GCSE
 
 ## Number and place value to 100
 

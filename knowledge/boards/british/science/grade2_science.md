@@ -1,4 +1,4 @@
-# British Year 2 Science — National Curriculum/GCSE
+# British Year 2 Science - National Curriculum/GCSE
 
 ## Living things and habitats
 

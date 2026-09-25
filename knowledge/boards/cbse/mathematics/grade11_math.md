@@ -1,4 +1,4 @@
-# CBSE Class 11 Mathematics — NCERT
+# CBSE Class 11 Mathematics - NCERT
 
 ## Sets
 Representation, types (empty, finite-infinite, equal); subsets-power set; Venn diagrams; operations and laws; practical problems on union-intersection.
@@ -25,7 +25,7 @@ Factorial; fundamental counting principle; nPr vs nCr; arrangements with repetit
 Expansion for positive integer index; general and middle terms; simple applications (approximations preview).
 
 ## Sequences and series
-AP-GP recap at depth; nth term and sums; AM-GM relation; sum to n terms of special series (Σn, Σn², Σn³); GP infinite sum condition.
+AP-GP recap at depth; nth term and sums; AM-GM relation; sum to n terms of special series (Σn, Σn^2, Σn^3); GP infinite sum condition.
 
 ## Straight lines
 Slope; forms of line equations; angle between lines; distance point-line; family of lines idea.

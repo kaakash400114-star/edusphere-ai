@@ -1,4 +1,4 @@
-# CBSE Class 3 Science — NCERT-aligned EVS (Looking Around 3)
+# CBSE Class 3 Science - NCERT-aligned EVS (Looking Around 3)
 
 ## Our food: from farm to table
 Where rice, wheat, dal, milk come from; parts of plants we eat: root (carrot), leaf (spinach), stem (sugarcane), flower (cauliflower), fruit, seed.

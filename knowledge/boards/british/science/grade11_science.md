@@ -1,4 +1,4 @@
-# British Year 11 Science — National Curriculum/GCSE
+# British Year 11 Science - National Curriculum/GCSE
 
 ## Biology: inheritance-variation-evolution-ecology
 

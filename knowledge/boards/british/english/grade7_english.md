@@ -1,4 +1,4 @@
-# British Year 7 English — National Curriculum/GCSE
+# British Year 7 English - National Curriculum/GCSE
 
 ## Reading: fiction-non-fiction analysis
 

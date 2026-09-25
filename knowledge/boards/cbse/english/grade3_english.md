@@ -1,4 +1,4 @@
-# CBSE Class 3 English — NCERT (Marigold 3) approach
+# CBSE Class 3 English - NCERT (Marigold 3) approach
 
 ## Nouns: common, proper, collective
 Common (girl), proper (Meena), collective (a bunch of grapes, a herd of elephants, a flock of birds).
@@ -16,7 +16,7 @@ She is reading; they are playing; spell -ing forms (run→running).
 walk→walked, play→played; go→went, eat→ate, see→saw in short stories.
 
 ## Adverbs of manner (how)
-quickly, slowly, neatly, loudly — most add -ly; place them near the verb.
+quickly, slowly, neatly, loudly - most add -ly; place them near the verb.
 
 ## Prepositions and prepositional phrases
 in, on, under, behind, between, across; longer phrases: "across the bridge", "behind the school gate".

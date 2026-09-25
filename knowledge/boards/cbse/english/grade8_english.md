@@ -1,4 +1,4 @@
-# CBSE Class 8 English — NCERT (Honeydew) approach
+# CBSE Class 8 English - NCERT (Honeydew) approach
 
 ## Determiners, articles and quantifiers revisited through texts
 Precise use with uncountables; zero article cases (school, hospital as purpose).

@@ -1,4 +1,4 @@
-# CBSE Class 3 Mathematics — NCERT (Math-Magic 3)
+# CBSE Class 3 Mathematics - NCERT (Math-Magic 3)
 
 ## Place value up to 4-digit numbers and rounding
 Thousands, hundreds, tens, ones: 5,238. Compare, order, expand; round to the nearest ten and hundred (NCERT "Give and Take").

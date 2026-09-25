@@ -1,4 +1,4 @@
-# CBSE Class 2 English — NCERT (Marigold 2) approach
+# CBSE Class 2 English - NCERT (Marigold 2) approach
 
 ## Naming words: common and special (proper) nouns
 Common: boy, city, river. Special names start with capital letters: Ravi, Chennai, Ganga.
@@ -22,7 +22,7 @@ Boxes, mangoes, buses; man-men, child-children, tooth-teeth.
 A dog barks; an owl hoots; the sun rises (special nouns take the).
 
 ## Punctuation: capital letters, full stop, question mark
-Names, sentence starts; ask questions with ? — "Where is your school?"
+Names, sentence starts; ask questions with ? - "Where is your school?"
 
 ## Reading comprehension (short passage)
 Read a 6-8 line story; answer who, what, where questions in full sentences.

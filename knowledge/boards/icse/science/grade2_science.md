@@ -1,4 +1,4 @@
-# ICSE Class 2 Science — CISCE approach
+# ICSE Class 2 Science - CISCE approach
 
 ## Food and health
 Energy-food, growth-food, protection-food sorting; food from plants vs animals; good food habits.

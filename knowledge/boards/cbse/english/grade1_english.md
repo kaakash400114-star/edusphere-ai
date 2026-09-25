@@ -1,4 +1,4 @@
-# CBSE Class 1 English — NCERT (Marigold 1) approach
+# CBSE Class 1 English - NCERT (Marigold 1) approach
 
 ## Alphabet and phonics A-Z
 Letter names and sounds (a as in apple, z as in zebra). Capital and small letters. Vowels a, e, i, o, u; the rest are consonants. Rhyming songs build sound awareness.

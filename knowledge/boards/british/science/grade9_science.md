@@ -1,4 +1,4 @@
-# British Year 9 Science — National Curriculum/GCSE
+# British Year 9 Science - National Curriculum/GCSE
 
 ## Biology: cells-transport-organisation
 

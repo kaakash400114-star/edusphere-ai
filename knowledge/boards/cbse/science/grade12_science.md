@@ -1,4 +1,4 @@
-# CBSE Class 12 Science — NCERT (Physics, Chemistry, Biology essentials)
+# CBSE Class 12 Science - NCERT (Physics, Chemistry, Biology essentials)
 
 ## Physics: Electrostatics and current electricity
 Coulomb's law, field-dipole; Gauss law idea; potential-capacitance-dielectrics; drift velocity, Ohm's law, resistivity; Kirchhoff rules, Wheatstone, potentiometer-metre bridge ideas.

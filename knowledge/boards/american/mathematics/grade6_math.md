@@ -1,4 +1,4 @@
-# American Grade 6 Mathematics — Common Core
+# American Grade 6 Mathematics - Common Core
 
 ## Ratios and unit rates
 

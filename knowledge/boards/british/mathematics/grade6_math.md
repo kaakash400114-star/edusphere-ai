@@ -1,4 +1,4 @@
-# British Year 6 Mathematics — National Curriculum/GCSE
+# British Year 6 Mathematics - National Curriculum/GCSE
 
 ## Place value to 10,000,000
 

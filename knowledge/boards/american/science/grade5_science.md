@@ -1,4 +1,4 @@
-# American Grade 5 Science — NGSS/Common Core
+# American Grade 5 Science - NGSS/Common Core
 
 ## Matter and its interactions
 

@@ -1,4 +1,4 @@
-# British Year 1 English — National Curriculum/GCSE
+# British Year 1 English - National Curriculum/GCSE
 
 ## Phonics phases: digraphs-trigraphs
 

@@ -1,4 +1,4 @@
-# American Grade 4 Mathematics — Common Core
+# American Grade 4 Mathematics - Common Core
 
 ## Place value to 1,000,000
 

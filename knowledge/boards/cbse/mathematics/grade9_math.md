@@ -1,10 +1,10 @@
-# CBSE Class 9 Mathematics — NCERT
+# CBSE Class 9 Mathematics - NCERT
 
 ## Number systems
 Rational-irrational; real numbers and the number line; surds and laws of exponents with real powers; decimal expansions and rationality tests.
 
 ## Polynomials
-Degree, types; zeroes of a polynomial; remainder theorem; factor theorem; factorising quadratics and cubics using theorems; identities: (a+b)³, (a−b)³, a³+b³, a³−b³.
+Degree, types; zeroes of a polynomial; remainder theorem; factor theorem; factorising quadratics and cubics using theorems; identities: (a+b)^3, (a−b)^3, a^3+b^3, a^3−b^3.
 
 ## Coordinate geometry
 Cartesian plane; quadrants; plot points; abscissa-ordinate; graph of a linear equation preview.

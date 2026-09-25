@@ -1,4 +1,4 @@
-# American Grade 7 Science — NGSS/Common Core
+# American Grade 7 Science - NGSS/Common Core
 
 ## Cells to systems
 

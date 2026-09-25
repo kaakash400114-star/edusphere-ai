@@ -1,4 +1,4 @@
-# CBSE Class 5 English — NCERT (Marigold 5) approach
+# CBSE Class 5 English - NCERT (Marigold 5) approach
 
 ## Nouns: abstract and material
 Honesty, childhood (abstract); gold, water (material); countable vs uncountable revision; collective nouns in context.

@@ -1,4 +1,4 @@
-# American Grade 2 English Language Arts — Common Core
+# American Grade 2 English Language Arts - Common Core
 
 ## Phonics: vowel teams
 

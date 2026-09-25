@@ -1,4 +1,4 @@
-# American Grade 7 English Language Arts — Common Core
+# American Grade 7 English Language Arts - Common Core
 
 ## Textual evidence-analysis
 

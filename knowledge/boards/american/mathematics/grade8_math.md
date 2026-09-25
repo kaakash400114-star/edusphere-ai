@@ -1,4 +1,4 @@
-# American Grade 8 Mathematics — Common Core
+# American Grade 8 Mathematics - Common Core
 
 ## Irrational numbers-exponents
 

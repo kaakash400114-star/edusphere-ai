@@ -1,4 +1,4 @@
-# CBSE Class 12 English — Core approach
+# CBSE Class 12 English - Core approach
 
 ## Reading comprehension: note-making and summarising
 Two unseen passages with note format (title, keys, abbreviations), 80-word summary; MCQ pattern practice.

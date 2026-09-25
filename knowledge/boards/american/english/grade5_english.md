@@ -1,4 +1,4 @@
-# American Grade 5 English Language Arts — Common Core
+# American Grade 5 English Language Arts - Common Core
 
 ## Greek-Latin roots
 

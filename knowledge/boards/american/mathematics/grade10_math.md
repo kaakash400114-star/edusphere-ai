@@ -1,4 +1,4 @@
-# American Grade 10 Mathematics — Common Core
+# American Grade 10 Mathematics - Common Core
 
 ## Geometry: proofs-triangles
 

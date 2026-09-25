@@ -1,4 +1,4 @@
-# ICSE Class 5 Mathematics — CISCE approach
+# ICSE Class 5 Mathematics - CISCE approach
 
 ## Numbers: Indian-international systems and estimation
 Upto crores-millions; round and estimate products-quotients; Roman numerals recap.

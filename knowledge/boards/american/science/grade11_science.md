@@ -1,4 +1,4 @@
-# American Grade 11 Science — NGSS/Common Core
+# American Grade 11 Science - NGSS/Common Core
 
 ## Physics: motion-energy-momentum
 

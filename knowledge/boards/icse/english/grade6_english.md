@@ -1,4 +1,4 @@
-# ICSE Class 6 English — CISCE
+# ICSE Class 6 English - CISCE
 
 ## Grammar core
 Tenses all simple-continuous; subject-verb agreement traps; irregular verb drills.

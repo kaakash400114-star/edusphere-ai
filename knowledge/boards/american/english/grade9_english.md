@@ -1,4 +1,4 @@
-# American Grade 9 English Language Arts — Common Core
+# American Grade 9 English Language Arts - Common Core
 
 ## Close reading: theme-character
 

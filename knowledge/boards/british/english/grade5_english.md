@@ -1,4 +1,4 @@
-# British Year 5 English — National Curriculum/GCSE
+# British Year 5 English - National Curriculum/GCSE
 
 ## Prefixes-suffixes: Latin-Greek
 

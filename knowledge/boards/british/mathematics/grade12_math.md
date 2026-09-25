@@ -1,4 +1,4 @@
-# British Year 12 Mathematics — National Curriculum/GCSE
+# British Year 12 Mathematics - National Curriculum/GCSE
 
 ## A-Level prep: algebra-functions-graphs
 

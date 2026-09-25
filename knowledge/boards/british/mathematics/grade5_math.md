@@ -1,4 +1,4 @@
-# British Year 5 Mathematics — National Curriculum/GCSE
+# British Year 5 Mathematics - National Curriculum/GCSE
 
 ## Place value to 1,000,000
 

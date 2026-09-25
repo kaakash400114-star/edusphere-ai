@@ -1,4 +1,4 @@
-# CBSE Class 11 Science — NCERT (Physics, Chemistry, Biology essentials)
+# CBSE Class 11 Science - NCERT (Physics, Chemistry, Biology essentials)
 
 ## Physics: Units, measurement and motion
 Dimensional analysis; errors; vectors and scalars, addition-resolution; kinematics graphs; projectile motion; Newton's laws applied; friction; work-energy-theorem; centre of mass idea; rotational basics (torque, angular momentum statements); gravitation: Kepler's laws, g variation.

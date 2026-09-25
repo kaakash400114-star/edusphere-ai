@@ -1,4 +1,4 @@
-# American Grade 1 Science — NGSS/Common Core
+# American Grade 1 Science - NGSS/Common Core
 
 ## Living vs non-living things
 

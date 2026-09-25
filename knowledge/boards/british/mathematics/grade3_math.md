@@ -1,4 +1,4 @@
-# British Year 3 Mathematics — National Curriculum/GCSE
+# British Year 3 Mathematics - National Curriculum/GCSE
 
 ## Place value to 1000
 

@@ -1,4 +1,4 @@
-# ICSE Class 9 Science — CISCE (Physics-Chemistry-Biology)
+# ICSE Class 9 Science - CISCE (Physics-Chemistry-Biology)
 
 ## Physics: measurements-motion-laws
 Units-estimation-error; motion equations with graphs; Newton's laws applications; gravitation-flotation; work-power-energy-machine efficiency.

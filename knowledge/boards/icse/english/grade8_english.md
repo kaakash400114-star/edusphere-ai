@@ -1,4 +1,4 @@
-# ICSE Class 8 English — CISCE
+# ICSE Class 8 English - CISCE
 
 ## Grammar precision
 All tenses in narration; conditionals type 1-2; non-finites: gerund-participle-infinitive uses; error-spotting drills.

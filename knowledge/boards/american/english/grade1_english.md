@@ -1,4 +1,4 @@
-# American Grade 1 English Language Arts — Common Core
+# American Grade 1 English Language Arts - Common Core
 
 ## Letter sounds A-Z
 

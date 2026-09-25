@@ -1,4 +1,4 @@
-# American Grade 12 English Language Arts — Common Core
+# American Grade 12 English Language Arts - Common Core
 
 ## British-world literature analysis
 

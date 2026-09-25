@@ -1,4 +1,4 @@
-# American Grade 9 Mathematics — Common Core
+# American Grade 9 Mathematics - Common Core
 
 ## Algebra I: expressions-equations
 

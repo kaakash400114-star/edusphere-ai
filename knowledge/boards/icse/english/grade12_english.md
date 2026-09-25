@@ -1,4 +1,4 @@
-# ICSE Class 12 English — CISCE
+# ICSE Class 12 English - CISCE
 
 ## Language paper craft
 Grammar applications: transformations-error correction-sentence reordering; comprehension with precise summary.

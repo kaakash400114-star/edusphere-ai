@@ -1,4 +1,4 @@
-# American Grade 9 Science — NGSS/Common Core
+# American Grade 9 Science - NGSS/Common Core
 
 ## Biology: cell structure-function
 

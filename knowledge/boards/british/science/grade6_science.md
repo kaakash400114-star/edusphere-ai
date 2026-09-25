@@ -1,4 +1,4 @@
-# British Year 6 Science — National Curriculum/GCSE
+# British Year 6 Science - National Curriculum/GCSE
 
 ## Living things: classification-microorganisms
 

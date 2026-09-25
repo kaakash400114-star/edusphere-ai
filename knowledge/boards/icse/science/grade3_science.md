@@ -1,4 +1,4 @@
-# ICSE Class 3 Science — CISCE approach
+# ICSE Class 3 Science - CISCE approach
 
 ## Living things: needs and life processes
 Food-air-water-growth-reproduction in plants and animals; life cycles: butterfly, frog, bean.

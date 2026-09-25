@@ -1,4 +1,4 @@
-# British Year 11 Mathematics — National Curriculum/GCSE
+# British Year 11 Mathematics - National Curriculum/GCSE
 
 ## GCSE Higher: algebra fractions-functions
 

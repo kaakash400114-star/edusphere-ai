@@ -1,4 +1,4 @@
-# ICSE Class 8 Science — CISCE
+# ICSE Class 8 Science - CISCE
 
 ## Physics: matter-force-energy
 Kinetic theory of matter; density-relative density; pressure-upthrust-floatation; work-power-energy transformations; simple machines efficiency idea.

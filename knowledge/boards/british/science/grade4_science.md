@@ -1,4 +1,4 @@
-# British Year 4 Science — National Curriculum/GCSE
+# British Year 4 Science - National Curriculum/GCSE
 
 ## Living things: classification keys
 

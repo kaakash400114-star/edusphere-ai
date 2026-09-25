@@ -1,4 +1,4 @@
-# ICSE Class 12 Mathematics — CISCE
+# ICSE Class 12 Mathematics - CISCE
 
 ## Algebra and calculus core
 Matrices-determinants and systems; inverse trigonometric functions; continuity-differentiability; applications of derivatives: maxima-minima-tangents; integrals: indefinite-definite and properties; differential equations: variable separable-linear.

@@ -1,4 +1,4 @@
-# CBSE Class 10 English — Language & Literature approach
+# CBSE Class 10 English - Language & Literature approach
 
 ## Reading: discursive and case-based passages
 Boards-format MCQs and short answers; inference, tone, writer's purpose; headline matching; vocabulary clusters.

@@ -1,4 +1,4 @@
-# British Year 12 Science — National Curriculum/GCSE
+# British Year 12 Science - National Curriculum/GCSE
 
 ## A-Level Biology: biological molecules-cells
 

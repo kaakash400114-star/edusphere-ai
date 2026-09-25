@@ -1,4 +1,4 @@
-# ICSE Class 4 Science — CISCE approach
+# ICSE Class 4 Science - CISCE approach
 
 ## Plant life: parts, functions, reproduction
 Root-stem-leaf-flower-fruit-seed functions; seed germination stages; dispersal methods; photosynthesis in simple words.

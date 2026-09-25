@@ -1,4 +1,4 @@
-# ICSE Class 10 English — CISCE (Language + Literature)
+# ICSE Class 10 English - CISCE (Language + Literature)
 
 ## Language paper: grammar precision
 All tenses in complex narration; transformation of sentences (all boards-style patterns); phrasal verbs; structures (too-to, so-that, no sooner).

@@ -1,4 +1,4 @@
-# American Grade 12 Science — NGSS/Common Core
+# American Grade 12 Science - NGSS/Common Core
 
 ## Advanced physics: mechanics-electricity-magnetism
 

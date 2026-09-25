@@ -1,4 +1,4 @@
-# ICSE Class 5 Science — CISCE approach
+# ICSE Class 5 Science - CISCE approach
 
 ## Human body systems tour
 Skeletal-joints; digestive organs and juices; breathing-lungs; heart-pulse; senses and nerves working together.

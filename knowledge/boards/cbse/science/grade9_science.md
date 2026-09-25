@@ -1,4 +1,4 @@
-# CBSE Class 9 Science — NCERT
+# CBSE Class 9 Science - NCERT
 
 ## Matter in our surroundings
 States and characteristics; melting-boiling points; latent heat idea; evaporation causes cooling; plasma-BE condensates mention.
@@ -31,7 +31,7 @@ Balanced-unbalanced forces; Newton's laws; inertia and mass; F = ma; action-reac
 Universal law; free fall, g; mass vs weight; thrust and pressure; Archimedes' principle; buoyancy and density.
 
 ## Work and energy
-Work = force × displacement (with angle idea); kinetic energy (½mv²), potential energy (mgh); work-energy theorem; law of conservation; power and commercial unit kWh.
+Work = force × displacement (with angle idea); kinetic energy (½mv^2), potential energy (mgh); work-energy theorem; law of conservation; power and commercial unit kWh.
 
 ## Sound
 Production-propagation; longitudinal waves; characteristics: amplitude, frequency, wavelength, speed; reflection: echo, reverberation; ultrasound uses; human ear outline.

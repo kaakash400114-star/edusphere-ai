@@ -1,4 +1,4 @@
-# CBSE Class 6 Science — NCERT
+# CBSE Class 6 Science - NCERT
 
 ## Components of food
 Nutrients: carbohydrates, proteins, fats, vitamins, minerals, roughage, water; deficiency diseases (rickets, scurvy, goitre, anaemia); balanced diet; testing starch and protein.

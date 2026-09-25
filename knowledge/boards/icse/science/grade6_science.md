@@ -1,4 +1,4 @@
-# ICSE Class 6 Science — CISCE (Physics-Chemistry-Bio themes)
+# ICSE Class 6 Science - CISCE (Physics-Chemistry-Bio themes)
 
 ## Matter and its measurements
 States; physical quantities-units; measurement of length-mass-volume-time; density idea heavy-for-size.

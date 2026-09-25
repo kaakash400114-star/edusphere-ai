@@ -1,4 +1,4 @@
-# ICSE Class 9 English — CISCE (Language + Literature)
+# ICSE Class 9 English - CISCE (Language + Literature)
 
 ## Grammar precision set
 Tenses; sequence of tenses; active-passive across forms; reported speech all types; non-finites; modals; conditionals 1-2-3.

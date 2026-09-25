@@ -1,4 +1,4 @@
-# CBSE Class 7 Science — NCERT
+# CBSE Class 7 Science - NCERT
 
 ## Nutrition in plants
 Photosynthesis: inputs (CO2, water, sunlight, chlorophyll), outputs (glucose, oxygen); starch test; other modes: insectivorous plants (pitcher), parasites (cuscuta), saprotrophs (fungi), symbiosis (lichen, rhizobium in pulses).

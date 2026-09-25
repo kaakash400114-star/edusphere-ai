@@ -1,4 +1,4 @@
-# American Grade 3 Science — NGSS/Common Core
+# American Grade 3 Science - NGSS/Common Core
 
 ## Animal adaptations
 

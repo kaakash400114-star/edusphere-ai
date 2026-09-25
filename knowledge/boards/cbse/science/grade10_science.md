@@ -1,4 +1,4 @@
-# CBSE Class 10 Science — NCERT
+# CBSE Class 10 Science - NCERT
 
 ## Chemical reactions and equations
 Writing and balancing; types: combination, decomposition, displacement, double displacement; redox preview (oxidation-reduction); effects: colour change, gas, temperature; corrosion and rancidity.

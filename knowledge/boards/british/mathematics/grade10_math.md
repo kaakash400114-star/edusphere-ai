@@ -1,4 +1,4 @@
-# British Year 10 Mathematics — National Curriculum/GCSE
+# British Year 10 Mathematics - National Curriculum/GCSE
 
 ## GCSE: number-recap-indices-surds
 

@@ -1,10 +1,10 @@
-# ICSE Class 7 Mathematics — CISCE
+# ICSE Class 7 Mathematics - CISCE
 
 ## Number system
 Integers-rational operations; recurring decimals; powers-exponents laws; estimation-percent applications (profit-loss-simple interest).
 
 ## Algebra
-Algebraic expressions add-subtract-multiply (binomials); identities (a±b)², a²−b²; linear equations two-step; setting-up from words.
+Algebraic expressions add-subtract-multiply (binomials); identities (a±b)^2, a^2−b^2; linear equations two-step; setting-up from words.
 
 ## Ratio-proportion-unitary
 Direct-inverse proportion cases; speed-time-distance; percentage rise-fall problems.

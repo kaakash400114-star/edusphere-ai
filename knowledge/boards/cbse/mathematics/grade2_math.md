@@ -1,4 +1,4 @@
-# CBSE Class 2 Mathematics — NCERT (Math-Magic 2)
+# CBSE Class 2 Mathematics - NCERT (Math-Magic 2)
 
 ## Counting in groups and tens-ones to 99
 Bundles of ten; 47 = 4 tens + 7 ones. Order and compare two-digit numbers (greater/smaller, before/after/between).

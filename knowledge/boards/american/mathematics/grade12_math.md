@@ -1,4 +1,4 @@
-# American Grade 12 Mathematics — Common Core
+# American Grade 12 Mathematics - Common Core
 
 ## Precalculus: functions-modeling
 

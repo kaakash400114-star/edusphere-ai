@@ -1,4 +1,4 @@
-# American Grade 3 English Language Arts — Common Core
+# American Grade 3 English Language Arts - Common Core
 
 ## Prefixes and suffixes
 

@@ -1,4 +1,4 @@
-# American Grade 10 Science — NGSS/Common Core
+# American Grade 10 Science - NGSS/Common Core
 
 ## Chemistry: atomic structure-bonding
 

@@ -1,4 +1,4 @@
-# British Year 6 English — National Curriculum/GCSE
+# British Year 6 English - National Curriculum/GCSE
 
 ## Comprehension: compare texts
 

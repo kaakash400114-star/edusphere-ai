@@ -1,4 +1,4 @@
-# CBSE Class 11 English — Core approach
+# CBSE Class 11 English - Core approach
 
 ## Reading comprehension: advanced
 Note-making with abbreviations and keys; summary writing (80 words); two-passage comparison; MCQ + subjective boards pattern.

@@ -1,4 +1,4 @@
-# American Grade 8 English Language Arts — Common Core
+# American Grade 8 English Language Arts - Common Core
 
 ## Cite strong evidence
 

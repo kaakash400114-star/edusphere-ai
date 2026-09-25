@@ -1,4 +1,4 @@
-# American Grade 6 Science — NGSS/Common Core
+# American Grade 6 Science - NGSS/Common Core
 
 ## Matter: atoms-molecules
 

@@ -1,4 +1,4 @@
-# ICSE Class 9 Mathematics — CISCE
+# ICSE Class 9 Mathematics - CISCE
 
 ## Pure arithmetic
 Rational-irrational numbers; surds simplification; profit-loss-discount-tax; compound interest; speed-distance-time; time-work-pipes.

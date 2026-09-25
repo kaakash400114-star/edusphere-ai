@@ -1,4 +1,4 @@
-# CBSE Class 4 Mathematics — NCERT (Math-Magic 4)
+# CBSE Class 4 Mathematics - NCERT (Math-Magic 4)
 
 ## Large numbers: 5- and 6-digit, Indian place value
 Lakh and ten-thousand places; read/write numerals and number names; compare, order, round to nearest 1000; introduction to the international system (thousand, million).

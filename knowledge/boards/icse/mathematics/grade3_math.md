@@ -1,4 +1,4 @@
-# ICSE Class 3 Mathematics — CISCE approach
+# ICSE Class 3 Mathematics - CISCE approach
 
 ## Numbers to 10,000: place value and rounding
 Ten-thousands; compare-order; round to nearest 10 and 100; Roman numerals I-L.

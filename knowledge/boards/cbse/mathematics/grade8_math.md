@@ -1,4 +1,4 @@
-# CBSE Class 8 Mathematics — NCERT
+# CBSE Class 8 Mathematics - NCERT
 
 ## Rational numbers
 Properties of operations on rationals; role of 0 and 1; negative of a number; reciprocal; distributive law; representation between any two rationals.
@@ -22,7 +22,7 @@ Cube numbers and patterns; cube root by prime factorisation; units digits tricks
 Percentage increase-decrease; discount, marked price; profit-loss percent; VAT/GST idea; compound interest by yearly and formula method; growth and decay.
 
 ## Algebraic expressions and identities
-Multiply monomials-binomials; identities: (a+b)², (a−b)², a²−b², (x+a)(x+b); apply identities to multiply and simplify.
+Multiply monomials-binomials; identities: (a+b)^2, (a−b)^2, a^2−b^2, (x+a)(x+b); apply identities to multiply and simplify.
 
 ## Mensuration
 Area of trapezium, general quadrilateral, polygon; surface area of cube-cuboid-cylinder; volume of cube-cuboid-cylinder; capacity vs volume.

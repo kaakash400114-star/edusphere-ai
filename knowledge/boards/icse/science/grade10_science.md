@@ -1,4 +1,4 @@
-# ICSE Class 10 Science — CISCE (Physics-Chemistry-Biology)
+# ICSE Class 10 Science - CISCE (Physics-Chemistry-Biology)
 
 ## Physics: force-motion-energy
 Turning forces-moments-equilibrium; uniform circular motion; work-power-energy-machines (levers, efficiency); refraction at plane surfaces-refraction through lens; spectrum; sound: echo-vibration-natural frequency-forced vibrations-resonance-loudness-pitch-quality; current electricity: Ohm's law, power, household; electromagnetism: Oersted, motor-rule, transformer idea.

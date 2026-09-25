@@ -1,4 +1,4 @@
-# British Year 2 Mathematics — National Curriculum/GCSE
+# British Year 2 Mathematics - National Curriculum/GCSE
 
 ## Place value to 100
 

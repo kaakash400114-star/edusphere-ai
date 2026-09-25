@@ -1,4 +1,4 @@
-# CBSE Class 7 Mathematics — NCERT
+# CBSE Class 7 Mathematics - NCERT
 
 ## Integers
 Properties of addition/subtraction/multiplication of integers; division; word problems; number-line reasoning; properties (closure, commutative, distributive over addition).

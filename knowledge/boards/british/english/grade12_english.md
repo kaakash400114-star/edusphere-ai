@@ -1,4 +1,4 @@
-# British Year 12 English — National Curriculum/GCSE
+# British Year 12 English - National Curriculum/GCSE
 
 ## A-Level English: literary-criticism-approaches
 

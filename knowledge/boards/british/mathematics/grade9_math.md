@@ -1,4 +1,4 @@
-# British Year 9 Mathematics — National Curriculum/GCSE
+# British Year 9 Mathematics - National Curriculum/GCSE
 
 ## Number: surds-indices-reciprocal
 

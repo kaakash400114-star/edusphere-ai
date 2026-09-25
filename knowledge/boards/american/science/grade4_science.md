@@ -1,4 +1,4 @@
-# American Grade 4 Science — NGSS/Common Core
+# American Grade 4 Science - NGSS/Common Core
 
 ## Plant and animal structures
 

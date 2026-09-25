@@ -1,4 +1,4 @@
-# American Grade 7 Mathematics — Common Core
+# American Grade 7 Mathematics - Common Core
 
 ## Rational numbers operations
 

@@ -1,4 +1,4 @@
-# American Grade 5 Mathematics — Common Core
+# American Grade 5 Mathematics - Common Core
 
 ## Place value with decimals
 

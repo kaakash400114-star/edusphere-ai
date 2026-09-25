@@ -1,4 +1,4 @@
-# CBSE Class 4 English — NCERT (Marigold 4) approach
+# CBSE Class 4 English - NCERT (Marigold 4) approach
 
 ## Nouns: countable-uncountable, gender, number
 Much/many with uncountables (water, chairs); masculine-feminine-neuter pairs; plural spellings (-ies, -ves: leaf→leaves).
@@ -19,7 +19,7 @@ Was/were + -ing for background, simple past for events; when/while sentences.
 Predictions with will; plans with going to.
 
 ## Adverbs: time, place, manner, frequency
-Yesterday, here, bravely, always — position in sentence; frequency scale (always→never).
+Yesterday, here, bravely, always - position in sentence; frequency scale (always→never).
 
 ## Conjunctions: and, but, or, because, so
 Join words, sentences; show reason and result; punctuation with but/because.

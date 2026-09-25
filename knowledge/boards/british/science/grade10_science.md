@@ -1,4 +1,4 @@
-# British Year 10 Science — National Curriculum/GCSE
+# British Year 10 Science - National Curriculum/GCSE
 
 ## Biology: cell biology-organisation-infection-response
 

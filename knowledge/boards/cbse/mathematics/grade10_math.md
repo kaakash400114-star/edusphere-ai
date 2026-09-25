@@ -1,4 +1,4 @@
-# CBSE Class 10 Mathematics — NCERT (Standard)
+# CBSE Class 10 Mathematics - NCERT (Standard)
 
 ## Real numbers
 Euclid's division lemma (algorithm idea); Fundamental Theorem of Arithmetic; revisiting irrational numbers (proof that √2 is irrational); decimal expansions.
@@ -22,7 +22,7 @@ Similar figures; criteria AA, SSS, SAS; Basic Proportionality (Thales) theorem a
 Distance formula; section formula (internal division); midpoint; area of a triangle from coordinates.
 
 ## Introduction to trigonometry
-Trigonometric ratios of acute angles; ratios of 0°, 30°, 45°, 60°, 90°; identities: sin²+cos²=1 and family; simple height-distance word problems preview.
+Trigonometric ratios of acute angles; ratios of 0°, 30°, 45°, 60°, 90°; identities: sin^2+cos^2=1 and family; simple height-distance word problems preview.
 
 ## Some applications of trigonometry
 Heights and distances: angle of elevation-depression; two-object problems; ladder-tower-shadow setups with diagrams.

@@ -1,4 +1,4 @@
-# ICSE Class 4 English — CISCE approach
+# ICSE Class 4 English - CISCE approach
 
 ## Nouns and pronouns expanded
 Abstract nouns (honesty, joy); gender sets; pronoun-antecedent agreement.

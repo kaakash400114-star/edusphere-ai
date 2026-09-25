@@ -1,4 +1,4 @@
-# ICSE Class 4 Mathematics — CISCE approach
+# ICSE Class 4 Mathematics - CISCE approach
 
 ## Numbers to 1,00,000 and Roman numerals to 100
 Place value; compare-order-round; Roman numerals with rules (no repeat beyond three).

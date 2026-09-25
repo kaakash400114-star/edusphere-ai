@@ -1,4 +1,4 @@
-# British Year 1 Science — National Curriculum/GCSE
+# British Year 1 Science - National Curriculum/GCSE
 
 ## Working scientifically: observing
 

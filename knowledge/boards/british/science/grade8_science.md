@@ -1,4 +1,4 @@
-# British Year 8 Science — National Curriculum/GCSE
+# British Year 8 Science - National Curriculum/GCSE
 
 ## Cells-tissues: digestion-respiration
 

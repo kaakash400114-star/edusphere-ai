@@ -1,4 +1,4 @@
-# British Year 2 English — National Curriculum/GCSE
+# British Year 2 English - National Curriculum/GCSE
 
 ## Phonics consolidation-suffixes
 

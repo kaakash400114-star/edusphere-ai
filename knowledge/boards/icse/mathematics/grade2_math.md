@@ -1,4 +1,4 @@
-# ICSE Class 2 Mathematics — CISCE approach
+# ICSE Class 2 Mathematics - CISCE approach
 
 ## Numbers to 999: place value and comparison
 Hundreds-tens-ones; expanded form (345 = 300 + 40 + 5); greater-smaller; number names.

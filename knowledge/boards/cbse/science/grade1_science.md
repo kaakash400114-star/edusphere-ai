@@ -1,4 +1,4 @@
-# CBSE Class 1 Science — NCERT-aligned (EVS approach)
+# CBSE Class 1 Science - NCERT-aligned (EVS approach)
 
 ## Living and non-living things
 Living things eat, grow, breathe and move by themselves; non-living things do not. Examples: a crow is living, a stone is non-living, a car moves but does not grow.
@@ -22,7 +22,7 @@ Clothes protect us: cotton in summer, woollens in winter, raincoats in rain. Uni
 Rooms of a house and their uses; keep home clean. People who help us: teacher, doctor, postman, police, farmer.
 
 ## Air, water and weather
-Air is everywhere though we cannot see it. Water sources: river, pond, tap, well. Save water: close the tap. Sunny, rainy, cloudy, windy days — how weather changes what we wear and do.
+Air is everywhere though we cannot see it. Water sources: river, pond, tap, well. Save water: close the tap. Sunny, rainy, cloudy, windy days - how weather changes what we wear and do.
 
 ## Keeping safe and healthy
 Road safety (look both ways, use the zebra crossing), do not play with fire or sharp things. Exercise, sleep and cleanliness keep us well.

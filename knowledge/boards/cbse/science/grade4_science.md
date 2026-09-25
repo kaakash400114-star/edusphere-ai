@@ -1,4 +1,4 @@
-# CBSE Class 4 Science — NCERT-aligned EVS (Looking Around 4)
+# CBSE Class 4 Science - NCERT-aligned EVS (Looking Around 4)
 
 ## Green plants: the food makers
 Photosynthesis in grade words: leaves use sunlight, air, water to make food; chlorophyll makes leaves green; plants release oxygen; experiment: covered leaf turns pale.
@@ -19,7 +19,7 @@ Small wounds: clean, antiseptic, bandage; how colds spread; vaccination protects
 Causes of air and water pollution (smoke, garbage, sewage); effects on people, plants, animals; conservation habits; rainwater harvesting in simple words.
 
 ## Our universe: the sun, earth and moon
-The sun is a star and our light-heat source; the earth spins — day and night; the moon reflects sunlight and shows phases; simple solar-system tour.
+The sun is a star and our light-heat source; the earth spins - day and night; the moon reflects sunlight and shows phases; simple solar-system tour.
 
 ## Food and nutrition basics
 Nutrients: carbohydrates give energy (rice), proteins build (dal, egg), fats store energy (ghee), vitamins-minerals protect (vegetables, fruit); balanced plate idea.

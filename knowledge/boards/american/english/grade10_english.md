@@ -1,4 +1,4 @@
-# American Grade 10 English Language Arts — Common Core
+# American Grade 10 English Language Arts - Common Core
 
 ## Literary analysis essays
 

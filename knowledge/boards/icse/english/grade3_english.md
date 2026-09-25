@@ -1,4 +1,4 @@
-# ICSE Class 3 English — CISCE approach
+# ICSE Class 3 English - CISCE approach
 
 ## Grammar: nouns, pronouns, adjectives
 Collective nouns (swarm, bouquet); pronouns replace neatly; comparative adjectives with -er-than.

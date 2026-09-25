@@ -1,4 +1,4 @@
-# American Grade 2 Science — NGSS/Common Core
+# American Grade 2 Science - NGSS/Common Core
 
 ## Plant and animal habitats
 

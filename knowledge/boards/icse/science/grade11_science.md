@@ -1,4 +1,4 @@
-# ICSE Class 11 Science — CISCE (Physics-Chemistry-Biology essentials)
+# ICSE Class 11 Science - CISCE (Physics-Chemistry-Biology essentials)
 
 ## Physics
 Units-dimensions; kinematics-dynamics with calculus tools; work-energy-power; gravitation; properties of matter: elasticity-surface tension-viscosity; heat-thermodynamics laws; waves-SHM.

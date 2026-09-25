@@ -1,4 +1,4 @@
-# American Grade 8 Science — NGSS/Common Core
+# American Grade 8 Science - NGSS/Common Core
 
 ## Chemical reactions-conservation
 

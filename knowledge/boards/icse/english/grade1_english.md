@@ -1,4 +1,4 @@
-# ICSE Class 1 English — CISCE approach
+# ICSE Class 1 English - CISCE approach
 
 ## Phonics foundation and handwriting
 Letter-sound mastery (a-z), blends sh-ch-th; capital-small formation; three-letter word building (cat, pin, sun).

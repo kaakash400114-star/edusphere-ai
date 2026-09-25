@@ -1,4 +1,4 @@
-# ICSE Class 10 Mathematics — CISCE
+# ICSE Class 10 Mathematics - CISCE
 
 ## Commercial arithmetic
 GST; banking (recurring deposits); shares-dividends; compound interest as repeated percentage.

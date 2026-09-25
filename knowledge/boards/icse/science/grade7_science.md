@@ -1,4 +1,4 @@
-# ICSE Class 7 Science — CISCE
+# ICSE Class 7 Science - CISCE
 
 ## Physics: measurement-motion-force-pressure
 Physical quantities-SI units; density calculations; speed-average speed; graphs of motion; pressure in solids-liquids; Archimedes idea.

@@ -1,4 +1,4 @@
-# American Grade 3 Mathematics — Common Core
+# American Grade 3 Mathematics - Common Core
 
 ## Multiplication facts 0-10
 

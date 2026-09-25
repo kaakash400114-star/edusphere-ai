@@ -1,4 +1,4 @@
-# American Grade 11 Mathematics — Common Core
+# American Grade 11 Mathematics - Common Core
 
 ## Algebra II: functions-quadratics
 

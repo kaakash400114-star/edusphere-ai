@@ -1,7 +1,7 @@
-# CBSE Class 5 Science — NCERT-aligned EVS (Looking Around 5)
+# CBSE Class 5 Science - NCERT-aligned EVS (Looking Around 5)
 
 ## Super senses: how animals sense the world
-Tiger's night vision, eagle's sharp eyes, dog's smell, bat's hearing (echolocation), snake's vibration sense — compare with human senses.
+Tiger's night vision, eagle's sharp eyes, dog's smell, bat's hearing (echolocation), snake's vibration sense - compare with human senses.
 
 ## From tasting to digesting
 Tongue taste zones, saliva starts digestion; teeth roles; the journey: food pipe, stomach, small intestine absorbs, large intestine removes; good food habits.

@@ -1,10 +1,10 @@
-# CBSE Class 12 Mathematics — NCERT (Part I & II essentials)
+# CBSE Class 12 Mathematics - NCERT (Part I & II essentials)
 
 ## Relations and functions
 Types of relations (reflexive, symmetric, transitive, equivalence); one-one, onto functions; composition; inverse of a function.
 
 ## Inverse trigonometric functions
-Domain-range; principal value branch; graphs; properties: sin⁻¹ + cos⁻¹ = π/2 family; simplifications.
+Domain-range; principal value branch; graphs; properties: sin⁻^1 + cos⁻^1 = π/2 family; simplifications.
 
 ## Matrices
 Types; equality, addition, scalar and matrix multiplication (non-commutativity); transpose; symmetric-skew symmetric; elementary operations idea.
