@@ -1,7 +1,7 @@
-# Arithmetic Foundation — Operations and Computation
+# Arithmetic Foundation - Operations and Computation
 
-> **Subject:** Mathematics — Addition, Subtraction, Multiplication, Division, and Order of Operations
-> **Grade Level:** 2–7 (with extensions through pre-algebra)
+> **Subject:** Mathematics - Addition, Subtraction, Multiplication, Division, and Order of Operations
+> **Grade Level:** 2-7 (with extensions through pre-algebra)
 > **Last Updated:** 2026-07-09
 
 ---
@@ -148,8 +148,8 @@ Break numbers into place-value parts, subtract each part, then combine.
 
 Step-by-step:
 > 800 − 300 = **500** (hundreds)
-> 40 − 70 = **−30** (tens — negative, handle carefully)
-> 3 − 6 = **−3** (ones — negative)
+> 40 − 70 = **−30** (tens - negative, handle carefully)
+> 3 − 6 = **−3** (ones - negative)
 > 500 + (−30) + (−3) = **467**
 
 **Alternative (adjusted):** If a place value would go negative, borrow 100 from the higher place:
@@ -157,7 +157,7 @@ Step-by-step:
 > 400 − 300 = **100** (hundreds after adjustment)
 > 140 − 70 = **70** (tens after borrowing 100)
 > 3 − 6 = **−3** (ones)
-> 100 + 70 + (−3) = **167**… wait — this example shows why careful setup matters.
+> 100 + 70 + (−3) = **167**... wait - this example shows why careful setup matters.
 
 **Better example with partial differences:**
 > 843 − 376 = ?
@@ -188,7 +188,7 @@ Use a friendly adjustment:
 
 ### 2.5 Checking with Addition
 
-**Subtraction is the inverse of addition.** To check a subtraction answer, add the difference to the subtrahend — you should get the minuend.
+**Subtraction is the inverse of addition.** To check a subtraction answer, add the difference to the subtrahend - you should get the minuend.
 
 > 843 − 376 = 467
 > **Check:** 467 + 376 = 843 ✓
@@ -229,7 +229,7 @@ A rectangular arrangement of rows and columns.
 ```
 Total: 12 stars
 
-**Key insight:** The commutative property is visible — rotating the array gives 3 × 4, which also has 12 stars.
+**Key insight:** The commutative property is visible - rotating the array gives 3 × 4, which also has 12 stars.
 
 **Teaching tip:** Have students build arrays with tiles, cubes, or grid paper. Ask: "How many rows? How many columns? How many total?"
 
@@ -290,14 +290,14 @@ Read diagonals from bottom-right to top-left, carrying when a diagonal sums to 1
 > Next diagonal: 8 + 2 + 4 = 14 → write **4**, carry 1
 > Next diagonal: 6 + 8 + 1 (carry) + 2 + 2 = 19 → write **9**, carry 1
 > Top-left diagonal: 0 + 1 (carry) + 1 = 2 → **2**
-> Wait — let's redo this carefully:
+> Wait - let's redo this carefully:
 
 ```
         3       4
      ┌────┬────┐
      │ 0/6│ 0/8│
    2 ├───┼───┤
-     │ 6/0│ 4/8│  ← No — let me use the correct method.
+     │ 6/0│ 4/8│  ← No - let me use the correct method.
      │ 1/8│ 2/4│
    6 ├───┼───┤
      │ 1/8│ 2/4│
@@ -426,7 +426,7 @@ Subtract increasingly large multiples of the divisor.
 
 ### 4.5 Standard Long Division Algorithm
 
-**Divide, Multiply, Subtract, Bring down, Repeat.** (Remember: **Dad, Mother, Sister, Brother, Rover** — Divide, Multiply, Subtract, Bring down, Repeat.)
+**Divide, Multiply, Subtract, Bring down, Repeat.** (Remember: **Dad, Mother, Sister, Brother, Rover** - Divide, Multiply, Subtract, Bring down, Repeat.)
 
 > 396 ÷ 12 = ?
 
@@ -464,7 +464,7 @@ A compact version of long division when the divisor is a single digit and studen
 
 **Steps (done mentally):**
 1. 3 ÷ 3 = 1, write 1
-2. 7 ÷ 3 = 2 remainder 1, write 2, carry 1 to the next digit (7 + 10 carried = 17, wait — no: the remainder 1 combines with 8)
+2. 7 ÷ 3 = 2 remainder 1, write 2, carry 1 to the next digit (7 + 10 carried = 17, wait - no: the remainder 1 combines with 8)
    Actually: 3 goes into 7 → 2 remainder 1. Write 2. Carry the 1 to the next digit.
 3. Combined: 18 ÷ 3 = 6. Write 6.
 4. **Answer: 126** ✓
@@ -511,7 +511,7 @@ When an expression has multiple operations, a standard order prevents ambiguity.
 | **M/D** | **M**ultiplication and **D**ivision (left to right) | Same |
 | **A/S** | **A**ddition and **S**ubtraction (left to right) | Same |
 
-**Critical rule:** Multiplication and division are **equal in priority** — you do them **left to right**, not multiplication before division. The same applies to addition and subtraction.
+**Critical rule:** Multiplication and division are **equal in priority** - you do them **left to right**, not multiplication before division. The same applies to addition and subtraction.
 
 > Wrong: 16 ÷ 4 × 2 = 16 ÷ 8 = 2
 > Right: 16 ÷ 4 × 2 = 4 × 2 = **8** (go left to right!)
@@ -529,7 +529,7 @@ When an expression has multiple operations, a standard order prevents ambiguity.
 
 > 24 ÷ 6 × 2
 >
-> Step 1: Left to right — 24 ÷ 6 = 4
+> Step 1: Left to right - 24 ÷ 6 = 4
 > Step 2: 4 × 2 = **8**
 
 #### Level 3: Parentheses
@@ -539,23 +539,23 @@ When an expression has multiple operations, a standard order prevents ambiguity.
 > Step 1: Parentheses first: 8 + 3 = 11
 > Step 2: Multiply: 11 × 4 = **44**
 
-Compare with 8 + 3 × 4 = 20 — **parentheses change the meaning!**
+Compare with 8 + 3 × 4 = 20 - **parentheses change the meaning!**
 
 #### Level 4: Exponents with Multiple Operations
 
-> 3 + 4² × (10 − 6)
+> 3 + 4^2 × (10 − 6)
 >
 > Step 1: Parentheses: (10 − 6) = 4
-> Step 2: Exponents: 4² = 16
+> Step 2: Exponents: 4^2 = 16
 > Step 3: Multiply: 16 × 4 = 64
 > Step 4: Add: 3 + 64 = **67**
 
 #### Level 5: Nested Parentheses
 
-> 2 × [3 + (10 − 4)²] ÷ 2
+> 2 × [3 + (10 − 4)^2] ÷ 2
 >
 > Step 1: Innermost parentheses: (10 − 4) = 6
-> Step 2: Exponent inside brackets: 6² = 36
+> Step 2: Exponent inside brackets: 6^2 = 36
 > Step 3: Brackets: [3 + 36] = 39
 > Step 4: Left to right for × and ÷:
 >   - 2 × 39 = 78
@@ -563,11 +563,11 @@ Compare with 8 + 3 × 4 = 20 — **parentheses change the meaning!**
 
 #### Level 6: Complex Expression
 
-> 4² + 3 × (10 − 2²) + 18 ÷ 3²
+> 4^2 + 3 × (10 − 2^2) + 18 ÷ 3^2
 >
-> Step 1: Parentheses first — inside: 2² = 4, then 10 − 4 = 6
->   Expression becomes: 4² + 3 × 6 + 18 ÷ 3²
-> Step 2: Exponents: 4² = 16, 3² = 9
+> Step 1: Parentheses first - inside: 2^2 = 4, then 10 − 4 = 6
+>   Expression becomes: 4^2 + 3 × 6 + 18 ÷ 3^2
+> Step 2: Exponents: 4^2 = 16, 3^2 = 9
 >   Expression becomes: 16 + 3 × 6 + 18 ÷ 9
 > Step 3: Multiplication and division left to right:
 >   - 3 × 6 = 18
@@ -580,10 +580,10 @@ Compare with 8 + 3 × 4 = 20 — **parentheses change the meaning!**
 Without a standard order, the same expression would give different results:
 
 > 2 + 3 × 4
-> If you go left to right: 2 + 3 = 5, then 5 × 4 = 20 — **wrong!**
+> If you go left to right: 2 + 3 = 5, then 5 × 4 = 20 - **wrong!**
 > Correct (multiply first): 3 × 4 = 12, then 2 + 12 = **14**
 
-The order of operations is a **convention** — an agreement mathematicians made so that expressions have a single, unambiguous meaning.
+The order of operations is a **convention** - an agreement mathematicians made so that expressions have a single, unambiguous meaning.
 
 ### Teaching Tips
 
@@ -611,7 +611,7 @@ The order of operations is a **convention** — an agreement mathematicians made
 
 **Subtracting zero from a number** has no effect. "Taking nothing away leaves everything."
 
-**Special case — zero minus a number:**
+**Special case - zero minus a number:**
 > 0 − 7 = −7
 
 This introduces **negative numbers**, which belong to the set of integers.
@@ -623,11 +623,11 @@ This introduces **negative numbers**, which belong to the set of integers.
 > 0 × 0 = 0
 > 538 × 0 = 0
 
-**Zero property of multiplication:** Any number multiplied by zero equals zero. Think of it as "zero groups of something" or "something zero times" — either way, you get nothing.
+**Zero property of multiplication:** Any number multiplied by zero equals zero. Think of it as "zero groups of something" or "something zero times" - either way, you get nothing.
 
 **Application:** This is the basis for solving equations like x(x − 5) = 0. If a product is zero, at least one factor must be zero (the **Zero Product Property**).
 
-### 6.4 Dividing by Zero — UNDEFINED
+### 6.4 Dividing by Zero - UNDEFINED
 
 > 5 ÷ 0 = **UNDEFINED**
 > 0 ÷ 0 = **UNDEFINED** (indeterminate)
@@ -635,12 +635,12 @@ This introduces **negative numbers**, which belong to the set of integers.
 **Why can't we divide by zero?**
 
 Think of division as "sharing":
-> "I have 5 cookies. I share them among 0 friends." This question has no meaningful answer — the situation is impossible.
+> "I have 5 cookies. I share them among 0 friends." This question has no meaningful answer - the situation is impossible.
 
 Think of division as the **inverse of multiplication**:
 > If 5 ÷ 0 = x, then 0 × x = 5. But 0 × anything = 0, so **no number x** makes this true. Division by zero is **undefined**.
 
-**Special case — zero divided by zero:**
+**Special case - zero divided by zero:**
 > If 0 ÷ 0 = x, then 0 × x = 0. This is true for **every number**, so there's no unique answer. It's called **indeterminate** (not a single defined value).
 
 **Important reminders for students:**
@@ -656,14 +656,14 @@ Think of division as the **inverse of multiplication**:
 | a − 0 | 15 − 0 | 15 | Subtracting nothing |
 | 0 − a | 0 − 15 | −15 | Result is negative |
 | a × 0 | 15 × 0 | 0 | Zero property of multiplication |
-| 0 × a | 0 × 15 | 0 | Commutative — same result |
+| 0 × a | 0 × 15 | 0 | Commutative - same result |
 | 0 ÷ a (a ≠ 0) | 0 ÷ 15 | 0 | Zero items shared → nothing each |
 | a ÷ 0 | 15 ÷ 0 | UNDEFINED | No valid answer |
 | 0 ÷ 0 | 0 ÷ 0 | UNDEFINED | Indeterminate |
 
 ### Teaching Tips
 
-- Use the **"sharing cookies" analogy** to explain why division by zero is impossible — it's concrete and memorable.
+- Use the **"sharing cookies" analogy** to explain why division by zero is impossible - it's concrete and memorable.
 - **Common misconception:** Students confuse 0 ÷ 5 = 0 with 5 ÷ 0 = undefined. Emphasize: "It matters **which** number is zero."
 - For the zero product property: use real-world examples like "If the area of a rectangle is 0, then either the length or the width (or both) must be 0."
 
@@ -704,4 +704,4 @@ Think of division as the **inverse of multiplication**:
 
 ---
 
-*This knowledge file is part of the EduSphere AI project — designed to support intelligent tutoring in foundational arithmetic.*
+*This knowledge file is part of the EduSphere AI project - designed to support intelligent tutoring in foundational arithmetic.*

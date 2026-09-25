@@ -1,4 +1,4 @@
-# Grade 5 Science — Complete Curriculum
+# Grade 5 Science - Complete Curriculum
 
 ## 1. Classification of Living Things
 
@@ -16,27 +16,27 @@ Scientists classify all living things into five major kingdoms based on their ch
 ### Taxonomy: Kingdom to Species
 Taxonomy is the science of classifying organisms. The classification hierarchy from broadest to most specific is:
 
-1. **Kingdom** — broadest group (e.g., Animalia)
-2. **Phylum** — major body plan group (e.g., Chordata — animals with backbones)
-3. **Class** — group sharing major features (e.g., Mammalia — mammals)
-4. **Order** — a group of related families (e.g., Carnivora)
-5. **Family** — closely related genera (e.g., Felidae — cats)
-6. **Genus** — very closely related species (e.g., *Panthera*)
-7. **Species** — organisms that can interbreed and produce fertile offspring (e.g., *Panthera leo* — lion)
+1. **Kingdom** - broadest group (e.g., Animalia)
+2. **Phylum** - major body plan group (e.g., Chordata - animals with backbones)
+3. **Class** - group sharing major features (e.g., Mammalia - mammals)
+4. **Order** - a group of related families (e.g., Carnivora)
+5. **Family** - closely related genera (e.g., Felidae - cats)
+6. **Genus** - very closely related species (e.g., *Panthera*)
+7. **Species** - organisms that can interbreed and produce fertile offspring (e.g., *Panthera leo* - lion)
 
 **Mnemonic to remember order:** "King Philip Came Over For Good Soup" (Kingdom, Phylum, Class, Order, Family, Genus, Species).
 
-**Binomial nomenclature:** Every species has a two-part Latin name — genus + species (e.g., *Homo sapiens* for humans). This system, created by Carl Linnaeus, is used worldwide so scientists everywhere use the same name for the same organism.
+**Binomial nomenclature:** Every species has a two-part Latin name - genus + species (e.g., *Homo sapiens* for humans). This system, created by Carl Linnaeus, is used worldwide so scientists everywhere use the same name for the same organism.
 
 ---
 
-## 2. Photosynthesis — A Deeper Look
+## 2. Photosynthesis - A Deeper Look
 
 Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose (sugar).
 
 ### The Overall Equation
 ```
-6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ + 6O₂
+6CO2 + 6H2O + Light Energy → C6H12O6 + 6O2
 (Carbon dioxide + Water + Sunlight → Glucose + Oxygen)
 ```
 
@@ -48,14 +48,14 @@ Photosynthesis occurs in the **chloroplasts** of plant cells, specifically in th
 **Stage 1: Light-Dependent Reactions**
 - Take place in the **thylakoid membranes**
 - Require **sunlight** (absorbed by chlorophyll)
-- Water molecules are **split apart** (H₂O → H⁺ + O₂), releasing oxygen as a byproduct
+- Water molecules are **split apart** (H2O → H⁺ + O2), releasing oxygen as a byproduct
 - Light energy is converted into **ATP** (energy molecule) and **NADPH** (electron carrier molecule)
 - This stage **must have light** to occur
 
 **Stage 2: Light-Independent Reactions (Calvin Cycle / Dark Reactions)**
 - Take place in the **stroma**
 - Do NOT require light directly (but need the ATP and NADPH from Stage 1)
-- Carbon dioxide from the air is **fixed** (captured and converted) into **glucose (C₆H₁₂O₆)**
+- Carbon dioxide from the air is **fixed** (captured and converted) into **glucose (C6H12O6)**
 - This is the **sugar-making** stage
 - The cycle is called the **Calvin Cycle** after scientist Melvin Calvin
 
@@ -73,7 +73,7 @@ Cellular respiration is the process cells use to break down glucose and release 
 
 ### The Overall Equation
 ```
-C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP Energy
+C6H12O6 + 6O2 → 6CO2 + 6H2O + ATP Energy
 (Glucose + Oxygen → Carbon Dioxide + Water + Energy)
 ```
 
@@ -99,15 +99,15 @@ Notice: this is essentially the **opposite** of photosynthesis!
 ### Anaerobic Respiration (without oxygen)
 When oxygen is not available, cells use **fermentation**:
 - In muscles: produces **lactic acid** (causes muscle soreness during intense exercise)
-- In yeast: produces **alcohol and CO₂** (used in bread-making and brewing)
+- In yeast: produces **alcohol and CO2** (used in bread-making and brewing)
 
 ### Photosynthesis vs. Cellular Respiration
 | Feature | Photosynthesis | Cellular Respiration |
 |---|---|---|
 | Organisms | Plants, algae, some bacteria | All living organisms |
 | Purpose | Store energy in glucose | Release energy from glucose |
-| Reactants | CO₂ + H₂O + Sunlight | Glucose + O₂ |
-| Products | Glucose + O₂ | CO₂ + H₂O + ATP |
+| Reactants | CO2 + H2O + Sunlight | Glucose + O2 |
+| Products | Glucose + O2 | CO2 + H2O + ATP |
 | Location | Chloroplasts | Mitochondria (and cytoplasm) |
 
 ---
@@ -133,16 +133,16 @@ Traits are characteristics that an organism inherits from its parents. Examples 
 
 ### DNA: The Code of Life
 - **DNA** (Deoxyribonucleic Acid) is the molecule that carries genetic instructions.
-- DNA is shaped like a **double helix** — a twisted ladder.
+- DNA is shaped like a **double helix** - a twisted ladder.
 - The "rungs" of the ladder are made of four **nitrogen bases**:
   - **A** (Adenine) always pairs with **T** (Thymine)
   - **C** (Cytosine) always pairs with **G** (Guanine)
 - The sequence of these bases is the **genetic code** that determines your traits.
-- DNA is organized into **chromosomes** — humans have 46 chromosomes (23 pairs).
+- DNA is organized into **chromosomes** - humans have 46 chromosomes (23 pairs).
 - **Genes** are short sections of DNA that code for specific traits.
 
 ### Dominant and Recessive Alleles
-- Each trait is controlled by **two alleles** (versions of a gene) — one from each parent.
+- Each trait is controlled by **two alleles** (versions of a gene) - one from each parent.
 - **Dominant allele (uppercase letter, e.g., B):** Masks the recessive allele; only ONE copy needed to show the trait.
 - **Recessive allele (lowercase letter, e.g., b):** Must have TWO copies to show the trait.
 - **Genotype:** The two alleles an organism has (e.g., BB, Bb, or bb).
@@ -177,7 +177,7 @@ Cross: Bb (brown-eyed parent) × Bb (brown-eyed parent)
 
 ## 5. Microorganisms
 
-Microorganisms (microbes) are living things too small to see without a microscope. They exist everywhere — in soil, water, air, and inside your body.
+Microorganisms (microbes) are living things too small to see without a microscope. They exist everywhere - in soil, water, air, and inside your body.
 
 ### Types of Microorganisms
 
@@ -207,10 +207,10 @@ Microorganisms (microbes) are living things too small to see without a microscop
 ### Preventing the Spread of Harmful Microbes
 - **Handwashing** with soap for at least 20 seconds
 - **Covering coughs and sneezes**
-- **Vaccines** — teach the immune system to fight specific diseases
-- **Pasteurization** — heating food/liquids to kill harmful bacteria (invented by Louis Pasteur)
-- **Antibiotics** — medicines that kill bacteria (do NOT work on viruses)
-- **Proper food storage** — refrigeration slows bacterial growth
+- **Vaccines** - teach the immune system to fight specific diseases
+- **Pasteurization** - heating food/liquids to kill harmful bacteria (invented by Louis Pasteur)
+- **Antibiotics** - medicines that kill bacteria (do NOT work on viruses)
+- **Proper food storage** - refrigeration slows bacterial growth
 
 ---
 
@@ -220,28 +220,28 @@ Microorganisms (microbes) are living things too small to see without a microscop
 The immune system is the body's defense against infections and diseases. It includes many organs, cells, and proteins working together.
 
 **First Line of Defense (Physical Barriers):**
-- Skin — prevents pathogens from entering
-- Mucus and cilia in the respiratory tract — trap and sweep out germs
-- Stomach acid — destroys many pathogens in food
-- Tears and saliva — contain enzymes that destroy bacteria
+- Skin - prevents pathogens from entering
+- Mucus and cilia in the respiratory tract - trap and sweep out germs
+- Stomach acid - destroys many pathogens in food
+- Tears and saliva - contain enzymes that destroy bacteria
 
 **Second Line of Defense (Innate Immunity):**
-- **Phagocytes** (white blood cells like macrophages) — engulf and digest pathogens
-- **Inflammation** — redness, swelling, heat, and pain at an infection site; brings more white blood cells to the area
-- **Fever** — higher body temperature slows down pathogen growth and speeds up immune response
+- **Phagocytes** (white blood cells like macrophages) - engulf and digest pathogens
+- **Inflammation** - redness, swelling, heat, and pain at an infection site; brings more white blood cells to the area
+- **Fever** - higher body temperature slows down pathogen growth and speeds up immune response
 
 **Third Line of Defense (Adaptive/Acquired Immunity):**
-- **Lymphocytes** (T-cells and B-cells) — white blood cells that recognize specific pathogens
-  - **B-cells** produce **antibodies** — proteins that lock onto specific antigens (markers on pathogens) and neutralize them
+- **Lymphocytes** (T-cells and B-cells) - white blood cells that recognize specific pathogens
+  - **B-cells** produce **antibodies** - proteins that lock onto specific antigens (markers on pathogens) and neutralize them
   - **T-cells** destroy infected cells and coordinate the immune response
-- **Memory cells** remember specific pathogens — if you encounter the same disease again, your body fights it faster (this is why vaccines work)
+- **Memory cells** remember specific pathogens - if you encounter the same disease again, your body fights it faster (this is why vaccines work)
 
 ### The Endocrine System
-The endocrine system is a network of glands that produce and release **hormones** — chemical messengers that travel through the bloodstream and control body functions.
+The endocrine system is a network of glands that produce and release **hormones** - chemical messengers that travel through the bloodstream and control body functions.
 
 | Gland | Hormone(s) | Function |
 |---|---|---|
-| **Pituitary gland** | Growth hormone, others | "Master gland" — controls other glands; regulates growth |
+| **Pituitary gland** | Growth hormone, others | "Master gland" - controls other glands; regulates growth |
 | **Thyroid** | Thyroxine | Controls metabolism (how fast your body uses energy) |
 | **Adrenal glands** | Adrenaline | "Fight or flight" response; stress reaction |
 | **Pancreas** | Insulin, glucagon | Regulates blood sugar levels |
@@ -259,7 +259,7 @@ Your body needs six types of nutrients:
 | **Minerals** | Bone health, blood, nerve function | Dairy (calcium), meat (iron), salt (sodium) |
 | **Water** | All body processes, hydration, temperature regulation | Drinking water, fruits, vegetables |
 
-**MyPlate (USDA):** A guide for a balanced meal — fill half your plate with fruits and vegetables, one quarter with grains, one quarter with protein, and include a serving of dairy.
+**MyPlate (USDA):** A guide for a balanced meal - fill half your plate with fruits and vegetables, one quarter with grains, one quarter with protein, and include a serving of dairy.
 
 **Why a balanced diet matters:**
 - Prevents obesity, diabetes, and heart disease
@@ -278,22 +278,22 @@ Matter is anything that has **mass** and takes up **space (volume)**. Solids, li
 ### Mass
 - Mass is the **amount of matter** in an object.
 - Measured in **grams (g)** or **kilograms (kg)** using a balance scale.
-- Mass does NOT change with location — an object has the same mass on Earth and on the Moon.
-- Mass is different from **weight** — weight is the force of gravity on an object and changes with location.
+- Mass does NOT change with location - an object has the same mass on Earth and on the Moon.
+- Mass is different from **weight** - weight is the force of gravity on an object and changes with location.
 
 ### Volume
 - Volume is the **amount of space** an object occupies.
-- Measured in **milliliters (mL)** or **cubic centimeters (cm³)** for liquids and small solids.
+- Measured in **milliliters (mL)** or **cubic centimeters (cm^3)** for liquids and small solids.
 - Methods to find volume:
-  - **Regular solids:** Use a ruler — Volume = length × width × height
-  - **Irregular solids:** Use the **water displacement method** — submerge the object in water and measure how much the water level rises
+  - **Regular solids:** Use a ruler - Volume = length × width × height
+  - **Irregular solids:** Use the **water displacement method** - submerge the object in water and measure how much the water level rises
   - **Liquids:** Use a graduated cylinder or measuring cup
 
 ### Density
-- Density is how tightly packed matter is — the **mass per unit volume**.
+- Density is how tightly packed matter is - the **mass per unit volume**.
 - **Formula:** Density = Mass ÷ Volume (D = m ÷ V)
-- Measured in **g/cm³** or **g/mL**
-- Objects with density **less than water** (< 1 g/cm³) will **float**; objects with density **greater than water** (> 1 g/cm³) will **sink**.
+- Measured in **g/cm^3** or **g/mL**
+- Objects with density **less than water** (< 1 g/cm^3) will **float**; objects with density **greater than water** (> 1 g/cm^3) will **sink**.
 - Example: Steel has high density (sinks); cork has low density (floats).
 
 ### Buoyancy
@@ -324,21 +324,21 @@ A chemical reaction occurs when **substances are changed into new substances** w
 - **Chemical equation:** Reactants → Products
 
 ### Example Chemical Reactions
-- **Rusting:** 4Fe + 3O₂ → 2Fe₂O₃ (Iron + Oxygen → Iron oxide / rust)
-- **Combustion (burning):** CH₄ + 2O₂ → CO₂ + 2H₂O (Methane + Oxygen → Carbon dioxide + Water)
-- **Baking soda + vinegar:** NaHCO₃ + CH₃COOH → CO₂ + H₂O + CH₃COONa (produces bubbles of CO₂ gas)
+- **Rusting:** 4Fe + 3O2 → 2Fe2O3 (Iron + Oxygen → Iron oxide / rust)
+- **Combustion (burning):** CH4 + 2O2 → CO2 + 2H2O (Methane + Oxygen → Carbon dioxide + Water)
+- **Baking soda + vinegar:** NaHCO3 + CH3COOH → CO2 + H2O + CH3COONa (produces bubbles of CO2 gas)
 
 ### Signs of a Chemical Reaction
-1. **Color change** — iron turns reddish-brown as it rusts; leaves change color in autumn
-2. **Gas production** — bubbles, fizzing, smoke, or odor
-3. **Formation of a precipitate** — a solid forms when two liquids mix
-4. **Temperature change** — release of heat (exothermic) or absorption of heat (endothermic)
-5. **Light or sound** — fireworks produce both light and sound
-6. **Irreversible change** — you cannot easily get the original substances back (unlike melting ice, which is a physical change)
+1. **Color change** - iron turns reddish-brown as it rusts; leaves change color in autumn
+2. **Gas production** - bubbles, fizzing, smoke, or odor
+3. **Formation of a precipitate** - a solid forms when two liquids mix
+4. **Temperature change** - release of heat (exothermic) or absorption of heat (endothermic)
+5. **Light or sound** - fireworks produce both light and sound
+6. **Irreversible change** - you cannot easily get the original substances back (unlike melting ice, which is a physical change)
 
 ### Physical vs. Chemical Changes
-- **Physical change:** Changes the appearance but NOT the chemical identity (e.g., crushing a can, melting ice, dissolving salt in water — you can get the salt back by evaporating the water).
-- **Chemical change:** Creates new substances with new properties (e.g., burning wood, rusting iron, baking a cake — you cannot "un-bake" a cake).
+- **Physical change:** Changes the appearance but NOT the chemical identity (e.g., crushing a can, melting ice, dissolving salt in water - you can get the salt back by evaporating the water).
+- **Chemical change:** Creates new substances with new properties (e.g., burning wood, rusting iron, baking a cake - you cannot "un-bake" a cake).
 
 ---
 
@@ -369,12 +369,12 @@ An atom is the **smallest unit of an element** that still has the properties of 
 ### Compounds
 - A compound is a substance made of **two or more different elements chemically bonded** together.
 - Properties of a compound are **different** from the elements that make it up.
-- Examples: Water (H₂O) — hydrogen and oxygen; Table salt (NaCl) — sodium and chlorine; Carbon dioxide (CO₂) — carbon and oxygen.
+- Examples: Water (H2O) - hydrogen and oxygen; Table salt (NaCl) - sodium and chlorine; Carbon dioxide (CO2) - carbon and oxygen.
 
 ### Molecules
 - A molecule is two or more atoms bonded together.
-- **Diatomic molecules** are molecules of two of the same atom: O₂, N₂, H₂.
-- **Compound molecules** have different atoms: H₂O, CO₂, CH₄.
+- **Diatomic molecules** are molecules of two of the same atom: O2, N2, H2.
+- **Compound molecules** have different atoms: H2O, CO2, CH4.
 
 ### Introduction to the Periodic Table
 - The **Periodic Table** organizes all known elements.
@@ -393,7 +393,7 @@ An atom is the **smallest unit of an element** that still has the properties of 
 
 Sir Isaac Newton described three fundamental laws that explain how objects move.
 
-### Newton's First Law — Law of Inertia
+### Newton's First Law - Law of Inertia
 "An object at rest stays at rest, and an object in motion stays in motion at the same speed and in the same direction, unless acted upon by an unbalanced force."
 
 - **Inertia** is the tendency of an object to resist changes in its motion.
@@ -404,12 +404,12 @@ Sir Isaac Newton described three fundamental laws that explain how objects move.
   - Passengers in a car lurch forward when the car stops suddenly (their bodies want to keep moving).
   - A hockey puck on ice keeps sliding because there is very little friction.
 
-### Newton's Second Law — Force, Mass, and Acceleration
+### Newton's Second Law - Force, Mass, and Acceleration
 "The acceleration of an object depends on the mass of the object and the amount of force applied. F = m × a"
 
 - **Force (F)** is measured in **Newtons (N)**.
 - **Mass (m)** is measured in **kilograms (kg)**.
-- **Acceleration (a)** is measured in **m/s²**.
+- **Acceleration (a)** is measured in **m/s^2**.
 - Key ideas:
   - More force = more acceleration (push harder, object speeds up more)
   - More mass = less acceleration (heavier objects are harder to accelerate)
@@ -417,7 +417,7 @@ Sir Isaac Newton described three fundamental laws that explain how objects move.
   - It is harder to push a heavy box than a light one.
   - A soccer ball accelerates more than a bowling ball when kicked with the same force.
 
-### Newton's Third Law — Action and Reaction
+### Newton's Third Law - Action and Reaction
 "For every action, there is an equal and opposite reaction."
 
 - Forces always come in **pairs**: when one object exerts a force on another, the second object exerts an equal force back in the opposite direction.
@@ -447,7 +447,7 @@ Energy is the **ability to do work** or cause change.
 | **Nuclear Energy** | Energy stored in the nucleus of atoms | The Sun (nuclear fusion), nuclear power plants |
 
 ### Law of Conservation of Energy
-**Energy cannot be created or destroyed — it can only be transformed from one form to another.**
+**Energy cannot be created or destroyed - it can only be transformed from one form to another.**
 
 The total amount of energy in a system always stays the same.
 
@@ -459,8 +459,8 @@ The total amount of energy in a system always stays the same.
 - A car engine: **chemical energy → kinetic energy + thermal energy + sound energy**
 
 ### Renewable vs. Nonrenewable Energy
-- **Nonrenewable:** Fossil fuels (coal, oil, natural gas) — take millions of years to form; limited supply.
-- **Renewable:** Can be replenished naturally — solar, wind, hydroelectric, geothermal, biomass.
+- **Nonrenewable:** Fossil fuels (coal, oil, natural gas) - take millions of years to form; limited supply.
+- **Renewable:** Can be replenished naturally - solar, wind, hydroelectric, geothermal, biomass.
 - Using renewable energy reduces pollution and conserves finite resources.
 
 ---
@@ -468,7 +468,7 @@ The total amount of energy in a system always stays the same.
 ## 12. Plate Tectonics
 
 ### Earth's Structure
-- **Crust:** Thin outer layer (5–70 km thick); oceanic crust is denser, continental crust is less dense.
+- **Crust:** Thin outer layer (5-70 km thick); oceanic crust is denser, continental crust is less dense.
 - **Mantle:** Thick layer of semi-solid rock below the crust; contains the **asthenosphere** where convection currents occur.
 - **Outer core:** Liquid iron and nickel; generates Earth's magnetic field.
 - **Inner core:** Solid iron and nickel; extremely hot (about 5,400°C).
@@ -493,7 +493,7 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 - Caused when tectonic plates suddenly **shift or slip** along a fault (a crack in Earth's crust).
 - **Focus (hypocenter):** The point inside Earth where the earthquake originates.
 - **Epicenter:** The point on Earth's surface directly above the focus.
-- Measured on the **Richter scale** (magnitude) — each whole number is 10 times stronger.
+- Measured on the **Richter scale** (magnitude) - each whole number is 10 times stronger.
 - **Seismographs** are instruments that detect and record earthquake waves.
 
 ### Volcanoes
@@ -526,12 +526,12 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 | "It's raining today" | "This area gets 40 inches of rain per year" |
 
 ### Factors That Affect Climate
-1. **Latitude** (distance from the equator) — closer to equator = hotter
-2. **Altitude** (elevation) — higher = colder
-3. **Distance from the ocean** — oceans moderate temperature
-4. **Ocean currents** — warm currents warm nearby land; cold currents cool it
-5. **Wind patterns** — prevailing winds affect temperature and moisture
-6. **Mountains** — create rain shadows (dry areas on the leeward side)
+1. **Latitude** (distance from the equator) - closer to equator = hotter
+2. **Altitude** (elevation) - higher = colder
+3. **Distance from the ocean** - oceans moderate temperature
+4. **Ocean currents** - warm currents warm nearby land; cold currents cool it
+5. **Wind patterns** - prevailing winds affect temperature and moisture
+6. **Mountains** - create rain shadows (dry areas on the leeward side)
 
 ---
 
@@ -541,13 +541,13 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 - The greenhouse effect is a **natural process** that keeps Earth warm enough to support life.
 - Sunlight (solar radiation) passes through the atmosphere and warms Earth's surface.
 - Earth's surface radiates heat (infrared radiation) back toward space.
-- **Greenhouse gases** in the atmosphere (carbon dioxide, methane, water vapor, nitrous oxide) **trap some of this heat** and prevent it from escaping — like glass in a greenhouse.
-- Without the greenhouse effect, Earth would be about 33°C (59°F) colder — too cold for most life.
+- **Greenhouse gases** in the atmosphere (carbon dioxide, methane, water vapor, nitrous oxide) **trap some of this heat** and prevent it from escaping - like glass in a greenhouse.
+- Without the greenhouse effect, Earth would be about 33°C (59°F) colder - too cold for most life.
 
 ### Enhanced Greenhouse Effect (Global Warming)
-- Human activities have **greatly increased** the concentration of greenhouse gases, especially CO₂.
-- Burning fossil fuels (coal, oil, natural gas) releases huge amounts of CO₂.
-- Deforestation removes trees that absorb CO₂.
+- Human activities have **greatly increased** the concentration of greenhouse gases, especially CO2.
+- Burning fossil fuels (coal, oil, natural gas) releases huge amounts of CO2.
+- Deforestation removes trees that absorb CO2.
 - Agriculture and livestock produce methane.
 - Result: Earth's average temperature is rising, causing **climate change**.
 
@@ -556,7 +556,7 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 - More extreme weather events (hurricanes, droughts, heat waves, floods)
 - Loss of habitats and species extinction
 - Disruption of agriculture and food supply
-- Ocean acidification (CO₂ dissolves in seawater, harming coral reefs)
+- Ocean acidification (CO2 dissolves in seawater, harming coral reefs)
 
 ### Pollution
 - **Air pollution:** Smoke, smog, particulate matter from factories and vehicles; causes respiratory diseases.
@@ -564,12 +564,12 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 - **Land pollution:** Landfills, plastic waste, toxic chemicals in soil.
 
 ### Conservation and Solutions
-- **Reduce, Reuse, Recycle** — the three Rs of waste management
+- **Reduce, Reuse, Recycle** - the three Rs of waste management
 - Use **renewable energy** (solar, wind, hydroelectric, geothermal)
-- **Energy conservation** — turn off lights, use energy-efficient appliances, walk or bike instead of driving
-- **Protect natural habitats** — national parks, wildlife refuges, reforestation
-- **Water conservation** — fix leaks, don't waste water, protect watersheds
-- **Sustainable agriculture** — reduce pesticide use, protect soil health
+- **Energy conservation** - turn off lights, use energy-efficient appliances, walk or bike instead of driving
+- **Protect natural habitats** - national parks, wildlife refuges, reforestation
+- **Water conservation** - fix leaks, don't waste water, protect watersheds
+- **Sustainable agriculture** - reduce pesticide use, protect soil health
 
 ---
 
@@ -578,7 +578,7 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 ### Gravity and Orbits
 - **Gravity** is the force of attraction between objects with mass. The more massive the objects and the closer they are, the stronger the gravity.
 - Gravity keeps the **Moon in orbit around Earth** and **Earth in orbit around the Sun**.
-- **Orbit** occurs when an object moves forward fast enough that, as gravity pulls it down, its forward motion causes it to keep "falling around" the object — like swinging a ball on a string.
+- **Orbit** occurs when an object moves forward fast enough that, as gravity pulls it down, its forward motion causes it to keep "falling around" the object - like swinging a ball on a string.
 - **Isaac Newton** described the Law of Universal Gravitation; **Albert Einstein** later refined our understanding with the Theory of General Relativity.
 
 ### The Solar System
@@ -590,10 +590,10 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 - **Comets:** Made of ice and rock; develop glowing tails when near the Sun.
 
 ### Star Lifecycle
-1. **Nebula** — a giant cloud of gas and dust in space.
-2. **Protostar** — gravity pulls matter together; the cloud collapses and heats up.
-3. **Main Sequence Star** — hydrogen fusion begins; the star is stable for billions of years (our Sun is in this stage).
-4. **Red Giant** — star runs low on hydrogen, expands and cools.
+1. **Nebula** - a giant cloud of gas and dust in space.
+2. **Protostar** - gravity pulls matter together; the cloud collapses and heats up.
+3. **Main Sequence Star** - hydrogen fusion begins; the star is stable for billions of years (our Sun is in this stage).
+4. **Red Giant** - star runs low on hydrogen, expands and cools.
 5. **End of life:**
    - **Small/Medium stars:** Shrink into a **white dwarf**, then slowly fade.
    - **Massive stars:** Explode in a **supernova**, then collapse into a **neutron star** or a **black hole** (if extremely massive).
@@ -601,10 +601,10 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 ### Galaxies
 - A galaxy is a massive collection of stars, gas, dust, and dark matter held together by gravity.
 - Types of galaxies:
-  - **Spiral galaxies** — flat disk with spiral arms (like the Milky Way)
-  - **Elliptical galaxies** — round or oval, no spiral arms
-  - **Irregular galaxies** — no definite shape
-- Our solar system is in the **Milky Way Galaxy**, which contains 100–400 billion stars.
+  - **Spiral galaxies** - flat disk with spiral arms (like the Milky Way)
+  - **Elliptical galaxies** - round or oval, no spiral arms
+  - **Irregular galaxies** - no definite shape
+- Our solar system is in the **Milky Way Galaxy**, which contains 100-400 billion stars.
 - The observable universe contains **billions of galaxies**.
 
 ### Eclipses
@@ -617,13 +617,13 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 ## 16. Scientific Inquiry and the Scientific Method
 
 ### Steps of the Scientific Method
-1. **Ask a question** — What do you want to find out?
-2. **Research** — Learn what is already known about the topic.
-3. **Form a hypothesis** — A testable prediction (If… then… because… statement).
-4. **Design and conduct an experiment** — Test the hypothesis with a controlled experiment.
-5. **Collect and analyze data** — Record observations, measurements, and results.
-6. **Draw conclusions** — Was the hypothesis supported or not? What did you learn?
-7. **Communicate results** — Share findings with others through reports or presentations.
+1. **Ask a question** - What do you want to find out?
+2. **Research** - Learn what is already known about the topic.
+3. **Form a hypothesis** - A testable prediction (If... then... because... statement).
+4. **Design and conduct an experiment** - Test the hypothesis with a controlled experiment.
+5. **Collect and analyze data** - Record observations, measurements, and results.
+6. **Draw conclusions** - Was the hypothesis supported or not? What did you learn?
+7. **Communicate results** - Share findings with others through reports or presentations.
 
 ### Variables in Experiments
 - **Independent variable (manipulated variable):** The one factor you **change** on purpose in the experiment.
@@ -639,16 +639,16 @@ Earth's **lithosphere** (crust + uppermost mantle) is broken into large pieces c
 ### Controlled Experiments
 - A controlled experiment compares a **control group** (no change) with an **experimental group** (the independent variable is changed).
 - The control group provides a **baseline** for comparison.
-- **Example:** Testing if a new fertilizer works — control group gets no fertilizer; experimental group gets the fertilizer. Everything else is the same.
+- **Example:** Testing if a new fertilizer works - control group gets no fertilizer; experimental group gets the fertilizer. Everything else is the same.
 
 ### Data Analysis
 - **Qualitative data:** Descriptions (color, texture, smell).
 - **Quantitative data:** Numbers and measurements (temperature, mass, time).
 - Organize data using:
-  - **Tables** — organize numbers for easy reading
-  - **Bar graphs** — compare categories
-  - **Line graphs** — show changes over time
-  - **Pie charts** — show parts of a whole (percentages)
+  - **Tables** - organize numbers for easy reading
+  - **Bar graphs** - compare categories
+  - **Line graphs** - show changes over time
+  - **Pie charts** - show parts of a whole (percentages)
 - Look for **patterns, trends, and relationships** in the data.
 - **Mean** (average), **median** (middle value), and **mode** (most common value) help summarize data.
 - Repeat experiments multiple times to ensure **reliable and consistent results**.

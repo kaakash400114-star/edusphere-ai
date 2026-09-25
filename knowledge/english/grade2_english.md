@@ -1,12 +1,12 @@
-# Grade 2 English — Complete Curriculum
+# Grade 2 English - Complete Curriculum
 
 ## 1. Phonics
 
-### Long Vowels — Silent E (Magic E)
+### Long Vowels - Silent E (Magic E)
 
 When a word has a **silent e** at the end, the vowel before it says its **own name** (long sound).
 
-**Pattern:** consonant–vowel–consonant–**e**
+**Pattern:** consonant-vowel-consonant-**e**
 
 | Short Vowel Word | Add Silent E | Long Vowel Word |
 |-----------------|-------------|----------------|
@@ -30,17 +30,17 @@ When a word has a **silent e** at the end, the vowel before it says its **own na
 
 Two vowels next to each other often work together to make one sound. A helpful rule: **"When two vowels go walking, the first one does the talking."**
 
-**ee and ea — long /ē/ sound:**
+**ee and ea - long /ē/ sound:**
 
 | ee Words | ea Words |
 |----------|----------|
 | see, bee, tree, fee, tee | sea, eat, meat, seat, beat |
 | feet, meet, deep, keep | read, bean, clean, dream, team |
 | feel, peel, seed, weed | each, lead, reach, teach, leap |
-| green, sleep, street, sweet | bread, head (exception — short e) |
-| free, three, teeth, week | health, heavy (exception — short e) |
+| green, sleep, street, sweet | bread, head (exception - short e) |
+| free, three, teeth, week | health, heavy (exception - short e) |
 
-**ai and ay — long /ā/ sound:**
+**ai and ay - long /ā/ sound:**
 
 | ai (usually in the middle) | ay (usually at the end) |
 |----------------------------|------------------------|
@@ -49,7 +49,7 @@ Two vowels next to each other often work together to make one sound. A helpful r
 | paint, claim, plain, rain | pay, lay, ray, clay |
 | sail, mail, fail, trail | play, pray, spray, stray |
 
-**oa and ow — long /ō/ sound:**
+**oa and ow - long /ō/ sound:**
 
 | oa Words | ow Words |
 |----------|----------|
@@ -58,7 +58,7 @@ Two vowels next to each other often work together to make one sound. A helpful r
 | moan, roast, toast, boast | bow, throw, yellow (ow as /ō/) |
 | coal, goal, foam, roam | row, own, low, mow |
 
-**ow and ou — /ow/ sound (as in cow):**
+**ow and ou - /ow/ sound (as in cow):**
 
 | ow Words | ou Words |
 |----------|----------|
@@ -80,16 +80,16 @@ When the letter **r** comes after a vowel, the **r controls the vowel** and chan
 
 ### Soft C and Soft G
 
-**Soft c** — When c is followed by e, i, or y, it makes the /s/ sound:
+**Soft c** - When c is followed by e, i, or y, it makes the /s/ sound:
 - city, cent, face, ice, nice, pace, race, circle, cell, cycle
 
-**Hard c** — When c is followed by a, o, or u, it makes the /k/ sound:
+**Hard c** - When c is followed by a, o, or u, it makes the /k/ sound:
 - cat, cup, cot, can, cap, cold, come, call, class, cut
 
-**Soft g** — When g is followed by e, i, or y, it makes the /j/ sound:
+**Soft g** - When g is followed by e, i, or y, it makes the /j/ sound:
 - gym, giant, gentle, gem, page, cage, stage, large, age, edge
 
-**Hard g** — When g is followed by a, o, or u, it makes the /g/ sound:
+**Hard g** - When g is followed by a, o, or u, it makes the /g/ sound:
 - go, get, gap, gum, good, game, got, glad, grow, green
 
 ### Diphthongs
@@ -332,9 +332,9 @@ A **suffix** is a group of letters added to the **end** of a word that changes i
 | ox | oxen |
 | cactus | cacti |
 
-### Verbs — Past Tense
+### Verbs - Past Tense
 
-**Regular verbs** — add **-ed**:
+**Regular verbs** - add **-ed**:
 
 | Base Verb | Past Tense |
 |-----------|-----------|
@@ -353,7 +353,7 @@ A **suffix** is a group of letters added to the **end** of a word that changes i
 | love | loved |
 | like | liked |
 
-**Irregular verbs** — the word changes:
+**Irregular verbs** - the word changes:
 
 | Base Verb | Past Tense |
 |-----------|-----------|
@@ -464,7 +464,7 @@ The **main idea** is what the whole passage is mostly about. It is the most impo
 
 **How to find the main idea:**
 - Ask yourself: "What is this mostly about?"
-- Look at the title — it often gives a big hint.
+- Look at the title - it often gives a big hint.
 - Check the first and last sentences of the paragraph.
 - Think: every detail should connect back to the main idea.
 
@@ -473,7 +473,7 @@ The **main idea** is what the whole passage is mostly about. It is the most impo
 
 **Main idea:** Bees are very important insects that make honey and help plants grow.
 
-### Sequence — Order of Events
+### Sequence - Order of Events
 
 **Sequence** means the order in which things happen. Look for **signal words**:
 
@@ -493,8 +493,8 @@ The **main idea** is what the whole passage is mostly about. It is the most impo
 
 ### Cause and Effect
 
-- **Cause** — why something happened
-- **Effect** — what happened as a result
+- **Cause** - why something happened
+- **Effect** - what happened as a result
 
 | Cause | Effect |
 |-------|--------|
@@ -508,14 +508,14 @@ The **main idea** is what the whole passage is mostly about. It is the most impo
 
 ### Compare and Contrast
 
-- **Compare** — find how things are **alike** (similarities)
-- **Contrast** — find how things are **different** (differences)
+- **Compare** - find how things are **alike** (similarities)
+- **Contrast** - find how things are **different** (differences)
 
 | Signal Words for Compare | Signal Words for Contrast |
 |------------------------|--------------------------|
 | both, alike, same, similar, too, also, just like | but, different, however, unlike, on the other hand, while |
 
-**Example — Cats and Dogs:**
+**Example - Cats and Dogs:**
 
 | Alike (Compare) | Different (Contrast) |
 |-----------------|---------------------|
@@ -547,9 +547,9 @@ A **prediction** is a smart guess about what will happen next in a story.
 
 A **paragraph** is a group of sentences about ONE main idea. A good paragraph has:
 
-1. **Topic sentence** — tells the main idea (usually the first sentence)
-2. **Detail sentences** — give more information and examples
-3. **Closing sentence** — wraps up the paragraph (often restates the main idea)
+1. **Topic sentence** - tells the main idea (usually the first sentence)
+2. **Detail sentences** - give more information and examples
+3. **Closing sentence** - wraps up the paragraph (often restates the main idea)
 
 **Example paragraph:**
 > **My favorite season is fall.** (topic sentence) The leaves on the trees change to beautiful colors like red, orange, and yellow. I love jumping in big piles of leaves in my yard. The weather gets cooler, so I can wear my favorite sweaters. Halloween and Thanksgiving are in the fall too, and I love both holidays. **Fall is truly the best time of the year.** (closing sentence)

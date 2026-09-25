@@ -61,17 +61,17 @@ A suffix is a word part added to the **end** of a base word that changes its mea
 | **-ous** | full of | famous, nervous, dangerous | Noun → Adjective (danger → dangerous) |
 | **-ous** | full of | courageous, generous, curious | Noun → Adjective (courage → courageous) |
 
-**Tip:** When adding a suffix that begins with a vowel (like -able), sometimes the final "e" in the base word is dropped (like "notice" → "noticeable" keeps the "e" for pronunciation, but "make" → "makable" becomes "makeable" — though we spell it "makeable" or "mailable").
+**Tip:** When adding a suffix that begins with a vowel (like -able), sometimes the final "e" in the base word is dropped (like "notice" → "noticeable" keeps the "e" for pronunciation, but "make" → "makable" becomes "makeable" - though we spell it "makeable" or "mailable").
 
 ### Synonyms with Shades of Meaning
 
-Synonyms are words that have similar meanings, but they often have different **shades of meaning** — slight differences in intensity, emotion, or how they are used.
+Synonyms are words that have similar meanings, but they often have different **shades of meaning** - slight differences in intensity, emotion, or how they are used.
 
 #### "Angry" vs. "Furious" vs. "Irritated"
 
-- **Irritated** — mildly annoyed; a small, lingering feeling. Example: *"She felt irritated when her brother kept tapping his pencil."*
-- **Angry** — upset; a general, noticeable feeling of displeasure. Example: *"He was angry when his team lost the game."*
-- **Furious** — extremely angry; the strongest of the three; nearly out of control. Example: *"The teacher was furious when the students cheated on the test."*
+- **Irritated** - mildly annoyed; a small, lingering feeling. Example: *"She felt irritated when her brother kept tapping his pencil."*
+- **Angry** - upset; a general, noticeable feeling of displeasure. Example: *"He was angry when his team lost the game."*
+- **Furious** - extremely angry; the strongest of the three; nearly out of control. Example: *"The teacher was furious when the students cheated on the test."*
 
 **Think of it like a volume dial:** irritated is low, angry is medium, furious is loud!
 
@@ -93,7 +93,7 @@ Synonyms are words that have similar meanings, but they often have different **s
 
 ### Figurative Language
 
-Figurative language uses words in creative ways — not just their literal meaning — to make writing more interesting and expressive.
+Figurative language uses words in creative ways - not just their literal meaning - to make writing more interesting and expressive.
 
 #### Alliteration
 
@@ -109,14 +109,14 @@ Alliteration makes writing sound musical and memorable. It is often used in poet
 
 Onomatopoeia is a word that **imitates the sound** it represents.
 
-- *Buzz* — bees buzzing
-- *Crack* — thunder cracking
-- *Hiss* — a snake hissing
-- *Pop* — a balloon popping
-- *Sizzle* — bacon sizzling in a pan
-- *Thud* — a heavy book falling
-- *Whisper* — wind in the trees
-- *Bang* — a door slamming shut
+- *Buzz* - bees buzzing
+- *Crack* - thunder cracking
+- *Hiss* - a snake hissing
+- *Pop* - a balloon popping
+- *Sizzle* - bacon sizzling in a pan
+- *Thud* - a heavy book falling
+- *Whisper* - wind in the trees
+- *Bang* - a door slamming shut
 
 Onomatopoeia helps readers **hear** what is happening in the text.
 
@@ -134,7 +134,7 @@ Hyperbole makes writing more dramatic, humorous, and expressive.
 
 #### Personification
 
-Personification gives **human qualities** to non-human things — objects, animals, or ideas.
+Personification gives **human qualities** to non-human things - objects, animals, or ideas.
 
 - *"The wind **whispered** through the trees."* (Wind can't actually whisper.)
 - *"The sun **smiled** down on us."* (The sun doesn't have a face.)
@@ -159,8 +159,8 @@ A noun is a word that names a **person, place, thing, or idea**.
 - **Proper nouns:** Mrs. Johnson, Chicago, *Harry Potter*, Tuesday, the Grand Canyon (always capitalized)
 
 Nouns can also be classified as:
-- **Concrete nouns** — things you can see, hear, touch, taste, or smell (apple, thunder, perfume)
-- **Abstract nouns** — ideas, feelings, or qualities you cannot touch (freedom, bravery, love, knowledge)
+- **Concrete nouns** - things you can see, hear, touch, taste, or smell (apple, thunder, perfume)
+- **Abstract nouns** - ideas, feelings, or qualities you cannot touch (freedom, bravery, love, knowledge)
 
 #### 2. Pronouns
 A pronoun is a word that **takes the place of a noun**.
@@ -203,7 +203,7 @@ A preposition is a word that shows a **relationship** between a noun (or pronoun
 - **Time:** before, after, during, since, until, by
 - **Direction:** to, from, into, through, across, toward
 
-Example: *"The cat sat **on** the mat."* — "On" shows the relationship between the cat and the mat.
+Example: *"The cat sat **on** the mat."* - "On" shows the relationship between the cat and the mat.
 
 #### 7. Conjunctions
 A conjunction is a word that **connects words, phrases, or clauses** together.
@@ -213,7 +213,7 @@ A conjunction is a word that **connects words, phrases, or clauses** together.
   - *She was tired, **but** she kept working.*
   - *We can go to the park, **or** we can stay home.*
 
-- **Subordinating conjunctions** (connect an independent clause to a dependent clause — see Sentence Types below): because, although, when, if, while, since, until, before, after
+- **Subordinating conjunctions** (connect an independent clause to a dependent clause - see Sentence Types below): because, although, when, if, while, since, until, before, after
 
 #### 8. Interjections
 An interjection is a word or phrase that expresses **strong emotion** and is usually followed by an exclamation mark or a comma.
@@ -268,10 +268,10 @@ A run-on sentence is two or more complete sentences (independent clauses) jammed
 
 **Types of run-ons:**
 
-1. **Fused sentence** — two sentences with no punctuation between them:
+1. **Fused sentence** - two sentences with no punctuation between them:
    - ❌ *The dog barked the mail carrier ran away.*
 
-2. **Comma splice** — two sentences joined only by a comma (no conjunction):
+2. **Comma splice** - two sentences joined only by a comma (no conjunction):
    - ❌ *The dog barked, the mail carrier ran away.*
 
 **How to fix run-ons:**
@@ -290,11 +290,11 @@ A run-on sentence is two or more complete sentences (independent clauses) jammed
 
 ### Sentence Fragments
 
-A fragment is an **incomplete sentence** — it is missing a subject, a verb, or a complete thought. Fragments cannot stand alone.
+A fragment is an **incomplete sentence** - it is missing a subject, a verb, or a complete thought. Fragments cannot stand alone.
 
-- ❌ *Running down the street.* (Missing subject — Who is running?)
-- ❌ *The big brown dog.* (Missing verb — What did the dog do?)
-- ❌ *Because she was late.* (Missing a complete thought — What happened because she was late?)
+- ❌ *Running down the street.* (Missing subject - Who is running?)
+- ❌ *The big brown dog.* (Missing verb - What did the dog do?)
+- ❌ *Because she was late.* (Missing a complete thought - What happened because she was late?)
 
 **How to fix fragments:**
 
@@ -304,7 +304,7 @@ A fragment is an **incomplete sentence** — it is missing a subject, a verb, or
 
 ### Subject-Verb Agreement
 
-The subject and verb in a sentence must **agree in number** — if the subject is singular, the verb must be singular; if the subject is plural, the verb must be plural.
+The subject and verb in a sentence must **agree in number** - if the subject is singular, the verb must be singular; if the subject is plural, the verb must be plural.
 
 **Singular subject → singular verb:**
 - *The cat **runs** quickly.*
@@ -323,8 +323,8 @@ The subject and verb in a sentence must **agree in number** — if the subject i
    - *The dog and the cat **chase** each other.*
 
 2. **Compound subjects joined by "or" or "nor"** → verb matches the subject **closer to it**:
-   - *Neither the cat nor the dogs **were** outside.* (verb matches "dogs" — closer)
-   - *Neither the dogs nor the cat **was** outside.* (verb matches "cat" — closer)
+   - *Neither the cat nor the dogs **were** outside.* (verb matches "dogs" - closer)
+   - *Neither the dogs nor the cat **was** outside.* (verb matches "cat" - closer)
 
 3. **Don't be fooled by prepositional phrases!** The subject is NEVER in a prepositional phrase:
    - ✅ *The box of chocolates **is** on the table.* (subject = box, singular)
@@ -472,7 +472,7 @@ A good summary is brief and captures the most important ideas. The **SWBST** met
 | **S** | So | What did the character do about it? |
 | **T** | Then | How did it end? What was the resolution? |
 
-**Example — *Charlotte's Web* by E.B. White:**
+**Example - *Charlotte's Web* by E.B. White:**
 
 - **S** (Somebody): Wilbur the pig
 - **W** (Wanted): wanted to stay alive and not be sent to slaughter
@@ -490,7 +490,7 @@ Point of view (POV) tells **who is telling the story**.
 The narrator is **a character in the story** and uses pronouns like **I, me, my, we, us**.
 
 - *"I couldn't believe what I saw when I opened the door. My heart raced as I stepped inside."*
-- The reader only knows what the narrator thinks and feels — you cannot see into other characters' minds.
+- The reader only knows what the narrator thinks and feels - you cannot see into other characters' minds.
 
 #### Third Person
 The narrator is **outside the story** and uses pronouns like **he, she, it, they, the character's name**.
@@ -527,8 +527,8 @@ A **symbol** is an object, character, figure, or color that represents an **abst
 - *"He hadn't studied for the test, but he wasn't worried. 'It'll be fine,' he told himself."* → This foreshadows that he will likely do poorly.
 
 **Foreshadowing vs. Flashback:**
-- **Foreshadowing** — hints about what WILL happen (forward-looking)
-- **Flashback** — shows what already happened in the past (backward-looking)
+- **Foreshadowing** - hints about what WILL happen (forward-looking)
+- **Flashback** - shows what already happened in the past (backward-looking)
 
 ### Characterization
 
@@ -542,11 +542,11 @@ The author **directly states** what the character is like.
 
 #### Indirect Characterization
 The author **shows** the character's personality through:
-- **Speech** — What the character says and how they say it
-- **Thoughts** — What the character thinks and feels
-- **Effects on others** — How other characters react to them
-- **Actions** — What the character does
-- **Looks** — How the character dresses or appears
+- **Speech** - What the character says and how they say it
+- **Thoughts** - What the character thinks and feels
+- **Effects on others** - How other characters react to them
+- **Actions** - What the character does
+- **Looks** - How the character dresses or appears
 
 **Example of indirect characterization:**
 *"Tom knocked over Lucy's pencil case and kept walking without apologizing. When the teacher asked who did it, he looked away and whistled."*
@@ -554,11 +554,11 @@ The author **shows** the character's personality through:
 → We can infer that Tom is **careless** and **not very honest** without the author saying so directly.
 
 **STEAL method for indirect characterization:**
-- **S**peech — What does the character say?
-- **T**houghts — What does the character think?
-- **E**ffect on others — How do others react?
-- **A**ctions — What does the character do?
-- **L**ooks — How does the character look?
+- **S**peech - What does the character say?
+- **T**houghts - What does the character think?
+- **E**ffect on others - How do others react?
+- **A**ctions - What does the character do?
+- **L**ooks - How does the character look?
 
 ---
 
@@ -574,13 +574,13 @@ Good researchers take organized notes so they can find information easily later.
 **Strategies:**
 - **Use a graphic organizer** (like a T-chart, web, or outline) to organize facts.
 - **Write down the source** (title, author, website) for every piece of information.
-- **Write in your own words** — do NOT copy sentences from the source.
-- **Record only the most important facts** — don't write down everything.
+- **Write in your own words** - do NOT copy sentences from the source.
+- **Record only the most important facts** - don't write down everything.
 
 **Example note card:**
 | Topic: | Solar System |
 |--------|-------------|
-| Fact: | Jupiter is the largest planet — it is so big that over 1,300 Earths could fit inside it. |
+| Fact: | Jupiter is the largest planet - it is so big that over 1,300 Earths could fit inside it. |
 | Source: | *Space for Kids* by Jane Smith, page 24 |
 
 #### Paraphrasing
@@ -590,12 +590,12 @@ Good researchers take organized notes so they can find information easily later.
 
 **Good paraphrase:** *"Honeybees play a vital role in pollination. Many foods we enjoy, such as apples and blueberries, depend on these bees to grow."*
 
-**Bad paraphrase (too close to original):** *"The honeybee is an important pollinator in the world. Without them, many foods like apples, almonds, and blueberries wouldn't grow."* (This is still too similar — it's plagiarism.)
+**Bad paraphrase (too close to original):** *"The honeybee is an important pollinator in the world. Without them, many foods like apples, almonds, and blueberries wouldn't grow."* (This is still too similar - it's plagiarism.)
 
 **Steps to paraphrase:**
 1. Read the original text carefully.
 2. Cover the text and write what you remember in your own words.
-3. Check your version — is it different enough in wording while keeping the same meaning?
+3. Check your version - is it different enough in wording while keeping the same meaning?
 4. If it's too similar, try again with different words and sentence structures.
 
 #### Citing Sources
@@ -645,7 +645,7 @@ Acknowledge the other side's opinion, then explain why your position is still st
 - Restate your claim in different words.
 - Summarize your main reasons briefly.
 - End with a call to action or a powerful closing statement.
-- *Example:* *"Recess is not a luxury — it is a necessity. Students need physical activity, social interaction, and mental breaks to thrive. Our schools must make sure every child gets the daily recess they deserve."*
+- *Example:* *"Recess is not a luxury - it is a necessity. Students need physical activity, social interaction, and mental breaks to thrive. Our schools must make sure every child gets the daily recess they deserve."*
 
 #### Persuasive Techniques (Ethos, Pathos, Logos)
 - **Ethos (Credibility):** Use reliable sources and expert opinions to build trust.
@@ -654,17 +654,17 @@ Acknowledge the other side's opinion, then explain why your position is still st
 
 ### Narrative Writing with Developed Characters
 
-A narrative is a **story** — real or imagined. In 4th grade, you should write stories with **well-developed characters**, a clear plot, and descriptive details.
+A narrative is a **story** - real or imagined. In 4th grade, you should write stories with **well-developed characters**, a clear plot, and descriptive details.
 
 #### Developing Characters
 - Give your characters **specific traits** (brave, curious, shy, humorous) and show these traits through their **actions, dialogue, and thoughts**.
-- Give your characters **motivations** — reasons for what they do.
-- Give your characters **flaws or challenges** — no one is perfect, and flaws make characters interesting.
+- Give your characters **motivations** - reasons for what they do.
+- Give your characters **flaws or challenges** - no one is perfect, and flaws make characters interesting.
 - Show how characters **change or grow** over the course of the story.
 
 #### Story Structure
 - **Beginning (Exposition):** Introduce the characters, setting, and the normal world before the conflict.
-- **Middle (Rising Action + Climax):** The main character faces a problem or conflict. The tension builds until the **climax** — the most exciting or turning point.
+- **Middle (Rising Action + Climax):** The main character faces a problem or conflict. The tension builds until the **climax** - the most exciting or turning point.
 - **End (Falling Action + Resolution):** The problem is solved (or not), and the character has changed in some way.
 
 #### Using Dialogue
@@ -674,7 +674,7 @@ A narrative is a **story** — real or imagined. In 4th grade, you should write 
 
 ### Revising and Editing
 
-**Revising** and **editing** are different — and both are essential steps in the writing process.
+**Revising** and **editing** are different - and both are essential steps in the writing process.
 
 #### Revising (Making It Better)
 Revising means improving the **ideas, organization, and content** of your writing.
@@ -707,8 +707,8 @@ Editing means fixing the **grammar, spelling, punctuation, and capitalization** 
 - ☐ Possessives use apostrophes correctly (dog's vs. dogs').
 
 **The Writing Process (Review):**
-1. **Prewriting** — brainstorm, plan, organize
-2. **Drafting** — write your first version
-3. **Revising** — improve ideas and content
-4. **Editing** — fix grammar and mechanics
-5. **Publishing** — share your final piece
+1. **Prewriting** - brainstorm, plan, organize
+2. **Drafting** - write your first version
+3. **Revising** - improve ideas and content
+4. **Editing** - fix grammar and mechanics
+5. **Publishing** - share your final piece

@@ -1,16 +1,16 @@
-# Sunny Meadow — Tap-Play Activity Scripts (Ages 1–3)
+# Sunny Meadow - Tap-Play Activity Scripts (Ages 1-3)
 
-> World: Sunny Meadow 🌻 — pure touch-joy. No reading, no failure, only
+> World: Sunny Meadow 🌻 - pure touch-joy. No reading, no failure, only
 > delighted giggles. The buddy narrates what "pops" on screen and invites
 > the next tap. Every reply: max 8 words per sentence, huge celebration.
 
 ## Animal Sounds
-- Duck: "QUACK!" — the pond ripples happily.
-- Cow: "MOO!" — big and slow and funny.
-- Dog: "WOOF WOOF!" — tail wag animation.
-- Cat: "MEOW" — soft and tiny.
-- Lion: "ROAR!" — the cub's own family sound (Leo's proud moment).
-- Elephant: "PAWOO!" — Chintu's trumpet, water spray.
+- Duck: "QUACK!" - the pond ripples happily.
+- Cow: "MOO!" - big and slow and funny.
+- Dog: "WOOF WOOF!" - tail wag animation.
+- Cat: "MEOW" - soft and tiny.
+- Lion: "ROAR!" - the cub's own family sound (Leo's proud moment).
+- Elephant: "PAWOO!" - Chintu's trumpet, water spray.
 Script: name the animal, make the sound with feeling, invite "again!".
 Celebrate every repetition: "YAY! Again!"
 
@@ -30,11 +30,11 @@ Never quiz. Just delight: "RED! Like an apple! Pop another!"
 - Triangle: a roof, a hat.
 Script: shape peeks out → name it → find it in real life ("A ball is a
 CIRCLE! Can you find one?"). Wrong guesses get giggles, not corrections:
-"HEHE almost! Look — rooooound like THIS!"
+"HEHE almost! Look - rooooound like THIS!"
 
 ## Peek-a-Boo
 - Bear behind the bush, rabbit behind the rock, buddy behind a flower.
-Script: "Where is the bear? 1… 2… PEEK-A-BOO!" Endless repetition is the
+Script: "Where is the bear? 1... 2... PEEK-A-BOO!" Endless repetition is the
 feature, not a bug. Each reveal = party.
 
 ## Count the Little Ducks

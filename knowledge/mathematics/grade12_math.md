@@ -1,4 +1,4 @@
-# CBSE Class 12 Mathematics — Complete NCERT Study Guide
+# CBSE Class 12 Mathematics - Complete NCERT Study Guide
 
 > **Board:** CBSE | **Curriculum:** NCERT | **Subject:** Mathematics | **Grade:** 12
 > This document covers all 13 chapters of the NCERT Class 12 Mathematics textbook (Part I & Part II) with definitions, formulas, worked examples, common mistakes, and teaching tips.
@@ -41,14 +41,14 @@ Hence R is an equivalence relation.
 | **Onto (Surjective)** | Range of f = Co-domain (every element in codomain has a pre-image) |
 | **Bijective** | Both one-one and onto |
 
-**Test for Injective:** If f(x₁) = f(x₂) implies x₁ = x₂, the function is injective.
+**Test for Injective:** If f(x1) = f(x2) implies x1 = x2, the function is injective.
 
 **Test for Surjectivity:** Set y = f(x), solve for x. If x ∈ domain for all y ∈ codomain, f is surjective.
 
 #### Worked Example 1.2
 *Prove f: R → R defined by f(x) = 2x + 3 is bijective.*
 
-- **One-one:** f(x₁) = f(x₂) ⇒ 2x₁ + 3 = 2x₂ + 3 ⇒ x₁ = x₂. ✓
+- **One-one:** f(x1) = f(x2) ⇒ 2x1 + 3 = 2x2 + 3 ⇒ x1 = x2. ✓
 - **Onto:** Let y ∈ R. Then y = 2x + 3 ⇒ x = (y − 3)/2 ∈ R. ✓
 
 Hence f is bijective.
@@ -65,13 +65,13 @@ $$ (g \circ f)(x) = g(f(x)) $$
 
 ### 1.4 Invertible Functions
 
-**Definition:** A function f: X → Y is invertible if there exists g: Y → X such that g∘f = Iₓ and f∘g = Iᵧ. The function g is called the inverse of f, denoted f⁻¹.
+**Definition:** A function f: X → Y is invertible if there exists g: Y → X such that g∘f = Iₓ and f∘g = Iᵧ. The function g is called the inverse of f, denoted f⁻^1.
 
 **Theorem:** A function f is invertible if and only if f is bijective.
 
 $$ f^{-1}(y) = x \iff f(x) = y $$
 
-**Common Mistake:** Do not confuse f⁻¹(x) with [f(x)]⁻¹ = 1/f(x). These are completely different.
+**Common Mistake:** Do not confuse f⁻^1(x) with [f(x)]⁻^1 = 1/f(x). These are completely different.
 
 ### 1.5 Binary Operations
 
@@ -83,11 +83,11 @@ $$ f^{-1}(y) = x \iff f(x) = y $$
 | **Commutative** | a ∗ b = b ∗ a |
 | **Associative** | (a ∗ b) ∗ c = a ∗ (b ∗ c) |
 | **Identity** | a ∗ e = e ∗ a = a |
-| **Inverse** | a ∗ a⁻¹ = a⁻¹ ∗ a = e |
+| **Inverse** | a ∗ a⁻^1 = a⁻^1 ∗ a = e |
 
 > **Teaching Tip:** Use concrete examples like ∗ defined as "addition mod n" on Zₙ to illustrate all four properties. Show that subtraction on N is not a binary operation (1 − 2 = −1 ∉ N).
 
-> **Common Mistake:** Forgetting to check closure — a binary operation must always produce a result within the set.
+> **Common Mistake:** Forgetting to check closure - a binary operation must always produce a result within the set.
 
 ---
 
@@ -97,16 +97,16 @@ $$ f^{-1}(y) = x \iff f(x) = y $$
 
 Inverse trigonometric functions give the angle when the ratio of sides is known.
 
-### 2.2 Principal Value Branches (DOMAIN AND RANGE — Must Memorize)
+### 2.2 Principal Value Branches (DOMAIN AND RANGE - Must Memorize)
 
 | Function | Domain | Range (Principal Branch) | Notation |
 |----------|--------|-------------------------|----------|
-| sin⁻¹ x | [−1, 1] | [−π/2, π/2] | arcsin x |
-| cos⁻¹ x | [−1, 1] | [0, π] | arccos x |
-| tan⁻¹ x | R | (−π/2, π/2) | arctan x |
-| cot⁻¹ x | R | (0, π) | arccot x |
-| sec⁻¹ x | (−∞, −1] ∪ [1, ∞) | [0, π] − {π/2} | arcsec x |
-| cosec⁻¹ x | (−∞, −1] ∪ [1, ∞) | [−π/2, π/2] − {0} | arccsc x |
+| sin⁻^1 x | [−1, 1] | [−π/2, π/2] | arcsin x |
+| cos⁻^1 x | [−1, 1] | [0, π] | arccos x |
+| tan⁻^1 x | R | (−π/2, π/2) | arctan x |
+| cot⁻^1 x | R | (0, π) | arccot x |
+| sec⁻^1 x | (−∞, −1] ∪ [1, ∞) | [0, π] − {π/2} | arcsec x |
+| cosec⁻^1 x | (−∞, −1] ∪ [1, ∞) | [−π/2, π/2] − {0} | arccsc x |
 
 ### 2.3 Key Properties
 
@@ -114,7 +114,7 @@ Inverse trigonometric functions give the angle when the ratio of sides is known.
 $$ \sin(\sin^{-1}x) = x, \quad x \in [-1,1] $$
 $$ \sin^{-1}(\sin x) = x, \quad x \in [-\frac{\pi}{2}, \frac{\pi}{2}] $$
 
-> **Common Mistake:** sin⁻¹(sin 2π) ≠ 2π. Since 2π ∉ [−π/2, π/2], we must find the principal value: sin⁻¹(sin 2π) = sin⁻¹(0) = 0.
+> **Common Mistake:** sin⁻^1(sin 2π) ≠ 2π. Since 2π ∉ [−π/2, π/2], we must find the principal value: sin⁻^1(sin 2π) = sin⁻^1(0) = 0.
 
 **Property 2:**
 $$ \sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}, \quad x \in [-1,1] $$
@@ -129,29 +129,29 @@ $$ \cot^{-1}(-x) = \pi - \cot^{-1}x $$
 
 **Property 4 (Sum of two inverse sines):**
 $$ \sin^{-1}x + \sin^{-1}y = \sin^{-1}\left(x\sqrt{1-y^2} + y\sqrt{1-x^2}\right) $$
-Valid when x² + y² ≤ 1 or xy < 0 (both negative or opposite signs).
+Valid when x^2 + y^2 ≤ 1 or xy < 0 (both negative or opposite signs).
 
 **Property 5 (Sum of two inverse cosines):**
 $$ \cos^{-1}x + \cos^{-1}y = \cos^{-1}\left(xy - \sqrt{(1-x^2)(1-y^2)}\right) $$
-Valid when x² + y² ≤ 1 or x, y ≥ 0.
+Valid when x^2 + y^2 ≤ 1 or x, y ≥ 0.
 
 **Property 6 (Sum of two inverse tangents):**
 $$ \tan^{-1}x + \tan^{-1}y = \begin{cases} \tan^{-1}\frac{x+y}{1-xy} & \text{if } xy < 1 \\ \pi + \tan^{-1}\frac{x+y}{1-xy} & \text{if } x > 0, y > 0, xy > 1 \\ -\pi + \tan^{-1}\frac{x+y}{1-xy} & \text{if } x < 0, y < 0, xy > 1 \end{cases} $$
 
 #### Worked Example 2.1
-*Find the value of: tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3)*
+*Find the value of: tan⁻^1(1) + tan⁻^1(2) + tan⁻^1(3)*
 
-Let A = tan⁻¹(1) + tan⁻¹(2). Here x = 1, y = 2, xy = 2 > 1, x > 0, y > 0.
+Let A = tan⁻^1(1) + tan⁻^1(2). Here x = 1, y = 2, xy = 2 > 1, x > 0, y > 0.
 $$ A = \pi + \tan^{-1}\frac{1+2}{1-2} = \pi + \tan^{-1}(-3) = \pi - \tan^{-1}3 $$
 
-Now: tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3) = π − tan⁻¹(3) + tan⁻¹(3) = **π**
+Now: tan⁻^1(1) + tan⁻^1(2) + tan⁻^1(3) = π − tan⁻^1(3) + tan⁻^1(3) = **π**
 
 #### Worked Example 2.2
-*Solve: sin⁻¹(1 − x) = 2 sin⁻¹ x*
+*Solve: sin⁻^1(1 − x) = 2 sin⁻^1 x*
 
-Let sin⁻¹ x = θ, so x = sin θ and θ ∈ [−π/2, π/2].
+Let sin⁻^1 x = θ, so x = sin θ and θ ∈ [−π/2, π/2].
 
-Then: sin⁻¹(1 − sin θ) = 2θ
+Then: sin⁻^1(1 − sin θ) = 2θ
 ⇒ 1 − sin θ = sin(2θ) = 2 sin θ cos θ
 ⇒ 2 sin θ cos θ + sin θ − 1 = 0
 ⇒ sin θ(2 cos θ + 1) = 1
@@ -164,7 +164,7 @@ Since θ ∈ [−π/2, π/2], cos θ ≥ 0. The maximum of sin θ(1 + 2cos θ) i
 
 So sin θ = 1/2, hence **x = 1/2**.
 
-Checking: sin⁻¹(1 − 1/2) = sin⁻¹(1/2) = π/6 = 2 × π/6. ✓
+Checking: sin⁻^1(1 − 1/2) = sin⁻^1(1/2) = π/6 = 2 × π/6. ✓
 
 > **Teaching Tip:** Always verify the answer lies within the domain. Many exam mistakes come from getting the right algebra but the wrong answer because the result falls outside the domain.
 
@@ -252,15 +252,15 @@ Verify: P + Q = A ✓, Pᵀ = P ✓, Qᵀ = −Q ✓
 
 ### 3.6 Invertible Matrices
 
-**Definition:** If A is a square matrix and there exists B such that AB = BA = I, then B = A⁻¹ and A is invertible (non-singular).
+**Definition:** If A is a square matrix and there exists B such that AB = BA = I, then B = A⁻^1 and A is invertible (non-singular).
 
 **Existence condition:** A is invertible if and only if |A| ≠ 0.
 
 **Properties of Inverse:**
-- (A⁻¹)⁻¹ = A
-- (AB)⁻¹ = B⁻¹A⁻¹
-- (Aᵀ)⁻¹ = (A⁻¹)ᵀ
-- (kA)⁻¹ = (1/k)A⁻¹
+- (A⁻^1)⁻^1 = A
+- (AB)⁻^1 = B⁻^1A⁻^1
+- (Aᵀ)⁻^1 = (A⁻^1)ᵀ
+- (kA)⁻^1 = (1/k)A⁻^1
 
 ### 3.7 Elementary Operations (Transformations)
 
@@ -269,13 +269,13 @@ Verify: P + Q = A ✓, Pᵀ = P ✓, Qᵀ = −Q ✓
 2. Rᵢ → kRᵢ (multiply row by non-zero scalar k)
 3. Rᵢ → Rᵢ + kRⱼ (add multiple of another row)
 
-**Column operations:** Same three types on columns (C₁ ↔ C₂, etc.)
+**Column operations:** Same three types on columns (C1 ↔ C2, etc.)
 
 These are used to:
 - Find inverse of a matrix (using augmented matrix [A | I])
 - Solve systems of equations (Gauss-Jordan method)
 
-> **Teaching Tip:** When finding A⁻¹ using row operations on [A | I], show students the augmented matrix clearly and perform one operation at a time, annotating each step.
+> **Teaching Tip:** When finding A⁻^1 using row operations on [A | I], show students the augmented matrix clearly and perform one operation at a time, annotating each step.
 
 ---
 
@@ -322,7 +322,7 @@ $$ A \cdot (\text{adj}\, A) = |A| \cdot I = (\text{adj}\, A) \cdot A $$
 #### Worked Example 4.1
 *Find adj A for A = $\begin{pmatrix}1&2\\3&4\end{pmatrix}$*
 
-Cofactors: C₁₁ = 4, C₁₂ = −3, C₂₁ = −2, C₂₂ = 1
+Cofactors: C11 = 4, C12 = −3, C21 = −2, C22 = 1
 
 $$ \text{adj}\, A = \begin{pmatrix}C_{11}&C_{21}\\C_{12}&C_{22}\end{pmatrix} = \begin{pmatrix}4&-2\\-3&1\end{pmatrix} $$
 
@@ -338,7 +338,7 @@ For AX = B (where A is n × n):
 
 | Condition | Solution |
 |-----------|----------|
-| |A| ≠ 0 | Unique solution: X = A⁻¹B (consistent) |
+| |A| ≠ 0 | Unique solution: X = A⁻^1B (consistent) |
 | |A| = 0 and (adj A)B ≠ O | No solution (inconsistent) |
 | |A| = 0 and (adj A)B = O | Infinitely many solutions (consistent) or no solution |
 
@@ -353,7 +353,7 @@ Let D be the determinant of the coefficient matrix. Then:
 
 $$ x = \frac{D_1}{D}, \quad y = \frac{D_2}{D}, \quad z = \frac{D_3}{D} $$
 
-where D₁ is D with column 1 replaced by the constants, D₂ with column 2 replaced, D₃ with column 3 replaced.
+where D1 is D with column 1 replaced by the constants, D2 with column 2 replaced, D3 with column 3 replaced.
 
 #### Worked Example 4.2
 *Solve using Cramer's Rule: 2x + 3y = 5; x + 2y = 3*
@@ -395,7 +395,7 @@ Three conditions must be satisfied:
 Hence f(x) = |x| is continuous at x = 0.
 
 #### Worked Example 5.2
-*Discuss the continuity of f(x) = x³ − 3x² + 2x − 1.*
+*Discuss the continuity of f(x) = x^3 − 3x^2 + 2x − 1.*
 
 Since f(x) is a polynomial function, it is **continuous everywhere** on R.
 
@@ -418,7 +418,7 @@ Since LHD ≠ RHD, f(x) = |x| is **not differentiable** at x = 0.
 $$ \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x) $$
 
 #### Worked Example 5.3
-*Differentiate sin(x² + 1).*
+*Differentiate sin(x^2 + 1).*
 
 $$ \frac{d}{dx}\sin(x^2+1) = \cos(x^2+1) \cdot 2x = 2x\cos(x^2+1) $$
 
@@ -426,23 +426,23 @@ $$ \frac{d}{dx}\sin(x^2+1) = \cos(x^2+1) \cdot 2x = 2x\cos(x^2+1) $$
 
 | Function | Derivative |
 |----------|-----------|
-| xⁿ | nxⁿ⁻¹ |
+| xⁿ | nxⁿ⁻^1 |
 | eˣ | eˣ |
 | aˣ | aˣ ln a |
 | ln x | 1/x |
 | logₐ x | 1/(x ln a) |
 | sin x | cos x |
 | cos x | −sin x |
-| tan x | sec² x |
-| cot x | −cosec² x |
+| tan x | sec^2 x |
+| cot x | −cosec^2 x |
 | sec x | sec x tan x |
 | cosec x | −cosec x cot x |
-| sin⁻¹ x | 1/√(1−x²) |
-| cos⁻¹ x | −1/√(1−x²) |
-| tan⁻¹ x | 1/(1+x²) |
-| cot⁻¹ x | −1/(1+x²) |
-| sec⁻¹ x | 1/(|x|√(x²−1)) |
-| cosec⁻¹ x | −1/(|x|√(x²−1)) |
+| sin⁻^1 x | 1/√(1−x^2) |
+| cos⁻^1 x | −1/√(1−x^2) |
+| tan⁻^1 x | 1/(1+x^2) |
+| cot⁻^1 x | −1/(1+x^2) |
+| sec⁻^1 x | 1/(|x|√(x^2−1)) |
+| cosec⁻^1 x | −1/(|x|√(x^2−1)) |
 
 ### 5.5 Product Rule and Quotient Rule
 
@@ -470,7 +470,7 @@ $$ \frac{dy}{dx} = x^x(1 + \ln x) $$
 When y is not explicitly given in terms of x, differentiate both sides with respect to x, treating y as a function of x.
 
 #### Worked Example 5.5
-*Find dy/dx if x² + y² = 25.*
+*Find dy/dx if x^2 + y^2 = 25.*
 
 Differentiating: 2x + 2y · dy/dx = 0
 $$ \frac{dy}{dx} = -\frac{x}{y} $$
@@ -485,7 +485,7 @@ $$ \frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{g'(t)}{f'(t)} $$
 **Statement:** If f: [a, b] → R is (i) continuous on [a, b], (ii) differentiable on (a, b), and (iii) f(a) = f(b), then there exists at least one c ∈ (a, b) such that **f'(c) = 0**.
 
 #### Worked Example 5.6
-*Verify Rolle's Theorem for f(x) = x² − 4x + 3 on [1, 3].*
+*Verify Rolle's Theorem for f(x) = x^2 − 4x + 3 on [1, 3].*
 
 - f is a polynomial → continuous on [1, 3] ✓
 - Polynomial → differentiable on (1, 3) ✓
@@ -518,9 +518,9 @@ If y = f(x), then dy/dx represents the instantaneous rate of change of y with re
 - **Constant:** f'(x) = 0 in (a, b)
 
 #### Worked Example 6.1
-*Find the intervals where f(x) = x³ − 3x² − 9x + 5 is increasing/decreasing.*
+*Find the intervals where f(x) = x^3 − 3x^2 − 9x + 5 is increasing/decreasing.*
 
-f'(x) = 3x² − 6x − 9 = 3(x² − 2x − 3) = 3(x + 1)(x − 3)
+f'(x) = 3x^2 − 6x − 9 = 3(x^2 − 2x − 3) = 3(x + 1)(x − 3)
 
 Critical points: x = −1, x = 3
 
@@ -532,7 +532,7 @@ Critical points: x = −1, x = 3
 
 ### 6.3 Tangents and Normals
 
-**Slope of tangent** at (x₁, y₁): m = f'(x₁) = (dy/dx)₍ₓ₁,y₁₎
+**Slope of tangent** at (x1, y1): m = f'(x1) = (dy/dx)₍ₓ1,y1₎
 
 **Equation of Tangent:**
 $$ y - y_1 = m(x - x_1) $$
@@ -541,7 +541,7 @@ $$ y - y_1 = m(x - x_1) $$
 $$ y - y_1 = -\frac{1}{m}(x - x_1) $$
 
 #### Worked Example 6.2
-*Find the equation of the tangent to y = x² − 2x + 3 at the point (1, 2).*
+*Find the equation of the tangent to y = x^2 − 2x + 3 at the point (1, 2).*
 
 dy/dx = 2x − 2
 At x = 1: m = 2(1) − 2 = 0
@@ -563,9 +563,9 @@ Equation: y − 2 = 0(x − 1) → **y = 2** (horizontal tangent)
 **Absolute (Global) Extrema:** Compare all critical points AND endpoints.
 
 #### Worked Example 6.3
-*Find the local maxima and minima of f(x) = x³ − 6x² + 9x + 15.*
+*Find the local maxima and minima of f(x) = x^3 − 6x^2 + 9x + 15.*
 
-f'(x) = 3x² − 12x + 9 = 3(x² − 4x + 3) = 3(x − 1)(x − 3)
+f'(x) = 3x^2 − 12x + 9 = 3(x^2 − 4x + 3) = 3(x − 1)(x − 3)
 Critical points: x = 1, x = 3
 
 f''(x) = 6x − 12
@@ -602,21 +602,21 @@ where F'(x) = f(x) and C is the constant of integration.
 
 | Integral | Result |
 |---------|--------|
-| ∫ xⁿ dx | xⁿ⁺¹/(n+1) + C (n ≠ −1) |
+| ∫ xⁿ dx | xⁿ⁺^1/(n+1) + C (n ≠ −1) |
 | ∫ 1/x dx | ln|x| + C |
 | ∫ eˣ dx | eˣ + C |
 | ∫ aˣ dx | aˣ/ln a + C |
 | ∫ sin x dx | −cos x + C |
 | ∫ cos x dx | sin x + C |
-| ∫ sec² x dx | tan x + C |
-| ∫ cosec² x dx | −cot x + C |
+| ∫ sec^2 x dx | tan x + C |
+| ∫ cosec^2 x dx | −cot x + C |
 | ∫ sec x tan x dx | sec x + C |
 | ∫ cosec x cot x dx | −cosec x + C |
-| ∫ dx/√(a²−x²) | sin⁻¹(x/a) + C |
-| ∫ dx/(a²+x²) | (1/a)tan⁻¹(x/a) + C |
-| ∫ dx/(x²−a²) | (1/2a)ln|(x−a)/(x+a)| + C |
-| ∫ dx/√(x²+a²) | ln|x + √(x²+a²)| + C |
-| ∫ dx/√(x²−a²) | ln|x + √(x²−a²)| + C |
+| ∫ dx/√(a^2−x^2) | sin⁻^1(x/a) + C |
+| ∫ dx/(a^2+x^2) | (1/a)tan⁻^1(x/a) + C |
+| ∫ dx/(x^2−a^2) | (1/2a)ln|(x−a)/(x+a)| + C |
+| ∫ dx/√(x^2+a^2) | ln|x + √(x^2+a^2)| + C |
+| ∫ dx/√(x^2−a^2) | ln|x + √(x^2−a^2)| + C |
 
 ### 7.3 Methods of Integration
 
@@ -627,9 +627,9 @@ $$ \int f(g(x)) \cdot g'(x)\,dx = F(g(x)) + C $$
 Choose u = g(x), then du = g'(x)dx.
 
 #### Worked Example 7.1
-*Evaluate: ∫ 2x/(1 + x²) dx*
+*Evaluate: ∫ 2x/(1 + x^2) dx*
 
-Let u = 1 + x², du = 2x dx
+Let u = 1 + x^2, du = 2x dx
 $$ \int \frac{du}{u} = \ln|u| + C = \ln(1+x^2) + C $$
 
 #### Method 2: Partial Fractions
@@ -639,9 +639,9 @@ For rational functions P(x)/Q(x) where degree of P < degree of Q:
 | Form of Q(x) | Partial Fraction Decomposition |
 |---|---|
 | (x−a)(x−b) | A/(x−a) + B/(x−b) |
-| (x−a)²(x−b) | A/(x−a) + B/(x−a)² + C/(x−b) |
-| (x−a)(x²+bx+c) | A/(x−a) + (Bx+C)/(x²+bx+c) |
-| (ax²+bx+c)(dx+e) | (Ax+B)/(ax²+bx+c) + C/(dx+e) |
+| (x−a)^2(x−b) | A/(x−a) + B/(x−a)^2 + C/(x−b) |
+| (x−a)(x^2+bx+c) | A/(x−a) + (Bx+C)/(x^2+bx+c) |
+| (ax^2+bx+c)(dx+e) | (Ax+B)/(ax^2+bx+c) + C/(dx+e) |
 
 #### Worked Example 7.2
 *Evaluate: ∫ dx/((x+1)(x+2))*
@@ -700,7 +700,7 @@ No constant of integration needed.
 8. $$ \int_{-a}^a f(x)\,dx = 0 $$ if f is odd (f(−x) = −f(x))
 
 #### Worked Example 7.5
-*Evaluate: ∫₀^π x sin x dx*
+*Evaluate: ∫0^π x sin x dx*
 
 Using by parts: u = x, dv = sin x dx
 du = dx, v = −cos x
@@ -715,7 +715,7 @@ $$ \int_a^b f(x)\,dx = \lim_{n \to \infty} \frac{b-a}{n}\sum_{i=0}^{n-1} f\left(
 Also written as:
 $$ \int_a^b f(x)\,dx = \lim_{h \to 0} h\sum_{i=0}^{n-1} f(a + ih) \quad \text{where } h = \frac{b-a}{n} $$
 
-> **Teaching Tip:** Properties 4–8 are extremely useful for reducing computation in exams. Encourage students to always check for symmetry first before attempting direct integration.
+> **Teaching Tip:** Properties 4-8 are extremely useful for reducing computation in exams. Encourage students to always check for symmetry first before attempting direct integration.
 
 > **Common Mistake:** Forgetting the negative sign when swapping limits (Property 2), or incorrectly applying the even/odd property when the limits are not symmetric about zero.
 
@@ -739,20 +739,20 @@ $$ A = \int_a^b |f(x) - g(x)|\,dx $$
 > **Key Rule:** Always integrate with respect to the axis perpendicular to the strip width. Vertical strips → integrate w.r.t. x. Horizontal strips → integrate w.r.t. y.
 
 #### Worked Example 8.1
-*Find the area enclosed by y = x² and y = x.*
+*Find the area enclosed by y = x^2 and y = x.*
 
-Points of intersection: x² = x → x(x − 1) = 0 → x = 0, x = 1
+Points of intersection: x^2 = x → x(x − 1) = 0 → x = 0, x = 1
 
-For x ∈ [0, 1]: y = x is above y = x².
+For x ∈ [0, 1]: y = x is above y = x^2.
 
 $$ A = \int_0^1 (x - x^2)\,dx = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1 = \frac{1}{2} - \frac{1}{3} = \frac{1}{6} \text{ sq. units} $$
 
 #### Worked Example 8.2
-*Find the area bounded by the ellipse x²/a² + y²/b² = 1.*
+*Find the area bounded by the ellipse x^2/a^2 + y^2/b^2 = 1.*
 
 By symmetry, Area = 4 × Area in first quadrant.
 
-In first quadrant: y = (b/a)√(a² − x²), x from 0 to a.
+In first quadrant: y = (b/a)√(a^2 − x^2), x from 0 to a.
 
 $$ A = 4\int_0^a \frac{b}{a}\sqrt{a^2 - x^2}\,dx $$
 
@@ -779,8 +779,8 @@ $$ = 4ab \cdot \frac{1}{2}\cdot\frac{\pi}{2} = \pi ab \text{ sq. units} $$
 | Equation | Order | Degree |
 |---------|-------|--------|
 | dy/dx + y = eˣ | 1 | 1 |
-| d²y/dx² + (dy/dx)³ + 2y = 0 | 2 | 3 |
-| (d²y/dx²)² + y = sin x | 2 | 2 |
+| d^2y/dx^2 + (dy/dx)^3 + 2y = 0 | 2 | 3 |
+| (d^2y/dx^2)^2 + y = sin x | 2 | 2 |
 | dy/dx + y = e^(dy/dx) | 1 | Not a polynomial → degree not defined |
 
 ### 9.2 Formation of Differential Equations
@@ -790,7 +790,7 @@ To form a DE from a given family of curves with n arbitrary constants:
 2. Eliminate the n constants using the original equation and its derivatives
 
 #### Worked Example 9.1
-*Form the DE of the family of circles with center at origin: x² + y² = r²*
+*Form the DE of the family of circles with center at origin: x^2 + y^2 = r^2*
 
 Differentiating: 2x + 2y(dy/dx) = 0
 $$ x + y\frac{dy}{dx} = 0 \quad \text{or} \quad \frac{dy}{dx} = -\frac{x}{y} $$
@@ -805,11 +805,11 @@ $$ f(x)\,dx = g(y)\,dy $$
 Then: $$ \int f(x)\,dx = \int g(y)\,dy $$
 
 #### Worked Example 9.2
-*Solve: dy/dx = x²y/(1 + x³)*
+*Solve: dy/dx = x^2y/(1 + x^3)*
 
-Separating: dy/y = x²dx/(1 + x³)
+Separating: dy/y = x^2dx/(1 + x^3)
 
-Integrating: ln|y| = (1/3)ln|1 + x³| + C
+Integrating: ln|y| = (1/3)ln|1 + x^3| + C
 
 $$ y = C(1 + x^3)^{1/3} $$
 
@@ -825,16 +825,16 @@ After substitution, the DE becomes separable in v and x.
 **Identifying homogeneous DE:** Replace every x with tx and every y with ty. If you can factor out all t's, the DE is homogeneous.
 
 #### Worked Example 9.3
-*Solve: (x² + xy)dy = (x² + y²)dx*
+*Solve: (x^2 + xy)dy = (x^2 + y^2)dx*
 
-Rearranging: dy/dx = (x² + y²)/(x² + xy)
+Rearranging: dy/dx = (x^2 + y^2)/(x^2 + xy)
 
-Check homogeneity: f(tx, ty) = (t²x² + t²y²)/(t²x² + tx·ty) = (x² + y²)/(x² + xy) = f(x,y) ✓
+Check homogeneity: f(tx, ty) = (t^2x^2 + t^2y^2)/(t^2x^2 + tx·ty) = (x^2 + y^2)/(x^2 + xy) = f(x,y) ✓
 
 Substitute y = vx:
 dy/dx = v + x(dv/dx)
 
-RHS = (x² + v²x²)/(x² + vx²) = (1 + v²)/(1 + v)
+RHS = (x^2 + v^2x^2)/(x^2 + vx^2) = (1 + v^2)/(1 + v)
 
 $$ v + x\frac{dv}{dx} = \frac{1+v^2}{1+v} $$
 $$ x\frac{dv}{dx} = \frac{1+v^2}{1+v} - v = \frac{1+v^2 - v(1+v)}{1+v} = \frac{1-v}{1+v} $$
@@ -860,9 +860,9 @@ $$ IF = e^{\int P(x)\,dx} $$
 $$ y \cdot IF = \int (Q \cdot IF)\,dx + C $$
 
 #### Worked Example 9.4
-*Solve: dy/dx + y/x = x²*
+*Solve: dy/dx + y/x = x^2*
 
-P(x) = 1/x, Q(x) = x²
+P(x) = 1/x, Q(x) = x^2
 
 $$ IF = e^{\int \frac{1}{x}\,dx} = e^{\ln x} = x $$
 
@@ -870,11 +870,11 @@ $$ y \cdot x = \int x^2 \cdot x\,dx + C = \int x^3\,dx + C = \frac{x^4}{4} + C $
 
 $$ y = \frac{x^3}{4} + \frac{C}{x} $$
 
-**Linear DE in x:** dx/dy + P(y)x = Q(y) — same method, swapping roles of x and y.
+**Linear DE in x:** dx/dy + P(y)x = Q(y) - same method, swapping roles of x and y.
 
 > **Common Mistake:** Confusing the integrating factor formula. Remember: IF = e^(∫P dx), NOT e^(∫Q dx). Also, multiply the entire equation by IF, not just the right side.
 
-> **Teaching Tip:** For identifying homogeneous DEs, teach the quick test: each term must have the same total degree in x and y. In dy/dx = (x² + y²)/(x² + xy), numerator has degree 2, denominator has degree 2 — homogeneous.
+> **Teaching Tip:** For identifying homogeneous DEs, teach the quick test: each term must have the same total degree in x and y. In dy/dx = (x^2 + y^2)/(x^2 + xy), numerator has degree 2, denominator has degree 2 - homogeneous.
 
 ---
 
@@ -967,8 +967,8 @@ $$ \theta = \cos^{-1}\frac{1}{\sqrt{3}} \approx 54.7° $$
 
 If a line makes angles α, β, γ with the positive x, y, z-axes respectively:
 - **Direction cosines:** l = cos α, m = cos β, n = cos γ
-- **Relation:** l² + m² + n² = 1
-- **Direction ratios:** a, b, c where l = a/√(a²+b²+c²), etc.
+- **Relation:** l^2 + m^2 + n^2 = 1
+- **Direction ratios:** a, b, c where l = a/√(a^2+b^2+c^2), etc.
 
 ### 11.2 Equation of a Line in 3D
 
@@ -976,10 +976,10 @@ If a line makes angles α, β, γ with the positive x, y, z-axes respectively:
 $$ \vec{r} = \vec{a} + \lambda\vec{b} $$
 where $\vec{a}$ = position vector of a point on the line, $\vec{b}$ = direction vector, λ = parameter.
 
-**Cartesian form** (through (x₁, y₁, z₁) with direction ratios a, b, c):
+**Cartesian form** (through (x1, y1, z1) with direction ratios a, b, c):
 $$ \frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c} $$
 
-**Through two points** (x₁, y₁, z₁) and (x₂, y₂, z₂):
+**Through two points** (x1, y1, z1) and (x2, y2, z2):
 $$ \frac{x - x_1}{x_2 - x_1} = \frac{y - y_1}{y_2 - y_1} = \frac{z - z_1}{z_2 - z_1} $$
 
 ### 11.3 Angle Between Two Lines
@@ -987,11 +987,11 @@ $$ \frac{x - x_1}{x_2 - x_1} = \frac{y - y_1}{y_2 - y_1} = \frac{z - z_1}{z_2 - 
 **Vector form:**
 $$ \cos\theta = \frac{|\vec{b_1} \cdot \vec{b_2}|}{|\vec{b_1}||\vec{b_2}|} $$
 
-**Cartesian form:** If direction ratios are (a₁, b₁, c₁) and (a₂, b₂, c₂):
+**Cartesian form:** If direction ratios are (a1, b1, c1) and (a2, b2, c2):
 $$ \cos\theta = \frac{|a_1a_2 + b_1b_2 + c_1c_2|}{\sqrt{a_1^2+b_1^2+c_1^2}\sqrt{a_2^2+b_2^2+c_2^2}} $$
 
-**Perpendicular lines:** a₁a₂ + b₁b₂ + c₁c₂ = 0
-**Parallel lines:** a₁/a₂ = b₁/b₂ = c₁/c₂
+**Perpendicular lines:** a1a2 + b1b2 + c1c2 = 0
+**Parallel lines:** a1/a2 = b1/b2 = c1/c2
 
 ### 11.4 Shortest Distance Between Two Lines
 
@@ -1010,7 +1010,7 @@ $$ d = \frac{|(\vec{a_2} - \vec{a_1}) \times \vec{b}|}{|\vec{b}|} $$
 **Vector form:** $\vec{r} \cdot \vec{n} = d$
 where $\vec{n}$ is the normal vector.
 
-**Through a point** (x₁, y₁, z₁) with normal (A, B, C):
+**Through a point** (x1, y1, z1) with normal (A, B, C):
 $$ A(x - x_1) + B(y - y_1) + C(z - z_1) = 0 $$
 
 **Intercept form:** $\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1$
@@ -1024,7 +1024,7 @@ $$ \cos\theta = \frac{|\vec{n_1} \cdot \vec{n_2}|}{|\vec{n_1}||\vec{n_2}|} $$
 
 ### 11.7 Distance of a Point from a Plane
 
-Point P(x₁, y₁, z₁) from plane Ax + By + Cz + D = 0:
+Point P(x1, y1, z1) from plane Ax + By + Cz + D = 0:
 $$ d = \frac{|Ax_1 + By_1 + Cz_1 + D|}{\sqrt{A^2 + B^2 + C^2}} $$
 
 ### 11.8 Line of Intersection of Two Planes
@@ -1052,7 +1052,7 @@ $(\vec{a_2}-\vec{a_1}) \cdot (\vec{b_1}\times\vec{b_2}) = (1)(3) + (0)(-1) + (-1
 
 $$ d = \frac{10}{\sqrt{59}} \text{ units} $$
 
-> **Common Mistake:** In the line equation (x−x₁)/a = (y−y₁)/b = (z−z₁)/c, if any denominator is zero (e.g., a = 0), it means x = x₁ is constant, not that the equation is undefined.
+> **Common Mistake:** In the line equation (x−x1)/a = (y−y1)/b = (z−z1)/c, if any denominator is zero (e.g., a = 0), it means x = x1 is constant, not that the equation is undefined.
 
 > **Teaching Tip:** Relate 3D geometry to real-world applications: aircraft navigation, robotics, computer graphics. Visualize with 3D coordinate models or software.
 
@@ -1074,9 +1074,9 @@ $$ d = \frac{10}{\sqrt{59}} \text{ units} $$
 ### 12.2 Types of Constraints and Feasible Region
 
 **Constraints can be:**
-- **≤ type** (less than or equal to) — region below the line
-- **≥ type** (greater than or equal to) — region above the line
-- **= type** (equality) — points on the line
+- **≤ type** (less than or equal to) - region below the line
+- **≥ type** (greater than or equal to) - region above the line
+- **= type** (equality) - points on the line
 
 **Corner Point Theorem:** The optimal value of the objective function occurs at one (or more) of the **corner points** (vertices) of the feasible region.
 
@@ -1095,7 +1095,7 @@ $$ d = \frac{10}{\sqrt{59}} \text{ units} $$
 | Feasible Region | Optimization |
 |----------------|-------------|
 | **Bounded** (closed polygon) | Both maximum and minimum exist |
-| **Unbounded** (open region) | May or may not have maximum/minimum — must check direction of Z |
+| **Unbounded** (open region) | May or may not have maximum/minimum - must check direction of Z |
 
 **For unbounded regions:**
 - If you find a minimum at a corner point and the feasible region is in the direction of increasing Z → minimum exists
@@ -1132,7 +1132,7 @@ $$ d = \frac{10}{\sqrt{59}} \text{ units} $$
 
 **Minimum Z = 7** at (3/2, 1/2)
 
-Since the region is unbounded in the direction of increasing Z, the minimum exists. To verify: check if Z < 7 is possible. For Z = 6: 3x + 5y = 6 with constraints — the line 3x + 5y = 6 lies below the feasible region, confirming Z = 7 is indeed the minimum.
+Since the region is unbounded in the direction of increasing Z, the minimum exists. To verify: check if Z < 7 is possible. For Z = 6: 3x + 5y = 6 with constraints - the line 3x + 5y = 6 lies below the feasible region, confirming Z = 7 is indeed the minimum.
 
 > **Common Mistake:** Forgetting non-negativity constraints. In most real-world LPPs, variables must be ≥ 0. Also, not checking whether the feasible region is bounded or unbounded before concluding existence of max/min.
 
@@ -1145,9 +1145,9 @@ Since the region is unbounded in the direction of increasing Z, the minimum exis
 | Topic | Formula |
 |-------|---------|
 | **Equivalence relation** | Reflexive + Symmetric + Transitive |
-| **sin⁻¹x + cos⁻¹x** | π/2 |
-| **tan⁻¹x + tan⁻¹y** | tan⁻¹((x+y)/(1−xy)) when xy < 1 |
-| **Matrix inverse** | A⁻¹ = (1/|A|) adj A |
+| **sin⁻^1x + cos⁻^1x** | π/2 |
+| **tan⁻^1x + tan⁻^1y** | tan⁻^1((x+y)/(1−xy)) when xy < 1 |
+| **Matrix inverse** | A⁻^1 = (1/|A|) adj A |
 | **Determinant 2×2** | ad − bc |
 | **Chain rule** | (f∘g)'(x) = f'(g(x))·g'(x) |
 | **Product rule** | (uv)' = u'v + uv' |
@@ -1157,7 +1157,7 @@ Since the region is unbounded in the direction of increasing Z, the minimum exis
 | **Integrating factor** | e^(∫P dx) |
 | **Dot product** | a·b = |a||b|cosθ |
 | **Cross product** | |a×b| = |a||b|sinθ |
-| **Point to plane distance** | |Ax₁+By₁+Cz₁+D|/√(A²+B²+C²) |
+| **Point to plane distance** | |Ax1+By1+Cz1+D|/√(A^2+B^2+C^2) |
 
 ---
 

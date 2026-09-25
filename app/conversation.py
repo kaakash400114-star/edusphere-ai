@@ -4,19 +4,24 @@ ENGLISH-ONLY APP (final spec): one language, clean en-US speech.
 """
 from __future__ import annotations
 
-# Web Speech tuning per buddy: rate (speed), pitch (deep..squeaky),
-# and how the frontend should "act" the voice.
+# Web Speech tuning per buddy: each buddy gets a DIFFERENT actual voice
+# (voice_hints are matched against installed voice names, first hint wins)
+# plus a human-range pitch tweak, so they sound like different people
+# rather than one robot with pitch shifts.
+# Voice pools: David (male, calm), Mark (male, deep), Zira (female, warm),
+# Google US English (female, bright), Google UK Male, Google UK Female.
 VOICES: dict[str, dict] = {
-    "leo":    {"rate": 0.95, "pitch": 0.9,  "act": "warm and brave"},
-    "miko":   {"rate": 0.8,  "pitch": 0.85, "act": "soft and sleepy"},
-    "pip":    {"rate": 1.25, "pitch": 1.4,  "act": "bouncy and giggly"},
-    "chintu": {"rate": 0.85, "pitch": 0.6,  "act": "deep and wise"},
-    "zara":   {"rate": 1.1,  "pitch": 1.1,  "act": "quick and teasing"},
-    "toko":   {"rate": 1.05, "pitch": 1.3,  "act": "sing-song and chatty"},
-    "kiko":   {"rate": 1.0,  "pitch": 1.15, "act": "curious and flowing"},
-    "bip":    {"rate": 1.0,  "pitch": 0.95, "act": "flat and robot-y"},
-    "dodo":   {"rate": 1.15, "pitch": 1.2,  "act": "loud and goofy"},
-    "nova":   {"rate": 0.9,  "pitch": 1.0,  "act": "calm and precise"},
+    # buddy      voice hints (in order)             rate  pitch  character
+    "leo":    {"voice_hints": ["David", "Google UK Male"],   "rate": 0.95, "pitch": 1.0,  "act": "warm and brave male voice"},
+    "miko":   {"voice_hints": ["UK English Male", "David"],   "rate": 0.8,  "pitch": 0.9,  "act": "soft, slow, sleepy male voice"},
+    "pip":    {"voice_hints": ["Zira", "Google US English"], "rate": 1.2,  "pitch": 1.25, "act": "fast giggly young female voice"},
+    "chintu": {"voice_hints": ["Mark", "David"],             "rate": 0.85, "pitch": 0.75, "act": "deep wise older male voice"},
+    "zara":   {"voice_hints": ["Google US English", "Zira"], "rate": 1.1,  "pitch": 1.1,  "act": "quick teasing female voice"},
+    "toko":   {"voice_hints": ["UK English Female", "Zira"],  "rate": 1.05, "pitch": 1.15, "act": "sing-song chatty British female voice"},
+    "kiko":   {"voice_hints": ["Google US English", "Zira"], "rate": 1.0,  "pitch": 1.05, "act": "curious flowing female voice"},
+    "bip":    {"voice_hints": ["David", "Mark"],             "rate": 1.0,  "pitch": 0.9,  "act": "flat precise robot-ish male voice"},
+    "dodo":   {"voice_hints": ["Mark", "Google UK Male"],    "rate": 1.15, "pitch": 1.15, "act": "loud goofy dramatic male voice"},
+    "nova":   {"voice_hints": ["Zira", "Google UK Female"],  "rate": 0.9,  "pitch": 1.0,  "act": "calm precise senior female voice"},
 }
 
 LANGUAGES: dict[str, dict] = {

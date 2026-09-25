@@ -1,4 +1,4 @@
-# Grade 11 Mathematics — CBSE Class 11 Complete Knowledge File
+# Grade 11 Mathematics - CBSE Class 11 Complete Knowledge File
 
 > **Curriculum:** CBSE Class 11 Mathematics (NCERT)
 > **Last Updated:** July 2026
@@ -12,14 +12,14 @@
 - **Set:** A well-defined collection of distinct objects.
 - **Elements:** Objects in a set. Written as `a ∈ A` (a belongs to A) or `a ∉ A`.
 - **Notation:** Sets are denoted by capital letters (A, B, C). Elements listed in curly braces `{1, 2, 3}`.
-- **Set-builder form:** `{x : P(x)}` — the set of all x such that property P(x) holds.
+- **Set-builder form:** `{x : P(x)}` - the set of all x such that property P(x) holds.
   - Example: `{x : x is a natural number and x < 5} = {1, 2, 3, 4}`
 
 ### 1.2 Types of Sets
 
 | Type | Description | Example |
 |------|-------------|---------|
-| **Empty/Null Set** | Contains no elements. Denoted ∅ or {} | `{x : x² + 1 = 0, x ∈ R} = ∅` |
+| **Empty/Null Set** | Contains no elements. Denoted ∅ or {} | `{x : x^2 + 1 = 0, x ∈ R} = ∅` |
 | **Singleton Set** | Contains exactly one element | `{x : x is the only even prime} = {2}` |
 | **Finite Set** | Countable number of elements | `{1, 2, 3, 4, 5}` |
 | **Infinite Set** | Uncountable/infinite elements | `N = {1, 2, 3, ...}` |
@@ -27,7 +27,7 @@
 | **Subset** | Every element of A is in B. A ⊆ B | `{1,2} ⊆ {1,2,3}` |
 | **Proper Subset** | A ⊂ B but A ≠ B | `{1,2} ⊂ {1,2,3}` |
 | **Universal Set** | Contains all elements under discussion. Denoted U | In a class of students, U = all students |
-| **Power Set** | Set of all subsets. P(A) has 2ⁿ elements | P({1,2}) = {∅, {1}, {2}, {1,2}} — 4 = 2² elements |
+| **Power Set** | Set of all subsets. P(A) has 2ⁿ elements | P({1,2}) = {∅, {1}, {2}, {1,2}} - 4 = 2^2 elements |
 | **Equivalent Sets** | Same number of elements (same cardinality) | `{a,b,c}` and `{1,2,3}` |
 
 ### 1.3 Set Operations
@@ -121,7 +121,7 @@ In a class of 40 students, 25 play cricket, 20 play football, 10 play both.
 **Testing tips:**
 - For **reflexive**: Check if identity relation I = {(a,a) : a ∈ A} ⊆ R
 - For **symmetric**: If (a,b) ∈ R, check (b,a) ∈ R for all pairs
-- For **transitive**: Must check ALL pairs — one counterexample breaks it
+- For **transitive**: Must check ALL pairs - one counterexample breaks it
 
 ### 2.4 Functions
 
@@ -136,13 +136,13 @@ In a class of 40 students, 25 play cricket, 20 play football, 10 play both.
 | **One-One (Injective)** | f(a) = f(b) ⟹ a = b | No horizontal line cuts graph more than once |
 | **Onto (Surjective)** | Range = Codomain (every b ∈ B has a pre-image) | Every horizontal line cuts graph at least once |
 | **Bijective** | Both one-one and onto | Both conditions satisfied |
-| **Into Function** | Not onto — range is a proper subset of codomain | |
+| **Into Function** | Not onto - range is a proper subset of codomain | |
 | **Identity Function** | f(x) = x for all x ∈ A | |
 | **Constant Function** | f(x) = c for all x ∈ A | Horizontal line |
 | **Modulus Function** | f(x) = \|x\| = x if x ≥ 0, −x if x < 0 | V-shape |
 | **Signum Function** | f(x) = −1 (x < 0), 0 (x = 0), 1 (x > 0) | Step function |
-| **Greatest Integer / Floor** | f(x) = ⌊x⌋ — greatest integer ≤ x | Step function |
-| **Smallest Integer / Ceiling** | f(x) = ⌈x⌉ — smallest integer ≥ x | Step function |
+| **Greatest Integer / Floor** | f(x) = ⌊x⌋ - greatest integer ≤ x | Step function |
+| **Smallest Integer / Ceiling** | f(x) = ⌈x⌉ - smallest integer ≥ x | Step function |
 
 ### 2.6 Algebra of Real Functions
 
@@ -180,7 +180,7 @@ Let f: X → R and g: X → R. Define:
 
 ### 3.2 Trigonometric Functions (of Any Angle)
 
-For a point P(x, y) on terminal side, r = √(x² + y²):
+For a point P(x, y) on terminal side, r = √(x^2 + y^2):
 
 | Function | Abbreviation | Definition |
 |----------|-------------|------------|
@@ -211,9 +211,9 @@ For a point P(x, y) on terminal side, r = √(x² + y²):
 ### 3.4 Fundamental Trigonometric Identities
 
 **Pythagorean Identities:**
-- sin²θ + cos²θ = 1
-- 1 + tan²θ = sec²θ
-- 1 + cot²θ = csc²θ
+- sin^2θ + cos^2θ = 1
+- 1 + tan^2θ = sec^2θ
+- 1 + cot^2θ = csc^2θ
 
 **Reciprocal Identities:**
 - csc θ = 1/sin θ; sec θ = 1/cos θ; cot θ = 1/tan θ
@@ -238,14 +238,14 @@ For a point P(x, y) on terminal side, r = √(x² + y²):
 ### 3.6 Double Angle Formulas
 
 - sin 2x = 2 sin x cos x
-- cos 2x = cos²x − sin²x = 2cos²x − 1 = 1 − 2sin²x
-- tan 2x = 2 tan x / (1 − tan²x)
+- cos 2x = cos^2x − sin^2x = 2cos^2x − 1 = 1 − 2sin^2x
+- tan 2x = 2 tan x / (1 − tan^2x)
 
 ### 3.7 Triple Angle Formulas
 
-- sin 3x = 3 sin x − 4 sin³x
-- cos 3x = 4 cos³x − 3 cos x
-- tan 3x = (3 tan x − tan³x) / (1 − 3 tan²x)
+- sin 3x = 3 sin x − 4 sin^3x
+- cos 3x = 4 cos^3x − 3 cos x
+- tan 3x = (3 tan x − tan^3x) / (1 − 3 tan^2x)
 
 ### 3.8 Product-to-Sum and Sum-to-Product
 
@@ -281,7 +281,7 @@ General solution: x = nπ + (−1)ⁿ(π/6), n ∈ Z
 
 ### 3.10 Common Mistakes
 - ❌ Forgetting to check domain of solutions (e.g., tan x undefined at x = π/2)
-- ❌ Using sin²θ = 1 − cos²θ and getting sign wrong in a specific quadrant
+- ❌ Using sin^2θ = 1 − cos^2θ and getting sign wrong in a specific quadrant
 - ❌ Confusing double angle formula: sin 2x ≠ 2 sin x
 - ❌ Applying sum/difference formulas incorrectly for tan (sign in denominator)
 - ❌ Missing solutions: for sin θ = 0, θ = nπ (not just θ = 0, π)
@@ -298,15 +298,15 @@ General solution: x = nπ + (−1)ⁿ(π/6), n ∈ Z
 
 ### 4.1 Principle of Mathematical Induction (PMI)
 
-To prove a statement P(n) is true for all natural numbers n ≥ n₀:
+To prove a statement P(n) is true for all natural numbers n ≥ n0:
 
-**Step 1 — Base Case:** Verify P(1) [or P(n₀)] is true.
+**Step 1 - Base Case:** Verify P(1) [or P(n0)] is true.
 
-**Step 2 — Inductive Hypothesis:** Assume P(k) is true for some k ≥ n₀.
+**Step 2 - Inductive Hypothesis:** Assume P(k) is true for some k ≥ n0.
 
-**Step 3 — Inductive Step:** Using P(k), prove that P(k+1) is true.
+**Step 3 - Inductive Step:** Using P(k), prove that P(k+1) is true.
 
-**Conclusion:** By PMI, P(n) is true for all n ≥ n₀.
+**Conclusion:** By PMI, P(n) is true for all n ≥ n0.
 
 ### 4.2 Worked Example
 
@@ -324,14 +324,14 @@ To prove a statement P(n) is true for all natural numbers n ≥ n₀:
 
 ### 4.3 Another Example
 
-**Prove:** n³ − n is divisible by 6 for all n ∈ N.
+**Prove:** n^3 − n is divisible by 6 for all n ∈ N.
 
 - **Base:** n = 1: 1 − 1 = 0, divisible by 6. ✓
-- **Assume:** k³ − k is divisible by 6.
-- **Prove:** (k+1)³ − (k+1) is divisible by 6.
-  - (k+1)³ − (k+1) = k³ + 3k² + 3k + 1 − k − 1 = k³ − k + 3k² + 3k
-  - = (k³ − k) + 3k(k + 1)
-  - k³ − k is divisible by 6 (by hypothesis).
+- **Assume:** k^3 − k is divisible by 6.
+- **Prove:** (k+1)^3 − (k+1) is divisible by 6.
+  - (k+1)^3 − (k+1) = k^3 + 3k^2 + 3k + 1 − k − 1 = k^3 − k + 3k^2 + 3k
+  - = (k^3 − k) + 3k(k + 1)
+  - k^3 − k is divisible by 6 (by hypothesis).
   - k(k+1) is always even, so 3k(k+1) is divisible by 6.
   - Sum is divisible by 6. ✓
 
@@ -352,7 +352,7 @@ To prove a statement P(n) is true for all natural numbers n ≥ n₀:
 
 ### 5.1 Definition
 
-- **Imaginary Unit:** i = √(−1), so i² = −1
+- **Imaginary Unit:** i = √(−1), so i^2 = −1
 - **Complex Number:** z = a + bi, where a, b ∈ R
   - a = **real part** (Re(z))
   - b = **imaginary part** (Im(z))
@@ -367,24 +367,24 @@ To prove a statement P(n) is true for all natural numbers n ≥ n₀:
 
 **Multiplication:** (a + bi)(c + di) = (ac − bd) + (ad + bc)i
 
-**Division:** (a + bi)/(c + di) = [(a + bi)(c − di)] / [(c + di)(c − di)] = [(ac + bd) + (bc − ad)i] / (c² + d²)
+**Division:** (a + bi)/(c + di) = [(a + bi)(c − di)] / [(c + di)(c − di)] = [(ac + bd) + (bc − ad)i] / (c^2 + d^2)
 
 ### 5.3 Properties of Conjugate
 
 - z + z̄ = 2a (pure real)
 - z − z̄ = 2bi (pure imaginary)
-- z · z̄ = a² + b² (real and non-negative)
+- z · z̄ = a^2 + b^2 (real and non-negative)
 - z̄̄ = z
-- (z₁ + z₂)̄ = z̄₁ + z̄₂
-- (z₁ · z₂)̄ = z̄₁ · z̄₂
-- (z₁/z₂)̄ = z̄₁/z̄₂
+- (z1 + z2)̄ = z̄1 + z̄2
+- (z1 · z2)̄ = z̄1 · z̄2
+- (z1/z2)̄ = z̄1/z̄2
 
 ### 5.4 Modulus
 
-- |z| = √(a² + b²)
-- |z₁z₂| = |z₁| · |z₂|
-- |z₁/z₂| = |z₁|/|z₂|
-- |z|² = z · z̄
+- |z| = √(a^2 + b^2)
+- |z1z2| = |z1| · |z2|
+- |z1/z2| = |z1|/|z2|
+- |z|^2 = z · z̄
 
 ### 5.5 Polar (Modulus-Argument) Form
 
@@ -396,7 +396,7 @@ To prove a statement P(n) is true for all natural numbers n ≥ n₀:
 
 **Conversion Example:** z = 1 + i
 - r = |z| = √(1 + 1) = √2
-- θ = tan⁻¹(1/1) = π/4
+- θ = tan⁻^1(1/1) = π/4
 - Polar form: √2(cos π/4 + i sin π/4)
 
 ### 5.6 De Moivre's Theorem
@@ -411,17 +411,17 @@ Roots of zⁿ = rⁿ(cos(nθ + 2kπ)/n + i sin(nθ + 2kπ)/n), for k = 0, 1, ...
 
 To find √(a + ib), let √(a + ib) = x + iy, where x, y ∈ R.
 
-Then: x² − y² = a and 2xy = b
+Then: x^2 − y^2 = a and 2xy = b
 
-Also: x² + y² = √(a² + b²)
+Also: x^2 + y^2 = √(a^2 + b^2)
 
 **Formulas:**
-- x = ±√[(√(a² + b²) + a)/2]
-- y = ±√[(√(a² + b²) − a)/2]
+- x = ±√[(√(a^2 + b^2) + a)/2]
+- y = ±√[(√(a^2 + b^2) − a)/2]
 - Choose signs so that xy has the same sign as b.
 
 ### 5.8 Common Mistakes
-- ❌ Forgetting that i² = −1 (so i³ = −i, i⁴ = 1, and powers cycle every 4)
+- ❌ Forgetting that i^2 = −1 (so i^3 = −i, i^4 = 1, and powers cycle every 4)
 - ❌ Confusing the argument (angle) with the imaginary part
 - ❌ Not considering all possible quadrants when finding the argument
 - ❌ Arithmetic errors in complex division (forgetting to multiply by conjugate)
@@ -525,13 +525,13 @@ The solution is the **intersection** of the solution regions of individual inequ
 
 **Key Properties:**
 - nCr = nC(n−r)
-- nC₀ = nCₙ = 1
+- nC0 = nCₙ = 1
 - nCr + nC(r−1) = (n+1)Cr (Pascal's Identity)
 - nCx = nCy ⟹ x = y or x + y = n
 
 **Worked Example:** How many ways to choose a team of 3 from 7 students?
 
-⁷C₃ = 7! / (3! × 4!) = (7 × 6 × 5) / (3 × 2 × 1) = 35
+^7C3 = 7! / (3! × 4!) = (7 × 6 × 5) / (3 × 2 × 1) = 35
 
 ### 7.5 Common Mistakes
 - ❌ Using permutation when order doesn't matter (and vice versa)
@@ -550,9 +550,9 @@ The solution is the **intersection** of the solution regions of individual inequ
 
 ### 8.1 Binomial Theorem for Positive Integer Index
 
-**(a + b)ⁿ = ⁿC₀ aⁿ + ⁿC₁ aⁿ⁻¹b + ⁿC₂ aⁿ⁻²b² + ... + ⁿCₙ bⁿ**
+**(a + b)ⁿ = ⁿC0 aⁿ + ⁿC1 aⁿ⁻^1b + ⁿC2 aⁿ⁻^2b^2 + ... + ⁿCₙ bⁿ**
 
-= Σₖ₌₀ⁿ ⁿCₖ aⁿ⁻ᵏ bᵏ
+= Σₖ₌0ⁿ ⁿCₖ aⁿ⁻ᵏ bᵏ
 
 **General Term:** T(r+1) = ⁿCᵣ aⁿ⁻ʳ bʳ (the (r+1)th term)
 
@@ -561,15 +561,15 @@ The solution is the **intersection** of the solution regions of individual inequ
 - Number of terms in (a + b)ⁿ = n + 1
 - **Pascal's Triangle:** Coefficients form Pascal's triangle
 - Coefficients increase then decrease (for positive a, b)
-- Sum of all binomial coefficients: ⁿC₀ + ⁿC₁ + ... + ⁿCₙ = 2ⁿ
-- Sum of even-indexed coefficients = Sum of odd-indexed coefficients = 2ⁿ⁻¹
+- Sum of all binomial coefficients: ⁿC0 + ⁿC1 + ... + ⁿCₙ = 2ⁿ
+- Sum of even-indexed coefficients = Sum of odd-indexed coefficients = 2ⁿ⁻^1
 
 ### 8.3 Special Expansions
 
 - (x + 1)ⁿ = Σ ⁿCₖ xᵏ
 - (x − 1)ⁿ = Σ (−1)ᵏ ⁿCₖ xⁿ⁻ᵏ
-- (1 + x)ⁿ + (1 − x)ⁿ = 2[ⁿC₀ + ⁿC₂ x² + ⁿC₄ x⁴ + ...] (even terms only)
-- (1 + x)ⁿ − (1 − x)ⁿ = 2[ⁿC₁ x + ⁿC₃ x³ + ...] (odd terms only)
+- (1 + x)ⁿ + (1 − x)ⁿ = 2[ⁿC0 + ⁿC2 x^2 + ⁿC4 x^4 + ...] (even terms only)
+- (1 + x)ⁿ − (1 − x)ⁿ = 2[ⁿC1 x + ⁿC3 x^3 + ...] (odd terms only)
 
 ### 8.4 Middle Term
 
@@ -578,17 +578,17 @@ The solution is the **intersection** of the solution regions of individual inequ
 
 ### 8.5 Worked Example
 
-**Find the coefficient of x⁵ in (2x + 3)⁸**
+**Find the coefficient of x^5 in (2x + 3)^8**
 
-T(r+1) = ⁸Cᵣ (2x)⁸⁻ʳ (3)ʳ = ⁸Cᵣ 2⁸⁻ʳ 3ʳ x⁸⁻ʳ
+T(r+1) = ^8Cᵣ (2x)^8⁻ʳ (3)ʳ = ^8Cᵣ 2^8⁻ʳ 3ʳ x^8⁻ʳ
 
-For x⁵: 8 − r = 5 → r = 3
+For x^5: 8 − r = 5 → r = 3
 
-Coefficient = ⁸C₃ × 2⁵ × 3³ = 56 × 32 × 27 = 48,384
+Coefficient = ^8C3 × 2^5 × 3^3 = 56 × 32 × 27 = 48,384
 
 ### 8.6 Binomial Theorem for Any Index (Brief)
 
-**(1 + x)ⁿ = 1 + nx + n(n−1)/2! x² + n(n−1)(n−2)/3! x³ + ...**
+**(1 + x)ⁿ = 1 + nx + n(n−1)/2! x^2 + n(n−1)(n−2)/3! x^3 + ...**
 
 Valid for |x| < 1 when n is not a positive integer.
 
@@ -609,8 +609,8 @@ Valid for |x| < 1 when n is not a positive integer.
 
 ### 9.1 Definitions
 
-- **Sequence:** An ordered list of numbers a₁, a₂, a₃, ... (called terms)
-- **Series:** Sum of a sequence: a₁ + a₂ + a₃ + ... = Σ aₙ
+- **Sequence:** An ordered list of numbers a1, a2, a3, ... (called terms)
+- **Series:** Sum of a sequence: a1 + a2 + a3 + ... = Σ aₙ
 - **Finite vs. Infinite:** Finite has n terms; infinite has infinitely many
 
 ### 9.2 Arithmetic Progression (AP)
@@ -620,40 +620,40 @@ A sequence where each term differs from the previous by a constant d (common dif
 - a, a + d, a + 2d, ...
 - **nth term:** aₙ = a + (n − 1)d
 - **Sum of first n terms:** Sₙ = n/2 [2a + (n−1)d] = n/2 [a + aₙ]
-- **Common difference:** d = a₂ − a₁ = a₃ − a₂ = ...
+- **Common difference:** d = a2 − a1 = a3 − a2 = ...
 
 **Properties:**
 - If a, b, c are in AP: 2b = a + c (b is the arithmetic mean)
-- Sum of equidistant terms from start and end is constant: a₁ + aₙ = a₂ + aₙ₋₁ = ...
+- Sum of equidistant terms from start and end is constant: a1 + aₙ = a2 + aₙ₋1 = ...
 
 ### 9.3 Geometric Progression (GP)
 
 A sequence where each term is obtained by multiplying the previous by a constant r (common ratio).
 
-- a, ar, ar², ...
-- **nth term:** aₙ = a · rⁿ⁻¹
+- a, ar, ar^2, ...
+- **nth term:** aₙ = a · rⁿ⁻^1
 - **Sum of first n terms:** Sₙ = a(rⁿ − 1)/(r − 1) for r ≠ 1; Sₙ = na for r = 1
 - **Sum of infinite GP:** S∞ = a/(1 − r), valid only when |r| < 1
 
 **Properties:**
-- If a, b, c are in GP: b² = ac (b is the geometric mean)
+- If a, b, c are in GP: b^2 = ac (b is the geometric mean)
 - Three terms in GP: a/r, a, ar
-- Four terms in GP: a/r³, a/r, ar, ar³
+- Four terms in GP: a/r^3, a/r, ar, ar^3
 
 ### 9.4 Arithmetic Mean (AM) and Geometric Mean (GM)
 
 - **Single AM of a and b:** AM = (a + b)/2
 - **Single GM of a and b (a, b > 0):** GM = √(ab)
 - **n Arithmetic Means between a and b:** b = a + (n+1)d → d = (b−a)/(n+1)
-- **n Geometric Means between a and b:** b = a · rⁿ⁺¹ → r = (b/a)^(1/(n+1))
+- **n Geometric Means between a and b:** b = a · rⁿ⁺^1 → r = (b/a)^(1/(n+1))
 
 ### 9.5 AM-GM Inequality
 
-**For positive numbers a₁, a₂, ..., aₙ:**
+**For positive numbers a1, a2, ..., aₙ:**
 
-**(a₁ + a₂ + ... + aₙ)/n ≥ (a₁ · a₂ · ... · aₙ)^(1/n)**
+**(a1 + a2 + ... + aₙ)/n ≥ (a1 · a2 · ... · aₙ)^(1/n)**
 
-Equality holds when a₁ = a₂ = ... = aₙ.
+Equality holds when a1 = a2 = ... = aₙ.
 
 **For two numbers:** (a + b)/2 ≥ √(ab), with equality when a = b.
 
@@ -663,17 +663,17 @@ Equality holds when a₁ = a₂ = ... = aₙ.
 - Σ n = n(n+1)/2
 
 **Sum of squares of first n natural numbers:**
-- Σ n² = n(n+1)(2n+1)/6
+- Σ n^2 = n(n+1)(2n+1)/6
 
 **Sum of cubes of first n natural numbers:**
-- Σ n³ = [n(n+1)/2]² (cube of the sum of naturals)
+- Σ n^3 = [n(n+1)/2]^2 (cube of the sum of naturals)
 
 ### 9.7 Worked Examples
 
 **Q:** Find the sum of the first 20 terms of the AP: 3, 7, 11, ...
 
 a = 3, d = 4, n = 20
-S₂₀ = 20/2 [2(3) + 19(4)] = 10[6 + 76] = 10 × 82 = 820
+S20 = 20/2 [2(3) + 19(4)] = 10[6 + 76] = 10 × 82 = 820
 
 **Q:** Find the sum to infinity of: 1 + 1/3 + 1/9 + ...
 
@@ -697,29 +697,29 @@ S∞ = 1/(1 − 1/3) = 1/(2/3) = 3/2
 
 ### 10.1 Coordinate Geometry Basics
 
-- **Distance Formula:** d = √[(x₂−x₁)² + (y₂−y₁)²]
-- **Section Formula:** Point dividing (x₁,y₁) and (x₂,y₂) in ratio m:n:
-  - Internal: ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n))
-  - External: ((mx₂ − nx₁)/(m−n), (my₂ − ny₁)/(m−n))
-- **Midpoint:** ((x₁+x₂)/2, (y₁+y₂)/2)
-- **Area of Triangle:** 1/2 |x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|
-- **Centroid:** ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3)
+- **Distance Formula:** d = √[(x2−x1)^2 + (y2−y1)^2]
+- **Section Formula:** Point dividing (x1,y1) and (x2,y2) in ratio m:n:
+  - Internal: ((mx2 + nx1)/(m+n), (my2 + ny1)/(m+n))
+  - External: ((mx2 − nx1)/(m−n), (my2 − ny1)/(m−n))
+- **Midpoint:** ((x1+x2)/2, (y1+y2)/2)
+- **Area of Triangle:** 1/2 |x1(y2−y3) + x2(y3−y1) + x3(y1−y2)|
+- **Centroid:** ((x1+x2+x3)/3, (y1+y2+y3)/3)
 
 ### 10.2 Slope of a Line
 
-- **Slope:** m = (y₂ − y₁)/(x₂ − x₁) = tan θ, where θ is the angle with positive x-axis
+- **Slope:** m = (y2 − y1)/(x2 − x1) = tan θ, where θ is the angle with positive x-axis
 - **Horizontal line:** m = 0
 - **Vertical line:** m is undefined (θ = 90°)
-- **Parallel lines:** m₁ = m₂
-- **Perpendicular lines:** m₁ × m₂ = −1
+- **Parallel lines:** m1 = m2
+- **Perpendicular lines:** m1 × m2 = −1
 
 ### 10.3 Various Forms of Line Equations
 
 | Form | Equation | Notes |
 |------|----------|-------|
 | **Slope-Intercept** | y = mx + c | c = y-intercept |
-| **Point-Slope** | y − y₁ = m(x − x₁) | Through point (x₁, y₁) |
-| **Two-Point** | y − y₁ = [(y₂−y₁)/(x₂−x₁)](x − x₁) | Through two points |
+| **Point-Slope** | y − y1 = m(x − x1) | Through point (x1, y1) |
+| **Two-Point** | y − y1 = [(y2−y1)/(x2−x1)](x − x1) | Through two points |
 | **Intercept** | x/a + y/b = 1 | a = x-intercept, b = y-intercept |
 | **General/Standard** | Ax + By + C = 0 | A, B not both zero |
 | **Normal** | x cos α + y sin α = p | p = perpendicular distance from origin, α = angle of normal |
@@ -727,20 +727,20 @@ S∞ = 1/(1 − 1/3) = 1/(2/3) = 3/2
 
 ### 10.4 Distance from a Point to a Line
 
-**Distance from (x₁, y₁) to Ax + By + C = 0:**
+**Distance from (x1, y1) to Ax + By + C = 0:**
 
-d = |Ax₁ + By₁ + C| / √(A² + B²)
+d = |Ax1 + By1 + C| / √(A^2 + B^2)
 
-**Distance between two parallel lines Ax + By + C₁ = 0 and Ax + By + C₂ = 0:**
+**Distance between two parallel lines Ax + By + C1 = 0 and Ax + By + C2 = 0:**
 
-d = |C₁ − C₂| / √(A² + B²)
+d = |C1 − C2| / √(A^2 + B^2)
 
 ### 10.5 Angle Between Two Lines
 
-**tan α = |(m₂ − m₁)/(1 + m₁m₂)|**
+**tan α = |(m2 − m1)/(1 + m1m2)|**
 
-- If m₁m₂ = −1, lines are perpendicular (α = 90°)
-- If m₁ = m₂, lines are parallel (α = 0°)
+- If m1m2 = −1, lines are perpendicular (α = 90°)
+- If m1 = m2, lines are parallel (α = 0°)
 
 ### 10.6 Worked Examples
 
@@ -775,18 +775,18 @@ A conic section is the curve obtained by intersecting a plane with a double cone
 
 ### 11.1 Circle
 
-**Standard Form:** (x − h)² + (y − k)² = r²
+**Standard Form:** (x − h)^2 + (y − k)^2 = r^2
 - Center: (h, k), Radius: r
 
-**General Form:** x² + y² + 2gx + 2fy + c = 0
+**General Form:** x^2 + y^2 + 2gx + 2fy + c = 0
 - Center: (−g, −f)
-- Radius: √(g² + f² − c) [must be > 0 for a real circle]
+- Radius: √(g^2 + f^2 − c) [must be > 0 for a real circle]
 
-**Worked Example:** Find center and radius of x² + y² − 4x + 6y − 3 = 0.
+**Worked Example:** Find center and radius of x^2 + y^2 − 4x + 6y − 3 = 0.
 
 Complete the square:
-(x² − 4x + 4) + (y² + 6y + 9) = 3 + 4 + 9 = 16
-(x − 2)² + (y + 3)² = 4²
+(x^2 − 4x + 4) + (y^2 + 6y + 9) = 3 + 4 + 9 = 16
+(x − 2)^2 + (y + 3)^2 = 4^2
 
 Center = (2, −3), Radius = 4
 
@@ -798,10 +798,10 @@ Center = (2, −3), Radius = 4
 
 | Form | Equation | Vertex | Focus | Directrix | Axis | Latus Rectum |
 |------|----------|--------|-------|-----------|------|-------------|
-| Upward | x² = 4ay | (0,0) | (0, a) | y = −a | y-axis | 4a |
-| Downward | x² = −4ay | (0,0) | (0, −a) | y = a | y-axis | 4a |
-| Right | y² = 4ax | (0,0) | (a, 0) | x = −a | x-axis | 4a |
-| Left | y² = −4ax | (0,0) | (−a, 0) | x = a | x-axis | 4a |
+| Upward | x^2 = 4ay | (0,0) | (0, a) | y = −a | y-axis | 4a |
+| Downward | x^2 = −4ay | (0,0) | (0, −a) | y = a | y-axis | 4a |
+| Right | y^2 = 4ax | (0,0) | (a, 0) | x = −a | x-axis | 4a |
+| Left | y^2 = −4ax | (0,0) | (−a, 0) | x = a | x-axis | 4a |
 
 **Shifting:** Replace x by (x − h) and y by (y − k) to shift vertex to (h, k).
 
@@ -813,22 +813,22 @@ Center = (2, −3), Radius = 4
 
 **Standard Forms:**
 
-**Horizontal (along x-axis):** x²/a² + y²/b² = 1, where a > b > 0
+**Horizontal (along x-axis):** x^2/a^2 + y^2/b^2 = 1, where a > b > 0
 - Center: (0, 0)
 - Semi-major axis: a (along x-axis)
 - Semi-minor axis: b (along y-axis)
-- Foci: (±c, 0) where c² = a² − b²
+- Foci: (±c, 0) where c^2 = a^2 − b^2
 - Vertices: (±a, 0)
 - Major axis length: 2a, Minor axis length: 2b
-- Latus rectum: 2b²/a
+- Latus rectum: 2b^2/a
 - Eccentricity: e = c/a, where 0 < e < 1
 
-**Vertical (along y-axis):** x²/b² + y²/a² = 1, where a > b > 0
+**Vertical (along y-axis):** x^2/b^2 + y^2/a^2 = 1, where a > b > 0
 - Same relationships with axes swapped
 
-**Key relationship:** a² = b² + c², e = √(1 − b²/a²)
+**Key relationship:** a^2 = b^2 + c^2, e = √(1 − b^2/a^2)
 
-**Special case — Circle:** When e = 0, the ellipse becomes a circle (a = b).
+**Special case - Circle:** When e = 0, the ellipse becomes a circle (a = b).
 
 ### 11.4 Hyperbola
 
@@ -836,20 +836,20 @@ Center = (2, −3), Radius = 4
 
 **Standard Forms:**
 
-**Horizontal (along x-axis):** x²/a² − y²/b² = 1
+**Horizontal (along x-axis):** x^2/a^2 − y^2/b^2 = 1
 - Center: (0, 0)
 - Transverse axis: 2a (along x-axis)
 - Conjugate axis: 2b (along y-axis)
-- Foci: (±c, 0) where c² = a² + b²
+- Foci: (±c, 0) where c^2 = a^2 + b^2
 - Vertices: (±a, 0)
 - Eccentricity: e = c/a, where e > 1
-- Latus rectum: 2b²/a
+- Latus rectum: 2b^2/a
 - Asymptotes: y = ±(b/a)x
 
-**Vertical (along y-axis):** y²/a² − x²/b² = 1
+**Vertical (along y-axis):** y^2/a^2 − x^2/b^2 = 1
 - Same with axes swapped
 
-**Key relationship:** c² = a² + b², e = √(1 + b²/a²) > 1
+**Key relationship:** c^2 = a^2 + b^2, e = √(1 + b^2/a^2) > 1
 
 **Rectangular Hyperbola:** When a = b, e = √2, and asymptotes are perpendicular.
 
@@ -858,14 +858,14 @@ Center = (2, −3), Radius = 4
 | Property | Circle | Parabola | Ellipse | Hyperbola |
 |----------|--------|----------|---------|-----------|
 | Eccentricity e | 0 | 1 | 0 < e < 1 | e > 1 |
-| Standard Equation | x² + y² = r² | y² = 4ax | x²/a² + y²/b² = 1 | x²/a² − y²/b² = 1 |
-| Focus-Focus Relation | — | — | a² = b² + c² | c² = a² + b² |
-| Latus Rectum | 2r | 4a | 2b²/a | 2b²/a |
+| Standard Equation | x^2 + y^2 = r^2 | y^2 = 4ax | x^2/a^2 + y^2/b^2 = 1 | x^2/a^2 − y^2/b^2 = 1 |
+| Focus-Focus Relation | - | - | a^2 = b^2 + c^2 | c^2 = a^2 + b^2 |
+| Latus Rectum | 2r | 4a | 2b^2/a | 2b^2/a |
 
 ### 11.6 Common Mistakes
 - ❌ Confusing a and b (a is always the larger semi-axis for ellipse)
-- ❌ Using wrong formula for c: c² = a² − b² (ellipse) vs c² = a² + b² (hyperbola)
-- ❌ Wrong sign in parabola equation (x² = 4ay opens UP, not right)
+- ❌ Using wrong formula for c: c^2 = a^2 − b^2 (ellipse) vs c^2 = a^2 + b^2 (hyperbola)
+- ❌ Wrong sign in parabola equation (x^2 = 4ay opens UP, not right)
 - ❌ Forgetting eccentricity determines the type: e = 0 circle, e = 1 parabola, 0 < e < 1 ellipse, e > 1 hyperbola
 
 ### 11.7 Teaching Tips
@@ -885,37 +885,37 @@ Center = (2, −3), Radius = 4
 
 ### 12.2 Distance Formula (3D)
 
-**Distance between P(x₁, y₁, z₁) and Q(x₂, y₂, z₂):**
+**Distance between P(x1, y1, z1) and Q(x2, y2, z2):**
 
-d(P, Q) = √[(x₂−x₁)² + (y₂−y₁)² + (z₂−z₁)²]
+d(P, Q) = √[(x2−x1)^2 + (y2−y1)^2 + (z2−z1)^2]
 
 **Distance from origin:**
 
-d = √(x² + y² + z²)
+d = √(x^2 + y^2 + z^2)
 
 ### 12.3 Section Formula (3D)
 
-Point R dividing P(x₁,y₁,z₁) and Q(x₂,y₂,z₂) in ratio m:n:
+Point R dividing P(x1,y1,z1) and Q(x2,y2,z2) in ratio m:n:
 
 **Internal division:**
-R = ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n), (mz₂ + nz₁)/(m+n))
+R = ((mx2 + nx1)/(m+n), (my2 + ny1)/(m+n), (mz2 + nz1)/(m+n))
 
 **External division:**
-R = ((mx₂ − nx₁)/(m−n), (my₂ − ny₁)/(m−n), (mz₂ − nz₁)/(m−n))
+R = ((mx2 − nx1)/(m−n), (my2 − ny1)/(m−n), (mz2 − nz1)/(m−n))
 
-**Midpoint:** ((x₁+x₂)/2, (y₁+y₂)/2, (z₁+z₂)/2)
+**Midpoint:** ((x1+x2)/2, (y1+y2)/2, (z1+z2)/2)
 
 ### 12.4 Coordinates of Centroid
 
-Centroid of triangle with vertices (x₁,y₁,z₁), (x₂,y₂,z₂), (x₃,y₃,z₃):
+Centroid of triangle with vertices (x1,y1,z1), (x2,y2,z2), (x3,y3,z3):
 
-G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3, (z₁+z₂+z₃)/3)
+G = ((x1+x2+x3)/3, (y1+y2+y3)/3, (z1+z2+z3)/3)
 
 ### 12.5 Worked Example
 
 **Q:** Find the distance between A(1, 2, 3) and B(4, 6, 3).
 
-d = √[(4−1)² + (6−2)² + (3−3)²] = √[9 + 16 + 0] = √25 = 5
+d = √[(4−1)^2 + (6−2)^2 + (3−3)^2] = √[9 + 16 + 0] = √25 = 5
 
 **Q:** Find the midpoint of (2, −1, 4) and (6, 3, −2).
 
@@ -959,7 +959,7 @@ If lim(x→a) f(x) = L and lim(x→a) g(x) = M:
 4. **lim(x→0) (eˣ − 1)/x = 1**
 5. **lim(x→0) (ln(1+x))/x = 1**
 6. **lim(x→∞) (1 + 1/x)ˣ = e** (Euler's number ≈ 2.718)
-7. **lim(x→a) (xⁿ − aⁿ)/(x − a) = naⁿ⁻¹**
+7. **lim(x→a) (xⁿ − aⁿ)/(x − a) = naⁿ⁻^1**
 
 ### 13.4 Limit Theorems
 
@@ -978,7 +978,7 @@ This is the first derivative (rate of change of f at x).
 
 | Function f(x) | Derivative f′(x) |
 |---------------|-----------------|
-| xⁿ | nxⁿ⁻¹ |
+| xⁿ | nxⁿ⁻^1 |
 | c (constant) | 0 |
 | eˣ | eˣ |
 | aˣ | aˣ ln a |
@@ -986,10 +986,10 @@ This is the first derivative (rate of change of f at x).
 | logₐ x | 1/(x ln a) |
 | sin x | cos x |
 | cos x | −sin x |
-| tan x | sec²x |
+| tan x | sec^2x |
 | csc x | −csc x cot x |
 | sec x | sec x tan x |
-| cot x | −csc²x |
+| cot x | −csc^2x |
 
 ### 13.7 Rules of Differentiation
 
@@ -997,7 +997,7 @@ This is the first derivative (rate of change of f at x).
 |------|---------|
 | **Sum/Difference** | (f ± g)′ = f′ ± g′ |
 | **Product** | (f · g)′ = f′g + fg′ |
-| **Quotient** | (f/g)′ = (f′g − fg′)/g² |
+| **Quotient** | (f/g)′ = (f′g − fg′)/g^2 |
 | **Chain** | (f(g(x)))′ = f′(g(x)) · g′(x) |
 | **Constant Multiple** | (cf)′ = c · f′ |
 
@@ -1007,16 +1007,16 @@ This is the first derivative (rate of change of f at x).
 
 = lim(x→0) [sin(3x)/(3x)] × [3x/(5x)] = 1 × 3/5 = 3/5
 
-**Q:** Find derivative of f(x) = x³ + 4x² − 7x + 2
+**Q:** Find derivative of f(x) = x^3 + 4x^2 − 7x + 2
 
-f′(x) = 3x² + 8x − 7
+f′(x) = 3x^2 + 8x − 7
 
-**Q:** Find derivative of f(x) = sin(x²)
+**Q:** Find derivative of f(x) = sin(x^2)
 
-f′(x) = cos(x²) × 2x (chain rule)
+f′(x) = cos(x^2) × 2x (chain rule)
 
 ### 13.9 Common Mistakes
-- ❌ Direct substitution giving 0/0 or ∞/∞ — need special techniques
+- ❌ Direct substitution giving 0/0 or ∞/∞ - need special techniques
 - ❌ Forgetting the chain rule (especially with trigonometric functions)
 - ❌ Sign errors: derivative of cos x is −sin x (negative!)
 - ❌ Confusing limit with function value (they may differ)
@@ -1058,13 +1058,13 @@ f′(x) = cos(x²) × 2x (chain rule)
 
 ### 14.3 Variance and Standard Deviation
 
-**Variance (σ²):**
-- Ungrouped: σ² = (1/n) Σ(xᵢ − x̄)²
-- Grouped: σ² = (1/n) Σfᵢ(xᵢ − x̄)²
+**Variance (σ^2):**
+- Ungrouped: σ^2 = (1/n) Σ(xᵢ − x̄)^2
+- Grouped: σ^2 = (1/n) Σfᵢ(xᵢ − x̄)^2
 
 **Shortcut formula (very useful):**
-- σ² = (1/n) Σxᵢ² − x̄²
-- For grouped: σ² = (1/n) Σfᵢxᵢ² − x̄²
+- σ^2 = (1/n) Σxᵢ^2 − x̄^2
+- For grouped: σ^2 = (1/n) Σfᵢxᵢ^2 − x̄^2
 
 **Standard Deviation:** σ = √(Variance)
 
@@ -1076,12 +1076,12 @@ Used to compare the variability of two datasets with different means.
 
 ### 14.5 Combined Mean and Variance
 
-If two groups have means x̄₁, x̄₂ with sizes n₁, n₂ and variances σ₁², σ₂²:
+If two groups have means x̄1, x̄2 with sizes n1, n2 and variances σ1^2, σ2^2:
 
-- **Combined Mean:** x̄ = (n₁x̄₁ + n₂x̄₂)/(n₁ + n₂)
-- **Combined Variance:** σ² = [n₁(σ₁² + d₁²) + n₂(σ₂² + d₂²)]/(n₁ + n₂)
+- **Combined Mean:** x̄ = (n1x̄1 + n2x̄2)/(n1 + n2)
+- **Combined Variance:** σ^2 = [n1(σ1^2 + d1^2) + n2(σ2^2 + d2^2)]/(n1 + n2)
 
-where d₁ = x̄₁ − x̄, d₂ = x̄₂ − x̄
+where d1 = x̄1 − x̄, d2 = x̄2 − x̄
 
 ### 14.6 Worked Examples
 
@@ -1096,13 +1096,13 @@ MD = (|3−8.83| + |6−8.83| + |8−8.83| + |10−8.83| + |12−8.83| + |14−8
 **Q:** Find the variance and SD of: 2, 4, 6, 8, 10
 
 Mean = 30/5 = 6
-σ² = [(4+16+0+4+16)/5] = 40/5 = 8
+σ^2 = [(4+16+0+4+16)/5] = 40/5 = 8
 σ = √8 ≈ 2.83
 
 ### 14.7 Common Mistakes
 - ❌ Forgetting to divide by n in the mean deviation/variance formulas
 - ❌ Using absolute values incorrectly (dropping signs too early)
-- ❌ Confusing population variance (÷ n) and sample variance (÷ n−1) — Class 11 uses population formulas
+- ❌ Confusing population variance (÷ n) and sample variance (÷ n−1) - Class 11 uses population formulas
 - ❌ Errors in finding the median class for grouped data
 
 ### 14.8 Teaching Tips
@@ -1166,7 +1166,7 @@ This also means:
 
 ### 15.6 Bayes' Theorem
 
-For events H₁, H₂, ..., Hₙ forming a partition of S (mutually exclusive, exhaustive, all with P > 0) and any event A:
+For events H1, H2, ..., Hₙ forming a partition of S (mutually exclusive, exhaustive, all with P > 0) and any event A:
 
 **P(Hₖ|A) = [P(Hₖ) · P(A|Hₖ)] / [Σⱼ P(Hⱼ) · P(A|Hⱼ)]**
 
@@ -1184,14 +1184,14 @@ A factory has Machine I producing 60% of items with 2% defect rate, and Machine 
 
 ### 15.7 Total Probability Theorem
 
-If H₁, H₂, ..., Hₙ partition S, then:
+If H1, H2, ..., Hₙ partition S, then:
 
-**P(A) = P(H₁)·P(A|H₁) + P(H₂)·P(A|H₂) + ... + P(Hₙ)·P(A|Hₙ)**
+**P(A) = P(H1)·P(A|H1) + P(H2)·P(A|H2) + ... + P(Hₙ)·P(A|Hₙ)**
 
 This is the denominator of Bayes' theorem and is useful on its own.
 
 ### 15.8 Common Mistakes
-- ❌ Confusing P(A|B) with P(B|A) — Bayes' theorem corrects this
+- ❌ Confusing P(A|B) with P(B|A) - Bayes' theorem corrects this
 - ❌ Assuming events are independent without checking
 - ❌ Forgetting that mutually exclusive ≠ independent
 - ❌ Not checking that partitions are exhaustive in Bayes' theorem
@@ -1210,37 +1210,37 @@ This is the denominator of Bayes' theorem and is useful on its own.
 ### Algebra
 | Formula | Expression |
 |---------|-----------|
-| Quadratic formula | x = (−b ± √(b²−4ac)) / 2a |
+| Quadratic formula | x = (−b ± √(b^2−4ac)) / 2a |
 | AM-GM | (a+b)/2 ≥ √(ab) |
 | nCr | n! / [r!(n−r)!] |
 | nPr | n! / (n−r)! |
-| Σn = n(n+1)/2, Σn² = n(n+1)(2n+1)/6, Σn³ = [n(n+1)/2]² |
+| Σn = n(n+1)/2, Σn^2 = n(n+1)(2n+1)/6, Σn^3 = [n(n+1)/2]^2 |
 
 ### Trigonometry
 | Identity | Expression |
 |----------|-----------|
-| Pythagorean | sin²θ + cos²θ = 1 |
+| Pythagorean | sin^2θ + cos^2θ = 1 |
 | sin 2x | 2 sin x cos x |
-| cos 2x | cos²x − sin²x |
+| cos 2x | cos^2x − sin^2x |
 | tan(x±y) | (tan x ± tan y)/(1 ∓ tan x tan y) |
 
 ### Coordinate Geometry
 | Formula | Expression |
 |---------|-----------|
-| Distance (2D) | √[(x₂−x₁)² + (y₂−y₁)²] |
-| Distance (3D) | √[(x₂−x₁)² + (y₂−y₁)² + (z₂−z₁)²] |
-| Point to line | \|Ax₁+By₁+C\| / √(A²+B²) |
-| Circle | (x−h)² + (y−k)² = r² |
-| Parabola | y² = 4ax |
-| Ellipse | x²/a² + y²/b² = 1 |
-| Hyperbola | x²/a² − y²/b² = 1 |
+| Distance (2D) | √[(x2−x1)^2 + (y2−y1)^2] |
+| Distance (3D) | √[(x2−x1)^2 + (y2−y1)^2 + (z2−z1)^2] |
+| Point to line | \|Ax1+By1+C\| / √(A^2+B^2) |
+| Circle | (x−h)^2 + (y−k)^2 = r^2 |
+| Parabola | y^2 = 4ax |
+| Ellipse | x^2/a^2 + y^2/b^2 = 1 |
+| Hyperbola | x^2/a^2 − y^2/b^2 = 1 |
 
 ### Calculus
 | Formula | Expression |
 |---------|-----------|
-| Power rule | d/dx(xⁿ) = nxⁿ⁻¹ |
+| Power rule | d/dx(xⁿ) = nxⁿ⁻^1 |
 | Product rule | (fg)′ = f′g + fg′ |
-| Quotient rule | (f/g)′ = (f′g − fg′)/g² |
+| Quotient rule | (f/g)′ = (f′g − fg′)/g^2 |
 | Chain rule | (f∘g)′ = f′(g(x))·g′(x) |
 
 ### Probability
@@ -1256,11 +1256,11 @@ This is the denominator of Bayes' theorem and is useful on its own.
 
 ## Common Mistakes Across All Topics
 
-1. **Sign errors** — the #1 mistake in all of mathematics
-2. **Copying formulas wrong** — always verify with a simple test case
-3. **Forgetting restrictions** — domain issues in functions, |r| < 1 for infinite GP, etc.
-4. **Not reading the question carefully** — watch for "at least," "at most," "not," etc.
-5. **Calculation errors** — slow down and double-check arithmetic
+1. **Sign errors** - the #1 mistake in all of mathematics
+2. **Copying formulas wrong** - always verify with a simple test case
+3. **Forgetting restrictions** - domain issues in functions, |r| < 1 for infinite GP, etc.
+4. **Not reading the question carefully** - watch for "at least," "at most," "not," etc.
+5. **Calculation errors** - slow down and double-check arithmetic
 
 ## Exam Preparation Tips
 

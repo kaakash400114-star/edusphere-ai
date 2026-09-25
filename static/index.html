@@ -1044,12 +1044,18 @@ function loadVoices() {
   speechSynthesis.onvoiceschanged = () => { Buddy.voices = speechSynthesis.getVoices() || []; };
 }
 
-// pick the clearest English voice — never a non-en voice
+// pick THIS buddy's real voice: match voice_hints (from the server's voice
+// profile) against installed voices, so every buddy sounds like a different
+// person. Falls back to the clearest English voice.
 function pickVoice() {
-  const vs = Buddy.voices.filter(v => /^en[-_]?US/i.test(v.lang) || v.lang === "en");
-  return vs.find(v => /natural|online|premium|enhanced/i.test(v.name))
-      || vs.find(v => /google/i.test(v.name))
-      || vs[0] || null;
+  const en = Buddy.voices.filter(v => /^en[-_]?/i.test(v.lang));
+  if (!en.length) return null;
+  const hints = (state.lastVoice && state.lastVoice.voice_hints) || [];
+  for (const hint of hints) {
+    const hit = en.find(v => v.name.toLowerCase().includes(hint.toLowerCase()));
+    if (hit) return hit;
+  }
+  return en.find(v => /google/i.test(v.name)) || en[0] || null;
 }
 
 // strip anything a TTS engine would read badly (stage A pronunciation rules)

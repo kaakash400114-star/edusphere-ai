@@ -1,12 +1,12 @@
 # Grade 2 Science Knowledge Base
 
-> **Grade Level:** 2nd Grade (Ages 6–8)
+> **Grade Level:** 2nd Grade (Ages 6-8)
 > **Last Updated:** July 2026
-> **Curriculum Alignment:** Next Generation Science Standards (NGSS) — Grade 2
+> **Curriculum Alignment:** Next Generation Science Standards (NGSS) - Grade 2
 
 ---
 
-## 1. Plants — Going Deeper
+## 1. Plants - Going Deeper
 
 ### Photosynthesis (Simple Version)
 
@@ -24,13 +24,13 @@
   💨 Oxygen (released into air)
 ```
 
-**In simple words:** Plants use sunlight, water, and carbon dioxide to make sugar (their food) and give off oxygen. This is why plants are important — they make the oxygen we breathe!
+**In simple words:** Plants use sunlight, water, and carbon dioxide to make sugar (their food) and give off oxygen. This is why plants are important - they make the oxygen we breathe!
 
 **Key points:**
 - Photosynthesis happens mostly in the **leaves**
 - A green substance called **chlorophyll** (KLOR-oh-fill) in the leaves captures sunlight
 - The sugar gives the plant energy to grow
-- Oxygen is a "bonus" — plants release it, and animals (including us) need it to breathe
+- Oxygen is a "bonus" - plants release it, and animals (including us) need it to breathe
 
 > **Why it matters:** Without photosynthesis, there would be no oxygen on Earth and no food for animals.
 
@@ -70,11 +70,11 @@ Different plants live in different places. A **habitat** is the natural home of 
 ### Roots Absorb Water
 
 - **How it works:** Roots have tiny root hairs that reach into the soil. Water and dissolved minerals enter through these root hairs, then travel up through the stem to the leaves.
-- **Experiment idea:** Put a celery stalk (with leaves) in colored water. After a few hours, you can see the colored water move up through the celery — this shows how plants move water!
+- **Experiment idea:** Put a celery stalk (with leaves) in colored water. After a few hours, you can see the colored water move up through the celery - this shows how plants move water!
 
 ---
 
-## 2. Animals — Going Deeper
+## 2. Animals - Going Deeper
 
 ### Animal Life Cycles
 
@@ -89,11 +89,11 @@ All animals go through stages of growth. This is called a **life cycle**.
 | Stage | Description | Duration |
 |---|---|---|
 | 🥚 **Egg** | A tiny egg laid on a leaf by an adult butterfly | A few days to a week |
-| 🐛 **Caterpillar (Larva)** | The eating stage — caterpillar eats leaves and grows A LOT, shedding its skin several times | 2–4 weeks |
-| 🪹 **Chrysalis (Pupa)** | The caterpillar forms a hard shell around itself and changes into a butterfly inside | 1–2 weeks |
+| 🐛 **Caterpillar (Larva)** | The eating stage - caterpillar eats leaves and grows A LOT, shedding its skin several times | 2-4 weeks |
+| 🪹 **Chrysalis (Pupa)** | The caterpillar forms a hard shell around itself and changes into a butterfly inside | 1-2 weeks |
 | 🦋 **Butterfly (Adult)** | Emerges with wings, can fly, feeds on nectar, and lays new eggs | Several weeks to months |
 
-> **Fun fact:** Inside the chrysalis, the caterpillar doesn't just grow wings — its entire body breaks down and reforms into a completely different creature!
+> **Fun fact:** Inside the chrysalis, the caterpillar doesn't just grow wings - its entire body breaks down and reforms into a completely different creature!
 
 #### Frog Life Cycle
 
@@ -105,7 +105,7 @@ All animals go through stages of growth. This is called a **life cycle**.
 |---|---|---|
 | 🥚 **Egg (Frogspawn)** | A clump of jelly-like eggs laid in water | Tiny black dots in clear jelly |
 | 🐟 **Tadpole** | Lives only in water; swims like a fish | Has a tail; breathes through gills; no legs yet |
-| 🐸 **Froglet** | Transition stage — growing legs, losing tail | Back legs grow first, then front legs; tail shrinks |
+| 🐸 **Froglet** | Transition stage - growing legs, losing tail | Back legs grow first, then front legs; tail shrinks |
 | 🐸 **Adult Frog** | Lives on land and in water | Four legs (no tail); breathes through lungs and skin; catches bugs with tongue |
 
 ### Animal Habitats
@@ -152,7 +152,7 @@ An **adaptation** is a special feature or behavior that helps an animal survive 
 
 ---
 
-## 3. The Human Body — Going Deeper
+## 3. The Human Body - Going Deeper
 
 ### The Digestive System
 
@@ -164,10 +164,10 @@ Food goes on a journey through your body! This journey is called **digestion**.
 
 | Organ | What It Does | Key Detail |
 |---|---|---|
-| 👄 **Mouth** | Teeth chew food into small pieces; saliva (spit) starts breaking it down | Digestion begins here — saliva has enzymes that start breaking down starches |
+| 👄 **Mouth** | Teeth chew food into small pieces; saliva (spit) starts breaking it down | Digestion begins here - saliva has enzymes that start breaking down starches |
 | 🔻 **Esophagus** | A tube that carries food from mouth to stomach | Muscles push food down with wave-like squeezing (peristalsis) |
-| 🫁 **Stomach** | A J-shaped bag that churns food and mixes it with stomach juices | Stomach acid helps break down food further; food stays here 2–4 hours |
-| 🔻 **Small Intestine** | Most nutrients are absorbed here into the blood | Very long — about 20 feet (6 meters) in an adult! This is where food becomes nutrients for your body |
+| 🫁 **Stomach** | A J-shaped bag that churns food and mixes it with stomach juices | Stomach acid helps break down food further; food stays here 2-4 hours |
+| 🔻 **Small Intestine** | Most nutrients are absorbed here into the blood | Very long - about 20 feet (6 meters) in an adult! This is where food becomes nutrients for your body |
 | 🔻 **Large Intestine** | Absorbs water from leftover food | Takes water out of food waste; leftover waste becomes solid (poop) |
 
 ### The Skeleton (Bones)
@@ -182,9 +182,9 @@ Your skeleton is the frame of bones inside your body.
 
 **Key facts:**
 - An adult has **206 bones**; a baby has about **270** (some fuse together as you grow)
-- The smallest bone is in your ear — the **stapes** (smaller than a grain of rice!)
+- The smallest bone is in your ear - the **stapes** (smaller than a grain of rice!)
 - The longest bone is the **femur** (thigh bone)
-- Bones are alive — they have blood vessels and can heal when broken
+- Bones are alive - they have blood vessels and can heal when broken
 
 ### Muscles
 
@@ -194,7 +194,7 @@ Your skeleton is the frame of bones inside your body.
 | **Cardiac muscle** | Only found in the heart; pumps blood automatically | Your heart beats about 100,000 times per day! |
 | **Smooth muscles** | Line organs; work automatically (involuntary) | In your stomach, intestines, and blood vessels |
 
-**Fun fact:** Smiling uses about 17 muscles. Frowning uses about 43 muscles — so it takes less effort to smile!
+**Fun fact:** Smiling uses about 17 muscles. Frowning uses about 43 muscles - so it takes less effort to smile!
 
 ### Types of Teeth
 
@@ -217,7 +217,7 @@ Your skeleton is the frame of bones inside your body.
 **How to wash hands properly:**
 1. Wet hands with clean, running water
 2. Add soap
-3. Scrub all surfaces (front, back, between fingers, under nails) for **20 seconds** — sing "Happy Birthday" twice!
+3. Scrub all surfaces (front, back, between fingers, under nails) for **20 seconds** - sing "Happy Birthday" twice!
 4. Rinse with clean water
 5. Dry with a clean towel
 
@@ -225,7 +225,7 @@ Your skeleton is the frame of bones inside your body.
 
 ---
 
-## 4. Matter — States and Changes
+## 4. Matter - States and Changes
 
 ### Properties of States of Matter
 
@@ -269,7 +269,7 @@ A **mixture** is when two or more substances are combined but each keeps its own
 
 ---
 
-## 5. Weather — Going Deeper
+## 5. Weather - Going Deeper
 
 ### Measuring Weather
 
@@ -282,11 +282,11 @@ A **mixture** is when two or more substances are combined but each keeps its own
 
 ### Reading a Thermometer
 
-- **Hot:** 30°C (86°F) or above — wear light, cool clothes
-- **Warm:** 20–30°C (68–86°F) — comfortable; wear regular clothes
-- **Cool:** 10–20°C (50–68°F) — wear a sweater or jacket
-- **Cold:** 0–10°C (32–50°F) — wear a warm coat, hat, and gloves
-- **Freezing:** 0°C (32°F) and below — water turns to ice; wear heavy winter clothes
+- **Hot:** 30°C (86°F) or above - wear light, cool clothes
+- **Warm:** 20-30°C (68-86°F) - comfortable; wear regular clothes
+- **Cool:** 10-20°C (50-68°F) - wear a sweater or jacket
+- **Cold:** 0-10°C (32-50°F) - wear a warm coat, hat, and gloves
+- **Freezing:** 0°C (32°F) and below - water turns to ice; wear heavy winter clothes
 
 ### The Water Cycle (Detailed)
 
@@ -313,7 +313,7 @@ A **mixture** is when two or more substances are combined but each keeps its own
 
 ---
 
-## 6. Earth — Rocks, Soil, and Fossils
+## 6. Earth - Rocks, Soil, and Fossils
 
 ### Rocks vs Minerals
 
@@ -328,13 +328,13 @@ A **mixture** is when two or more substances are combined but each keeps its own
 
 | Soil Type | Texture | Holds Water? | Good for Growing? | What It's Made Of |
 |---|---|---|---|---|
-| 🏖️ **Sand** | Coarse, gritty, loose particles | Poorly — water drains through quickly | Not great alone — too dry | Large mineral particles |
-| 🏺 **Clay** | Smooth when wet, sticky, hard when dry | Holds water very well (too well — gets soggy) | Difficult — too compact, roots can't push through | Very tiny, flat mineral particles |
+| 🏖️ **Sand** | Coarse, gritty, loose particles | Poorly - water drains through quickly | Not great alone - too dry | Large mineral particles |
+| 🏺 **Clay** | Smooth when wet, sticky, hard when dry | Holds water very well (too well - gets soggy) | Difficult - too compact, roots can't push through | Very tiny, flat mineral particles |
 | 🌿 **Loam** | Crumbly, soft, rich-looking | Holds water well but also drains | **Best for growing plants!** | A mix of sand, clay, and **humus** (decayed plant/animal matter) |
 
 > **Humus** is the dark, rich part of soil made from decomposed (broken down) leaves, plants, and animals. It gives soil its nutrients.
 
-### Fossils — Introduction
+### Fossils - Introduction
 
 A **fossil** is the remains or imprint of a living thing that lived long ago, preserved in rock.
 
@@ -349,7 +349,7 @@ A **fossil** is the remains or imprint of a living thing that lived long ago, pr
 3. The animal's parts slowly turn to stone (minerals replace the bone)
 4. Millions of years later, erosion or digging reveals the fossil
 
-> **Fun fact:** Most dead animals do NOT become fossils. The conditions have to be just right — quick burial, no oxygen, and minerals in the sediment. Fossils are rare!
+> **Fun fact:** Most dead animals do NOT become fossils. The conditions have to be just right - quick burial, no oxygen, and minerals in the sediment. Fossils are rare!
 
 ---
 
@@ -370,7 +370,7 @@ A **fossil** is the remains or imprint of a living thing that lived long ago, pr
 **Examples of friction in daily life:**
 - ✅ Brakes on a bicycle use friction to stop
 - ✅ Your shoes have rubber soles to create friction so you don't slip
-- ❌ Oil makes surfaces slippery (reduces friction — that's why we lubricate machines)
+- ❌ Oil makes surfaces slippery (reduces friction - that's why we lubricate machines)
 
 ### Magnets
 
@@ -401,14 +401,14 @@ A **fossil** is the remains or imprint of a living thing that lived long ago, pr
 |---|---|
 | What does gravity do? | Pulls everything toward the center of the Earth |
 | What falls faster? | In real life, heavier and lighter objects fall at about the **same speed** (Galileo proved this!) |
-| What goes up? | Must come down (because of gravity!) — throw a ball up, it comes back down |
+| What goes up? | Must come down (because of gravity!) - throw a ball up, it comes back down |
 | Who has more gravity? | Bigger/heavier objects have stronger gravity (Earth's gravity is much stronger than the Moon's) |
 
 > **Common misconception:** Many students think heavier objects fall faster. If you drop a feather and a hammer in a vacuum (no air), they land at the same time! In regular air, the feather falls slower because air resistance pushes up on it.
 
 ---
 
-## 8. Energy — Light and Sound
+## 8. Energy - Light and Sound
 
 ### Light
 
@@ -419,7 +419,7 @@ A **fossil** is the remains or imprint of a living thing that lived long ago, pr
 | ☀️ Sun | Natural | The biggest and most important light source |
 | 🔥 Fire/Candle | Natural | Produces light from burning |
 | 💡 Light bulb | Artificial | Electric light |
-| 🌙 Moon | Reflects light | The Moon does NOT make its own light — it reflects the Sun's light! |
+| 🌙 Moon | Reflects light | The Moon does NOT make its own light - it reflects the Sun's light! |
 | 🐙 Anglerfish (deep sea) | Natural | Some living things can make their own light (bioluminescence) |
 
 ### Shadows
@@ -478,14 +478,14 @@ Scientists follow a process called the **scientific method** to answer questions
       ↓
   👀 Step 4: OBSERVE and Record your results
       ↓
-  📝 Step 5: CONCLUDE — Was your hypothesis correct?
+  📝 Step 5: CONCLUDE - Was your hypothesis correct?
 ```
 
 | Step | What To Do | Example |
 |---|---|---|
-| ❓ **Question** | Start with something you wonder about | "Which freezes faster — freshwater or saltwater?" |
-| 💡 **Hypothesis** | A prediction — "I think..." based on what you know | "I think freshwater will freeze faster because salt lowers the freezing point" |
-| 🔬 **Test** | Do a fair experiment to check your hypothesis | Put two cups of water in the freezer — one fresh, one with salt. Time how long each takes to freeze |
+| ❓ **Question** | Start with something you wonder about | "Which freezes faster - freshwater or saltwater?" |
+| 💡 **Hypothesis** | A prediction - "I think..." based on what you know | "I think freshwater will freeze faster because salt lowers the freezing point" |
+| 🔬 **Test** | Do a fair experiment to check your hypothesis | Put two cups of water in the freezer - one fresh, one with salt. Time how long each takes to freeze |
 | 👀 **Observe** | Watch carefully and record what happens with numbers and notes | "Freshwater froze in 2 hours. Saltwater has not frozen after 3 hours." |
 | 📝 **Conclude** | Decide if your hypothesis was right or wrong | "My hypothesis was correct! Saltwater takes longer to freeze than freshwater." |
 

@@ -1,8 +1,8 @@
 # Grade 3 Science Knowledge Base
 
-> **Grade Level:** 3rd Grade (Ages 8–9)
+> **Grade Level:** 3rd Grade (Ages 8-9)
 > **Last Updated:** July 2026
-> **Curriculum Alignment:** Next Generation Science Standards (NGSS) — Grade 3
+> **Curriculum Alignment:** Next Generation Science Standards (NGSS) - Grade 3
 
 ---
 
@@ -65,9 +65,9 @@ Energy flows through an ecosystem in a **pyramid shape** because energy is **los
 
 | Misconception | Reality |
 |---|---|
-| "Decomposers are gross and useless" | Decomposers are essential — without them, dead things would pile up and nutrients would never return to the soil |
+| "Decomposers are gross and useless" | Decomposers are essential - without them, dead things would pile up and nutrients would never return to the soil |
 | "All consumers eat only plants or only animals" | Many consumers are **omnivores** and eat both (e.g., bears, humans, raccoons) |
-| "Producers don't need energy" | Producers need solar energy to make food — they just get it from the sun instead of eating |
+| "Producers don't need energy" | Producers need solar energy to make food - they just get it from the sun instead of eating |
 
 ### Teaching Tip
 Build a classroom food web with string! Give each student a picture of an organism and have them connect string to what they eat. Pull one string to show what happens when one species is removed.
@@ -103,12 +103,12 @@ A **habitat** is the natural home where an organism lives. An **adaptation** is 
 
 | Misconception | Reality |
 |---|---|
-| "Organisms can choose their adaptations" | Adaptations develop over many generations through a process called natural selection — they are not a choice |
+| "Organisms can choose their adaptations" | Adaptations develop over many generations through a process called natural selection - they are not a choice |
 | "Camouflage means the animal is invisible" | Camouflage makes an animal harder to see, not invisible. Movement can still give them away |
-| "Polar bears have white fur to stay warm" | Their fur is actually hollow and clear (looks white) — the hollow hairs trap warmth, and the skin underneath is black to absorb heat |
+| "Polar bears have white fur to stay warm" | Their fur is actually hollow and clear (looks white) - the hollow hairs trap warmth, and the skin underneath is black to absorb heat |
 
 ### Teaching Tip
-Play a "spot the animal" game with camouflage photos. Students compete to find hidden animals — it makes the concept of camouflage tangible and fun.
+Play a "spot the animal" game with camouflage photos. Students compete to find hidden animals - it makes the concept of camouflage tangible and fun.
 
 ---
 
@@ -120,16 +120,16 @@ Plants have specialized structures that help them survive. Each part of the plan
 ### Plant Structure Overview
 
 ```
-        🌸 Flower — Reproduction: makes seeds
+        🌸 Flower - Reproduction: makes seeds
         │
-       🌿 Leaf — Makes food (photosynthesis), exchanges gases
+       🌿 Leaf - Makes food (photosynthesis), exchanges gases
         │
-   ━━━━━━━━━━━━  Stem — Transports water and nutrients; supports the plant
+   ━━━━━━━━━━━━  Stem - Transports water and nutrients; supports the plant
         │
-       🌱 Roots — Absorbs water and minerals; anchors the plant
+       🌱 Roots - Absorbs water and minerals; anchors the plant
 ```
 
-### Inside a Stem — Xylem and Phloem
+### Inside a Stem - Xylem and Phloem
 
 Plants have two important "pipelines" inside their stems:
 
@@ -159,7 +159,7 @@ Plants have two important "pipelines" inside their stems:
   ═══════════  Bottom of leaf
    🔴  🔴  🔴   Stomata (pores for gas exchange)
        │
-  CO₂ goes IN →  O₂ comes OUT
+  CO2 goes IN →  O2 comes OUT
 ```
 
 ### Root Types
@@ -173,9 +173,9 @@ Plants have two important "pipelines" inside their stems:
 
 | Misconception | Reality |
 |---|---|
-| "Plants get food from the soil" | Plants make their OWN food using sunlight, water, and CO₂. Soil provides water and minerals, not "food" |
-| "Roots only anchor the plant" | Roots also absorb water and dissolved minerals — that's their main job |
-| "Plants breathe like humans" | Plants "breathe" through stomata, but they take in CO₂ and release O₂ (the opposite of humans) |
+| "Plants get food from the soil" | Plants make their OWN food using sunlight, water, and CO2. Soil provides water and minerals, not "food" |
+| "Roots only anchor the plant" | Roots also absorb water and dissolved minerals - that's their main job |
+| "Plants breathe like humans" | Plants "breathe" through stomata, but they take in CO2 and release O2 (the opposite of humans) |
 
 ### Teaching Tip
 Do the **celery experiment**: Place celery stalks in colored water (food coloring). After a few hours, students can see the colored water travel up the xylem. Cut the celery crosswise to see the xylem tubes clearly.
@@ -197,7 +197,7 @@ Scientists classify animals into two big groups based on whether they have a **b
 | 🐦 **Birds** | Feathers; beak (no teeth); lay eggs; most can fly | Eagle, penguin, robin, ostrich |
 | 🐕 **Mammals** | Hair/fur; feed babies with milk; warm-blooded; most give live birth | Dog, whale, bat, human, kangaroo |
 
-> **Memory trick:** "FARM B" — **F**ish, **A**mphibians, **R**eptiles, **M**ammals, **B**irds
+> **Memory trick:** "FARM B" - **F**ish, **A**mphibians, **R**eptiles, **M**ammals, **B**irds
 
 ### Invertebrates (Animals WITHOUT a Backbone)
 
@@ -217,7 +217,7 @@ Scientists classify animals into two big groups based on whether they have a **b
 | Misconception | Reality |
 |---|---|
 | "All invertebrates are insects" | Insects are just ONE group of invertebrates. Spiders, worms, snails, and jellyfish are also invertebrates |
-| "Spiders are insects" | Spiders are arachnids — they have 8 legs and 2 body parts, while insects have 6 legs and 3 body parts |
+| "Spiders are insects" | Spiders are arachnids - they have 8 legs and 2 body parts, while insects have 6 legs and 3 body parts |
 | "All mammals give live birth" | The platypus and echidna are mammals that lay eggs! |
 
 ### Teaching Tip
@@ -250,15 +250,15 @@ Before talking about organs, we need to know what they are made of. **Cells** ar
 | 🗣️ **Trachea** (windpipe) | Tube that carries air to the lungs |
 | 🫁 **Lungs** | Main organs where gas exchange happens |
 | 💨 **Bronchi/Bronchioles** | Smaller tubes inside the lungs that branch like a tree |
-| 🎈 **Alveoli** (al-VEE-oh-lie) | Tiny air sacs where O₂ enters blood and CO₂ leaves it |
+| 🎈 **Alveoli** (al-VEE-oh-lie) | Tiny air sacs where O2 enters blood and CO2 leaves it |
 
 ```
   Air path:
   Nose → Trachea → Bronchi → Bronchioles → Alveoli
 
   At the alveoli:
-  O₂ (oxygen) enters the BLOOD
-  CO₂ (carbon dioxide) leaves the BLOOD → breathed out
+  O2 (oxygen) enters the BLOOD
+  CO2 (carbon dioxide) leaves the BLOOD → breathed out
 ```
 
 > **Fun fact:** If you laid out all the alveoli in your lungs flat, they would cover the area of a tennis court!
@@ -279,7 +279,7 @@ Before talking about organs, we need to know what they are made of. **Cells** ar
   Blood flow:
   Heart → Arteries → Capillaries → Veins → Heart
 
-  Lungs add O₂ to blood → Heart pumps it to body → Body uses O₂ → Blood returns with CO₂ → Lungs remove CO₂
+  Lungs add O2 to blood → Heart pumps it to body → Body uses O2 → Blood returns with CO2 → Lungs remove CO2
 ```
 
 ### Nervous System
@@ -298,7 +298,7 @@ Before talking about organs, we need to know what they are made of. **Cells** ar
 
 | Misconception | Reality |
 |---|---|
-| "Our lungs make oxygen" | Lungs do NOT make oxygen — they bring it IN from the air and transfer it to the blood |
+| "Our lungs make oxygen" | Lungs do NOT make oxygen - they bring it IN from the air and transfer it to the blood |
 | "Veins carry only oxygen-poor blood" | Most veins carry oxygen-poor blood, but pulmonary veins carry oxygen-rich blood from lungs to heart |
 | "The heart is on the left side of the chest" | The heart is actually in the **center** of the chest, but it leans slightly to the left, which is why we feel our heartbeat more on the left |
 
@@ -307,12 +307,12 @@ Students can feel their heart rate before and after jumping jacks. This demonstr
 
 ---
 
-## 6. Physical Science — Matter and Changes
+## 6. Physical Science - Matter and Changes
 
 ### Key Concept
 **Matter** is anything that has mass and takes up space (has volume). Everything around you is matter!
 
-### States of Matter — Particle Model
+### States of Matter - Particle Model
 
 Matter exists mainly in three states. The **particle model** explains these states using tiny invisible particles:
 
@@ -339,7 +339,7 @@ Matter exists mainly in three states. The **particle model** explains these stat
 | **What happens** | Appearance changes but NO new substance is formed | One or more NEW substances are formed |
 | **Reversible?** | Usually reversible | Usually NOT easily reversible |
 | **Examples** | Ice melting, paper tearing, dissolving salt in water, cutting wood | Burning paper, rusting iron, baking a cake, digesting food |
-| **How to tell** | Same substance — just looks different | New colors, smells, gases, or heat produced |
+| **How to tell** | Same substance - just looks different | New colors, smells, gases, or heat produced |
 
 **Signs of a chemical change (CLUES, not guarantees):**
 - 🌡️ Change in temperature (gets hot or cold)
@@ -354,8 +354,8 @@ Matter exists mainly in three states. The **particle model** explains these stat
 
 | Misconception | Reality |
 |---|---|
-| "Dissolving salt in water is a chemical change" | Dissolving is a PHYSICAL change — the salt is still salt, just spread out in water. You can get it back by evaporating the water |
-| "All changes in state are chemical changes" | Changes of state (melting, freezing, boiling, condensing) are PHYSICAL changes — the substance stays the same |
+| "Dissolving salt in water is a chemical change" | Dissolving is a PHYSICAL change - the salt is still salt, just spread out in water. You can get it back by evaporating the water |
+| "All changes in state are chemical changes" | Changes of state (melting, freezing, boiling, condensing) are PHYSICAL changes - the substance stays the same |
 | "Burning and melting are the same thing" | Melting = physical (solid to liquid, same substance). Burning = chemical (substance is permanently changed by reacting with oxygen) |
 
 ### Teaching Tip
@@ -366,7 +366,7 @@ Do the "mystery powder" activity: Give students baking soda, sugar, salt, and co
 ## 7. Heat Transfer
 
 ### Key Concept
-**Heat** is the transfer of thermal energy from a warmer object to a cooler object. Heat always flows from **HOT to COLD** — never the other way.
+**Heat** is the transfer of thermal energy from a warmer object to a cooler object. Heat always flows from **HOT to COLD** - never the other way.
 
 ### Three Methods of Heat Transfer
 
@@ -374,7 +374,7 @@ Do the "mystery powder" activity: Give students baking soda, sugar, salt, and co
 |---|---|---|
 | 🔥 **Conduction** | Heat transfers through **direct contact** between objects | Touching a hot pan; a metal spoon in hot soup; bare feet on warm sand |
 | 💨 **Convection** | Heat transfers through the **movement of fluids** (liquids or gases) | Hot air rising from a heater; boiling water bubbling up; wind currents |
-| ☀️ **Radiation** | Heat transfers through **electromagnetic waves** — no contact or matter needed! | Feeling the sun's warmth; heat from a campfire reaching your face |
+| ☀️ **Radiation** | Heat transfers through **electromagnetic waves** - no contact or matter needed! | Feeling the sun's warmth; heat from a campfire reaching your face |
 
 ```
   🔥 Conduction:  [HOT PAN] ──direct touch──▶ [YOUR HAND]
@@ -395,7 +395,7 @@ Do the "mystery powder" activity: Give students baking soda, sugar, salt, and co
 
 | Misconception | Reality |
 |---|---|
-| "Cold objects have 'cold' that transfers to hot objects" | Cold objects don't transfer "cold" — heat transfers FROM the warm object INTO the cold one. "Cold" is just the absence of heat |
+| "Cold objects have 'cold' that transfers to hot objects" | Cold objects don't transfer "cold" - heat transfers FROM the warm object INTO the cold one. "Cold" is just the absence of heat |
 | "Metal feels colder than wood because it is colder" | Both are at the same room temperature, but metal CONDUCTS heat away from your hand faster, so it FEELS colder |
 
 ### Teaching Tip
@@ -425,7 +425,7 @@ Simple machines don't reduce the **amount of work**, but they make work **easier
 - Changing the direction of force (a pulley lets you pull DOWN to lift something UP)
 - Increasing the distance over which the force is applied (a longer lever makes lifting easier)
 
-> **Important rule:** There's a trade-off — when a simple machine reduces force, you usually have to apply it over a longer distance. Work = Force × Distance, and work stays the same!
+> **Important rule:** There's a trade-off - when a simple machine reduces force, you usually have to apply it over a longer distance. Work = Force × Distance, and work stays the same!
 
 ### Common Misconceptions
 
@@ -440,7 +440,7 @@ Build lever stations with rulers and erasers (fulcrum). Have students balance di
 
 ---
 
-## 9. Earth Science — Inside the Earth
+## 9. Earth Science - Inside the Earth
 
 ### Key Concept
 The Earth is made of **layers**, kind of like a giant onion. Each layer has different properties.
@@ -452,26 +452,26 @@ The Earth is made of **layers**, kind of like a giant onion. Each layer has diff
 | 🌡️ **Inner Core** | Solid iron and nickel | **Solid** (despite extreme heat!) | About 1,220 km |
 | 🧡 **Outer Core** | Liquid iron and nickel | **Liquid** | About 2,260 km |
 | 🟤 **Mantle** | Silicate rocks (mostly solid but some semi-melted) | **Semi-solid** (like thick putty) | About 2,900 km |
-| 🟢 **Crust** | Various rocks and minerals | **Solid** | About 5–70 km (thinnest layer!) |
+| 🟢 **Crust** | Various rocks and minerals | **Solid** | About 5-70 km (thinnest layer!) |
 
 ```
   🔴 Inner Core (solid iron)
   🟠 Outer Core (liquid iron)
   🟤 Mantle (thick, slow-moving rock)
-  🟢 Crust (thin rocky shell) — where we live!
+  🟢 Crust (thin rocky shell) - where we live!
 ```
 
-> **Amazing fact:** The center of the Earth (inner core) is about **5,400°C** (9,800°F) — almost as hot as the surface of the Sun! It stays solid because the immense pressure prevents it from melting.
+> **Amazing fact:** The center of the Earth (inner core) is about **5,400°C** (9,800°F) - almost as hot as the surface of the Sun! It stays solid because the immense pressure prevents it from melting.
 
-### The Crust — Where We Live
-- **Continental crust** — thicker (30–70 km), made mostly of granite, under continents
-- **Oceanic crust** — thinner (5–10 km), made mostly of basalt, under oceans
+### The Crust - Where We Live
+- **Continental crust** - thicker (30-70 km), made mostly of granite, under continents
+- **Oceanic crust** - thinner (5-10 km), made mostly of basalt, under oceans
 
 ### Common Misconceptions
 
 | Misconception | Reality |
 |---|---|
-| "We could dig to the center of the Earth" | The deepest hole humans have ever dug is about 12 km — the center is over 6,300 km away! The temperature and pressure make it impossible |
+| "We could dig to the center of the Earth" | The deepest hole humans have ever dug is about 12 km - the center is over 6,300 km away! The temperature and pressure make it impossible |
 | "Magma is the same as lava" | **Magma** is molten rock UNDERGROUND. **Lava** is molten rock that has broken through to the surface |
 
 ### Teaching Tip
@@ -531,7 +531,7 @@ Use crayon shavings to model the rock cycle: press shavings together = sedimenta
 ### Key Concept
 A **mineral** is a naturally occurring, non-living solid with a specific chemical composition and crystal structure.
 
-### Properties of Minerals — How Scientists Identify Them
+### Properties of Minerals - How Scientists Identify Them
 
 | Property | What It Means | Tools/Methods |
 |---|---|---|
@@ -539,21 +539,21 @@ A **mineral** is a naturally occurring, non-living solid with a specific chemica
 | ✨ **Luster** | How the mineral reflects light (metallic, glassy, dull, pearly) | Observe under light |
 | 💪 **Hardness** | How easily the mineral can be scratched | Mohs Hardness Scale (1 = talc/soft, 10 = diamond/hardest) |
 | ⚡ **Streak** | The color of the powder left when the mineral is rubbed on a porcelain plate | Streak plate (unglazed porcelain) |
-| 🔨 **Cleavage/Fracture** | How the mineral breaks — in flat planes (cleavage) or unevenly (fracture) | Hammer or break by hand |
+| 🔨 **Cleavage/Fracture** | How the mineral breaks - in flat planes (cleavage) or unevenly (fracture) | Hammer or break by hand |
 | 🏋️ **Density** | How heavy the mineral is for its size | Compare weight to water or other objects |
 
 ### Mohs Hardness Scale
 
 | Hardness | Mineral | Common Object with Similar Hardness |
 |---|---|---|
-| 1 | Talc | Softest — can be scratched with a fingernail |
+| 1 | Talc | Softest - can be scratched with a fingernail |
 | 2 | Gypsum | Fingernail can scratch it |
 | 3 | Calcite | Copper coin can scratch it |
 | 4 | Fluorite | Steel knife can scratch it |
 | 5 | Apatite | Steel knife barely scratches it |
 | 6 | Feldspar | Steel nail can scratch it; scratches glass |
 | 7 | Quartz | Scratches glass easily |
-| 8 | Topaz | Very hard — scratches quartz |
+| 8 | Topaz | Very hard - scratches quartz |
 | 9 | Corundum | Extremely hard (sapphires and rubies) |
 | 10 | Diamond | Hardest natural substance on Earth! |
 
@@ -564,8 +564,8 @@ A **mineral** is a naturally occurring, non-living solid with a specific chemica
 | Misconception | Reality |
 |---|---|
 | "A diamond can be smashed with a hammer" | While diamond is the HARDEST (hardest to scratch), it is NOT the toughest. A hammer can shatter a diamond because hardness and toughness are different properties |
-| "Minerals and rocks are the same thing" | A mineral is ONE substance with a specific chemical formula (e.g., quartz = SiO₂). A rock is made of one or MORE minerals mixed together |
-| "All crystals are minerals" | Not all crystals are minerals — ice is a crystal but it is not a mineral (it's not a solid at room temperature). All minerals form crystals though! |
+| "Minerals and rocks are the same thing" | A mineral is ONE substance with a specific chemical formula (e.g., quartz = SiO2). A rock is made of one or MORE minerals mixed together |
+| "All crystals are minerals" | Not all crystals are minerals - ice is a crystal but it is not a mineral (it's not a solid at room temperature). All minerals form crystals though! |
 
 ### Teaching Tip
 Set up a mineral identification station with samples of different minerals and testing tools (streak plates, nails, pennies). Students use the properties to identify unknown minerals.
@@ -577,7 +577,7 @@ Set up a mineral identification station with samples of different minerals and t
 ### Key Concept
 **Weathering** is the breaking down of rocks and minerals at the Earth's surface. **Erosion** is the carrying away of those broken pieces.
 
-### Weathering — Breaking It Down
+### Weathering - Breaking It Down
 
 | Type | How It Happens | Examples |
 |---|---|---|
@@ -585,7 +585,7 @@ Set up a mineral identification station with samples of different minerals and t
 | 🧪 **Chemical** | Rocks are broken down by chemical reactions that CHANGE the rock's composition | Acid rain dissolving limestone, rusting of iron-bearing rocks, oxidation |
 | 🌿 **Biological** | Living things help break down rocks | Tree roots cracking rocks, lichens producing acids, burrowing animals |
 
-### Erosion — Moving It Away
+### Erosion - Moving It Away
 
 | Agent of Erosion | What It Carries | What It Creates |
 |---|---|---|
@@ -605,17 +605,17 @@ Set up a mineral identification station with samples of different minerals and t
 | "Humans can't cause erosion" | Human activities like farming (removing plant roots), construction, and deforestation dramatically increase erosion |
 
 ### Teaching Tip
-Shake sugar cubes in jars — one with water, one without. The water one shows faster weathering. Pour sand on a mini "landscape" and use a straw to blow (wind erosion) or pour water (water erosion).
+Shake sugar cubes in jars - one with water, one without. The water one shows faster weathering. Pour sand on a mini "landscape" and use a straw to blow (wind erosion) or pour water (water erosion).
 
 ---
 
-## 13. Space — The Solar System
+## 13. Space - The Solar System
 
 ### Key Concept
 Our **solar system** consists of the Sun and everything that orbits (travels around) it, including planets, moons, asteroids, and comets.
 
 ### The Sun
-- A **star** — a massive ball of hot, glowing gas
+- A **star** - a massive ball of hot, glowing gas
 - Center of our solar system
 - Contains about **99.8%** of all the mass in the solar system
 - Surface temperature: about **5,500°C** (10,000°F)
@@ -626,7 +626,7 @@ Our **solar system** consists of the Sun and everything that orbits (travels aro
 | # | Planet | Type | Key Feature |
 |---|---|---|---|
 | 1 | ☿️ **Mercury** | Terrestrial (rocky) | Smallest planet; closest to the Sun; extreme temperature swings |
-| 2 | ♀️ **Venus** | Terrestrial (rocky) | Hottest planet (thick CO₂ atmosphere); rotates backwards; called Earth's "sister planet" |
+| 2 | ♀️ **Venus** | Terrestrial (rocky) | Hottest planet (thick CO2 atmosphere); rotates backwards; called Earth's "sister planet" |
 | 3 | 🌍 **Earth** | Terrestrial (rocky) | Only planet known to have liquid water and life; one moon |
 | 4 | 🔴 **Mars** | Terrestrial (rocky) | "Red Planet" (iron oxide on surface); has the tallest volcano (Olympus Mons) |
 | 5 | 🟤 **Jupiter** | Gas giant | Largest planet; Great Red Spot (giant storm); has 95+ moons |
@@ -634,7 +634,7 @@ Our **solar system** consists of the Sun and everything that orbits (travels aro
 | 7 | 💚 **Uranus** | Ice giant | Rotates on its side; pale blue-green color; extremely cold |
 | 8 | 🔵 **Neptune** | Ice giant | Farthest planet from the Sun; strongest winds in the solar system |
 
-> **Memory trick:** "**M**y **V**ery **E**ducated **M**other **J**ust **S**erved **U**s **N**achos" — Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+> **Memory trick:** "**M**y **V**ery **E**ducated **M**other **J**ust **S**erved **U**s **N**achos" - Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
 
 ### Terrestrial vs Gas/Ice Giants
 
@@ -656,7 +656,7 @@ Our **solar system** consists of the Sun and everything that orbits (travels aro
 
 ---
 
-## 14. Earth's Motion — Rotation, Revolution, and Seasons
+## 14. Earth's Motion - Rotation, Revolution, and Seasons
 
 ### Key Concept
 Earth has two main motions: **rotation** (spinning on its axis) and **revolution** (orbiting the Sun).
@@ -667,7 +667,7 @@ Earth has two main motions: **rotation** (spinning on its axis) and **revolution
 | 🌍 **Revolution** | Earth orbiting (traveling around) the Sun | **365.25 days** (one year) | Seasons, changes in weather patterns |
 
 ### Why We Have Seasons
-Seasons happen because Earth's axis is **tilted at about 23.5°** — NOT because Earth is closer to or farther from the Sun.
+Seasons happen because Earth's axis is **tilted at about 23.5°** - NOT because Earth is closer to or farther from the Sun.
 
 | Season | What Happens |
 |---|---|
@@ -675,7 +675,7 @@ Seasons happen because Earth's axis is **tilted at about 23.5°** — NOT becaus
 | ❄️ **Winter** | Your hemisphere is **tilted AWAY** from the Sun → less direct sunlight → shorter days → colder weather |
 | 🌸 **Spring/Fall** | Hemispheres are neither tilted toward nor away → moderate temperatures |
 
-> **Key insight:** When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa. The tilt stays the same direction as Earth orbits — it doesn't wobble!
+> **Key insight:** When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa. The tilt stays the same direction as Earth orbits - it doesn't wobble!
 
 ### Common Misconceptions
 
@@ -686,20 +686,20 @@ Seasons happen because Earth's axis is **tilted at about 23.5°** — NOT becaus
 | "Every place on Earth has 4 distinct seasons" | Places near the equator have about the same weather all year. Places near the poles have extreme light/dark cycles with less variation in temperature seasons |
 
 ### Teaching Tip
-Use a flashlight and a globe (or a ball on a tilted stick) to demonstrate the tilt and seasons. Shine the flashlight on the tilted ball as it orbits — students can see how one hemisphere gets more direct light.
+Use a flashlight and a globe (or a ball on a tilted stick) to demonstrate the tilt and seasons. Shine the flashlight on the tilted ball as it orbits - students can see how one hemisphere gets more direct light.
 
 ---
 
 ## 15. Moon Phases
 
 ### Key Concept
-The **Moon** is Earth's natural satellite. It does not produce its own light — we see it because **sunlight reflects off its surface**. As the Moon orbits Earth, we see different amounts of its lit side, creating **phases**.
+The **Moon** is Earth's natural satellite. It does not produce its own light - we see it because **sunlight reflects off its surface**. As the Moon orbits Earth, we see different amounts of its lit side, creating **phases**.
 
 ### The Eight Moon Phases (in order)
 
 | Phase | What We See | Position |
 |---|---|---|
-| 🌑 **New Moon** | Dark — Moon is between Earth and Sun (lit side faces away from us) | Moon is between Earth and Sun |
+| 🌑 **New Moon** | Dark - Moon is between Earth and Sun (lit side faces away from us) | Moon is between Earth and Sun |
 | 🌒 **Waxing Crescent** | Small sliver of light on the right side; growing | Moon is moving away from the Sun |
 | 🌓 **First Quarter** | Right half is lit (like a half moon) | Moon is 90° from the Sun |
 | 🌔 **Waxing Gibbous** | More than half is lit on the right side; almost full | Moon is approaching full |
@@ -713,13 +713,13 @@ The **Moon** is Earth's natural satellite. It does not produce its own light —
 > **Another trick:** In the Northern Hemisphere, the lit part of a waxing moon is always on the **RIGHT**; waning is always on the **LEFT**.
 
 ### How Long Does Each Phase Take?
-The full cycle (New Moon to New Moon) takes about **29.5 days** — roughly one month. Each phase lasts about 3–4 days.
+The full cycle (New Moon to New Moon) takes about **29.5 days** - roughly one month. Each phase lasts about 3-4 days.
 
 ### Common Misconceptions
 
 | Misconception | Reality |
 |---|---|
-| "The Moon changes shape" | The Moon is always a sphere — only the amount of sunlight hitting the side we can see changes |
+| "The Moon changes shape" | The Moon is always a sphere - only the amount of sunlight hitting the side we can see changes |
 | "The Moon produces its own light" | The Moon reflects sunlight. It has no light of its own, just like Earth at night reflects city lights |
 | "There's a 'dark side of the Moon' that never gets sunlight" | Every part of the Moon gets sunlight at some point. The "far side" (the side that always faces away from Earth) gets sunlight when the Moon is between Earth and the Sun |
 
@@ -734,7 +734,7 @@ Use the Oreo cookie activity: twist cookies apart and use a spoon to scrape the 
 A **star** is a huge ball of hot, glowing gas (mostly hydrogen and helium) that produces light and heat through a process called **nuclear fusion** in its core.
 
 ### Facts About Stars
-- Our Sun is a **medium-sized star** — it is actually pretty average
+- Our Sun is a **medium-sized star** - it is actually pretty average
 - Stars appear to **twinkle** because Earth's atmosphere bends their light
 - Stars have different **colors** based on temperature:
   - 🔵 **Blue/white** = hottest (over 10,000°C)
@@ -760,7 +760,7 @@ A **constellation** is a pattern of stars that ancient people imagined formed pi
 | Misconception | Reality |
 |---|---|
 | "Stars only come out at night" | Stars are always there! During the day, the Sun's brightness overwhelms the starlight, so we cannot see them |
-| "Stars are small" | Most stars are ENORMOUS — many are much bigger than the Sun. They look tiny because they are incredibly far away |
+| "Stars are small" | Most stars are ENORMOUS - many are much bigger than the Sun. They look tiny because they are incredibly far away |
 | "The Sun is the biggest star" | The Sun is average-sized. Many stars are much larger (Betelgeuse is about 700 times the Sun's diameter!) |
 
 ### Teaching Tip
@@ -768,7 +768,7 @@ Use star maps or apps like Stellarium to identify constellations visible from yo
 
 ---
 
-## 17. Forces — Balanced, Unbalanced, Speed
+## 17. Forces - Balanced, Unbalanced, Speed
 
 ### Key Concept
 A **force** is a push or a pull. Forces can make objects start moving, stop moving, speed up, slow down, or change direction.
@@ -778,14 +778,14 @@ A **force** is a push or a pull. Forces can make objects start moving, stop movi
 | Type | Description | What Happens to the Object |
 |---|---|---|
 | ⚖️ **Balanced forces** | Equal forces acting in opposite directions | Object stays still OR keeps moving at a constant speed in a straight line |
-| ➡️ **Unbalanced forces** | Forces are NOT equal — one force is stronger | Object speeds up, slows down, or changes direction |
+| ➡️ **Unbalanced forces** | Forces are NOT equal - one force is stronger | Object speeds up, slows down, or changes direction |
 
 **Examples:**
 - **Balanced:** You push a box with 50N of force and friction pushes back with 50N → the box doesn't move (or moves at constant speed)
 - **Unbalanced:** You push a box with 60N and friction pushes back with 20N → the box accelerates (speeds up)
 
 ### Speed
-**Speed** tells us how fast something is moving — how far it travels in a certain amount of time.
+**Speed** tells us how fast something is moving - how far it travels in a certain amount of time.
 
 $$\text{Speed} = \frac{\text{Distance}}{\text{Time}}$$
 
@@ -805,7 +805,7 @@ $$\text{Speed} = \frac{\text{Distance}}{\text{Time}}$$
 | "Bigger objects always fall faster" | In a vacuum (no air), all objects fall at the same speed regardless of mass. A feather and a bowling ball would hit the ground at the same time! Air resistance is what makes a feather fall slower |
 
 ### Teaching Tip
-Set up a "tug of war" with equal numbers on each side (balanced — no one moves) and then add one more person to one side (unbalanced — that side starts winning). Physical and visual!
+Set up a "tug of war" with equal numbers on each side (balanced - no one moves) and then add one more person to one side (unbalanced - that side starts winning). Physical and visual!
 
 ---
 
@@ -818,16 +818,16 @@ Set up a "tug of war" with equal numbers on each side (balanced — no one moves
 |---|---|---|
 | **Definition** | The amount of MATTER in an object | The FORCE of gravity pulling on an object |
 | **What it depends on** | Only on the object itself (its atoms and molecules) | On the object's mass AND the strength of gravity |
-| **Does it change?** | NO — mass stays the same everywhere | YES — changes with gravity |
+| **Does it change?** | NO - mass stays the same everywhere | YES - changes with gravity |
 | **How to measure** | Balance scale (compares masses) | Spring scale (measures force of gravity) |
 | **Unit** | Kilograms (kg), grams (g) | Newtons (N) |
 
 ### Example
 If you weigh **50 kg** on Earth:
-- Your **mass** is 50 kg everywhere — Earth, Moon, Mars, deep space
+- Your **mass** is 50 kg everywhere - Earth, Moon, Mars, deep space
 - Your **weight** on Earth = ~490 N (normal gravity)
 - Your **weight** on the Moon = ~82 N (Moon's gravity is about 1/6 of Earth's)
-- Your **weight** in deep space (no gravity) = 0 N — you'd be weightless!
+- Your **weight** in deep space (no gravity) = 0 N - you'd be weightless!
 
 > **In space, astronauts are weightless but NOT massless.** They still have the same amount of matter in their bodies.
 
@@ -836,7 +836,7 @@ If you weigh **50 kg** on Earth:
 | Misconception | Reality |
 |---|---|
 | "Mass and weight are the same thing" | Mass is the amount of matter (constant); weight is the force of gravity (changes depending on location) |
-| "You would have zero mass in space" | You would have zero WEIGHT (no gravity to pull on you), but your MASS stays the same — you're still made of the same amount of matter |
+| "You would have zero mass in space" | You would have zero WEIGHT (no gravity to pull on you), but your MASS stays the same - you're still made of the same amount of matter |
 | "Heavier objects fall faster" | Heavier objects have more weight (more gravitational force), but they also have more mass to accelerate, so all objects fall at the same rate regardless of weight (ignoring air resistance) |
 
 ### Teaching Tip
@@ -880,7 +880,7 @@ These two are often paired:
 |---|---|---|
 | Definition | Energy of **motion** | Energy of **position** (stored) |
 | When it happens | Object IS moving | Object CAN move but ISN'T (yet) |
-| Formula | KE = ½ × mass × speed² | PE = mass × gravity × height |
+| Formula | KE = ½ × mass × speed^2 | PE = mass × gravity × height |
 | Example | A ball rolling down a hill | A ball sitting at the top of a hill |
 
 > **They convert back and forth:** A ball at the top of a hill has maximum potential energy. As it rolls down, potential energy converts to kinetic energy. At the bottom, it has maximum kinetic energy and minimum potential energy.
@@ -889,7 +889,7 @@ These two are often paired:
 
 | Misconception | Reality |
 |---|---|
-| "Energy can be created" | Energy can NEVER be created or destroyed — only transformed from one form to another (Conservation of Energy) |
+| "Energy can be created" | Energy can NEVER be created or destroyed - only transformed from one form to another (Conservation of Energy) |
 | "An object at rest has no energy" | An object at rest can still have potential energy (stored energy) and thermal energy (from particle motion) |
 | "All energy transformations are useful" | Some energy is always "lost" as heat (thermal energy) during transformations. No transformation is 100% efficient |
 
@@ -900,4 +900,4 @@ Drop a ball from different heights and measure how high it bounces back. Student
 
 > **End of Grade 3 Science Knowledge Base**
 > 
-> *Aligned with NGSS Grade 3 standards. Content designed for ages 8–9.*
+> *Aligned with NGSS Grade 3 standards. Content designed for ages 8-9.*

@@ -8,7 +8,7 @@ Logical thinking is the ability to analyze information, identify patterns, draw 
 
 ## 1. Patterns
 
-### 1.1 Visual Patterns — What Comes Next?
+### 1.1 Visual Patterns - What Comes Next?
 
 Visual patterns use shapes, colors, or arrangements that follow a repeating rule. To solve them, identify how each step changes from the one before it.
 
@@ -56,16 +56,16 @@ Visual patterns use shapes, colors, or arrangements that follow a repeating rule
 
 ---
 
-### 1.2 Number Patterns — Arithmetic and Geometric
+### 1.2 Number Patterns - Arithmetic and Geometric
 
 #### Arithmetic Sequences
 
 An arithmetic sequence adds (or subtracts) the same number each time. This fixed number is called the **common difference (d)**.
 
-**Formula:** aₙ = a₁ + (n − 1) × d
+**Formula:** aₙ = a1 + (n − 1) × d
 
 Where:
-- a₁ = first term
+- a1 = first term
 - d = common difference
 - n = term number
 - aₙ = the nth term
@@ -75,24 +75,24 @@ Where:
 > Find the 20th term of: 5, 8, 11, 14, 17, ...
 
 **Solution:**
-- a₁ = 5
+- a1 = 5
 - d = 8 − 5 = 3
-- a₂₀ = 5 + (20 − 1) × 3 = 5 + 57 = **62**
+- a20 = 5 + (20 − 1) × 3 = 5 + 57 = **62**
 
 #### Geometric Sequences
 
 A geometric sequence multiplies (or divides) by the same number each time. This fixed number is called the **common ratio (r)**.
 
-**Formula:** aₙ = a₁ × r^(n−1)
+**Formula:** aₙ = a1 × r^(n−1)
 
 **Worked Example:**
 
 > Find the 8th term of: 3, 6, 12, 24, ...
 
 **Solution:**
-- a₁ = 3
+- a1 = 3
 - r = 6 ÷ 3 = 2
-- a₈ = 3 × 2⁷ = 3 × 128 = **384**
+- a8 = 3 × 2^7 = 3 × 128 = **384**
 
 #### Finding Missing Terms
 
@@ -105,14 +105,14 @@ Sometimes a sequence has gaps. Use the known terms to find the rule, then fill i
 **Solution:**
 - From 2 to 18 is a jump of 16 over two steps, but let's check: if d = 8, then 2, **10**, **18**, **26**, **34**... no, 34 ≠ 50.
 - If d = 8 doesn't reach 50, let's count positions: 2 (position 1), ? (position 2), 18 (position 3), ? (position 4), 50 (position 5).
-- From position 1 to position 3: a₃ = a₁ + 2d → 18 = 2 + 2d → d = 8.
-- But a₅ = 2 + 4×8 = 34 ≠ 50. So this isn't a simple arithmetic sequence.
-- Let's try: 2, **10**, 18, **32**, 50. Differences: 8, 8, 14, 18 — not constant.
-- Alternative: 2, **9**, 18, **33**, 50. Differences: 7, 9, 15, 17 — pattern not clear.
+- From position 1 to position 3: a3 = a1 + 2d → 18 = 2 + 2d → d = 8.
+- But a5 = 2 + 4×8 = 34 ≠ 50. So this isn't a simple arithmetic sequence.
+- Let's try: 2, **10**, 18, **32**, 50. Differences: 8, 8, 14, 18 - not constant.
+- Alternative: 2, **9**, 18, **33**, 50. Differences: 7, 9, 15, 17 - pattern not clear.
 - Actually, let's try a different approach. The differences of the differences (second differences): if the second differences are constant, this is a quadratic sequence.
-- Try: 2, 10, 22, 38, 50 — no, 38+12 ≠ 50.
-- Try: 2, 10, 22, 38, 58 — no.
-- Let me reconsider: 2, **10**, 18, **26**, **34** — but 34 ≠ 50.
+- Try: 2, 10, 22, 38, 50 - no, 38+12 ≠ 50.
+- Try: 2, 10, 22, 38, 58 - no.
+- Let me reconsider: 2, **10**, 18, **26**, **34** - but 34 ≠ 50.
 - A cleaner example is better. Here's a corrected one:
 
 **Corrected Worked Example:**
@@ -120,11 +120,11 @@ Sometimes a sequence has gaps. Use the known terms to find the rule, then fill i
 > Find the missing terms: 7, __, 21, 28, __
 
 **Solution:**
-- a₁ = 7, a₃ = 21 → 21 = 7 + 2d → d = 7
+- a1 = 7, a3 = 21 → 21 = 7 + 2d → d = 7
 - Sequence: 7, **14**, 21, 28, **35**
 
 **Teaching Tips:**
-- Start with finding the difference between consecutive terms — if it's constant, it's arithmetic.
+- Start with finding the difference between consecutive terms - if it's constant, it's arithmetic.
 - If the ratio between consecutive terms is constant, it's geometric.
 - For older students, teach the formulas but emphasize understanding the rule first.
 
@@ -145,13 +145,13 @@ Letter patterns use the position of letters in the alphabet (A=1, B=2, ..., Z=26
 
 > What comes next: A, C, E, G, __?
 
-**Solution:** A=1, C=3, E=5, G=7 — every other letter (skip one). Next is I (position 9).
+**Solution:** A=1, C=3, E=5, G=7 - every other letter (skip one). Next is I (position 9).
 
 **Worked Example 2:**
 
 > What comes next: B, D, H, __?
 
-**Solution:** B=2, D=4, H=8 — doubling each time. Next is P (position 16). Check: 2, 4, 8, 16. Yes, P.
+**Solution:** B=2, D=4, H=8 - doubling each time. Next is P (position 16). Check: 2, 4, 8, 16. Yes, P.
 
 **Worked Example 3:**
 
@@ -183,7 +183,7 @@ Letter patterns use the position of letters in the alphabet (A=1, B=2, ..., Z=26
 
 ## 2. Reasoning
 
-### 2.1 Analogies — Word and Visual
+### 2.1 Analogies - Word and Visual
 
 Analogies express relationships: "A is to B as C is to D" (A : B :: C : D). The key is identifying the relationship between the first pair and applying it to the second.
 
@@ -233,7 +233,7 @@ Analogies express relationships: "A is to B as C is to D" (A : B :: C : D). The 
 
 ---
 
-### 2.2 Deductive Reasoning — Clue-Based Puzzles
+### 2.2 Deductive Reasoning - Clue-Based Puzzles
 
 Deductive reasoning starts with general rules or given clues and draws specific conclusions that **must** be true.
 
@@ -270,7 +270,7 @@ Deductive reasoning starts with general rules or given clues and draws specific 
 - Combined: **Maya > Jordan > Sam > Alex**
 
 **Teaching Tips:**
-- Use "clue cards" — write each clue on a separate card and physically arrange them.
+- Use "clue cards" - write each clue on a separate card and physically arrange them.
 - Teach the question "What do I know for sure?" after reading each clue.
 - Common mistake: assuming information not given. Remind students to stick to the clues.
 
@@ -283,7 +283,7 @@ Deductive reasoning starts with general rules or given clues and draws specific 
 
 ---
 
-### 2.3 Inductive Reasoning — Generalizing from Examples
+### 2.3 Inductive Reasoning - Generalizing from Examples
 
 Inductive reasoning observes specific examples and makes a general rule or prediction. The conclusion is **likely** but not guaranteed.
 
@@ -308,7 +308,7 @@ Inductive reasoning observes specific examples and makes a general rule or predi
 
 > Monday was sunny. Tuesday was sunny. Wednesday was sunny. Predict Thursday's weather.
 
-**Solution:** Inductively, we might predict Thursday will be sunny too. But weather patterns change — this prediction has low certainty. This shows that inductive reasoning strength depends on how representative the examples are.
+**Solution:** Inductively, we might predict Thursday will be sunny too. But weather patterns change - this prediction has low certainty. This shows that inductive reasoning strength depends on how representative the examples are.
 
 **Worked Example 4:**
 
@@ -319,7 +319,7 @@ Inductive reasoning observes specific examples and makes a general rule or predi
 >
 > Conjecture: n + 1 is always prime when n is even.
 
-**Solution:** This conjecture is **false**. Counterexample: 12 + 1 = 13 (prime), but 14 + 1 = 15 (not prime). This is why we need to be careful with inductive reasoning — a single counterexample can break the rule.
+**Solution:** This conjecture is **false**. Counterexample: 12 + 1 = 13 (prime), but 14 + 1 = 15 (not prime). This is why we need to be careful with inductive reasoning - a single counterexample can break the rule.
 
 **Teaching Tips:**
 - Contrast inductive and deductive reasoning explicitly: "Inductive = pattern spotting, Deductive = following rules to a certain conclusion."
@@ -329,7 +329,7 @@ Inductive reasoning observes specific examples and makes a general rule or predi
 **Practice Puzzles:**
 
 1. The first 5 triangular numbers are 1, 3, 6, 10, 15. What is the 6th? Write a rule for finding any triangular number.
-2. Observe: 1³ = 1, 2³ = 8, 3³ = 27, 4³ = 64. The last digits are 1, 8, 7, 4. What do you think 5³ ends in? Check your prediction.
+2. Observe: 1^3 = 1, 2^3 = 8, 3^3 = 27, 4^3 = 64. The last digits are 1, 8, 7, 4. What do you think 5^3 ends in? Check your prediction.
 3. A student notices that every number divisible by 4 is also divisible by 2. Is this always true? Can you explain why?
 4. "Every time I carry an umbrella, it doesn't rain. So umbrellas prevent rain." Is this good inductive reasoning? Why or why not?
 
@@ -337,13 +337,13 @@ Inductive reasoning observes specific examples and makes a general rule or predi
 
 ## 3. Logic Puzzles
 
-### 3.1 Grid Puzzles — "Who Lives Where?"
+### 3.1 Grid Puzzles - "Who Lives Where?"
 
 Grid puzzles (also called logic grid puzzles) give you clues about categories and ask you to match them up. Use a grid to track what you know and eliminate impossibilities.
 
 **Worked Example:**
 
-> Four friends — Ana, Ben, Clara, and Diego — each live in a different colored house (red, blue, green, yellow) and have a different pet (cat, dog, fish, bird).
+> Four friends - Ana, Ben, Clara, and Diego - each live in a different colored house (red, blue, green, yellow) and have a different pet (cat, dog, fish, bird).
 >
 > Clue 1: Ana lives in the red house.
 > Clue 2: Ben has a dog.
@@ -352,7 +352,7 @@ Grid puzzles (also called logic grid puzzles) give you clues about categories an
 > Clue 5: Diego lives in the blue house.
 > Clue 6: The cat owner lives in the green house.
 
-**Solution — Step by Step:**
+**Solution - Step by Step:**
 
 | Person | House Color | Pet |
 |--------|------------|-----|
@@ -374,7 +374,7 @@ From Clue 3: Clara lives **next to** the green house, so Clara does NOT live in 
 
 Now for pets:
 - Ana has Red house. Remaining pets: Fish (since Dog, Cat, Bird are taken).
-- Diego has Blue house. Remaining pets: — wait, all pets assigned (Dog=Ben, Cat=Ben... no).
+- Diego has Blue house. Remaining pets: - wait, all pets assigned (Dog=Ben, Cat=Ben... no).
 
 Let me re-check: Ben=Green=Cat, Clara=Yellow=Bird. Remaining pets for Ana and Diego: Dog and Fish.
 But Ben has the Dog (Clue 2). So remaining pets for Ana and Diego: Fish.
@@ -401,7 +401,7 @@ Therefore: **Ben = Yellow house**.
 
 Clue 4: Bird = Yellow house. So Ben has both Dog and Bird? That's a contradiction too.
 
-Wait — Clue 4 says the person WITH the bird lives in the yellow house. But Ben has the dog. So either:
+Wait - Clue 4 says the person WITH the bird lives in the yellow house. But Ben has the dog. So either:
 - The puzzle has Ben with the bird too (unlikely), or
 - Ben is not in the yellow house.
 
@@ -411,7 +411,7 @@ There's no valid assignment for Ben. This puzzle is overconstrained. Let me prov
 
 **Corrected Worked Example (Verified Puzzle):**
 
-> Four friends — Ana, Ben, Clara, and Diego — each live in a different house (red, blue, green, yellow) and have a different pet (cat, dog, fish, bird).
+> Four friends - Ana, Ben, Clara, and Diego - each live in a different house (red, blue, green, yellow) and have a different pet (cat, dog, fish, bird).
 >
 > Clue 1: Ana lives in the red house.
 > Clue 2: Ben has a dog.
@@ -446,8 +446,8 @@ From Clue 4: Diego ≠ Yellow (already assigned to Ben, so this is satisfied). B
 - If Diego = Green (Bird), then Clara = Blue (Cat).
 
 Both seem possible so far. Use Clue 6: Clara ≠ Fish.
-- If Clara = Green = Bird, then Clara has Bird (not Fish) — OK.
-- If Clara = Blue = Cat, then Clara has Cat (not Fish) — also OK.
+- If Clara = Green = Bird, then Clara has Bird (not Fish) - OK.
+- If Clara = Blue = Cat, then Clara has Cat (not Fish) - also OK.
 
 We need to assign Fish. Remaining pet assignments:
 - Ben = Dog, Yellow.
@@ -479,16 +479,16 @@ One possible solution:
 - Always use a grid or table. Crossing out impossibilities is more reliable than holding everything in your head.
 - Start with clues that give definite information (Ana = Red).
 - Chain deductions: "If Ben ≠ Blue and Ben ≠ Green, then Ben = Yellow."
-- Warn students that some puzzles have multiple solutions — that's valid and worth discussing.
+- Warn students that some puzzles have multiple solutions - that's valid and worth discussing.
 
 **Practice Puzzle:**
 
-> Three siblings — Max, Lily, and Sam — each have a favorite fruit (apple, banana, cherry) and favorite color (purple, orange, teal).
+> Three siblings - Max, Lily, and Sam - each have a favorite fruit (apple, banana, cherry) and favorite color (purple, orange, teal).
 >
 > Clue 1: Max's favorite color is purple.
 > Clue 2: The person who loves bananas also loves orange.
 > Clue 3: Lily does not like cherries.
-> Clue 4: Sam's favorite fruit is the same as the first letter of their name's starting sound. (Hint: think about it differently — Sam does not like strawberries; this is a distractor.)
+> Clue 4: Sam's favorite fruit is the same as the first letter of their name's starting sound. (Hint: think about it differently - Sam does not like strawberries; this is a distractor.)
 >
 > Revised Clue 4: Sam likes apples.
 >
@@ -557,7 +557,7 @@ This teaches us: **the question must be one where the truth-teller and liar give
 **Solution:** Consider both cases:
 
 Case 1: A is the truth-teller, B is the liar.
-- If you asked B "who is the truth-teller?", B would lie and say "A" (wrong — B is the liar, so B wouldn't point to the actual truth-teller... wait).
+- If you asked B "who is the truth-teller?", B would lie and say "A" (wrong - B is the liar, so B wouldn't point to the actual truth-teller... wait).
 
 Let me think again:
 - If A is truth-teller, B is liar. B would lie about who is truth-teller → B would say "B" (the liar falsely claims to be truth-teller).
@@ -588,7 +588,7 @@ Explanation:
 
 **Practice Puzzles:**
 
-1. Three people — Alice, Bob, and Carol — one always lies, one always tells the truth, and one sometimes lies and sometimes tells the truth.
+1. Three people - Alice, Bob, and Carol - one always lies, one always tells the truth, and one sometimes lies and sometimes tells the truth.
    - Alice says: "I am not the truth-teller."
    - Bob says: "Alice is the liar."
    - Carol says: "Bob is telling the truth."
@@ -603,7 +603,7 @@ Sequence puzzles ask you to figure out the ordering of events or objects from a 
 
 **Worked Example:**
 
-> Five students — Alex, Blake, Casey, Drew, and Eden — took a math test. Use the clues to find out who scored highest to lowest.
+> Five students - Alex, Blake, Casey, Drew, and Eden - took a math test. Use the clues to find out who scored highest to lowest.
 >
 > Clue 1: Alex scored higher than Blake.
 > Clue 2: Casey scored lower than Blake but higher than Drew.
@@ -626,7 +626,7 @@ Perhaps we made too strong an assumption. Let's re-examine the clues:
 
 If Drew is not last, then someone else is below Drew. But we only have 5 people and Drew is the lowest in our chain. Let me reconsider whether Blake > Casey is certain.
 
-From Clue 2: "Casey scored lower than Blake but higher than Drew" — yes, Blake > Casey > Drew is direct.
+From Clue 2: "Casey scored lower than Blake but higher than Drew" - yes, Blake > Casey > Drew is direct.
 
 If Drew is not last, there must be someone below Drew. But Eden, Alex, and Blake are above Alex (who is above Blake). The only remaining person is... there isn't one. All 5 people are accounted for.
 
@@ -634,7 +634,7 @@ This means the clues as stated create a contradiction. Let me provide a correcte
 
 **Corrected Worked Example:**
 
-> Five students — Alex, Blake, Casey, Drew, and Eden — took a test. Find the order from highest to lowest.
+> Five students - Alex, Blake, Casey, Drew, and Eden - took a test. Find the order from highest to lowest.
 >
 > Clue 1: Eden scored higher than Alex.
 > Clue 2: Blake scored higher than Casey.
@@ -650,7 +650,7 @@ This means the clues as stated create a contradiction. Let me provide a correcte
 
 Known chain: Eden > Alex > Blake > Casey > Drew
 
-But we need one person below Drew. We've used all 5 people. Wait — let me reconsider.
+But we need one person below Drew. We've used all 5 people. Wait - let me reconsider.
 
 Actually, Clue 4 says "Drew scored lower than Casey but higher than one other person." This means there's someone below Drew. But all 5 people are in the chain already.
 
@@ -662,9 +662,9 @@ Let me reconsider: maybe Eden > Alex and Blake > Casey are separate chains that 
 
 If there's someone below Drew among the 5, and the chain is Eden > Alex > Casey > Drew > ?, the only person not placed is Blake. So:
 
-- Eden > Alex > Blake > Casey > Drew — but then Blake is below Alex and above Casey, satisfying Blake > Casey. And there's no one below Drew.
+- Eden > Alex > Blake > Casey > Drew - but then Blake is below Alex and above Casey, satisfying Blake > Casey. And there's no one below Drew.
 
-Or: Eden > Blake > Alex > Casey > Drew — this also works, but still no one below Drew.
+Or: Eden > Blake > Alex > Casey > Drew - this also works, but still no one below Drew.
 
 The issue is having 5 people and needing someone below the 5th. This is impossible with 5 people if all are above Drew. Let me fix the puzzle.
 
@@ -730,8 +730,8 @@ By color (if colored):
 > Sort these animals: eagle, shark, dolphin, salmon, penguin, trout
 
 **Multiple valid sortings:**
-- By habitat: Ocean (shark, dolphin, salmon, trout) vs. Land/air (eagle, penguin) — but penguin is tricky since it swims too.
-- By class: Mammals (dolphin) vs. Fish (shark, salmon, trout) vs. Birds (eagle, penguin) — but sharks are cartilaginous fish.
+- By habitat: Ocean (shark, dolphin, salmon, trout) vs. Land/air (eagle, penguin) - but penguin is tricky since it swims too.
+- By class: Mammals (dolphin) vs. Fish (shark, salmon, trout) vs. Birds (eagle, penguin) - but sharks are cartilaginous fish.
 - By warm-blooded vs. cold-blooded: Warm (eagle, dolphin, penguin) vs. Cold (shark, salmon, trout).
 
 **Key Lesson:** There's often more than one valid way to classify. The "best" way depends on your purpose.
@@ -756,8 +756,8 @@ By color (if colored):
 **Practice Puzzles:**
 
 1. Sort these words by number of syllables: apple, banana, cat, elephant, dog, umbrella, frog, pineapple.
-2. Create a sorting rule for: 2, 6, 10, 14, 18 (all even, all end in 2/6/0/4/8, all are 4 apart — all valid rules).
-3. Sort these into two groups using any valid rule: 🎸 🐕 📚 🐱 🎨 🐦 — then challenge someone to guess your rule.
+2. Create a sorting rule for: 2, 6, 10, 14, 18 (all even, all end in 2/6/0/4/8, all are 4 apart - all valid rules).
+3. Sort these into two groups using any valid rule: 🎸 🐕 📚 🐱 🎨 🐦 - then challenge someone to guess your rule.
 
 ---
 
@@ -794,7 +794,7 @@ Venn diagrams use overlapping circles to show how groups relate. Items in the ov
 - A ∩ C (water and warm-blooded, no legs): whale, dolphin
 - B ∩ C (legs and warm-blooded, not water): eagle
 - A ∩ B ∩ C (all three): penguin (lives in/on water, has legs, warm-blooded)
-- None of the above: (none — dog isn't in the list? Actually dog IS: not in water → not in A, has legs → B, warm-blooded → C. So dog is B ∩ C.)
+- None of the above: (none - dog isn't in the list? Actually dog IS: not in water → not in A, has legs → B, warm-blooded → C. So dog is B ∩ C.)
 
 Revised:
 - A ∩ B: frog
@@ -806,12 +806,12 @@ Revised:
 **Teaching Tips:**
 - Draw actual circles on paper and have students place word cards in the correct regions.
 - Start with two-circle diagrams before introducing three circles.
-- The "outside" area (not in any circle) is important — don't forget it!
+- The "outside" area (not in any circle) is important - don't forget it!
 
 **Practice Puzzles:**
 
 1. Create a two-circle Venn diagram for these numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 20. Circle A: Factors of 12. Circle B: Factors of 20.
-2. Three-circle Venn: Sort these foods — rice, salmon, apple, bread, cheese, egg, milk, tofu, steak. Circles: Comes from plants / Comes from animals / Is a dairy product.
+2. Three-circle Venn: Sort these foods - rice, salmon, apple, bread, cheese, egg, milk, tofu, steak. Circles: Comes from plants / Comes from animals / Is a dairy product.
 3. In a class of 30 students, 18 play soccer, 15 play basketball, and 8 play both. How many play neither? Draw the Venn diagram.
 
 ---
@@ -827,10 +827,10 @@ In odd-one-out puzzles, you identify which item doesn't belong and explain why.
 > Find the odd one out: 2, 6, 14, 15, 30
 
 **Possible answers:**
-- **15** — it's the only odd number.
-- **14** — it's the only number that's not divisible by 3. (2 is not either... so this doesn't work.)
-- **2** — it's the only prime number. The others are all composite.
-- **30** — it's the only number with 3 distinct prime factors (2 × 3 × 5).
+- **15** - it's the only odd number.
+- **14** - it's the only number that's not divisible by 3. (2 is not either... so this doesn't work.)
+- **2** - it's the only prime number. The others are all composite.
+- **30** - it's the only number with 3 distinct prime factors (2 × 3 × 5).
 
 Multiple valid answers, each with different reasoning!
 
@@ -839,24 +839,24 @@ Multiple valid answers, each with different reasoning!
 > Find the odd one out: apple, banana, carrot, grape, mango
 
 **Possible answers:**
-- **Carrot** — it's a vegetable; the rest are fruits.
-- **Banana** — it's the only one that's naturally yellow when ripe.
-- **Grape** — it's the only one that grows in clusters.
+- **Carrot** - it's a vegetable; the rest are fruits.
+- **Banana** - it's the only one that's naturally yellow when ripe.
+- **Grape** - it's the only one that grows in clusters.
 
 **Worked Example 3:**
 
 > Find the odd one out: △ □ ○ △ □ ○ △ □ ☆
 
-**Solution:** **☆ (star)** — it breaks the repeating pattern △□○. All others follow the three-shape cycle.
+**Solution:** **☆ (star)** - it breaks the repeating pattern △□○. All others follow the three-shape cycle.
 
 **Worked Example 4:**
 
 > Find the odd one out: January, March, June, July, August
 
 **Possible answers:**
-- **June** — it's the only month with exactly 30 days (the others all have 31).
-- **January** — it's the only month in winter (Northern Hemisphere).
-- **March** — it's the only month that isn't summer (Northern Hemisphere).
+- **June** - it's the only month with exactly 30 days (the others all have 31).
+- **January** - it's the only month in winter (Northern Hemisphere).
+- **March** - it's the only month that isn't summer (Northern Hemisphere).
 
 **Teaching Tips:**
 - Always ask students to explain their reasoning, not just name the answer.
@@ -882,7 +882,7 @@ Rotation means turning a shape around a fixed point (the center of rotation) by 
 - **90° counter-clockwise:** One-quarter turn to the left.
 - **180°:** Half turn (upside down).
 - **270° clockwise** = 90° counter-clockwise.
-- **360°:** Full turn — back to the original position.
+- **360°:** Full turn - back to the original position.
 
 **Worked Example:**
 
@@ -955,7 +955,7 @@ Net 3 (zigzag):
         [□]
 ```
 
-**Not every arrangement of 6 squares folds into a cube!** For example, 6 squares in a straight line (1 × 6) cannot form a cube — there's no way to fold them into a closed 3D shape.
+**Not every arrangement of 6 squares folds into a cube!** For example, 6 squares in a straight line (1 × 6) cannot form a cube - there's no way to fold them into a closed 3D shape.
 
 **Worked Example:**
 
@@ -993,7 +993,7 @@ Coordinates describe a position on a grid using an ordered pair (x, y).
 **Key Rules:**
 - The **x-coordinate** tells you how far to move horizontally (left/right from the origin).
 - The **y-coordinate** tells you how far to move vertically (up/down from the origin).
-- **(0, 0)** is the origin — the center point.
+- **(0, 0)** is the origin - the center point.
 
 **Worked Example:**
 
@@ -1018,7 +1018,7 @@ Coordinates describe a position on a grid using an ordered pair (x, y).
 
 **Solution:** Midpoint = ((2+8)/2, (4+10)/2) = **(5, 7)**
 
-### 5.5 Following Directions — Left, Right, Forward
+### 5.5 Following Directions - Left, Right, Forward
 
 Following spatial directions is essential for navigation and geometry.
 
@@ -1148,7 +1148,7 @@ At the same rate, they'd win about **12 games** out of 28.
 | 5      | 10        |
 | 6      | ?         |
 
-Pattern: 1, 3, 6, 10 — the differences are 2, 3, 4, so the next is 10 + 5 = **15**.
+Pattern: 1, 3, 6, 10 - the differences are 2, 3, 4, so the next is 10 + 5 = **15**.
 
 Formula: n(n−1)/2 = 6 × 5 / 2 = **15 handshakes**.
 
@@ -1160,7 +1160,7 @@ Formula: n(n−1)/2 = 6 × 5 / 2 = **15 handshakes**.
 
 > Marta had some money. She spent half of it on a book. Then she earned $5 babysitting. Then she spent half of her total on lunch and had $8 left. How much did she start with?
 
-**Solution — Work backwards:**
+**Solution - Work backwards:**
 
 - Final amount: $8 (this is after spending half on lunch)
 - Before lunch: $8 × 2 = $16 (she spent half, so this was the total before lunch)
@@ -1179,7 +1179,7 @@ Marta started with **$22**.
 
 > Three monkeys cross a river. They have one boat that holds only 2 monkeys at a time. Monkeys can row the boat. How many one-way trips does it take to get all 3 monkeys across?
 
-**Solution — Act it out:**
+**Solution - Act it out:**
 
 Let's say the monkeys are A, B, C and they start on the LEFT bank.
 
@@ -1197,7 +1197,7 @@ All 3 monkeys are on the right bank in **3 one-way trips**.
 
 > I am thinking of a number. When I multiply it by 3 and add 7, I get 25. What is my number?
 
-**Solution — Guess and check:**
+**Solution - Guess and check:**
 
 - Try 5: 5 × 3 + 7 = 22 (too low)
 - Try 6: 6 × 3 + 7 = 25 ✓
@@ -1208,14 +1208,14 @@ The number is **6**.
 
 > The sum of two numbers is 20 and their product is 91. What are the two numbers?
 
-**Solution — Guess and check:**
+**Solution - Guess and check:**
 
 List factor pairs of 91: (1, 91), (7, 13).
 Check: 7 + 13 = 20 ✓ and 7 × 13 = 91 ✓.
 
 The numbers are **7 and 13**.
 
-**Teaching Tip:** Guess and check is more systematic than random guessing — use the clues to narrow your guesses and learn from each wrong answer.
+**Teaching Tip:** Guess and check is more systematic than random guessing - use the clues to narrow your guesses and learn from each wrong answer.
 
 ### 6.7 Make It Simpler
 
@@ -1225,7 +1225,7 @@ The numbers are **7 and 13**.
 
 > What is the sum of all numbers from 1 to 100?
 
-**Solution — Make it simpler:**
+**Solution - Make it simpler:**
 
 Sum from 1 to 4: 1 + 2 + 3 + 4 = 10. Also 4 × 5/2 = 10.
 Sum from 1 to 10: 1 + 2 + ... + 10 = 55. Also 10 × 11/2 = 55.
@@ -1239,7 +1239,7 @@ This is the method the mathematician Carl Friedrich Gauss used as a child!
 
 > A checkerboard has 8 × 8 = 64 squares. How many total squares of all sizes are there (1×1, 2×2, 3×3, ..., 8×8)?
 
-**Solution — Make it simpler with a smaller board:**
+**Solution - Make it simpler with a smaller board:**
 
 2×2 board:
 - 1×1 squares: 4
@@ -1259,9 +1259,9 @@ This is the method the mathematician Carl Friedrich Gauss used as a child!
 - 4×4: 1
 - Total: 30
 
-Pattern: Total = 1² + 2² + 3² + 4² + ...
+Pattern: Total = 1^2 + 2^2 + 3^2 + 4^2 + ...
 
-For 8×8: 1² + 2² + 3² + 4² + 5² + 6² + 7² + 8²
+For 8×8: 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 + 8^2
 = 1 + 4 + 9 + 16 + 25 + 36 + 49 + 64
 = **204 total squares**
 
@@ -1277,10 +1277,10 @@ The mathematician George Pólya identified four steps that apply to almost any p
 4. **Look Back:** Check your answer. Does it make sense? Is there another approach? What did you learn?
 
 **Teaching Tips for All Strategies:**
-- Don't tell students which strategy to use — let them choose and discuss why.
+- Don't tell students which strategy to use - let them choose and discuss why.
 - Model your own thinking out loud: "I'm not sure how to start, so let me try drawing a picture..."
 - Encourage students to try a second strategy to verify their answer.
-- Celebrate wrong answers that teach something — "Great guess, it didn't work, but what did we learn?"
+- Celebrate wrong answers that teach something - "Great guess, it didn't work, but what did we learn?"
 
 ---
 
@@ -1322,8 +1322,8 @@ Use any strategy or combination of strategies for these:
 
 **2. Coin Stairs:** These are triangular numbers. The nth triangular number = n(n+1)/2. For n=10: 10 × 11 / 2 = **55 coins**.
 
-**3. Frog Jump:** Each net gain per day is 1 foot (climbs 3, slides 2). After 27 days, the frog is at 27 feet. On day 28, it climbs 3 feet from 27 and reaches 30 feet — it escapes! Answer: **28 days**. (The frog doesn't slide back once it's out.)
+**3. Frog Jump:** Each net gain per day is 1 foot (climbs 3, slides 2). After 27 days, the frog is at 27 feet. On day 28, it climbs 3 feet from 27 and reaches 30 feet - it escapes! Answer: **28 days**. (The frog doesn't slide back once it's out.)
 
 **4. Age Puzzle:** Let the son's age be x. Maria = 3x. In 12 years: 3x + 12 = 2(x + 12). So 3x + 12 = 2x + 24, giving x = 12. The son is **12**, Maria is **36**. Check: In 12 years, son is 24, Maria is 48. 48 = 2 × 24. ✓
 
-**5. Locker Problem:** A locker is toggled once for each of its factors. Lockers that are toggled an odd number of times end up open. Only perfect squares have an odd number of factors (because one factor is repeated). So the open lockers are: **1, 4, 9, 16, 25, 36, 49, 64, 81, 100** — the first 10 perfect squares.
+**5. Locker Problem:** A locker is toggled once for each of its factors. Lockers that are toggled an odd number of times end up open. Only perfect squares have an odd number of factors (because one factor is repeated). So the open lockers are: **1, 4, 9, 16, 25, 36, 49, 64, 81, 100** - the first 10 perfect squares.

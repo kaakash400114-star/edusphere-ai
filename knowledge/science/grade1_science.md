@@ -1,8 +1,8 @@
 # Grade 1 Science Knowledge Base
 
-> **Grade Level:** 1st Grade (Ages 5–7)
+> **Grade Level:** 1st Grade (Ages 5-7)
 > **Last Updated:** July 2026
-> **Curriculum Alignment:** Next Generation Science Standards (NGSS) — Grade 1
+> **Curriculum Alignment:** Next Generation Science Standards (NGSS) - Grade 1
 
 ---
 
@@ -25,10 +25,10 @@ Living things are different from non-living things. Scientists look for specific
 Non-living things do **not** grow, move on their own, reproduce, need food, or respond to stimuli.
 
 - **Examples of non-living things:** rocks, water, air, a book, a toy car, a pencil, a table, a chair
-- **Important note:** Some non-living things can *move* (a rolling ball), but they don't move on their own — something pushes them.
+- **Important note:** Some non-living things can *move* (a rolling ball), but they don't move on their own - something pushes them.
 - **Tricky examples:**
-  - 🔥 Fire — it "grows," needs oxygen, and moves, but it is **not** alive because it cannot reproduce
-  - 🦠 Viruses — they are studied in higher grades, but at this level we consider them non-living because they cannot grow or reproduce on their own
+  - 🔥 Fire - it "grows," needs oxygen, and moves, but it is **not** alive because it cannot reproduce
+  - 🦠 Viruses - they are studied in higher grades, but at this level we consider them non-living because they cannot grow or reproduce on their own
 
 ### Quick Check for Students
 Ask yourself these 5 questions:
@@ -42,7 +42,7 @@ If the answer to most of these is **YES**, it is probably a living thing!
 
 ### Activity Idea: Living or Non-Living Sort
 - **Materials:** Pictures of various objects (dog, rock, tree, car, bird, water, flower, chair, fish, pencil)
-- **Directions:** Students sort pictures into two groups — "Living" and "Non-Living." Discuss any tricky ones as a class.
+- **Directions:** Students sort pictures into two groups - "Living" and "Non-Living." Discuss any tricky ones as a class.
 
 ### Common Misconceptions
 | Misconception | Reality |
@@ -71,7 +71,7 @@ If the answer to most of these is **YES**, it is probably a living thing!
 | Part | What It Does | Description |
 |---|---|---|
 | **Root** | Anchors the plant and absorbs water and nutrients | Roots grow underground. They hold the plant in place like an anchor and drink up water from the soil. |
-| **Stem** | Supports the plant and carries water and food | The stem is like a highway — it carries water up from the roots and food down from the leaves. It holds the plant upright. |
+| **Stem** | Supports the plant and carries water and food | The stem is like a highway - it carries water up from the roots and food down from the leaves. It holds the plant upright. |
 | **Leaf** | Makes food for the plant using sunlight | Leaves are the "kitchen" of the plant. They catch sunlight and use it to make food. |
 | **Flower** | Makes seeds for new plants | Flowers are colorful and attractive so insects visit them and help with making seeds. After pollination, seeds form. |
 
@@ -81,7 +81,7 @@ If the answer to most of these is **YES**, it is probably a living thing!
 |---|---|---|
 | ☀️ **Sunlight** | Plants use light to make their food (energy) | The plant will grow tall and weak, become pale, and eventually die |
 | 💧 **Water** | Water carries nutrients from the soil through the roots | The plant will wilt, turn brown, and dry up |
-| 🌬️ **Air (Carbon Dioxide)** | Plants "breathe in" CO₂ to make food | Without CO₂, plants cannot make food |
+| 🌬️ **Air (Carbon Dioxide)** | Plants "breathe in" CO2 to make food | Without CO2, plants cannot make food |
 | 🪨 **Soil (Nutrients)** | Soil provides minerals that help plants grow healthy | The plant may grow slowly and look unhealthy |
 
 ### Plant Life Cycle
@@ -99,7 +99,7 @@ If the answer to most of these is **YES**, it is probably a living thing!
 ### Fun Facts About Plants
 - The tallest plant in the world is a coast redwood tree that is over 380 feet (115 meters) tall!
 - Some plants, like the Venus flytrap, eat insects.
-- Plants can live for a very long time — some trees are over 4,000 years old.
+- Plants can live for a very long time - some trees are over 4,000 years old.
 - Bananas are technically berries, and strawberries are not!
 
 ### Activity Idea: Grow a Bean Plant
@@ -190,10 +190,10 @@ There are 4 important ways to keep your body healthy:
 
 | Healthy Habit | Why It Matters | How to Do It |
 |---|---|---|
-| 🏃 **Exercise** | Makes your heart, muscles, and bones strong | Play outside, ride a bike, jump rope, play tag — at least 60 minutes a day |
+| 🏃 **Exercise** | Makes your heart, muscles, and bones strong | Play outside, ride a bike, jump rope, play tag - at least 60 minutes a day |
 | 🥗 **Eating Well** | Gives your body energy and nutrients to grow | Eat fruits, vegetables, whole grains, protein (meat, beans, eggs), and drink plenty of water |
-| 🧼 **Washing Hands** | Removes germs that can make you sick | Wash with soap and water for 20 seconds — sing "Happy Birthday" twice! Wash before eating and after using the bathroom |
-| 😴 **Sleeping** | Lets your body rest, grow, and repair itself | Children ages 5–7 need 9–12 hours of sleep every night |
+| 🧼 **Washing Hands** | Removes germs that can make you sick | Wash with soap and water for 20 seconds - sing "Happy Birthday" twice! Wash before eating and after using the bathroom |
+| 😴 **Sleeping** | Lets your body rest, grow, and repair itself | Children ages 5-7 need 9-12 hours of sleep every night |
 
 ### Activity Idea: Five Senses Station
 - Set up 5 stations around the room:
@@ -208,7 +208,7 @@ There are 4 important ways to keep your body healthy:
 ## 5. Matter Basics
 
 ### What Is Matter?
-**Matter** is everything around you that takes up space and has weight (mass). You are made of matter! Your desk, the air, water, rocks — all matter.
+**Matter** is everything around you that takes up space and has weight (mass). You are made of matter! Your desk, the air, water, rocks - all matter.
 
 ### Three States of Matter
 
@@ -238,7 +238,7 @@ Water is special because it can change between all three states:
 
 - **Ice:** When water gets very cold (below 0°C / 32°F), it freezes into a solid
 - **Water:** At room temperature, water is a liquid
-- **Steam:** When water gets very hot (boiling — 100°C / 212°F), it turns into gas (steam/vapor)
+- **Steam:** When water gets very hot (boiling - 100°C / 212°F), it turns into gas (steam/vapor)
 
 ### The Water Cycle (Introduction)
 
@@ -248,7 +248,7 @@ Water moves around our Earth in a big circle called the **water cycle**:
 2. 💨 **Evaporation:** The water turns into invisible gas (water vapor) and rises into the air
 3. ☁️ **Condensation:** The water vapor cools high up and forms clouds
 4. 🌧️ **Precipitation:** When clouds get heavy, water falls as rain, snow, sleet, or hail
-5. 💧 **Collection:** Rain and snow collect in rivers, lakes, and oceans — and the cycle starts again!
+5. 💧 **Collection:** Rain and snow collect in rivers, lakes, and oceans - and the cycle starts again!
 
 > **Fun fact:** The water on Earth today is the same water that the dinosaurs drank!
 
@@ -309,7 +309,7 @@ Our Earth has two main types of surfaces:
 
 | Fact | Detail |
 |---|---|
-| What is it? | A giant ball of very hot gas — a **star** (the closest star to Earth) |
+| What is it? | A giant ball of very hot gas - a **star** (the closest star to Earth) |
 | What does it do? | Gives us **light** so we can see and **warmth** (heat) so we don't freeze |
 | Is it alive? | No, it is not a living thing |
 | How far away? | About 93 million miles (150 million km) from Earth |
@@ -317,8 +317,8 @@ Our Earth has two main types of surfaces:
 
 ### Day and Night
 
-- **Daytime:** When the part of Earth where you live faces the Sun, you see light — it's daytime.
-- **Nighttime:** When the part of Earth where you live faces away from the Sun, you are in shadow — it's nighttime.
+- **Daytime:** When the part of Earth where you live faces the Sun, you see light - it's daytime.
+- **Nighttime:** When the part of Earth where you live faces away from the Sun, you are in shadow - it's nighttime.
 - **Why does it happen?** The Earth **spins (rotates)** like a top. One full spin takes about **24 hours** (one day and one night).
 
 ```
@@ -330,9 +330,9 @@ Our Earth has two main types of surfaces:
 ### Common Misconceptions
 | Misconception | Reality |
 |---|---|
-| "The Sun moves across the sky" | The Sun doesn't move — the Earth rotates, making it look like the Sun moves |
+| "The Sun moves across the sky" | The Sun doesn't move - the Earth rotates, making it look like the Sun moves |
 | "The Sun goes behind the Earth" | Earth spins, turning different sides toward and away from the Sun |
-| "The Moon makes its own light" | The Moon reflects (bounces back) light from the Sun — it does not make light |
+| "The Moon makes its own light" | The Moon reflects (bounces back) light from the Sun - it does not make light |
 
 ---
 
@@ -356,7 +356,7 @@ Things can move at different speeds:
 | 🏎️ **Fast** | Moves quickly; covers distance in short time | A cheetah running (up to 70 mph!), a race car, a shooting star |
 | 🚶 **Slow** | Moves slowly; covers distance in long time | A snail, a turtle, a person walking, a sloth |
 
-> **Fun fact:** The slowest animal in the world is the sloth — it moves at only about 6 feet (2 meters) per minute!
+> **Fun fact:** The slowest animal in the world is the sloth - it moves at only about 6 feet (2 meters) per minute!
 
 ### Heavy and Light
 

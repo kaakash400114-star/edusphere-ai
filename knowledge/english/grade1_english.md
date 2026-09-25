@@ -1,4 +1,4 @@
-# Grade 1 English — Complete Curriculum
+# Grade 1 English - Complete Curriculum
 
 ## 1. The Alphabet
 
@@ -10,7 +10,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 ### Letter Sounds
 
-**Consonants** — Each consonant has its own sound. Consonants are all the letters that are NOT vowels.
+**Consonants** - Each consonant has its own sound. Consonants are all the letters that are NOT vowels.
 
 | Letter | Sound | Example Word |
 |--------|-------|-------------|
@@ -36,7 +36,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 | y | /y/ | **y**es |
 | z | /z/ | **z**oo |
 
-**Short Vowels** — The five vowels are A, E, I, O, U. Sometimes Y acts as a vowel too. Each short vowel makes one special sound:
+**Short Vowels** - The five vowels are A, E, I, O, U. Sometimes Y acts as a vowel too. Each short vowel makes one special sound:
 
 | Vowel | Short Sound | Example Words |
 |-------|------------|---------------|
@@ -176,7 +176,7 @@ Sight words are words that appear very often in books. You should be able to rea
 ### Colors
 Red, orange, yellow, green, blue, purple, pink, brown, black, white, gray
 
-### Numbers (1–20)
+### Numbers (1-20)
 one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty
 
 ### Shapes
@@ -203,7 +203,7 @@ head, eyes, ears, nose, mouth, teeth, hair, neck, shoulders, arms, hands, finger
 
 ## 5. Grammar Basics
 
-### Nouns — Person, Place, or Thing
+### Nouns - Person, Place, or Thing
 
 A **noun** names a person, a place, or a thing.
 
@@ -213,7 +213,7 @@ A **noun** names a person, a place, or a thing.
 | Place | school, park, home, store, beach, library, city |
 | Thing | book, ball, desk, apple, car, toy, pencil, dog |
 
-### Verbs — Action Words
+### Verbs - Action Words
 
 A **verb** tells what someone or something does. It is an action word.
 
@@ -228,7 +228,7 @@ A **verb** tells what someone or something does. It is an action word.
 | sing | They **sing** a song. |
 | write | I **write** my name. |
 
-### Adjectives — Describing Words
+### Adjectives - Describing Words
 
 An **adjective** describes a noun. It tells what kind, which one, or how many.
 
@@ -242,11 +242,11 @@ An **adjective** describes a noun. It tells what kind, which one, or how many.
 | soft | a **soft** pillow |
 | tall | a **tall** tree |
 
-### Complete Sentences — Subject + Predicate
+### Complete Sentences - Subject + Predicate
 
 Every sentence needs two parts:
-1. **Subject** — who or what the sentence is about
-2. **Predicate** — what the subject does or is
+1. **Subject** - who or what the sentence is about
+2. **Predicate** - what the subject does or is
 
 | Subject | Predicate | Complete Sentence |
 |---------|-----------|-------------------|
@@ -300,7 +300,7 @@ When you come to a word you do not know, look at the pictures! Pictures give hin
 ### Using Context Clues
 Sometimes other words in the sentence help you figure out an unknown word.
 
-**Example:** "The big ___ barked at the mailman." Even if you cannot read the first word, "barked" tells you it is an animal that barks — a dog!
+**Example:** "The big ___ barked at the mailman." Even if you cannot read the first word, "barked" tells you it is an animal that barks - a dog!
 
 ### Story Elements
 
@@ -326,7 +326,7 @@ Every story has important parts:
 - Letters that go below the line (g, j, p, q, y) have a **tail** that hangs down.
 - Always start each letter at the **top** (except for a few like e and d which can start in the middle).
 
-### Simple Sentences (3–5 Words)
+### Simple Sentences (3-5 Words)
 
 Practice writing complete sentences. Every sentence needs:
 - A **capital letter** at the beginning
@@ -357,7 +357,7 @@ A **label** is a word or short phrase that names something. Labels are not compl
 
 A **list** is a group of items written one after another, usually with numbers or bullets.
 
-**Example — My Favorite Things:**
+**Example - My Favorite Things:**
 1. my bike
 2. pizza
 3. my dog

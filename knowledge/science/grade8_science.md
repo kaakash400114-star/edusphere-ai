@@ -1,4 +1,4 @@
-# CBSE Class 8 Science – Complete Notes
+# CBSE Class 8 Science - Complete Notes
 
 ---
 
@@ -6,12 +6,12 @@
 
 ### Agriculture Basics
 - **Crop**: Plants grown in large numbers on a field. Two seasons:
-  - **Kharif** (rainy season, June–September): paddy, maize, soybean, cotton.
-  - **Rabi** (winter season, October–March): wheat, gram, pea, mustard.
+  - **Kharif** (rainy season, June-September): paddy, maize, soybean, cotton.
+  - **Rabi** (winter season, October-March): wheat, gram, pea, mustard.
 
 ### Agricultural Practices (in order)
 1. **Preparation of soil**: Tilling/ploughing loosens and turns the soil (plough, hoe, cultivator). Allows roots to breathe, mixes nutrients, exposes pests.
-2. **Sowing**: Good, healthy seeds selected (separated by dropping in water — damaged ones float). Seed drill sows uniformly at proper depth and spacing.
+2. **Sowing**: Good, healthy seeds selected (separated by dropping in water - damaged ones float). Seed drill sows uniformly at proper depth and spacing.
 3. **Adding manure and fertilisers**:
    - **Manure**: natural decomposed organic matter, improves soil texture, cheap.
    - **Fertiliser**: manufactured chemical (NPK, urea), nutrient-rich but overuse harms soil.
@@ -26,7 +26,7 @@
 ## 2. Microorganisms: Friend and Foe
 
 ### Groups of Microorganisms
-- **Bacteria** (single-celled), **Fungi** (moulds, yeasts), **Protozoa** (amoeba, plasmodium), **Algae** (spirogyra), **Viruses** (reproduce only inside a host — cause flu, chicken pox, AIDS).
+- **Bacteria** (single-celled), **Fungi** (moulds, yeasts), **Protozoa** (amoeba, plasmodium), **Algae** (spirogyra), **Viruses** (reproduce only inside a host - cause flu, chicken pox, AIDS).
 
 ### Where They Live
 Air, water, soil, inside and on bodies. Some survive extreme heat/cold.
@@ -47,7 +47,7 @@ Air, water, soil, inside and on bodies. Some survive extreme heat/cold.
 ### Food Preservation
 1. **Chemical method**: preservatives like salt, oil, vinegar, sodium benzoate (pickles, jams).
 2. **Preservation by salt/sugar**: draws water out (fish, amla, jams).
-3. **Heat and cold treatments**: pasteurisation of milk (heated to ~70°C for 15–30 s, then chilled); refrigeration slows microbes.
+3. **Heat and cold treatments**: pasteurisation of milk (heated to ~70°C for 15-30 s, then chilled); refrigeration slows microbes.
 4. **Drying**: removes moisture (sun-dried fish, papad).
 5. **Air-tight packing**: prevents exposure.
 
@@ -66,9 +66,9 @@ Air, water, soil, inside and on bodies. Some survive extreme heat/cold.
 ### Coal
 - Hard, black, fossil fuel. Formed from dead vegetation buried under sediments (**carbonisation**).
 - **Products of coal processing (coal tar, coal gas, coke)**:
-  - **Coke**: tough, porous, nearly pure carbon — used in steel-making and as fuel.
-  - **Coal tar**: black liquid — source of synthetic dyes, drugs, perfumes, naphthalene balls.
-  - **Coal gas**: fuel gas — used in industry.
+  - **Coke**: tough, porous, nearly pure carbon - used in steel-making and as fuel.
+  - **Coal tar**: black liquid - source of synthetic dyes, drugs, perfumes, naphthalene balls.
+  - **Coal gas**: fuel gas - used in industry.
 
 ### Petroleum
 - Dark, oily liquid ("black gold"). Formed from dead sea organisms. Refining = separating into useful fractions in a **petroleum refinery**.
@@ -95,16 +95,16 @@ Air, water, soil, inside and on bodies. Some survive extreme heat/cold.
 ### Conditions Necessary for Combustion
 1. Fuel must reach its **ignition temperature** (lowest temperature at which it catches fire).
 2. Presence of air (oxygen).
-3. The fuel must be heated to burn — removing any one condition puts out the fire.
+3. The fuel must be heated to burn - removing any one condition puts out the fire.
 
 ### How Do We Control Fire?
-- **Water**: cools the fuel below ignition temperature (not for electrical or oil fires — water conducts electricity; oil floats and spreads).
-- **Fire extinguisher**: cuts off air supply (CO2 extinguisher — CO2 is heavier than air and forms a layer over the flame; also used as dry powder or foam for oil fires).
+- **Water**: cools the fuel below ignition temperature (not for electrical or oil fires - water conducts electricity; oil floats and spreads).
+- **Fire extinguisher**: cuts off air supply (CO2 extinguisher - CO2 is heavier than air and forms a layer over the flame; also used as dry powder or foam for oil fires).
 - Remove the fuel supply (e.g., close the gas valve).
 
 ### Types of Fuels
 - Solid (wood, coal), liquid (petrol, kerosene), gaseous (LPG, CNG).
-- **Fuel efficiency**: the **calorific value** — the amount of heat produced by burning 1 kg of fuel completely (kilojoules per kg). Higher = better fuel.
+- **Fuel efficiency**: the **calorific value** - the amount of heat produced by burning 1 kg of fuel completely (kilojoules per kg). Higher = better fuel.
 
 ### An Ideal Fuel
 Cheap, readily available, burns easily at a moderate rate, high calorific value, low smoke and harmful residue.
@@ -124,21 +124,21 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 - **Consequences**: higher temperature and pollution, lower rainfall, soil erosion, loss of fertility, floods, droughts, desertification, loss of species (biodiversity loss).
 
 ### Conservation of Forest and Wildlife
-- **Biosphere reserve**: large protected area for conservation of wildlife, plant and animal resources, and traditional life of tribals (e.g., Pachmarhi Biosphere Reserve — contains national park + wildlife sanctuary).
+- **Biosphere reserve**: large protected area for conservation of wildlife, plant and animal resources, and traditional life of tribals (e.g., Pachmarhi Biosphere Reserve - contains national park + wildlife sanctuary).
 - **National park**: reserves for wildlife where grazing/cultivation is not allowed (e.g., Satpura National Park).
 - **Wildlife sanctuary**: protected area where some human activities may be permitted.
 - **Endemic species**: found only in a particular area (e.g., bison, giant squirrel of Pachmarhi).
 - **Endangered species**: animals whose numbers are shrinking so low that they may disappear (Project Tiger was launched to save the tiger).
 - **Red Data Book**: record of endangered species of plants and animals.
-- **Migration**: seasonal movement of birds (like the Siberian crane) to escape harsh climate — to breed and survive.
+- **Migration**: seasonal movement of birds (like the Siberian crane) to escape harsh climate - to breed and survive.
 
 ### Recycling of Paper and Reforestation
 - Save paper (17 full-grown trees are cut for 1 tonne of paper).
-- **Reforestation**: replanting trees on degraded land — restores forests.
+- **Reforestation**: replanting trees on degraded land - restores forests.
 
 ---
 
-## 6. Cell — Structure and Functions
+## 6. Cell - Structure and Functions
 
 ### Discovery
 - Robert Hooke (1665) saw cork cells under a microscope and named them "cells" (little rooms).
@@ -149,7 +149,7 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 
 ### Parts of the Cell
 - **Cell membrane (plasma membrane)**: thin outer boundary; selectively allows substances in and out.
-- **Cell wall**: extra outer layer in plant cells (made of cellulose) — gives rigidity and protection.
+- **Cell wall**: extra outer layer in plant cells (made of cellulose) - gives rigidity and protection.
 - **Cytoplasm**: jelly-like substance between membrane and nucleus where organelles float.
 - **Nucleus**: control centre; contains thread-like **chromosomes** made of DNA (carries genes, units of heredity). Nuclear membrane surrounds it. Cells without a nuclear membrane (bacteria) are **prokaryotes**; with one (plants, animals) are **eukaryotes**.
 - **Plastids** (plant cells only): **chloroplasts** contain chlorophyll for photosynthesis; leucoplasts (colourless), chromoplasts (colours).
@@ -169,13 +169,13 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 
 ### Sexual Reproduction in Animals
 - **Male reproductive organs**: testes produce sperms; sperm is a single cell with head, middle piece and tail; produced in huge numbers.
-- **Female reproductive organs**: ovaries produce eggs (ova). Oviduct (fallopian tube) is where sperm meets egg — **fertilisation** (fusion of nuclei) forms the **zygote**.
+- **Female reproductive organs**: ovaries produce eggs (ova). Oviduct (fallopian tube) is where sperm meets egg - **fertilisation** (fusion of nuclei) forms the **zygote**.
 - **Internal fertilisation**: inside the female body (humans, cows, dogs, hens).
-- **External fertilisation**: outside (frogs and fish release eggs in water; sperm fuses with eggs there — many eggs are needed because many die).
+- **External fertilisation**: outside (frogs and fish release eggs in water; sperm fuses with eggs there - many eggs are needed because many die).
 
 ### Development of the Embryo
 - Zygote divides repeatedly to form a ball of cells → **embryo** → implants in the uterus wall → **foetus** (recognisable body parts) → born after gestation.
-- **Viviparous**: gives birth to young (humans, cows). **Oviparous**: lays eggs (hen — egg shell forms in oviduct; embryo develops inside the egg using yolk).
+- **Viviparous**: gives birth to young (humans, cows). **Oviparous**: lays eggs (hen - egg shell forms in oviduct; embryo develops inside the egg using yolk).
 - **Metamorphosis**: larva changes into adult (frog: egg → tadpole → adult; silkworm: egg → larva → pupa → adult).
 
 ---
@@ -183,27 +183,27 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 ## 8. Reaching the Age of Adolescence
 
 ### Adolescence and Puberty
-- **Adolescence**: period between childhood and adulthood (roughly 11–19 years) — the body and mind prepare for maturity.
+- **Adolescence**: period between childhood and adulthood (roughly 11-19 years) - the body and mind prepare for maturity.
 - **Puberty**: the age at which reproductive organs become functional. Triggered by **hormones** (chemical messengers from endocrine glands).
 
 ### Changes at Puberty
-- **Common**: sudden increase in height, change in body shape, voice change (boys' voice deepens — larynx grows into Adam's apple), more active sweat and oil glands, emotional changes.
+- **Common**: sudden increase in height, change in body shape, voice change (boys' voice deepens - larynx grows into Adam's apple), more active sweat and oil glands, emotional changes.
 - **Boys**: broad shoulders, facial hair, moustache, beard growth (testosterone).
-- **Girls**: broader hips, breasts develop (oestrogen), begin **menstruation** (monthly shedding of the uterine lining — a normal, healthy process).
+- **Girls**: broader hips, breasts develop (oestrogen), begin **menstruation** (monthly shedding of the uterine lining - a normal, healthy process).
 
 ### Reproductive Health and Hygiene
 - Bathe and wash regularly; for girls, extra care during menstruation (clean sanitary pads, changed regularly).
 - Balanced diet rich in protein, calcium, iron; avoid junk food; exercise; avoid drugs, alcohol and smoking.
-- **Sex-determination**: sex chromosomes XX (girl) and XY (boy) — the father's sperm decides the baby's sex; foetal sex determination is illegal (PCPNDT Act).
+- **Sex-determination**: sex chromosomes XX (girl) and XY (boy) - the father's sperm decides the baby's sex; foetal sex determination is illegal (PCPNDT Act).
 
 ### Endocrine Glands and Hormones
-- Pituitary (master gland — growth hormone), thyroid (thyroxine — iodine needed; deficiency = goitre), pancreas (insulin — sugar balance; deficiency = diabetes), adrenal (adrenaline — emergency), testes (testosterone), ovaries (oestrogen).
+- Pituitary (master gland - growth hormone), thyroid (thyroxine - iodine needed; deficiency = goitre), pancreas (insulin - sugar balance; deficiency = diabetes), adrenal (adrenaline - emergency), testes (testosterone), ovaries (oestrogen).
 
 ---
 
 ## 9. Force and Pressure
 
-### Force — A Push or a Pull
+### Force - A Push or a Pull
 - Can move a body at rest, stop a moving body, change speed or direction, change shape.
 - **Contact forces**: muscular force, friction (act on touch).
 - **Non-contact forces**: magnetic force, electrostatic force, gravitational force (act from a distance).
@@ -211,7 +211,7 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 ### Pressure
 - **Pressure = Force / Area** (unit: pascal, Pa = newton per square metre).
 - Same force on a smaller area exerts larger pressure (knife edge, nail tip).
-- Liquids and gases exert pressure on the walls of their container — pressure increases with depth.
+- Liquids and gases exert pressure on the walls of their container - pressure increases with depth.
 
 ### Atmospheric Pressure
 - The weight of air around us exerts **atmospheric pressure** (~101,325 Pa at sea level). We don't feel crushed because the pressure inside our bodies balances it.
@@ -228,7 +228,7 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 ### Types
 - **Static friction**: opposes the start of motion (largest).
 - **Sliding friction**: acts while sliding (smaller than static).
-- **Rolling friction**: acts on rolling objects (smallest — that's why wheels are used).
+- **Rolling friction**: acts on rolling objects (smallest - that's why wheels are used).
 
 ### Effects and Uses
 - Enables walking without slipping, writing with a pencil, braking, nails holding walls.
@@ -236,7 +236,7 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 
 ### Increasing and Reducing Friction
 - **Increase**: grooves in tyres and soles, sprinkling sand on icy roads, treads.
-- **Reduce**: lubricants (oil, grease) fill irregularities; **ball bearings** (rolling friction) in machines; polishing surfaces; streamlined shapes (fluid friction — air and water resistance reduced in planes, boats, birds, fish).
+- **Reduce**: lubricants (oil, grease) fill irregularities; **ball bearings** (rolling friction) in machines; polishing surfaces; streamlined shapes (fluid friction - air and water resistance reduced in planes, boats, birds, fish).
 
 ---
 
@@ -244,18 +244,18 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 
 ### Sound Is Produced by Vibrations
 - A to-and-fro motion is a **vibration/oscillation**. Stretched rubber band, tuning fork prongs, tabla membrane all vibrate to produce sound.
-- Sound needs a **medium** (solid, liquid, gas) to travel — it cannot travel in vacuum (bell-in-jar experiment).
+- Sound needs a **medium** (solid, liquid, gas) to travel - it cannot travel in vacuum (bell-in-jar experiment).
 
 ### How We Hear
 - Vibrating objects make the air vibrate; vibrations reach the **eardrum**, which vibrates; brain interprets as sound.
 
 ### Characteristics
 - **Loudness**: depends on the amplitude of vibration (bigger amplitude = louder). Measured in **decibels (dB)**. Loud sounds above ~80 dB are harmful.
-- **Pitch**: depends on frequency (faster vibration = higher pitch — shriller). Frequency = number of vibrations per second (hertz, Hz). Babies/women generally have higher-pitched voices.
+- **Pitch**: depends on frequency (faster vibration = higher pitch - shriller). Frequency = number of vibrations per second (hertz, Hz). Babies/women generally have higher-pitched voices.
 - **Timbre (quality)**: lets us distinguish two voices of the same loudness and pitch.
 
 ### Noise Pollution and Hearing Care
-- Unpleasant, loud sounds (traffic, loudspeakers, factories) cause **noise pollution** — anxiety, loss of sleep, hearing damage.
+- Unpleasant, loud sounds (traffic, loudspeakers, factories) cause **noise pollution** - anxiety, loss of sleep, hearing damage.
 - Reduce: silence zones near hospitals/schools, avoid honking, sound-proof machines, plant trees.
 - Never put sharp objects in ears; loud headphone use harms hearing.
 
@@ -265,7 +265,7 @@ Cheap, readily available, burns easily at a moderate rate, high calorific value,
 
 ### Conduction Through Liquids
 - Some liquids conduct electricity (acids, bases, salt solutions); pure water is a poor conductor; distilled water doesn't conduct; salt water does.
-- **Tester**: confirms conduction — the bulb glows (or bubbles form in weak currents).
+- **Tester**: confirms conduction - the bulb glows (or bubbles form in weak currents).
 
 ### Chemical Effects of Current
 When current passes through a conducting solution, chemical reactions occur:
@@ -308,14 +308,14 @@ When current passes through a conducting solution, chemical reactions occur:
 - Image: virtual, erect, same size, laterally inverted (left-right reversed), as far behind as the object is in front.
 
 ### Regular and Diffuse (Irregular) Reflection
-- Regular: smooth surface (mirror) — clear image.
-- Diffuse: rough surface — no clear image, but lets us see non-shiny objects.
+- Regular: smooth surface (mirror) - clear image.
+- Diffuse: rough surface - no clear image, but lets us see non-shiny objects.
 
 ### The Human Eye
-- Cornea (transparent front), iris (coloured part, controls pupil size), pupil (lets light in), eye lens (focuses light), retina (screen with rods and cones — cells sensitive to light and colour), optic nerve (carries messages to brain).
+- Cornea (transparent front), iris (coloured part, controls pupil size), pupil (lets light in), eye lens (focuses light), retina (screen with rods and cones - cells sensitive to light and colour), optic nerve (carries messages to brain).
 
-### Dispersion — The Rainbow
-- White light splits into **seven colours** (VIBGYOR: violet, indigo, blue, green, yellow, orange, red) when passing through a prism — **dispersion**.
+### Dispersion - The Rainbow
+- White light splits into **seven colours** (VIBGYOR: violet, indigo, blue, green, yellow, orange, red) when passing through a prism - **dispersion**.
 - A rainbow is nature's dispersion by water droplets.
 
 ### The Blind Spot and Care of Eyes

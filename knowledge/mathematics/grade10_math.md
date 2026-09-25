@@ -1,6 +1,6 @@
-# CBSE Class 10 Mathematics — Complete Knowledge File
+# CBSE Class 10 Mathematics - Complete Knowledge File
 
-> **Board:** CBSE | **Level:** Grade 10 | **Syllabus Chapters 1–15**
+> **Board:** CBSE | **Level:** Grade 10 | **Syllabus Chapters 1-15**
 > Last updated: July 2026
 
 ---
@@ -24,10 +24,10 @@ To find HCF of two numbers, apply the division lemma repeatedly:
 
 1. Apply lemma to the larger number: a = bq + r
 2. If r = 0, then HCF = b
-3. If r ≠ 0, apply lemma to (b, r): b = rq₁ + r₁
+3. If r ≠ 0, apply lemma to (b, r): b = rq1 + r1
 4. Repeat until remainder = 0
 
-**Worked Example — HCF of 135 and 225:**
+**Worked Example - HCF of 135 and 225:**
 
 | Step | Dividend (a) | Divisor (b) | Quotient (q) | Remainder (r) |
 |------|-------------|-------------|-------------|---------------|
@@ -42,12 +42,12 @@ To find HCF of two numbers, apply the division lemma repeatedly:
 > Every composite number can be expressed (factored) as a product of primes, and **this factorisation is unique** (apart from the order of factors).
 
 **Examples:**
-- 12 = 2² × 3
-- 420 = 2² × 3 × 5 × 7
+- 12 = 2^2 × 3
+- 420 = 2^2 × 3 × 5 × 7
 
 ### 1.4 HCF and LCM using Prime Factorisation
 
-Given: a = p₁^x₁ × p₂^x₂ × ... and b = p₁^y₁ × p₂^y₂ × ...
+Given: a = p1^x1 × p2^x2 × ... and b = p1^y1 × p2^y2 × ...
 
 - **HCF(a, b)** = product of pᵢ raised to **min(xᵢ, yᵢ)**
 - **LCM(a, b)** = product of pᵢ raised to **max(xᵢ, yᵢ)**
@@ -55,9 +55,9 @@ Given: a = p₁^x₁ × p₂^x₂ × ... and b = p₁^y₁ × p₂^y₂ × ...
 > **Key Formula:** HCF(a, b) × LCM(a, b) = a × b (for any two positive integers)
 
 **Worked Example:** Find HCF and LCM of 12 and 15.
-- 12 = 2² × 3; 15 = 3 × 5
-- HCF = 3¹ = 3
-- LCM = 2² × 3¹ × 5¹ = 60
+- 12 = 2^2 × 3; 15 = 3 × 5
+- HCF = 3^1 = 3
+- LCM = 2^2 × 3^1 × 5^1 = 60
 - Verify: 3 × 60 = 180 = 12 × 15 ✓
 
 ### 1.5 Irrational Numbers
@@ -71,15 +71,15 @@ An irrational number **cannot** be expressed as p/q (where p, q are integers, q 
 **Proving √2 is irrational (Proof by Contradiction):**
 
 1. Assume √2 is rational → √2 = p/q (simplest form, HCF(p,q)=1)
-2. Square both sides: 2 = p²/q² → p² = 2q²
-3. → p² is even → p is even → p = 2k
-4. Substitute: 4k² = 2q² → q² = 2k²
-5. → q² is even → q is even
+2. Square both sides: 2 = p^2/q^2 → p^2 = 2q^2
+3. → p^2 is even → p is even → p = 2k
+4. Substitute: 4k^2 = 2q^2 → q^2 = 2k^2
+5. → q^2 is even → q is even
 6. Both p and q are even → HCF(p,q) ≥ 2, **contradicts** HCF(p,q) = 1
 7. ∴ √2 is irrational ✓
 
 **Important Results:**
-- If p is prime and p divides a², then **p divides a**.
+- If p is prime and p divides a^2, then **p divides a**.
 - √p is irrational for any prime p.
 - The sum/difference/product of a non-zero rational and an irrational number is always **irrational**.
 - The product/quotient of a non-zero rational and an irrational number is **irrational**.
@@ -116,7 +116,7 @@ Multiply numerator and denominator by a suitable irrational to remove the surd:
 ### 2.1 Basics
 
 A polynomial p(x) in one variable x of degree n:
-p(x) = aₙxⁿ + aₙ₋₁xⁿ⁻₁ + ... + a₁x + a₀
+p(x) = aₙxⁿ + aₙ₋1xⁿ⁻1 + ... + a1x + a0
 
 - **Degree:** Highest power of x with non-zero coefficient
 - **Types:** Linear (degree 1), Quadratic (degree 2), Cubic (degree 3)
@@ -128,21 +128,21 @@ The **zeros** of p(x) are the x-coordinates where the graph of y = p(x) crosses 
 | Polynomial Type | Max Number of Zeros | Shape |
 |-----------------|---------------------|-------|
 | Linear (ax + b) | 1                   | Straight line |
-| Quadratic (ax²+bx+c) | 2 (or 1, or 0) | Parabola |
-| Cubic (ax³+bx²+cx+d) | 3 (or fewer) | S-curve |
+| Quadratic (ax^2+bx+c) | 2 (or 1, or 0) | Parabola |
+| Cubic (ax^3+bx^2+cx+d) | 3 (or fewer) | S-curve |
 
 - A polynomial of degree n has **at most n real zeros**.
 
 ### 2.3 Relationship Between Zeros and Coefficients
 
-**Quadratic Polynomial:** p(x) = ax² + bx + c
+**Quadratic Polynomial:** p(x) = ax^2 + bx + c
 
 If α and β are zeros:
 
 > **Sum of zeros:** α + β = −b/a
 > **Product of zeros:** αβ = c/a
 
-**Cubic Polynomial:** p(x) = ax³ + bx² + cx + d
+**Cubic Polynomial:** p(x) = ax^3 + bx^2 + cx + d
 
 If α, β, γ are zeros:
 
@@ -150,30 +150,30 @@ If α, β, γ are zeros:
 > αβ + βγ + γα = c/a
 > αβγ = −d/a
 
-**Worked Example:** If 2 and −3 are zeros of x² + x − 6:
+**Worked Example:** If 2 and −3 are zeros of x^2 + x − 6:
 - Sum: 2 + (−3) = −1 = −b/a = −1/1 ✓
 - Product: 2 × (−3) = −6 = c/a = −6/1 ✓
 
 **Worked Example (Reverse):** Find a quadratic polynomial whose zeros are 1/4 and −1.
 - Sum = 1/4 − 1 = −3/4; Product = 1/4 × (−1) = −1/4
-- p(x) = x² − (sum)x + product = x² + (3/4)x − 1/4
-- Or multiply by 4: p(x) = 4x² + 3x − 1
+- p(x) = x^2 − (sum)x + product = x^2 + (3/4)x − 1/4
+- Or multiply by 4: p(x) = 4x^2 + 3x − 1
 
 ### 2.4 Division Algorithm for Polynomials
 
 > If p(x) and g(x) are polynomials with g(x) ≠ 0, then there exist polynomials q(x) and r(x) such that:
 > **p(x) = g(x) · q(x) + r(x)**, where r(x) = 0 or degree of r(x) < degree of g(x).
 
-**Worked Example:** Divide p(x) = x³ − 3x² + 5x − 3 by g(x) = x² − 2.
+**Worked Example:** Divide p(x) = x^3 − 3x^2 + 5x − 3 by g(x) = x^2 − 2.
 
 ```
            x  - 3
         ______________
-x²-2  ) x³ - 3x² + 5x - 3
-        x³      - 2x
+x^2-2  ) x^3 - 3x^2 + 5x - 3
+        x^3      - 2x
         ---------------
-              - 3x² + 7x - 3
-              - 3x²      + 6
+              - 3x^2 + 7x - 3
+              - 3x^2      + 6
               ---------------
                        7x - 9
 ```
@@ -197,8 +197,8 @@ Quotient: q(x) = x − 3; Remainder: r(x) = 7x − 9
 
 ### 3.1 Standard Form
 
-a₁x + b₁y + c₁ = 0
-a₂x + b₂y + c₂ = 0
+a1x + b1y + c1 = 0
+a2x + b2y + c2 = 0
 
 ### 3.2 Graphical Method
 
@@ -206,12 +206,12 @@ Each equation represents a **straight line**. The solution (x, y) is the **point
 
 | Relationship Between Lines | Condition | Number of Solutions |
 |---------------------------|-----------|-------------------|
-| Intersecting              | a₁/a₂ ≠ b₁/b₂ | Exactly one (unique) |
-| Coincident (same line)   | a₁/a₂ = b₁/b₂ = c₁/c₂ | Infinitely many |
-| Parallel                  | a₁/a₂ = b₁/b₂ ≠ c₁/c₂ | No solution |
+| Intersecting              | a1/a2 ≠ b1/b2 | Exactly one (unique) |
+| Coincident (same line)   | a1/a2 = b1/b2 = c1/c2 | Infinitely many |
+| Parallel                  | a1/a2 = b1/b2 ≠ c1/c2 | No solution |
 
 **Worked Example:** 2x + y = 5 and 4x + 2y = 8
-- a₁/a₂ = 2/4 = 1/2; b₁/b₂ = 1/2; c₁/c₂ = 5/8
+- a1/a2 = 2/4 = 1/2; b1/b2 = 1/2; c1/c2 = 5/8
 - 1/2 ≠ 5/8 → Lines are **parallel** → no solution
 
 ### 3.3 Algebraic Methods
@@ -261,8 +261,8 @@ Sub in (1): 2x + 3(4 − 2x) = 8
 
 ```
 x          y         1
-——  =     ——   =    ——
-b₁c₂−b₂c₁  c₁a₂−c₂a₁  a₁b₂−a₂b₁
+--  =     --   =    --
+b1c2−b2c1  c1a2−c2a1  a1b2−a2b1
 ```
 
 ### 3.4 Equations Reducible to Linear Form
@@ -287,7 +287,7 @@ Substitution can convert some non-linear pairs to linear:
 
 ### 4.1 Standard Form
 
-ax² + bx + c = 0, where a ≠ 0
+ax^2 + bx + c = 0, where a ≠ 0
 
 ### 4.2 Methods of Solving
 
@@ -295,18 +295,18 @@ ax² + bx + c = 0, where a ≠ 0
 
 Express the middle term as two terms whose product = ac and sum = b.
 
-**Worked Example:** x² + 5x + 6 = 0
+**Worked Example:** x^2 + 5x + 6 = 0
 - a = 1, b = 5, c = 6; ac = 6
 - Numbers: 2 and 3 (sum = 5, product = 6)
-- x² + 2x + 3x + 6 = 0
+- x^2 + 2x + 3x + 6 = 0
 - x(x + 2) + 3(x + 2) = 0
 - (x + 2)(x + 3) = 0
 - x = −2 or x = −3
 
-**Worked Example (harder):** 2x² − 7x + 3 = 0
+**Worked Example (harder):** 2x^2 − 7x + 3 = 0
 - a = 2, b = −7, c = 3; ac = 6
 - Numbers: −6 and −1 (sum = −7, product = 6)
-- 2x² − 6x − x + 3 = 0
+- 2x^2 − 6x − x + 3 = 0
 - 2x(x − 3) − 1(x − 3) = 0
 - (2x − 1)(x − 3) = 0
 - x = 1/2 or x = 3
@@ -314,24 +314,24 @@ Express the middle term as two terms whose product = ac and sum = b.
 #### (b) Completing the Square Method
 
 1. Move constant term to RHS
-2. Make coefficient of x² = 1
-3. Add (b/2a)² to both sides
+2. Make coefficient of x^2 = 1
+3. Add (b/2a)^2 to both sides
 4. Write LHS as a perfect square
 
-**Worked Example:** x² + 4x − 5 = 0
+**Worked Example:** x^2 + 4x − 5 = 0
 ```
-x² + 4x = 5
-x² + 4x + 4 = 5 + 4        [Adding (4/2)² = 4]
-(x + 2)² = 9
+x^2 + 4x = 5
+x^2 + 4x + 4 = 5 + 4        [Adding (4/2)^2 = 4]
+(x + 2)^2 = 9
 x + 2 = ±3
 x = 3 − 2 = 1  or  x = −3 − 2 = −5
 ```
 
 #### (c) Quadratic Formula (Sridharacharya's Formula)
 
-> **x = (−b ± √(b² − 4ac)) / 2a**
+> **x = (−b ± √(b^2 − 4ac)) / 2a**
 
-**Worked Example:** 2x² − 5x + 3 = 0
+**Worked Example:** 2x^2 − 5x + 3 = 0
 - a = 2, b = −5, c = 3
 - D = 25 − 24 = 1
 - x = (5 ± 1) / 4
@@ -339,14 +339,14 @@ x = 3 − 2 = 1  or  x = −3 − 2 = −5
 
 ### 4.3 Nature of Roots (Discriminant)
 
-> **Discriminant: D = b² − 4ac**
+> **Discriminant: D = b^2 − 4ac**
 
 | D > 0 | Two distinct real roots |
 |-------|------------------------|
 | D = 0 | Two equal (coincident) real roots |
 | D < 0 | No real roots (roots are imaginary/complex) |
 
-**Worked Example:** For kx² + 2x + 1 = 0, find k for real roots.
+**Worked Example:** For kx^2 + 2x + 1 = 0, find k for real roots.
 - D ≥ 0 → 4 − 4k ≥ 0 → k ≤ 1, k ≠ 0
 
 ### 4.4 Word Problems
@@ -357,10 +357,10 @@ x = 3 − 2 = 1  or  x = −3 − 2 = −5
 3. Solve and reject invalid solutions (negative lengths, etc.)
 
 **Worked Example (Area):**
-A rectangle has length (2x + 1) and breadth (x − 1). Area = 30 cm².
+A rectangle has length (2x + 1) and breadth (x − 1). Area = 30 cm^2.
 - (2x + 1)(x − 1) = 30
-- 2x² − x − 1 = 30
-- 2x² − x − 31 = 0
+- 2x^2 − x − 1 = 30
+- 2x^2 − x − 31 = 0
 - x = (1 ± √249)/4 ≈ 4.2 or −3.7
 - Reject x = −3.7 (breadth must be positive: x − 1 > 0 → x > 1)
 - x ≈ 4.2; Length ≈ 9.4 cm, Breadth ≈ 3.2 cm
@@ -371,8 +371,8 @@ A train travels 360 km. If speed is increased by 10 km/h, time reduces by 1 hour
 - New: speed = x + 10, time = 360/(x+10)
 - 360/x − 360/(x+10) = 1
 - 360(x+10) − 360x = x(x+10)
-- 3600 = x² + 10x
-- x² + 10x − 3600 = 0
+- 3600 = x^2 + 10x
+- x^2 + 10x − 3600 = 0
 - (x + 60)(x − 50) = 0
 - x = 50 (reject −60)
 - Speed = 50 km/h
@@ -407,7 +407,7 @@ where a = first term, d = common difference, n = term number.
 
 **Worked Example:** Find the 20th term of AP: 3, 7, 11, 15, ...
 - a = 3, d = 4
-- a₂₀ = 3 + 19 × 4 = 3 + 76 = 79
+- a20 = 3 + 19 × 4 = 3 + 76 = 79
 
 ### 5.3 Sum of First n Terms
 
@@ -417,15 +417,15 @@ where a = first term, d = common difference, n = term number.
 
 **Worked Example:** Find the sum of the first 15 terms of AP: 8, 12, 16, 20, ...
 - a = 8, d = 4, n = 15
-- S₁₅ = 15/2 × [2(8) + 14(4)]
-- S₁₅ = 15/2 × [16 + 56]
-- S₁₅ = 15/2 × 72 = 15 × 36 = 540
+- S15 = 15/2 × [2(8) + 14(4)]
+- S15 = 15/2 × [16 + 56]
+- S15 = 15/2 × 72 = 15 × 36 = 540
 
 ### 5.4 Key Results
 
 - The **middle term** of an AP: if n is odd, the (n+1)/2-th term
 - **Sum of first n natural numbers:** Sₙ = n(n+1)/2
-- **Sum of first n odd numbers:** n²
+- **Sum of first n odd numbers:** n^2
 - **Sum of first n even numbers:** n(n+1)
 - **Sum of first n squares:** n(n+1)(2n+1)/6
 
@@ -436,8 +436,8 @@ where a = first term, d = common difference, n = term number.
 - n/2 × [48 + (n−1)(−3)] = 78
 - n[48 − 3n + 3] = 156
 - n[51 − 3n] = 156
-- 3n² − 51n + 156 = 0
-- n² − 17n + 52 = 0
+- 3n^2 − 51n + 156 = 0
+- n^2 − 17n + 52 = 0
 - (n − 4)(n − 13) = 0
 - n = 4 or n = 13 (both valid: 4 terms from start or all 13 terms to the last positive term)
 
@@ -462,7 +462,7 @@ Two triangles are **similar** if:
 2. Their **corresponding sides are proportional** (SSS similarity), OR
 3. **Two sides are proportional and the included angle is equal** (SAS similarity)
 
-> **Ratio of areas of similar triangles** = (Ratio of corresponding sides)²
+> **Ratio of areas of similar triangles** = (Ratio of corresponding sides)^2
 
 ### 6.2 Basic Proportionality Theorem (Thales' Theorem)
 
@@ -483,15 +483,15 @@ If DE ∥ BC in ΔABC, then: **AD/DB = AE/EC**
 
 ### 6.4 Areas of Similar Triangles
 
-> If ΔABC ~ ΔDEF, then: **(ar ΔABC)/(ar ΔDEF) = (AB/DE)² = (BC/EF)² = (AC/DF)²**
+> If ΔABC ~ ΔDEF, then: **(ar ΔABC)/(ar ΔDEF) = (AB/DE)^2 = (BC/EF)^2 = (AC/DF)^2**
 
 **Worked Example:** If ratio of similar triangles' sides is 3:5, ratio of areas = 9:25.
 
 ### 6.5 Pythagoras' Theorem
 
-> In a right-angled triangle: **(Hypotenuse)² = (Base)² + (Perpendicular)²**
+> In a right-angled triangle: **(Hypotenuse)^2 = (Base)^2 + (Perpendicular)^2**
 
-**Converse:** If a² + b² = c² for sides of a triangle, then the angle opposite c is 90°.
+**Converse:** If a^2 + b^2 = c^2 for sides of a triangle, then the angle opposite c is 90°.
 
 **Common Pythagorean Triples:**
 - (3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25)
@@ -500,17 +500,17 @@ If DE ∥ BC in ΔABC, then: **AD/DB = AE/EC**
 **Proof of Pythagoras' Theorem (using similarity):**
 - Drop altitude from right angle to hypotenuse
 - Three similar triangles are formed
-- Using area relations, prove a² + b² = c²
+- Using area relations, prove a^2 + b^2 = c^2
 
 ### 6.6 Important Results
 
 - In ΔABC, if ∠B = 90° and BD ⊥ AC, then:
-  - BD² = AD × DC
-  - AB² = AD × AC
-  - BC² = CD × AC
+  - BD^2 = AD × DC
+  - AB^2 = AD × AC
+  - BC^2 = CD × AC
 
 ### Common Mistakes
-- ❌ Writing AAA for similarity (use AA — three angles aren't independent)
+- ❌ Writing AAA for similarity (use AA - three angles aren't independent)
 - ❌ Forgetting to square the side ratio when finding area ratio
 - ❌ Incorrectly identifying corresponding sides in similar triangles
 - ❌ Not recognising Pythagorean triples quickly
@@ -526,19 +526,19 @@ If DE ∥ BC in ΔABC, then: **AD/DB = AE/EC**
 
 ### 7.1 Distance Formula
 
-> Distance between P(x₁, y₁) and Q(x₂, y₂):
-> **PQ = √[(x₂ − x₁)² + (y₂ − y₁)²]**
+> Distance between P(x1, y1) and Q(x2, y2):
+> **PQ = √[(x2 − x1)^2 + (y2 − y1)^2]**
 
 **Worked Example:** Distance between (2, 3) and (5, 7):
-PQ = √[(5−2)² + (7−3)²] = √[9 + 16] = √25 = 5
+PQ = √[(5−2)^2 + (7−3)^2] = √[9 + 16] = √25 = 5
 
 ### 7.2 Section Formula (Internal Division)
 
-> Point P divides the line joining A(x₁, y₁) and B(x₂, y₂) in the ratio m:n:
-> **P = ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n))**
+> Point P divides the line joining A(x1, y1) and B(x2, y2) in the ratio m:n:
+> **P = ((mx2 + nx1)/(m+n), (my2 + ny1)/(m+n))**
 
 **Midpoint Formula** (m = n = 1):
-> **M = ((x₁+x₂)/2, (y₁+y₂)/2)**
+> **M = ((x1+x2)/2, (y1+y2)/2)**
 
 **Worked Example:** Find the point dividing (1, 2) and (4, 5) in ratio 2:1.
 - x = (2×4 + 1×1)/(2+1) = 9/3 = 3
@@ -547,11 +547,11 @@ PQ = √[(5−2)² + (7−3)²] = √[9 + 16] = √25 = 5
 
 ### 7.3 Section Formula (External Division)
 
-> **P = ((mx₂ − nx₁)/(m−n), (my₂ − ny₁)/(m−n))**
+> **P = ((mx2 − nx1)/(m−n), (my2 − ny1)/(m−n))**
 
 ### 7.4 Area of a Triangle
 
-> **Area = ½ |x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|**
+> **Area = ½ |x1(y2 − y3) + x2(y3 − y1) + x3(y1 − y2)|**
 
 **Collinearity Check:** If Area = 0, the three points are collinear.
 
@@ -562,11 +562,11 @@ PQ = √[(5−2)² + (7−3)²] = √[9 + 16] = √25 = 5
 
 ### 7.5 Distance from Origin
 
-> Distance from (x, y) to origin (0, 0) = **√(x² + y²)**
+> Distance from (x, y) to origin (0, 0) = **√(x^2 + y^2)**
 
 ### Common Mistakes
 - ❌ Forgetting absolute value in area formula (area is always positive)
-- ❌ Mixing up (x₁, y₁) with (x₂, y₂) in section formula
+- ❌ Mixing up (x1, y1) with (x2, y2) in section formula
 - ❌ Not squaring both components before adding in distance formula
 - ❌ Confusing internal and external division formulas
 
@@ -609,17 +609,17 @@ For a right-angled triangle with angle θ:
 
 ### 8.3 Trigonometric Identities
 
-> **Identity 1:** sin²θ + cos²θ = 1
+> **Identity 1:** sin^2θ + cos^2θ = 1
 >
-> **Identity 2:** 1 + tan²θ = sec²θ
+> **Identity 2:** 1 + tan^2θ = sec^2θ
 >
-> **Identity 3:** 1 + cot²θ = cosec²θ
+> **Identity 3:** 1 + cot^2θ = cosec^2θ
 
-**Proof of Identity 1:** In a right triangle, P² + B² = H² (Pythagoras). Divide by H²:
-(P/H)² + (B/H)² = 1 → sin²θ + cos²θ = 1
+**Proof of Identity 1:** In a right triangle, P^2 + B^2 = H^2 (Pythagoras). Divide by H^2:
+(P/H)^2 + (B/H)^2 = 1 → sin^2θ + cos^2θ = 1
 
 **Worked Example:** If sin θ = 3/5, find cos θ.
-- cos²θ = 1 − sin²θ = 1 − 9/25 = 16/25
+- cos^2θ = 1 − sin^2θ = 1 − 9/25 = 16/25
 - cos θ = 4/5 (taking positive value for θ in first quadrant)
 
 ### 8.4 Trigonometric Ratios of Complementary Angles
@@ -633,19 +633,19 @@ cot(90° − θ) = tan θ
 
 ### 8.5 Using Identities to Simplify Expressions
 
-**Worked Example:** Prove that (sin θ + cos θ)² = 1 + 2 sin θ cos θ.
-LHS = sin²θ + cos²θ + 2 sin θ cos θ = 1 + 2 sin θ cos θ ✓
+**Worked Example:** Prove that (sin θ + cos θ)^2 = 1 + 2 sin θ cos θ.
+LHS = sin^2θ + cos^2θ + 2 sin θ cos θ = 1 + 2 sin θ cos θ ✓
 
 **Worked Example:** Simplify: (sec A + tan A)(1 − sin A)
 = (1/cos A + sin A/cos A)(1 − sin A)
 = [(1 + sin A)/cos A](1 − sin A)
-= (1 − sin²A)/cos A
-= cos²A/cos A
+= (1 − sin^2A)/cos A
+= cos^2A/cos A
 = cos A
 
 ### Common Mistakes
 - ❌ Confusing sin with cos, or tan with cot
-- ❌ Using wrong identity (1 + tan²θ ≠ cosec²θ)
+- ❌ Using wrong identity (1 + tan^2θ ≠ cosec^2θ)
 - ❌ Forgetting that trigonometric values can be negative in other quadrants
 - ❌ Rationalising denominators incorrectly (e.g., √3 should become √3/3 for 1/√3)
 
@@ -706,7 +706,7 @@ LHS = sin²θ + cos²θ + 2 sin θ cos θ = 1 + 2 sin θ cos θ ✓
 
 - Let height = h, angles = θ and 90° − θ
 - tan θ = h/b and tan(90° − θ) = h/a → cot θ = h/a
-- tan θ × cot θ = (h/b)(h/a) → 1 = h²/(ab) → h = √(ab) ✓
+- tan θ × cot θ = (h/b)(h/a) → 1 = h^2/(ab) → h = √(ab) ✓
 
 ### Common Mistakes
 - ❌ Not drawing a diagram (most common error!)
@@ -721,7 +721,7 @@ LHS = sin²θ + cos²θ + 2 sin θ cos θ = 1 + 2 sin θ cos θ ✓
 
 ---
 
-## 10. Circles — Tangents
+## 10. Circles - Tangents
 
 ### 10.1 Definitions
 
@@ -773,9 +773,9 @@ Also: **OP bisects ∠APB** (i.e., OP is the angle bisector).
 **Example 2:** A tangent PQ at point P of a circle of radius 5 cm. If the length of PQ is 12 cm, find OP.
 
 - ∠OPQ = 90° (tangent ⊥ radius)
-- In right ΔOPQ: OP² + PQ² = OQ²
+- In right ΔOPQ: OP^2 + PQ^2 = OQ^2
 - Wait: OQ is a secant/tangent? Actually OP is the radius at P, PQ is the tangent segment, OQ is the line from centre to external point Q.
-- OP² + PQ² = OQ² → 25 + 144 = OQ² → OQ = 13 cm
+- OP^2 + PQ^2 = OQ^2 → 25 + 144 = OQ^2 → OQ = 13 cm
 - This is a 5-12-13 Pythagorean triple.
 
 ### Common Mistakes
@@ -792,18 +792,18 @@ Also: **OP bisects ∠APB** (i.e., OP is the angle bisector).
 
 ## 11. Surface Areas and Volumes
 
-### 11.1 Quick Reference — Basic Shapes
+### 11.1 Quick Reference - Basic Shapes
 
 | Shape | TSA | CSA | Volume |
 |-------|-----|-----|--------|
 | Cuboid (l×b×h) | 2(lb+bh+hl) | 2h(l+b) | lbh |
-| Cube (side a) | 6a² | 4a² | a³ |
-| Cylinder (r, h) | 2πr(r+h) | 2πrh | πr²h |
-| Cone (r, h, l) | πr(r+l) | πrl | (1/3)πr²h |
-| Sphere (r) | 4πr² | 4πr² | (4/3)πr³ |
-| Hemisphere (r) | 3πr² | 2πr² | (2/3)πr³ |
+| Cube (side a) | 6a^2 | 4a^2 | a^3 |
+| Cylinder (r, h) | 2πr(r+h) | 2πrh | πr^2h |
+| Cone (r, h, l) | πr(r+l) | πrl | (1/3)πr^2h |
+| Sphere (r) | 4πr^2 | 4πr^2 | (4/3)πr^3 |
+| Hemisphere (r) | 3πr^2 | 2πr^2 | (2/3)πr^3 |
 
-> **Slant height of cone:** l = √(r² + h²)
+> **Slant height of cone:** l = √(r^2 + h^2)
 
 ### 11.2 Conversion of Solids
 
@@ -811,15 +811,15 @@ When a solid is melted and recast into another shape, **volume remains constant*
 
 **Worked Example:** A cone of height 24 cm and radius 6 cm is melted and recast into a sphere. Find the radius of the sphere.
 
-- Volume of cone = (1/3)π(6)²(24) = (1/3)π × 36 × 24 = 288π cm³
-- Volume of sphere = (4/3)πR³ = 288π
-- R³ = 288 × 3/4 = 216
+- Volume of cone = (1/3)π(6)^2(24) = (1/3)π × 36 × 24 = 288π cm^3
+- Volume of sphere = (4/3)πR^3 = 288π
+- R^3 = 288 × 3/4 = 216
 - R = 6 cm
 
 **Worked Example:** A metallic cylinder of radius 8 cm and height 20 cm is melted and recast into 8 smaller identical cylinders of height 5 cm each. Find the radius of each.
 
 - Original volume: π(64)(20) = 1280π
-- 8 new cylinders: 8 × πr²(5) = 1280π → 40r² = 1280 → r² = 32 → r = 4√2 cm
+- 8 new cylinders: 8 × πr^2(5) = 1280π → 40r^2 = 1280 → r^2 = 32 → r = 4√2 cm
 
 ### 11.3 Combination of Solids
 
@@ -827,10 +827,10 @@ When a solid is melted and recast into another shape, **volume remains constant*
 
 **Worked Example:** A toy is in the form of a cone mounted on a hemisphere (r = 3.5 cm, h of cone = 15 cm). Find total surface area.
 
-- Slant height: l = √(3.5² + 15²) = √(12.25 + 225) = √237.25 ≈ 15.4 cm
-- CSA of cone = πrl = π(3.5)(15.4) ≈ 169.3 cm²
-- CSA of hemisphere = 2πr² = 2π(12.25) ≈ 77.0 cm²
-- **TSA = CSA of cone + CSA of hemisphere** = 169.3 + 77.0 ≈ 246.3 cm²
+- Slant height: l = √(3.5^2 + 15^2) = √(12.25 + 225) = √237.25 ≈ 15.4 cm
+- CSA of cone = πrl = π(3.5)(15.4) ≈ 169.3 cm^2
+- CSA of hemisphere = 2πr^2 = 2π(12.25) ≈ 77.0 cm^2
+- **TSA = CSA of cone + CSA of hemisphere** = 169.3 + 77.0 ≈ 246.3 cm^2
 - Note: We do NOT add the base of the cone because it's covered by the hemisphere.
 
 **Worked Example (Volume):** A vessel is in the form of a hollow hemisphere mounted by a hollow cylinder. The diameter of the hemisphere is 14 cm and the total height is 13 cm. Find the inner surface area.
@@ -838,7 +838,7 @@ When a solid is melted and recast into another shape, **volume remains constant*
 - r = 7 cm
 - Height of cylinder = 13 − 7 = 6 cm
 - Inner surface area = CSA of cylinder + CSA of hemisphere
-- = 2πrh + 2πr² = 2π(7)(6) + 2π(49) = 84π + 98π = 182π ≈ 572 cm²
+- = 2πrh + 2πr^2 = 2π(7)(6) + 2π(49) = 84π + 98π = 182π ≈ 572 cm^2
 
 ### 11.4 Frustum of a Cone
 
@@ -846,19 +846,19 @@ When a cone is cut by a plane parallel to the base, the portion between the plan
 
 > Given: R = radius of lower base, r = radius of upper base, h = height of frustum, l = slant height
 
-> **Slant height:** l = √[(R − r)² + h²]
+> **Slant height:** l = √[(R − r)^2 + h^2]
 
 > **CSA of Frustum:** π(R + r)l
 
-> **TSA of Frustum:** π(R + r)l + πR² + πr²
+> **TSA of Frustum:** π(R + r)l + πR^2 + πr^2
 
-> **Volume of Frustum:** (1/3)πh(R² + Rr + r²)
+> **Volume of Frustum:** (1/3)πh(R^2 + Rr + r^2)
 
 **Worked Example:** A frustum of a cone has R = 10 cm, r = 3 cm, h = 14 cm. Find volume and CSA.
 
-- l = √[(10−3)² + 14²] = √[49 + 196] = √245 = 7√5 ≈ 15.65 cm
-- Volume = (1/3)π(14)(100 + 30 + 9) = (1/3)π(14)(139) = (1946/3)π ≈ 2037.1 cm³
-- CSA = π(10 + 3)(7√5) = 91π√5 ≈ 639.6 cm²
+- l = √[(10−3)^2 + 14^2] = √[49 + 196] = √245 = 7√5 ≈ 15.65 cm
+- Volume = (1/3)π(14)(100 + 30 + 9) = (1/3)π(14)(139) = (1946/3)π ≈ 2037.1 cm^3
+- CSA = π(10 + 3)(7√5) = 91π√5 ≈ 639.6 cm^2
 
 ### Common Mistakes
 - ❌ Forgetting to subtract the covered area in combination solids (e.g., base of cone on hemisphere)
@@ -870,7 +870,7 @@ When a cone is cut by a plane parallel to the base, the portion between the plan
 ### Teaching Tips
 - Use real objects: ice cream cones, funnels, glasses for frustum visualisation
 - For combination solids, always identify what surfaces are "hidden" and subtract them
-- Practise unit conversions carefully (cm³ to litres: divide by 1000)
+- Practise unit conversions carefully (cm^3 to litres: divide by 1000)
 
 ---
 
@@ -935,17 +935,17 @@ where:
 1. Identify the **modal class** (class with the highest frequency)
 2. Apply the formula:
 
-> **Mode = l + [(f₁ − f₀) / (2f₁ − f₀ − f₂)] × h**
+> **Mode = l + [(f1 − f0) / (2f1 − f0 − f2)] × h**
 
 where:
 - l = lower limit of modal class
-- f₁ = frequency of modal class
-- f₀ = frequency of class preceding modal class
-- f₂ = frequency of class succeeding modal class
+- f1 = frequency of modal class
+- f0 = frequency of class preceding modal class
+- f2 = frequency of class succeeding modal class
 - h = class size
 
 **Worked Example:** For the table above, modal class = 20-30 (highest frequency = 12)
-- l = 20, f₁ = 12, f₀ = 8, f₂ = 6, h = 10
+- l = 20, f1 = 12, f0 = 8, f2 = 6, h = 10
 - Mode = 20 + [(12−8)/(24−8−6)] × 10 = 20 + [4/10] × 10 = 20 + 4 = 24
 
 ### 12.5 Empirical Relationship
@@ -964,7 +964,7 @@ This is useful to verify answers or find one measure when the other two are know
 - ❌ Using class limits instead of class marks for calculating mean
 - ❌ Misidentifying the median class (use N/2, not N)
 - ❌ Wrong cumulative frequency calculation (running total errors)
-- ❌ Forgetting that mode formula needs f₁, f₀, f₂ (not just f₁)
+- ❌ Forgetting that mode formula needs f1, f0, f2 (not just f1)
 - ❌ Not converting grouped data boundaries correctly (e.g., continuous classes)
 
 ### Teaching Tips
@@ -1085,13 +1085,13 @@ For mutually exclusive events (events that cannot happen simultaneously):
 - Division: p(x) = g(x)·q(x) + r(x)
 
 ### Linear Equations
-- Unique solution: a₁/a₂ ≠ b₁/b₂
-- No solution: a₁/a₂ = b₁/b₂ ≠ c₁/c₂
-- Infinite solutions: a₁/a₂ = b₁/b₂ = c₁/c₂
+- Unique solution: a1/a2 ≠ b1/b2
+- No solution: a1/a2 = b1/b2 ≠ c1/c2
+- Infinite solutions: a1/a2 = b1/b2 = c1/c2
 
 ### Quadratic Equations
-- x = (−b ± √(b²−4ac)) / 2a
-- D = b² − 4ac
+- x = (−b ± √(b^2−4ac)) / 2a
+- D = b^2 − 4ac
 
 ### Arithmetic Progressions
 - aₙ = a + (n−1)d
@@ -1099,27 +1099,27 @@ For mutually exclusive events (events that cannot happen simultaneously):
 - Sₙ = n/2 × (a + l)
 
 ### Triangles
-- (Area ratio) = (Side ratio)²
-- Pythagoras: a² + b² = c²
+- (Area ratio) = (Side ratio)^2
+- Pythagoras: a^2 + b^2 = c^2
 
 ### Coordinate Geometry
-- Distance: √[(x₂−x₁)² + (y₂−y₁)²]
-- Section: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))
-- Midpoint: ((x₁+x₂)/2, (y₁+y₂)/2)
-- Area: ½|x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|
+- Distance: √[(x2−x1)^2 + (y2−y1)^2]
+- Section: ((mx2+nx1)/(m+n), (my2+ny1)/(m+n))
+- Midpoint: ((x1+x2)/2, (y1+y2)/2)
+- Area: ½|x1(y2−y3) + x2(y3−y1) + x3(y1−y2)|
 
 ### Trigonometry
-- sin²θ + cos²θ = 1
-- 1 + tan²θ = sec²θ
-- 1 + cot²θ = cosec²θ
+- sin^2θ + cos^2θ = 1
+- 1 + tan^2θ = sec^2θ
+- 1 + cot^2θ = cosec^2θ
 
 ### Surface Areas & Volumes
-- Frustum volume: (1/3)πh(R² + Rr + r²)
+- Frustum volume: (1/3)πh(R^2 + Rr + r^2)
 - Frustum CSA: π(R + r)l
 
 ### Statistics
 - Median: l + [(N/2 − cf)/f] × h
-- Mode: l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h
+- Mode: l + [(f1−f0)/(2f1−f0−f2)] × h
 - 3 Median ≈ Mode + 2 Mean
 
 ### Probability

@@ -1,4 +1,4 @@
-# Grade 6 Mathematics — EduSphere AI
+# Grade 6 Mathematics - EduSphere AI
 
 > **Curriculum Alignment:** CBSE Class 6 NCERT (Mathematics) with supplementary international coverage
 > **Prerequisites:** Grade 5 Mathematics (basic arithmetic, intro to fractions, decimals, geometry basics)
@@ -54,10 +54,10 @@ The international system groups digits in threes, using commas every three place
 ### 1.4 Large Numbers
 
 **Key Large Numbers (Indian System):**
-- 1 Lakh = 1,00,000 = 10⁵
-- 10 Lakhs = 1 Million = 10,00,000 = 10⁶
-- 1 Crore = 1,00,00,000 = 10⁷
-- 10 Crores = 100 Million = 10,00,00,000 = 10⁸
+- 1 Lakh = 1,00,000 = 10^5
+- 10 Lakhs = 1 Million = 10,00,000 = 10^6
+- 1 Crore = 1,00,00,000 = 10^7
+- 10 Crores = 100 Million = 10,00,00,000 = 10^8
 
 **Arranging Numbers:**
 - **Ascending order:** Smallest to largest
@@ -113,18 +113,18 @@ Convert XCIV to Hindu-Arabic: XC = 90, IV = 4 → **94**
 ### 2.1 Definition
 
 **Whole Numbers:** All natural numbers including zero.
-- W = {0, 1, 2, 3, 4, 5, …}
+- W = {0, 1, 2, 3, 4, 5, ...}
 - The smallest whole number is **0**.
 - There is no largest whole number.
 
 **Difference from Natural Numbers:**
-- Natural numbers: N = {1, 2, 3, 4, …}
+- Natural numbers: N = {1, 2, 3, 4, ...}
 - Whole numbers: W = N ∪ {0}
 
 ### 2.2 Number Line for Whole Numbers
 
 - Draw a horizontal line, mark 0 on the left.
-- Mark equal distances to the right: 1, 2, 3, 4, …
+- Mark equal distances to the right: 1, 2, 3, 4, ...
 - Every whole number has a **successor** (next number) and a **predecessor** (previous number), **except 0 has no predecessor**.
 
 ### 2.3 Properties of Whole Numbers
@@ -166,12 +166,12 @@ Convert XCIV to Hindu-Arabic: XC = 90, IV = 4 → **94**
 ### Common Mistakes
 - ❌ Thinking subtraction and division are commutative
 - ❌ Forgetting that 0 has no predecessor
-- ❌ Dividing by zero — this is always undefined!
+- ❌ Dividing by zero - this is always undefined!
 
 ### Teaching Tips
 - Use number lines to visualize addition and subtraction
 - Have students find examples proving/disproving each property
-- Play "property detective" — give operations and ask which properties hold
+- Play "property detective" - give operations and ask which properties hold
 
 ---
 
@@ -184,7 +184,7 @@ Convert XCIV to Hindu-Arabic: XC = 90, IV = 4 → **94**
 - Every number is a factor of itself; 1 is a factor of every number.
 
 **Multiple:** A multiple of a number is obtained by multiplying it by a whole number.
-- Multiples of 4: 4, 8, 12, 16, 20, …
+- Multiples of 4: 4, 8, 12, 16, 20, ...
 - Every number is a multiple of itself.
 
 **Worked Example 1:**
@@ -195,11 +195,11 @@ Find all factors of 36.
 ### 3.2 Prime and Composite Numbers
 
 **Prime Number:** A number greater than 1 that has exactly **two** factors: 1 and itself.
-- Examples: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, …
+- Examples: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...
 - **2 is the only even prime number** (and the smallest prime).
 
 **Composite Number:** A number greater than 1 that has more than two factors.
-- Examples: 4, 6, 8, 9, 10, 12, 14, 15, …
+- Examples: 4, 6, 8, 9, 10, 12, 14, 15, ...
 
 **Special Cases:**
 - 1 is **neither prime nor composite** (it has only one factor).
@@ -245,7 +245,7 @@ Writing a number as a product of its prime factors.
            /  \
           3    5
 ```
-60 = 2 × 2 × 3 × 5 = 2² × 3 × 5
+60 = 2 × 2 × 3 × 5 = 2^2 × 3 × 5
 
 ### 3.5 Highest Common Factor (HCF)
 
@@ -256,19 +256,19 @@ Also called **GCD (Greatest Common Divisor)**.
 - Common factors: 1, 2, 3, 6 → **HCF = 6**
 
 **Method 2: Prime Factorisation**
-- 12 = 2² × 3; 18 = 2 × 3²
-- HCF = product of common prime factors with lowest powers = 2¹ × 3¹ = **6**
+- 12 = 2^2 × 3; 18 = 2 × 3^2
+- HCF = product of common prime factors with lowest powers = 2^1 × 3^1 = **6**
 
 ### 3.6 Least Common Multiple (LCM)
 
 **Method 1: Listing Multiples**
-- Multiples of 4: 4, 8, 12, 16, 20, 24, …
-- Multiples of 6: 6, 12, 18, 24, …
+- Multiples of 4: 4, 8, 12, 16, 20, 24, ...
+- Multiples of 6: 6, 12, 18, 24, ...
 - **LCM = 12**
 
 **Method 2: Prime Factorisation**
-- 12 = 2² × 3; 18 = 2 × 3²
-- LCM = product of all prime factors with highest powers = 2² × 3² = **36**
+- 12 = 2^2 × 3; 18 = 2 × 3^2
+- LCM = product of all prime factors with highest powers = 2^2 × 3^2 = **36**
 
 **Relationship:** HCF(a, b) × LCM(a, b) = a × b
 - Check: HCF(12,18) × LCM(12,18) = 6 × 36 = 216 = 12 × 18 ✅
@@ -291,9 +291,9 @@ Also called **GCD (Greatest Common Divisor)**.
 ### 4.1 Introduction
 
 **Integers** are the set of whole numbers and their negatives.
-- Z = {…, −3, −2, −1, 0, 1, 2, 3, …}
-- **Positive integers:** 1, 2, 3, … (right of zero)
-- **Negative integers:** −1, −2, −3, … (left of zero)
+- Z = {..., −3, −2, −1, 0, 1, 2, 3, ...}
+- **Positive integers:** 1, 2, 3, ... (right of zero)
+- **Negative integers:** −1, −2, −3, ... (left of zero)
 - Zero is **neither positive nor negative**.
 
 ### 4.2 Representation on a Number Line
@@ -484,7 +484,7 @@ Subtract 5/6 − 3/8
 
 ## 6. Algebra
 
-### 6.1 Introduction — What is a Variable?
+### 6.1 Introduction - What is a Variable?
 
 **Variable:** A symbol (usually a letter like x, y, n) that represents an unknown value or a value that can change.
 - Example: "Ram's age is x years." Here x can be any number depending on context.
@@ -495,14 +495,14 @@ Subtract 5/6 − 3/8
 ### 6.2 Expressions and Equations
 
 **Algebraic Expression:** A mathematical phrase containing variables, constants, and operations (but NO equals sign).
-- Examples: 3x + 5, 2a − b, 4m² + 7n
+- Examples: 3x + 5, 2a − b, 4m^2 + 7n
 
 **Terms:** Parts of an expression separated by + or − signs.
 - In 3x + 5 − 2y: the terms are 3x, 5, and 2y.
 
 **Equation:** A statement that two expressions are equal, containing an equals sign (=).
 - Example: 2x + 3 = 11
-- An equation has a **solution** — a value of the variable that makes it true.
+- An equation has a **solution** - a value of the variable that makes it true.
 
 ### 6.3 Writing Algebraic Expressions
 
@@ -540,14 +540,14 @@ Express: "5 more than 3 times a number n"
 
 ### 6.5 Making Formulas from Patterns
 
-**Worked Example 5:** Find the rule for the pattern: 3, 5, 7, 9, 11, …
+**Worked Example 5:** Find the rule for the pattern: 3, 5, 7, 9, 11, ...
 - These are odd numbers starting from 3
 - General term (n-th term) = 2n + 1
 
 ### Common Mistakes
 - ❌ Confusing expressions with equations
 - ❌ Forgetting to apply operations to BOTH sides
-- ❌ Misinterpreting "less than" — "7 less than x" means x − 7, NOT 7 − x
+- ❌ Misinterpreting "less than" - "7 less than x" means x − 7, NOT 7 − x
 
 ### Teaching Tips
 - Use a balance scale analogy for equations
@@ -563,9 +563,9 @@ Express: "5 more than 3 times a number n"
 | Concept | Definition | Notation | Diagram |
 |---------|-----------|----------|---------|
 | **Point** | An exact location; no size | A (capital letter) | • A |
-| **Line Segment** | Part of a line with two endpoints | AB (bar over) | A—————B |
-| **Ray** | Part of a line with one endpoint, extends infinitely in one direction | →AB (arrow on one end) | A———→ |
-| **Line** | Extends infinitely in both directions | ↔AB (arrows on both ends) | ←————→ |
+| **Line Segment** | Part of a line with two endpoints | AB (bar over) | A-----B |
+| **Ray** | Part of a line with one endpoint, extends infinitely in one direction | →AB (arrow on one end) | A---→ |
+| **Line** | Extends infinitely in both directions | ↔AB (arrows on both ends) | ←----→ |
 
 ### 7.2 Angles
 
@@ -745,7 +745,7 @@ Check: 144° + 108° + 72° + 36° = 360° ✅
 
 **Perimeter:** The distance around the boundary of a closed figure. (1-dimensional, measured in units like cm, m)
 
-**Area:** The region occupied by a closed figure. (2-dimensional, measured in square units like cm², m²)
+**Area:** The region occupied by a closed figure. (2-dimensional, measured in square units like cm^2, m^2)
 
 ### 9.2 Perimeter
 
@@ -772,31 +772,31 @@ A square field has side 25 m. Find its perimeter.
 - A = length × breadth = l × b
 
 **Square:**
-- A = side × side = s²
+- A = side × side = s^2
 
 **Worked Example 3:**
 Find the area of a rectangle with length 8 cm and breadth 3 cm.
-- A = 8 × 3 = **24 cm²**
+- A = 8 × 3 = **24 cm^2**
 
 **Worked Example 4:**
-A square has area 144 cm². Find its side.
-- s² = 144 → s = √144 = **12 cm**
+A square has area 144 cm^2. Find its side.
+- s^2 = 144 → s = √144 = **12 cm**
 
 ### 9.4 Word Problems in Mensuration
 
 **Worked Example 5:**
 A rectangular garden is 20 m long and 15 m wide. How much fencing is needed? What is its area?
 - Perimeter (fencing) = 2 × (20 + 15) = 2 × 35 = **70 m**
-- Area = 20 × 15 = **300 m²**
+- Area = 20 × 15 = **300 m^2**
 
 **Worked Example 6:**
-A room is 6 m long and 4 m wide. A carpet costs ₹150 per m². Find the cost of carpeting the floor.
-- Area = 6 × 4 = 24 m²
+A room is 6 m long and 4 m wide. A carpet costs ₹150 per m^2. Find the cost of carpeting the floor.
+- Area = 6 × 4 = 24 m^2
 - Cost = 24 × 150 = **₹3,600**
 
 ### Common Mistakes
 - ❌ Confusing perimeter with area
-- ❌ Forgetting to include correct units (cm vs cm²)
+- ❌ Forgetting to include correct units (cm vs cm^2)
 - ❌ Not converting units before calculation (e.g., mixing m and cm)
 
 ### Teaching Tips
@@ -833,7 +833,7 @@ A figure has **line symmetry** if it can be folded along a line so that the two 
 
 ### 10.2 Making Symmetric Figures
 
-**Method:** Ink-blot technique — fold a paper, put ink on one side, press and unfold to see a symmetric figure.
+**Method:** Ink-blot technique - fold a paper, put ink on one side, press and unfold to see a symmetric figure.
 
 **Worked Example 2:**
 Complete the figure to make it symmetric about the dotted line.
@@ -936,7 +936,7 @@ A car travels 180 km in 3 hours. How far will it travel in 5 hours at the same s
 
 ## Quick Reference Card
 
-### Key Formulas — Grade 6
+### Key Formulas - Grade 6
 
 | Topic | Formula |
 |-------|---------|
@@ -944,14 +944,14 @@ A car travels 180 km in 3 hours. How far will it travel in 5 hours at the same s
 | Perimeter of Square | P = 4s |
 | Perimeter of Triangle | P = a + b + c |
 | Area of Rectangle | A = l × b |
-| Area of Square | A = s² |
+| Area of Square | A = s^2 |
 | Sum of triangle angles | 180° |
 | Sum of quadrilateral angles | 360° |
 | Diameter | d = 2r |
 | Pie chart angle | (Value/Total) × 360° |
 | Proportion check | a × d = b × c |
 
-### Key Properties — Grade 6
+### Key Properties - Grade 6
 
 | Property | Applies To |
 |----------|-----------|
@@ -964,4 +964,4 @@ A car travels 180 km in 3 hours. How far will it travel in 5 hours at the same s
 
 ---
 
-*This content covers the complete CBSE Class 6 NCERT Mathematics syllabus (Chapters 1–12). International curriculum topics are integrated where they complement the NCERT structure.*
+*This content covers the complete CBSE Class 6 NCERT Mathematics syllabus (Chapters 1-12). International curriculum topics are integrated where they complement the NCERT structure.*

@@ -1,4 +1,4 @@
-# CBSE Class 7 Science – Complete Notes
+# CBSE Class 7 Science - Complete Notes
 
 ---
 
@@ -13,26 +13,26 @@
 - **Equation**:
   ```
   Carbon Dioxide + Water  ──(Sunlight + Chlorophyll)──▶  Glucose + Oxygen
-  6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂
+  6CO2 + 6H2O → C6H12O6 + 6O2
   ```
 - **Conditions Needed**:
   - **Sunlight**: Provides energy; absorbed by chlorophyll.
   - **Chlorophyll**: Green pigment present in leaves; traps solar energy.
-  - **Carbon Dioxide (CO₂)**: Taken in through stomata (tiny pores on leaves).
-  - **Water (H₂O)**: Absorbed by roots from soil; transported by xylem.
+  - **Carbon Dioxide (CO2)**: Taken in through stomata (tiny pores on leaves).
+  - **Water (H2O)**: Absorbed by roots from soil; transported by xylem.
 - **Site of Photosynthesis**: **Leaves** (specifically in chloroplasts containing chlorophyll).
 - **Products**: Glucose (food) and Oxygen (released into air).
-- **Stomata**: Guard cells control opening/closing; gas exchange (CO₂ in, O₂ out) and water vapour loss (transpiration).
+- **Stomata**: Guard cells control opening/closing; gas exchange (CO2 in, O2 out) and water vapour loss (transpiration).
 
 ### Other Modes of Plant Nutrition
 - **Parasitic Nutrition**: Cuscuta (Amarbel) derives food from host plants using haustoria.
 - **Insectivorous Plants**: Pitcher plant, Venus flytrap trap insects to supplement nitrogen (grow in nitrogen-deficient soil).
 - **Saprotrophic Nutrition**:
   - Organisms feed on dead and decaying matter.
-  - Example: **Fungi** (mushrooms, bread mould — Rhizopus), bacteria.
+  - Example: **Fungi** (mushrooms, bread mould - Rhizopus), bacteria.
   - They secrete digestive enzymes onto dead matter, absorb nutrients.
   - **Saprophytes** play an important role in decomposition and nutrient recycling in the environment.
-- **Symbiotic Nutrition**: Lichen (alga + fungus — alga makes food, fungus provides shelter); Rhizobium bacteria in legume root nodules fix nitrogen.
+- **Symbiotic Nutrition**: Lichen (alga + fungus - alga makes food, fungus provides shelter); Rhizobium bacteria in legume root nodules fix nitrogen.
 
 ### How Nutrients Are Replenished in Soil
 - Fertilisers and manures add nutrients (N, P, K).
@@ -66,7 +66,7 @@
 | **Mouth/Buccal Cavity** | Teeth chew food (mechanical digestion); saliva (salivary amylase) breaks down starch into sugar; tongue mixes food and helps in swallowing |
 | **Oesophagus (Food Pipe)** | Pushes food to stomach by peristaltic movement (wave-like muscle contractions) |
 | **Stomach** | Gastric juice (HCl + pepsin enzyme + mucus); HCl kills bacteria & provides acidic medium; Pepsin digests proteins; mucus protects stomach lining |
-| **Small Intestine** | **Main site of digestion and absorption**. Liver secretes bile (emulsifies fats — no enzyme). Pancreas secretes pancreatic juice (trypsin digests proteins, lipase digests fats, amylase digests starch). Digested food is absorbed through villi (finger-like projections) into blood |
+| **Small Intestine** | **Main site of digestion and absorption**. Liver secretes bile (emulsifies fats - no enzyme). Pancreas secretes pancreatic juice (trypsin digests proteins, lipase digests fats, amylase digests starch). Digested food is absorbed through villi (finger-like projections) into blood |
 | **Large Intestine** | Absorbs water from remaining undigested food |
 | **Rectum** | Stores waste (faeces) temporarily |
 | **Anus** | Eliminates solid waste (egestion) |
@@ -97,13 +97,13 @@
 ### Wool
 - **Source**: Obtained from fleece (hair) of sheep, goat, yak, camel, alpaca, angora rabbit.
 - **Sheep rearing** (selective breeding for soft underhair) → Shearing (removing fleece) → Scouring (washing to remove dirt/grease) → Sorting (separating fibres by quality) → Dyeing → Rolling & combing → Spinning into yarn → Weaving/knitting into fabric.
-- **Shearing**: Done in summer (doesn't hurt sheep — only hair cut, like haircut).
+- **Shearing**: Done in summer (doesn't hurt sheep - only hair cut, like haircut).
 - **Processing steps**: Shearing → Scouring → Sorting → Dyeing → Spinning → Weaving → Knitting.
 - **Uses**: Woollen clothes, blankets, sweaters, carpets. Keeps warm because wool traps air (air is a poor conductor of heat).
 
 ### Silk
 - **Source**: Silk fibre obtained from **cocoon** of **silkworm** (*Bombyx mori*).
-- **Life Cycle of Silkworm** (4 stages — complete metamorphosis):
+- **Life Cycle of Silkworm** (4 stages - complete metamorphosis):
   1. **Egg**: Laid by female silk moth on mulberry leaves.
   2. **Larva (Caterpillar/Silkworm)**: Hatches from egg; feeds on mulberry leaves; grows and moults several times; secretes fibre around body to spin cocoon.
   3. **Pupa**: Resting stage inside the cocoon.
@@ -114,8 +114,8 @@
 - **Uses**: Silk sarees, ties, scarves, upholstery, parachutes.
 
 ### Natural vs Synthetic Fibres
-- **Natural**: Cotton, wool, silk, jute, flax — obtained from plants/animals.
-- **Synthetic (Artificial)**: Nylon, polyester, acrylic — made from chemical substances (petrochemicals). Strong, durable, wrinkle-resistant, but not absorbent and melt on heating.
+- **Natural**: Cotton, wool, silk, jute, flax - obtained from plants/animals.
+- **Synthetic (Artificial)**: Nylon, polyester, acrylic - made from chemical substances (petrochemicals). Strong, durable, wrinkle-resistant, but not absorbent and melt on heating.
 
 ---
 
@@ -127,7 +127,7 @@
 
 ### Thermometer
 - **Clinical thermometer**: Measures human body temperature (35°C to 42°C). Contains mercury. Kink prevents mercury from falling back on its own. Normal body temperature = **37°C (98.6°F)**.
-- **Laboratory thermometer**: Range –10°C to 110°C. No kink; used for experiments.
+- **Laboratory thermometer**: Range -10°C to 110°C. No kink; used for experiments.
 - **Maximum-Minimum thermometer**: Records highest and lowest temperatures over a period (used in weather stations).
 
 ### Transfer of Heat
@@ -135,7 +135,7 @@
 | Mode | Description | Examples |
 |------|-------------|----------|
 | **Conduction** | Heat transfer through solids without actual movement of particles; from hotter to cooler end | Metal spoon in hot soup gets hot; iron, copper are good conductors; wood, plastic, air are bad conductors (insulators) |
-| **Convection** | Heat transfer through fluids (liquids & gases) by actual movement of particles; warmer fluid rises, cooler sinks | Boiling water — hot water rises; land breeze & sea breeze; room heater warms air |
+| **Convection** | Heat transfer through fluids (liquids & gases) by actual movement of particles; warmer fluid rises, cooler sinks | Boiling water - hot water rises; land breeze & sea breeze; room heater warms air |
 | **Radiation** | Heat transfer without any medium; by electromagnetic waves | Heat from Sun reaches Earth through vacuum; feeling warmth near fire |
 
 - **Conductors**: Substances that allow heat to pass easily (metals like iron, copper, aluminium).
@@ -146,23 +146,23 @@
 - **Land Breeze (Night)**: Land cools faster → air over sea is warmer → warm air over sea rises → cooler air from land moves towards sea.
 
 ### Kinds of Clothes We Wear in Different Seasons
-- **Summer**: Cotton clothes — absorb sweat, allow air circulation, conduct heat away.
-- **Winter**: Woollen clothes — trap air, poor conductor, keep body warm.
-- **Rainy**: Raincoats (plastic/rubber) — waterproof, non-absorbent.
+- **Summer**: Cotton clothes - absorb sweat, allow air circulation, conduct heat away.
+- **Winter**: Woollen clothes - trap air, poor conductor, keep body warm.
+- **Rainy**: Raincoats (plastic/rubber) - waterproof, non-absorbent.
 
 ---
 
 ## 5. Acids, Bases and Salts
 
 ### Acids
-- **Properties**: Sour taste; turn **blue litmus red**; react with metals to produce H₂ gas; react with carbonates to produce CO₂ gas; conduct electricity in solution.
-- **Examples**: Hydrochloric acid (HCl), Sulphuric acid (H₂SO₄), Nitric acid (HNO₃), Acetic acid (CH₃COOH), Citric acid (lemon), Lactic acid (curd), Tartaric acid (tamarind), Oxalic acid (spinach), Formic acid (ant sting), Ascorbic acid (Vitamin C — amla/citrus).
-- **Natural Acids** (organic acids): Found in foods — citric (citrus), lactic (curd), acetic (vinegar), oxalic (spinach), tartaric (tamarind).
+- **Properties**: Sour taste; turn **blue litmus red**; react with metals to produce H2 gas; react with carbonates to produce CO2 gas; conduct electricity in solution.
+- **Examples**: Hydrochloric acid (HCl), Sulphuric acid (H2SO4), Nitric acid (HNO3), Acetic acid (CH3COOH), Citric acid (lemon), Lactic acid (curd), Tartaric acid (tamarind), Oxalic acid (spinach), Formic acid (ant sting), Ascorbic acid (Vitamin C - amla/citrus).
+- **Natural Acids** (organic acids): Found in foods - citric (citrus), lactic (curd), acetic (vinegar), oxalic (spinach), tartaric (tamarind).
 
 ### Bases
 - **Properties**: Bitter taste; soapy/slippery to touch; turn **red litmus blue**; conduct electricity.
-- **Examples**: Sodium hydroxide (NaOH — caustic soda), Calcium hydroxide (Ca(OH)₂ — lime water), Potassium hydroxide (KOH), Magnesium hydroxide (Mg(OH)₂ — milk of magnesia), Ammonium hydroxide (NH₄OH — window cleaner).
-- **Alkalis**: Water-soluble bases (NaOH, KOH, NH₄OH). All alkalis are bases but not all bases are alkalis.
+- **Examples**: Sodium hydroxide (NaOH - caustic soda), Calcium hydroxide (Ca(OH)2 - lime water), Potassium hydroxide (KOH), Magnesium hydroxide (Mg(OH)2 - milk of magnesia), Ammonium hydroxide (NH4OH - window cleaner).
+- **Alkalis**: Water-soluble bases (NaOH, KOH, NH4OH). All alkalis are bases but not all bases are alkalis.
 
 ### Indicators
 - **Natural Indicators**: Litmus (extracted from lichen), Turmeric, China rose (Gudhal), Red cabbage.
@@ -181,8 +181,8 @@
 
 ### Neutralisation Reaction
 - Acid + Base → **Salt + Water** (Neutralisation)
-- **Example**: NaOH + HCl → NaCl + H₂O
-- **Applications**: Antacids (neutralise excess stomach acid — Mg(OH)₂, CaCO₃), treating bee stings (acidic — apply baking soda), soil treatment, factory waste neutralisation, toothpaste (bases neutralise mouth acid).
+- **Example**: NaOH + HCl → NaCl + H2O
+- **Applications**: Antacids (neutralise excess stomach acid - Mg(OH)2, CaCO3), treating bee stings (acidic - apply baking soda), soil treatment, factory waste neutralisation, toothpaste (bases neutralise mouth acid).
 
 ### pH Scale
 - Measures hydrogen ion concentration; ranges from **0 to 14**.
@@ -191,20 +191,20 @@
 - **pH > 7**: Basic (higher = more basic).
 - **pH paper / Universal Indicator**: Gives approximate pH (different colours for different pH values).
 - **pH of Common Substances**:
-  - Stomach acid/HCl: ~1–2
-  - Lemon juice/Vinegar: ~2–3
+  - Stomach acid/HCl: ~1-2
+  - Lemon juice/Vinegar: ~2-3
   - Milk: ~6.5
   - Pure water: 7
   - Blood: ~7.4
-  - Baking soda: ~8–9
+  - Baking soda: ~8-9
   - Milk of magnesia: ~10
-  - Bleach/NaOH: ~13–14
+  - Bleach/NaOH: ~13-14
 - **Importance of pH**: Agriculture (soil pH), digestion (stomach pH), self-defence of plants/animals, tooth decay, medicines.
 
 ### Salts
 - Formed by neutralisation (acid + base → salt + water).
 - Family name from acid: Hydrochloric acid → Chlorides; Sulphuric acid → Sulphates; Nitric acid → Nitrates; Acetic acid → Acetates.
-- Examples: NaCl (common salt), CaSO₄ (gypsum), Na₂CO₃ (washing soda), NaHCO₃ (baking soda), CaCO₃ (limestone/chalk), CaOCl₂ (bleaching powder), CuSO₄ (blue vitriol), NaOH (caustic soda).
+- Examples: NaCl (common salt), CaSO4 (gypsum), Na2CO3 (washing soda), NaHCO3 (baking soda), CaCO3 (limestone/chalk), CaOCl2 (bleaching powder), CuSO4 (blue vitriol), NaOH (caustic soda).
 
 ---
 
@@ -218,12 +218,12 @@
 ### Chemical Change
 - **Definition**: **New substance(s)** are formed with different properties.
 - **Properties**: Usually irreversible; change in chemical composition; energy change (heat/light/sound/gas may be evolved or absorbed); change in colour, odour, state.
-- **Examples**: Burning of paper/candle/wood, rusting of iron, curdling of milk, cooking food, digestion of food, photosynthesis, burning of LPG, mixing vinegar & baking soda (CO₂ released), fermentation, exploding firecrackers.
+- **Examples**: Burning of paper/candle/wood, rusting of iron, curdling of milk, cooking food, digestion of food, photosynthesis, burning of LPG, mixing vinegar & baking soda (CO2 released), fermentation, exploding firecrackers.
 
 ### Rusting of Iron
-- Iron reacts with oxygen and moisture (water) to form **iron oxide (Fe₂O₃·nH₂O)** — reddish-brown flaky substance called **rust**.
+- Iron reacts with oxygen and moisture (water) to form **iron oxide (Fe2O3·nH2O)** - reddish-brown flaky substance called **rust**.
 - **Conditions needed**: Presence of both oxygen AND water (moisture).
-- **Prevention**: Painting, oiling/greasing, galvanisation (coating with zinc), chrome plating, alloying (stainless steel — iron + nickel + chromium), anodising, keeping away from moisture.
+- **Prevention**: Painting, oiling/greasing, galvanisation (coating with zinc), chrome plating, alloying (stainless steel - iron + nickel + chromium), anodising, keeping away from moisture.
 - **Rusting is harmful**: Weakens iron structures (bridges, rails, ships, gates). Costly to repair.
 
 ### Crystallisation
@@ -235,7 +235,7 @@
 ### Types of Chemical Changes
 - **Combustion/Burning**: Substance reacts with oxygen → heat + light produced.
 - **Oxidation**: Gain of oxygen (rusting of iron).
-- **Decomposition**: Breaking down into simpler substances (e.g., CaCO₃ → CaO + CO₂ on heating).
+- **Decomposition**: Breaking down into simpler substances (e.g., CaCO3 → CaO + CO2 on heating).
 - **Displacement**: More reactive element displaces less reactive one.
 
 ---
@@ -245,19 +245,19 @@
 ### Weather
 - **Definition**: Short-term atmospheric conditions of a place at a specific time (day-to-day state of atmosphere).
 - **Elements**: Temperature, humidity, rainfall, wind speed, sunshine.
-- **Reported by**: Meteorological Department (India Meteorological Department — IMD).
+- **Reported by**: Meteorological Department (India Meteorological Department - IMD).
 - **Measured using**: Thermometer (temperature), rain gauge (rainfall), wind vane (wind direction), anemometer (wind speed), hygrometer (humidity), barometer (atmospheric pressure).
 
 ### Climate
-- **Definition**: Long-term average weather pattern of a region (over 25–30 years).
+- **Definition**: Long-term average weather pattern of a region (over 25-30 years).
 - **Factors Affecting Climate**: Latitude (distance from equator), altitude (height above sea level), distance from sea, wind direction, ocean currents, relief features (mountains).
 
 ### Major Climate Zones of India
 | Zone | Features | Animals Adapted |
 |------|----------|-----------------|
 | **Tropical (Hot & Humid)** | High temperature, heavy rainfall, dense forests | Elephant, monkey, lion, tiger, peacock, toucan, frogs, snakes |
-| **Tropical Rainforest** | Very hot & wet, dense vegetation, canopy layers | Toucan, sloth, tree frog, jaguar — arboreal (tree-dwelling) life |
-| **Hot & Dry (Desert)** | Very hot day, cold night, very little rain | Camel, desert fox, rat, snake, cactus — thick skin, minimal sweating |
+| **Tropical Rainforest** | Very hot & wet, dense vegetation, canopy layers | Toucan, sloth, tree frog, jaguar - arboreal (tree-dwelling) life |
+| **Hot & Dry (Desert)** | Very hot day, cold night, very little rain | Camel, desert fox, rat, snake, cactus - thick skin, minimal sweating |
 | **Cold (Polar/Himalayan)** | Very cold, snow, strong winds | Polar bear, penguin, snow leopard, yak, mountain goat |
 | **Coastal** | Moderate temperature, high humidity due to sea | Fish, crabs, seabirds |
 
@@ -273,9 +273,9 @@
 - **Birds**: Feathers, hollow bones (lightweight), wings, beaks adapted to food type.
 
 ### Adaptations in Plants (to Climate)
-- **Desert plants (Xerophytes)**: Leaves modified to spines (reduce water loss — transpiration), thick waxy coating (cuticle), deep roots, store water in stems (cactus — succulent), photosynthesis in stem.
+- **Desert plants (Xerophytes)**: Leaves modified to spines (reduce water loss - transpiration), thick waxy coating (cuticle), deep roots, store water in stems (cactus - succulent), photosynthesis in stem.
 - **Grassland plants**: Flexible stems, deep roots (survive grazing and fires), many grasses grow from base.
-- **Mangrove plants**: Breathing roots (pneumatophores) — survive in waterlogged soil.
+- **Mangrove plants**: Breathing roots (pneumatophores) - survive in waterlogged soil.
 - **Tundra plants**: Small, grow close to ground (avoid wind), dark-coloured (absorb more heat), grow fast in short summer.
 
 ---
@@ -284,7 +284,7 @@
 
 ### Air
 - **Air Pressure**: Pressure exerted by air. Decreases with altitude. **High pressure** air sinks; **low pressure** air rises.
-- **Wind**: Moving air — flows from high pressure to low pressure region.
+- **Wind**: Moving air - flows from high pressure to low pressure region.
 
 ### Wind Formation
 - **Heating of air**: Unequal heating of Earth's surface → air above heated region expands → becomes less dense → rises → low pressure created → cooler air rushes in from high pressure area → this moving air is wind.
@@ -305,10 +305,10 @@
   2. Warm moist air rises → low pressure at centre.
   3. Surrounding air rushes in → Earth's rotation (Coriolis effect) makes it spin.
   4. More moisture → more condensation → releases energy → storm intensifies.
-  5. Eye of the cyclone: Calm, clear area at centre (no wind, no rain). Surrounded by wall of clouds (eye wall — most destructive).
-- **Conditions needed**: Large warm ocean surface, high humidity, Coriolis force (away from equator — no cyclones form at equator), pre-existing low pressure disturbance.
-- **Destruction**: High-speed winds (150–250 km/h), heavy rainfall → flooding, storm surge → coastal flooding, destruction of buildings/crops/trees, loss of life.
-- **Naming**: Cyclones named by countries in the region (WMO/ESCAP panel). India's naming — IMD.
+  5. Eye of the cyclone: Calm, clear area at centre (no wind, no rain). Surrounded by wall of clouds (eye wall - most destructive).
+- **Conditions needed**: Large warm ocean surface, high humidity, Coriolis force (away from equator - no cyclones form at equator), pre-existing low pressure disturbance.
+- **Destruction**: High-speed winds (150-250 km/h), heavy rainfall → flooding, storm surge → coastal flooding, destruction of buildings/crops/trees, loss of life.
+- **Naming**: Cyclones named by countries in the region (WMO/ESCAP panel). India's naming - IMD.
 - **Cyclone prone areas in India**: East coast (Odisha, Andhra Pradesh, West Bengal), West coast (Gujarat, Maharashtra).
 
 ### Tornadoes
@@ -348,7 +348,7 @@
 |------|------------|-------------|--------------|-------------|--------|
 | **Sandy** | Large particles; gritty feel | **High** (very fast) | **Low** | Cactus, millets, groundnut | Desert, coastal areas |
 | **Clayey** | Very fine particles; sticky when wet | **Low** (very slow) | **High** | Wheat, rice, cotton | Flood plains, river valleys |
-| **Loamy** | Mixture of sand, silt, clay + humus; ideal soil | **Moderate** | **Good** | Almost all crops — wheat, rice, sugarcane, cotton | Most agricultural regions |
+| **Loamy** | Mixture of sand, silt, clay + humus; ideal soil | **Moderate** | **Good** | Almost all crops - wheat, rice, sugarcane, cotton | Most agricultural regions |
 
 - **Sandy soil**: Well-aerated, easy to plough; poor fertility.
 - **Clayey soil**: Waterlogged easily; very fertile; used for pottery and bricks.
@@ -362,7 +362,7 @@
 
 ### Soil and Crops
 - Soil type determines which crops grow best.
-- Wheat — loamy/clayey; Rice — clayey (water-retaining); Cotton — black soil (clayey, regur soil — canals/India); Pulses — loamy; Tea — mountainous well-drained soil.
+- Wheat - loamy/clayey; Rice - clayey (water-retaining); Cotton - black soil (clayey, regur soil - canals/India); Pulses - loamy; Tea - mountainous well-drained soil.
 
 ### Soil Erosion
 - **Definition**: Removal of topsoil by wind, water, or human activities.
@@ -370,7 +370,7 @@
 - **Effects**: Loss of fertile topsoil → reduced soil fertility → desertification → reduced agricultural productivity → sediment in rivers → flooding.
 - **Prevention (Soil Conservation)**:
   - Afforestation (planting trees).
-  - Terrace farming (steps on slopes — hilly areas).
+  - Terrace farming (steps on slopes - hilly areas).
   - Strip cropping (alternating crops in strips).
   - Contour ploughing (ploughing across slope, not up-down).
   - Building embankments/dams along river banks.
@@ -388,7 +388,7 @@
 - **Equation (Aerobic)**:
   ```
   Glucose + Oxygen → Carbon Dioxide + Water + Energy (ATP)
-  C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy
+  C6H12O6 + 6O2 → 6CO2 + 6H2O + Energy
   ```
 - **Purpose**: Release energy for life processes (movement, growth, repair, thinking).
 
@@ -397,7 +397,7 @@
 | | Aerobic Respiration | Anaerobic Respiration |
 |---|---|---|
 | **Oxygen** | Required | Not required |
-| **Products** | CO₂ + Water + More energy | Varies (less energy) |
+| **Products** | CO2 + Water + More energy | Varies (less energy) |
 | **Where** | Cytoplasm + Mitochondria | Cytoplasm only |
 | **Energy** | More (36-38 ATP) | Less (2 ATP) |
 | **Examples** | Most organisms, plants, humans | Yeast, bacteria; muscles during intense exercise |
@@ -407,7 +407,7 @@
   ```
   Glucose → Ethanol + Carbon Dioxide + Energy (less)
   ```
-  Used in making bread (CO₂ makes dough rise), wine/beer (ethanol produced).
+  Used in making bread (CO2 makes dough rise), wine/beer (ethanol produced).
 - **In Muscles (during heavy exercise)**:
   ```
   Glucose → Lactic Acid + Energy (less)
@@ -415,7 +415,7 @@
   Causes muscle cramps (accumulation of lactic acid). Relieved by rest + warm bath + massage (improves blood circulation → removes lactic acid).
 
 ### Breathing (External Respiration) vs Cellular Respiration
-- **Breathing**: Physical process of inhaling (taking in air/O₂) and exhaling (releasing CO₂). Involves respiratory organs (lungs in humans, gills in fish, skin in earthworm/frog, spiracles/trachea in insects, stomata in plants).
+- **Breathing**: Physical process of inhaling (taking in air/O2) and exhaling (releasing CO2). Involves respiratory organs (lungs in humans, gills in fish, skin in earthworm/frog, spiracles/trachea in insects, stomata in plants).
 - **Cellular Respiration**: Chemical breakdown of glucose inside cells to release energy.
 
 ### Respiratory Organs in Different Organisms
@@ -430,20 +430,20 @@
 
 ### Breathing in Humans
 - **Pathway**: Nostrils → Nasal cavity → Pharynx (throat) → Larynx (voice box) → Trachea (windpipe) → Bronchi → Bronchioles → Alveoli (air sacs in lungs).
-- **Alveoli**: Tiny balloon-like sacs; walls surrounded by blood capillaries; thin walls allow gas exchange (O₂ diffuses into blood, CO₂ diffuses out); large surface area.
+- **Alveoli**: Tiny balloon-like sacs; walls surrounded by blood capillaries; thin walls allow gas exchange (O2 diffuses into blood, CO2 diffuses out); large surface area.
 - **Diaphragm**: Muscular sheet below lungs; contracts during inhalation (flattens → lungs expand → air rushes in), relaxes during exhalation (dome shape → lungs compress → air pushed out).
 - **Inhalation**: Diaphragm contracts, ribs move up & out → chest cavity expands → air pressure decreases → air rushes in.
 - **Exhalation**: Diaphragm relaxes, ribs move down & in → chest cavity contracts → air pressure increases → air pushed out.
 
 ### Respiration in Plants
 - Plants respire day and night (but photosynthesis only during day).
-- O₂ diffuses in through stomata/lenticels; CO₂ diffuses out.
-- During day: Net effect is release of O₂ (photosynthesis > respiration).
-- During night: Net effect is release of CO₂ (only respiration).
+- O2 diffuses in through stomata/lenticels; CO2 diffuses out.
+- During day: Net effect is release of O2 (photosynthesis > respiration).
+- During night: Net effect is release of CO2 (only respiration).
 
 ### Breathing Rate
-- **Normal adult**: 12–20 breaths per minute at rest.
-- Increases during exercise (need more O₂, release more CO₂).
+- **Normal adult**: 12-20 breaths per minute at rest.
+- Increases during exercise (need more O2, release more CO2).
 - Children have higher breathing rate than adults.
 
 ---
@@ -454,25 +454,25 @@
 
 #### Xylem (Water & Mineral Transport)
 - **Tissue**: Conducts water and dissolved minerals from roots to all parts of plant.
-- **Direction**: Unidirectional — **upward only** (roots → stem → leaves).
+- **Direction**: Unidirectional - **upward only** (roots → stem → leaves).
 - **Structure**: Made of dead cells (tracheids & vessels) forming tubes; walls thickened with lignin (no cytoplasm); provides mechanical support.
-- **Process**: Roots absorb water by root hair (osmosis) → root pressure pushes water upward → **transpiration pull** (main driving force) — evaporation of water from leaves creates suction → cohesion & adhesion of water molecules → capillary action → water rises in xylem vessels.
+- **Process**: Roots absorb water by root hair (osmosis) → root pressure pushes water upward → **transpiration pull** (main driving force) - evaporation of water from leaves creates suction → cohesion & adhesion of water molecules → capillary action → water rises in xylem vessels.
 - **Transpiration**: Loss of water vapour through stomata. Helps in: water & mineral transport, cooling of plant, maintaining turgidity. Rate affected by: temperature, humidity, wind speed, light intensity.
 
 #### Phloem (Food/ Organic Transport)
 - **Tissue**: Conducts prepared food (sugar/organic substances) from leaves to all parts of plant.
-- **Direction**: Bidirectional — **up and down** (from leaves to roots, flowers, fruits, storage organs).
-- **Process**: **Translocation** — food made in leaves (source) is transported to all other parts (sinks) through phloem (sieve tubes with living cells). Uses energy (ATP).
+- **Direction**: Bidirectional - **up and down** (from leaves to roots, flowers, fruits, storage organs).
+- **Process**: **Translocation** - food made in leaves (source) is transported to all other parts (sinks) through phloem (sieve tubes with living cells). Uses energy (ATP).
 - **Structure**: Sieve tubes (living, no nucleus), companion cells, phloem parenchyma, phloem fibres.
 
 ### Transportation in Animals (Circulatory System)
 
 #### Blood
 - **Components**:
-  - **Red Blood Cells (RBCs / Erythrocytes)**: Contain haemoglobin (iron-rich red pigment); transport O₂ from lungs to body tissues; no nucleus; disc-shaped.
+  - **Red Blood Cells (RBCs / Erythrocytes)**: Contain haemoglobin (iron-rich red pigment); transport O2 from lungs to body tissues; no nucleus; disc-shaped.
   - **White Blood Cells (WBCs / Leucocytes)**: Fight infection; some produce antibodies; have nucleus; fewer than RBCs; amoeba-shaped.
   - **Platelets (Thrombocytes)**: Cell fragments; help in blood clotting (prevent excessive bleeding); no nucleus.
-  - **Plasma**: Liquid part of blood (55%); pale yellow; carries dissolved substances — glucose, amino acids, digested food, CO₂, urea, hormones, salts, proteins.
+  - **Plasma**: Liquid part of blood (55%); pale yellow; carries dissolved substances - glucose, amino acids, digested food, CO2, urea, hormones, salts, proteins.
 
 #### Blood Vessels
 | Type | Structure | Function |
@@ -488,12 +488,12 @@
   - **Right Ventricle**: Pumps deoxygenated blood to lungs (via pulmonary artery).
   - **Left Atrium**: Receives oxygenated blood from lungs (via pulmonary vein).
   - **Left Ventricle**: Pumps oxygenated blood to all body parts (via aorta).
-- ** Chambers are separated by**: Septum (prevents mixing of O₂-rich and O₂-poor blood).
-- **Valves**: Bicuspid (mitral) valve between left atrium & ventricle; Tricuspid valve between right atrium & ventricle; Semilunar valves in aorta & pulmonary artery — prevent backflow.
+- ** Chambers are separated by**: Septum (prevents mixing of O2-rich and O2-poor blood).
+- **Valves**: Bicuspid (mitral) valve between left atrium & ventricle; Tricuspid valve between right atrium & ventricle; Semilunar valves in aorta & pulmonary artery - prevent backflow.
 - **Double Circulation**:
   1. **Pulmonary Circulation**: Right ventricle → Lungs (blood gets oxygenated) → Left atrium.
-  2. **Systemic Circulation**: Left ventricle → Body organs (O₂ delivered, CO₂ picked up) → Right atrium.
-- **Heartbeat**: ~72 beats per minute (resting adult). "LUB-DUB" sounds — from valve closure.
+  2. **Systemic Circulation**: Left ventricle → Body organs (O2 delivered, CO2 picked up) → Right atrium.
+- **Heartbeat**: ~72 beats per minute (resting adult). "LUB-DUB" sounds - from valve closure.
 
 #### Lymphatic System
 - **Lymph**: Colourless fluid (like plasma but no RBCs, less protein); formed from tissue fluid.
@@ -519,7 +519,7 @@
 
 ### Sexual Reproduction in Plants
 - Involves **two parents** → fusion of male & female gametes → produces **seeds** (in flowers).
-- **Flower**: Reproductive part of plant. Bisexual flowers have both male (stamen) and female (pistil) parts (e.g., Hibiscus, Mustard). Unisexual flowers have only one (e.g., Papaya — male/female separate; Watermelon — male/female separate; Corn).
+- **Flower**: Reproductive part of plant. Bisexual flowers have both male (stamen) and female (pistil) parts (e.g., Hibiscus, Mustard). Unisexual flowers have only one (e.g., Papaya - male/female separate; Watermelon - male/female separate; Corn).
 
 #### Parts of a Flower
 - **Sepals**: Green outermost whorl; protect flower bud.
@@ -536,7 +536,7 @@
 - **Definition**: Transfer of pollen grains from anther to stigma.
 - **Self-pollination**: Pollen transferred within same flower or same plant. (e.g., Pea, Wheat, Rice).
 - **Cross-pollination**: Pollen transferred from one flower to another flower of different plant of same species. (e.g., Sunflower, Hibiscus). Requires external agent.
-- **Agents of Pollination**: Wind (corn, wheat, rice — light, non-sticky pollen), Water (hydrilla, water lily), Insects (bees, butterflies — bright petals, nectar, fragrance, sticky pollen), Birds (sunflower, orchids), Bats (saguaro cactus).
+- **Agents of Pollination**: Wind (corn, wheat, rice - light, non-sticky pollen), Water (hydrilla, water lily), Insects (bees, butterflies - bright petals, nectar, fragrance, sticky pollen), Birds (sunflower, orchids), Bats (saguaro cactus).
 
 #### Fertilisation
 - After pollination → pollen grain germinates on stigma → pollen tube grows down style → reaches ovule → male gamete (sperm) fuses with female gamete (egg) inside ovule → **zygote** formed → zygote develops into **embryo** → ovule becomes **seed** → ovary becomes **fruit**.
@@ -547,7 +547,7 @@
 - **Methods**:
   - **Wind**: Light, small seeds with wings/hair (maple, dandelion, cotton, drumstick).
   - **Water**: Seeds float; fibrous/airy covering (coconut, lotus, water lily).
-  - **Animals**: Sticky/spiny seeds (Xanthium/cocklebur); edible fruits (seeds pass through digestive tract and are excreted — fig, neem); birds carry and drop.
+  - **Animals**: Sticky/spiny seeds (Xanthium/cocklebur); edible fruits (seeds pass through digestive tract and are excreted - fig, neem); birds carry and drop.
   - **Explosion/Mechanical**: Pod dries and bursts open (pea, bean, balsam, castor, touch-me-not/Impatiens).
   - **Gravity**: Heavy fruits fall near parent (apple, mango).
 
@@ -576,14 +576,14 @@
 - **Measuring Tape/Metre Scale**: For measuring distance.
 
 ### Time
-- **Units**: Second (s) — SI unit; minute (min); hour (hr); day; year.
+- **Units**: Second (s) - SI unit; minute (min); hour (hr); day; year.
 - **Periodic Events** used to measure time: Day/night cycle (Earth rotation), lunar month, year (Earth revolution), pendulum.
 - **Devices**:
   - **Sundial**: Uses shadow of sunlight.
   - **Water Clock/Clepsydra**: Flow of water measures time.
   - **Sand Clock/Hourglass**: Flow of sand.
   - **Pendulum Clock**: Uses swing of pendulum.
-  - **Quartz Clock**: Uses vibrations of quartz crystal (piezoelectric effect) — very accurate.
+  - **Quartz Clock**: Uses vibrations of quartz crystal (piezoelectric effect) - very accurate.
   - **Digital Clock**: Electronic display.
   - **Atomic Clock**: Most accurate; uses vibrations of atoms (cesium).
 
@@ -618,12 +618,12 @@
 - **Conditions for current flow**: Closed circuit (continuous path), source of energy (cell/battery), conducting material.
 
 ### Circuit
-- **Closed circuit**: Complete path — current flows.
-- **Open circuit**: Broken path — current does not flow.
+- **Closed circuit**: Complete path - current flows.
+- **Open circuit**: Broken path - current does not flow.
 - **Circuit diagram**: Standard symbols used to represent components (cell, battery, wire, switch, bulb, resistor, ammeter, voltmeter).
 
 ### Components
-- **Cell**: Device that converts chemical energy to electrical energy (two terminals — positive and negative).
+- **Cell**: Device that converts chemical energy to electrical energy (two terminals - positive and negative).
 - **Battery**: Combination of two or more cells connected together.
 - **Switch**: Opens or closes a circuit (controls flow of current).
 - **Wire**: Conducting material (usually copper) for current flow.
@@ -631,18 +631,18 @@
 
 ### Electric Current Effects
 1. **Heating Effect**: When current flows through a resistor (conductor), it gets heated.
-   - **Joule's Law**: Heat produced ∝ I² × R × t (depends on current, resistance, time).
-   - **Applications**: Electric heater, electric iron, electric toaster, hair dryer, fuse (melts and breaks circuit if excess current — prevents fire/damage), immersion rod, electric kettle.
+   - **Joule's Law**: Heat produced ∝ I^2 × R × t (depends on current, resistance, time).
+   - **Applications**: Electric heater, electric iron, electric toaster, hair dryer, fuse (melts and breaks circuit if excess current - prevents fire/damage), immersion rod, electric kettle.
    - **Disadvantage**: Wastage of energy as heat; damage to appliances.
 
 2. **Magnetic Effect**: Current-carrying wire behaves like a magnet.
    - **Oersted's Experiment**: Compass needle deflects when placed near current-carrying wire → proves magnetic effect.
-   - **Electromagnet**: Coil of wire (solenoid) wound around iron core — acts as magnet when current flows; stops when current stops. Strength increases with: more turns of coil, more current, using soft iron core.
+   - **Electromagnet**: Coil of wire (solenoid) wound around iron core - acts as magnet when current flows; stops when current stops. Strength increases with: more turns of coil, more current, using soft iron core.
    - **Applications**: Electric bell, electromagnetic crane (lifting scrap iron), electric motor, MRI machine, doorbell, relays, loudspeakers.
-   - **Note**: Soft iron — loses magnetism when current stops. Steel — retains magnetism.
+   - **Note**: Soft iron - loses magnetism when current stops. Steel - retains magnetism.
 
 3. **Chemical Effect**: When current passes through a conducting solution (electrolyte), chemical reactions occur.
-   - **Electrodes**: Metal plates/rods immersed in solution — connected to terminals.
+   - **Electrodes**: Metal plates/rods immersed in solution - connected to terminals.
    - **Electroplating**: Coating one metal with another using electric current. Object to be coated = cathode (negative electrode); Metal to deposit = anode (positive electrode); Electrolyte = solution of depositing metal.
    - **Applications**: Coating iron with zinc (galvanisation), chrome plating, silver plating on jewellery, tin plating on cans (prevents rusting), gold plating.
    - **Uses**: Preventing rusting, making metals look attractive, cheaper metals coated with expensive ones.
@@ -657,11 +657,11 @@
 
 ---
 
-## 15. Light — Reflection and Refraction
+## 15. Light - Reflection and Refraction
 
 ### Light
 - **Definition**: Form of energy that enables us to see. Electromagnetic radiation visible to human eye.
-- **Properties**: Travels in straight lines (rectilinear propagation); speed = 3 × 10⁸ m/s (in vacuum); fastest in vacuum, slower in medium.
+- **Properties**: Travels in straight lines (rectilinear propagation); speed = 3 × 10^8 m/s (in vacuum); fastest in vacuum, slower in medium.
 
 ### Reflection
 - **Definition**: Bouncing back of light from a surface.
@@ -678,7 +678,7 @@
   - Image characteristics: Virtual (cannot be formed on screen), Erect, Same size as object, Laterally inverted (left-right reversed), Same distance behind mirror as object is in front.
   - Uses: Looking glass, periscope (submarines), kaleidoscope, dressing rooms, security mirrors, dental mirrors.
 - **Lateral Inversion**: Left side of object appears as right in image (ambulance written in reverse so it reads correctly in rear-view mirror).
-- **Periscope**: Two plane mirrors at 45° — used in submarines, double-decker buses.
+- **Periscope**: Two plane mirrors at 45° - used in submarines, double-decker buses.
 
 ### Spherical Mirrors (Extra)
 - **Concave**: Reflecting surface curved inward (cave-like). Can form real or virtual images. Used as shaving mirror, dentist mirror, satellite dishes, headlights.
@@ -691,33 +691,33 @@
   - **Concave Lens**: Thinner at centre, thicker at edges (diverging lens). Diverges light rays. Always forms virtual, erect, diminished image. Used in spectacles (for myopia/nearsightedness), peepholes, flashlight reflectors.
 
 ### Image Formation by Convex Lens
-- **Object beyond 2F**: Real, inverted, diminished (between F and 2F) — camera.
-- **Object at 2F**: Real, inverted, same size — photocopier.
-- **Object between F and 2F**: Real, inverted, magnified (beyond 2F) — projector.
+- **Object beyond 2F**: Real, inverted, diminished (between F and 2F) - camera.
+- **Object at 2F**: Real, inverted, same size - photocopier.
+- **Object between F and 2F**: Real, inverted, magnified (beyond 2F) - projector.
 - **Object at F**: Image at infinity (parallel rays).
-- **Object between F and lens**: Virtual, erect, magnified (same side) — magnifying glass.
+- **Object between F and lens**: Virtual, erect, magnified (same side) - magnifying glass.
 
 ### Image Formation by Concave Lens
 - Always: Virtual, erect, diminished (same side as object, between F and lens).
 
 ### Rainbow Formation
-- **Dispersion**: Splitting of white light into its component colours (VIBGYOR — Violet, Indigo, Blue, Green, Yellow, Orange, Red). Happens because different colours travel at different speeds in a prism (different refractive indices).
+- **Dispersion**: Splitting of white light into its component colours (VIBGYOR - Violet, Indigo, Blue, Green, Yellow, Orange, Red). Happens because different colours travel at different speeds in a prism (different refractive indices).
 - **Rainbow**: Caused by dispersion, refraction, and total internal reflection of sunlight in water droplets.
 
 ### Optical Illusions
-- Objects appear different due to how light interacts with them (mirages — due to total internal reflection in hot air layers; swimming pool appearing shallower — refraction).
+- Objects appear different due to how light interacts with them (mirages - due to total internal reflection in hot air layers; swimming pool appearing shallower - refraction).
 
-### Sunlight — White Light
+### Sunlight - White Light
 - White light is a mixture of seven colours.
 - **Newton's Prism Experiment**: Prism disperses white light into spectrum; second prism recombines them into white light.
 
 ---
 
-## 16. Water — A Precious Resource
+## 16. Water - A Precious Resource
 
 ### Water on Earth
 - **Distribution**: ~97% saltwater (oceans/seas), ~2.5% freshwater. Of freshwater: ~70% in glaciers/ice caps, ~30% groundwater, very little in rivers/lakes.
-- **Water Cycle**: Continuous circulation of water — evaporation → condensation → precipitation → collection/runoff → back to oceans.
+- **Water Cycle**: Continuous circulation of water - evaporation → condensation → precipitation → collection/runoff → back to oceans.
   - **Evaporation**: Water from water bodies, soil, plants (transpiration), animals (respiration/sweat) enters atmosphere as water vapour.
   - **Condensation**: Water vapour cools → forms tiny droplets → clouds.
   - **Precipitation**: When droplets combine and become heavy → fall as rain, snow, sleet, hail.
@@ -764,7 +764,7 @@
 ## 17. Forests: Our Lifeline
 
 ### What is a Forest?
-- Large area of land covered with trees and undergrowth. Biodiversity hotspot — home to diverse plants, animals, and microorganisms.
+- Large area of land covered with trees and undergrowth. Biodiversity hotspot - home to diverse plants, animals, and microorganisms.
 
 ### Forest Structure (Layers)
 1. **Canopy**: Topmost layer formed by tall trees; dense; most sunlight.
@@ -776,7 +776,7 @@
 - **Primary Consumers**: Herbivores (deer, rabbit, insects, caterpillars).
 - **Secondary Consumers**: Small carnivores (frogs, snakes, birds, spiders).
 - **Tertiary Consumers**: Top carnivores (lion, tiger, eagle, owl).
-- **Decomposers**: Fungi, bacteria, earthworms — break down dead matter → recycle nutrients.
+- **Decomposers**: Fungi, bacteria, earthworms - break down dead matter → recycle nutrients.
 
 ### Food Chain & Food Web
 - **Food Chain**: Sequence of who eats whom.
@@ -785,11 +785,11 @@
 - **Energy flow**: Sun → Producers → Primary Consumers → Secondary → Tertiary → Decomposers. Energy decreases at each level (~90% lost as heat at each step).
 
 ### Importance of Forests (Functions)
-1. **Oxygen Production**: Trees release O₂ through photosynthesis — "Green Lungs of the Earth".
-2. **Carbon Sink**: Absorb CO₂ — help regulate climate and reduce global warming.
+1. **Oxygen Production**: Trees release O2 through photosynthesis - "Green Lungs of the Earth".
+2. **Carbon Sink**: Absorb CO2 - help regulate climate and reduce global warming.
 3. **Water Cycle**: Transpiration releases water vapour → clouds → rainfall. Forests influence rainfall pattern.
 4. **Soil Conservation**: Roots hold soil → prevent erosion. Dead leaves → humus → fertile soil.
-5. **Biodiversity**: Home to millions of species of plants, animals, insects, birds — great biodiversity.
+5. **Biodiversity**: Home to millions of species of plants, animals, insects, birds - great biodiversity.
 6. **Climate Regulation**: Moderate temperature, increase rainfall, maintain humidity.
 7. **Flood Prevention**: Trees slow down water runoff, absorb water → reduce flooding.
 8. **Source of Products**:
@@ -807,7 +807,7 @@
   - Loss of biodiversity (species extinction).
   - Soil erosion → landslides → desertification.
   - Reduced rainfall → droughts.
-  - Global warming (less CO₂ absorption).
+  - Global warming (less CO2 absorption).
   - Floods (no trees to slow runoff).
   - Displacement of tribal/forest-dependent communities.
   - Loss of medicinal plants.
@@ -818,7 +818,7 @@
 - **Reforestation**: Replanting in deforested areas.
 - **Protected Areas**: National parks, wildlife sanctuaries, biosphere reserves (e.g., Jim Corbett, Kaziranga, Sundarbans, Gir).
 - **Laws & Regulations**: Indian Forest Act, Wildlife Protection Act, Forest Conservation Act.
-- **Community involvement**: Joint Forest Management (JFM) — local communities participate in forest protection and management.
+- **Community involvement**: Joint Forest Management (JFM) - local communities participate in forest protection and management.
 - **Reduce, Reuse, Recycle**: Less paper use → fewer trees cut.
 - **Awareness & Education**: About importance of forests.
 
@@ -830,11 +830,11 @@
 
 ---
 
-## Quick Revision – Key Definitions
+## Quick Revision - Key Definitions
 
 | Term | Definition |
 |------|-----------|
-| Photosynthesis | Food-making process in green plants using sunlight, CO₂, water, chlorophyll |
+| Photosynthesis | Food-making process in green plants using sunlight, CO2, water, chlorophyll |
 | Autotrophic Nutrition | Making own food (plants) |
 | Heterotrophic Nutrition | Depending on others for food |
 | Peristalsis | Wave-like muscle movement pushing food down the oesophagus |
@@ -846,8 +846,8 @@
 | Translocation | Transport of food in plants through phloem |
 | Aerobic | Respiration requiring oxygen |
 | Anaerobic | Respiration without oxygen |
-| Fermentation | Anaerobic respiration by yeast producing ethanol + CO₂ |
-| Double Circulation | Blood passes through heart twice — pulmonary + systemic |
+| Fermentation | Anaerobic respiration by yeast producing ethanol + CO2 |
+| Double Circulation | Blood passes through heart twice - pulmonary + systemic |
 | Pollination | Transfer of pollen from anther to stigma |
 | Fertilisation | Fusion of male and female gametes |
 | Oscillation | One complete to-and-fro motion |

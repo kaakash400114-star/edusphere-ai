@@ -1,6 +1,6 @@
-# Grade 8 Mathematics — CBSE Class 8 NCERT
+# Grade 8 Mathematics - CBSE Class 8 NCERT
 
-> EduSphere AI — Complete knowledge reference for Grade 8 Mathematics.
+> EduSphere AI - Complete knowledge reference for Grade 8 Mathematics.
 > Aligned to CBSE/NCERT Class 8 syllabus with international curriculum coverage.
 
 ---
@@ -125,7 +125,7 @@ Cross-multiply: 5x = 8(x + 1)
 4. Solve the equation.
 5. Verify the solution in the context of the problem.
 
-**Example 1 — Age Problem:**
+**Example 1 - Age Problem:**
 A father is 3 times as old as his son. In 12 years, the father will be twice as old as his son. Find their present ages.
 
 - Let son's age = x years. Father's age = 3x years.
@@ -135,7 +135,7 @@ A father is 3 times as old as his son. In 12 years, the father will be twice as 
 - x = 12
 - Son = **12 years**, Father = **36 years**.
 
-**Example 2 — Number Problem:**
+**Example 2 - Number Problem:**
 The sum of two numbers is 56. If one number is 8 more than the other, find the numbers.
 
 - Let the smaller number = x. Then larger = x + 8.
@@ -143,7 +143,7 @@ The sum of two numbers is 56. If one number is 8 more than the other, find the n
 - 2x + 8 = 56 → 2x = 48 → x = 24
 - Numbers are **24 and 32**.
 
-**Example 3 — Money Problem:**
+**Example 3 - Money Problem:**
 A pen costs twice as much as a pencil. 3 pens and 5 pencils cost ₹40. Find the cost of each.
 
 - Let pencil cost = x. Then pen = 2x.
@@ -282,10 +282,10 @@ To construct a unique quadrilateral, we need **five** independent measurements (
 **Raw Data → Grouped Data:**
 - Raw data is unorganised. We organise it using:
   - **Tally marks** and **frequency tables**
-  - **Grouped frequency distribution**: divide data into **class intervals** (e.g., 0–10, 10–20, ...).
+  - **Grouped frequency distribution**: divide data into **class intervals** (e.g., 0-10, 10-20, ...).
 
 **Key Terms:**
-- **Class interval**: Range of data grouped together (e.g., 10–20).
+- **Class interval**: Range of data grouped together (e.g., 10-20).
 - **Lower limit**: Smallest value in a class (e.g., 10).
 - **Upper limit**: Largest value in a class (e.g., 20).
 - **Class width**: Difference between upper and lower limits (e.g., 20 − 10 = 10).
@@ -307,10 +307,10 @@ To construct a unique quadrilateral, we need **five** independent measurements (
 **Example of Histogram Construction:**
 | Class Interval | Frequency |
 |---|---|
-| 0–10 | 5 |
-| 10–20 | 12 |
-| 20–30 | 8 |
-| 30–40 | 3 |
+| 0-10 | 5 |
+| 10-20 | 12 |
+| 20-30 | 8 |
+| 30-40 | 3 |
 
 Draw rectangles for each interval; width represents class width, height represents frequency.
 
@@ -350,14 +350,14 @@ A **pie chart** represents data as sectors of a circle.
 
 A **perfect square** is a number obtained by squaring an integer.
 
-- 1² = 1, 2² = 4, 3² = 9, ..., 20² = 400
+- 1^2 = 1, 2^2 = 4, 3^2 = 9, ..., 20^2 = 400
 - Perfect squares end with **0, 1, 4, 5, 6, or 9** in their unit place.
 - A perfect square never ends with **2, 3, 7, or 8**.
-- Between n² and (n+1)², there are **2n non-perfect square numbers**.
+- Between n^2 and (n+1)^2, there are **2n non-perfect square numbers**.
 
 **Properties:**
 - The square of an even number is even; the square of an odd number is odd.
-- Sum of first n odd numbers = n² (e.g., 1 + 3 + 5 + 7 = 16 = 4²).
+- Sum of first n odd numbers = n^2 (e.g., 1 + 3 + 5 + 7 = 16 = 4^2).
 - A number ending with an **odd number of zeros** is never a perfect square.
 
 ### 6.2 Finding Square Roots
@@ -368,7 +368,7 @@ A **perfect square** is a number obtained by squaring an integer.
 3. Take one factor from each pair and multiply.
 
 **Example:** Find √2304.
-- 2304 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 = 2⁸ × 3²
+- 2304 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 = 2^8 × 3^2
 - Pairs: (2,2), (2,2), (2,2), (3,3)
 - √2304 = 2 × 2 × 2 × 3 = **48**
 
@@ -381,7 +381,7 @@ A **perfect square** is a number obtained by squaring an integer.
 
 **Example:** Find √529.
 - Group: 5 | 29
-- Largest digit whose square ≤ 5 → 2 (2² = 4). Quotient = 2. Remainder = 1.
+- Largest digit whose square ≤ 5 → 2 (2^2 = 4). Quotient = 2. Remainder = 1.
 - Bring down 29 → 129. Double quotient: 2 × 2 = 4.
 - Find digit d such that (40 + d) × d ≤ 129. Try d = 3: 43 × 3 = 129 ✓
 - √529 = **23**
@@ -403,7 +403,7 @@ A **perfect square** is a number obtained by squaring an integer.
 
 A **perfect cube** is a number obtained by cubing an integer.
 
-- 1³ = 1, 2³ = 8, 3³ = 27, 4³ = 64, 5³ = 125, ..., 10³ = 1000
+- 1^3 = 1, 2^3 = 8, 3^3 = 27, 4^3 = 64, 5^3 = 125, ..., 10^3 = 1000
 - A perfect cube has each prime factor appearing with an exponent that is a **multiple of 3**.
 
 **Properties:**
@@ -418,7 +418,7 @@ A **perfect cube** is a number obtained by cubing an integer.
 3. Take one factor from each triple and multiply.
 
 **Example:** Find ∛2744.
-- 2744 = 2 × 2 × 2 × 7 × 7 × 7 = 2³ × 7³
+- 2744 = 2 × 2 × 2 × 7 × 7 × 7 = 2^3 × 7^3
 - Triples: (2,2,2), (7,7,7)
 - ∛2744 = 2 × 7 = **14**
 
@@ -438,7 +438,7 @@ A **perfect cube** is a number obtained by cubing an integer.
 
 **Example:** Find ∛32768.
 - Last digit = 8 → cube root ends in **2**.
-- Ignore last 3 digits: 32. Largest cube ≤ 32 is 27 = 3³.
+- Ignore last 3 digits: 32. Largest cube ≤ 32 is 27 = 3^3.
 - ∛32768 = **32**
 
 ### 7.3 Cube Root of Negative Numbers
@@ -453,59 +453,59 @@ A **perfect cube** is a number obtained by cubing an integer.
 ### 8.1 Basics
 
 **Terms, Factors, Coefficients:**
-- **Term**: Parts of an expression separated by + or − (e.g., in 3x² + 5x − 7, the terms are 3x², 5x, −7).
-- **Factor**: Each quantity multiplied in a term (e.g., in 3x², factors are 3, x, x).
-- **Coefficient**: Numerical factor of a term (e.g., 3 in 3x²).
+- **Term**: Parts of an expression separated by + or − (e.g., in 3x^2 + 5x − 7, the terms are 3x^2, 5x, −7).
+- **Factor**: Each quantity multiplied in a term (e.g., in 3x^2, factors are 3, x, x).
+- **Coefficient**: Numerical factor of a term (e.g., 3 in 3x^2).
 
 **Types of Expressions:**
-- **Monomial**: One term (e.g., 7x, −3y², 5).
-- **Binomial**: Two terms (e.g., 3x + 7, x² − 4y).
-- **Trinomial**: Three terms (e.g., a² + 2ab + b²).
+- **Monomial**: One term (e.g., 7x, −3y^2, 5).
+- **Binomial**: Two terms (e.g., 3x + 7, x^2 − 4y).
+- **Trinomial**: Three terms (e.g., a^2 + 2ab + b^2).
 - **Polynomial**: Any expression with one or more terms with non-negative integer exponents.
 
 **Like and Unlike Terms:**
-- **Like terms**: Same variable raised to the same power (e.g., 5x² and 3x²).
-- **Unlike terms**: Different variables or powers (e.g., 5x² and 3x³).
+- **Like terms**: Same variable raised to the same power (e.g., 5x^2 and 3x^2).
+- **Unlike terms**: Different variables or powers (e.g., 5x^2 and 3x^3).
 
 ### 8.2 Addition and Subtraction
 
 - Add/subtract **like terms** only.
-- Example: (3x² + 2x + 1) + (x² − 5x + 4) = 4x² − 3x + 5
+- Example: (3x^2 + 2x + 1) + (x^2 − 5x + 4) = 4x^2 − 3x + 5
 
 ### 8.3 Multiplication
 
 **Monomial × Monomial:** Multiply coefficients and add exponents of like variables.
-- 3x² × 5x³ = 15x⁵
+- 3x^2 × 5x^3 = 15x^5
 
 **Monomial × Binomial:** Distribute.
-- 2x(3x + 4) = 6x² + 8x
+- 2x(3x + 4) = 6x^2 + 8x
 
 **Binomial × Binomial:** Use distributive law twice (FOIL).
-- (x + 3)(x + 5) = x² + 5x + 3x + 15 = x² + 8x + 15
+- (x + 3)(x + 5) = x^2 + 5x + 3x + 15 = x^2 + 8x + 15
 
 ### 8.4 Standard Algebraic Identities
 
 These are true for all values of the variables:
 
-1. **(a + b)² = a² + 2ab + b²**
-2. **(a − b)² = a² − 2ab + b²**
-3. **(a + b)(a − b) = a² − b²**
-4. **(x + a)(x + b) = x² + (a + b)x + ab**
-5. **(a + b)³ = a³ + 3a²b + 3ab² + b³**
-6. **(a − b)³ = a³ − 3a²b + 3ab² − b³**
-7. **a³ + b³ = (a + b)(a² − ab + b²)**
-8. **a³ − b³ = (a − b)(a² + ab + b²)**
+1. **(a + b)^2 = a^2 + 2ab + b^2**
+2. **(a − b)^2 = a^2 − 2ab + b^2**
+3. **(a + b)(a − b) = a^2 − b^2**
+4. **(x + a)(x + b) = x^2 + (a + b)x + ab**
+5. **(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3**
+6. **(a − b)^3 = a^3 − 3a^2b + 3ab^2 − b^3**
+7. **a^3 + b^3 = (a + b)(a^2 − ab + b^2)**
+8. **a^3 − b^3 = (a − b)(a^2 + ab + b^2)**
 
 **Applications of Identities:**
 
-*Using Identity 1:* Find (103)²
-= (100 + 3)² = 10000 + 600 + 9 = **10609**
+*Using Identity 1:* Find (103)^2
+= (100 + 3)^2 = 10000 + 600 + 9 = **10609**
 
 *Using Identity 3:* Find 47 × 53
 = (50 − 3)(50 + 3) = 2500 − 9 = **2491**
 
 *Using Identity 4:* Find (x + 3)(x + 7)
-= x² + (3 + 7)x + 21 = x² + 10x + 21
+= x^2 + (3 + 7)x + 21 = x^2 + 10x + 21
 
 ---
 
@@ -564,7 +564,7 @@ Where V = vertices, F = faces, E = edges.
   - Square pyramid, triangular pyramid (tetrahedron), pentagonal pyramid, etc.
 
 **Non-Polyhedrons:**
-- Sphere, cylinder, cone — these have curved surfaces, so they are NOT polyhedrons.
+- Sphere, cylinder, cone - these have curved surfaces, so they are NOT polyhedrons.
 
 ### 9.4 Nets
 
@@ -582,10 +582,10 @@ A **net** is a 2D shape that can be folded to make a 3D solid.
 | Shape | Area | Perimeter |
 |---|---|---|
 | Rectangle | l × b | 2(l + b) |
-| Square | side² | 4 × side |
+| Square | side^2 | 4 × side |
 | Triangle | ½ × base × height | a + b + c |
 | Parallelogram | base × height | 2(a + b) |
-| Circle | πr² | 2πr |
+| Circle | πr^2 | 2πr |
 
 ### 10.2 Area of Trapezium and Special Quadrilaterals
 
@@ -593,7 +593,7 @@ A **net** is a 2D shape that can be folded to make a 3D solid.
 Area = ½ × (sum of parallel sides) × height = ½ × (a + b) × h
 
 **Rhombus:**
-Area = ½ × d₁ × d₂ (where d₁, d₂ are diagonals)
+Area = ½ × d1 × d2 (where d1, d2 are diagonals)
 
 **General Quadrilateral:**
 Area can be found by dividing into two triangles and summing their areas.
@@ -601,8 +601,8 @@ Area can be found by dividing into two triangles and summing their areas.
 ### 10.3 Surface Area of 3D Solids
 
 **Cube** (side = a):
-- Total Surface Area = **6a²**
-- Lateral Surface Area = **4a²** (area of 4 faces, excluding top and bottom)
+- Total Surface Area = **6a^2**
+- Lateral Surface Area = **4a^2** (area of 4 faces, excluding top and bottom)
 
 **Cuboid** (dimensions: l, b, h):
 - Total Surface Area = **2(lb + bh + hl)**
@@ -610,17 +610,17 @@ Area can be found by dividing into two triangles and summing their areas.
 
 **Cylinder** (radius = r, height = h):
 - Curved Surface Area = **2πrh**
-- Total Surface Area = **2πrh + 2πr² = 2πr(r + h)**
+- Total Surface Area = **2πrh + 2πr^2 = 2πr(r + h)**
 
 ### 10.4 Volume of 3D Solids
 
 **Volume** is the amount of space occupied by a 3D object (measured in cubic units).
 
-**Cube:** V = **a³**
+**Cube:** V = **a^3**
 
 **Cuboid:** V = **l × b × h**
 
-**Cylinder:** V = **πr²h**
+**Cylinder:** V = **πr^2h**
 
 **Relationship:**
 - Volume = Area of base × Height (for all prisms and cylinders)
@@ -628,15 +628,15 @@ Area can be found by dividing into two triangles and summing their areas.
 ### 10.5 Solved Examples
 
 *Example 1:* A cuboid has dimensions 8 cm × 5 cm × 3 cm. Find its total surface area and volume.
-- TSA = 2(8×5 + 5×3 + 3×8) = 2(40 + 15 + 24) = 2(79) = **158 cm²**
-- V = 8 × 5 × 3 = **120 cm³**
+- TSA = 2(8×5 + 5×3 + 3×8) = 2(40 + 15 + 24) = 2(79) = **158 cm^2**
+- V = 8 × 5 × 3 = **120 cm^3**
 
 *Example 2:* A cylindrical tank has radius 7 m and height 3 m. Find its curved surface area.
-- CSA = 2 × (22/7) × 7 × 3 = **132 m²**
+- CSA = 2 × (22/7) × 7 × 3 = **132 m^2**
 
-*Example 3:* Find the volume of a cube with total surface area 150 cm².
-- 6a² = 150 → a² = 25 → a = 5 cm
-- V = 5³ = **125 cm³**
+*Example 3:* Find the volume of a cube with total surface area 150 cm^2.
+- 6a^2 = 150 → a^2 = 25 → a = 5 cm
+- V = 5^3 = **125 cm^3**
 
 ---
 
@@ -646,7 +646,7 @@ Area can be found by dividing into two triangles and summing their areas.
 
 **Exponential Form:** aⁿ, where **a** is the base and **n** is the exponent (power).
 - aⁿ means a multiplied by itself n times.
-- Example: 2⁴ = 2 × 2 × 2 × 2 = 16
+- Example: 2^4 = 2 × 2 × 2 × 2 = 16
 
 ### 11.2 Laws of Exponents (for positive exponents)
 
@@ -655,32 +655,32 @@ Area can be found by dividing into two triangles and summing their areas.
 3. **(aᵐ)ⁿ = aᵐⁿ** (power of a power, multiply exponents)
 4. **aᵐ × bᵐ = (ab)ᵐ** (same power, multiply bases)
 5. **aᵐ ÷ bᵐ = (a/b)ᵐ** (same power, divide bases)
-6. **a⁰ = 1** (any non-zero number raised to 0 is 1)
+6. **a^0 = 1** (any non-zero number raised to 0 is 1)
 
 ### 11.3 Negative Exponents
 
 **a⁻ⁿ = 1/aⁿ** and **1/a⁻ⁿ = aⁿ**
 
 **Example:**
-- 2⁻³ = 1/2³ = 1/8
-- 5⁻² = 1/5² = 1/25
-- (1/3)⁻⁴ = 3⁴ = 81
+- 2⁻^3 = 1/2^3 = 1/8
+- 5⁻^2 = 1/5^2 = 1/25
+- (1/3)⁻^4 = 3^4 = 81
 
 **Laws with Negative Exponents:**
 All the standard laws still hold with negative exponents.
 
-- a⁻² × a³ = a⁻²⁺³ = a¹ = a
-- a⁵ ÷ a⁻² = a⁵⁻(⁻²) = a⁷
+- a⁻^2 × a^3 = a⁻^2⁺^3 = a^1 = a
+- a^5 ÷ a⁻^2 = a^5⁻(⁻^2) = a^7
 
 ### 11.4 Scientific Notation (Standard Form)
 
 Very large or very small numbers are written as **a × 10ⁿ** where **1 ≤ a < 10** and **n** is an integer.
 
 **Examples:**
-- 5,30,00,000 = **5.3 × 10⁷**
-- 0.0000035 = **3.5 × 10⁻⁶**
-- Speed of light = 3 × 10⁸ m/s
-- Diameter of a hydrogen atom = 1.2 × 10⁻¹⁰ m
+- 5,30,00,000 = **5.3 × 10^7**
+- 0.0000035 = **3.5 × 10⁻^6**
+- Speed of light = 3 × 10^8 m/s
+- Diameter of a hydrogen atom = 1.2 × 10⁻^1^0 m
 
 **To convert to scientific notation:**
 1. Move the decimal point so there is one non-zero digit to its left.
@@ -690,8 +690,8 @@ Very large or very small numbers are written as **a × 10ⁿ** where **1 ≤ a <
 ### 11.5 Use of Exponents to Express Small Numbers
 
 Used extensively in science:
-- Mass of an electron = 9.1 × 10⁻³¹ kg
-- Charge on an electron = 1.6 × 10⁻¹⁹ C
+- Mass of an electron = 9.1 × 10⁻^3^1 kg
+- Charge on an electron = 1.6 × 10⁻^1^9 C
 
 ---
 
@@ -709,9 +709,9 @@ Two quantities are in **direct proportion** if an increase in one causes a propo
 - More items bought → higher total cost (fixed price per item).
 
 **Method:**
-1. Check if x₁/y₁ = x₂/y₂ = x₃/y₃ = constant.
+1. Check if x1/y1 = x2/y2 = x3/y3 = constant.
 2. If yes, the quantities are in direct proportion.
-3. Use x₁/y₁ = x₂/y₂ to find the unknown.
+3. Use x1/y1 = x2/y2 to find the unknown.
 
 **Example:** If 5 books cost ₹200, how much do 8 books cost?
 - Cost and number of books are in direct proportion.
@@ -729,9 +729,9 @@ Two quantities are in **inverse proportion** if an increase in one causes a prop
 - More pipes → less time to fill a tank.
 
 **Method:**
-1. Check if x₁ × y₁ = x₂ × y₂ = constant.
+1. Check if x1 × y1 = x2 × y2 = constant.
 2. If yes, the quantities are in inverse proportion.
-3. Use x₁ × y₁ = x₂ × y₂ to find the unknown.
+3. Use x1 × y1 = x2 × y2 to find the unknown.
 
 **Example:** If 6 workers complete a job in 10 days, how long will 15 workers take?
 - Workers and time are in inverse proportion.
@@ -754,15 +754,15 @@ Two quantities are in **inverse proportion** if an increase in one causes a prop
 
 **Factorisation** means expressing an algebraic expression as a **product of its factors** (similar to finding the prime factors of a number).
 
-Example: 6x² + 18x = 6x(x + 3)
+Example: 6x^2 + 18x = 6x(x + 3)
 
 ### 13.2 Methods of Factorisation
 
 **Method 1: Common Factor Method**
 Find the highest common factor (HCF) of all terms and factor it out.
 
-- 12x² + 8x = 4x(3x + 2)
-- 15a²b − 25ab² = 5ab(3a − 5b)
+- 12x^2 + 8x = 4x(3x + 2)
+- 15a^2b − 25ab^2 = 5ab(3a − 5b)
 
 **Method 2: Factorisation by Regrouping**
 Rearrange terms and group them to find common factors.
@@ -778,39 +778,39 @@ Rearrange terms and group them to find common factors.
 
 **Method 3: Using Identities**
 
-*Difference of squares:* a² − b² = (a + b)(a − b)
-- x² − 25 = (x + 5)(x − 5)
-- 4a² − 9b² = (2a)² − (3b)² = (2a + 3b)(2a − 3b)
+*Difference of squares:* a^2 − b^2 = (a + b)(a − b)
+- x^2 − 25 = (x + 5)(x − 5)
+- 4a^2 − 9b^2 = (2a)^2 − (3b)^2 = (2a + 3b)(2a − 3b)
 
 *Perfect square trinomials:*
-- a² + 2ab + b² = (a + b)²
-- a² − 2ab + b² = (a − b)²
-- x² + 10x + 25 = (x + 5)²
-- 9a² − 24ab + 16b² = (3a)² − 2(3a)(4b) + (4b)² = (3a − 4b)²
+- a^2 + 2ab + b^2 = (a + b)^2
+- a^2 − 2ab + b^2 = (a − b)^2
+- x^2 + 10x + 25 = (x + 5)^2
+- 9a^2 − 24ab + 16b^2 = (3a)^2 − 2(3a)(4b) + (4b)^2 = (3a − 4b)^2
 
 **Method 4: Factorisation of Quadratic Trinomials (Splitting the Middle Term)**
 
-For ax² + bx + c:
+For ax^2 + bx + c:
 1. Find two numbers p and q such that p × q = a × c and p + q = b.
-2. Split the middle term: ax² + px + qx + c.
+2. Split the middle term: ax^2 + px + qx + c.
 3. Factor by grouping.
 
-*Example:* Factorise x² + 7x + 12.
+*Example:* Factorise x^2 + 7x + 12.
 - Find two numbers: product = 12, sum = 7 → 3 and 4.
-- x² + 3x + 4x + 12 = x(x + 3) + 4(x + 3) = (x + 3)(x + 4)
+- x^2 + 3x + 4x + 12 = x(x + 3) + 4(x + 3) = (x + 3)(x + 4)
 
-*Example:* Factorise 2x² + 7x + 3.
+*Example:* Factorise 2x^2 + 7x + 3.
 - Product = 2 × 3 = 6, sum = 7 → 1 and 6.
-- 2x² + x + 6x + 3 = x(2x + 1) + 3(2x + 1) = (2x + 1)(x + 3)
+- 2x^2 + x + 6x + 3 = x(2x + 1) + 3(2x + 1) = (2x + 1)(x + 3)
 
 ### 13.3 Division of Algebraic Expressions
 
 **Division of a monomial by a monomial:**
-- 12x⁴ ÷ 3x² = (12/3)(x⁴⁻²) = 4x²
+- 12x^4 ÷ 3x^2 = (12/3)(x^4⁻^2) = 4x^2
 
 **Division of a polynomial by a monomial:**
-- (6x² + 9x + 12) ÷ 3 = 2x² + 3x + 4
-- (10x³y² − 15x²y) ÷ 5xy = 2x²y − 3x
+- (6x^2 + 9x + 12) ÷ 3 = 2x^2 + 3x + 4
+- (10x^3y^2 − 15x^2y) ÷ 5xy = 2x^2y − 3x
 
 **Division of a polynomial by a polynomial:**
 Use long division method (similar to numerical long division) or factorise both and cancel common factors.
@@ -821,12 +821,12 @@ If the product of two expressions equals zero, then at least one of them must be
 
 **Principle:** If (x − a)(x − b) = 0, then x = a or x = b.
 
-*Example:* Solve x² − 7x + 12 = 0
-- x² − 7x + 12 = (x − 3)(x − 4) = 0
+*Example:* Solve x^2 − 7x + 12 = 0
+- x^2 − 7x + 12 = (x − 3)(x − 4) = 0
 - x − 3 = 0 → x = 3; or x − 4 = 0 → x = 4
 - Solutions: **x = 3 or x = 4**
 
-*Example:* Solve x² − 16 = 0
+*Example:* Solve x^2 − 16 = 0
 - (x + 4)(x − 4) = 0
 - x = **−4 or 4**
 
@@ -909,28 +909,28 @@ From the graph of y = 2x + 1, find y when x = 3:
 
 ---
 
-## Quick Revision — Key Formulas
+## Quick Revision - Key Formulas
 
 | Topic | Formula |
 |---|---|
 | Rational number | p/q, q ≠ 0 |
 | Quadrilateral angle sum | 360° |
-| Square of number (Identity 1) | (a + b)² = a² + 2ab + b² |
-| Difference of squares | a² − b² = (a+b)(a−b) |
+| Square of number (Identity 1) | (a + b)^2 = a^2 + 2ab + b^2 |
+| Difference of squares | a^2 − b^2 = (a+b)(a−b) |
 | Euler's formula | V + F − E = 2 |
-| Cube SA | 6a² |
+| Cube SA | 6a^2 |
 | Cuboid SA | 2(lb + bh + hl) |
 | Cylinder CSA | 2πrh |
 | Cylinder TSA | 2πr(r + h) |
-| Cube volume | a³ |
+| Cube volume | a^3 |
 | Cuboid volume | lbh |
-| Cylinder volume | πr²h |
+| Cylinder volume | πr^2h |
 | Trapezium area | ½(a + b)h |
-| Rhombus area | ½d₁d₂ |
+| Rhombus area | ½d1d2 |
 | Scientific notation | a × 10ⁿ, 1 ≤ a < 10 |
 | Direct proportion | x/y = k |
 | Inverse proportion | x × y = k |
 
 ---
 
-> **EduSphere AI** — Comprehensive Grade 8 Mathematics reference covering all CBSE Class 8 NCERT topics.
+> **EduSphere AI** - Comprehensive Grade 8 Mathematics reference covering all CBSE Class 8 NCERT topics.

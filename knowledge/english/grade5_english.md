@@ -11,7 +11,7 @@ The author directly **defines** the unknown word, often right after it, using co
 
 - *"The archaeologist, **a scientist who studies ancient cultures**, carefully brushed dirt from the fossil."*
   → archaeologist = a scientist who studies ancient cultures
-- *"The animal was **nocturnal** — active during the night — which explained its large eyes."*
+- *"The animal was **nocturnal** - active during the night - which explained its large eyes."*
   → nocturnal = active during the night
 
 #### 2. Example Clues
@@ -46,7 +46,7 @@ The meaning is not directly stated. You must use your own **background knowledge
 
 ### Word Origins and Etymology
 
-**Etymology** is the study of word origins — where words come from and how they have changed over time. Many English words have fascinating histories.
+**Etymology** is the study of word origins - where words come from and how they have changed over time. Many English words have fascinating histories.
 
 **Why study word origins?**
 - Understanding where a word comes from helps you remember its meaning.
@@ -58,13 +58,13 @@ The meaning is not directly stated. You must use your own **background knowledge
 | Word | Origin | Story |
 |------|--------|-------|
 | **Algorithm** | Arabic | Named after Muhammad ibn Musa al-Khwarizmi, a 9th-century Persian mathematician |
-| **Sandwich** | English | Named after the 4th Earl of Sandwich (1718–1792), who asked for meat between bread so he could eat without leaving the card table |
-| **Salary** | Latin (*salarium*) | From the Roman word for "salt money" — Roman soldiers were sometimes paid in salt, a valuable commodity |
-| **Quarantine** | Italian (*quarantina*) | From "quaranta giorni" meaning "forty days" — ships were isolated for 40 days during the plague |
+| **Sandwich** | English | Named after the 4th Earl of Sandwich (1718-1792), who asked for meat between bread so he could eat without leaving the card table |
+| **Salary** | Latin (*salarium*) | From the Roman word for "salt money" - Roman soldiers were sometimes paid in salt, a valuable commodity |
+| **Quarantine** | Italian (*quarantina*) | From "quaranta giorni" meaning "forty days" - ships were isolated for 40 days during the plague |
 | **Robot** | Czech | From *robota*, meaning "forced labor," coined in a 1920 play by Karel Čapek |
-| **Disaster** | Italian | From *disastro*, "bad star" — originally the idea that misfortune came from unfavorable alignment of stars |
-| **Muscle** | Latin (*musculus*) | Meaning "little mouse" — the Romans thought muscles looked like mice moving under the skin |
-| **Candidate** | Latin (*candidatus*) | From "clothed in white" — Roman politicians wore white togas to show purity |
+| **Disaster** | Italian | From *disastro*, "bad star" - originally the idea that misfortune came from unfavorable alignment of stars |
+| **Muscle** | Latin (*musculus*) | Meaning "little mouse" - the Romans thought muscles looked like mice moving under the skin |
+| **Candidate** | Latin (*candidatus*) | From "clothed in white" - Roman politicians wore white togas to show purity |
 
 #### How Words Change Over Time
 Words can change in meaning through **amendment** (meaning becomes more positive), **pejoration** (meaning becomes more negative), or **generalization/narrowing** (meaning broadens or narrows).
@@ -93,17 +93,17 @@ The **emotional or cultural feeling** associated with a word beyond its dictiona
 | **Scent** | a smell | Pleasant, delicate (positive) |
 | **Odor** | a smell | Unpleasant, strong (negative) |
 | **Aroma** | a smell | Inviting, food-related (positive) |
-| **Curious** | eager to learn | Positive — intellectually engaged |
-| **Nosy** | overly inquisitive | Negative — intrusive |
-| **Inquisitive** | eager to learn | Positive — intellectually curious |
-| **Confident** | sure of oneself | Positive — self-assured |
-| **Arrogant** | having an exaggerated sense of self | Negative — overly proud |
-| **Slim** | thin | Positive — attractively thin |
-| **Skinny** | very thin | Neutral to negative — too thin |
-| **Emaciated** | extremely thin | Negative — dangerously thin |
-| **Cheap** | low cost | Negative — poor quality |
-| **Economical** | low cost | Positive — smart with money |
-| **Thrifty** | careful with money | Positive — wisely frugal |
+| **Curious** | eager to learn | Positive - intellectually engaged |
+| **Nosy** | overly inquisitive | Negative - intrusive |
+| **Inquisitive** | eager to learn | Positive - intellectually curious |
+| **Confident** | sure of oneself | Positive - self-assured |
+| **Arrogant** | having an exaggerated sense of self | Negative - overly proud |
+| **Slim** | thin | Positive - attractively thin |
+| **Skinny** | very thin | Neutral to negative - too thin |
+| **Emaciated** | extremely thin | Negative - dangerously thin |
+| **Cheap** | low cost | Negative - poor quality |
+| **Economical** | low cost | Positive - smart with money |
+| **Thrifty** | careful with money | Positive - wisely frugal |
 
 **Why connotation matters:** The words you choose affect how your reader feels. Saying "She was **confident**" paints a very different picture than "She was **arrogant**," even though both describe a person who believes in herself.
 
@@ -140,7 +140,7 @@ Domain-specific vocabulary refers to **specialized words** used in particular su
 
 ### Academic Vocabulary
 
-Academic vocabulary consists of words used frequently in **academic settings** across all subjects — words that appear in textbooks, instructions, tests, and classroom discussions.
+Academic vocabulary consists of words used frequently in **academic settings** across all subjects - words that appear in textbooks, instructions, tests, and classroom discussions.
 
 | Word | Meaning | Example in Use |
 |------|---------|---------------|
@@ -193,17 +193,17 @@ Idioms are expressions whose meaning is **not predictable** from the individual 
 Perfect tenses connect the **past** to another point in time. They are formed using the helping verb **have/has/had** + the **past participle** of the main verb.
 
 #### Present Perfect
-**Have/has + past participle** — describes an action that started in the past and **continues to the present** or has relevance to the present.
+**Have/has + past participle** - describes an action that started in the past and **continues to the present** or has relevance to the present.
 
 - *I **have lived** here since 2015.* (I moved here in 2015 and still live here.)
-- *She **has finished** her homework.* (The homework is done now — the result matters now.)
+- *She **has finished** her homework.* (The homework is done now - the result matters now.)
 - *They **have visited** Paris three times.* (At some point before now, across their whole life.)
 - *We **have been** friends for five years.* (The friendship started five years ago and continues.)
 
 **Signal words:** since, for, already, yet, just, recently, so far, several times
 
 #### Past Perfect
-**Had + past participle** — describes an action that was **completed before another action in the past**.
+**Had + past participle** - describes an action that was **completed before another action in the past**.
 
 - *By the time we arrived, the movie **had started**.* (The movie started before we arrived.)
 - *She **had already eaten** when I called.* (She ate before I called.)
@@ -212,10 +212,10 @@ Perfect tenses connect the **past** to another point in time. They are formed us
 
 **Signal words:** already, before, by the time, after, until, never
 
-**How to remember:** Past perfect is the "had-done-before" tense. Think of it as a timeline — the past perfect action comes FIRST on the timeline, before another past action.
+**How to remember:** Past perfect is the "had-done-before" tense. Think of it as a timeline - the past perfect action comes FIRST on the timeline, before another past action.
 
 #### Future Perfect
-**Will have + past participle** — describes an action that **will be completed before a specific time in the future**.
+**Will have + past participle** - describes an action that **will be completed before a specific time in the future**.
 
 - *By next Friday, I **will have finished** my project.* (The project will be done before next Friday.)
 - *She **will have graduated** by the time she turns 18.* (Graduation will be complete before the birthday.)
@@ -283,7 +283,7 @@ A modifier is placed **too far from the word it describes**, creating confusion.
 #### Dangling Modifiers
 A modifier that **does not clearly or logically modify any word** in the sentence. The subject of the main clause is not the person or thing the modifier is describing.
 
-- ❌ *Walking through the park, the flowers smelled wonderful.* → The flowers are walking? (Dangling modifier — "walking" doesn't modify "flowers.")
+- ❌ *Walking through the park, the flowers smelled wonderful.* → The flowers are walking? (Dangling modifier - "walking" doesn't modify "flowers.")
 - ✅ *Walking through the park, I noticed that the flowers smelled wonderful.*
 
 - ❌ *After finishing homework, the TV was turned on.* → The TV did homework? (Dangling modifier.)
@@ -304,17 +304,17 @@ Correlative conjunctions are **pairs of words** that work together to connect eq
 |------|-----|---------|
 | **Either ... or** | Presents two choices | *You can have **either** pizza **or** tacos for dinner.* |
 | **Neither ... nor** | Excludes both options | *She likes **neither** broccoli **nor** spinach.* |
-| **Not only ... but also** | Adds emphasis — both things are true | *He is **not only** a talented musician **but also** a skilled painter.* |
+| **Not only ... but also** | Adds emphasis - both things are true | *He is **not only** a talented musician **but also** a skilled painter.* |
 | **Both ... and** | Includes two things | ***Both** the students **and** the teacher enjoyed the field trip.* |
 | **Whether ... or** | Shows two possibilities | ***Whether** we win **or** lose, we will play our best.* |
 
 **Subject-Verb Agreement with Correlative Conjunctions:**
 When using "either/or" or "neither/nor" with subjects of different numbers, the verb agrees with the subject **closest** to it.
 
-- *Neither the students **nor the teacher was** prepared.* (verb matches "teacher" — singular)
-- *Neither the teacher **nor the students were** prepared.* (verb matches "students" — plural)
-- *Either the dog **or the cats are** making noise.* (verb matches "cats" — plural)
-- *Either the cats **or the dog is** making noise.* (verb matches "dog" — singular)
+- *Neither the students **nor the teacher was** prepared.* (verb matches "teacher" - singular)
+- *Neither the teacher **nor the students were** prepared.* (verb matches "students" - plural)
+- *Either the dog **or the cats are** making noise.* (verb matches "cats" - plural)
+- *Either the cats **or the dog is** making noise.* (verb matches "dog" - singular)
 
 ### Relative Pronouns
 
@@ -328,15 +328,15 @@ Relative pronouns connect a **dependent clause** (relative clause) to a noun or 
 | **Which** | Refers to things (subject or object) | *The book **which** I borrowed is due tomorrow.* |
 | **That** | Refers to people or things (subject or object) | *The dog **that** chased the cat ran away.* |
 
-**"Who" vs. "Whom" — a helpful trick:**
-- Replace with "he/him" — if "he" works, use **who**; if "him" works, use **whom**.
+**"Who" vs. "Whom" - a helpful trick:**
+- Replace with "he/him" - if "he" works, use **who**; if "him" works, use **whom**.
 - *WHO/WHOM do you think will win?* → You think **he** will win. → **Who** do you think will win?
 - *To WHO/WHOM did you give the letter?* → You gave the letter to **him**. → To **whom** did you give the letter?
 
 **"Which" vs. "That":**
-- Use **that** for **essential** (restrictive) clauses — information you can't remove without changing the meaning.
+- Use **that** for **essential** (restrictive) clauses - information you can't remove without changing the meaning.
   - *The book **that** is on the table is mine.* (Only the specific book on the table.)
-- Use **which** (usually with commas) for **non-essential** (non-restrictive) clauses — extra information that can be removed.
+- Use **which** (usually with commas) for **non-essential** (non-restrictive) clauses - extra information that can be removed.
   - *My favorite book, **which** was a gift from my grandmother, is on the table.* (The extra info about it being a gift can be removed.)
 
 ### Interjections
@@ -404,19 +404,19 @@ A colon introduces information that **explains, illustrates, or lists** what cam
 - ❌ *I need: milk, bread, and eggs.*
 - ✅ *I need three things from the store: milk, bread, and eggs.*
 
-#### Dash (—)
+#### Dash (-)
 An em dash (longer dash) is used to add **emphasis**, to interrupt a sentence with extra information, or to show a sudden break in thought.
 
 **To add emphasis or extra information (stronger than a comma):**
-- *The team won the championship — their first title in twenty years — after an incredible season.*
-- *My grandfather — a man of great wisdom and kindness — taught me to always tell the truth.*
+- *The team won the championship - their first title in twenty years - after an incredible season.*
+- *My grandfather - a man of great wisdom and kindness - taught me to always tell the truth.*
 
 **To show a sudden break or change:**
-- *I was going to call you — but then I remembered you were at camp.*
-- *She opened the box and — gasp! — found a puppy inside.*
+- *I was going to call you - but then I remembered you were at camp.*
+- *She opened the box and - gasp! - found a puppy inside.*
 
 **For emphasis at the end of a sentence:**
-- *He always said he'd visit someday — and he finally did.*
+- *He always said he'd visit someday - and he finally did.*
 
 **Rule:** A dash is stronger than a comma and more informal than parentheses. Don't overuse it.
 
@@ -431,7 +431,7 @@ A hyphen is a short dash used to **join compound words and numbers**.
 
 **Numbers from twenty-one to ninety-nine:**
 - *twenty-one, thirty-four, fifty-six, ninety-nine*
-- (But: one hundred, one thousand — no hyphen)
+- (But: one hundred, one thousand - no hyphen)
 
 **Prefixes before a proper noun or number:**
 - *pre-Columbian, post-World War II, mid-2020s*
@@ -444,14 +444,14 @@ A hyphen is a short dash used to **join compound words and numbers**.
 - *We need **first-** and **second-place** ribbons.*
 
 #### Parentheses ( )
-Parentheses set off **extra, non-essential information** — asides, clarifications, or supplementary details.
+Parentheses set off **extra, non-essential information** - asides, clarifications, or supplementary details.
 
 - *The painting (created in 1889) hangs in the main gallery.*
 - *My sister Maria (who is twelve) won the spelling bee.*
 - *The temperature rose to 95°F (35°C) during the heat wave.*
 
 **Rules:**
-- Parentheses contain information that is **nice to know but not essential** — the sentence still makes sense without it.
+- Parentheses contain information that is **nice to know but not essential** - the sentence still makes sense without it.
 - A period goes **outside** the closing parenthesis if the sentence continues after it.
 - A period goes **inside** if the entire sentence is inside the parentheses.
 
@@ -488,7 +488,7 @@ A theme is the **central message or lesson** that an author wants readers to tak
 4. Express the theme as a **complete sentence**, not just a word. (e.g., not just "courage," but "True courage means doing what is right even when you are afraid.")
 
 #### Motif
-A motif is a **recurring element** — an image, symbol, idea, phrase, or event — that appears throughout a work of literature. Motifs help develop and reinforce the theme.
+A motif is a **recurring element** - an image, symbol, idea, phrase, or event - that appears throughout a work of literature. Motifs help develop and reinforce the theme.
 
 **Examples:**
 - In Shakespeare's *Macbeth*, the motif of **blood** appears repeatedly, reinforcing themes of guilt and violence.
@@ -514,7 +514,7 @@ A symbol can be:
 3. Consider **how the meaning changes** as the story progresses.
 4. Connect the symbol to the **theme** of the work.
 
-**Example:** In *Katherine Paterson's Bridge to Terabithia*, the **bridge** itself is a symbol — it represents the connection between the real world and the imaginative world, as well as the strength of Jess and Leslie's friendship. After Leslie's death, Jess must build a new bridge, symbolizing his ability to carry their shared world forward.
+**Example:** In *Katherine Paterson's Bridge to Terabithia*, the **bridge** itself is a symbol - it represents the connection between the real world and the imaginative world, as well as the strength of Jess and Leslie's friendship. After Leslie's death, Jess must build a new bridge, symbolizing his ability to carry their shared world forward.
 
 #### Irony
 Irony is when there is a **contrast between what is expected and what actually happens**. There are three main types:
@@ -534,7 +534,7 @@ Irony is when there is a **contrast between what is expected and what actually h
 
 ### Comparing Texts Across Genres
 
-Authors can explore the **same topic or theme** using different genres — and each genre presents the topic differently.
+Authors can explore the **same topic or theme** using different genres - and each genre presents the topic differently.
 
 **Comparing genres:**
 - A **fictional narrative** about immigration might tell a personal story with characters, dialogue, and emotions.
@@ -566,7 +566,7 @@ An argument is a **claim** supported by **reasons and evidence**. When you evalu
 1. **Is the claim clear?** Does the author state their position plainly?
 2. **Is there sufficient evidence?** Are there enough facts, examples, data, or expert opinions to support the claim?
 3. **Is the evidence relevant?** Does the evidence actually relate to the claim, or does it go off-topic?
-4. **Is the evidence from credible sources?** Are the facts from reliable books, studies, or experts — or from unknown, unreliable websites?
+4. **Is the evidence from credible sources?** Are the facts from reliable books, studies, or experts - or from unknown, unreliable websites?
 5. **Does the author address counterarguments?** Do they acknowledge opposing views and respond to them fairly?
 6. **Is the reasoning logical?** Do the conclusions follow from the evidence, or are there gaps in the logic?
 
@@ -595,7 +595,7 @@ An argument is a **claim** supported by **reasons and evidence**. When you evalu
 
 | Technique | Description | Example |
 |-----------|------------|---------|
-| **Bandwagon** | "Everyone is doing it, so you should too!" | *"Millions of people have already switched to this phone — shouldn't you?"* |
+| **Bandwagon** | "Everyone is doing it, so you should too!" | *"Millions of people have already switched to this phone - shouldn't you?"* |
 | **Testimonial** | Using a famous person to endorse a product or idea | *"This celebrity uses Brand X, so it must be the best."* |
 | **Emotional appeal (Fear)** | Scaring people into agreeing | *"Without this security system, your family could be in danger!"* |
 | **Name-calling** | Attacking the person instead of the argument | *"Only foolish people would disagree with this plan."* |
@@ -635,7 +635,7 @@ Authors vary sentence length and structure to create **rhythm, pace, and emphasi
 Authors use figurative language to create vivid imagery and deeper meaning.
 
 - **Simile:** *"Her smile was as bright as the morning sun."* (compares using "like" or "as")
-- **Metaphor:** *"Time is a thief."* (compares without "like" or "as" — time doesn't literally steal)
+- **Metaphor:** *"Time is a thief."* (compares without "like" or "as" - time doesn't literally steal)
 - **Personification:** *"The old house groaned under the weight of the storm."*
 - **Hyperbole:** *"I've been waiting an eternity."*
 - **Alliteration:** *"Peter Piper picked a peck of pickled peppers."*
@@ -659,27 +659,27 @@ An argumentative essay presents a **clear position** on an issue and supports it
 
 *Example thesis:* *"All public schools should provide students with free access to tablets or laptops because technology enhances learning, prepares students for future careers, and reduces educational inequality."*
 
-**2. Body Paragraphs — Evidence and Reasoning**
+**2. Body Paragraphs - Evidence and Reasoning**
 
 Each body paragraph presents **one main reason** that supports your thesis, with evidence and analysis.
 
-**Body Paragraph 1: Reason — Technology enhances learning**
+**Body Paragraph 1: Reason - Technology enhances learning**
 - **Evidence:** Studies show that interactive learning apps improve student engagement by 40% (source).
 - **Reasoning:** When students can interact with material through simulations and digital tools, they understand concepts more deeply than with traditional lectures alone.
 - **Evidence:** In a 2023 study, classrooms that used tablets for math practice saw a 15% increase in test scores compared to traditional instruction.
 
-**Body Paragraph 2: Reason — Prepares students for future careers**
+**Body Paragraph 2: Reason - Prepares students for future careers**
 - **Evidence:** According to the Bureau of Labor Statistics, over 80% of jobs now require some level of computer skills.
 - **Reasoning:** If students don't develop digital literacy in school, they will be at a significant disadvantage in the workforce.
 
-**Body Paragraph 3: Reason — Reduces educational inequality**
+**Body Paragraph 3: Reason - Reduces educational inequality**
 - **Evidence:** Many families cannot afford home computers. Schools that provide devices ensure all students have equal access to research tools, online homework, and digital resources.
 - **Reasoning:** When every student has the same tools, the gap between wealthy and low-income students narrows.
 
 **3. Counterclaim and Rebuttal**
 Acknowledge a **strong opposing argument**, then explain why your position is still stronger.
 
-- **Counterclaim:** *"Some argue that technology in classrooms is a distraction — students may play games or visit unrelated websites instead of working."*
+- **Counterclaim:** *"Some argue that technology in classrooms is a distraction - students may play games or visit unrelated websites instead of working."*
 - **Rebuttal:** *"While it is true that technology can be misused, this can be prevented through classroom management strategies, content filters, and digital citizenship education. The benefits of technology far outweigh the risks when properly managed."*
 
 **4. Conclusion**
@@ -720,7 +720,7 @@ An informative text **teaches the reader about a topic** clearly and thoroughly,
 - Use clear **definitions** for technical terms.
 - Include **concrete examples** to make abstract ideas understandable.
 - Use **text features** (headings, diagrams, bullet points, bold text) to organize information.
-- Maintain a **neutral, objective tone** — avoid "I think" or "I believe."
+- Maintain a **neutral, objective tone** - avoid "I think" or "I believe."
 
 ### Narrative Techniques
 
@@ -731,13 +731,13 @@ Dialogue brings characters to life and moves the plot forward.
 
 **Rules for dialogue:**
 - Each time a new person speaks, start a new paragraph.
-- Use a variety of dialogue tags (whispered, demanded, muttered, chuckled — not just "said").
+- Use a variety of dialogue tags (whispered, demanded, muttered, chuckled - not just "said").
 - Dialogue should reveal character, create conflict, or provide information.
 - Avoid small talk that doesn't serve a purpose.
 
 **Example:**
 *"You can't seriously expect me to believe that," Marcus said, crossing his arms.
-Lena held up the old, leather-bound book. "I know how it sounds. But look at the dates in the margin — they match exactly."*
+Lena held up the old, leather-bound book. "I know how it sounds. But look at the dates in the margin - they match exactly."*
 Marcus leaned closer, his skepticism softening into curiosity. "Where did you even find this?"
 "Grandpa's attic. Hidden inside a trunk beneath a pile of old quilts."*
 
@@ -751,10 +751,10 @@ Pacing controls the **speed** of the story. Effective writers vary pacing to cre
   - *The autumn leaves drifted lazily from the branches above, painting the forest floor in shades of amber and gold. She sat on the old stone bench, letting the stillness wash over her, and for the first time in weeks, she breathed deeply and felt at peace.*
 
 #### Description
-Use sensory details — sight, sound, touch, taste, smell — to make the reader feel like they are inside the story.
+Use sensory details - sight, sound, touch, taste, smell - to make the reader feel like they are inside the story.
 
 **Weak description:** *"The garden was pretty."*
-**Strong description:** *"The garden exploded with color — ruby-red roses climbed the wooden fence, while golden sunflowers swayed in the warm breeze. The air was thick with the sweet fragrance of lavender, and bees hummed lazily from bloom to bloom."*
+**Strong description:** *"The garden exploded with color - ruby-red roses climbed the wooden fence, while golden sunflowers swayed in the warm breeze. The air was thick with the sweet fragrance of lavender, and bees hummed lazily from bloom to bloom."*
 
 **Show, Don't Tell:**
 - ❌ *She was angry.* (telling)
@@ -793,7 +793,7 @@ Strong research involves **gathering information from several different types of
 
 ### Multimedia Presentations
 
-A multimedia presentation uses **multiple forms of media** — text, images, audio, video, and graphics — to communicate information effectively.
+A multimedia presentation uses **multiple forms of media** - text, images, audio, video, and graphics - to communicate information effectively.
 
 **Elements of a strong presentation:**
 
@@ -806,7 +806,7 @@ A multimedia presentation uses **multiple forms of media** — text, images, aud
 2. **Effective visuals:**
    - High-quality images, charts, graphs, or maps
    - visuals should support the text, not duplicate it
-   - Limit text on each slide — use key words and phrases, not paragraphs
+   - Limit text on each slide - use key words and phrases, not paragraphs
    - Use consistent colors, fonts, and layout
 
 3. **Engaging content:**
@@ -819,7 +819,7 @@ A multimedia presentation uses **multiple forms of media** — text, images, aud
    - Make eye contact with the audience
    - Speak clearly and at an appropriate pace
    - Use expression and enthusiasm in your voice
-   - Do NOT read from the slides — use them as a guide
+   - Do NOT read from the slides - use them as a guide
    - Practice multiple times before presenting
 
 **Presentation do's and don'ts:**
@@ -845,7 +845,7 @@ Poetry is a form of writing that uses **creative language, rhythm, sound, and st
 | **Rhyme scheme** | The pattern of rhyming lines (labeled ABCD, etc.) | AABB, ABAB, ABCB |
 | **Imagery** | Words that appeal to the senses | *"The cold, wet sand squished between my toes"* |
 | **Stanza forms** | Different types of poetic structures | Couplet, quatrain, cinquain |
-| **Free verse** | Poetry without a regular rhyme scheme or meter | No set rules — rhythm comes from natural speech |
+| **Free verse** | Poetry without a regular rhyme scheme or meter | No set rules - rhythm comes from natural speech |
 | **Repetition** | Repeating words or lines for emphasis | *"I have a dream... I have a dream..."* |
 
 #### Haiku
@@ -886,7 +886,7 @@ A pizza so thin you could see,             (A)
 Through every last slice easily,           (A)
 Was ordered by Pete,                        (B)
 Who thought it a treat,                     (B)
-But ate it in one bite — oh gee!           (A)
+But ate it in one bite - oh gee!           (A)
 ```
 
 #### Free Verse
@@ -914,7 +914,7 @@ Free verse relies on:
 #### Diamante
 A seven-line, diamond-shaped poem that either **compares or contrasts** two subjects. It follows a specific parts-of-speech pattern.
 
-**Pattern (Synonym Diamante — same topic):**
+**Pattern (Synonym Diamante - same topic):**
 ```
 Line 1: Noun (subject)
 Line 2: Two adjectives describing the noun
@@ -936,7 +936,7 @@ Salty, endless
 Sea
 ```
 
-**Pattern (Antonym Diamante — contrasting topics):**
+**Pattern (Antonym Diamante - contrasting topics):**
 ```
 Line 1: Noun (subject 1)
 Line 2: Two adjectives for subject 1
@@ -944,7 +944,7 @@ Line 3: Three -ing verbs for subject 1
 Line 4: Four nouns (two for subject 1, two for subject 2)
 Line 5: Three -ing verbs for subject 2
 Line 6: Two adjectives for subject 2
-Line 7: Noun (subject 2 — opposite of line 1)
+Line 7: Noun (subject 2 - opposite of line 1)
 ```
 
 **Example (Antonym):**
@@ -961,7 +961,7 @@ Night
 **Tips for writing poetry:**
 1. Choose your topic and form first.
 2. Brainstorm words and images related to your topic.
-3. Experiment with line breaks — read aloud to test the rhythm.
+3. Experiment with line breaks - read aloud to test the rhythm.
 4. Use sensory details (sight, sound, touch, taste, smell).
-5. Revise — change words, rearrange lines, and read aloud again.
+5. Revise - change words, rearrange lines, and read aloud again.
 6. Poetry doesn't have to rhyme, but rhythm and musicality matter even in free verse.

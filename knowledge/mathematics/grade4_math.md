@@ -1,4 +1,4 @@
-# Grade 4 Mathematics — Complete Reference Guide
+# Grade 4 Mathematics - Complete Reference Guide
 
 > **Scope:** Aligned with Grade 4 Common Core / state standards. Covers place value through millions, multi-digit operations, factors & multiples, fractions & decimals, geometry, measurement, data analysis, algebraic thinking, and multi-step word problems.
 > **How to use:** Each section has **Key Vocabulary → Definitions → Worked Examples → Common Mistakes → Teaching Tips.**
@@ -110,14 +110,14 @@ Since 7 > 2 (at the thousands place), **5,837,620 > 5,832,147**.
 ### Teaching Tips
 - Use **base-10 blocks or place value disks** for concrete understanding of periods.
 - Have students build numbers using cards (one card per digit) and physically rearrange them to compare and order.
-- For rounding, use a **number line** to show what "nearest" really means — rounding is finding the closest landmark.
+- For rounding, use a **number line** to show what "nearest" really means - rounding is finding the closest landmark.
 - Play "Place Value Riddle" games: "I am a 7-digit number. My millions digit is 4, my tens digit is 0..."
 
 ---
 
 ## 2. Operations
 
-### 2A. Addition — 4-Digit Numbers
+### 2A. Addition - 4-Digit Numbers
 
 **Strategy:** Stack numbers vertically, align by place value, add right to left, carry when needed.
 
@@ -146,7 +146,7 @@ Since 7 > 2 (at the thousands place), **5,837,620 > 5,832,147**.
 
 **Answer:** 4,567 + 2,849 = **7,416**
 
-### 2B. Subtraction — 4-Digit Numbers
+### 2B. Subtraction - 4-Digit Numbers
 
 **Strategy:** Stack, align by place value, subtract right to left, regroup (borrow) when the top digit is smaller.
 
@@ -173,7 +173,7 @@ Step-by-step:
 
 **Answer:** 8,312 − 4,678 = **3,634**
 
-### 2C. Multiplication — 2-Digit × 2-Digit
+### 2C. Multiplication - 2-Digit × 2-Digit
 
 **Strategy:** Use the **partial products** method or the **standard algorithm** (long multiplication).
 
@@ -200,7 +200,7 @@ Step-by-step:
 
 Total: 1,200 + 240 + 60 + 12 = **1,512**
 
-### 2D. Long Division — 4-Digit ÷ 1-Digit
+### 2D. Long Division - 4-Digit ÷ 1-Digit
 
 **Steps:** **Divide → Multiply → Subtract → Bring Down → Repeat** (Dad, Mother, Sister, Brother, Rover)
 
@@ -351,7 +351,7 @@ Since 24 has more than two factors, 24 is **composite**.
     2   2 3   3
 ```
 
-**Prime factorization:** 36 = 2 × 2 × 3 × 3 = **2² × 3²**
+**Prime factorization:** 36 = 2 × 2 × 3 × 3 = **2^2 × 3^2**
 
 **Example:** Find the prime factorization of 48.
 
@@ -365,7 +365,7 @@ Since 24 has more than two factors, 24 is **composite**.
             2   2
 ```
 
-**Prime factorization:** 48 = 2 × 2 × 2 × 2 × 3 = **2⁴ × 3**
+**Prime factorization:** 48 = 2 × 2 × 2 × 2 × 3 = **2^4 × 3**
 
 ### Greatest Common Factor (GCF)
 
@@ -534,21 +534,21 @@ Since 24 has more than two factors, 24 is **composite**.
 **Example:** 2⅓ + 1½
 
 - LCD of 3 and 2 = 6
-- 2⅓ = 2²⁄₆
-- 1½ = 1³⁄₆
+- 2⅓ = 2^2⁄6
+- 1½ = 1^3⁄6
 - Whole numbers: 2 + 1 = 3
 - Fractions: 2/6 + 3/6 = 5/6
-- **Answer: 3⁵⁄₆**
+- **Answer: 3^5⁄6**
 
 **When the fraction sum ≥ 1 (regrouping):**
 
 **Example:** 2⅔ + 1¾
 
 - LCD = 12
-- 2⁸⁄₁₂ + 1⁹⁄₁₂
-- Fractions: 8/12 + 9/12 = 17/12 = 1⁵⁄₁₂
+- 2^8⁄12 + 1^9⁄12
+- Fractions: 8/12 + 9/12 = 17/12 = 1^5⁄12
 - Whole numbers: 2 + 1 + 1 = 4
-- **Answer: 4⁵⁄₁₂**
+- **Answer: 4^5⁄12**
 
 ### Multiplying a Fraction by a Whole Number
 
@@ -605,7 +605,7 @@ Since 24 has more than two factors, 24 is **composite**.
 - **0.35** = three tenths and five hundredths = 35/100
 - **2.14** = two and fourteen hundredths = 2 + 14/100
 
-### Decimal–Fraction Equivalence
+### Decimal-Fraction Equivalence
 
 | Decimal | Fraction | Visual |
 |---------|----------|--------|
@@ -685,7 +685,7 @@ Since 24 has more than two factors, 24 is **composite**.
    3.83
 ```
 
-Step: Borrow from the tenths place — 3 becomes 2, and 10 hundredths are added to the 0.
+Step: Borrow from the tenths place - 3 becomes 2, and 10 hundredths are added to the 0.
 
 ### Common Mistakes
 | Mistake | Why It Happens | Correction |
@@ -696,10 +696,10 @@ Step: Borrow from the tenths place — 3 becomes 2, and 10 hundredths are added 
 | Confusing tenths with hundredths | Mixing up decimal places | Use money analogy: $0.30 = 30¢ vs. $0.03 = 3¢ |
 
 ### Teaching Tips
-- **Money is the best decimal teacher.** $3.45 + $1.27 — students already do this!
+- **Money is the best decimal teacher.** $3.45 + $1.27 - students already do this!
 - Use **base-10 blocks**: the flat = 1 whole, rods = tenths, small cubes = hundredths.
 - Shade **10×10 grids** to visually represent decimals and fractions.
-- Emphasize that **equivalent decimals** (0.3 = 0.30 = 0.300) work just like equivalent fractions — extra zeros at the end don't change value.
+- Emphasize that **equivalent decimals** (0.3 = 0.30 = 0.300) work just like equivalent fractions - extra zeros at the end don't change value.
 
 ---
 
@@ -729,7 +729,7 @@ Step: Borrow from the tenths place — 3 becomes 2, and 10 hundredths are added 
 |--------|--------|-------------|
 | Point | A | A single location |
 | Line | ↔ AB (with arrows) | Extends in both directions, no endpoints |
-| Line segment | — AB (with no arrows) | Two endpoints, does not extend |
+| Line segment | - AB (with no arrows) | Two endpoints, does not extend |
 | Ray | → AB (arrow on one end) | One endpoint, extends forever in one direction |
 
 ### Types of Angles
@@ -836,7 +836,7 @@ Step: Borrow from the tenths place — 3 becomes 2, and 10 hundredths are added 
 | 1 pound | 16 ounces | 16 oz = 1 lb |
 | 1 ton | 2,000 pounds | 2,000 lb = 1 T |
 
-**"Big to Small = Multiply"** — Big to Small → Multiply, Small to Big → Divide
+**"Big to Small = Multiply"** - Big to Small → Multiply, Small to Big → Divide
 
 **Example:** Convert 5 feet to inches.
 - Feet → inches (big to small): multiply by 12
@@ -898,12 +898,12 @@ Step: Borrow from the tenths place — 3 becomes 2, and 10 hundredths are added 
 **Rectangle:** A = length × width (A = l × w)
 
 **Example:** Rectangle with l = 12 m and w = 5 m
-- A = 12 × 5 = **60 square meters (m²)**
+- A = 12 × 5 = **60 square meters (m^2)**
 
-**Square:** A = side × side (A = s²)
+**Square:** A = side × side (A = s^2)
 
 **Example:** Square with side = 7 cm
-- A = 7 × 7 = **49 cm²**
+- A = 7 × 7 = **49 cm^2**
 
 ### Area of Irregular Shapes
 
@@ -923,9 +923,9 @@ Step: Borrow from the tenths place — 3 becomes 2, and 10 hundredths are added 
 ```
 
 Assume:
-- Rectangle A: 10 m × 3 m = 30 m²
-- Rectangle B: 5 m × 4 m = 20 m²
-- **Total area = 30 + 20 = 50 m²**
+- Rectangle A: 10 m × 3 m = 30 m^2
+- Rectangle B: 5 m × 4 m = 20 m^2
+- **Total area = 30 + 20 = 50 m^2**
 
 **Alternative:** Find the area of the large enclosing rectangle, subtract the "missing" rectangle.
 
@@ -934,13 +934,13 @@ Assume:
 |---------|---------------|------------|
 | Mixing up area and perimeter formulas | Both involve rectangle measurements | Memory aid: **P**erimeter = **P**lus (add sides). **A**rea = **A**ll (rows × columns). |
 | Using wrong conversion factor | Confusing cup/pint/quart relationships | Memorize the "Gallon Kingdom" visual or the staircase model |
-| Forgetting units (or using wrong units) | Students focus on the number | Always require units: cm, m², gallons, etc. |
+| Forgetting units (or using wrong units) | Students focus on the number | Always require units: cm, m^2, gallons, etc. |
 | Not labeling all sides of irregular shapes | Missing a side when adding for perimeter | Have students trace each side with a finger as they add |
 | Mixing up metric prefixes | mm vs. cm vs. m | Use the "King Henry" mnemonic: King (kilo), Henry (hecto), Died (deka), By (base unit), Drinking (deci), Chocolate (centi), Milk (milli) |
 
 ### Teaching Tips
 - Create a **conversion staircase** visual: put the base unit in the middle, larger units going up (× each step), smaller going down (÷ each step).
-- Use **grid paper** for area — students literally count squares, then transition to the formula.
+- Use **grid paper** for area - students literally count squares, then transition to the formula.
 - For irregular shapes, have students physically **cut and rearrange** shapes to see decomposition.
 - Real-world perimeter: fence a garden, frame a picture, walk around a track.
 - Real-world area: carpet a room, tile a floor, paint a wall.
@@ -953,7 +953,7 @@ Assume:
 | Term | Definition |
 |------|-----------|
 | **Line plot** | A graph that shows data on a number line, using X's above each value |
-| **Mean** | The average — add all values, then divide by how many there are |
+| **Mean** | The average - add all values, then divide by how many there are |
 | **Median** | The middle value when data is arranged in order |
 | **Mode** | The value that appears most often |
 | **Range** | The difference between the largest and smallest values (introductory) |
@@ -971,7 +971,7 @@ Lengths (in inches):
        X
        X       X       X
    X   X   X   X   X   X
-   ————————————————
+   ----------------
   4¼  4½  4¾   5
 
 Number line: 4.25, 4.50, 4.75, 5.00
@@ -1040,8 +1040,8 @@ Number line: 4.25, 4.50, 4.75, 5.00
 | Dividing by wrong number for the mean | Students divide by the largest value instead of the count | Emphasize: "Count how many numbers there are, then divide by THAT number" |
 
 ### Teaching Tips
-- Use **physical objects** (coins, blocks) to demonstrate mean — distribute them evenly.
-- For median, have students stand in a line ordered by height — the middle person IS the median.
+- Use **physical objects** (coins, blocks) to demonstrate mean - distribute them evenly.
+- For median, have students stand in a line ordered by height - the middle person IS the median.
 - Create a class line plot using actual student data (heights, shoe sizes, etc.).
 - Use the **"MMM" mnemonic**: **M**ost = Mode, **M**iddle = Median, **M**ean = **M**ath average.
 - Introduce data concepts through relatable scenarios: sports stats, weather temperatures, game scores.
@@ -1096,7 +1096,7 @@ Number line: 4.25, 4.50, 4.75, 5.00
 | 4 | 20 |
 | 5 | 25 |
 
-- Check: 1 → 5 (+4?), 2 → 10 (+8?) — not adding the same amount.
+- Check: 1 → 5 (+4?), 2 → 10 (+8?) - not adding the same amount.
 - Try multiplying: 1 × 5 = 5, 2 × 5 = 10, 3 × 5 = 15 ✓
 - **Rule: Multiply by 5 (y = x × 5)**
 
@@ -1168,7 +1168,7 @@ A **function machine** takes an input, applies a rule, and produces an output.
 | Confusing position and value | When asked "the 10th term," students find the value 10 | Clarify: the term at position 10, not the value 10 |
 
 ### Teaching Tips
-- Use a real **"function machine" box** — put numbers on cards into a decorated box, a student applies the rule inside, and hands out the output.
+- Use a real **"function machine" box** - put numbers on cards into a decorated box, a student applies the rule inside, and hands out the output.
 - Start with single-step rules (addition or multiplication) before introducing multi-step.
 - Have students create their own input-output tables and challenge partners to find the rule.
 - Connect patterns to real life: calendar dates, savings growth, plant growth, tile patterns.
@@ -1309,8 +1309,8 @@ A **function machine** takes an input, applies a rule, and produces an output.
 - Teach multiple **problem-solving strategies**: draw a picture, make a table, find a pattern, work backwards, guess and check, act it out.
 - Use the **CUBES** or **UPSC** (Understand, Plan, Solve, Check) framework consistently.
 - Create **"story problem sorts"**: give students just the questions and have them decide what operation(s) to use BEFORE solving.
-- Use **numberless word problems** first — discuss what information is needed and what operation makes sense before any numbers are given.
-- Have students write their own word problems — this builds deep understanding of structure.
+- Use **numberless word problems** first - discuss what information is needed and what operation makes sense before any numbers are given.
+- Have students write their own word problems - this builds deep understanding of structure.
 - Practice **interpreting remainders** specifically: categorize problems as "ignore it," "report it," or "round up."
 
 ---

@@ -1,6 +1,6 @@
-# Grade 9 Mathematics — CBSE Class 9 NCERT
+# Grade 9 Mathematics - CBSE Class 9 NCERT
 
-> EduSphere AI — Complete knowledge reference for Grade 9 Mathematics.
+> EduSphere AI - Complete knowledge reference for Grade 9 Mathematics.
 > Aligned to CBSE/NCERT Class 9 syllabus with international curriculum coverage.
 
 ---
@@ -51,8 +51,8 @@ An **irrational number** is a real number that **cannot** be expressed as p/q.
 **Theorem:** √p is irrational where p is a prime number.
 
 *Proof (for √2):* Suppose √2 is rational, so √2 = a/b in lowest form.
-- 2 = a²/b² → a² = 2b² → a² is even → a is even → a = 2k.
-- Then 4k² = 2b² → b² = 2k² → b² is even → b is even.
+- 2 = a^2/b^2 → a^2 = 2b^2 → a^2 is even → a is even → a = 2k.
+- Then 4k^2 = 2b^2 → b^2 = 2k^2 → b^2 is even → b is even.
 - Both a and b are even, contradicting lowest form. Hence √2 is irrational. □
 
 ### 1.4 Real Numbers and Their Properties
@@ -84,7 +84,7 @@ Multiply numerator and denominator by a suitable irrational number to eliminate 
 
 - 1/√2 = (1 × √2)/(√2 × √2) = √2/2
 - 1/(√5 + √3) = (√5 − √3)/((√5 + √3)(√5 − √3)) = (√5 − √3)/(5 − 3) = (√5 − √3)/2
-- This uses the identity: (a + b)(a − b) = a² − b²
+- This uses the identity: (a + b)(a − b) = a^2 − b^2
 
 ### 1.6 Laws of Exponents for Real Numbers
 
@@ -96,13 +96,13 @@ For any real number **a** and positive integers **m** and **n**:
 4. **aᵐ × bᵐ = (ab)ᵐ**
 5. **aᵐ ÷ bᵐ = (a/b)ᵐ** (b ≠ 0)
 6. **a⁻ⁿ = 1/aⁿ** (a ≠ 0)
-7. **a⁰ = 1** (a ≠ 0)
+7. **a^0 = 1** (a ≠ 0)
 
 **For rational exponents:**
 - a^(m/n) = (ⁿ√a)ᵐ = ⁿ√(aᵐ), where a > 0
 - **Example:** 8^(1/3) = ∛8 = 2
 - **Example:** 9^(1/2) = √9 = 3
-- **Example:** 27^(2/3) = (∛27)² = 3² = 9
+- **Example:** 27^(2/3) = (∛27)^2 = 3^2 = 9
 
 **Irrational powers (brief):**
 - 2^√2 is a real number (approximately 2.6651...)
@@ -114,10 +114,10 @@ For any real number **a** and positive integers **m** and **n**:
 - **Irrational numbers** are found between rational numbers (real numbers are dense).
 - To locate √n on the number line: use a right triangle with sides √(n−1) and 1; the hypotenuse = √n.
 
-**Example — Locating √5:**
+**Example - Locating √5:**
 1. On the number line, mark OA = √4 = 2 units.
 2. At A, draw AB = 1 unit perpendicular to OA.
-3. OB = √(2² + 1²) = √5. With O as center and radius OB, draw an arc meeting the number line.
+3. OB = √(2^2 + 1^2) = √5. With O as center and radius OB, draw an arc meeting the number line.
 
 ---
 
@@ -127,26 +127,26 @@ For any real number **a** and positive integers **m** and **n**:
 
 A **polynomial** in one variable x is an expression of the form:
 
-> **p(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₂x² + a₁x + a₀**
+> **p(x) = aₙxⁿ + aₙ₋1xⁿ⁻^1 + ... + a2x^2 + a1x + a0**
 
-where aₙ, aₙ₋₁, ..., a₀ are real numbers (coefficients), aₙ ≠ 0, and n is a **non-negative integer** (the degree).
+where aₙ, aₙ₋1, ..., a0 are real numbers (coefficients), aₙ ≠ 0, and n is a **non-negative integer** (the degree).
 
 ### 2.2 Types of Polynomials
 
 **Classification by number of terms:**
 | Type | Number of Terms | Example |
 |---|---|---|
-| Monomial | 1 | 5x², −3x, 7 |
-| Binomial | 2 | x² + 3, 2x − 1 |
-| Trinomial | 3 | x² + x + 1 |
+| Monomial | 1 | 5x^2, −3x, 7 |
+| Binomial | 2 | x^2 + 3, 2x − 1 |
+| Trinomial | 3 | x^2 + x + 1 |
 
 **Classification by degree:**
 | Degree | Name | Example |
 |---|---|---|
 | 0 | Constant polynomial | 7 |
 | 1 | Linear polynomial | 3x + 2 |
-| 2 | Quadratic polynomial | 2x² − 3x + 1 |
-| 3 | Cubic polynomial | x³ + 4x² − x + 7 |
+| 2 | Quadratic polynomial | 2x^2 − 3x + 1 |
+| 3 | Cubic polynomial | x^3 + 4x^2 − x + 7 |
 
 A polynomial of degree n can have at most **n** real zeroes.
 
@@ -161,16 +161,16 @@ A **zero** (or **root**) of a polynomial p(x) is a value of x for which **p(x) =
 
 **Finding zeroes:**
 - For p(x) = x − 3: zero at x = 3 (since p(3) = 0).
-- For p(x) = x² − 4: zeroes at x = 2 and x = −2.
+- For p(x) = x^2 − 4: zeroes at x = 2 and x = −2.
 
 ### 2.4 Remainder Theorem
 
 **Remainder Theorem:** If p(x) is divided by (x − a), the remainder is **p(a)**.
 
-**Example:** Find the remainder when p(x) = 2x³ + 3x² − 5x + 7 is divided by (x − 1).
+**Example:** Find the remainder when p(x) = 2x^3 + 3x^2 − 5x + 7 is divided by (x − 1).
 - Remainder = p(1) = 2(1) + 3(1) − 5(1) + 7 = 2 + 3 − 5 + 7 = **7**
 
-**Example:** Find the remainder when p(x) = x³ − 2x² + 4x − 1 is divided by (x + 2).
+**Example:** Find the remainder when p(x) = x^3 − 2x^2 + 4x − 1 is divided by (x + 2).
 - Here divisor is (x + 2) = (x − (−2)), so a = −2.
 - Remainder = p(−2) = (−8) − 2(4) + 4(−2) − 1 = −8 − 8 − 8 − 1 = **−25**
 
@@ -180,50 +180,50 @@ A **zero** (or **root**) of a polynomial p(x) is a value of x for which **p(x) =
 
 This is the converse of the Remainder Theorem and is used to factorise polynomials.
 
-**Example:** Check if (x − 2) is a factor of p(x) = x³ − 4x² + x + 6.
+**Example:** Check if (x − 2) is a factor of p(x) = x^3 − 4x^2 + x + 6.
 - p(2) = 8 − 16 + 2 + 6 = 0 ✓
 - Therefore, (x − 2) is a factor.
 
 ### 2.6 Factorisation of Polynomials
 
 **Method 1: Splitting the Middle Term (for quadratics)**
-Factorise x² + 5x + 6:
+Factorise x^2 + 5x + 6:
 - Find two numbers with product 6 and sum 5 → 2 and 3.
-- x² + 2x + 3x + 6 = x(x + 2) + 3(x + 2) = (x + 2)(x + 3)
+- x^2 + 2x + 3x + 6 = x(x + 2) + 3(x + 2) = (x + 2)(x + 3)
 
 **Method 2: Using Factor Theorem**
-Factorise x³ − 3x² + 2:
+Factorise x^3 − 3x^2 + 2:
 - Try small values: p(1) = 1 − 3 + 2 = 0 → (x − 1) is a factor.
-- Divide by (x − 1): x³ − 3x² + 2 = (x − 1)(x² − 2x − 2)
-- The quadratic x² − 2x − 2 can be further factored using the quadratic formula: x = 1 ± √3.
+- Divide by (x − 1): x^3 − 3x^2 + 2 = (x − 1)(x^2 − 2x − 2)
+- The quadratic x^2 − 2x − 2 can be further factored using the quadratic formula: x = 1 ± √3.
 
 **Method 3: Using Identities**
 
 ### 2.7 Algebraic Identities
 
-1. **(a + b)² = a² + 2ab + b²**
-2. **(a − b)² = a² − 2ab + b²**
-3. **a² − b² = (a + b)(a − b)**
-4. **(x + a)(x + b) = x² + (a + b)x + ab**
-5. **(a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca**
-6. **(a + b)³ = a³ + b³ + 3ab(a + b)**
-7. **(a − b)³ = a³ − b³ − 3ab(a − b)**
-8. **a³ + b³ = (a + b)(a² − ab + b²)**
-9. **a³ − b³ = (a − b)(a² + ab + b²)**
-10. **a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca)**
+1. **(a + b)^2 = a^2 + 2ab + b^2**
+2. **(a − b)^2 = a^2 − 2ab + b^2**
+3. **a^2 − b^2 = (a + b)(a − b)**
+4. **(x + a)(x + b) = x^2 + (a + b)x + ab**
+5. **(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca**
+6. **(a + b)^3 = a^3 + b^3 + 3ab(a + b)**
+7. **(a − b)^3 = a^3 − b^3 − 3ab(a − b)**
+8. **a^3 + b^3 = (a + b)(a^2 − ab + b^2)**
+9. **a^3 − b^3 = (a − b)(a^2 + ab + b^2)**
+10. **a^3 + b^3 + c^3 − 3abc = (a + b + c)(a^2 + b^2 + c^2 − ab − bc − ca)**
 
-**Special case of Identity 10:** If a + b + c = 0, then a³ + b³ + c³ = 3abc.
+**Special case of Identity 10:** If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc.
 
 **Applications:**
 
-*Using Identity 5:* Expand (2x + 3y + z)²
-= 4x² + 9y² + z² + 12xy + 6yz + 4xz
+*Using Identity 5:* Expand (2x + 3y + z)^2
+= 4x^2 + 9y^2 + z^2 + 12xy + 6yz + 4xz
 
-*Using Identity 7:* Evaluate 101³
-= (100 + 1)³ = 100³ + 1³ + 3(100)(1)(100 + 1)
+*Using Identity 7:* Evaluate 101^3
+= (100 + 1)^3 = 100^3 + 1^3 + 3(100)(1)(100 + 1)
 = 1000000 + 1 + 30300 = **1030301**
 
-*Using Identity 10:* If x + y + z = 0, find x³ + y³ + z³ when x = 2, y = −1, z = −1.
+*Using Identity 10:* If x + y + z = 0, find x^3 + y^3 + z^3 when x = 2, y = −1, z = −1.
 = 3(2)(−1)(−1) = **6**
 
 ### 2.8 Polynomial Division
@@ -235,16 +235,16 @@ To divide p(x) by g(x) where deg p(x) ≥ deg g(x):
 3. Multiply g(x) by this term and subtract from p(x).
 4. Repeat until the remainder has degree less than g(x).
 
-**Example:** Divide x³ + 2x + 1 by x² − 1.
+**Example:** Divide x^3 + 2x + 1 by x^2 − 1.
 
 ```
          x         + 3
        ________________
-x² − 1 | x³ + 0x² + 2x + 1
-        x³ − x
+x^2 − 1 | x^3 + 0x^2 + 2x + 1
+        x^3 − x
         ─────────
-             x² + 2x + 1
-             x² − 1
+             x^2 + 2x + 1
+             x^2 − 1
              ─────────
                    2x + 2
 ```
@@ -289,26 +289,26 @@ To plot point P(3, −2):
 
 ### 3.4 Distance Formula
 
-The distance between two points P(x₁, y₁) and Q(x₂, y₂) is:
+The distance between two points P(x1, y1) and Q(x2, y2) is:
 
-> **PQ = √[(x₂ − x₁)² + (y₂ − y₁)²]**
+> **PQ = √[(x2 − x1)^2 + (y2 − y1)^2]**
 
 **Example:** Find the distance between A(3, 4) and B(7, 1).
-- PQ = √[(7 − 3)² + (1 − 4)²] = √[16 + 9] = √25 = **5**
+- PQ = √[(7 − 3)^2 + (1 − 4)^2] = √[16 + 9] = √25 = **5**
 
 **Special Cases:**
-- Distance from origin: √(x² + y²)
-- Horizontal distance (same y): |x₂ − x₁|
-- Vertical distance (same x): |y₂ − y₁|
+- Distance from origin: √(x^2 + y^2)
+- Horizontal distance (same y): |x2 − x1|
+- Vertical distance (same x): |y2 − y1|
 
 ### 3.5 Section Formula
 
-If a point P divides the line segment joining A(x₁, y₁) and B(x₂, y₂) in the ratio **m : n**, then:
+If a point P divides the line segment joining A(x1, y1) and B(x2, y2) in the ratio **m : n**, then:
 
-> **P = ((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))**
+> **P = ((mx2 + nx1)/(m + n), (my2 + ny1)/(m + n))**
 
 **Midpoint Formula** (special case when m = n = 1):
-> **Midpoint M = ((x₁ + x₂)/2, (y₁ + y₂)/2)**
+> **Midpoint M = ((x1 + x2)/2, (y1 + y2)/2)**
 
 **Example:** Find the midpoint of A(2, 6) and B(4, 8).
 - M = ((2 + 4)/2, (6 + 8)/2) = (3, 7)
@@ -322,9 +322,9 @@ If a point P divides the line segment joining A(x₁, y₁) and B(x₂, y₂) in
 
 ### 3.6 Area of Triangle (Coordinate Formula)
 
-Area of triangle with vertices A(x₁, y₁), B(x₂, y₂), C(x₃, y₃):
+Area of triangle with vertices A(x1, y1), B(x2, y2), C(x3, y3):
 
-> **Area = ½ |x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|**
+> **Area = ½ |x1(y2 − y3) + x2(y3 − y1) + x3(y1 − y2)|**
 
 **Example:** Find the area of triangle with vertices A(1, 2), B(3, 4), C(5, 6).
 - Area = ½ |1(4 − 6) + 3(6 − 2) + 5(2 − 4)| = ½ |−2 + 12 − 10| = ½ |0| = **0**
@@ -373,7 +373,7 @@ The graph of a linear equation in two variables is always a **straight line**.
 3. Draw a straight line through them.
 4. Extend the line in both directions.
 
-**Example — Graph of x + y = 4:**
+**Example - Graph of x + y = 4:**
 | x | y = 4 − x |
 |---|---|
 | 0 | 4 |
@@ -394,8 +394,8 @@ Plot (0, 4), (4, 0), (2, 2) and draw the line.
 
 ### 4.5 Equations of Lines Parallel to Axes
 
-- **Parallel to x-axis:** y = c (constant) — horizontal line.
-- **Parallel to y-axis:** x = c (constant) — vertical line.
+- **Parallel to x-axis:** y = c (constant) - horizontal line.
+- **Parallel to y-axis:** x = c (constant) - vertical line.
 - **Line through origin:** ax + by = 0 → passes through (0, 0).
 
 ---
@@ -469,7 +469,7 @@ Notation: ΔABC ~ ΔPQR
 
 If ΔABC ~ ΔPQR, then:
 
-> **Area(ΔABC) / Area(ΔPQR) = (AB/PQ)² = (BC/QR)² = (CA/RP)²**
+> **Area(ΔABC) / Area(ΔPQR) = (AB/PQ)^2 = (BC/QR)^2 = (CA/RP)^2**
 
 The ratio of areas equals the **square** of the ratio of corresponding sides.
 
@@ -477,9 +477,9 @@ The ratio of areas equals the **square** of the ratio of corresponding sides.
 
 **Statement:** In a right-angled triangle, the square of the hypotenuse equals the sum of squares of the other two sides.
 
-> **AC² = AB² + BC²** (where ∠B = 90°)
+> **AC^2 = AB^2 + BC^2** (where ∠B = 90°)
 
-**Converse:** If a² + b² = c² in a triangle, then the angle opposite side c is a right angle.
+**Converse:** If a^2 + b^2 = c^2 in a triangle, then the angle opposite side c is a right angle.
 
 ### 5.9 Proof of Pythagoras Theorem
 
@@ -492,23 +492,23 @@ In ΔABC and ΔADB:
 - ∠ADB = ∠ABC = 90°.
 - By AA: ΔADB ~ ΔABC.
 
-From similarity: AD/AB = AB/AC → AB² = AD × AC ... (1)
+From similarity: AD/AB = AB/AC → AB^2 = AD × AC ... (1)
 
 In ΔABC and ΔBDC:
 - ∠C is common.
 - ∠BDC = ∠ABC = 90°.
 - By AA: ΔBDC ~ ΔABC.
 
-From similarity: DC/BC = BC/AC → BC² = DC × AC ... (2)
+From similarity: DC/BC = BC/AC → BC^2 = DC × AC ... (2)
 
 Adding (1) and (2):
-AB² + BC² = AD × AC + DC × AC = AC(AD + DC) = AC × AC = **AC²**
+AB^2 + BC^2 = AD × AC + DC × AC = AC(AD + DC) = AC × AC = **AC^2**
 
-Hence: **AB² + BC² = AC²** □
+Hence: **AB^2 + BC^2 = AC^2** □
 
 ### 5.10 Pythagorean Triples
 
-Sets of positive integers (a, b, c) where a² + b² = c²:
+Sets of positive integers (a, b, c) where a^2 + b^2 = c^2:
 
 | a | b | c |
 |---|---|---|
@@ -520,7 +520,7 @@ Sets of positive integers (a, b, c) where a² + b² = c²:
 | 9 | 12 | 15 |
 
 **General formula:** For any m > n > 0:
-- a = m² − n², b = 2mn, c = m² + n²
+- a = m^2 − n^2, b = 2mn, c = m^2 + n^2
 
 ---
 
@@ -677,13 +677,13 @@ If ABCD is cyclic: ∠A + ∠C = 180° and ∠B + ∠D = 180°.
 > Arc length = (θ/360°) × 2πr
 
 **Area of sector:**
-> Area = (θ/360°) × πr²
+> Area = (θ/360°) × πr^2
 
 **Area of segment:**
 > Area of segment = Area of sector − Area of triangle
 
 **Example:** Find the area of a sector with radius 7 cm and central angle 60°.
-- Area = (60/360) × (22/7) × 49 = (1/6) × 154 = **77/3 ≈ 25.67 cm²**
+- Area = (60/360) × (22/7) × 49 = (1/6) × 154 = **77/3 ≈ 25.67 cm^2**
 
 ---
 
@@ -740,7 +740,7 @@ Using compass and straightedge:
 
 ## 10. Heron's Formula
 
-### 10.1 Area of a Triangle — Heron's Formula
+### 10.1 Area of a Triangle - Heron's Formula
 
 When all three sides of a triangle are known, the area can be found using **Heron's formula** without needing the height.
 
@@ -763,14 +763,14 @@ Heron's formula can be derived by splitting the triangle into two right triangle
 - Area = √[21(21 − 13)(21 − 14)(21 − 15)]
 - = √[21 × 8 × 7 × 6]
 - = √[7056]
-- = **84 cm²**
+- = **84 cm^2**
 
 **Example 2:** Find the area of a triangle with sides a = 5, b = 6, c = 7.
 - s = (5 + 6 + 7)/2 = 9
 - Area = √[9(9 − 5)(9 − 6)(9 − 7)]
 - = √[9 × 4 × 3 × 2]
 - = √[216]
-- = 6√6 ≈ **14.7 cm²**
+- = 6√6 ≈ **14.7 cm^2**
 
 ### 10.4 Application to Quadrilaterals
 
@@ -779,12 +779,12 @@ Heron's formula can be derived by splitting the triangle into two right triangle
 **Example:** Find the area of quadrilateral ABCD with sides AB = 5, BC = 6, CD = 7, DA = 8, and diagonal AC = 9.
 
 *Triangle ABC:*
-- s₁ = (5 + 6 + 9)/2 = 10
-- Area₁ = √[10 × 5 × 4 × 1] = √200 = 10√2
+- s1 = (5 + 6 + 9)/2 = 10
+- Area1 = √[10 × 5 × 4 × 1] = √200 = 10√2
 
 *Triangle ACD:*
-- s₂ = (7 + 8 + 9)/2 = 12
-- Area₂ = √[12 × 5 × 4 × 3] = √720 = 12√5
+- s2 = (7 + 8 + 9)/2 = 12
+- Area2 = √[12 × 5 × 4 × 3] = √720 = 12√5
 
 Total area = 10√2 + 12√5 ≈ 14.14 + 26.83 = **40.97 sq. units**
 
@@ -799,20 +799,20 @@ Dimensions: length (l), breadth (b), height (h)
 - **Total Surface Area (TSA):** 2(lb + bh + hl)
 - **Lateral Surface Area (LSA):** 2(l + b)h
 - **Volume:** l × b × h
-- **Diagonal:** √(l² + b² + h²)
+- **Diagonal:** √(l^2 + b^2 + h^2)
 
 **Example:** A cuboid has l = 10 cm, b = 8 cm, h = 6 cm.
-- TSA = 2(80 + 48 + 60) = 2(188) = **376 cm²**
-- Volume = 10 × 8 × 6 = **480 cm³**
+- TSA = 2(80 + 48 + 60) = 2(188) = **376 cm^2**
+- Volume = 10 × 8 × 6 = **480 cm^3**
 - Diagonal = √(100 + 64 + 36) = √200 = 10√2 ≈ 14.14 cm
 
 ### 11.2 Cube
 
 Side = a
 
-- **TSA:** 6a²
-- **LSA:** 4a²
-- **Volume:** a³
+- **TSA:** 6a^2
+- **LSA:** 4a^2
+- **Volume:** a^3
 - **Diagonal:** a√3
 
 ### 11.3 Right Circular Cylinder
@@ -820,52 +820,52 @@ Side = a
 Radius (r), height (h)
 
 - **Curved Surface Area (CSA):** 2πrh
-- **Total Surface Area (TSA):** 2πr(r + h) = 2πrh + 2πr²
-- **Volume:** πr²h
+- **Total Surface Area (TSA):** 2πr(r + h) = 2πrh + 2πr^2
+- **Volume:** πr^2h
 
 **Example:** A cylinder has r = 7 cm, h = 10 cm.
-- CSA = 2 × (22/7) × 7 × 10 = **440 cm²**
-- TSA = 2 × (22/7) × 7 × (7 + 10) = 2 × 22 × 17 = **748 cm²**
-- Volume = (22/7) × 49 × 10 = **1540 cm³**
+- CSA = 2 × (22/7) × 7 × 10 = **440 cm^2**
+- TSA = 2 × (22/7) × 7 × (7 + 10) = 2 × 22 × 17 = **748 cm^2**
+- Volume = (22/7) × 49 × 10 = **1540 cm^3**
 
 ### 11.4 Right Circular Cone
 
 Radius (r), height (h), slant height (l)
 
-- **Slant height:** l = √(r² + h²)
+- **Slant height:** l = √(r^2 + h^2)
 - **Curved Surface Area (CSA):** πrl
-- **Total Surface Area (TSA):** πr(r + l) = πrl + πr²
-- **Volume:** (1/3)πr²h
+- **Total Surface Area (TSA):** πr(r + l) = πrl + πr^2
+- **Volume:** (1/3)πr^2h
 
 **Example:** A cone has r = 6 cm, h = 8 cm.
 - l = √(36 + 64) = √100 = 10 cm
-- CSA = π × 6 × 10 = **60π ≈ 188.57 cm²**
-- TSA = π × 6 × 16 = **96π ≈ 301.71 cm²**
-- Volume = (1/3) × π × 36 × 8 = **96π ≈ 301.71 cm³**
+- CSA = π × 6 × 10 = **60π ≈ 188.57 cm^2**
+- TSA = π × 6 × 16 = **96π ≈ 301.71 cm^2**
+- Volume = (1/3) × π × 36 × 8 = **96π ≈ 301.71 cm^3**
 
 ### 11.5 Sphere
 
 Radius (r)
 
-- **Surface Area:** 4πr²
-- **Volume:** (4/3)πr³
+- **Surface Area:** 4πr^2
+- **Volume:** (4/3)πr^3
 
 **Example:** A sphere has r = 7 cm.
-- SA = 4 × (22/7) × 49 = **616 cm²**
-- Volume = (4/3) × (22/7) × 343 = **1437.33 cm³**
+- SA = 4 × (22/7) × 49 = **616 cm^2**
+- Volume = (4/3) × (22/7) × 343 = **1437.33 cm^3**
 
 ### 11.6 Hemisphere
 
 Radius (r)
 
-- **Curved Surface Area:** 2πr²
-- **Total Surface Area:** 3πr² (curved surface + flat base)
-- **Volume:** (2/3)πr³
+- **Curved Surface Area:** 2πr^2
+- **Total Surface Area:** 3πr^2 (curved surface + flat base)
+- **Volume:** (2/3)πr^3
 
 **Example:** A hemisphere has r = 3.5 cm.
-- CSA = 2 × (22/7) × 12.25 = **77 cm²**
-- TSA = 3 × (22/7) × 12.25 = **115.5 cm²**
-- Volume = (2/3) × (22/7) × 42.875 = **89.83 cm³**
+- CSA = 2 × (22/7) × 12.25 = **77 cm^2**
+- TSA = 3 × (22/7) × 12.25 = **115.5 cm^2**
+- Volume = (2/3) × (22/7) × 42.875 = **89.83 cm^3**
 
 ### 11.7 Combined Solids
 
@@ -874,21 +874,21 @@ When one solid is placed on another, the surface area of the combination is the 
 
 **Example:** A hemisphere mounted on a cylinder (same radius r, cylinder height h).
 - Total SA = CSA of cylinder + CSA of hemisphere + Area of base
-  = 2πrh + 2πr² + πr² = 2πrh + 3πr²
+  = 2πrh + 2πr^2 + πr^2 = 2πrh + 3πr^2
 
 **Volume of combined solids:**
 The volume of a combination of solids is the **sum** of their individual volumes.
 
 **Example:** A cone mounted on a cylinder (same radius r).
-- Volume = πr²h + (1/3)πr²h = πr²h(1 + 1/3) = (4/3)πr²h
+- Volume = πr^2h + (1/3)πr^2h = πr^2h(1 + 1/3) = (4/3)πr^2h
 
 ### 11.8 Conversion of Solids
 
 When a solid is melted and recast into another shape, the **volume remains unchanged**.
 
 **Example:** A sphere of radius 6 cm is melted and recast into a cylinder of radius 4 cm. Find the height.
-- Volume of sphere = (4/3)π(6)³ = 288π
-- Volume of cylinder = π(4)²h = 16πh
+- Volume of sphere = (4/3)π(6)^3 = 288π
+- Volume of cylinder = π(4)^2h = 16πh
 - 16πh = 288π → h = 288/16 = **18 cm**
 
 ---
@@ -967,12 +967,12 @@ where:
 **Example:**
 | Class | Frequency | Cumulative Frequency |
 |---|---|---|
-| 0–10 | 5 | 5 |
-| 10–20 | 8 | 13 |
-| 20–30 | 12 | 25 |
-| 30–40 | 5 | 30 |
+| 0-10 | 5 | 5 |
+| 10-20 | 8 | 13 |
+| 20-30 | 12 | 25 |
+| 30-40 | 5 | 30 |
 
-n = 30, n/2 = 15. The median class is 20–30 (cf just exceeds 15 is 25, previous cf = 13).
+n = 30, n/2 = 15. The median class is 20-30 (cf just exceeds 15 is 25, previous cf = 13).
 - Median = 20 + [(15 − 13)/12] × 10 = 20 + (2/12) × 10 = 20 + 5/3 = **21.67**
 
 ### 12.5 Mode
@@ -982,18 +982,18 @@ The **mode** is the value with the highest frequency.
 **For ungrouped data:** The observation occurring most frequently.
 
 **For grouped data (continuous):**
-> **Mode = l + [(f₁ − f₀) / (2f₁ − f₀ − f₂)] × h**
+> **Mode = l + [(f1 − f0) / (2f1 − f0 − f2)] × h**
 
 where:
 - l = lower limit of the modal class (class with highest frequency)
-- f₁ = frequency of the modal class
-- f₀ = frequency of the class preceding the modal class
-- f₂ = frequency of the class succeeding the modal class
+- f1 = frequency of the modal class
+- f0 = frequency of the class preceding the modal class
+- f2 = frequency of the class succeeding the modal class
 - h = class width
 
 **Example:** Using the table above:
-- Modal class = 20–30 (highest frequency = 12)
-- l = 20, f₁ = 12, f₀ = 8, f₂ = 5, h = 10
+- Modal class = 20-30 (highest frequency = 12)
+- l = 20, f1 = 12, f0 = 8, f2 = 5, h = 10
 - Mode = 20 + [(12 − 8)/(24 − 8 − 5)] × 10 = 20 + (4/11) × 10 = 20 + 40/11 = **23.64**
 
 ### 12.6 Cumulative Frequency and Ogives
@@ -1082,8 +1082,8 @@ Based on reasoning about equally likely outcomes.
 ### 13.5 Properties of Probability
 
 1. **0 ≤ P(E) ≤ 1** for any event E.
-2. **P(S) = 1** (certain event — the sample space always occurs).
-3. **P(Ø) = 0** (impossible event — the empty set never occurs).
+2. **P(S) = 1** (certain event - the sample space always occurs).
+3. **P(Ø) = 0** (impossible event - the empty set never occurs).
 4. **P(Ē) = 1 − P(E)**, where Ē is the complement of E (the event "not E").
 5. **Sum of probabilities of all outcomes = 1.**
 
@@ -1109,39 +1109,39 @@ Based on reasoning about equally likely outcomes.
 
 ---
 
-## Quick Revision — Key Formulas (Grade 9)
+## Quick Revision - Key Formulas (Grade 9)
 
 | Topic | Formula |
 |---|---|
-| Distance formula | √[(x₂−x₁)² + (y₂−y₁)²] |
-| Midpoint | ((x₁+x₂)/2, (y₁+y₂)/2) |
-| Section formula (m:n) | ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)) |
-| Area of triangle (coordinates) | ½\|x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)\| |
-| Pythagoras theorem | c² = a² + b² |
+| Distance formula | √[(x2−x1)^2 + (y2−y1)^2] |
+| Midpoint | ((x1+x2)/2, (y1+y2)/2) |
+| Section formula (m:n) | ((mx2+nx1)/(m+n), (my2+ny1)/(m+n)) |
+| Area of triangle (coordinates) | ½\|x1(y2−y3) + x2(y3−y1) + x3(y1−y2)\| |
+| Pythagoras theorem | c^2 = a^2 + b^2 |
 | Heron's formula | √[s(s−a)(s−b)(s−c)], s = (a+b+c)/2 |
 | Cuboid TSA | 2(lb + bh + hl) |
 | Cuboid Volume | lbh |
-| Cube TSA | 6a² |
-| Cube Volume | a³ |
+| Cube TSA | 6a^2 |
+| Cube Volume | a^3 |
 | Cylinder CSA | 2πrh |
 | Cylinder TSA | 2πr(r + h) |
-| Cylinder Volume | πr²h |
+| Cylinder Volume | πr^2h |
 | Cone CSA | πrl |
 | Cone TSA | πr(r + l) |
-| Cone Volume | (1/3)πr²h |
-| Sphere SA | 4πr² |
-| Sphere Volume | (4/3)πr³ |
-| Hemisphere CSA | 2πr² |
-| Hemisphere TSA | 3πr² |
-| Hemisphere Volume | (2/3)πr³ |
+| Cone Volume | (1/3)πr^2h |
+| Sphere SA | 4πr^2 |
+| Sphere Volume | (4/3)πr^3 |
+| Hemisphere CSA | 2πr^2 |
+| Hemisphere TSA | 3πr^2 |
+| Hemisphere Volume | (2/3)πr^3 |
 | Arc length | (θ/360) × 2πr |
-| Sector area | (θ/360) × πr² |
+| Sector area | (θ/360) × πr^2 |
 | Mean (grouped) | x̄ = (Σfᵢxᵢ)/(Σfᵢ) |
 | Median (grouped) | l + [(n/2 − cf)/f] × h |
-| Mode (grouped) | l + [(f₁ − f₀)/(2f₁ − f₀ − f₂)] × h |
+| Mode (grouped) | l + [(f1 − f0)/(2f1 − f0 − f2)] × h |
 | Empirical relation | Mode ≈ 3 Median − 2 Mean |
 | Probability | P(E) = favorable/total |
 
 ---
 
-> **EduSphere AI** — Comprehensive Grade 9 Mathematics reference covering all CBSE Class 9 NCERT topics.
+> **EduSphere AI** - Comprehensive Grade 9 Mathematics reference covering all CBSE Class 9 NCERT topics.

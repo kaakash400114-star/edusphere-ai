@@ -1,4 +1,4 @@
-# Grade 3 English — Complete Curriculum
+# Grade 3 English - Complete Curriculum
 
 ## 1. Vocabulary
 
@@ -6,23 +6,23 @@
 
 **Context clues** are hints that an author gives within a sentence or paragraph to help you figure out the meaning of an unknown word. There are several types:
 
-**1. Definition Clue** — the author directly defines the word.
+**1. Definition Clue** - the author directly defines the word.
 > The archaeologist, a scientist who studies ancient objects, carefully dug up the bones.
 > (The words after the comma define "archaeologist.")
 
-**2. Example Clue** — the author gives examples that help explain the word.
+**2. Example Clue** - the author gives examples that help explain the word.
 > The cafeteria serves many **savory** foods like fried chicken, grilled cheese, and pizza.
 > (Fried chicken, grilled cheese, and pizza are all salty or flavorful, so "savory" means flavorful.)
 
-**3. Synonym Clue** — a nearby word means the same thing.
+**3. Synonym Clue** - a nearby word means the same thing.
 > The puppy was very **frisky**, or playful, and ran around the yard.
 > ("Playful" is a synonym for "frisky.")
 
-**4. Antonym Clue** — a nearby word means the opposite.
+**4. Antonym Clue** - a nearby word means the opposite.
 > Unlike her **gregarious** sister who loved talking to everyone at the party, Maya sat quietly in the corner.
-> (Maya is quiet and does not like socializing, so "gregarious" means the opposite — sociable and outgoing.)
+> (Maya is quiet and does not like socializing, so "gregarious" means the opposite - sociable and outgoing.)
 
-**5. Explanation Clue** — the sentence explains the word.
+**5. Explanation Clue** - the sentence explains the word.
 > The weather was **balmy**; the warm breeze felt wonderful on my skin.
 > ("Warm breeze felt wonderful" explains that "balmy" means pleasantly warm.)
 
@@ -34,11 +34,11 @@ A **dictionary** is a book (or online tool) that tells you what words mean and h
 
 | Part | What It Tells You |
 |------|-------------------|
-| **Guide words** | The first and last words on the page — help you find your word faster |
+| **Guide words** | The first and last words on the page - help you find your word faster |
 | **Entry word** | The word you are looking up (in bold) |
 | **Pronunciation** | How to say the word, often with symbols |
 | **Part of speech** | noun, verb, adjective, adverb, etc. |
-| **Definition(s)** | The meaning(s) of the word — often numbered |
+| **Definition(s)** | The meaning(s) of the word - often numbered |
 | **Example sentence** | Shows the word used in context |
 | **Synonyms/Antonyms** | Words that mean the same or the opposite |
 
@@ -46,7 +46,7 @@ A **dictionary** is a book (or online tool) that tells you what words mean and h
 1. Think of the first letter of your word.
 2. Open the dictionary to near that letter.
 3. Use the **guide words** at the top of the page to narrow down where to look.
-4. Alphabetize — if the first letter is the same, check the second, then third letter.
+4. Alphabetize - if the first letter is the same, check the second, then third letter.
 5. Read the definition that fits the way the word is used in your sentence.
 
 ### Idioms
@@ -158,10 +158,10 @@ Understanding **roots** and **affixes** (prefixes and suffixes) helps you figure
 
 Every sentence has a **subject** and a **predicate**.
 
-- **Complete subject** — all the words that tell who or what the sentence is about.
-- **Complete predicate** — all the words that tell what the subject does or is.
-- **Simple subject** — the main word (usually a noun or pronoun) in the subject.
-- **Simple predicate** — the main word (the verb) in the predicate.
+- **Complete subject** - all the words that tell who or what the sentence is about.
+- **Complete predicate** - all the words that tell what the subject does or is.
+- **Simple subject** - the main word (usually a noun or pronoun) in the subject.
+- **Simple predicate** - the main word (the verb) in the predicate.
 
 | Complete Sentence | Complete Subject | Simple Subject | Complete Predicate | Simple Predicate |
 |-----------------|-----------------|----------------|-------------------|-----------------|
@@ -173,7 +173,7 @@ Every sentence has a **subject** and a **predicate**.
 
 ### Verb Tenses
 
-Verbs show **when** an action happens — past, present, or future.
+Verbs show **when** an action happens - past, present, or future.
 
 | Tense | When | How to Form | Examples |
 |-------|------|------------|----------|
@@ -304,7 +304,7 @@ Irregular verbs do NOT follow the -ed rule. You must memorize them.
 | must | You **must finish** your work. |
 
 **The Helping Verb Song (23 helping verbs):**
-> Am, is, are, was, were, be, been, being — have, has, had — do, does, did — shall, should, will, would, may, might, must, can, could
+> Am, is, are, was, were, be, been, being - have, has, had - do, does, did - shall, should, will, would, may, might, must, can, could
 
 ### Possessive Nouns
 
@@ -312,10 +312,10 @@ A **possessive noun** shows ownership. To make a noun possessive, add an **apost
 
 | Rule | Singular | Singular Possessive | Plural | Plural Possessive |
 |------|----------|-------------------|--------|------------------|
-| Regular singular | dog | dog's | — | — |
-| Regular plural | — | — | dogs | dogs' |
-| Singular ending in s | James | James's (or James') | — | — |
-| Irregular plural | — | — | children | children's |
+| Regular singular | dog | dog's | - | - |
+| Regular plural | - | - | dogs | dogs' |
+| Singular ending in s | James | James's (or James') | - | - |
+| Irregular plural | - | - | children | children's |
 
 **Examples:**
 
@@ -335,8 +335,8 @@ Adjectives can be used to **compare** things.
 | Type | Rule | Examples |
 |------|------|----------|
 | **Positive** | Just the adjective | tall, fast, happy, big |
-| **Comparative** | Compare 2 things — add -er or use "more" | taller, faster, happier, bigger |
-| **Superlative** | Compare 3+ things — add -est or use "most" | tallest, fastest, happiest, biggest |
+| **Comparative** | Compare 2 things - add -er or use "more" | taller, faster, happier, bigger |
+| **Superlative** | Compare 3+ things - add -est or use "most" | tallest, fastest, happiest, biggest |
 
 **Rules for forming comparatives and superlatives:**
 
@@ -438,7 +438,7 @@ A **narrative** is a story. Every narrative has key elements:
 
 | Element | Definition | Example |
 |---------|-----------|---------|
-| **Plot** | The events of the story in order — what happens | A boy finds a lost puppy, searches for the owner, and finally returns the puppy home. |
+| **Plot** | The events of the story in order - what happens | A boy finds a lost puppy, searches for the owner, and finally returns the puppy home. |
 | **Characters** | The people, animals, or beings in the story | Jack (the boy), Max (the puppy), the owner (Mrs. Lee) |
 | **Setting** | Where and when the story takes place | A small neighborhood on a Saturday afternoon in summer |
 | **Theme** | The lesson or message of the story | Helping others is the right thing to do, even when it is hard work. |
@@ -449,11 +449,11 @@ A **narrative** is a story. Every narrative has key elements:
 |------|------------|
 | **Exposition (Beginning)** | Introduces characters, setting, and the basic situation. |
 | **Rising Action** | Events build up; the main character faces challenges. |
-| **Climax** | The most exciting or important moment — the turning point. |
+| **Climax** | The most exciting or important moment - the turning point. |
 | **Falling Action** | Events that happen after the climax as things calm down. |
 | **Resolution (Ending)** | The problem is solved; the story wraps up. |
 
-**Character Traits** — words that describe a character's personality:
+**Character Traits** - words that describe a character's personality:
 - brave, clever, kind, selfish, generous, curious, honest, patient, stubborn, funny, loyal
 
 ### Non-Fiction Text Features
@@ -477,15 +477,15 @@ Non-fiction (informational) books and articles have special features that help y
 | **Sidebars** | Boxes of text on the side of the page | Provides extra information |
 | **Photographs / Illustrations** | Real images or drawings | Show what something looks like |
 
-### Author's Purpose — PIE
+### Author's Purpose - PIE
 
 Authors write for different reasons. You can remember them with **PIE**:
 
 | Purpose | What It Means | Key Words to Look For | Example |
 |---------|--------------|----------------------|---------|
-| **P** — Persuade | To convince the reader to think or do something | should, must, believe, argue, opinion, best, worst | "You should recycle every day to help save our planet." |
-| **I** — Inform | To teach the reader facts and information | facts, explain, describe, tell, information, data | "The Amazon Rainforest produces about 20% of the world's oxygen." |
-| **E** — Entertain | To amuse, interest, or engage the reader | characters, story, fun, exciting, adventure, once upon a time | A funny story about a talking dog who goes to school. |
+| **P** - Persuade | To convince the reader to think or do something | should, must, believe, argue, opinion, best, worst | "You should recycle every day to help save our planet." |
+| **I** - Inform | To teach the reader facts and information | facts, explain, describe, tell, information, data | "The Amazon Rainforest produces about 20% of the world's oxygen." |
+| **E** - Entertain | To amuse, interest, or engage the reader | characters, story, fun, exciting, adventure, once upon a time | A funny story about a talking dog who goes to school. |
 
 **Sometimes a text has more than one purpose.** For example, a persuasive essay might also inform you with facts.
 
@@ -493,7 +493,7 @@ Authors write for different reasons. You can remember them with **PIE**:
 
 | | Fact | Opinion |
 |---|------|---------|
-| **Definition** | A statement that can be PROVED true or false | A statement that shows someone's belief or feeling — it CANNOT be proved |
+| **Definition** | A statement that can be PROVED true or false | A statement that shows someone's belief or feeling - it CANNOT be proved |
 | **Can be proven?** | YES | NO |
 | **Examples** | The sun rises in the east. Water freezes at 32°F. There are 50 states in the United States. | Pizza is the best food. Dogs are better than cats. Summer is the most fun season. |
 | **Key words** | numbers, dates, names, measurements, scientific facts | best, worst, should, think, believe, pretty, beautiful, fun, boring, delicious |
@@ -511,7 +511,7 @@ Authors write for different reasons. You can remember them with **PIE**:
 
 ### Making Inferences
 
-An **inference** is a smart guess or conclusion you make by combining what you **read** with what you **already know**. Authors do not always state everything directly — good readers infer meaning.
+An **inference** is a smart guess or conclusion you make by combining what you **read** with what you **already know**. Authors do not always state everything directly - good readers infer meaning.
 
 **Formula:** What I read + What I know = **My Inference**
 
@@ -522,7 +522,7 @@ An **inference** is a smart guess or conclusion you make by combining what you *
 | "Sara grabbed her coat, scarf, and gloves and looked out the window at the gray sky." | Coats, scarves, and gloves are for cold weather. | It is cold outside. It might snow. |
 | "The classroom was completely silent. Every student had a pencil in hand and was looking at their paper." | Students are quiet and focused when taking a test. | The students are taking a test. |
 
-**Signal that you need to infer:** When the author does not directly tell you how someone feels, what happened, or why something happened — you must infer!
+**Signal that you need to infer:** When the author does not directly tell you how someone feels, what happened, or why something happened - you must infer!
 
 ---
 
@@ -537,16 +537,16 @@ An essay is longer than a single paragraph. A basic essay has **3 or more paragr
 | Paragraph | Purpose | What to Include |
 |-----------|---------|----------------|
 | **Introduction** (1st paragraph) | Hook the reader and state your topic | Hook (attention-grabber), background information, thesis/main idea statement |
-| **Body** (1–3 paragraphs) | Provide details, evidence, and examples | Each body paragraph has one main idea + supporting details |
+| **Body** (1-3 paragraphs) | Provide details, evidence, and examples | Each body paragraph has one main idea + supporting details |
 | **Conclusion** (last paragraph) | Wrap up and leave the reader thinking | Restate main idea (in new words), summarize key points, closing thought |
 
-**Example Essay — "Why Reading Is Important":**
+**Example Essay - "Why Reading Is Important":**
 
 > **(Introduction)** Reading is one of the most important skills a person can learn. It opens doors to new worlds, teaches us about different people and places, and helps our brains grow stronger. Every child should make time to read every day.
 >
 > **(Body 1)** First, reading helps us learn new things. When you read a book about space, you learn about planets and stars. When you read about history, you learn about people who lived long ago. Books are like teachers that you can carry with you everywhere.
 >
-> **(Body 2)** Second, reading makes our imaginations grow. When you read a story, you picture the characters and places in your mind. You travel to magical lands, meet brave heroes, and go on exciting adventures — all from your chair!
+> **(Body 2)** Second, reading makes our imaginations grow. When you read a story, you picture the characters and places in your mind. You travel to magical lands, meet brave heroes, and go on exciting adventures - all from your chair!
 >
 > **(Body 3)** Finally, reading improves our vocabulary. The more books you read, the more words you learn. A strong vocabulary helps you become a better writer and speaker. It also helps you understand more of what people say.
 >
@@ -561,7 +561,7 @@ In opinion writing, you **state your opinion** and support it with **reasons and
 | Part | What to Write |
 |------|--------------|
 | **State your opinion** | Clearly say what you believe (thesis statement) |
-| **Give reasons** | 2–3 reasons that support your opinion |
+| **Give reasons** | 2-3 reasons that support your opinion |
 | **Provide evidence** | Facts, examples, or personal experiences for each reason |
 | **Address the other side** | Acknowledge the opposing opinion, then explain why yours is stronger |
 | **Conclusion** | Restate your opinion in a new way and end with a strong statement |
@@ -581,7 +581,7 @@ Informational writing **teaches the reader** about a topic using facts and detai
 | **Body paragraphs** | Each paragraph covers ONE subtopic with facts, details, and examples |
 | **Conclusion** | Summarize key points + interesting final fact or thought |
 
-**Example informational paragraph — "The Life Cycle of a Butterfly":**
+**Example informational paragraph - "The Life Cycle of a Butterfly":**
 > A butterfly goes through four stages in its life. This process is called metamorphosis. First, a female butterfly lays an egg on a leaf. The egg is very tiny and round. Next, the egg hatches into a caterpillar, which is also called a larva. The caterpillar eats leaves and grows bigger. It sheds its skin several times as it grows. Then, the caterpillar forms a chrysalis around itself. Inside the chrysalis, the caterpillar changes into a butterfly. This stage is called the pupa. Finally, the chrysalis opens, and an adult butterfly emerges. Its wings are wet at first, but they soon dry, and the butterfly is ready to fly. The entire process takes about three to four weeks.
 
 ### Narrative Writing with Dialogue
@@ -591,7 +591,7 @@ A **narrative** tells a story. Good narratives include:
 - Characters with thoughts and feelings
 - A setting that is described
 - A problem and a solution
-- **Dialogue** — the exact words characters say
+- **Dialogue** - the exact words characters say
 
 **Rules for writing dialogue:**
 1. Use **quotation marks (" ")** around the exact words a character says.

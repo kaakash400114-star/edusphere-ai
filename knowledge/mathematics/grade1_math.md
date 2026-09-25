@@ -16,7 +16,7 @@
 - Count by 5s: "5, 10, 15, 20, 25, 30, 35, 40, 45, 50..."
 - Count by 2s: "2, 4, 6, 8, 10, 12, 14, 16, 18, 20..."
 
-**Number Names (0–20):**
+**Number Names (0-20):**
 
 | Number | Word | Number | Word | Number | Word |
 |--------|------|--------|------|--------|------|
@@ -28,7 +28,7 @@
 | 5 | five | 12 | twelve | 19 | nineteen |
 | 6 | six | 13 | thirteen | 20 | twenty |
 
-**Number Names for Tens (20–100):**
+**Number Names for Tens (20-100):**
 
 | Number | Word | Number | Word | Number | Word |
 |--------|------|--------|------|--------|------|
@@ -71,7 +71,7 @@
 
 **Comparing Strategies:**
 1. **Counting strategy:** Count objects in each group and compare
-2. **Number line strategy:** Put both numbers on a number line — the one further right is greater
+2. **Number line strategy:** Put both numbers on a number line - the one further right is greater
 3. **Matching strategy:** Draw lines to match objects one-to-one; the group with leftovers is greater
 
 **Common Mistake:** Students often confuse the < and > symbols. Reinforce with the "alligator eats the bigger number" analogy and have them practice reading statements aloud.
@@ -200,7 +200,7 @@ This shows that 5 = 2 + 3 (and also 5 = 3 + 2)
 - 2 + 6 = 8 and 6 + 2 = 8
 - 9 + 1 = 10 and 1 + 9 = 10
 
-**Teaching Tip:** Use physical objects (blocks, buttons) to demonstrate — 3 red blocks + 4 blue blocks gives the same total as 4 blue blocks + 3 red blocks. This property reduces the number of facts students need to memorize by half!
+**Teaching Tip:** Use physical objects (blocks, buttons) to demonstrate - 3 red blocks + 4 blue blocks gives the same total as 4 blue blocks + 3 red blocks. This property reduces the number of facts students need to memorize by half!
 
 ---
 
@@ -252,16 +252,16 @@ Draw circles and cross some out:
 
 | − | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |---|---|---|---|---|---|---|---|---|---|---|----|
-| 0 | 0 | — | — | — | — | — | — | — | — | — | — |
-| 1 | 1 | 0 | — | — | — | — | — | — | — | — | — |
-| 2 | 2 | 1 | 0 | — | — | — | — | — | — | — | — |
-| 3 | 3 | 2 | 1 | 0 | — | — | — | — | — | — | — |
-| 4 | 4 | 3 | 2 | 1 | 0 | — | — | — | — | — | — |
-| 5 | 5 | 4 | 3 | 2 | 1 | 0 | — | — | — | — | — |
-| 6 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | — | — | — | — |
-| 7 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | — | — | — |
-| 8 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | — | — |
-| 9 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | — |
+| 0 | 0 | - | - | - | - | - | - | - | - | - | - |
+| 1 | 1 | 0 | - | - | - | - | - | - | - | - | - |
+| 2 | 2 | 1 | 0 | - | - | - | - | - | - | - | - |
+| 3 | 3 | 2 | 1 | 0 | - | - | - | - | - | - | - |
+| 4 | 4 | 3 | 2 | 1 | 0 | - | - | - | - | - | - |
+| 5 | 5 | 4 | 3 | 2 | 1 | 0 | - | - | - | - | - |
+| 6 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | - | - | - | - |
+| 7 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | - | - | - |
+| 8 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | - | - |
+| 9 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | - |
 | 10 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 
 ### 3.3 Subtraction Within 20
@@ -309,7 +309,7 @@ Break the teen number into 10 + part:
 
 ### 4.1 Two-Dimensional (2D) Shapes
 
-**Definition:** A 2D shape lies flat and has only length and width — no thickness.
+**Definition:** A 2D shape lies flat and has only length and width - no thickness.
 
 | Shape | Sides | Corners (Vertices) | Description | Example |
 |-------|-------|--------------------|-------------|---------|
@@ -319,7 +319,7 @@ Break the teen number into 10 + part:
 | **Rectangle** | 4 | 4 | 2 pairs of equal sides (opposite sides equal) and 4 right-angle corners | A door |
 | **Hexagon** | 6 | 6 | A shape with exactly 6 straight sides and 6 corners | A honeycomb cell |
 
-**Square vs. Rectangle — Key Distinction:**
+**Square vs. Rectangle - Key Distinction:**
 - Every square IS a rectangle (4 right angles)
 - Not every rectangle IS a square (rectangles may have different-length sides)
 - A square is a SPECIAL rectangle with all sides equal
@@ -328,7 +328,7 @@ Break the teen number into 10 + part:
 
 ### 4.2 Three-Dimensional (3D) Shapes
 
-**Definition:** A 3D shape has length, width, and height — it takes up space.
+**Definition:** A 3D shape has length, width, and height - it takes up space.
 
 | Shape | Faces | Edges | Vertices | Real-World Example |
 |-------|-------|-------|----------|-------------------|
@@ -406,7 +406,7 @@ The pencil is 5 paper clips long.
 - **Half-full:** filled to the middle
 
 **Comparing Capacity:**
-- Pour water from one container to another — does it overflow? If yes, the second container holds less.
+- Pour water from one container to another - does it overflow? If yes, the second container holds less.
 - Which cup holds more juice at lunch?
 
 **Examples:**
@@ -420,9 +420,9 @@ The pencil is 5 paper clips long.
 ### 6.1 Reading Hours
 
 **Analog Clock Basics:**
-- **Hour hand:** Short hand — tells the hour
-- **Minute hand:** Long hand — points to 12 for times like 3:00
-- **Clock face:** Numbers 1–12 arranged in a circle
+- **Hour hand:** Short hand - tells the hour
+- **Minute hand:** Long hand - points to 12 for times like 3:00
+- **Clock face:** Numbers 1-12 arranged in a circle
 
 **Reading Time to the Hour (o'clock):**
 When the minute hand points to 12, we read it as "__ o'clock."
@@ -442,7 +442,7 @@ When the minute hand points to 12, we read it as "__ o'clock."
 - Long hand on 12, short hand on 7 → 7:00 (seven o'clock)
 - Long hand on 12, short hand on 11 → 11:00 (eleven o'clock)
 
-**Digital Clock:** Shows time as numbers — "3:00" means three o'clock.
+**Digital Clock:** Shows time as numbers - "3:00" means three o'clock.
 
 **Common Mistake:** Students may confuse hour and minute hands. Reinforce: "Short hand = hour, long hand = minute."
 
@@ -457,7 +457,7 @@ When the minute hand points to 12, we read it as "__ o'clock."
 6. Saturday
 7. Sunday
 
-**Order (Sunday-first — common in US calendars):**
+**Order (Sunday-first - common in US calendars):**
 1. Sunday
 2. Monday
 3. Tuesday
@@ -546,19 +546,19 @@ When the minute hand points to 12, we read it as "__ o'clock."
 ```
 🔴🔵🔴🔵🔴🔵🔴🔵
 ```
-Core: red, blue — repeats every 2 items
+Core: red, blue - repeats every 2 items
 
 **ABB Pattern (3-item core):**
 ```
 🟢🟡🟡🟢🟡🟡🟢🟡🟡
 ```
-Core: green, yellow, yellow — repeats every 3 items
+Core: green, yellow, yellow - repeats every 3 items
 
 **ABC Pattern (3-item core):**
 ```
 🔴🔵🟢🔴🔵🟢🔴🔵🟢
 ```
-Core: red, blue, green — repeats every 3 items
+Core: red, blue, green - repeats every 3 items
 
 **Identifying the Core:**
 1. Find the smallest group that repeats
@@ -574,9 +574,9 @@ Core = ⭐ ⭐ ◆ (ABB pattern)
 ### 8.2 Number Patterns
 
 **Growing Patterns (Increasing):**
-- 2, 4, 6, 8, 10, ... (add 2 each time — count by 2s)
-- 5, 10, 15, 20, 25, ... (add 5 each time — count by 5s)
-- 10, 20, 30, 40, 50, ... (add 10 each time — count by 10s)
+- 2, 4, 6, 8, 10, ... (add 2 each time - count by 2s)
+- 5, 10, 15, 20, 25, ... (add 5 each time - count by 5s)
+- 10, 20, 30, 40, 50, ... (add 10 each time - count by 10s)
 
 **Completing a Pattern:**
 - What comes next? 3, 5, 7, __, __ → 9, 11 (adding 2)
@@ -604,8 +604,8 @@ Core = ⭐ ⭐ ◆ (ABB pattern)
 **Key: Each 🍎 = 1 vote**
 
 **Reading Questions:**
-- "Which fruit is most popular?" → Orange (5 votes — tallest column)
-- "Which fruit is least popular?" → Grapes (2 votes — shortest column)
+- "Which fruit is most popular?" → Orange (5 votes - tallest column)
+- "Which fruit is least popular?" → Grapes (2 votes - shortest column)
 - "How many more people chose Orange than Apple?" → 5 − 4 = **1 more person**
 
 ### 9.2 Simple Bar Graphs (Reading)
@@ -671,13 +671,13 @@ Red     |███████| 7
 
 ### 10.3 Comparison Stories
 
-**Example 5 (Compare — Addition):**
+**Example 5 (Compare - Addition):**
 > Liam has 6 stickers. Sara has 4 more stickers than Liam. How many stickers does Sara have?
 >
 > **Solution:** 6 + 4 = 10
 > **Answer:** Sara has 10 stickers.
 
-**Example 6 (Compare — Subtraction):**
+**Example 6 (Compare - Subtraction):**
 > A blue ribbon is 9 inches long. A red ribbon is 4 inches long. How much longer is the blue ribbon?
 >
 > **Solution:** 9 − 4 = 5
@@ -686,11 +686,11 @@ Red     |███████| 7
 ### 10.4 Strategies for Solving Word Problems
 
 **CUBES Strategy:**
-- **C** — Circle the numbers
-- **U** — Underline the question
-- **B** — Box key words (in all, left, more, fewer)
-- **E** — Eliminate extra information
-- **S** — Solve and check
+- **C** - Circle the numbers
+- **U** - Underline the question
+- **B** - Box key words (in all, left, more, fewer)
+- **E** - Eliminate extra information
+- **S** - Solve and check
 
 **Key Words for Addition:**
 - in all, altogether, total, sum, more, plus, join, combined

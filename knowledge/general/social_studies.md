@@ -1,8 +1,8 @@
-# Social Studies — Grades 1–5 Complete Curriculum
+# Social Studies - Grades 1-5 Complete Curriculum
 
 ---
 
-# GRADE 1–2: FAMILIES, COMMUNITIES, AND CITIZENSHIP
+# GRADE 1-2: FAMILIES, COMMUNITIES, AND CITIZENSHIP
 
 ---
 
@@ -70,17 +70,17 @@ A map is a drawing or representation of a place. Maps help us find locations, un
 ### Parts of a Map
 - **Title:** Tells you what the map shows.
 - **Map key (legend):** Explains the symbols and colors used on the map.
-- **Compass rose:** Shows the cardinal directions — North, South, East, West.
+- **Compass rose:** Shows the cardinal directions - North, South, East, West.
 - **Scale:** Shows the relationship between distances on the map and real distances on the ground.
 
 ### Cardinal Directions
 The **compass rose** on a map shows four main directions:
-- **North (N)** — upward
-- **South (S)** — downward
-- **East (E)** — right
-- **West (W)** — left
+- **North (N)** - upward
+- **South (S)** - downward
+- **East (E)** - right
+- **West (W)** - left
 
-**Mnemonic:** "Never Eat Soggy Waffles" (North, East, South, West — clockwise).
+**Mnemonic:** "Never Eat Soggy Waffles" (North, East, South, West - clockwise).
 
 ### Reading a Simple Map
 - A **classroom map** shows where the desks, door, windows, and teacher's desk are.
@@ -127,11 +127,11 @@ The United States has symbols that represent the country's values, history, and 
 
 ### Needs
 Needs are things you **must have** to survive and be healthy.
-- **Food** — nourishment for your body
-- **Water** — hydration to stay alive
-- **Shelter** — a safe place to live (house, apartment)
-- **Clothing** — protection from the weather
-- **Air** — oxygen to breathe
+- **Food** - nourishment for your body
+- **Water** - hydration to stay alive
+- **Shelter** - a safe place to live (house, apartment)
+- **Clothing** - protection from the weather
+- **Air** - oxygen to breathe
 
 ### Wants
 Wants are things that are **nice to have** but you do not need to survive.
@@ -153,7 +153,7 @@ Goods are **physical objects** that people buy, sell, or trade.
 ### Services
 Services are **actions or work** that people do for others.
 - Examples: haircut, medical care, teaching, car repair, postal delivery, plumbing
-- You cannot hold a service — it is something someone **does** for you.
+- You cannot hold a service - it is something someone **does** for you.
 
 ---
 
@@ -189,12 +189,12 @@ We study history to understand:
 A good citizen is someone who actively contributes to their community and follows laws and principles of democracy.
 
 **Qualities of a good citizen:**
-- **Respect** — treat others with kindness and fairness
-- **Responsibility** — do your duties (pay taxes, obey laws, vote)
-- **Honesty** — tell the truth
-- **Cooperation** — work well with others
-- **Compassion** — help those in need
-- **Courage** — stand up for what is right
+- **Respect** - treat others with kindness and fairness
+- **Responsibility** - do your duties (pay taxes, obey laws, vote)
+- **Honesty** - tell the truth
+- **Cooperation** - work well with others
+- **Compassion** - help those in need
+- **Courage** - stand up for what is right
 
 ### Civic Responsibilities
 - Obeying laws
@@ -212,7 +212,7 @@ A good citizen is someone who actively contributes to their community and follow
 ### Why Voting Matters
 - In a democracy, citizens **vote** to choose leaders and make decisions.
 - Voting is both a **right** and a **responsibility**.
-- One person, one vote — every citizen's vote counts equally.
+- One person, one vote - every citizen's vote counts equally.
 
 ### How Voting Works in the United States
 - Citizens must be **18 years or older** and registered to vote.
@@ -229,7 +229,7 @@ A good citizen is someone who actively contributes to their community and follow
 | **Monarchy** | A king or queen rules | A royal family |
 | **Dictatorship** | One leader has all power | One person (no elections) |
 
-The United States is a **representative democracy** (republic) — citizens elect people to make laws and decisions for them.
+The United States is a **representative democracy** (republic) - citizens elect people to make laws and decisions for them.
 
 ---
 
@@ -310,7 +310,7 @@ European nations sent explorers to find new trade routes to Asia, claim land, an
 ## 8. Timelines
 
 ### What Is a Timeline?
-A timeline is a visual representation of events in **chronological order** — the order in which they happened in time.
+A timeline is a visual representation of events in **chronological order** - the order in which they happened in time.
 
 ### How to Read a Timeline
 - Timelines go from **left to right** or **top to bottom**.
@@ -319,11 +319,11 @@ A timeline is a visual representation of events in **chronological order** — t
 
 ### Example Timeline: Early America
 ```
-1492 — Columbus arrives in the Americas
-1565 — St. Augustine (first permanent European settlement in what is now the US) is founded
-1607 — Jamestown, Virginia is founded (first permanent English settlement)
-1620 — Pilgrims land at Plymouth Rock
-1776 — Declaration of Independence is signed
+1492 - Columbus arrives in the Americas
+1565 - St. Augustine (first permanent European settlement in what is now the US) is founded
+1607 - Jamestown, Virginia is founded (first permanent English settlement)
+1620 - Pilgrims land at Plymouth Rock
+1776 - Declaration of Independence is signed
 ```
 
 ---
@@ -383,7 +383,7 @@ The United States can be divided into **five major regions**, each with distinct
 ### The West Region
 - **States:** Washington, Oregon, California, Nevada, Idaho, Montana, Wyoming, Colorado, Utah, Alaska, Hawaii
 - **Geography:** Rocky Mountains, Pacific coastline, deserts, volcanoes, glaciers
-- **Climate:** Varied greatly — from tropical (Hawaii) to arctic (Alaska)
+- **Climate:** Varied greatly - from tropical (Hawaii) to arctic (Alaska)
 - **Economy:** Technology (Silicon Valley), entertainment (Hollywood), agriculture, fishing, tourism, mining
 - **Landmarks:** Grand Canyon, Yellowstone, Mount Rushmore, Redwood forests
 
@@ -401,9 +401,9 @@ The United States government is divided into **three branches** so that no singl
 
 ### Legislative Branch
 - **Purpose:** Makes the laws
-- **Body:** **Congress** (bicameral — two houses)
-  - **Senate** — 100 members (2 per state); 6-year terms; approves treaties and presidential appointments
-  - **House of Representatives** — 435 members (based on state population); 2-year terms; all revenue (tax) bills start here
+- **Body:** **Congress** (bicameral - two houses)
+  - **Senate** - 100 members (2 per state); 6-year terms; approves treaties and presidential appointments
+  - **House of Representatives** - 435 members (based on state population); 2-year terms; all revenue (tax) bills start here
 - **Process:** A bill is introduced → debated → voted on → sent to the other house → if both agree, sent to the President to sign
 
 ### Judicial Branch
@@ -424,7 +424,7 @@ Each branch can **limit the power** of the other two:
 ## 4. The Constitution Basics
 
 ### What Is the Constitution?
-The **United States Constitution** is the **supreme law of the land** — the highest legal authority in the country. It establishes the government's structure, defines its powers, and protects citizens' rights.
+The **United States Constitution** is the **supreme law of the land** - the highest legal authority in the country. It establishes the government's structure, defines its powers, and protects citizens' rights.
 
 ### History
 - Written in **1787** in Philadelphia during the Constitutional Convention.
@@ -466,7 +466,7 @@ The **Bill of Rights** was added in **1791** to protect individual freedoms.
 ### Scarcity
 - Scarcity means there are **limited resources** (land, labor, capital, entrepreneurship) but **unlimited wants**.
 - Because resources are scarce, people and societies must make **choices** about how to use them.
-- **Opportunity cost:** The next best alternative you give up when you make a choice (e.g., if you spend $10 on a movie, you give up buying a book — the book is the opportunity cost).
+- **Opportunity cost:** The next best alternative you give up when you make a choice (e.g., if you spend $10 on a movie, you give up buying a book - the book is the opportunity cost).
 
 ### Supply and Demand
 - **Supply:** The amount of a good or service that producers are willing to sell at different prices. Higher prices usually mean higher supply.
@@ -486,9 +486,9 @@ The **Bill of Rights** was added in **1791** to protect individual freedoms.
 
 ### Immigration to America
 - The United States is often called a **"nation of immigrants"** because almost all Americans have ancestors who came from other countries.
-- **Early immigration (1600s–1800s):** Mostly from Northern and Western Europe (England, Ireland, Germany, France).
-- **Late 1800s–early 1900s:** Large numbers from Southern and Eastern Europe (Italy, Poland, Russia) and Asia (China, Japan).
-- Many immigrants came through **Ellis Island** (New York Harbor) — the main immigration processing center from 1892 to 1954.
+- **Early immigration (1600s-1800s):** Mostly from Northern and Western Europe (England, Ireland, Germany, France).
+- **Late 1800s-early 1900s:** Large numbers from Southern and Eastern Europe (Italy, Poland, Russia) and Asia (China, Japan).
+- Many immigrants came through **Ellis Island** (New York Harbor) - the main immigration processing center from 1892 to 1954.
 - Immigrants came for many reasons: religious freedom, economic opportunity, escape from war or persecution, family reunification.
 
 ### Cultural Diversity
@@ -496,7 +496,7 @@ The **Bill of Rights** was added in **1791** to protect individual freedoms.
 - Diversity means people of different races, ethnicities, religions, languages, and traditions living together.
 - **Benefits of diversity:** New ideas, creativity, cultural richness, different foods, music, art, and perspectives.
 - **Challenges:** Prejudice, discrimination, and the need for mutual respect and understanding.
-- The US motto **"E Pluribus Unum"** means "Out of many, one" — reflecting the idea that many different people come together to form one nation.
+- The US motto **"E Pluribus Unum"** means "Out of many, one" - reflecting the idea that many different people come together to form one nation.
 
 ---
 
@@ -525,14 +525,14 @@ European nations wanted to:
 #### Middle Colonies
 - **Colonies:** New York, New Jersey, Pennsylvania, Delaware
 - **Geography:** Fertile soil, moderate climate, good farmland, rivers
-- **Economy:** "Breadbasket" — grew lots of wheat and grain; also manufacturing and trade
-- **Social life:** Diverse population — Dutch, German, Swedish, English, and others; religious tolerance
+- **Economy:** "Breadbasket" - grew lots of wheat and grain; also manufacturing and trade
+- **Social life:** Diverse population - Dutch, German, Swedish, English, and others; religious tolerance
 - **Key facts:** Pennsylvania founded by William Penn as a "Holy Experiment" for religious freedom; New York was originally New Netherland (Dutch)
 
 #### Southern Colonies
 - **Colonies:** Virginia, Maryland, North Carolina, South Carolina, Georgia
 - **Geography:** Warm climate, rich soil, long growing season, coastal plains
-- **Economy:** Cash crops — tobacco, rice, indigo, cotton; large plantations; relied heavily on enslaved labor
+- **Economy:** Cash crops - tobacco, rice, indigo, cotton; large plantations; relied heavily on enslaved labor
 - **Social life:** Wealthy plantation owners, small farmers, enslaved Africans
 - **Key facts:** Jamestown (1607) was the first permanent English settlement; Virginia House of Burgesses (1619) was the first elected legislature in America
 
@@ -564,7 +564,7 @@ European nations wanted to:
 ## 3. Road to Revolution: Causes of the American Revolution
 
 ### Growing Tension Between Colonies and Britain
-After the French and Indian War (1754–1763), Britain was in debt and began taxing the colonies more heavily and controlling trade more strictly.
+After the French and Indian War (1754-1763), Britain was in debt and began taxing the colonies more heavily and controlling trade more strictly.
 
 ### Key Events Leading to Revolution
 
@@ -583,24 +583,24 @@ After the French and Indian War (1754–1763), Britain was in debt and began tax
 The colonists' main argument: since they had **no elected representatives in the British Parliament**, Parliament had no right to tax them. Only their own colonial legislatures could tax them.
 
 ### Key Figures
-- **Samuel Adams** — leader of the Sons of Liberty, organized resistance
-- **John Adams** — lawyer who defended British soldiers after the Boston Massacre; later became a Founding Father
-- **Patrick Henry** — "Give me liberty, or give me death!"
-- **Thomas Paine** — wrote *Common Sense* (1776), a pamphlet that convinced many colonists to support independence
+- **Samuel Adams** - leader of the Sons of Liberty, organized resistance
+- **John Adams** - lawyer who defended British soldiers after the Boston Massacre; later became a Founding Father
+- **Patrick Henry** - "Give me liberty, or give me death!"
+- **Thomas Paine** - wrote *Common Sense* (1776), a pamphlet that convinced many colonists to support independence
 
 ---
 
-## 4. The Revolutionary War (1775–1783)
+## 4. The Revolutionary War (1775-1783)
 
 ### Key Events
 
 | Event | Date | Significance |
 |---|---|---|
-| **Battles of Lexington and Concord** | April 1775 | "The shot heard round the world" — first battles of the war |
+| **Battles of Lexington and Concord** | April 1775 | "The shot heard round the world" - first battles of the war |
 | **Second Continental Congress** | May 1775 | Established the Continental Army; George Washington appointed commander |
 | **Declaration of Independence** | July 4, 1776 | Colonies declared independence from Britain; written primarily by Thomas Jefferson |
-| **Battle of Saratoga** | 1777 | Turning point — convinced France to ally with the Americans |
-| **Winter at Valley Forge** | 1777–1778 | Continental Army endured brutal conditions; training by Baron von Steuben improved discipline |
+| **Battle of Saratoga** | 1777 | Turning point - convinced France to ally with the Americans |
+| **Winter at Valley Forge** | 1777-1778 | Continental Army endured brutal conditions; training by Baron von Steuben improved discipline |
 | **Battle of Yorktown** | 1781 | British General Cornwallis surrendered; last major battle |
 | **Treaty of Paris** | 1783 | Officially ended the war; Britain recognized American independence |
 
@@ -610,7 +610,7 @@ The colonists' main argument: since they had **no elected representatives in the
 | **George Washington** | Commander of the Continental Army; first President |
 | **Thomas Jefferson** | Primary author of the Declaration of Independence; third President |
 | **Benjamin Franklin** | Diplomat who secured French alliance; inventor and statesman |
-| **John Paul Jones** | Naval commander — "I have not yet begun to fight!" |
+| **John Paul Jones** | Naval commander - "I have not yet begun to fight!" |
 | **Benedict Arnold** | American general who betrayed the colonies and joined the British |
 | **Marquis de Lafayette** | French nobleman who fought alongside the Americans |
 | **Crispus Attucks** | First person killed in the Boston Massacre; African and Native American heritage |
@@ -629,17 +629,17 @@ Written by Thomas Jefferson, adopted July 4, 1776. Key ideas:
 
 ## 5. The Constitution and the New Republic
 
-### Articles of Confederation (1781–1789)
-- America's first constitution — a **weak** central government.
+### Articles of Confederation (1781-1789)
+- America's first constitution - a **weak** central government.
 - Congress could NOT: collect taxes, regulate trade, raise an army, or enforce laws.
 - Each state had one vote regardless of size.
 - Shays' Rebellion (1786) showed the government was too weak to maintain order.
 
 ### Constitutional Convention (1787)
 - Delegates met in Philadelphia to **revise** the Articles, but instead wrote a **new Constitution**.
-- **Great Compromise (Connecticut Compromise):** Created a bicameral Congress — Senate (equal representation, 2 per state) + House (representation based on population).
+- **Great Compromise (Connecticut Compromise):** Created a bicameral Congress - Senate (equal representation, 2 per state) + House (representation based on population).
 - **Three-Fifths Compromise:** For counting population (and taxation), enslaved people would count as 3/5 of a person (later repealed by the 14th Amendment).
-- **Federalists** (supported the Constitution — strong federal government) vs. **Anti-Federalists** (opposed — wanted a Bill of Rights to protect individual freedoms).
+- **Federalists** (supported the Constitution - strong federal government) vs. **Anti-Federalists** (opposed - wanted a Bill of Rights to protect individual freedoms).
 
 ---
 
@@ -648,7 +648,7 @@ Written by Thomas Jefferson, adopted July 4, 1776. Key ideas:
 ### The Louisiana Purchase (1803)
 - President **Thomas Jefferson** bought the Louisiana Territory from **France** (Napoleon) for **$15 million** (about 3 cents per acre).
 - Doubled the size of the United States.
-- Sparked the **Lewis and Clark Expedition** (1804–1806) — Meriwether Lewis and William Clark explored the new territory with help from Sacagawea, a Shoshone guide.
+- Sparked the **Lewis and Clark Expedition** (1804-1806) - Meriwether Lewis and William Clark explored the new territory with help from Sacagawea, a Shoshone guide.
 
 ### Manifest Destiny
 - The belief that the United States was **destined by God** to expand across the North American continent from the Atlantic to the Pacific Ocean.
@@ -660,9 +660,9 @@ Written by Thomas Jefferson, adopted July 4, 1776. Key ideas:
 |---|---|---|
 | **Oregon Trail** | 1840s | Major route for settlers moving west to Oregon and California |
 | **Texas Annexation** | 1845 | Texas joined the US after gaining independence from Mexico (1836) |
-| **Mexican-American War** | 1846–1848 | US gained territory that became California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado |
-| **Gold Rush** | 1848–1849 | Discovery of gold in California brought hundreds of thousands of settlers |
-| **Trail of Tears** | 1838–1839 | Forced removal of Cherokee and other tribes from their homelands to Indian Territory (Oklahoma); thousands died |
+| **Mexican-American War** | 1846-1848 | US gained territory that became California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado |
+| **Gold Rush** | 1848-1849 | Discovery of gold in California brought hundreds of thousands of settlers |
+| **Trail of Tears** | 1838-1839 | Forced removal of Cherokee and other tribes from their homelands to Indian Territory (Oklahoma); thousands died |
 
 ### Impact of Westward Expansion
 - Added vast new territory to the US.
@@ -674,7 +674,7 @@ Written by Thomas Jefferson, adopted July 4, 1776. Key ideas:
 
 ## 7. Causes of the Civil War
 
-The American Civil War (1861–1865) was fought between the **Union** (Northern states) and the **Confederacy** (Southern states). The primary cause was the issue of **slavery**, but other factors contributed.
+The American Civil War (1861-1865) was fought between the **Union** (Northern states) and the **Confederacy** (Southern states). The primary cause was the issue of **slavery**, but other factors contributed.
 
 ### Major Causes
 
@@ -684,7 +684,7 @@ The American Civil War (1861–1865) was fought between the **Union** (Northern 
 - Moral, economic, and political conflicts over slavery grew increasingly intense.
 
 #### States' Rights vs. Federal Power
-- Southern states believed in **states' rights** — the idea that states had the right to govern themselves and even nullify (reject) federal laws they disagreed with.
+- Southern states believed in **states' rights** - the idea that states had the right to govern themselves and even nullify (reject) federal laws they disagreed with.
 - The North believed in a **strong federal government** with the power to make laws for all states.
 - Southern states argued that the federal government had no right to abolish slavery in the South.
 
@@ -696,7 +696,7 @@ The American Civil War (1861–1865) was fought between the **Union** (Northern 
 #### Economic Differences
 - **North:** Manufacturing, trade, railroads, growing cities.
 - **South:** Agriculture, cash crops, rural, fewer railroads and factories.
-- Disagreements over **tariffs** (taxes on imports) — the North wanted high tariffs to protect its industries; the South wanted low tariffs for cheaper imported goods.
+- Disagreements over **tariffs** (taxes on imports) - the North wanted high tariffs to protect its industries; the South wanted low tariffs for cheaper imported goods.
 
 #### The Election of 1860
 - **Abraham Lincoln** (Republican) was elected President in 1860.
@@ -749,7 +749,7 @@ The American Civil War (1861–1865) was fought between the **Union** (Northern 
 ### Why Study Current Events?
 - Understanding current events helps students become **informed citizens**.
 - It connects classroom learning to the **real world**.
-- It helps develop **critical thinking** skills — evaluating sources, understanding bias, forming opinions based on evidence.
+- It helps develop **critical thinking** skills - evaluating sources, understanding bias, forming opinions based on evidence.
 
 ### How to Follow Current Events
 - Read newspapers, news websites, or watch news programs.
@@ -764,4 +764,4 @@ The American Civil War (1861–1865) was fought between the **Union** (Northern 
 
 ---
 
-*This social studies curriculum covers Grades 1–5 and is aligned with state standards and the C3 Framework for Social Studies. Content can be adapted based on your state, district, or school requirements. For state-specific history content in Grade 4, students should research their own state using the framework provided in Section 1 of the Grade 4 portion.*
+*This social studies curriculum covers Grades 1-5 and is aligned with state standards and the C3 Framework for Social Studies. Content can be adapted based on your state, district, or school requirements. For state-specific history content in Grade 4, students should research their own state using the framework provided in Section 1 of the Grade 4 portion.*

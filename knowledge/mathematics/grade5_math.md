@@ -1,4 +1,4 @@
-# Grade 5 Mathematics — Complete Knowledge Guide
+# Grade 5 Mathematics - Complete Knowledge Guide
 
 > **Scope:** Aligned to Grade 5 standards covering number sense, operations, fractions, decimals, number theory, geometry, measurement, data/probability, ratios, percentages, algebra, and multi-step word problems.
 >
@@ -28,37 +28,37 @@
 ### 1.2 Powers of 10
 
 - **Power of 10:** A number that can be written as 10 multiplied by itself some number of times.
-- 10¹ = 10
-- 10² = 100
-- 10³ = 1,000
-- 10⁴ = 10,000
-- 10⁵ = 100,000
-- 10⁶ = 1,000,000
-- 10⁷ = 10,000,000
-- 10⁸ = 100,000,000
-- 10⁹ = 1,000,000,000
+- 10^1 = 10
+- 10^2 = 100
+- 10^3 = 1,000
+- 10^4 = 10,000
+- 10^5 = 100,000
+- 10^6 = 1,000,000
+- 10^7 = 10,000,000
+- 10^8 = 100,000,000
+- 10^9 = 1,000,000,000
 
 **Rule:** Multiplying a whole number by a power of 10 adds that many zeros to the right.
-- 345 × 10³ = 345,000 (three zeros added)
+- 345 × 10^3 = 345,000 (three zeros added)
 
 **Rule:** Dividing a whole number by a power of 10 removes that many zeros from the right (when possible).
-- 45,000 ÷ 10² = 450 (two zeros removed)
+- 45,000 ÷ 10^2 = 450 (two zeros removed)
 
 ### 1.3 Introduction to Exponents
 
 - **Exponent:** A small number written above and to the right of a base number telling how many times the base is used as a factor.
 - **Base:** The number being multiplied.
-- **Squared:** A number raised to the power of 2 (e.g., 5² = 5 × 5 = 25).
-- **Cubed:** A number raised to the power of 3 (e.g., 5³ = 5 × 5 × 5 = 125).
+- **Squared:** A number raised to the power of 2 (e.g., 5^2 = 5 × 5 = 25).
+- **Cubed:** A number raised to the power of 3 (e.g., 5^3 = 5 × 5 × 5 = 125).
 
 | Exponent | Written as           | Value   |
 |----------|----------------------|---------|
-| 5²       | Five squared         | 25      |
-| 5³       | Five cubed           | 125     |
-| 10²      | Ten squared          | 100     |
-| 10³      | Ten cubed            | 1,000   |
-| 2⁴       | Two to the fourth    | 16      |
-| 3³       | Three cubed          | 27      |
+| 5^2       | Five squared         | 25      |
+| 5^3       | Five cubed           | 125     |
+| 10^2      | Ten squared          | 100     |
+| 10^3      | Ten cubed            | 1,000   |
+| 2^4       | Two to the fourth    | 16      |
+| 3^3       | Three cubed          | 27      |
 
 ### 1.4 Worked Examples
 
@@ -70,28 +70,28 @@
 
 The 7 is in the hundred-millions place. Its value is **700,000,000**.
 
-**Example 3:** Write 5² × 10³ in standard form.
+**Example 3:** Write 5^2 × 10^3 in standard form.
 
-5² = 25; 10³ = 1,000; 25 × 1,000 = **25,000**.
+5^2 = 25; 10^3 = 1,000; 25 × 1,000 = **25,000**.
 
-**Example 4:** Compare: 10⁴ ___ 999,999
+**Example 4:** Compare: 10^4 ___ 999,999
 
-10⁴ = 10,000; 10,000 < 999,999, so **10⁴ < 999,999**.
+10^4 = 10,000; 10,000 < 999,999, so **10^4 < 999,999**.
 
 ### 1.5 Common Mistakes
 
 | Mistake | Correction |
 |---------|------------|
-| Writing 5² as 5 × 2 = 10 | 5² means 5 × 5 = 25. The exponent tells how many times to multiply the base by itself, not what to multiply by. |
+| Writing 5^2 as 5 × 2 = 10 | 5^2 means 5 × 5 = 25. The exponent tells how many times to multiply the base by itself, not what to multiply by. |
 | Confusing place value positions across periods | Use commas as boundaries: thousands, millions, billions. Say the full period name each time. |
-| Forgetting that 10⁰ = 1 | Any number to the power of 0 equals 1. This is a key convention. |
+| Forgetting that 10^0 = 1 | Any number to the power of 0 equals 1. This is a key convention. |
 | Misreading large numbers | Read each period separately: "four billion, five hundred sixty-seven million, eight hundred ninety thousand, one hundred twenty-three." |
 
 ### 1.6 Teaching Tips
 
 - Use a blank place value chart and have students fill in digits of large numbers.
 - Connect powers of 10 to the metric system and money (dimes, dollars).
-- Use grid paper (10 × 10) to visually demonstrate 10² and 10³.
+- Use grid paper (10 × 10) to visually demonstrate 10^2 and 10^3.
 - Have students write their age or a phone number in expanded form for engagement.
 
 ---
@@ -239,17 +239,17 @@ Sum: 18,000 + 2,400 + 300 + 2,100 + 280 + 35 = **23,115**
 
 **Example:** 2/5 + 1/3
 
-Step 1 — Find the LCD: Multiples of 5 = {5, 10, 15, 20, …}; Multiples of 3 = {3, 6, 9, 12, 15, …}. LCD = **15**.
+Step 1 - Find the LCD: Multiples of 5 = {5, 10, 15, 20, ...}; Multiples of 3 = {3, 6, 9, 12, 15, ...}. LCD = **15**.
 
-Step 2 — Rewrite:
+Step 2 - Rewrite:
 - 2/5 = (2 × 3)/(5 × 3) = 6/15
 - 1/3 = (1 × 5)/(3 × 5) = 5/15
 
-Step 3 — Add: 6/15 + 5/15 = 11/15
+Step 3 - Add: 6/15 + 5/15 = 11/15
 
 **Example (Subtraction):** 7/8 − 5/6
 
-LCD of 8 and 6: Multiples of 8 = {8, 16, 24, …}; Multiples of 6 = {6, 12, 18, 24, …}. LCD = **24**.
+LCD of 8 and 6: Multiples of 8 = {8, 16, 24, ...}; Multiples of 6 = {6, 12, 18, 24, ...}. LCD = **24**.
 
 - 7/8 = 21/24
 - 5/6 = 20/24
@@ -262,17 +262,17 @@ LCD of 8 and 6: Multiples of 8 = {8, 16, 24, …}; Multiples of 6 = {6, 12, 18, 
 
 Add 3 1/4 + 2 2/3
 
-Step 1 — Convert:
+Step 1 - Convert:
 - 3 1/4 = (3 × 4 + 1)/4 = 13/4
 - 2 2/3 = (2 × 3 + 2)/3 = 8/3
 
-Step 2 — LCD of 4 and 3 = 12.
+Step 2 - LCD of 4 and 3 = 12.
 - 13/4 = 39/12
 - 8/3 = 32/12
 
-Step 3 — Add: 39/12 + 32/12 = 71/12
+Step 3 - Add: 39/12 + 32/12 = 71/12
 
-Step 4 — Convert back: 71 ÷ 12 = 5 remainder 11 → **5 11/12**
+Step 4 - Convert back: 71 ÷ 12 = 5 remainder 11 → **5 11/12**
 
 **Method 2: Add Whole Numbers and Fractions Separately**
 
@@ -299,7 +299,7 @@ Since 1/6 < 4/6, we must borrow:
 
 (2 × 4)/(3 × 5) = 8/15
 
-**Example (Simplify First — Cross-Cancel):** 3/8 × 4/9
+**Example (Simplify First - Cross-Cancel):** 3/8 × 4/9
 
 Cross-cancel: 3 and 9 share a factor of 3 (3→1, 9→3). 4 and 8 share a factor of 4 (4→1, 8→2).
 
@@ -358,8 +358,8 @@ Convert: 7/2 ÷ 5/4 = 7/2 × 4/5 = 28/10 = **14/5 = 2 4/5**
 
 - Use visual fraction models (fraction bars, circles, number lines) before teaching algorithms.
 - For division, explain *why* flipping works: "How many 2/5s fit into 3/4?"
-- Teach cross-canceling as a helpful shortcut, not a requirement—students can always simplify at the end.
-- Use cooking/baking contexts to make fractions meaningful (e.g., "You need 3/4 cup of sugar but only have a 1/3 cup measure…").
+- Teach cross-canceling as a helpful shortcut, not a requirement-students can always simplify at the end.
+- Use cooking/baking contexts to make fractions meaningful (e.g., "You need 3/4 cup of sugar but only have a 1/3 cup measure...").
 - Practice with fraction equivalency games (matching games, memory cards).
 
 ---
@@ -507,14 +507,14 @@ Tenths place = 0. Digit to the right = 9. Since 9 ≥ 5, round up.
 
 ### 5.1 Definitions
 
-- **Prime Number:** A whole number greater than 1 that has exactly two factors: 1 and itself (e.g., 2, 3, 5, 7, 11, 13, …).
-- **Composite Number:** A whole number greater than 1 that has more than two factors (e.g., 4, 6, 8, 9, 10, …).
+- **Prime Number:** A whole number greater than 1 that has exactly two factors: 1 and itself (e.g., 2, 3, 5, 7, 11, 13, ...).
+- **Composite Number:** A whole number greater than 1 that has more than two factors (e.g., 4, 6, 8, 9, 10, ...).
 - **Prime Factorization:** Writing a number as the product of its prime factors.
 - **Factor:** A number that divides evenly into another number.
 - **Multiple:** A number that is the product of a given number and any whole number.
 - **Greatest Common Factor (GCF):** The largest factor that two or more numbers share.
 - **Least Common Multiple (LCM):** The smallest multiple that two or more numbers share.
-- **PEMDAS:** The order of operations — **P**arentheses, **E**xponents, **M**ultiplication/**D**ivision (left to right), **A**ddition/**S**ubtraction (left to right).
+- **PEMDAS:** The order of operations - **P**arentheses, **E**xponents, **M**ultiplication/**D**ivision (left to right), **A**ddition/**S**ubtraction (left to right).
 
 ### 5.2 Prime Factorization
 
@@ -534,7 +534,7 @@ Find the prime factorization of 72:
               3     3
 ```
 
-**Prime factorization:** 72 = 2 × 2 × 2 × 3 × 3 = **2³ × 3²**
+**Prime factorization:** 72 = 2 × 2 × 2 × 3 × 3 = **2^3 × 3^2**
 
 **Method: Ladder (Repeated Division)**
 
@@ -546,7 +546,7 @@ Find the prime factorization of 72:
  3 ÷ 3 = 1
 ```
 
-**Prime factorization:** 2³ × 3²
+**Prime factorization:** 2^3 × 3^2
 
 ### 5.3 GCF (Greatest Common Factor)
 
@@ -561,9 +561,9 @@ GCF of 24 and 36:
 **Method 2: Prime Factorization**
 
 GCF of 24 and 36:
-- 24 = 2³ × 3
-- 36 = 2² × 3²
-- GCF = take the lowest power of each common prime: 2² × 3 = **12**
+- 24 = 2^3 × 3
+- 36 = 2^2 × 3^2
+- GCF = take the lowest power of each common prime: 2^2 × 3 = **12**
 
 **Application:** Simplifying fractions. Simplify 24/36: divide both by GCF of 12 → 2/3.
 
@@ -572,26 +572,26 @@ GCF of 24 and 36:
 **Method 1: List Multiples**
 
 LCM of 8 and 12:
-- Multiples of 8: 8, 16, 24, 32, 40, …
-- Multiples of 12: 12, 24, 36, 48, …
+- Multiples of 8: 8, 16, 24, 32, 40, ...
+- Multiples of 12: 12, 24, 36, 48, ...
 - **LCM = 24**
 
 **Method 2: Prime Factorization**
 
 LCM of 8 and 12:
-- 8 = 2³
-- 12 = 2² × 3
-- LCM = take the highest power of each prime: 2³ × 3 = **24**
+- 8 = 2^3
+- 12 = 2^2 × 3
+- LCM = take the highest power of each prime: 2^3 × 3 = **24**
 
 **Application:** Finding common denominators. The LCD of 1/8 and 5/12 is 24.
 
-### 5.5 PEMDAS — Order of Operations
+### 5.5 PEMDAS - Order of Operations
 
 **Rules (in order):**
 1. **P**arentheses (or grouping symbols: brackets, braces)
 2. **E**xponents
-3. **M**ultiplication and **D**ivision (left to right — they have equal priority)
-4. **A**ddition and **S**ubtraction (left to right — they have equal priority)
+3. **M**ultiplication and **D**ivision (left to right - they have equal priority)
+4. **A**ddition and **S**ubtraction (left to right - they have equal priority)
 
 **Example 1:** 4 + 3 × (7 − 2)
 
@@ -600,9 +600,9 @@ Step 2: 4 + 3 × 5
 Step 3: Multiply → 3 × 5 = 15
 Step 4: Add → 4 + 15 = **19**
 
-**Example 2:** (6 + 2²) ÷ (3 + 1)
+**Example 2:** (6 + 2^2) ÷ (3 + 1)
 
-Step 1: Exponents → 2² = 2
+Step 1: Exponents → 2^2 = 2
 Step 2: Parentheses → (6 + 2) = 8 and (3 + 1) = 4
 Step 3: Divide → 8 ÷ 4 = **2**
 
@@ -613,10 +613,10 @@ Step 2: Divide → 8 ÷ 4 = 2
 Step 3: 10 − 6 + 2 (left to right)
 Step 4: 10 − 6 = 4; 4 + 2 = **6**
 
-**Example 4:** 5 × (4 + 3)² ÷ 7
+**Example 4:** 5 × (4 + 3)^2 ÷ 7
 
 Step 1: Parentheses → 4 + 3 = 7
-Step 2: Exponents → 7² = 49
+Step 2: Exponents → 7^2 = 49
 Step 3: 5 × 49 ÷ 7 (left to right)
 Step 4: 5 × 49 = 245
 Step 5: 245 ÷ 7 = **35**
@@ -636,7 +636,7 @@ Step 5: 245 ÷ 7 = **35**
 
 - Use "Please Excuse My Dear Aunt Sally" as a PEMDAS mnemonic, but emphasize that M/D and A/S are *equal priority, left to right*.
 - Have students create factor trees on poster paper for numbers up to 100.
-- Connect GCF to sharing equally (e.g., "What is the largest number of equal groups for 24 and 36 items?") and LCM to repeating events (e.g., "Bus A comes every 8 minutes, Bus B every 12 minutes — when do they arrive together?").
+- Connect GCF to sharing equally (e.g., "What is the largest number of equal groups for 24 and 36 items?") and LCM to repeating events (e.g., "Bus A comes every 8 minutes, Bus B every 12 minutes - when do they arrive together?").
 - Play "Prime or Composite?" games with number cards.
 
 ---
@@ -663,27 +663,27 @@ Step 5: 245 ÷ 7 = **35**
 
 Also: Volume = area of base × height (V = B × h)
 
-**Units:** cubic units (cm³, in³, m³, etc.)
+**Units:** cubic units (cm^3, in^3, m^3, etc.)
 
 **Example 1:** Find the volume of a rectangular prism with l = 5 cm, w = 3 cm, h = 4 cm.
 
-V = 5 × 3 × 4 = **60 cm³**
+V = 5 × 3 × 4 = **60 cm^3**
 
 **Example 2:** A cube has edge length 7 cm. Find its volume.
 
-V = 7 × 7 × 7 = **343 cm³**
+V = 7 × 7 × 7 = **343 cm^3**
 
-**Example 3:** A box has a base of 24 in² and a height of 6 in. Find its volume.
+**Example 3:** A box has a base of 24 in^2 and a height of 6 in. Find its volume.
 
-V = 24 × 6 = **144 in³**
+V = 24 × 6 = **144 in^3**
 
-**Example 4 (Irregular Prism — Counting Cubes):**
+**Example 4 (Irregular Prism - Counting Cubes):**
 
 If a figure is built from unit cubes, count the cubes. A figure that is 4 cubes long, 3 cubes wide, and 2 cubes high has volume = 4 × 3 × 2 = **24 cubic units**.
 
 **Finding Missing Dimensions:**
 
-If V = 96 cm³, l = 8 cm, w = 4 cm, find h:
+If V = 96 cm^3, l = 8 cm, w = 4 cm, find h:
 96 = 8 × 4 × h → 96 = 32h → h = 96 ÷ 32 = **3 cm**
 
 ### 6.3 Surface Area Basics
@@ -706,7 +706,7 @@ SA = 2(4×3 + 4×2 + 3×2) = 2(12 + 8 + 6) = 2(26) = **52 square units**
 **Parts of the Coordinate Plane:**
 - **x-axis:** Horizontal line (left ↔ right)
 - **y-axis:** Vertical line (up ↔ down)
-- **Origin:** (0, 0) — where axes cross
+- **Origin:** (0, 0) - where axes cross
 - **Quadrant I:** x > 0, y > 0 (upper right)
 
 **Plotting Points:**
@@ -717,7 +717,7 @@ To plot (3, 4): Start at the origin → move 3 units right → move 4 units up.
 - (0, 7) is on the y-axis
 - (6, 0) is on the x-axis
 
-**Example — Graphing Points:**
+**Example - Graphing Points:**
 Plot and connect these points to form a shape:
 - A (1, 1), B (5, 1), C (5, 4), D (1, 4)
 
@@ -755,12 +755,12 @@ Quadrilateral (4 sides)
 
 | Mistake | Correction |
 |---------|------------|
-| Confusing volume (cm³) with area (cm²) | Volume fills space (cubes); area covers a surface (squares). |
+| Confusing volume (cm^3) with area (cm^2) | Volume fills space (cubes); area covers a surface (squares). |
 | Forgetting all six faces for surface area | Count each pair of opposite faces. Using the formula 2(lw + lh + wh) ensures you don't miss any. |
 | Swapping x and y in ordered pairs | Always remember: (x, y) = (horizontal, vertical). "Over then up." |
 | Saying a square is not a rectangle | A square IS a rectangle (4 right angles). A rectangle is NOT necessarily a square. |
-| Using the wrong unit for volume | Volume uses cubic units (cm³, in³, m³), not square or linear units. |
-| Forgetting to label units in answers | Always include units: cm³, cm², cm, etc. |
+| Using the wrong unit for volume | Volume uses cubic units (cm^3, in^3, m^3), not square or linear units. |
+| Forgetting to label units in answers | Always include units: cm^3, cm^2, cm, etc. |
 
 ### 6.7 Teaching Tips
 
@@ -804,7 +804,7 @@ Quadrilateral (4 sides)
 | 1 pound (lb) | = 16 ounces (oz) |
 | 1 ton (T) | = 2,000 pounds |
 
-**"Big to Small — Multiply; Small to Big — Divide"**
+**"Big to Small - Multiply; Small to Big - Divide"**
 
 ### 7.3 Metric Units
 
@@ -834,27 +834,27 @@ Quadrilateral (4 sides)
 
 ### 7.4 Conversion Worked Examples
 
-**Example 1 (Customary — Small to Big):** Convert 48 inches to feet.
+**Example 1 (Customary - Small to Big):** Convert 48 inches to feet.
 
 48 ÷ 12 = **4 feet**
 
-**Example 2 (Customary — Big to Small):** Convert 3 gallons to cups.
+**Example 2 (Customary - Big to Small):** Convert 3 gallons to cups.
 
 3 × 16 = **48 cups**
 
-**Example 3 (Customary — Multi-Step):** Convert 5 yards to inches.
+**Example 3 (Customary - Multi-Step):** Convert 5 yards to inches.
 
 5 × 36 = **180 inches** (or 5 × 3 = 15 ft, 15 × 12 = 180 in)
 
-**Example 4 (Metric — Big to Small):** Convert 2.5 meters to centimeters.
+**Example 4 (Metric - Big to Small):** Convert 2.5 meters to centimeters.
 
 2.5 × 100 = **250 centimeters**
 
-**Example 5 (Metric — Small to Big):** Convert 3,450 grams to kilograms.
+**Example 5 (Metric - Small to Big):** Convert 3,450 grams to kilograms.
 
 3,450 ÷ 1,000 = **3.45 kilograms**
 
-**Example 6 (Metric — Multi-Step):** Convert 4.2 km to meters.
+**Example 6 (Metric - Multi-Step):** Convert 4.2 km to meters.
 
 4.2 × 1,000 = **4,200 meters**
 
@@ -875,7 +875,7 @@ Quadrilateral (4 sides)
 ### 7.6 Teaching Tips
 
 - Use the "Gallon Man" visual (gallon body, quart arms/legs, pint hands, cup fingers) for customary capacity.
-- For metric, emphasize the power-of-10 connection — use the same skills as multiplying/dividing by powers of 10.
+- For metric, emphasize the power-of-10 connection - use the same skills as multiplying/dividing by powers of 10.
 - Do hands-on measurement activities with rulers, measuring cups, and scales.
 - Create conversion "stairs" or number lines showing units from small to large.
 - Use real-world contexts: converting recipe measurements, distances on a road trip, weight of groceries.
@@ -929,7 +929,7 @@ Trends: Rainfall increased from January to May, then decreased in June. The most
 
 **Example Data Set:** 12, 8, 15, 8, 22, 6, 9
 
-**Step 1 — Arrange in order:** 6, 8, 8, 9, 12, 15, 22
+**Step 1 - Arrange in order:** 6, 8, 8, 9, 12, 15, 22
 
 **Mean (Average):**
 Sum = 6 + 8 + 8 + 9 + 12 + 15 + 22 = 80
@@ -953,7 +953,7 @@ Median = average of the two middle values = (7 + 9) ÷ 2 = **8**
 
 **No mode:** If every value appears once, there is no mode.
 
-**Multiple modes:** If two values tie for most frequent, the data is bimodal (e.g., 3, 3, 5, 7, 7 — modes are 3 and 7).
+**Multiple modes:** If two values tie for most frequent, the data is bimodal (e.g., 3, 3, 5, 7, 7 - modes are 3 and 7).
 
 ### 8.4 Probability Basics
 
@@ -998,10 +998,10 @@ Sample space = {1, 2, 3, 4, 5, 6}
 **Example 3:** Tossing two coins (organized list or tree diagram).
 Possible outcomes:
 - HH, HT, TH, TT
-Sample space = {HH, HT, TH, TT} — 4 outcomes
+Sample space = {HH, HT, TH, TT} - 4 outcomes
 
 **Example 4:** Spinning a 3-section spinner (Red, Blue, Green) and rolling a die.
-Sample space: (R,1), (R,2), (R,3), (R,4), (R,5), (R,6), (B,1), … (G,6) → **18 outcomes**
+Sample space: (R,1), (R,2), (R,3), (R,4), (R,5), (R,6), (B,1), ... (G,6) → **18 outcomes**
 
 Use **organized lists, tree diagrams, or tables** to systematically list sample spaces.
 
@@ -1031,9 +1031,9 @@ Use **organized lists, tree diagrams, or tables** to systematically list sample 
 ### 9.1 Definitions
 
 - **Ratio:** A comparison of two quantities. Ratios can be written in three forms:
-  - Using "to" — 3 to 5
-  - Using a colon — 3:5
-  - As a fraction — 3/5
+  - Using "to" - 3 to 5
+  - Using a colon - 3:5
+  - As a fraction - 3/5
 - **Equivalent Ratios:** Ratios that represent the same relationship (e.g., 2:3 = 4:6 = 6:9).
 - **Ratio Table:** A table that shows pairs of values that are in the same ratio.
 
@@ -1208,9 +1208,9 @@ Find 25% of 200.
 
 ### 10.6 Teaching Tips
 
-- Start with the 10 × 10 grid — it is the most powerful visual for understanding percent.
+- Start with the 10 × 10 grid - it is the most powerful visual for understanding percent.
 - Teach benchmark percents first (10%, 25%, 50%, 75%, 100%) before tackling others.
-- Use shopping/discount contexts ("This shirt is 30% off — what's the sale price?").
+- Use shopping/discount contexts ("This shirt is 30% off - what's the sale price?").
 - Connect percents to fractions and decimals explicitly using conversion tables.
 - Shade hundredths grids to show equivalence: 3/10 = 30/100 = 30% = 0.30.
 
@@ -1226,7 +1226,7 @@ Find 25% of 200.
 - **Numerical Expression:** An expression that contains only numbers and operations (e.g., (4 + 3) × 2).
 - **Evaluate:** To find the value of an expression by performing the operations.
 - **Input-Output Table (Function Table):** A table that shows the relationship between an input value and an output value based on a rule.
-- **Order of Operations:** PEMDAS — the sequence in which operations are performed.
+- **Order of Operations:** PEMDAS - the sequence in which operations are performed.
 
 ### 11.2 Numerical Expressions with Parentheses
 
@@ -1266,11 +1266,11 @@ Find 25% of 200.
 
 2(4) + 3(5) = 8 + 15 = **23**
 
-**Example 4:** Evaluate x² + 3 when x = 6.
+**Example 4:** Evaluate x^2 + 3 when x = 6.
 
-6² + 3 = 36 + 3 = **39**
+6^2 + 3 = 36 + 3 = **39**
 
-### 11.4 Simple Equations — Solve for x
+### 11.4 Simple Equations - Solve for x
 
 **Goal:** Get x alone on one side of the equation. Do the same operation to both sides.
 
@@ -1408,38 +1408,38 @@ Check: 3(10 − 4) = 3(6) = 18 ✓
 
 ### 12.2 Problem-Solving Strategies
 
-1. **Read the entire problem** — don't jump to calculations.
+1. **Read the entire problem** - don't jump to calculations.
 2. **Identify what you know** and **what you need to find**.
 3. **Choose the operation(s)** based on the relationship in the problem.
 4. **Write an equation or draw a diagram** to represent the situation.
 5. **Solve** using the correct math.
-6. **Check your answer** — does it make sense in the context? Is it reasonable?
+6. **Check your answer** - does it make sense in the context? Is it reasonable?
 7. **Label your answer** with appropriate units.
 
 ### 12.3 Worked Examples
 
-**Example 1 (Multi-Step — Multiplication + Subtraction):**
+**Example 1 (Multi-Step - Multiplication + Subtraction):**
 
 A school orders 24 boxes of markers. Each box contains 8 markers. After 3 weeks, 42 markers have been used. How many markers are left?
 
 Step 1: Total markers = 24 × 8 = 192
 Step 2: Markers left = 192 − 42 = **150 markers**
 
-**Example 2 (Multi-Step — Division + Multiplication):**
+**Example 2 (Multi-Step - Division + Multiplication):**
 
 A baker made 288 cupcakes. He puts them into boxes of 12. He sells each box for $8. How much money does he make if he sells all the boxes?
 
 Step 1: Number of boxes = 288 ÷ 12 = 24 boxes
 Step 2: Total money = 24 × $8 = **$192**
 
-**Example 3 (Fractions — Real World):**
+**Example 3 (Fractions - Real World):**
 
 Maria walks 3/5 mile to school and 2/5 mile to the library after school. Then she walks 4/5 mile home. What is the total distance Maria walks?
 
 Step 1: School + library = 3/5 + 2/5 = 5/5 = 1 mile
 Step 2: Total = 1 + 4/5 = **1 4/5 miles**
 
-**Example 4 (Decimals — Money):**
+**Example 4 (Decimals - Money):**
 
 Jake has $45.60. He buys a book for $12.75 and a notebook for $3.45. He then splits the remaining money equally between his 2 brothers. How much does each brother get?
 
@@ -1456,7 +1456,7 @@ Step 2: 7/2 × 1/4 = 7/8
 
 **Answer: 7/8 cup of flour**
 
-**Example 6 (Percent — Shopping):**
+**Example 6 (Percent - Shopping):**
 
 A jacket costs $120. It is on sale for 25% off. What is the sale price?
 
@@ -1469,29 +1469,29 @@ A road is 2.5 kilometers long. How many meters long is the road?
 
 2.5 km × 1,000 m/km = **2,500 meters**
 
-**Example 8 (Volume — Real World):**
+**Example 8 (Volume - Real World):**
 
 A fish tank is 60 cm long, 30 cm wide, and 40 cm high. How many liters of water does it hold?
-(Note: 1,000 cm³ = 1 liter)
+(Note: 1,000 cm^3 = 1 liter)
 
-Step 1: V = 60 × 30 × 40 = 72,000 cm³
+Step 1: V = 60 × 30 × 40 = 72,000 cm^3
 Step 2: 72,000 ÷ 1,000 = **72 liters**
 
-**Example 9 (Average — Data):**
+**Example 9 (Average - Data):**
 
 The temperatures over five days were: 72°F, 68°F, 75°F, 71°F, and 69°F. What was the mean temperature?
 
 Sum = 72 + 68 + 75 + 71 + 69 = 355
 Mean = 355 ÷ 5 = **71°F**
 
-**Example 10 (Probability — Real World):**
+**Example 10 (Probability - Real World):**
 
 A bag of marbles has 6 red, 4 blue, and 5 green marbles. What is the probability of randomly picking a red marble? Express as a fraction in simplest form.
 
 Total marbles = 6 + 4 + 5 = 15
 P(red) = 6/15 = **2/5**
 
-**Example 11 (Algebra — Real World):**
+**Example 11 (Algebra - Real World):**
 
 A plumber charges a $35 house call fee plus $25 per hour. If the total bill is $110, how many hours did the plumber work?
 
@@ -1516,10 +1516,10 @@ h = 75 ÷ 25 = **3 hours**
 
 - Teach the **CUBES** strategy: **C**ircle key numbers, **U**nderline the question, **B**ox key words, **E**liminate extra info, **S**olve and check.
 - Use bar models (Singapore Math) for visual representation of part-whole and comparison problems.
-- Have students write their own word problems — this deepens understanding.
+- Have students write their own word problems - this deepens understanding.
 - Practice identifying "hidden questions" (intermediate steps) in multi-step problems.
 - Use graphic organizers: "What I know / What I need to find / How I'll solve / My answer."
-- Encourage estimation before calculating — this builds number sense and catches errors.
+- Encourage estimation before calculating - this builds number sense and catches errors.
 
 ---
 
@@ -1528,7 +1528,7 @@ h = 75 ÷ 25 = **3 hours**
 | Topic | Formula/Rule |
 |-------|-------------|
 | **Volume of Rectangular Prism** | V = l × w × h = B × h |
-| **Volume of Cube** | V = s³ (where s = edge length) |
+| **Volume of Cube** | V = s^3 (where s = edge length) |
 | **Surface Area of Rectangular Prism** | SA = 2(lw + lh + wh) |
 | **Mean** | Mean = Sum of values ÷ Number of values |
 | **Median** | Middle value (when data is ordered) |
@@ -1544,4 +1544,4 @@ h = 75 ÷ 25 = **3 hours**
 
 ---
 
-*This guide covers all major Grade 5 mathematics topics. Use it as a reference for definitions, methods, and practice. Revisit sections as needed — mastery comes with repeated practice and making connections across topics.*
+*This guide covers all major Grade 5 mathematics topics. Use it as a reference for definitions, methods, and practice. Revisit sections as needed - mastery comes with repeated practice and making connections across topics.*

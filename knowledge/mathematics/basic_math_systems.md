@@ -1,7 +1,7 @@
-# Basic Math Systems — Foundational Knowledge
+# Basic Math Systems - Foundational Knowledge
 
-> **Subject:** Mathematics — Number Systems and Properties
-> **Grade Level:** K–8 (with extensions through pre-algebra)
+> **Subject:** Mathematics - Number Systems and Properties
+> **Grade Level:** K-8 (with extensions through pre-algebra)
 > **Last Updated:** 2026-07-09
 
 ---
@@ -10,7 +10,7 @@
 
 ### What Is It?
 
-The Hindu-Arabic numeral system is the number-writing system used worldwide today. It uses **ten digits** — 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 — to represent all numbers through a **base-10 (decimal) place value** system.
+The Hindu-Arabic numeral system is the number-writing system used worldwide today. It uses **ten digits** - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 - to represent all numbers through a **base-10 (decimal) place value** system.
 
 ### Base-10 Place Value System
 
@@ -18,22 +18,22 @@ Each digit's value depends on its **position** (place) in the number. Moving one
 
 | Place Value | Power of 10 | Example Digit | Value in 5,432 |
 |---|---|---|---|
-| Ones | 10⁰ = 1 | 2 | 2 × 1 = 2 |
-| Tens | 10¹ = 10 | 3 | 3 × 10 = 30 |
-| Hundreds | 10² = 100 | 4 | 4 × 100 = 400 |
-| Thousands | 10³ = 1,000 | 5 | 5 × 1,000 = 5,000 |
+| Ones | 10^0 = 1 | 2 | 2 × 1 = 2 |
+| Tens | 10^1 = 10 | 3 | 3 × 10 = 30 |
+| Hundreds | 10^2 = 100 | 4 | 4 × 100 = 400 |
+| Thousands | 10^3 = 1,000 | 5 | 5 × 1,000 = 5,000 |
 
 **Expanded form:** 5,432 = 5 × 1,000 + 4 × 100 + 3 × 10 + 2 × 1
 
 The system extends infinitely:
-- Ten thousands (10⁴), Hundred thousands (10⁵), Millions (10⁶)
-- Billions (10⁹), Trillions (10¹²), and beyond.
+- Ten thousands (10^4), Hundred thousands (10^5), Millions (10^6)
+- Billions (10^9), Trillions (10^1^2), and beyond.
 
 ### Historical Origin
 
-- **Originated in India** (c. 500 CE) — Brahmi numerals evolved into the modern glyphs.
+- **Originated in India** (c. 500 CE) - Brahmi numerals evolved into the modern glyphs.
 - **Transmitted to the Islamic world** by Persian mathematician al-Khwarizmi (c. 825 CE), who wrote *On the Calculation with Hindu Numerals*.
-- **Introduced to Europe** through translations of Arabic manuscripts in the 10th–12th centuries.
+- **Introduced to Europe** through translations of Arabic manuscripts in the 10th-12th centuries.
 - The system replaced Roman numerals in Europe gradually between the 12th and 16th centuries because it made written calculation (especially multiplication and division) far easier.
 
 ### Comparison with Other Number Systems
@@ -60,11 +60,11 @@ The system extends infinitely:
 
 | Number Type | Symbol | Definition | Examples | Includes |
 |---|---|---|---|---|
-| **Natural Numbers** | ℕ | Counting numbers starting from 1 | 1, 2, 3, 4, 5, … | — |
-| **Whole Numbers** | W | Natural numbers plus zero | 0, 1, 2, 3, 4, … | ℕ |
-| **Integers** | ℤ | Whole numbers and their negatives | …, −3, −2, −1, 0, 1, 2, 3, … | W |
-| **Rational Numbers** | ℚ | Numbers expressible as a fraction p/q where p and q are integers, q ≠ 0 | ½, 0.75, −3, 7, 0.333… | ℤ |
-| **Irrational Numbers** | — | Real numbers that cannot be written as fractions | √2, π, e, 0.1010010001… | — |
+| **Natural Numbers** | ℕ | Counting numbers starting from 1 | 1, 2, 3, 4, 5, ... | - |
+| **Whole Numbers** | W | Natural numbers plus zero | 0, 1, 2, 3, 4, ... | ℕ |
+| **Integers** | ℤ | Whole numbers and their negatives | ..., −3, −2, −1, 0, 1, 2, 3, ... | W |
+| **Rational Numbers** | ℚ | Numbers expressible as a fraction p/q where p and q are integers, q ≠ 0 | ½, 0.75, −3, 7, 0.333... | ℤ |
+| **Irrational Numbers** | - | Real numbers that cannot be written as fractions | √2, π, e, 0.1010010001... | - |
 | **Real Numbers** | ℝ | All rational and irrational numbers combined | −5, 0, 3.14, √7, π | ℚ + irrationals |
 
 **Hierarchy:** ℕ ⊂ W ⊂ ℤ ⊂ ℚ ⊂ ℝ
@@ -72,22 +72,22 @@ The system extends infinitely:
 ### Number Line Relationships
 
 ```
-...—|——|——|——|——|——|——|——|——|——|——|——|——|——|——|——|——|...
+...-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|...
   -3  -2  -1   0   1   2   3   4   5   6   7   8   9
 ```
 
-- **Natural numbers:** The tick marks at 1, 2, 3, …
+- **Natural numbers:** The tick marks at 1, 2, 3, ...
 - **Whole numbers:** All tick marks starting from 0
 - **Integers:** All labeled tick marks (including negatives)
 - **Rational numbers:** Include all points that can be expressed as fractions (e.g., ½ sits between 0 and 1, −2⅓ between −3 and −2). Every integer is also rational (3 = 3/1).
-- **Real numbers:** Every point on the entire number line is filled — no gaps.
+- **Real numbers:** Every point on the entire number line is filled - no gaps.
 
 ### Teaching Tips
 
 - Use a **number line poster** that visually nests the sets (a line within a line within a line).
 - Emphasize that the sets are **nested**: every natural number is a whole number, every whole number is an integer, etc.
 - A common student error: thinking fractions are "not numbers." Show fractions on the number line to concretize them.
-- Disambiguate "whole numbers" vs "integers" — the only difference is whether negatives are included.
+- Disambiguate "whole numbers" vs "integers" - the only difference is whether negatives are included.
 
 ---
 
@@ -97,7 +97,7 @@ The system extends infinitely:
 
 **Definition:** Each object in a group is matched with exactly one number word in the counting sequence, and each number word is used exactly once.
 
-**How to verify:** If you point to the 4th apple, you must say "four" — not skip any apple or say two numbers for one apple.
+**How to verify:** If you point to the 4th apple, you must say "four" - not skip any apple or say two numbers for one apple.
 
 **Why it matters:** Without one-to-one correspondence, counting gives the wrong answer. A child who says "1, 2, 3, 5, 6" while pointing to six objects hasn't established this principle.
 
@@ -108,14 +108,14 @@ The system extends infinitely:
 | **Cardinal** | How many? | "How many apples are there?" | 1, 2, 3, 4, 5 |
 | **Ordinal** | Position in order | "Which apple is third?" | 1st, 2nd, 3rd, 4th, 5th |
 
-- **Cardinal principle:** The last number counted represents the total quantity of the set. If a child counts "one, two, three, four, five" while pointing to five blocks and you ask "How many?", they should say "five" — not count again.
+- **Cardinal principle:** The last number counted represents the total quantity of the set. If a child counts "one, two, three, four, five" while pointing to five blocks and you ask "How many?", they should say "five" - not count again.
 - **Ordinal numbers** use suffixes: -st (first), -nd (second), -rd (third), -th (fourth through all others, except eleventh = -th, twelfth = -th, and special cases).
 
 ### Teaching Tips
 
 - Practice one-to-one correspondence with **physical objects**: beans, buttons, blocks.
 - Have children line up and identify their position (ordinal) vs. counting the total (cardinal).
-- Common error: children recount the entire set when asked "how many?" — this signals the cardinal principle hasn't been internalized yet.
+- Common error: children recount the entire set when asked "how many?" - this signals the cardinal principle hasn't been internalized yet.
 
 ---
 
@@ -181,13 +181,13 @@ Multiplication distributes over addition (and subtraction):
 
 **Division by zero is UNDEFINED.** You cannot divide by zero.
 > 5 ÷ 0 has no meaning. There is no number x such that 0 × x = 5.
-> Even 0 ÷ 0 is undefined (indeterminate form — multiple values could work).
+> Even 0 ÷ 0 is undefined (indeterminate form - multiple values could work).
 
 ### Teaching Tips
 
 - Use **visual arrays** to demonstrate commutativity: a 3×4 rectangle rotated is the same 4×3 rectangle.
 - For the distributive property, draw **area models** (rectangles split into sections).
-- For the zero property of division, use the "sharing" analogy: "If you have 5 cookies and share them among zero friends, what happens?" — the question itself doesn't make sense.
+- For the zero property of division, use the "sharing" analogy: "If you have 5 cookies and share them among zero friends, what happens?" - the question itself doesn't make sense.
 
 ---
 
@@ -277,7 +277,7 @@ Find pairs that combine to round numbers.
 
 - Model each strategy **think-aloud** before asking students to use it.
 - Create anchor charts for each strategy.
-- Encourage students to **choose their preferred strategy** — there's no single "right" way to do mental math.
+- Encourage students to **choose their preferred strategy** - there's no single "right" way to do mental math.
 - Common misconception: students try to apply mental math strategies to written work and get confused. Emphasize that these are **tools**, not rules.
 
 ---
@@ -302,8 +302,8 @@ Use only the leading (leftmost) digits and replace the rest with zeros.
 
 > Estimate 423 + 678 + 319:
 > Front-end: 400 + 600 + 300 = 1,300
-> Adjust: look at remaining digits — roughly 23 + 78 + 19 ≈ 120
-> Estimate: 1,300 + 120 ≈ **1,420** (actual: 1,420 exactly — close!)
+> Adjust: look at remaining digits - roughly 23 + 78 + 19 ≈ 120
+> Estimate: 1,300 + 120 ≈ **1,420** (actual: 1,420 exactly - close!)
 
 ### 7.3 Clustering
 
@@ -311,7 +311,7 @@ When numbers cluster around a common value, multiply that value by the count.
 
 > Estimate 398 + 405 + 411 + 393 + 407:
 > All numbers cluster around 400.
-> 5 × 400 = **2,000** (actual: 2,014 — very close)
+> 5 × 400 = **2,000** (actual: 2,014 - very close)
 
 ### Teaching Tips
 
@@ -344,7 +344,7 @@ A number is **divisible** by another if the division results in a whole number w
 
 **Divisibility by 4:** Any number can be expressed as 100a + bc (where bc are the last two digits). Since 100a is always divisible by 4, the number is divisible by 4 if and only if bc is divisible by 4.
 
-**Divisibility by 5:** By the same argument as 2 — 10a + b, and 10a is always divisible by 5, so only b matters. The only one-digit multiples of 5 are 0 and 5.
+**Divisibility by 5:** By the same argument as 2 - 10a + b, and 10a is always divisible by 5, so only b matters. The only one-digit multiples of 5 are 0 and 5.
 
 **Divisibility by 9:** Same argument as divisibility by 3, but using the fact that 100 = 99 + 1 and 99 is divisible by 9 (and 9 is divisible by 9).
 
@@ -364,11 +364,11 @@ A number is **divisible** by another if the division results in a whole number w
 
 A **prime number** is a natural number greater than 1 that has **exactly two distinct positive divisors**: 1 and itself.
 
-**Examples:** 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, …
+**Examples:** 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, ...
 
 A **composite number** is a natural number greater than 1 that has more than two positive divisors.
 
-**Examples:** 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, …
+**Examples:** 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, ...
 
 **Special cases:**
 - **1** is neither prime nor composite (it has only one divisor).
@@ -381,11 +381,11 @@ An ancient algorithm for finding all primes up to a given limit.
 **Steps to find all primes up to 50:**
 
 1. Write the numbers 2 through 50 in a grid.
-2. Circle **2** (it's prime). Cross out all multiples of 2: 4, 6, 8, 10, …
-3. Move to the next uncrossed number — **3** (it's prime). Cross out all multiples of 3: 6, 9, 12, 15, …
-4. Move to the next uncrossed number — **5** (it's prime). Cross out all multiples of 5: 10, 15, 20, 25, …
-5. Move to the next uncrossed number — **7** (it's prime). Cross out all multiples of 7: 14, 21, 28, 35, …
-6. Since 7² = 49 ≤ 50, continue. Next would be 11, but 11² = 121 > 50, so we stop.
+2. Circle **2** (it's prime). Cross out all multiples of 2: 4, 6, 8, 10, ...
+3. Move to the next uncrossed number - **3** (it's prime). Cross out all multiples of 3: 6, 9, 12, 15, ...
+4. Move to the next uncrossed number - **5** (it's prime). Cross out all multiples of 5: 10, 15, 20, 25, ...
+5. Move to the next uncrossed number - **7** (it's prime). Cross out all multiples of 7: 14, 21, 28, 35, ...
+6. Since 7^2 = 49 ≤ 50, continue. Next would be 11, but 11^2 = 121 > 50, so we stop.
 7. All circled numbers are prime: **2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47**
 
 **Why we stop at √n:** If a number n is composite, it must have a factor ≤ √n. So we only need to check primes up to the square root of our limit.
@@ -396,7 +396,7 @@ Every composite number can be broken down into a product of prime factors.
 
 **Example: Factor 84**
 
-Method 1 — Factor tree:
+Method 1 - Factor tree:
 ```
         84
        /  \
@@ -404,39 +404,39 @@ Method 1 — Factor tree:
      / \   / \
     2   2 3   7
 ```
-> 84 = 2 × 2 × 3 × 7 = 2² × 3 × 7
+> 84 = 2 × 2 × 3 × 7 = 2^2 × 3 × 7
 
-Method 2 — Repeated division (ladder method):
+Method 2 - Repeated division (ladder method):
 - 84 ÷ 2 = 42
 - 42 ÷ 2 = 21
 - 21 ÷ 3 = 7
 - 7 ÷ 7 = 1
-> 84 = 2 × 2 × 3 × 7 = 2² × 3 × 7
+> 84 = 2 × 2 × 3 × 7 = 2^2 × 3 × 7
 
 ### The Fundamental Theorem of Arithmetic
 
 **Statement:** Every integer greater than 1 can be expressed uniquely as a product of prime numbers, up to the order of the factors.
 
-This means the prime factorization of any number is like its **"DNA"** — it is unique.
+This means the prime factorization of any number is like its **"DNA"** - it is unique.
 
-> 60 = 2² × 3 × 5
-> There is no other way to write 60 as a product of primes (except reordering: 3 × 2² × 5, etc.)
+> 60 = 2^2 × 3 × 5
+> There is no other way to write 60 as a product of primes (except reordering: 3 × 2^2 × 5, etc.)
 
 ### Applications of Prime Factorization
 
 - **Finding GCF:** The GCF of two numbers is the product of the common prime factors (with the lowest exponents).
-  > GCF(84, 120) = GCF(2² × 3 × 7, 2³ × 3 × 5) = 2² × 3 = **12**
+  > GCF(84, 120) = GCF(2^2 × 3 × 7, 2^3 × 3 × 5) = 2^2 × 3 = **12**
 
 - **Finding LCM:** The LCM is the product of all prime factors (with the highest exponents).
-  > LCM(84, 120) = 2³ × 3 × 5 × 7 = **840**
+  > LCM(84, 120) = 2^3 × 3 × 5 × 7 = **840**
 
 - **Simplifying fractions:** Divide numerator and denominator by their GCF.
 
 ### Teaching Tips
 
-- Use a **hundred chart** for the Sieve of Eratosthenes — coloring with crayons makes it memorable.
+- Use a **hundred chart** for the Sieve of Eratosthenes - coloring with crayons makes it memorable.
 - Common misconception: "1 is prime." Reinforce that 1 has only one factor, and primes must have **exactly two**.
-- Use the word "factor" trees, not just "break it down" — precise vocabulary builds understanding.
+- Use the word "factor" trees, not just "break it down" - precise vocabulary builds understanding.
 
 ---
 
@@ -446,35 +446,35 @@ This means the prime factorization of any number is like its **"DNA"** — it is
 
 A sequence where each term is obtained by **adding a constant difference (d)** to the previous term.
 
-> General form: a, a + d, a + 2d, a + 3d, …
+> General form: a, a + d, a + 2d, a + 3d, ...
 
 **Formula for the nth term:**
-> aₙ = a₁ + (n − 1)d
+> aₙ = a1 + (n − 1)d
 
-**Example:** 3, 7, 11, 15, 19, …
-> First term (a₁) = 3, Common difference (d) = 4
-> 10th term: a₁₀ = 3 + (10 − 1) × 4 = 3 + 36 = **39**
+**Example:** 3, 7, 11, 15, 19, ...
+> First term (a1) = 3, Common difference (d) = 4
+> 10th term: a10 = 3 + (10 − 1) × 4 = 3 + 36 = **39**
 
 ### 10.2 Geometric Sequences
 
 A sequence where each term is obtained by **multiplying by a constant ratio (r)** to the previous term.
 
-> General form: a, a·r, a·r², a·r³, …
+> General form: a, a·r, a·r^2, a·r^3, ...
 
 **Formula for the nth term:**
-> aₙ = a₁ × rⁿ⁻¹
+> aₙ = a1 × rⁿ⁻^1
 
-**Example:** 2, 6, 18, 54, 162, …
-> First term (a₁) = 2, Common ratio (r) = 3
-> 7th term: a₇ = 2 × 3⁶ = 2 × 729 = **1,458**
+**Example:** 2, 6, 18, 54, 162, ...
+> First term (a1) = 2, Common ratio (r) = 3
+> 7th term: a7 = 2 × 3^6 = 2 × 729 = **1,458**
 
 ### 10.3 The Fibonacci Sequence
 
 Each number is the sum of the two preceding numbers.
 
-> 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …
+> 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
-**Rule:** Fₙ = Fₙ₋₁ + Fₙ₋₂ (with F₁ = 1, F₂ = 1)
+**Rule:** Fₙ = Fₙ₋1 + Fₙ₋2 (with F1 = 1, F2 = 1)
 
 **Fascinating properties:**
 - The **ratio of consecutive Fibonacci numbers** approaches the **Golden Ratio** (φ ≈ 1.618) as the sequence grows: 55/34 ≈ 1.618, 89/55 ≈ 1.618.
@@ -517,7 +517,7 @@ Each number is the sum of the two preceding numbers.
    > XV = 10 + 5 = 15
    > LXVII = 50 + 10 + 5 + 1 + 1 = 67
 
-2. **Subtractive notation — a smaller symbol before a larger one means subtraction:**
+2. **Subtractive notation - a smaller symbol before a larger one means subtraction:**
    > IV = 5 − 1 = 4
    > IX = 10 − 1 = 9
    > XL = 50 − 10 = 40
@@ -550,7 +550,7 @@ Each number is the sum of the two preceding numbers.
 ### Historical Context
 
 - Developed in **ancient Rome** (~500 BCE) and used throughout the Roman Empire.
-- The system is **additive and non-positional** — no concept of place value.
+- The system is **additive and non-positional** - no concept of place value.
 - Roman numerals lack a symbol for **zero**, which made advanced arithmetic extremely cumbersome.
 - Despite being replaced for calculation, Roman numerals persisted in Europe for **centuries** in contexts like:
   - Clock faces (III, VI, IX, XII)
@@ -561,7 +561,7 @@ Each number is the sum of the two preceding numbers.
 
 ### Teaching Tips
 
-- Start with numbers 1–20 before introducing larger symbols (L, C, D, M).
+- Start with numbers 1-20 before introducing larger symbols (L, C, D, M).
 - Common error: students write "IIII" for 4. Reinforce the subtractive rule with the memory aid "I before V is IV (4)."
 - Cross-curricular connection: Roman numerals appear in history, language arts, and art.
 
@@ -577,7 +577,7 @@ The binary system uses only **two digits: 0 and 1**. It is the foundation of all
 
 | Position | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |---|---|---|---|---|---|---|---|---|
-| Power of 2 | 2⁷ | 2⁶ | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰ |
+| Power of 2 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
 | Decimal value | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
 **Examples:**
@@ -598,7 +598,7 @@ Convert 13 to binary:
 > Read remainders bottom-to-top: **1101**
 > Verify: 1×8 + 1×4 + 0×2 + 1×1 = 8 + 4 + 1 = **13** ✓
 
-**Why binary matters:** Computers use electrical signals that are either ON (1) or OFF (0). Every piece of data — text, images, music, video — is ultimately represented in binary.
+**Why binary matters:** Computers use electrical signals that are either ON (1) or OFF (0). Every piece of data - text, images, music, video - is ultimately represented in binary.
 
 ### 12.2 Tally Marks
 
@@ -618,10 +618,10 @@ A manual calculating tool that uses beads on rods to represent numbers. Each rod
 **Types:**
 - **Suanpan (Chinese abacus):** 2 beads above (each worth 5) and 5 beads below (each worth 1) per rod. Can represent hexadecimal.
 - **Soroban (Japanese abacus):** 1 bead above and 4 beads below per rod. Simpler, base-10.
-- **Roman abacus:** Grooves with pebbles (calculi — origin of the word "calculus").
+- **Roman abacus:** Grooves with pebbles (calculi - origin of the word "calculus").
 
 **History:**
-- The abacus is one of the **oldest calculating devices** — Mesopotamian versions date to ~2700 BCE.
+- The abacus is one of the **oldest calculating devices** - Mesopotamian versions date to ~2700 BCE.
 - Widespread across cultures: Babylon, China, Japan, Russia, Rome.
 - Still used in parts of Asia today for teaching arithmetic.
 - Research shows abacus training improves **mental calculation speed**, **working memory**, and **number sense**.
@@ -629,7 +629,7 @@ A manual calculating tool that uses beads on rods to represent numbers. Each rod
 ### Teaching Tips
 
 - Binary is an excellent **enrichment topic** for students who have mastered place value in base-10. It reinforces the concept of positional value.
-- Use tally marks for **data collection** in science or surveys — students practice counting and grouping.
+- Use tally marks for **data collection** in science or surveys - students practice counting and grouping.
 - If possible, bring a physical abacus into the classroom or use a virtual abacus app for hands-on place value work.
 
 ---
@@ -638,7 +638,7 @@ A manual calculating tool that uses beads on rods to represent numbers. Each rod
 
 | Term | Definition |
 |---|---|
-| **Digit** | A single symbol used in a numeral system (0–9 in base-10) |
+| **Digit** | A single symbol used in a numeral system (0-9 in base-10) |
 | **Numeral** | A symbol or group of symbols representing a number |
 | **Place value** | The value determined by the position of a digit in a number |
 | **Face value** | The value of the digit itself, regardless of position |
@@ -651,4 +651,4 @@ A manual calculating tool that uses beads on rods to represent numbers. Each rod
 
 ---
 
-*This knowledge file is part of the EduSphere AI project — designed to support intelligent tutoring in foundational mathematics.*
+*This knowledge file is part of the EduSphere AI project - designed to support intelligent tutoring in foundational mathematics.*

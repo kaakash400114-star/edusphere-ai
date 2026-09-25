@@ -1,4 +1,4 @@
-# CBSE Class 6 Science — Complete Notes
+# CBSE Class 6 Science - Complete Notes
 
 > **Board:** CBSE | **Class:** 6 | **Subject:** Science
 > Covers all major chapters with examples, key definitions, common mistakes, and teaching tips.
@@ -21,7 +21,7 @@ Our food contains several nutrients that our body needs for energy, growth, and 
 | **Dietary Fibre (Roughage)** | Whole grains, fruits, vegetables, salads | Helps in **digestion** and bowel movement      |
 | **Water**      | Drinking water, fruits, juices, vegetables    | Absorbs nutrients, removes waste, **regulates** body temperature |
 
-### 1.2 Vitamins — Types and Deficiency Diseases
+### 1.2 Vitamins - Types and Deficiency Diseases
 
 | Vitamin | Sources                      | Deficiency Disease             |
 |---------|------------------------------|--------------------------------|
@@ -30,7 +30,7 @@ Our food contains several nutrients that our body needs for energy, growth, and 
 | **Vitamin C (Ascorbic Acid)** | Citrus fruits (orange, lemon), amla, tomato | **Scurvy** (bleeding gums, slow wound healing) |
 | **Vitamin D** | Sunlight, milk, fish liver oil, eggs | **Rickets** (soft and weak bones) |
 
-### 1.3 Minerals — Deficiency Diseases
+### 1.3 Minerals - Deficiency Diseases
 
 | Mineral         | Sources                      | Deficiency Disease               |
 |-----------------|------------------------------|-----------------------------------|
@@ -47,17 +47,17 @@ A **balanced diet** is one that contains all the nutrients in the right proporti
 - Fats and oils (in small amounts)
 - Plenty of water
 
-> **Common Mistake:** Students often think fats are completely harmful. Actually, fats are essential — only **excess** fat is harmful. Our body needs some fat for insulation and stored energy.
+> **Common Mistake:** Students often think fats are completely harmful. Actually, fats are essential - only **excess** fat is harmful. Our body needs some fat for insulation and stored energy.
 
-### 1.5 Food and Materials — Sorting
+### 1.5 Food and Materials - Sorting
 
 Food items can be sorted based on:
 - **Taste:** Sweet (sugar), sour (lemon), salty (salt), bitter (neem), umami
-- **State:** Solid (rice), Liquid (milk), Gas (carbonated drinks have CO₂)
+- **State:** Solid (rice), Liquid (milk), Gas (carbonated drinks have CO2)
 - **Source:** Plant-based (wheat, rice) vs Animal-based (milk, eggs)
 - **Nutrient content:** Rich in proteins vs rich in carbohydrates vs rich in fats
 
-**Teaching Tip:** Ask students to bring a food packet from home and read the nutrition label — they can identify which nutrients are present and in what amounts.
+**Teaching Tip:** Ask students to bring a food packet from home and read the nutrition label - they can identify which nutrients are present and in what amounts.
 
 ---
 
@@ -140,7 +140,7 @@ A **fibre** is a thin, thread-like strand from which fabrics (cloth) are made.
 ### 3.4 Animal Fibres in Detail
 
 **Wool:**
-- Comes from **sheep, goat, yak, camel** (also rabbit — angora wool)
+- Comes from **sheep, goat, yak, camel** (also rabbit - angora wool)
 - Sheep rearing for wool is called **sheep farming**
 - The process: shearing → scouring (washing) → sorting → spinning → weaving/knitting
 
@@ -158,7 +158,7 @@ A **fibre** is a thin, thread-like strand from which fabrics (cloth) are made.
 | **Weaving**  | Making fabric by arranging two sets of yarns (warp & weft) on a loom |
 | **Knitting** | Making fabric by interlocking loops of a single yarn (sweaters, socks) |
 
-### 3.6 Natural vs Synthetic — Comparison
+### 3.6 Natural vs Synthetic - Comparison
 
 | Feature            | Natural Fibres            | Synthetic Fibres              |
 |--------------------|---------------------------|-------------------------------|
@@ -170,7 +170,7 @@ A **fibre** is a thin, thread-like strand from which fabrics (cloth) are made.
 | Environment        | Biodegradable             | Non-biodegradable             |
 | Water absorption   | Absorb water              | Do not absorb water easily    |
 
-> **Common Mistake:** Rayon is NOT a natural fibre — it is made from wood pulp but through a chemical process, so it is a **semi-synthetic** fibre (classified under synthetic).
+> **Common Mistake:** Rayon is NOT a natural fibre - it is made from wood pulp but through a chemical process, so it is a **semi-synthetic** fibre (classified under synthetic).
 
 **Teaching Tip:** Burn different fabric samples (with supervision). Natural fibres burn with a smell of burning hair/paper; synthetic fibres melt and form hard beads.
 
@@ -221,7 +221,7 @@ We need to separate mixtures to:
 - **Used when:** Recovering a soluble solid dissolved in a liquid by evaporating the liquid
 - **Example:** Obtaining common salt from seawater
 - **Principle:** Water evaporates, leaving the solid behind
-- **Note:** Salt obtained this way may contain impurities — this is **not crystallisation** (which gives purer crystals)
+- **Note:** Salt obtained this way may contain impurities - this is **not crystallisation** (which gives purer crystals)
 
 #### Condensation
 - **Used when:** Converting a gas/vapour back to liquid
@@ -265,15 +265,15 @@ The human skeleton is made up of **206 bones** in adults. It provides:
 
 ### 5.3 Parts of the Human Skeleton
 
-- **Skull** — protects the brain (cranium + facial bones)
-- **Ribcage (Ribs)** — protects the heart and lungs (12 pairs)
-- **Backbone (Vertebral column / Spine)** — supports the body, protects the spinal cord
-- **Pelvis** — supports the lower body
-- **Limbs** — arms (upper arm + forearm + hand) and legs (thigh + shin + foot)
-- **Shoulder bones** (Pectoral girdle) — collarbone (clavicle) and shoulder blade (scapula)
-- **Hip bones** (Pelvic girdle) — supports the legs
+- **Skull** - protects the brain (cranium + facial bones)
+- **Ribcage (Ribs)** - protects the heart and lungs (12 pairs)
+- **Backbone (Vertebral column / Spine)** - supports the body, protects the spinal cord
+- **Pelvis** - supports the lower body
+- **Limbs** - arms (upper arm + forearm + hand) and legs (thigh + shin + foot)
+- **Shoulder bones** (Pectoral girdle) - collarbone (clavicle) and shoulder blade (scapula)
+- **Hip bones** (Pelvic girdle) - supports the legs
 
-### 5.4 Joints — Where Bones Meet
+### 5.4 Joints - Where Bones Meet
 
 A **joint** is the place where two or more bones meet.
 
@@ -288,8 +288,8 @@ A **joint** is the place where two or more bones meet.
 ### 5.5 How Do Muscles Help in Movement?
 
 - Muscles are attached to bones by **tendons**
-- Muscles work in **pairs** — when one contracts (shortens), the other relaxes
-- Example: Bending the arm — the bicep contracts, tricep relaxes; straightening — tricep contracts, bicep relaxes
+- Muscles work in **pairs** - when one contracts (shortens), the other relaxes
+- Example: Bending the arm - the bicep contracts, tricep relaxes; straightening - tricep contracts, bicep relaxes
 - These pairs are called **antagonistic muscle pairs**
 
 ### 5.6 Movement in Other Animals
@@ -316,9 +316,9 @@ A **joint** is the place where two or more bones meet.
 Living organisms show the following characteristics:
 
 1. **Growth:** All living things grow over time. (Plants grow throughout life; animals stop growing at maturity.)
-2. **Movement:** Living things can move. (Plants show movement — leaves closing, roots growing toward water — though they don't move from place to place.)
+2. **Movement:** Living things can move. (Plants show movement - leaves closing, roots growing toward water - though they don't move from place to place.)
 3. **Reproduction:** Living things produce young ones of their own kind.
-4. **Respiration:** Living things breathe — they take in oxygen and give out carbon dioxide. (Plants respire too!)
+4. **Respiration:** Living things breathe - they take in oxygen and give out carbon dioxide. (Plants respire too!)
 5. **Response to Stimuli:** Living things respond to changes in their surroundings. (Touch-me-not plant folds leaves when touched.)
 6. **Excretion:** Living things remove waste products from their body.
 7. **Need for Food/Nutrition:** Living things need food for energy and growth.
@@ -340,7 +340,7 @@ Living organisms show the following characteristics:
 
 - **Habitat:** The natural home of a living organism where it lives, grows, and reproduces.
   - **Terrestrial habitat:** Land (forests, deserts, mountains, grasslands)
-  - **Aquatic habitat:** Water (freshwater — ponds, lakes, rivers; marine — oceans, seas)
+  - **Aquatic habitat:** Water (freshwater - ponds, lakes, rivers; marine - oceans, seas)
 - **Adaptation:** The special features or habits that help an organism survive in its habitat.
 
 **Examples of adaptations:**
@@ -385,29 +385,29 @@ A typical plant has the following parts:
   - Carries **food** from leaves to other parts (through phloem)
   - Sometimes stores food (potato is a modified underground stem)
 - **Stem modifications:**
-  - Potato — underground stem storing food (NOT a root!)
-  - Tendrils in passionflower — modified stem for climbing
-  - Cactus stem — thick, green, stores water, does photosynthesis
+  - Potato - underground stem storing food (NOT a root!)
+  - Tendrils in passionflower - modified stem for climbing
+  - Cactus stem - thick, green, stores water, does photosynthesis
 
 #### 🍃 Leaf
 - **Functions:**
-  - **Photosynthesis:** Makes food for the plant using sunlight, CO₂, and water (produces glucose + oxygen)
+  - **Photosynthesis:** Makes food for the plant using sunlight, CO2, and water (produces glucose + oxygen)
   - **Transpiration:** Loss of excess water through tiny pores called **stomata**
-  - **Gas exchange:** Stomata take in CO₂ and release O₂
+  - **Gas exchange:** Stomata take in CO2 and release O2
 - **Parts of a leaf:**
-  - **Petiole** — stalk that attaches leaf to stem
-  - **Lamina (leaf blade)** — the broad, flat, green part
-  - **Midrib** — the central vein
-  - **Veins** — network of veins for transport
+  - **Petiole** - stalk that attaches leaf to stem
+  - **Lamina (leaf blade)** - the broad, flat, green part
+  - **Midrib** - the central vein
+  - **Veins** - network of veins for transport
 - **Types of leaves:**
   - **Simple leaf:** Single blade (mango, guava)
   - **Compound leaf:** Blade divided into leaflets (neem, rose, tamarind)
 - **Venation:**
-  - **Parallel venation:** Veins run parallel (grass, wheat, rice, banana) — found in plants with **fibrous roots**
-  - **Reticulate venation:** Veins form a network (mango, peepal, rose) — found in plants with **taproots**
+  - **Parallel venation:** Veins run parallel (grass, wheat, rice, banana) - found in plants with **fibrous roots**
+  - **Reticulate venation:** Veins form a network (mango, peepal, rose) - found in plants with **taproots**
 
 #### 🌸 Flower
-- **Function:** Reproductive part of the plant — produces seeds and fruits after pollination and fertilisation
+- **Function:** Reproductive part of the plant - produces seeds and fruits after pollination and fertilisation
 - **Parts of a flower:**
   - **Sepals:** Green leaf-like parts, protect the flower bud
   - **Petals:** Colourful parts that attract insects for pollination
@@ -426,7 +426,7 @@ A typical plant has the following parts:
 | **Creepers**    | Grow along the ground, weak stems             | Pumpkin, watermelon, sweet potato |
 | **Climbers**    | Climb up support with tendrils               | Grape vine, bitter gourd, pea   |
 
-### 7.3 Roots, Stems, and Leaves — Quick Matching
+### 7.3 Roots, Stems, and Leaves - Quick Matching
 
 | Root Type         | Venation Type     | Plant Examples        |
 |--------------------|-------------------|-----------------------|
@@ -461,7 +461,7 @@ A typical plant has the following parts:
 - **Pulses (Legumes):** Moong, masoor, urad, chana, rajma, peas, beans
 - **Spices:** Turmeric, cumin, black pepper, cardamom, cinnamon, cloves, chilli
 
-### 8.3 Edible Parts — Plant Examples
+### 8.3 Edible Parts - Plant Examples
 
 | Edible Part | Plant       |
 |-------------|-------------|
@@ -481,24 +481,24 @@ A typical plant has the following parts:
 ### 9.1 Importance of Water
 
 Water is essential for all living organisms:
-- Drinking — all animals and plants need water to survive
+- Drinking - all animals and plants need water to survive
 - Cooking food
 - Washing, cleaning, bathing
-- Agriculture — irrigation of crops
-- Industrial use — factories need water
-- Transport — ships and boats travel on water
-- Generating electricity — hydroelectric power
+- Agriculture - irrigation of crops
+- Industrial use - factories need water
+- Transport - ships and boats travel on water
+- Generating electricity - hydroelectric power
 
 ### 9.2 Sources of Water
 
 | Source              | Description                                                   |
 |---------------------|---------------------------------------------------------------|
 | **Rain**            | Primary source of all fresh water                              |
-| **Rivers & Lakes**  | Surface water — used for drinking, irrigation, transport      |
+| **Rivers & Lakes**  | Surface water - used for drinking, irrigation, transport      |
 | **Wells & Tube wells** | Groundwater drawn through wells                              |
 | **Ponds & Tanks**   | Small bodies of surface water                                  |
-| **Glaciers**        | Frozen freshwater — source of many rivers                     |
-| **Oceans & Seas**   | Saltwater — NOT directly usable for drinking                  |
+| **Glaciers**        | Frozen freshwater - source of many rivers                     |
+| **Oceans & Seas**   | Saltwater - NOT directly usable for drinking                  |
 
 ### 9.3 The Water Cycle
 
@@ -508,7 +508,7 @@ Water is essential for all living organisms:
 4. Rainwater flows into rivers, seeps into ground, or flows back to oceans
 5. The cycle **repeats continuously**
 
-> **Key Point:** The amount of water on Earth remains roughly the same — water is neither created nor destroyed in the water cycle. This is a natural form of recycling.
+> **Key Point:** The amount of water on Earth remains roughly the same - water is neither created nor destroyed in the water cycle. This is a natural form of recycling.
 
 ### 9.4 Forms of Water
 
@@ -516,7 +516,7 @@ Water is essential for all living organisms:
 - **Liquid:** Water (river, lake, ocean, tap water)
 - **Gas (Water vapour):** Invisible gas in air; steam when boiled
 
-### 9.5 Water Conservation — Why and How
+### 9.5 Water Conservation - Why and How
 
 **Why conserve water?**
 - Only about **3%** of Earth's water is freshwater, and much of that is frozen in glaciers
@@ -528,14 +528,14 @@ Water is essential for all living organisms:
 - Turn off taps while brushing teeth
 - Repair leaking taps and pipes immediately
 - Use water from washing vegetables/rice for watering plants
-- Harvest rainwater (**rainwater harvesting**) — collect rainwater on rooftops, store in tanks or recharge groundwater
+- Harvest rainwater (**rainwater harvesting**) - collect rainwater on rooftops, store in tanks or recharge groundwater
 - Avoid wasting water during bathing, washing
 - Use drip irrigation in agriculture
 - Treat and reuse wastewater
 
 > **Common Mistake:** Students think the water cycle means we will never run out of water. While the cycle does recycle water, we CAN run out of **usable, clean freshwater** in specific locations. Pollution and overuse can make water unavailable.
 
-**Teaching Tip:** Conduct a "water audit" — ask students to measure how much water their family uses in a day and identify 3 ways to reduce it.
+**Teaching Tip:** Conduct a "water audit" - ask students to measure how much water their family uses in a day and identify 3 ways to reduce it.
 
 ---
 
@@ -544,7 +544,7 @@ Water is essential for all living organisms:
 ### 10.1 Is Air Present Around Us?
 
 Yes! Air is present everywhere around us, even though we cannot see it. Evidence:
-- A glass inverted in water — water does not fill it completely because air is trapped
+- A glass inverted in water - water does not fill it completely because air is trapped
 - Blowing on a pinwheel makes it rotate
 - Leaves rustle when the wind blows
 
@@ -554,40 +554,40 @@ Yes! Air is present everywhere around us, even though we cannot see it. Evidence
 |-----------------|----------------------|---------------------------------------------|
 | **Nitrogen**    | 78%                  | Does not support burning or breathing by itself |
 | **Oxygen**      | 21%                  | Essential for respiration and burning       |
-| **Carbon Dioxide (CO₂)** | 0.03–0.04%     | Used by plants for photosynthesis           |
+| **Carbon Dioxide (CO2)** | 0.03-0.04%     | Used by plants for photosynthesis           |
 | **Argon & other gases** | ~0.9%          | Inert gases                                 |
-| **Water Vapour** | Variable (0–4%)     | More in humid areas, less in dry areas      |
+| **Water Vapour** | Variable (0-4%)     | More in humid areas, less in dry areas      |
 | **Dust particles** | Variable            | More near factories, construction sites    |
 
-> **Common Mistake:** Students think CO₂ is a large part of air. It is actually only about **0.04%** — oxygen (21%) and nitrogen (78%) make up nearly all of the air.
+> **Common Mistake:** Students think CO2 is a large part of air. It is actually only about **0.04%** - oxygen (21%) and nitrogen (78%) make up nearly all of the air.
 
 ### 10.3 Properties of Air
 
-1. **Air occupies space:** Compress a syringe with its opening closed — the air inside prevents full compression.
-2. **Air has weight:** Inflate two balloons, balance them on a stick, then deflate one — the deflated side rises, proving air has weight.
+1. **Air occupies space:** Compress a syringe with its opening closed - the air inside prevents full compression.
+2. **Air has weight:** Inflate two balloons, balance them on a stick, then deflate one - the deflated side rises, proving air has weight.
 3. **Air exerts pressure:** Air pressure helps us drink through a straw; atmospheric pressure presses on the surface of a liquid.
 4. **Air is invisible:** We cannot see air, but we can feel it (wind) and observe its effects.
-5. **Air can be compressed:** tyres, balloons, syringes — air fills them and can be squeezed.
+5. **Air can be compressed:** tyres, balloons, syringes - air fills them and can be squeezed.
 6. **Air supports burning:** A candle in a closed jar goes out when it uses up all the oxygen.
 
 ### 10.4 Uses of Air
 
 - **Breathing:** All living organisms need oxygen from air for respiration
 - **Burning (Combustion):** Oxygen supports burning
-- **Photosynthesis:** Plants use CO₂ from air to make food
+- **Photosynthesis:** Plants use CO2 from air to make food
 - **Wind energy:** Moving air (wind) turns windmills to generate electricity
 - **Transport:** Birds and aircraft fly through air; sailboats use wind
-- **Sound:** Sound needs a medium to travel — air carries sound waves
+- **Sound:** Sound needs a medium to travel - air carries sound waves
 - **Sports:** Filling balls, tyres with air
 
-### 10.5 Oxygen vs Carbon Dioxide — The Balance
+### 10.5 Oxygen vs Carbon Dioxide - The Balance
 
-- Animals and humans **take in O₂ and release CO₂** (respiration)
-- Plants **take in CO₂ and release O₂** (photosynthesis, during daytime)
+- Animals and humans **take in O2 and release CO2** (respiration)
+- Plants **take in CO2 and release O2** (photosynthesis, during daytime)
 - This maintains the **oxygen-carbon dioxide balance** in the atmosphere
 - **Deforestation** and **pollution** disturb this balance
 
-> **Common Mistake:** Students think plants only release oxygen. Plants also **respire** 24 hours a day (taking in O₂ and releasing CO₂). Photosynthesis (releasing O₂) happens only during the day when sunlight is available. The net effect during the day is O₂ release.
+> **Common Mistake:** Students think plants only release oxygen. Plants also **respire** 24 hours a day (taking in O2 and releasing CO2). Photosynthesis (releasing O2) happens only during the day when sunlight is available. The net effect during the day is O2 release.
 
 **Teaching Tip:** Set up an experiment: place a small candle in a glass, cover it, and time how long it burns. Then repeat with a larger glass. Students will see that more air = longer burning, demonstrating that air supports combustion.
 
@@ -619,7 +619,7 @@ Yes! Air is present everywhere around us, even though we cannot see it. Evidence
 2. **Health hazards:** Rotting garbage attracts flies, mosquitoes → spreads diseases (malaria, dengue, cholera)
 3. **Water pollution:** Garbage dumped in rivers and lakes contaminates water
 4. **Soil pollution:** Plastics and chemicals in soil make it infertile
-5. **Air pollution:** Burning garbage releases harmful gases (CO, CO₂, toxic fumes)
+5. **Air pollution:** Burning garbage releases harmful gases (CO, CO2, toxic fumes)
 6. **Blockage of drains:** Plastic bags and wrappers clog drains, causing flooding
 
 ### 11.4 Methods of Garbage Disposal
@@ -662,43 +662,43 @@ Yes! Air is present everywhere around us, even though we cannot see it. Evidence
 ### 11.6 Things We Should Do
 
 - **Segregate waste** at home: biodegradable in one bin, non-biodegradable in another
-- **Avoid single-use plastics** — carry cloth/jute bags
-- **Do not burn garbage** — especially plastics (releases toxic fumes)
-- **Compost kitchen waste** — even at home
-- **Don't litter** — use dustbins and waste bins
+- **Avoid single-use plastics** - carry cloth/jute bags
+- **Do not burn garbage** - especially plastics (releases toxic fumes)
+- **Compost kitchen waste** - even at home
+- **Don't litter** - use dustbins and waste bins
 - **Participate in recycling drives** at school and community
-- **Reduce food waste** — take only as much as you can eat
-- **Use paper wisely** — recycle old notebooks, use both sides
+- **Reduce food waste** - take only as much as you can eat
+- **Use paper wisely** - recycle old notebooks, use both sides
 
-### 11.7 Paper and Plastic — Key Facts
+### 11.7 Paper and Plastic - Key Facts
 
 |              | Paper                            | Plastic                                    |
 |--------------|----------------------------------|---------------------------------------------|
-| Biodegradable | ✅ Yes (decomposes in 2–5 weeks) | ❌ No (takes 100s of years)                 |
+| Biodegradable | ✅ Yes (decomposes in 2-5 weeks) | ❌ No (takes 100s of years)                 |
 | Recyclable   | ✅ Yes                            | ✅ Yes (but not all types)                   |
 | Source       | Wood (trees)                     | Petrochemicals (fossil fuels)               |
 | Environment  | Trees are cut                    | Persists forever, harms animals             |
 
 > **Common Mistake:** Students think all waste can be burned safely. Burning plastic releases extremely toxic gases including dioxins, which are harmful to health and the environment. Plastic should be **recycled**, not burned.
 
-**Teaching Tip:** Start a composting project in the school garden. Have students collect kitchen waste, layer it with dry leaves, and observe decomposition over weeks. Also conduct a waste audit of the classroom — sort a day's waste into biodegradable and non-biodegradable piles.
+**Teaching Tip:** Start a composting project in the school garden. Have students collect kitchen waste, layer it with dry leaves, and observe decomposition over weeks. Also conduct a waste audit of the classroom - sort a day's waste into biodegradable and non-biodegradable piles.
 
 ---
 
-## Quick Revision — Chapter Summary
+## Quick Revision - Chapter Summary
 
 | Chapter / Topic              | Key Points to Remember                                        |
 |------------------------------|---------------------------------------------------------------|
 | Components of Food           | Carbs = energy, Proteins = growth, Fats = storage, Vitamins & Minerals = protection; Know deficiency diseases |
 | Sorting Materials            | Sort by properties (hardness, solubility, transparency); Metals vs Non-metals |
 | Fibre to Fabric              | Cotton = plant, Wool/Silk = animal; Natural vs Synthetic; Spinning → Weaving/Knitting |
-| Separation of Mixtures       | Handpicking, winnowing, sieving, filtration, evaporation, decantation — match method to situation |
+| Separation of Mixtures       | Handpicking, winnowing, sieving, filtration, evaporation, decantation - match method to situation |
 | Body Movements               | 206 bones, types of joints (ball-socket, hinge, pivot, fixed), muscles work in pairs |
 | Living vs Non-Living         | 7 characteristics: Growth, Movement, Reproduction, Respiration, Response, Excretion, Nutrition |
 | Parts of a Plant             | Root (absorbs), Stem (supports/transports), Leaf (photosynthesis), Flower (reproduction) |
 | Food from Plants             | Match edible part to plant; Cereals, pulses, spices; Tomato is a fruit! |
 | Water                        | Water cycle, 3% freshwater, conservation methods, rainwater harvesting |
-| Air                          | 78% N₂, 21% O₂, 0.04% CO₂; Air has weight, occupies space, exerts pressure |
+| Air                          | 78% N2, 21% O2, 0.04% CO2; Air has weight, occupies space, exerts pressure |
 | Garbage In Garbage Out       | Biodegradable vs Non-biodegradable; 3R's; Composting, recycling, landfill |
 
 ---
@@ -712,7 +712,7 @@ Yes! Air is present everywhere around us, even though we cannot see it. Evidence
 | Potato is a root                                 | Potato is a modified underground stem                          |
 | Rayon is a natural fibre                          | Rayon is semi-synthetic (chemically processed wood pulp)      |
 | Plants don't respire                              | Plants respire 24 hours a day; they photosynthesise in daylight |
-| CO₂ is a large part of air                       | CO₂ is only ~0.04% of air                                    |
+| CO2 is a large part of air                       | CO2 is only ~0.04% of air                                    |
 | All waste can be burned safely                   | Burning plastic releases toxic dioxins                        |
 | Filtration and evaporation are the same          | Filtration = insoluble solid; Evaporation = soluble solid     |
 | Roots absorb sunlight                            | Leaves absorb sunlight for photosynthesis; roots absorb water |

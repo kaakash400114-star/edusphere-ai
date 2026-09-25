@@ -1,4 +1,4 @@
-# Grade 3 Mathematics — Complete Knowledge Guide
+# Grade 3 Mathematics - Complete Knowledge Guide
 
 > **EduSphere AI Knowledge Base**
 > Aligned with Common Core Grade 3 standards. Covers all major domains: Number & Operations, Fractions, Measurement & Data, Geometry, and Algebraic Thinking.
@@ -9,7 +9,7 @@
 
 ### 1.1 Definitions
 
-- **Digit:** Any single symbol 0–9 used to write numbers.
+- **Digit:** Any single symbol 0-9 used to write numbers.
 - **Place Value:** The value of a digit based on its position in a number.
 - **Period:** A group of three digits separated by commas (e.g., thousands period, ones period).
 - **Standard Form:** Writing a number using digits (e.g., 45,672).
@@ -51,7 +51,7 @@
 
 | Mistake | Correction |
 |---|---|
-| Confusing place value positions (e.g., thinking the 7 in 7,231 is thousands) | Count positions from the right — ones, tens, hundreds, thousands… |
+| Confusing place value positions (e.g., thinking the 7 in 7,231 is thousands) | Count positions from the right - ones, tens, hundreds, thousands... |
 | Forgetting commas when reading large numbers | Group digits in sets of three from the right: 456,789 |
 | Writing zero values in expanded form unnecessarily | You may skip terms with zero, but including them is not wrong |
 
@@ -59,8 +59,8 @@
 
 - Use **base-10 blocks** (thousands cubes, hundreds flats, tens rods, ones units) to make place value tangible.
 - Create a **place value chart** and have students place digit cards in columns.
-- Use the game "Guess My Number" — give clues like "My number has a 5 in the ten-thousands place and a 2 in the hundreds place."
-- Practice reading numbers aloud — hearing the word "thousand" reinforces the grouping.
+- Use the game "Guess My Number" - give clues like "My number has a 5 in the ten-thousands place and a 2 in the hundreds place."
+- Practice reading numbers aloud - hearing the word "thousand" reinforces the grouping.
 
 ---
 
@@ -142,7 +142,7 @@
 - **Multiplication:** Repeated addition of equal groups; an operation combining two numbers (factors) to produce a product.
 - **Factors:** The numbers being multiplied (e.g., in 4 × 3, the factors are 4 and 3).
 - **Product:** The answer to a multiplication problem (e.g., 4 × 3 = 12, product is 12).
-- **Multiple:** The result of multiplying a number by an integer (e.g., multiples of 5: 5, 10, 15, 20…).
+- **Multiple:** The result of multiplying a number by an integer (e.g., multiples of 5: 5, 10, 15, 20...).
 - **Array:** A rectangular arrangement of objects in rows and columns used to model multiplication.
 
 ### 3.2 Multiplication Facts (×0 through ×10)
@@ -272,7 +272,7 @@
 - **Remainder:** The amount left over after division when the dividend is not evenly divisible.
 - **Inverse Operation:** Division is the inverse of multiplication (if 4 × 6 = 24, then 24 ÷ 6 = 4).
 
-### 4.2 Basic Division Facts (Divide by 2–10)
+### 4.2 Basic Division Facts (Divide by 2-10)
 
 | ÷2 | ÷3 | ÷4 | ÷5 | ÷6 | ÷7 | ÷8 | ÷9 | ÷10 |
 |---|---|---|---|---|---|---|---|---|
@@ -281,7 +281,7 @@
 | 6÷2=3 | 9÷3=3 | 12÷4=3 | 15÷5=3 | 18÷6=3 | 21÷7=3 | 24÷8=3 | 27÷9=3 | 30÷10=3 |
 | 8÷2=4 | 12÷3=4 | 16÷4=4 | 20÷5=4 | 24÷6=4 | 28÷7=4 | 32÷8=4 | 36÷9=4 | 40÷10=4 |
 | 10÷2=5 | 15÷3=5 | 20÷4=5 | 25÷5=5 | 30÷6=5 | 35÷7=5 | 40÷8=5 | 45÷9=5 | 50÷10=5 |
-| … | … | … | … | … | … | … | … | … |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ### 4.3 Understanding Remainders
 
@@ -298,7 +298,7 @@ A remainder is the amount left over when a number does not divide evenly.
 2. **Multiply:** Multiply the quotient digit by the divisor.
 3. **Subtract:** Subtract that product from the dividend digits.
 4. **Bring Down:** Bring down the next digit of the dividend.
-5. **Repeat** steps 1–4 until all digits are used.
+5. **Repeat** steps 1-4 until all digits are used.
 
 **Example:** 84 ÷ 7
 ```
@@ -385,8 +385,8 @@ A remainder is the amount left over when a number does not divide evenly.
 ### 5.1 Definitions
 
 - **Fraction:** A number that represents part of a whole. Written as **numerator/denominator** (e.g., 3/4).
-- **Numerator:** The top number — tells **how many parts** we have.
-- **Denominator:** The bottom number — tells **how many equal parts** the whole is divided into.
+- **Numerator:** The top number - tells **how many parts** we have.
+- **Denominator:** The bottom number - tells **how many equal parts** the whole is divided into.
 - **Unit Fraction:** A fraction with a numerator of 1 (e.g., 1/2, 1/3, 1/4, 1/8).
 - **Equivalent Fractions:** Different fractions that represent the same amount (e.g., 1/2 = 2/4 = 3/6).
 - **Proper Fraction:** A fraction where the numerator is less than the denominator (e.g., 3/5).
@@ -397,10 +397,10 @@ A remainder is the amount left over when a number does not divide evenly.
 
 A unit fraction always has **1 as the numerator**. The denominator tells the size of each piece.
 
-- 1/2 — one piece when the whole is divided into 2 equal parts
-- 1/3 — one piece when the whole is divided into 3 equal parts
-- 1/4 — one piece when the whole is divided into 4 equal parts
-- 1/8 — one piece when the whole is divided into 8 equal parts
+- 1/2 - one piece when the whole is divided into 2 equal parts
+- 1/3 - one piece when the whole is divided into 3 equal parts
+- 1/4 - one piece when the whole is divided into 4 equal parts
+- 1/8 - one piece when the whole is divided into 8 equal parts
 
 **Key Idea:** Larger denominator = smaller pieces. So 1/8 < 1/4 < 1/3 < 1/2.
 
@@ -425,7 +425,7 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 
 **Definition:** Two fractions are equivalent if they represent the same value, even though they look different.
 
-**Finding Equivalent Fractions — Multiply or Divide:**
+**Finding Equivalent Fractions - Multiply or Divide:**
 
 - Multiply **both** the numerator and denominator by the same number.
 - **Example:** 1/2 = (1×2)/(2×2) = 2/4 = (1×3)/(2×3) = 3/6 = (1×4)/(2×4) = 4/8
@@ -483,7 +483,7 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 
 **Example 3:** 3/4 + 2/4
 - 3 + 2 = 5.
-- Answer: **5/4** (which equals 1 and 1/4 — an improper/mixed number)
+- Answer: **5/4** (which equals 1 and 1/4 - an improper/mixed number)
 
 ### 5.7 Common Mistakes
 
@@ -497,7 +497,7 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 ### 5.8 Teaching Tips
 
 - Use **fraction strips** or **fraction bars** so students can visually compare equivalent fractions.
-- Use **pizzas, chocolate bars, or pies** as real-world models — cut them into equal parts.
+- Use **pizzas, chocolate bars, or pies** as real-world models - cut them into equal parts.
 - Have students **fold paper** to create unit fractions (fold in half for 1/2, in thirds for 1/3, etc.).
 - Emphasize: "The denominator tells the **name** of the fraction piece, the numerator tells **how many** you have."
 - For adding/subtracting, use a concrete model first (combine shaded regions), then move to the abstract rule.
@@ -539,10 +539,10 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 - All parallelograms have **opposite sides parallel and equal**.
 - A **rectangle** is a parallelogram with 4 right angles.
 - A **rhombus** is a parallelogram with 4 equal sides.
-- A **square** is BOTH a rectangle and a rhombus — it has 4 right angles and 4 equal sides.
+- A **square** is BOTH a rectangle and a rhombus - it has 4 right angles and 4 equal sides.
 - A **trapezoid** has only **one pair** of parallel sides (different from parallelograms).
 
-### 6.3 Area — Length × Width
+### 6.3 Area - Length × Width
 
 **Definition:** Area measures the number of square units that cover a shape.
 
@@ -552,15 +552,15 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 
 1. Identify the length and width of the rectangle.
 2. Multiply them together.
-3. Include units: square units (sq. units, cm², in², etc.).
+3. Include units: square units (sq. units, cm^2, in^2, etc.).
 
 **Worked Examples:**
 
 **Example 1:** A rectangle has length 7 cm and width 5 cm. Find the area.
-- A = 7 × 5 = **35 cm²**
+- A = 7 × 5 = **35 cm^2**
 
 **Example 2:** A garden is 12 m long and 8 m wide. Find the area.
-- A = 12 × 8 = **96 m²**
+- A = 12 × 8 = **96 m^2**
 
 **Example 3 (Irregular shapes):** Find the area of an L-shaped figure by splitting it into rectangles.
 - Rectangle 1: 6 × 3 = 18
@@ -569,7 +569,7 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 
 ### 6.4 Perimeter
 
-**Definition:** Perimeter is the total distance around a shape — add up all the sides.
+**Definition:** Perimeter is the total distance around a shape - add up all the sides.
 
 **Formula for Rectangles:** P = 2 × (length + width) or P = l + l + w + w
 
@@ -606,10 +606,10 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 | Mistake | Correction |
 |---|---|
 | Confusing area and perimeter | Area = inside (square units); Perimeter = outside (linear units) |
-| Forgetting to add ALL sides for perimeter | Count every side — don't skip any |
+| Forgetting to add ALL sides for perimeter | Count every side - don't skip any |
 | Misclassifying a trapezoid as a parallelogram | Trapezoid has only ONE pair of parallel sides |
 | Thinking a square is not a rectangle | A square IS a special type of rectangle |
-| Forgetting units | Area uses square units (cm²); Perimeter uses regular units (cm) |
+| Forgetting units | Area uses square units (cm^2); Perimeter uses regular units (cm) |
 
 ### 6.7 Teaching Tips
 
@@ -657,14 +657,14 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 
 | Object | Estimated Mass | Estimated Capacity |
 |---|---|---|
-| Paperclip | ~1 g | — |
-| Apple | ~100 g | — |
-| Textbook | ~1 kg | — |
-| Person (child) | ~30 kg | — |
-| Teaspoon of water | — | ~5 mL |
-| Juice box | — | ~200 mL |
-| Water bottle | — | ~500 mL |
-| Large milk jug | — | ~2 L |
+| Paperclip | ~1 g | - |
+| Apple | ~100 g | - |
+| Textbook | ~1 kg | - |
+| Person (child) | ~30 kg | - |
+| Teaspoon of water | - | ~5 mL |
+| Juice box | - | ~200 mL |
+| Water bottle | - | ~500 mL |
+| Large milk jug | - | ~2 L |
 
 ### 7.5 Worked Examples
 
@@ -771,9 +771,9 @@ Fractions can also be greater than 1 on a number line (e.g., 5/3 = 1 and 2/3, pl
 
 ### 8.7 Teaching Tips
 
-- Use a **timeline/number line** — it is the most visual and reliable method for elapsed time.
+- Use a **timeline/number line** - it is the most visual and reliable method for elapsed time.
 - Have students draw **clocks** and shade the elapsed portion.
-- Practice with **real schedules** — school start/end time, TV show duration, bus arrival.
+- Practice with **real schedules** - school start/end time, TV show duration, bus arrival.
 - Use the "mountain, hill, rock" method for different-sized jumps (1 hour = mountain, 30 min = hill, 5 min = rock).
 
 ---
@@ -821,10 +821,10 @@ Key: 🍎 = 3 votes
 A bar graph uses bars to represent quantities. The height (or length) of each bar corresponds to the data value.
 
 **Components:**
-- **Title** — what the graph shows
-- **Labels** — category names and what the numbers mean
-- **Scale** — the value of each gridline on the number axis
-- **Bars** — the data representation
+- **Title** - what the graph shows
+- **Labels** - category names and what the numbers mean
+- **Scale** - the value of each gridline on the number axis
+- **Bars** - the data representation
 
 **Reading a Bar Graph:**
 
@@ -883,7 +883,7 @@ Lengths of Pencils (in inches)
 | Mistake | Correction |
 |---|---|
 | Forgetting to multiply by the scale in pictographs | Each symbol = 3 votes, so 4 symbols = 12, NOT 4 |
-| Misreading the scale on a bar graph | Check the scale first — each line might be 2, 5, or 10 |
+| Misreading the scale on a bar graph | Check the scale first - each line might be 2, 5, or 10 |
 | Placing X's on a line plot at the wrong position | Place X's **above** the correct tick mark, centered |
 | Not including a title or labels | Every graph needs a title, axis labels, and (for pictographs) a key |
 
@@ -905,24 +905,24 @@ Lengths of Pencils (in inches)
 
 ### 10.2 Step-by-Step Strategy: C.U.B.E.S.
 
-- **C** — Circle the numbers and key information.
-- **U** — Underline the question (what is being asked).
-- **B** — Box any action words or key phrases (e.g., "in all," "how many left," "each").
-- **E** — Evaluate: What operation(s) do I need? Draw a picture or write an equation.
-- **S** — Solve and check: Does my answer make sense?
+- **C** - Circle the numbers and key information.
+- **U** - Underline the question (what is being asked).
+- **B** - Box any action words or key phrases (e.g., "in all," "how many left," "each").
+- **E** - Evaluate: What operation(s) do I need? Draw a picture or write an equation.
+- **S** - Solve and check: Does my answer make sense?
 
 ### 10.3 Step-by-Step Method: Solving Multi-Step Problems
 
-1. **Read carefully** — Read the problem twice. Identify what is known and what is unknown.
-2. **Identify the operations** — Look for clue words:
+1. **Read carefully** - Read the problem twice. Identify what is known and what is unknown.
+2. **Identify the operations** - Look for clue words:
    - **Addition:** in all, total, altogether, combined, sum
    - **Subtraction:** left, remaining, difference, how many more/fewer, minus
    - **Multiplication:** each, every, groups of, times, product, rows/columns
    - **Division:** equally, shared, each, split, per, how many groups
-3. **Break into steps** — Decide the order of operations.
-4. **Solve each step** — Show your work for every step.
-5. **Answer the question** — Make sure your final answer matches what was asked.
-6. **Check** — Re-read the problem and verify your answer makes sense.
+3. **Break into steps** - Decide the order of operations.
+4. **Solve each step** - Show your work for every step.
+5. **Answer the question** - Make sure your final answer matches what was asked.
+6. **Check** - Re-read the problem and verify your answer makes sense.
 
 ### 10.4 Worked Examples
 
@@ -959,7 +959,7 @@ Lengths of Pencils (in inches)
 
 | Mistake | Correction |
 |---|---|
-| Doing only one step and stopping | Re-read the question — is there a second step needed? |
+| Doing only one step and stopping | Re-read the question - is there a second step needed? |
 | Choosing the wrong operation based on one keyword | "More" sometimes means addition, but "how many more" means subtraction |
 | Not showing work for intermediate steps | Write down the answer to each step so you don't lose track |
 | Answering the wrong question | Check: did I answer what was actually asked? |
@@ -1052,7 +1052,7 @@ Patterns can also involve shapes that change in a predictable way.
 | Assuming multiplication because numbers grow quickly | Always calculate the difference between consecutive terms first |
 | Mixing up the rule (adding when you should multiply) | Check at least three pairs to confirm the rule is consistent |
 | Forgetting to check if the rule works for ALL terms | Apply your rule to every pair to verify before continuing |
-| Stopping at one possible rule without checking alternatives | Sometimes more than one rule could fit — prefer the simplest one |
+| Stopping at one possible rule without checking alternatives | Sometimes more than one rule could fit - prefer the simplest one |
 
 ### 11.6 Teaching Tips
 
@@ -1070,17 +1070,17 @@ Patterns can also involve shapes that change in a predictable way.
 
 - **Decimal:** A number that has a whole number part and a fractional part, separated by a decimal point.
 - **Decimal Point:** The dot (.) that separates the whole number from the fractional part.
-- **Tenths:** The first digit to the right of the decimal point — represents one out of ten equal parts.
+- **Tenths:** The first digit to the right of the decimal point - represents one out of ten equal parts.
 - **Decimal Notation for Fractions:** Fractions with denominators of 10 can be written as decimals.
 
 ### 12.2 Understanding Tenths
 
-**Key Concept:** Just as a whole number is divided into ones, tens, hundreds… a decimal is divided into tenths, hundredths…
+**Key Concept:** Just as a whole number is divided into ones, tens, hundreds... a decimal is divided into tenths, hundredths...
 
 | Place Value | Digit | Value |
 |---|---|---|
 | Ones | 3 | 3 |
-| Decimal Point | . | — |
+| Decimal Point | . | - |
 | Tenths | 7 | 7/10 or 0.7 |
 
 **Number: 3.7** = 3 ones and 7 tenths = **3 and 7/10**
@@ -1155,18 +1155,18 @@ Fractions with denominator 10 can be written directly as decimals:
 
 | Mistake | Correction |
 |---|---|
-| Writing 0.5 as "zero point five" but not understanding it means 5/10 | Connect decimals to fractions — 0.5 = 5/10 = half |
+| Writing 0.5 as "zero point five" but not understanding it means 5/10 | Connect decimals to fractions - 0.5 = 5/10 = half |
 | Thinking 0.3 is smaller than 0.07 because 3 < 7 (when hundredths are introduced later) | For tenths only, compare the single digit after the decimal point directly |
 | Placing decimals incorrectly on a number line | Always divide the segment into 10 equal parts for tenths |
 | Confusing 0.1 with 1 | 0.1 is one-tenth, which is much less than 1 |
 
 ### 12.8 Teaching Tips
 
-- Use **base-10 blocks** — a flat (hundreds square) divided into 10 strips shows tenths clearly.
-- Connect to **money** — $0.10, $0.20, $0.50 are familiar decimal amounts.
-- Use a **meter stick** — 1 meter = 10 decimeters, so 0.3 m = 3/10 of a meter.
+- Use **base-10 blocks** - a flat (hundreds square) divided into 10 strips shows tenths clearly.
+- Connect to **money** - $0.10, $0.20, $0.50 are familiar decimal amounts.
+- Use a **meter stick** - 1 meter = 10 decimeters, so 0.3 m = 3/10 of a meter.
 - Start with fractions with denominator 10, then show how the decimal point replaces the fraction bar.
-- Emphasize that decimals are just another way to write fractions — they are not a new concept but a new notation.
+- Emphasize that decimals are just another way to write fractions - they are not a new concept but a new notation.
 
 ---
 

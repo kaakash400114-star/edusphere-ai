@@ -43,11 +43,18 @@ def test_no_age_field_needed():
 # ---------- stage 1: voices ----------
 def test_voices_exist_for_all_buddies():
     from app import characters
+    seen_hints = []
     for cid in characters.CHARACTERS:
         v = conversation.voice_public(cid)
         assert "rate" in v and "pitch" in v and "act" in v
+        assert v.get("voice_hints"), f"{cid} has no voice_hints"
+        seen_hints.append(v["voice_hints"][0])
     assert conversation.voice_public("chintu")["pitch"] < 0.8  # deep elephant
-    assert conversation.voice_public("pip")["pitch"] > 1.2     # squeaky squirrel
+    # distinct lead voices: at least 3 different real voices across the cast
+    assert len(set(seen_hints)) >= 3, f"voices too uniform: {seen_hints}"
+    # pitches stay human (no cartoon squeak/deep)
+    for cid in characters.CHARACTERS:
+        assert 0.6 <= conversation.voice_public(cid)["pitch"] <= 1.3
 
 
 def test_pace_for_grade():

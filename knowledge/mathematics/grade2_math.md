@@ -102,7 +102,7 @@ The number 137 means:
 3. Answer: **83**
 
 ```
-     ¹
+     ^1
     47
   + 36
   ----
@@ -112,7 +112,7 @@ The number 137 means:
 **Example with Larger Numbers: 58 + 74**
 
 ```
-     ¹ ¹
+     ^1 ^1
     58
   + 74
   ----
@@ -133,7 +133,7 @@ The number 137 means:
 **Strategy 2: Add all at once (column addition)**
 
 ```
-     2¹
+     2^1
     24
     35
   + 18
@@ -196,7 +196,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 4. Answer: **15**
 
 ```
-    ⁴¹²
+    ^4^1^2
     52
   - 37
   ----
@@ -206,7 +206,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 **Example: 81 − 46**
 
 ```
-    ⁷¹¹
+    ^7^1^1
     81
   - 46
   ----
@@ -224,7 +224,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 **Example: 200 − 64**
 
 ```
-    ¹⁹⁹¹⁰
+    ^1^9^9^1^0
     200
   - 64
   ----
@@ -241,7 +241,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 **Example: 305 − 178**
 
 ```
-    ²⁹¹⁰ ¹⁵
+    ^2^9^1^0 ^1^5
     305
   - 178
   ----
@@ -249,7 +249,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 
 1. Ones: 5 − 8 → Borrow from tens (0), then from hundreds
    - Hundreds: 3 → 2. Tens: 0 → 9 (plus the 10 we give to ones). Ones: 5 → 15
-   - Wait — let's be careful: borrow from hundreds first.
+   - Wait - let's be careful: borrow from hundreds first.
    - 3 hundreds, 0 tens, 5 ones
    - Borrow 1 hundred = 2 hundreds, 10 tens. Borrow 1 ten from 10 = 9 tens, 15 ones.
 2. Ones: 15 − 8 = **7**
@@ -279,7 +279,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 
 ### 4.1 Repeated Addition
 
-**Definition:** Multiplication is a shortcut for repeated addition — adding the same number multiple times.
+**Definition:** Multiplication is a shortcut for repeated addition - adding the same number multiple times.
 
 **Examples:**
 - 3 groups of 4: 4 + 4 + 4 = 12, so **3 × 4 = 12**
@@ -305,7 +305,7 @@ Break 25 into 20 + 5. Jump 20 first (to 67), then jump 5 (to 72). Answer: **72**
 3 rows, 4 columns = 12 stars total
 
 **Reading Arrays:**
-- Rows × Columns = Total (or Columns × Rows = Total — multiplication is commutative!)
+- Rows × Columns = Total (or Columns × Rows = Total - multiplication is commutative!)
 - 4 rows of 5 = 4 × 5 = 20
 - "The array has 4 rows with 5 in each row"
 
@@ -506,7 +506,7 @@ Equal:            Not Equal:
     denominator (bottom number) → total number of equal parts
 ```
 
-**Common Mistake:** Confusing numerator and denominator. Teaching tip: "Denominator starts with D like Down — it goes on the bottom."
+**Common Mistake:** Confusing numerator and denominator. Teaching tip: "Denominator starts with D like Down - it goes on the bottom."
 
 ---
 
@@ -520,7 +520,7 @@ Equal:            Not Equal:
 - Dime = 10¢
 - Quarter = 25¢
 
-**Counting Strategy — Start with the Largest Value:**
+**Counting Strategy - Start with the Largest Value:**
 
 **Example 1:** Count these coins: 2 quarters, 1 dime, 3 pennies
 - 25¢ + 25¢ = 50¢

@@ -1,4 +1,4 @@
-# Grade 7 Mathematics — EduSphere AI
+# Grade 7 Mathematics - EduSphere AI
 
 > **Curriculum Alignment:** CBSE Class 7 NCERT (Mathematics) with supplementary international coverage
 > **Prerequisites:** Grade 6 Mathematics (whole numbers, integers basics, fractions intro, basic geometry, mensuration intro, algebra intro)
@@ -9,7 +9,7 @@
 
 ### 1.1 Recap and Number Line
 
-**Integers:** Z = {…, −3, −2, −1, 0, 1, 2, 3, …}
+**Integers:** Z = {..., −3, −2, −1, 0, 1, 2, 3, ...}
 
 On the number line, negative integers are to the left of zero and positive integers are to the right.
 
@@ -52,7 +52,7 @@ On the number line, negative integers are to the left of zero and positive integ
 **7. Additive Inverse:** a + (−a) = 0 (for every integer a, −a is its additive inverse)
 **8. Multiplicative Inverse (Reciprocal):** a × (1/a) = 1 (Note: 1/a is NOT an integer for most a, so this applies in Q, not Z)
 
-### 1.3 Multiplication of Integers — Extended
+### 1.3 Multiplication of Integers - Extended
 
 **Multiplication of more than two integers:**
 - Count the number of negative signs.
@@ -67,7 +67,7 @@ On the number line, negative integers are to the left of zero and positive integ
 - 5 negative signs (odd) → Negative
 - = **−1**
 
-### 1.4 Division of Integers — Extended
+### 1.4 Division of Integers - Extended
 
 **Rules (same sign pattern as multiplication):**
 
@@ -95,7 +95,7 @@ On the number line, negative integers are to the left of zero and positive integ
 
 ### Teaching Tips
 - Use bank account balance (deposits/withdrawals) for real-world context
-- Play "sign game" — students predict sign of product/quotient before calculating
+- Play "sign game" - students predict sign of product/quotient before calculating
 - Have students verify properties with both positive and negative examples
 
 ---
@@ -136,7 +136,7 @@ On the number line, negative integers are to the left of zero and positive integ
 **Worked Example 4:** 2⅓ × 1½
 - = 7/3 × 3/2 = 21/6 = **7/2 = 3½**
 
-### 2.2 Decimal Numbers — Recap
+### 2.2 Decimal Numbers - Recap
 
 **Place Values:**
 
@@ -147,7 +147,7 @@ On the number line, negative integers are to the left of zero and positive integ
 - 3.752 = 3 ones + 7 tenths + 5 hundredths + 2 thousandths
 
 **Writing Fractions as Decimals:**
-- Fractions with denominator 10, 100, 1000… → Write directly
+- Fractions with denominator 10, 100, 1000... → Write directly
 - Other fractions → Perform long division
 
 **Worked Example 5:** Convert 3/8 to decimal
@@ -155,7 +155,7 @@ On the number line, negative integers are to the left of zero and positive integ
 
 **Terminating vs Non-terminating Decimals:**
 - Terminating: 1/4 = 0.25 (division ends)
-- Non-terminating repeating: 1/3 = 0.333… = 0.3̄
+- Non-terminating repeating: 1/3 = 0.333... = 0.3̄
 
 ### 2.3 Operations with Decimals
 
@@ -210,7 +210,7 @@ On the number line, negative integers are to the left of zero and positive integ
 - **All fractions are rational numbers** (by definition).
 - Terminating and repeating decimals are rational.
 
-**Not Rational (Irrational):** Non-terminating, non-repeating decimals like √2 = 1.41421356…, π = 3.14159…
+**Not Rational (Irrational):** Non-terminating, non-repeating decimals like √2 = 1.41421356..., π = 3.14159...
 
 **Important:** Q = {p/q : p, q ∈ Z, q ≠ 0}
 
@@ -299,14 +299,14 @@ To represent a rational number on the number line:
 ### 4.1 Introduction
 
 **Exponential Notation:** aⁿ means "a multiplied by itself n times"
-- aⁿ = a × a × a × … × a (n times)
+- aⁿ = a × a × a × ... × a (n times)
 - **Base:** a (the number being multiplied)
 - **Exponent (Power):** n (how many times)
 
 **Examples:**
-- 2⁵ = 2 × 2 × 2 × 2 × 2 = 32
-- 10³ = 10 × 10 × 10 = 1000
-- 3⁴ = 81
+- 2^5 = 2 × 2 × 2 × 2 × 2 = 32
+- 10^3 = 10 × 10 × 10 = 1000
+- 3^4 = 81
 
 ### 4.2 Laws of Exponents
 
@@ -314,31 +314,31 @@ For any non-zero integers a and b, and whole numbers m and n:
 
 **Law 1: Multiplying Same Bases**
 - aᵐ × aⁿ = aᵐ⁺ⁿ
-- Example: 3² × 3⁴ = 3²⁺⁴ = 3⁶ = 729
+- Example: 3^2 × 3^4 = 3^2⁺^4 = 3^6 = 729
 
 **Law 2: Dividing Same Bases**
 - aᵐ ÷ aⁿ = aᵐ⁻ⁿ (for m > n)
-- Example: 5⁶ ÷ 5² = 5⁶⁻² = 5⁴ = 625
+- Example: 5^6 ÷ 5^2 = 5^6⁻^2 = 5^4 = 625
 
 **Law 3: Power of a Power**
 - (aᵐ)ⁿ = aᵐˣⁿ
-- Example: (2³)⁴ = 2³ˣ⁴ = 2¹²
+- Example: (2^3)^4 = 2^3ˣ^4 = 2^1^2
 
 **Law 4: Multiplying Same Powers**
 - aᵐ × bᵐ = (a × b)ᵐ
-- Example: 2³ × 5³ = (2 × 5)³ = 10³ = 1000
+- Example: 2^3 × 5^3 = (2 × 5)^3 = 10^3 = 1000
 
 **Law 5: Dividing Same Powers**
 - aᵐ ÷ bᵐ = (a ÷ b)ᵐ
-- Example: 8³ ÷ 2³ = (8 ÷ 2)³ = 4³ = 64
+- Example: 8^3 ÷ 2^3 = (8 ÷ 2)^3 = 4^3 = 64
 
 **Law 6: Zero Exponent Rule**
-- a⁰ = 1 (for any non-zero a)
-- Example: 7⁰ = 1; 100⁰ = 1; (−5)⁰ = 1
+- a^0 = 1 (for any non-zero a)
+- Example: 7^0 = 1; 100^0 = 1; (−5)^0 = 1
 
 **Law 7: Negative Exponent Rule (introductory)**
 - a⁻ⁿ = 1/aⁿ
-- Example: 2⁻³ = 1/2³ = 1/8
+- Example: 2⁻^3 = 1/2^3 = 1/8
 
 ### 4.3 Expressing Large Numbers in Standard Form (Exponential Form)
 
@@ -351,31 +351,31 @@ For any non-zero integers a and b, and whole numbers m and n:
 
 **Worked Example 1:** Write 345,000,000 in standard form.
 - Move decimal: 3.45 (moved 8 places to the left)
-- **Answer: 3.45 × 10⁸**
+- **Answer: 3.45 × 10^8**
 
 **Worked Example 2:** Write 0.0000056 in standard form.
 - Move decimal: 5.6 (moved 6 places to the right)
-- **Answer: 5.6 × 10⁻⁶**
+- **Answer: 5.6 × 10⁻^6**
 
 ### 4.4 Using Exponents with Large Numbers
 
 | Number | Exponential Form |
 |--------|-----------------|
-| 10 | 10¹ |
-| 100 | 10² |
-| 1,000 | 10³ |
-| 10,000 | 10⁴ |
-| 1,00,000 (1 lakh) | 10⁵ |
-| 10,00,000 (10 lakh / 1 million) | 10⁶ |
-| 1,00,00,000 (1 crore) | 10⁷ |
+| 10 | 10^1 |
+| 100 | 10^2 |
+| 1,000 | 10^3 |
+| 10,000 | 10^4 |
+| 1,00,000 (1 lakh) | 10^5 |
+| 10,00,000 (10 lakh / 1 million) | 10^6 |
+| 1,00,00,000 (1 crore) | 10^7 |
 
 ### Common Mistakes
-- ❌ Confusing a⁰ with 0 (a⁰ = 1, not 0)
-- ❌ Adding exponents when bases are different: 2³ × 3³ ≠ 6³⁺³
+- ❌ Confusing a^0 with 0 (a^0 = 1, not 0)
+- ❌ Adding exponents when bases are different: 2^3 × 3^3 ≠ 6^3⁺^3
 - ❌ Forgetting the zero exponent rule applies only to non-zero bases
 
 ### Teaching Tips
-- Use folding paper activity: fold in half repeatedly → 2, 4, 8, 16, 32 = 2¹, 2², 2³, 2⁴, 2⁵
+- Use folding paper activity: fold in half repeatedly → 2, 4, 8, 16, 32 = 2^1, 2^2, 2^3, 2^4, 2^5
 - Compare writing out large numbers vs exponential form for efficiency
 - Create a "laws of exponents" reference card for students
 
@@ -390,10 +390,10 @@ For any non-zero integers a and b, and whole numbers m and n:
 **Constant:** A fixed value (e.g., 5, −3, ½).
 
 **Term:** A constant, a variable, or a product of constants and variables.
-- In 5x² + 3x − 7: the terms are **5x²**, **3x**, and **−7**.
+- In 5x^2 + 3x − 7: the terms are **5x^2**, **3x**, and **−7**.
 
 **Coefficient:** The numerical factor of a term (including its sign).
-- In 5x²: coefficient of x² is **5**
+- In 5x^2: coefficient of x^2 is **5**
 - In 3x: coefficient of x is **3**
 - In −7: it is a constant term (coefficient concept applies to variables)
 
@@ -401,12 +401,12 @@ For any non-zero integers a and b, and whole numbers m and n:
 
 **Like Terms:** Terms that have the **same variable(s) raised to the same power(s)**.
 - 3x and 5x are like terms
-- 2x² and −7x² are like terms
+- 2x^2 and −7x^2 are like terms
 - 4xy and 9xy are like terms
 
 **Unlike Terms:** Terms that have different variables or the same variable raised to different powers.
 - 3x and 3y are unlike terms
-- 5x² and 5x are unlike terms (different powers of x)
+- 5x^2 and 5x are unlike terms (different powers of x)
 - 2xy and 2x are unlike terms
 
 ### 5.3 Addition and Subtraction of Algebraic Expressions
@@ -423,12 +423,12 @@ For any non-zero integers a and b, and whole numbers m and n:
 
 **Adding/Subtracting Expressions:**
 
-**Worked Example 1:** Add 3x² + 5x − 2 and x² − 3x + 7
+**Worked Example 1:** Add 3x^2 + 5x − 2 and x^2 − 3x + 7
 - Group like terms:
-  - x² terms: 3x² + x² = 4x²
+  - x^2 terms: 3x^2 + x^2 = 4x^2
   - x terms: 5x + (−3x) = 2x
   - Constants: (−2) + 7 = 5
-- **Answer: 4x² + 2x + 5**
+- **Answer: 4x^2 + 2x + 5**
 
 **Worked Example 2:** Subtract (2a − 3b + 4) from (5a + 7b − 8)
 - = 5a + 7b − 8 − 2a + 3b − 4
@@ -442,17 +442,17 @@ For any non-zero integers a and b, and whole numbers m and n:
 
 Substitute given values and evaluate.
 
-**Worked Example 4:** If x = 3, find x² − 2x + 1
-- = 3² − 2(3) + 1 = 9 − 6 + 1 = **4**
+**Worked Example 4:** If x = 3, find x^2 − 2x + 1
+- = 3^2 − 2(3) + 1 = 9 − 6 + 1 = **4**
 
 ### Common Mistakes
 - ❌ Adding/subtracting unlike terms: 3x + 3y ≠ 6xy
 - ❌ Forgetting to distribute the negative sign when subtracting an expression
-- ❌ Confusing 2x with x²
+- ❌ Confusing 2x with x^2
 
 ### Teaching Tips
 - Color-code like terms for visual grouping
-- Use "expression machines" — input values, output results
+- Use "expression machines" - input values, output results
 - Practice with column addition of expressions (aligning like terms vertically)
 
 ---
@@ -472,7 +472,7 @@ Substitute given values and evaluate.
 - 5y − 7 = 18 (solution: y = 5)
 - 3(x − 2) = 9 (solution: x = 5)
 
-### 6.2 Solving Linear Equations — Step-by-Step
+### 6.2 Solving Linear Equations - Step-by-Step
 
 **Goal:** Isolate the variable on one side of the equation.
 
@@ -691,17 +691,17 @@ Line 2:       ∠3  \  ∠4
 
 In a **right-angled triangle**, the square of the hypotenuse equals the sum of the squares of the other two sides.
 
-**Formula:** a² + b² = c² (where c is the hypotenuse — the side opposite the right angle)
+**Formula:** a^2 + b^2 = c^2 (where c is the hypotenuse - the side opposite the right angle)
 
 **Worked Example 3:** In a right triangle, the two shorter sides are 3 cm and 4 cm. Find the hypotenuse.
-- c² = 3² + 4² = 9 + 16 = 25
+- c^2 = 3^2 + 4^2 = 9 + 16 = 25
 - c = √25 = **5 cm**
 
 **Common Pythagorean Triples (memorize!):**
-- (3, 4, 5) → 3² + 4² = 5²
-- (5, 12, 13) → 5² + 12² = 13²
-- (6, 8, 10) → 6² + 8² = 10²
-- (8, 15, 17) → 8² + 15² = 17²
+- (3, 4, 5) → 3^2 + 4^2 = 5^2
+- (5, 12, 13) → 5^2 + 12^2 = 13^2
+- (6, 8, 10) → 6^2 + 8^2 = 10^2
+- (8, 15, 17) → 8^2 + 15^2 = 17^2
 
 ### 8.3 Congruence of Triangles
 
@@ -742,7 +742,7 @@ In a **right-angled triangle**, the square of the hypotenuse equals the sum of t
 ### Teaching Tips
 - Use straws of fixed lengths to construct triangles and test congruence conditions
 - Paper cutting and superimposing to verify congruence
-- "Pythagorean theorem proof by squares" — draw squares on each side of a right triangle
+- "Pythagorean theorem proof by squares" - draw squares on each side of a right triangle
 
 ---
 
@@ -840,7 +840,7 @@ Where:
 
 **Mean (Arithmetic Average):**
 - Mean = (Sum of all observations) / (Total number of observations)
-- Mean = (x₁ + x₂ + … + xₙ) / n
+- Mean = (x1 + x2 + ... + xₙ) / n
 
 **Median:** The middle value when data is arranged in ascending/descending order.
 - If n is odd: Median = (n+1)/2-th observation
@@ -864,7 +864,7 @@ Where:
 - **Median:** Best when data has extreme values (e.g., income data)
 - **Mode:** Best for categorical/frequency data (e.g., most common shoe size)
 
-### 10.2 Probability — Introduction
+### 10.2 Probability - Introduction
 
 **Probability:** A measure of the likelihood of an event happening. It is always between 0 and 1.
 
@@ -878,9 +878,9 @@ Where:
 - **Equally likely outcomes:** Outcomes that have the same chance of occurring
 
 **Probability Scale:**
-- **0** — Impossible event (will never happen)
-- **1** — Certain event (will always happen)
-- **0.5** — 50-50 chance
+- **0** - Impossible event (will never happen)
+- **1** - Certain event (will always happen)
+- **0.5** - 50-50 chance
 
 **Worked Example 3:** What is the probability of getting a head when a fair coin is tossed?
 - Favorable outcomes: 1 (Head)
@@ -912,12 +912,12 @@ Where:
 
 ## 11. Perimeter and Area
 
-### 11.1 Recap — Rectangle and Square
+### 11.1 Recap - Rectangle and Square
 
 | Shape | Perimeter | Area |
 |-------|-----------|------|
 | Rectangle | 2(l + b) | l × b |
-| Square | 4s | s² |
+| Square | 4s | s^2 |
 
 ### 11.2 Area of a Parallelogram
 
@@ -928,18 +928,18 @@ Where:
 **Note:** The height must be perpendicular to the base. It is NOT the slant side.
 
 **Worked Example 1:** A parallelogram has base 12 cm and height 5 cm. Find its area.
-- Area = 12 × 5 = **60 cm²**
+- Area = 12 × 5 = **60 cm^2**
 
 ### 11.3 Area of a Triangle
 
 **Area = ½ × base × height**
 
 **Worked Example 2:** Find the area of a triangle with base 10 cm and height 6 cm.
-- Area = ½ × 10 × 6 = **30 cm²**
+- Area = ½ × 10 × 6 = **30 cm^2**
 
 **Relation to Parallelogram:** A triangle is half of a parallelogram with the same base and height. That's why the formula has ½.
 
-**Worked Example 3:** The area of a triangle is 48 cm² and its base is 12 cm. Find the height.
+**Worked Example 3:** The area of a triangle is 48 cm^2 and its base is 12 cm. Find the height.
 - 48 = ½ × 12 × h
 - 48 = 6h
 - h = **8 cm**
@@ -950,32 +950,32 @@ Where:
 - C = 2πr = πd (where r = radius, d = diameter, π ≈ 22/7 or 3.14)
 
 **Area of a circle:**
-- A = πr²
+- A = πr^2
 
 **Worked Example 4:** Find the circumference of a circle with radius 7 cm. (Take π = 22/7)
 - C = 2 × (22/7) × 7 = 2 × 22 = **44 cm**
 
 **Worked Example 5:** Find the area of a circle with radius 14 cm. (Take π = 22/7)
-- A = (22/7) × 14 × 14 = 22 × 2 × 14 = **616 cm²**
+- A = (22/7) × 14 × 14 = 22 × 2 × 14 = **616 cm^2**
 
 ### 11.5 Conversion of Units
 
 | Unit | Conversion |
 |------|-----------|
-| 1 m² | 10,000 cm² |
-| 1 km² | 1,000,000 m² (10⁶ m²) |
-| 1 hectare | 10,000 m² |
-| 1 acre | 4,047 m² (approximately) |
+| 1 m^2 | 10,000 cm^2 |
+| 1 km^2 | 1,000,000 m^2 (10^6 m^2) |
+| 1 hectare | 10,000 m^2 |
+| 1 acre | 4,047 m^2 (approximately) |
 
 **Worked Example 6:** A rectangular field measures 500 m by 300 m. Find its area in hectares.
-- Area = 500 × 300 = 150,000 m²
+- Area = 500 × 300 = 150,000 m^2
 - In hectares: 150,000 ÷ 10,000 = **15 hectares**
 
 ### Common Mistakes
 - ❌ Using the slant side instead of perpendicular height for parallelogram/triangle
 - ❌ Forgetting the ½ in the triangle area formula
 - ❌ Not squaring the radius in the circle area formula
-- ❌ Mixing up 2πr (circumference) with πr² (area)
+- ❌ Mixing up 2πr (circumference) with πr^2 (area)
 
 ### Teaching Tips
 - Cut a parallelogram and rearrange it into a rectangle to derive the area formula
@@ -1020,7 +1020,7 @@ Where:
 
 **Worked Example 1:** Which of these is a valid net for a cube?
 - Four squares in a row with one square above the second and one below the third → **Yes, this folds into a cube**
-- Three squares in a row → **No, only 3 faces — needs 6**
+- Three squares in a row → **No, only 3 faces - needs 6**
 
 ### 12.3 Views of 3D Shapes
 
@@ -1065,15 +1065,15 @@ Where:
 
 ## Quick Reference Card
 
-### Key Formulas — Grade 7
+### Key Formulas - Grade 7
 
 | Topic | Formula |
 |-------|---------|
-| Exponent laws | aᵐ × aⁿ = aᵐ⁺ⁿ; aᵐ ÷ aⁿ = aᵐ⁻ⁿ; (aᵐ)ⁿ = aᵐⁿ; a⁰ = 1 |
+| Exponent laws | aᵐ × aⁿ = aᵐ⁺ⁿ; aᵐ ÷ aⁿ = aᵐ⁻ⁿ; (aᵐ)ⁿ = aᵐⁿ; a^0 = 1 |
 | Area of parallelogram | A = base × height |
 | Area of triangle | A = ½ × base × height |
 | Circumference of circle | C = 2πr = πd |
-| Area of circle | A = πr² |
+| Area of circle | A = πr^2 |
 | Simple interest | SI = (P × R × T) / 100 |
 | Amount | A = P + SI |
 | Profit % | (Profit/CP) × 100 |
@@ -1081,18 +1081,18 @@ Where:
 | Discount | MP − SP |
 | Mean | Sum of observations / Number of observations |
 | Probability | Favorable outcomes / Total outcomes |
-| Pythagorean theorem | a² + b² = c² |
+| Pythagorean theorem | a^2 + b^2 = c^2 |
 | Euler's formula | F + V − E = 2 |
 | Triangle angle sum | ∠A + ∠B + ∠C = 180° |
 | Exterior angle = Sum of opposite interior angles | |
 
-### Key Theorems & Criteria — Grade 7
+### Key Theorems & Criteria - Grade 7
 
 | Theorem/Criterion | Statement |
 |------------------|-----------|
 | **Angle Sum Property** | Sum of angles in a triangle = 180° |
 | **Exterior Angle Theorem** | Exterior angle = sum of two opposite interior angles |
-| **Pythagorean Theorem** | In a right triangle: a² + b² = c² |
+| **Pythagorean Theorem** | In a right triangle: a^2 + b^2 = c^2 |
 | **SSS Congruence** | Three sides equal → triangles congruent |
 | **SAS Congruence** | Two sides and included angle equal → congruent |
 | **ASA Congruence** | Two angles and included side equal → congruent |
@@ -1100,4 +1100,4 @@ Where:
 
 ---
 
-*This content covers the complete CBSE Class 7 NCERT Mathematics syllabus (Chapters 1–15). International curriculum topics are integrated where they complement the NCERT structure.*
+*This content covers the complete CBSE Class 7 NCERT Mathematics syllabus (Chapters 1-15). International curriculum topics are integrated where they complement the NCERT structure.*

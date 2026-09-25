@@ -1,4 +1,4 @@
-# Grade 6 English – Complete Study Guide
+# Grade 6 English - Complete Study Guide
 
 ---
 
@@ -13,9 +13,9 @@ Literal questions ask you to find information **directly stated** in the text. Y
 **Tips:**
 - Look for exact words or numbers in the passage.
 - Scan the text for keywords from the question.
-- Do not add your own ideas — stick to what is written.
+- Do not add your own ideas - stick to what is written.
 
-> **Example Passage:** "The science fair will be held on Friday, March 15, in the school gymnasium from 9:00 a.m. to 12:00 p.m. Students in grades 5–8 may enter projects."
+> **Example Passage:** "The science fair will be held on Friday, March 15, in the school gymnasium from 9:00 a.m. to 12:00 p.m. Students in grades 5-8 may enter projects."
 >
 > **Literal Question:** Where will the science fair take place?
 > **Answer:** In the school gymnasium.
@@ -32,11 +32,11 @@ Inferential questions require you to **draw conclusions** using clues from the t
 > **Example Passage:** "Maria slammed her locker shut and walked down the hall with her head down. She shoved her books into her bag without looking at anyone."
 >
 > **Inferential Question:** How is Maria probably feeling?
-> **Answer:** Maria is likely feeling upset or angry. The evidence is that she slammed her locker, kept her head down, and avoided looking at anyone — all signs of distress.
+> **Answer:** Maria is likely feeling upset or angry. The evidence is that she slammed her locker, kept her head down, and avoided looking at anyone - all signs of distress.
 
 ### 1.3 Evaluative Questions
 
-Evaluative questions ask you to **judge or form an opinion** about the text — the author's purpose, the quality of an argument, or whether you agree.
+Evaluative questions ask you to **judge or form an opinion** about the text - the author's purpose, the quality of an argument, or whether you agree.
 
 **Tips:**
 - Think about the author's message and whether it is convincing.
@@ -312,12 +312,12 @@ Conditionals describe a condition and its result. There are four main types.
 #### Second Conditional (unreal/hypothetical present or future)
 **Structure:** If + past simple, would + base verb
 > **If** I had wings, **I would fly** around the world.
-> *(I don't have wings — this is imaginary.)*
+> *(I don't have wings - this is imaginary.)*
 
-#### Third Conditional (unreal past — things that didn't happen)
+#### Third Conditional (unreal past - things that didn't happen)
 **Structure:** If + past perfect, would have + past participle
 > **If** she had studied harder, **she would have passed** the exam.
-> *(She didn't study hard and she didn't pass — regret about the past.)*
+> *(She didn't study hard and she didn't pass - regret about the past.)*
 
 **Mixed Conditional (past condition → present result)**
 > If he had taken the doctor's advice (past), he would be healthy now (present).
@@ -341,11 +341,11 @@ A **relative clause** gives more information about a noun. It begins with a **re
 | **which** | Things/animals | The book **which** is on the table is mine. |
 | **that** | People or things (defining only) | The car **that** he bought is very fast. |
 
-**Defining relative clauses** (essential information — no commas):
-> The students **who passed** the exam will receive certificates. *(Only the students who passed — the clause defines which students.)*
+**Defining relative clauses** (essential information - no commas):
+> The students **who passed** the exam will receive certificates. *(Only the students who passed - the clause defines which students.)*
 
-**Non-defining relative clauses** (extra information — use commas):
-> My brother, **who lives in London**, is a teacher. *(We already know which brother — the clause adds extra information.)*
+**Non-defining relative clauses** (extra information - use commas):
+> My brother, **who lives in London**, is a teacher. *(We already know which brother - the clause adds extra information.)*
 
 **Note:** In non-defining clauses, do NOT use "that."
 - ✅ My car, **which** is red, is very old.
@@ -448,7 +448,7 @@ Best wishes / Warmly / Love,
 >
 > How have you been? I hope everything is going well. I just got back from a trip to the mountains and it was amazing!
 >
-> We went hiking every day and even saw a bear from a distance! The views were incredible, especially at sunset. I took loads of photos — I'll show you when we meet.
+> We went hiking every day and even saw a bear from a distance! The views were incredible, especially at sunset. I took loads of photos - I'll show you when we meet.
 >
 > Let's catch up soon. How about grabbing ice cream this Saturday?
 >
@@ -465,7 +465,7 @@ Subject: [Clear, brief subject]
 
 Dear [Name],
 
-[Main message — keep it focused and polite]
+[Main message - keep it focused and polite]
 
 [Closing]
 
@@ -473,7 +473,7 @@ Best regards,
 [Your Name]
 ```
 
-> **Sample — requesting information:**
+> **Sample - requesting information:**
 >
 > Subject: Inquiry About Summer Science Camp
 >
@@ -496,10 +496,10 @@ A **notice** is a short, formal announcement displayed publicly.
 [Name of School/Organization]
 NOTICE
 
-[Title — brief and clear]
+[Title - brief and clear]
 Date: [Date of writing]
 
-[Body — what, when, where, who, why — in 3–4 lines]
+[Body - what, when, where, who, why - in 3-4 lines]
 
 [Signature and Designation]
 ```
@@ -522,16 +522,16 @@ Date: [Date of writing]
 An **article** presents information or opinions on a topic for a newspaper, magazine, or school publication.
 
 **Structure:**
-1. **Heading** — Catchy and relevant
-2. **Introduction** — Hook the reader and state the topic
-3. **Body** — 2–3 paragraphs with facts, examples, and opinions
-4. **Conclusion** — Summarise and give a final thought
+1. **Heading** - Catchy and relevant
+2. **Introduction** - Hook the reader and state the topic
+3. **Body** - 2-3 paragraphs with facts, examples, and opinions
+4. **Conclusion** - Summarise and give a final thought
 
-> **Sample — The Importance of Reading**
+> **Sample - The Importance of Reading**
 >
 > **Books: Your Best Friends**
 >
-> Have you ever been completely lost in a story? That feeling — when the real world fades away and you are living inside a book — is one of the greatest experiences reading can offer.
+> Have you ever been completely lost in a story? That feeling - when the real world fades away and you are living inside a book - is one of the greatest experiences reading can offer.
 >
 > Reading improves vocabulary, strengthens imagination, and builds empathy. When we read about characters from different backgrounds, we learn to understand perspectives that differ from our own. Studies show that regular readers perform better in school and develop stronger critical thinking skills.
 >
@@ -541,7 +541,7 @@ An **article** presents information or opinions on a topic for a newspaper, maga
 
 ### 4.5 Diary Entry
 
-A diary entry is **personal** — written in first person, sharing thoughts and feelings about events.
+A diary entry is **personal** - written in first person, sharing thoughts and feelings about events.
 
 **Format:**
 - Date (usually top left or top right)
@@ -557,11 +557,11 @@ A diary entry is **personal** — written in first person, sharing thoughts and 
 >
 > Today was one of the best days of my life! Our class went on a field trip to the science museum, and I got to see a real space suit up close. It was incredible to think that someone actually wore that while floating in space.
 >
-> The planetarium show was my favourite part. The whole ceiling turned into a night sky, and I felt like I was actually flying through the stars. I even got to touch a meteorite — it was heavier than I expected!
+> The planetarium show was my favourite part. The whole ceiling turned into a night sky, and I felt like I was actually flying through the stars. I even got to touch a meteorite - it was heavier than I expected!
 >
 > I wish I could go back every day. Maybe I'll become an astronaut one day. Who knows?
 >
-> — Alex
+> - Alex
 
 ### 4.6 Descriptive Paragraphs
 
@@ -605,7 +605,7 @@ The **five-paragraph essay** is a structured way to present an argument or analy
 | **4. Body 3** | Third main point + evidence/example |
 | **5. Conclusion** | Restate thesis (differently) + summarise + final thought |
 
-**Sample outline — "Should Students Have Homework Every Day?"**
+**Sample outline - "Should Students Have Homework Every Day?"**
 
 - **Introduction:** Hook (question or surprising fact) → brief context about the homework debate → **Thesis:** While homework reinforces learning, assigning it every day can be harmful to students' well-being and should be limited.
 
@@ -613,7 +613,7 @@ The **five-paragraph essay** is a structured way to present an argument or analy
 
 - **Body 2:** Research shows that excessive homework does not necessarily improve academic performance.
 
-- **Body 3:** Quality matters more than quantity — meaningful assignments are more effective than repetitive worksheets.
+- **Body 3:** Quality matters more than quantity - meaningful assignments are more effective than repetitive worksheets.
 
 - **Conclusion:** Restate thesis → homework should be purposeful and balanced → final thought: schools should focus on the quality of learning, not the quantity of assignments.
 
@@ -622,13 +622,13 @@ The **five-paragraph essay** is a structured way to present an argument or analy
 A debate presents **arguments for and against** a topic, followed by a reasoned conclusion.
 
 **Structure:**
-1. **Introduction** — State the topic and your position
+1. **Introduction** - State the topic and your position
 2. **Arguments FOR** (with evidence)
 3. **Arguments AGAINST** (acknowledging the other side)
-4. **Rebuttal** — Explain why your position is stronger
-5. **Conclusion** — Summarise and state your final opinion
+4. **Rebuttal** - Explain why your position is stronger
+5. **Conclusion** - Summarise and state your final opinion
 
-> **Sample — "School Uniforms Should Be Required"**
+> **Sample - "School Uniforms Should Be Required"**
 >
 > **Introduction:**
 > The question of whether schools should require uniforms has been debated for years. Some believe uniforms promote equality and discipline, while others argue they restrict individuality.
@@ -643,7 +643,7 @@ A debate presents **arguments for and against** a topic, followed by a reasoned 
 > While self-expression is important, school is primarily a place for learning. Students can express themselves through art, writing, sports, and extracurricular activities. Financial aid programmes can help families who cannot afford uniforms.
 >
 > **Conclusion:**
-> On balance, the benefits of school uniforms — equality, discipline, and reduced distractions — outweigh the drawbacks. Schools should consider uniform policies while also ensuring support for families in need.
+> On balance, the benefits of school uniforms - equality, discipline, and reduced distractions - outweigh the drawbacks. Schools should consider uniform policies while also ensuring support for families in need.
 
 ---
 
@@ -692,7 +692,7 @@ A struggle **between a character and an outside force.**
 
 ### 5.3 Theme
 
-The **theme** is the **central message or lesson** of a story. It is not the topic — it is what the author wants to say *about* the topic.
+The **theme** is the **central message or lesson** of a story. It is not the topic - it is what the author wants to say *about* the topic.
 
 **Common themes in literature:**
 - Courage and perseverance
@@ -741,7 +741,7 @@ A **symbol** is an object, character, or image that represents a **larger idea o
 
 **Foreshadowing** is a clue or hint early in a story that **suggests what will happen later**. It builds suspense and prepares the reader.
 
-> **Example:** "The old man warned him never to open the red door. 'Some things,' he whispered, 'are better left locked.'" — This foreshadows that the character will eventually open the red door, and something terrible will happen.
+> **Example:** "The old man warned him never to open the red door. 'Some things,' he whispered, 'are better left locked.'" - This foreshadows that the character will eventually open the red door, and something terrible will happen.
 
 **Types of foreshadowing:**
 - **Direct foreshadowing:** The narrator or a character explicitly states a warning or prediction.
@@ -816,20 +816,20 @@ A **symbol** is an object, character, or image that represents a **larger idea o
 - Enclose titles of short works: poems, articles, song titles, short stories
   - *I read the article "The Future of Space Travel."*
 
-**Punctuation with quotation marks — American convention:**
+**Punctuation with quotation marks - American convention:**
 - Commas and periods go **inside** the closing quotation mark:
   - *He said, "I love reading."*
 - Question marks and exclamation marks go **inside** if they belong to the quote, **outside** if they belong to the whole sentence:
-  - *Did she say, "I'm leaving"?* (question mark outside — the question is the whole sentence)
-  - *She asked, "Are you coming?"* (question mark inside — the question is in the quote)
+  - *Did she say, "I'm leaving"?* (question mark outside - the question is the whole sentence)
+  - *She asked, "Are you coming?"* (question mark inside - the question is in the quote)
 
 ### 6.9 Hyphen (-)
 - Joins compound words: *mother-in-law, well-known, twenty-one*
 - Joins prefix to proper noun: *pre-Columbian*
 
-### 6.10 Dash (— or –)
+### 6.10 Dash (- or -)
 - Used for emphasis or to set off information:
-  - *The one thing I wanted — the only thing — was a peaceful afternoon.*
+  - *The one thing I wanted - the only thing - was a peaceful afternoon.*
 - Interrupts a sentence more strongly than a comma.
 
 ### 6.11 Parentheses ( )
@@ -849,7 +849,7 @@ A **symbol** is an object, character, or image that represents a **larger idea o
 | **'** | Possession / contraction | Sam's book, don't |
 | **" "** | Direct speech / titles | "Hello," she said. |
 | **-** | Compound words | part-time |
-| **—** | Emphasis / interruption | It was amazing — truly amazing. |
+| **-** | Emphasis / interruption | It was amazing - truly amazing. |
 | **()** | Extra information | The dog (a golden retriever) barked. |
 
 ---
