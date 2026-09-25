@@ -48,8 +48,7 @@ def _sections(subject: str, grade: int) -> list[str]:
 
 
 _SUBJECTS_BY_GRADE = {
-    **{g: ["math", "science", "english"] for g in range(1, 6)},
-    **{g: ["math", "science"] for g in range(6, 13)},  # english 7+ lands in stage D
+    **{g: ["math", "science", "english"] for g in range(1, 13)},
 }
 
 PROMPTS = {

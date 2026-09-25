@@ -32,8 +32,8 @@ FILE_MAP = {
 
 GRADES_WITH_FILES = {
     "math": set(range(1, 13)) | {"foundation"},
-    "science": set(range(1, 8)),
-    "english": set(range(1, 7)),
+    "science": set(range(1, 13)),
+    "english": set(range(1, 13)),
 }
 
 
