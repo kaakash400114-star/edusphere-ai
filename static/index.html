@@ -15,14 +15,28 @@
   --bg:#eef2ff; --card:#ffffff; --ink:#1e1b4b; --muted:#6b7280;
   --brand:#4f46e5; --brand2:#7c3aed; --accent:#f59e0b;
   --good:#16a34a; --bad:#dc2626; --radius:18px;
+  /* stage 4 colour system: buddy tint + subject palette */
+  --buddy:#4f46e5; --buddy2:#7c3aed;
+  --c-math:#f59e0b; --c-math-bg:#fffbeb;
+  --c-science:#10b981; --c-science-bg:#ecfdf5;
+  --c-english:#ec4899; --c-english-bg:#fdf2f8;
+  --c-general:#06b6d4; --c-general-bg:#ecfeff;
+  --sun:#fde047; --sky:#38bdf8; --grape:#a855f7; --leaf:#4ade80; --coral:#fb7185;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{
   font-family:"Comic Sans MS","Segoe UI",system-ui,sans-serif;
-  background:linear-gradient(160deg,#eef2ff 0%,#fdf4ff 60%,#ecfeff 100%);
+  background:linear-gradient(160deg,#eef2ff 0%,#fdf4ff 45%,#ecfeff 75%,#fff7ed 100%);
   color:var(--ink); display:flex; flex-direction:column;
 }
+/* stage 4: playful colour blobs behind the app (fixed, non-interactive) */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(340px 340px at 8% 12%, rgba(253,224,71,.22), transparent 70%),
+    radial-gradient(420px 420px at 92% 18%, rgba(56,189,248,.18), transparent 70%),
+    radial-gradient(380px 380px at 85% 88%, rgba(168,85,247,.16), transparent 70%),
+    radial-gradient(300px 300px at 10% 85%, rgba(74,222,128,.16), transparent 70%)}
 .hidden{display:none!important}
 .screen{flex:1;display:flex;flex-direction:column;min-height:100dvh}
 
@@ -43,6 +57,11 @@ body{
 .grade-grid button{padding:9px 0;border:2px solid #e0e7ff;border-radius:10px;
   background:#fff;font-family:inherit;font-weight:700;cursor:pointer}
 .grade-grid button.sel{background:var(--brand);color:#fff;border-color:var(--brand)}
+/* stage 4: each grade-band button wears its world colour when selected */
+.grade-grid button[data-band="village"].sel{background:#4ade80;border-color:#16a34a}
+.grade-grid button[data-band="mountains"].sel{background:#f59e0b;border-color:#b45309}
+.grade-grid button[data-band="academy"].sel{background:#38bdf8;border-color:#0369a1}
+.grade-grid button[data-band="tower"].sel{background:#a855f7;border-color:#7e22ce}
 .char-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:4px;
   max-height:300px;overflow-y:auto;padding:2px}
 .char-card{border:2px solid #e0e7ff;border-radius:14px;background:#fff;
@@ -52,7 +71,22 @@ body{
 .char-card .tg{font-size:.68rem;color:var(--muted);display:block;
   line-height:1.25;margin-top:2px}
 .char-card:hover{border-color:#a5b4fc}
-.char-card.sel{border-color:var(--brand);background:#eef2ff}
+.char-card.sel{border-color:var(--buddy);background:#eef2ff;box-shadow:0 0 0 3px rgba(79,70,229,.15)}
+/* stage 4: buddy accent tints (one colour identity per buddy) */
+.char-card[data-buddy="leo"]{--bc:#f59e0b}
+.char-card[data-buddy="miko"]{--bc:#64748b}
+.char-card[data-buddy="pip"]{--bc:#e11d48}
+.char-card[data-buddy="chintu"]{--bc:#0ea5e9}
+.char-card[data-buddy="zara"]{--bc:#a855f7}
+.char-card[data-buddy="toko"]{--bc:#14b8a6}
+.char-card[data-buddy="kiko"]{--bc:#06b6d4}
+.char-card[data-buddy="bip"]{--bc:#64748b}
+.char-card[data-buddy="dodo"]{--bc:#f97316}
+.char-card[data-buddy="nova"]{--bc:#8b5cf6}
+.char-card[data-buddy] .em{background:color-mix(in srgb, var(--bc,#4f46e5) 14%, white);
+  border-radius:50%;width:44px;height:44px;display:inline-flex;
+  align-items:center;justify-content:center;line-height:1}
+.char-card[data-buddy].sel{border-color:var(--bc,#4f46e5)}
 .buddy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px;
   max-height:52dvh;overflow-y:auto}
 .buddy-grid .char-card{padding:8px 4px}
@@ -129,9 +163,13 @@ body{
 .titles{flex:1;min-width:0}
 .buddy-name{font-weight:800}
 .kid-line{font-size:.75rem;color:var(--muted)}
-.badges{display:flex;gap:6px;align-items:center}
+.badges{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:62%}
 .badge{background:#fef3c7;border-radius:999px;padding:4px 10px;font-size:.8rem;font-weight:700}
 .badge-btn{border:none;cursor:pointer;font-family:inherit}
+/* stage 4: brighter badge trio */
+#star-badge{background:linear-gradient(90deg,#fef08a,#fde047);color:#713f12}
+#points-badge{background:linear-gradient(90deg,#e0f2fe,#bae6fd);color:#0c4a6e}
+#streak-badge{background:linear-gradient(90deg,#ffedd5,#fed7aa);color:#7c2d12}
 .speak-ring{animation:pulse 1.4s infinite;border-radius:50%}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(79,70,229,.45)}
   70%{box-shadow:0 0 0 14px rgba(79,70,229,0)}100%{box-shadow:0 0 0 0 rgba(79,70,229,0)}}
@@ -142,9 +180,15 @@ button:disabled{opacity:.5;cursor:default}
 .msg{max-width:85%;padding:11px 14px;border-radius:var(--radius);
   font-size:.98rem;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}
 .msg.bot{background:#fff;border:1px solid #e0e7ff;border-bottom-left-radius:6px;align-self:flex-start}
-.msg.me{background:linear-gradient(90deg,var(--brand),var(--brand2));
+.msg.me{background:linear-gradient(90deg,var(--buddy),var(--buddy2));
   color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
 .msg.bot b{color:var(--brand)}
+/* stage 4: subject-tinted practice & story rows */
+.pt-row{border-left:6px solid var(--c-general)}
+.pt-row[data-subject="math"]{border-left-color:var(--c-math);background:var(--c-math-bg)}
+.pt-row[data-subject="science"]{border-left-color:var(--c-science);background:var(--c-science-bg)}
+.pt-row[data-subject="english"]{border-left-color:var(--c-english);background:var(--c-english-bg)}
+.pt-row[data-subject="general"]{border-left-color:var(--c-general);background:var(--c-general-bg)}
 .typing{display:flex;gap:4px;padding:14px}
 .typing span{width:8px;height:8px;border-radius:50%;background:#a5b4fc;
   animation:blink 1s infinite}
@@ -198,6 +242,11 @@ button:disabled{opacity:.5;cursor:default}
 .game-card .nm{font-weight:800;font-size:.9rem}
 .game-card .tg{font-size:.7rem;color:var(--muted);display:block;margin-top:2px}
 .game-card:hover{border-color:var(--brand)}
+/* stage 4: subject-tinted game cards */
+.game-card[data-subject="math"]{border-color:var(--c-math);background:var(--c-math-bg)}
+.game-card[data-subject="english"]{border-color:var(--c-english);background:var(--c-english-bg)}
+.game-card[data-subject="science"]{border-color:var(--c-science);background:var(--c-science-bg)}
+.game-card[data-subject="general"]{border-color:var(--c-general);background:var(--c-general-bg)}
 .arena{position:relative}
 .arena-big{font-size:2.2rem;font-weight:800;text-align:center;margin:8px 0}
 .arena-sub{text-align:center;color:var(--muted);font-size:.85rem;min-height:1.2em}
@@ -597,6 +646,13 @@ function worldForProfileLocal(p) {
   return "tower";
 }
 
+function worldForGradeBand(g) {
+  if (g >= 1 && g <= 2) return "village";
+  if (g >= 3 && g <= 5) return "mountains";
+  if (g >= 6 && g <= 8) return "academy";
+  return "tower";
+}
+
 const SUGGESTIONS = {
   generic: ["Explain fractions 🍕", "Why is the sky blue? 🌈",
     "Help with grammar ✏️", "Give me a fun quiz! 🎯"],
@@ -608,6 +664,8 @@ function buildOnboard() {
   for (let g = 1; g <= 12; g++) {
     const b = document.createElement("button");
     b.textContent = g;
+    // stage 4: the button wears its world colour when chosen
+    b.dataset.band = worldForGradeBand(g);
     b.onclick = () => {
       state.grade = g;
       [...gg.children].forEach(x => x.classList.remove("sel"));
@@ -622,6 +680,7 @@ function buildOnboard() {
       const card = document.createElement("button");
       card.type = "button";
       card.className = "char-card";
+      card.dataset.buddy = c.id;
       card.innerHTML = `<span class="em">${c.emoji}</span>` +
         `<span class="nm">${c.name}</span><span class="tg">${c.tagline}</span>`;
       card.onclick = () => {
@@ -927,6 +986,7 @@ async function openBuddyModal() {
     const card = document.createElement("button");
     card.type = "button";
     card.className = "char-card" + (c.id === cur ? " sel" : "");
+    card.dataset.buddy = c.id;
     card.innerHTML = `<span class="em">${c.emoji}</span>` +
       `<span class="nm">${c.name}</span><span class="tg">${c.special || c.tagline}</span>`;
     card.onclick = () => showBuddyInfo(c.id, false);
@@ -1256,6 +1316,7 @@ function openGames() {
     const card = document.createElement("button");
     card.type = "button";
     card.className = "game-card";
+    card.dataset.subject = GAME_TINT[id] || "general";
     card.innerHTML = `<span class="em">${g.emoji}</span><span class="nm">${g.name}</span>` +
       `<span class="tg">${g.tag}</span>`;
     card.onclick = () => startGame(id);
@@ -1618,6 +1679,8 @@ function wireSettings() {
 // REWORK — FREE PRACTICE (replaces sticker album + quests + but-why)
 // ======================================================================
 const SUBJ_EMOJI = { math: "🔢", science: "🔬", english: "📖", general: "🌏" };
+// stage 4: game cards get subject colours too
+const GAME_TINT = { math_sprint: "math", spelling_bee: "english", boss_battle: "math", quiz_quest: "general" };
 const STICKER_META = {};   // removed with stickers; kept empty for safety
 
 async function openPractice() {
@@ -1632,6 +1695,7 @@ async function openPractice() {
   (d.topics || []).forEach(t => {
     const row = document.createElement("div");
     row.className = "pt-row" + (doneIds.has(t.id) ? " done" : "");
+    row.dataset.subject = t.subject;
     row.innerHTML = `<span class="em">${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
       `<div><div class="tt">${t.title}</div><div class="tp">${t.subject}</div></div>` +
       `<span class="pts">+${t.points} 💠</span>`;
