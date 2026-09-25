@@ -83,32 +83,7 @@ def voice_public(buddy_id: str) -> dict:
     return dict(v)
 
 
-# stage 9 magic extras -----------------------------------------------
-
-WHY_RULES = (
-    "BUT WHY MODE: The child may keep asking 'but why?' forever. Every "
-    "'why' gets a real, honest, one-level-deeper answer in one or two "
-    "short spoken sentences — never 'because I said so', never 'that's "
-    "just how it is'. After 4 levels deep, marvel together at how deep "
-    "the question goes and offer to find out more tomorrow. Stay warm "
-    "and delighted that the child keeps asking.\n"
-)
-
-QUEST_POOL = [
-    {"id": "count10", "emoji": "🔢", "title": "Count to 10 out loud",
-     "hint": "Say your numbers 1 to 10 to your buddy!"},
-    {"id": "abcsong", "emoji": "🔤", "title": "Sing the ABC song",
-     "hint": "Sing it to your buddy — it loves songs!"},
-    {"id": "skywatch", "emoji": "☁️", "title": "Look at the sky",
-     "hint": "Look outside, then tell your buddy what the sky looks like."},
-    {"id": "teachback", "emoji": "🧠", "title": "Teach someone something",
-     "hint": "Teach a family member one thing you learned today, then "
-             "tell your buddy how it went!"},
-    {"id": "naturefind", "emoji": "🍂", "title": "Find a leaf or stone",
-     "hint": "Find one outside and describe it to your buddy."},
-    {"id": "drawmath", "emoji": "✏️", "title": "Draw 3 + 2",
-     "hint": "Draw it on paper, count the shapes, tell your buddy the answer!"},
-]
+# stage 9 read-along + interactive stories (but-why mode REMOVED in rework)
 
 STORIES: dict[str, dict] = {
     "lion_cub": {
@@ -235,7 +210,3 @@ def story_public(sid: str) -> dict:
 def stories_roster() -> list[dict]:
     return [{"id": sid, **{k: s[k] for k in ("title", "emoji", "character")}}
             for sid, s in STORIES.items()]
-
-
-def quest_public() -> list[dict]:
-    return [dict(q) for q in QUEST_POOL]

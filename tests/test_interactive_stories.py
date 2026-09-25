@@ -51,7 +51,7 @@ def test_beats_flow_and_final_moral():
             assert d["moral"]
             assert "THE END" in d["spoken"] or d["moral"] in d["spoken"]
     prof = client.get(f"/api/profile/{pid}").json()["profile"]
-    assert prof["stickers"].get("story_brave_mouse", 0) == 1
+    assert "stickers" not in prof  # stickers removed in the rework
     import pathlib
     pathlib.Path(f"data/profiles/{pid}.json").unlink(missing_ok=True)
 

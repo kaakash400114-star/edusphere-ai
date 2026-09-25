@@ -18,7 +18,9 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from . import knowledge, levels
+from . import knowledge
+
+PRACTICE_SPLIT = 6  # free practice: topics are NOT grouped into levels anymore
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -44,7 +46,7 @@ def _sections(subject: str, grade: int) -> list[str]:
                                  "conclusion", "summary", "index"):
                 continue
             out.append(title)
-    if len(out) < levels.LEVELS_PER_GRADE:
+    if len(out) < PRACTICE_SPLIT:
         # thin file: fall back to ### subsections so every grade still gets
         # a full task pool (grades 3-5 English store topics as ### headings)
         out = []
@@ -77,7 +79,7 @@ def _subject_file_name(subject: str, grade: int) -> str:
 
 
 def _grade_tasks(grade: int) -> list[dict]:
-    """All tasks for a grade: one per curriculum section, subject-cycled."""
+    """All free practice topics for a grade: one per curriculum section."""
     subs = _SUBJECTS_BY_GRADE.get(grade, ["math"])
     streams = []
     for s in subs:
@@ -89,22 +91,19 @@ def _grade_tasks(grade: int) -> list[dict]:
             })
     if not streams:
         return []
-    # deterministic order: round-robin subjects so levels get variety
+    # deterministic order: round-robin subjects so the list gets variety
     streams.sort(key=lambda t: (t["subject"], ))
-    n_levels = levels.LEVELS_PER_GRADE
     tasks = []
     for idx, t in enumerate(streams):
-        lvl = (idx % n_levels) + 1
         s = t["subject"]
         tasks.append({
             "id": f"{s}_{idx}_{t['file']}",
             "grade": grade,
-            "level": lvl,
             "subject": s,
             "title": t["title"][:80],
             "prompt": PROMPTS[s].format(topic=t["title"].lower())[:160],
             "points": 10,
-            "mode": "chat",   # chat-based task: buddy teaches + quizzes
+            "mode": "chat",   # chat-based topic: buddy teaches + quizzes
         })
     return tasks
 
@@ -118,16 +117,7 @@ def grade_tasks(grade: int) -> list[dict]:
     return _CACHE[g]
 
 
-def level_tasks(grade: int, level: int) -> list[dict]:
-    lvl = max(1, min(levels.LEVELS_PER_GRADE, int(level)))
-    return [t for t in grade_tasks(grade) if t["level"] == lvl]
-
-
-def task_count(grade: int, level: int) -> int:
-    return len(level_tasks(grade, level))
-
-
-def task_by_id(grade: int, task_id: str) -> dict | None:
+def topic_by_id(grade: int, task_id: str) -> dict | None:
     for t in grade_tasks(grade):
         if t["id"] == task_id:
             return t

@@ -81,31 +81,27 @@ def test_remember_and_report():
 
 
 # ---------- stage 5: games ----------
-def test_game_result_awards_stars_and_sticker():
+def test_game_result_awards_stars_and_practice_event():
     pid = _mkprofile("Gamer", 4)
     r = client.post("/api/game/result", json={
         "pid": pid, "game": "math_sprint", "score": 7, "stars": 3})
     assert r.status_code == 200
     prof = r.json()["profile"]
     assert prof["stars"] >= 3
-    assert prof["stickers"].get("math_sprint", 0) >= 1
+    assert not hasattr(prof, "stickers") and "stickers" not in prof
+    # one practice event recorded for the honest improvement rate
+    assert prof["practice_log"], "game result missing from practice_log"
+    ev = prof["practice_log"][-1]
+    assert ev["subject"] == "math" and ev["correct"] == 7 and ev["total"] == 7
 
 
-# ---------- stage 6: stickers ----------
-def test_sticker_award():
-    pid = _mkprofile("Sticky", 1)
-    r = client.post(f"/api/profile/{pid}/sticker", json={"sticker": "chat"})
-    assert r.status_code == 200
-    assert r.json()["profile"]["stickers"]["chat"] == 1
-
-
-# ---------- stage 7: weekly report ----------
-def test_report_has_week_and_stickers():
+# ---------- stage 7: weekly report (stickers gone, points in) ----------
+def test_report_has_week_and_points():
     pid = _mkprofile("Reporty", 5)
     client.post("/api/game/result", json={
         "pid": pid, "game": "quiz_quest", "score": 5, "stars": 2})
     r = client.post("/api/parent/report", json={"pid": pid, "pin": "1234"})
     assert r.status_code == 200
     rep = r.json()["report"]
-    assert "week" in rep and "stickers" in rep
-    assert rep["stickers"].get("quiz_quest", 0) >= 1
+    assert "week" in rep and "points" in rep
+    assert "stickers" not in rep

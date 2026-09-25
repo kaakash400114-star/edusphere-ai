@@ -46,12 +46,13 @@ def create_profile(name: str, grade: int, parent_pin: str,
         "consent_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "stars": 0,
+        "points": 0,
         "streak": {"count": 0, "last_day": ""},
         "weak_areas": {},   # topic -> miss count
         "strong_areas": {},  # topic -> hit count
         "topics_covered": [],
         "memories": [],      # stage 2: life details the buddy remembers
-        "stickers": {},      # stage 6: sticker album  sticker-id -> count
+        "practice_done": {},  # rework: topic-id -> {times: [dates]}
         "log": [],           # last N activity entries (capped)
     }
     _path(pid).write_text(json.dumps(profile, indent=2), encoding="utf-8")
@@ -126,13 +127,39 @@ def remember(pid: str, text: str) -> dict | None:
 
 
 def award_sticker(pid: str, sticker_id: str) -> dict | None:
-    """Stage 6: drop a sticker into the child's album."""
+    """REMOVED (rework): stickers are gone. Kept as a no-op so any stray
+    caller cannot crash — returns the profile unchanged."""
+    return get_profile(pid)
+
+
+def get_points(raw_or_pid) -> int:
+    """The kid's POINTS total (honest count of finished practice topics)."""
+    if isinstance(raw_or_pid, dict):
+        return raw_or_pid.get("points", 0)
+    raw = _raw(raw_or_pid)
+    return raw.get("points", 0) if raw else 0
+
+
+def log_practice(pid: str, subject: str, correct: int, total: int,
+                 source: str = "") -> dict | None:
+    """One PRACTICE EVENT for the honest improvement rate (Stage 2).
+
+    subject: math / science / english / general
+    correct/total: right answers out of questions attempted.
+    """
     p = _path(pid)
     if not p.exists():
         return None
     raw = json.loads(p.read_text(encoding="utf-8"))
-    stickers = raw.setdefault("stickers", {})
-    stickers[sticker_id] = stickers.get(sticker_id, 0) + 1
+    events = raw.setdefault("practice_log", [])
+    events.append({
+        "t": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "subject": (subject or "general")[:20],
+        "correct": max(0, int(correct)),
+        "total": max(1, int(total)),
+        "source": (source or "")[:40],
+    })
+    raw["practice_log"] = events[-300:]  # ~a term of daily practice
     p.write_text(json.dumps(raw, indent=2), encoding="utf-8")
     return _public(raw)
 
@@ -179,11 +206,11 @@ def parent_report(pid: str) -> dict | None:
     days = sorted(per_day.items())[-7:]  # last 7 active days
     return {
         "name": raw["name"], "grade": raw["grade"], "stars": raw["stars"],
+        "points": raw.get("points", 0),
         "streak": raw.get("streak", {}), "weak_areas": weak,
         "strong_areas": strong,
         "recent_activity": [e for e in raw.get("log", [])[-30:]],
         "topics_covered": raw.get("topics_covered", [])[-20:],
-        "stickers": raw.get("stickers", {}),
         "week": {"days": days, "activities": sum(v for _, v in days)},
     }
 

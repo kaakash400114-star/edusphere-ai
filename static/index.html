@@ -213,15 +213,14 @@ button:disabled{opacity:.5;cursor:default}
 .timer-bar{height:10px;background:#e0e7ff;border-radius:999px;overflow:hidden;max-width:280px;margin:6px auto}
 .timer-fill{height:100%;background:linear-gradient(90deg,var(--good),#a3e635);transition:width .95s linear}
 
-/* stage 6: sticker album */
-.sticker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
-.sticker{background:#fefce8;border:2px dashed #fde047;border-radius:14px;
-  padding:10px 4px;text-align:center;position:relative}
-.sticker .em{font-size:1.8rem;display:block}
-.sticker .nm{font-size:.65rem;font-weight:700;margin-top:2px}
-.sticker .ct{position:absolute;top:-6px;right:-6px;background:var(--brand);color:#fff;
-  border-radius:999px;font-size:.65rem;font-weight:800;padding:2px 6px}
-.sticker-empty{color:var(--muted);font-size:.85rem;text-align:center;padding:14px}
+/* rework: free practice topics (replaces sticker album) */
+#task-banner{display:flex;align-items:center;gap:8px;background:#eef2ff;
+  border:2px solid var(--brand);border-radius:14px;padding:8px 12px;margin:0 12px 8px}
+#task-banner .tb-text{font-weight:800;font-size:.85rem;flex:1}
+#task-banner button{border:none;border-radius:10px;font-family:inherit;
+  font-weight:700;padding:8px 12px;cursor:pointer}
+#task-banner #task-done{background:#dcfce7}
+#task-banner #task-drop{background:#fee2e2}
 
 /* stage 8: language pills */
 .lang-pill{border:1.5px solid #c7d2fe;background:#fff;color:var(--brand);
@@ -230,14 +229,7 @@ button:disabled{opacity:.5;cursor:default}
 .lang-pill.on{background:linear-gradient(90deg,var(--brand),var(--brand2));
   color:#fff;border-color:transparent}
 
-/* stage 9: quests + stories */
-.quest-row{display:flex;align-items:center;gap:10px;border:2px solid #e0e7ff;
-  border-radius:14px;padding:10px 12px;margin:8px 0;background:#fff}
-.quest-row .em{font-size:1.5rem}
-.quest-row .qt{font-weight:800;font-size:.9rem}
-.quest-row .qh{font-size:.75rem;color:var(--muted)}
-.quest-row button{margin-left:auto;border:none;border-radius:10px;
-  background:#dcfce7;font-family:inherit;font-weight:700;padding:8px 12px;cursor:pointer}
+/* stage 9: stories */
 .story-card{display:flex;align-items:center;gap:10px;border:2px solid #e0e7ff;
   border-radius:14px;padding:10px 12px;margin:8px 0;background:#fff;cursor:pointer}
 .story-card .em{font-size:1.5rem}
@@ -257,26 +249,15 @@ button:disabled{opacity:.5;cursor:default}
 .week-bars .bar span{position:absolute;bottom:-20px;left:0;right:0;text-align:center;
   font-size:.6rem;color:var(--muted)}
 
-/* stage B: levels */
-.level-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
-.level-card{border:2px solid #e0e7ff;border-radius:16px;background:#fff;
-  padding:12px 6px;text-align:center;cursor:pointer;font-family:inherit;position:relative}
-.level-card .ln{font-weight:800;font-size:.85rem}
-.level-card .lst{font-size:.68rem;color:var(--muted);display:block;margin-top:2px}
-.level-card .lprice{font-size:.7rem;font-weight:700;margin-top:4px;display:block}
-.level-card.unlocked:hover{border-color:var(--brand)}
-.level-card.completed{border-color:#86efac;background:#f0fdf4}
-.level-card.current{border-color:var(--brand);background:#eef2ff}
-.level-card.locked{opacity:.55;cursor:default}
-.level-card .lock{position:absolute;top:6px;right:8px;font-size:.8rem}
-.task-row{display:flex;align-items:center;gap:10px;border:2px solid #e0e7ff;
+/* rework: free practice (replaces paid levels) */
+.pt-row{display:flex;align-items:center;gap:10px;border:2px solid #e0e7ff;
   border-radius:14px;padding:10px 12px;margin:8px 0;background:#fff}
-.task-row .em{font-size:1.3rem}
-.task-row .tt{font-weight:800;font-size:.85rem}
-.task-row .tp{font-size:.75rem;color:var(--muted)}
-.task-row .pts{margin-left:auto;font-weight:800;font-size:.8rem;color:var(--brand);white-space:nowrap}
-.task-row.done{opacity:.6;border-color:#86efac}
-.task-row button{margin-left:8px;border:none;border-radius:10px;
+.pt-row .em{font-size:1.3rem}
+.pt-row .tt{font-weight:800;font-size:.85rem}
+.pt-row .tp{font-size:.75rem;color:var(--muted)}
+.pt-row .pts{margin-left:auto;font-weight:800;font-size:.8rem;color:var(--brand);white-space:nowrap}
+.pt-row.done{opacity:.6;border-color:#86efac}
+.pt-row button{margin-left:8px;border:none;border-radius:10px;
   background:#dcfce7;font-family:inherit;font-weight:700;padding:8px 12px;cursor:pointer;white-space:nowrap}
 #task-banner{display:flex;align-items:center;gap:8px;max-width:820px;margin:0 auto 8px;
   background:#fef3c7;border:2px solid #fde047;border-radius:14px;padding:8px 12px;
@@ -372,15 +353,13 @@ button:disabled{opacity:.5;cursor:default}
     </div>
     <div class="badges">
       <span class="badge" id="star-badge">⭐ 0</span>
+      <span class="badge" id="points-badge" title="Points from practice">💠 0</span>
       <span class="badge" id="streak-badge">🔥 0</span>
       <button id="world-chip" class="mode-chip" title="The Four Worlds">🌍 Worlds</button>
-      <button id="levels-btn" class="badge badge-btn" title="Levels & points">🪜 Levels</button>
+      <button id="practice-btn" class="badge badge-btn" title="Free practice topics">🧭 Practice</button>
       <button id="mode-chip" class="mode-chip hidden" title="Special mode"></button>
-      <button id="why-chip" class="mode-chip" title="Unlimited But-Why mode">❓ But why?</button>
       <button id="games-btn" class="badge badge-btn" title="Games arcade">🎮 Games</button>
-      <button id="quests-btn" class="badge badge-btn" title="Home quests">🏠 Quests</button>
       <button id="stories-btn" class="badge badge-btn" title="Read-along stories">📚 Stories</button>
-      <button id="stickers-btn" class="badge badge-btn" title="Sticker album">🪅 Stickers</button>
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
     </div>
@@ -452,16 +431,13 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </div>
 
-<!-- LEVELS MODAL (stage B) -->
-<div id="levels-modal" class="modal hidden">
+<!-- PRACTICE MODAL (rework: free topics, replaces levels) -->
+<div id="practice-modal" class="modal hidden">
   <div class="modal-card" style="width:min(560px,96vw)">
-    <button class="modal-x" id="levels-x">✕</button>
-    <div id="levels-view">
-      <h2>🪜 Your Levels</h2>
-      <p class="modal-sub" id="levels-points">Points: 💠 0 · finish tasks to earn, spend to unlock levels</p>
-      <div id="level-grid" class="level-grid"></div>
-      <div id="level-detail" class="hidden"></div>
-    </div>
+    <button class="modal-x" id="practice-x">✕</button>
+    <h2>🧭 Practice</h2>
+    <p class="modal-sub" id="practice-points">Points: 💠 0 · every topic is free — finish one to earn points!</p>
+    <div id="practice-list"></div>
   </div>
 </div>
 
@@ -469,31 +445,11 @@ button:disabled{opacity:.5;cursor:default}
   <div class="modal-card">
     <button class="modal-x" id="games-x">✕</button>
     <h2>🎮 Dodo's Games Arcade</h2>
-    <p class="modal-sub">WELCOME TO THE ARENA! Win stars ⭐ and stickers 🪅</p>
+    <p class="modal-sub">WELCOME TO THE ARENA! Win stars ⭐ and points 💠</p>
     <div id="arena-view">
       <div id="game-grid" class="arcade-grid"></div>
     </div>
     <div id="arena-play" class="arena hidden"></div>
-  </div>
-</div>
-
-<!-- STICKER ALBUM MODAL (stage 6) -->
-<div id="stickers-modal" class="modal hidden">
-  <div class="modal-card">
-    <button class="modal-x" id="stickers-x">✕</button>
-    <h2>🪅 My Sticker Album</h2>
-    <p class="modal-sub">Every win drops a sticker here!</p>
-    <div id="sticker-grid" class="sticker-grid"></div>
-  </div>
-</div>
-
-<!-- QUESTS MODAL (stage 9) -->
-<div id="quests-modal" class="modal hidden">
-  <div class="modal-card">
-    <button class="modal-x" id="quests-x">✕</button>
-    <h2>🏠 Home Quests</h2>
-    <p class="modal-sub">Real-world missions — 2 stars ⭐ + a sticker each!</p>
-    <div id="quest-list"></div>
   </div>
 </div>
 
@@ -806,7 +762,6 @@ async function send(preset) {
       if (data.memory_saved) {
         addMsg("🧠 (I'll remember that: " + data.memory_saved + ")", "bot");
       }
-      // stage 3: react on the face — cheering when the child is right
       const a = (data.answer || "").toLowerCase();
       if (/\b(correct|right|yes!|amazing|brilliant|roar|great job|well done)\b/.test(a))
         faceMood("celebrate", 2);
@@ -815,7 +770,6 @@ async function send(preset) {
       else faceMood("excited", 1.6);
       // stage 1: speak the answer aloud; walkie-talkie relistens after
       speak(data.answer, { autoListen: Buddy.autoListen, rawText: data.answer });
-      dropSticker("chat");
     }
   } catch (e) {
     t.textContent = "Network hiccup — check the connection and try again!";
@@ -939,20 +893,15 @@ async function openReport() {
   const maxDay = Math.max(1, ...days.map(d => d[1]));
   const bars = days.map(([d, n]) =>
     `<div class="bar" style="height:${Math.round(n / maxDay * 70) + 4}px" title="${d}: ${n} activities"><span>${d.slice(5)}</span></div>`).join("");
-  const stickers = Object.entries(rep.stickers || {});
-  const stickerPills = stickers.map(([id, n]) => {
-    const [em, nm] = stickerMeta(id);
-    return `<span class="pill">${em} ${nm}${n > 1 ? " ×" + n : ""}</span>`;
-  }).join("") || "<i>none yet</i>";
   $("parent-report").innerHTML = `
     <h3>${rep.name} · Grade ${rep.grade}</h3>
-    <p>⭐ ${rep.stars} stars · 🔥 ${rep.streak.count || 0}-day streak ·
+    <p>⭐ ${rep.stars} stars · 💠 ${rep.points || 0} points ·
+       🔥 ${rep.streak.count || 0}-day streak ·
        📅 ${rep.week.activities || 0} activities this week</p>
     <div class="report-sec"><h3>Last 7 active days</h3>
       ${bars ? `<div class="week-bars">${bars}</div>` : "<i>no activity yet</i>"}</div>
     <div class="report-sec"><h3>Needs practice</h3>${pills(rep.weak_areas, "weak")}</div>
     <div class="report-sec"><h3>Strong areas</h3>${pills(rep.strong_areas, "strong")}</div>
-    <div class="report-sec"><h3>Stickers earned</h3>${stickerPills}</div>
     <div class="report-sec"><h3>Recent topics</h3>${rep.topics_covered.slice(-10)
       .map(t => `<span class="pill">${t}</span>`).join("") || "<i>none yet</i>"}</div>`;
   $("parent-pin-row").classList.add("hidden");
@@ -1288,7 +1237,7 @@ async function postGame(id, score, stars) {
     state.profile = d.profile;
     $("star-badge").textContent = "⭐ " + state.profile.stars;
     flyStar($("star-badge"));
-    addMsg(`${GAMES[id].emoji} ${GAMES[id].name}: ${score} points — +${stars} ⭐ and a new sticker!`, "bot");
+    addMsg(`${GAMES[id].emoji} ${GAMES[id].name}: ${score} points — +${stars} ⭐!`, "bot");
   } catch (e) {}
 }
 
@@ -1488,119 +1437,82 @@ function checkBoss() {
 }
 
 // ======================================================================
-// STAGE 6 — STICKER ALBUM
+// REWORK — FREE PRACTICE (replaces sticker album + quests + but-why)
 // ======================================================================
-const STICKER_META = {
-  chat: ["💬", "Chatty buddy"], math_sprint: ["🏁", "Math Sprint"],
-  quiz_quest: ["🗺️", "Quiz Quest"], spelling_bee: ["🐝", "Spelling Bee"],
-  boss_battle: ["🐲", "Boss Battle"], story: ["📚", "Story time"],
-  why: ["❓", "But-Why star"], courage: ["🦁", "Courage"],
-};
-// Stage F: rarity levels for level stickers
-function stickerRarity(id) {
-  if (id.endsWith("_master_epic")) return "epic";
-  if (id.includes("_rare") || id.startsWith("world_")) return "rare";
-  if (/^grade\d+_level\d+$/.test(id)) return "common";
-  return "none";
-}
-const RARITY_STYLE = {
-  common:  { ring: "#e0e7ff", label: "Common" },
-  rare:    { ring: "#7dd3fc", label: "Rare" },
-  epic:    { ring: "#f0abfc", label: "EPIC" },
-  none:    { ring: "#e0e7ff", label: "" },
-};
-function stickerMeta(id) {
-  if (STICKER_META[id]) return STICKER_META[id];
-  const m = id.match(/^grade(\d+)_level(\d+)$/);
-  if (m) return ["🪜", "Grade " + m[1] + " · Level " + m[2]];
-  if (id.endsWith("_master_epic")) {
-    const g = id.match(/^grade(\d+)/);
-    return ["👑", "Grade " + (g ? g[1] : "") + " Master"];
-  }
-  if (id.startsWith("world_")) {
-    const names = { village: "Explorer Village", mountains: "Champion Mountains",
-      academy: "Scholar Academy", tower: "Wisdom Tower" };
-    const w = Object.keys(names).find(k => id.includes(k));
-    return ["🌍", (names[w] || "World") + " Star"];
-  }
-  if (id.startsWith("quest_")) return ["🏠", id.replace("quest_", "").replace(/_/g, " ")];
-  return ["🌟", id];
-}
-async function openStickers() {
-  const r = await fetch("/api/profile/" + state.pid);
-  if (r.ok) state.profile = (await r.json()).profile;
-  const grid = $("sticker-grid");
-  grid.innerHTML = "";
-  const s = (state.profile && state.profile.stickers) || {};
-  const ids = Object.keys(s);
-  if (!ids.length) {
-    grid.innerHTML = `<div class="sticker-empty">No stickers yet! Play a game 🎮 or finish a quest 🏠 to win your first one!</div>`;
-  } else {
-    ids.sort((a, b) => {
-      const order = { epic: 0, rare: 1, common: 2, none: 3 };
-      const ra = stickerRarity(a), rb = stickerRarity(b);
-      if (order[ra] !== order[rb]) return order[ra] - order[rb];
-      return a.localeCompare(b);
-    });
-    ids.forEach(id => {
-      const [em, nm] = stickerMeta(id);
-      const rar = stickerRarity(id);
-      const st = RARITY_STYLE[rar] || RARITY_STYLE.none;
-      const d = document.createElement("div");
-      d.className = "sticker";
-      d.style.borderColor = st.ring;
-      d.innerHTML = `<span class="em">${em}</span><span class="nm">${nm}</span>` +
-        (st.label ? `<span class="ct" style="background:${st.ring};color:#1e1b4b">${st.label}</span>` : "") +
-        (s[id] > 1 ? `<span class="ct">×${s[id]}</span>` : "");
-      grid.appendChild(d);
-    });
-  }
-  $("stickers-modal").classList.remove("hidden");
-}
-function dropSticker(kind) {
-  // award chat sticker for first chat of the session (client-side guard)
-  if (kind === "chat") {
-    if (state.chatStickerDone) return;
-    state.chatStickerDone = true;
-  }
-  fetch(`/api/profile/${state.pid}/sticker`, {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ sticker: kind }),
-  }).then(r => r.ok ? r.json() : null).then(d => {
-    if (d) { state.profile = d.profile; faceMood("celebrate", 1.6); }
-  }).catch(() => {});
-}
+const SUBJ_EMOJI = { math: "🔢", science: "🔬", english: "📖", general: "🌏" };
+const STICKER_META = {};   // removed with stickers; kept empty for safety
 
-// ======================================================================
-// STAGE 9 — QUESTS + STORIES + BUT-WHY
-// ======================================================================
-async function openQuests() {
-  const r = await fetch("/api/quests");
+async function openPractice() {
+  const r = await fetch("/api/practice/" + state.pid);
+  if (!r.ok) return;
   const d = await r.json();
-  const list = $("quest-list");
+  $("practice-points").textContent =
+    `Grade ${d.grade} · Points: 💠 ${d.points} — every topic is free, finish one to earn!`;
+  const list = $("practice-list");
   list.innerHTML = "";
-  (d.quests || []).forEach(q => {
+  const doneIds = new Set(Object.keys(state.profile.practice_done || {}));
+  (d.topics || []).forEach(t => {
     const row = document.createElement("div");
-    row.className = "quest-row";
-    row.innerHTML = `<span class="em">${q.emoji}</span><div>` +
-      `<div class="qt">${q.title}</div><div class="qh">${q.hint}</div></div>`;
+    row.className = "pt-row" + (doneIds.has(t.id) ? " done" : "");
+    row.innerHTML = `<span class="em">${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
+      `<div><div class="tt">${t.title}</div><div class="tp">${t.subject}</div></div>` +
+      `<span class="pts">+${t.points} 💠</span>`;
     const b = document.createElement("button");
-    b.textContent = "Done! ✓";
-    b.onclick = async () => {
-      const r2 = await fetch(`/api/profile/${state.pid}/quest/${q.id}`, { method: "POST" });
-      if (!r2.ok) return;
-      const d2 = await r2.json();
-      state.profile = d2.profile;
-      $("star-badge").textContent = "⭐ " + state.profile.stars;
-      flyStar($("star-badge"));
-      faceMood("celebrate", 2);
-      row.remove();
-      speak("Quest complete! Two stars for you!", {});
-    };
+    b.textContent = doneIds.has(t.id) ? "Practice again ▶" : "Start ▶";
+    b.onclick = () => startPractice(t);
     row.appendChild(b);
     list.appendChild(row);
   });
-  $("quests-modal").classList.remove("hidden");
+  if (!(d.topics || []).length)
+    list.innerHTML = "<i>No topics here yet — more coming!</i>";
+  $("practice-modal").classList.remove("hidden");
+}
+
+// ---- practice banner in chat: the buddy teaches the topic, then Done ----
+let practiceTopic = null;
+async function startPractice(t) {
+  $("practice-modal").classList.add("hidden");
+  practiceTopic = t;
+  const old = $("task-banner");
+  if (old) old.remove();
+  const banner = document.createElement("div");
+  banner.id = "task-banner";
+  banner.innerHTML = `<span>${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
+    `<span class="tb-text">Practice: ${t.title}</span>` +
+    `<button id="task-done">Done ✓ +${t.points} 💠</button>` +
+    `<button id="task-drop">✕</button>`;
+  $("chatapp").insertBefore(banner, $("messages"));
+  addMsg(`🎯 Let's practice: ${t.title}. ${t.prompt}`, "bot");
+  speak(`Let's practice! ${t.title}. ${t.prompt}`, {});
+  $("task-done").onclick = () => finishPractice(true);
+  $("task-drop").onclick = () => { banner.remove(); addMsg("Practice saved for later — it stays in your list.", "bot"); };
+}
+
+async function finishPractice(done) {
+  const banner = $("task-banner");
+  if (!done || !practiceTopic) { if (banner) banner.remove(); return; }
+  const r = await fetch(`/api/practice/${state.pid}/${practiceTopic.id}/done`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ topic_id: practiceTopic.id }),
+  });
+  if (!r.ok) { const d = await r.json(); addMsg("Hmm — " + (d.detail || "try again"), "bot");
+    if (banner) banner.remove(); return; }
+  const d = await r.json();
+  banner.remove();
+  state.profile = d.profile;
+  updatePointsBadge();
+  faceMood("celebrate", 2.2);
+  flyStar($("points-badge"));
+  addMsg("💠 " + d.result.message, "bot");
+  speak(d.result.message, {});
+  practiceTopic = null;
+  // refresh the open practice list so finished topics show as done
+  if (!$("practice-modal").classList.contains("hidden")) await openPractice();
+}
+
+function updatePointsBadge() {
+  const pb = $("points-badge");
+  if (pb && state.profile) pb.textContent = "💠 " + (state.profile.points || 0);
 }
 
 // ======================================================================
@@ -1679,8 +1591,7 @@ async function renderTalkBeat() {
   if (d.final) {
     $("talk-input-row").classList.add("hidden");
     faceMood("celebrate", 3);
-    dropSticker("story");
-    addMsg(`📖 Story finished: ${talk.meta.title}! A new sticker may be in your album!`, "bot");
+    addMsg(`📖 Story finished: ${talk.meta.title}!`, "bot");
   } else {
     $("talk-input-row").classList.remove("hidden");
   }
@@ -1727,10 +1638,7 @@ async function openReader(sid) {
   $("story-list-view").classList.add("hidden");
   $("story-reader").classList.remove("hidden");
   renderStoryPage();
-  if (!STORY_STICKER.has(sid)) {
-    STORY_STICKER.add(sid);
-    dropSticker("story");
-  }
+  STORY_STICKER.add(sid);
 }
 function renderStoryPage() {
   const st = arena.story;
@@ -1800,31 +1708,14 @@ function storyNav(d) {
   renderStoryPage();
 }
 
-function toggleWhy() {
-  activeMode = activeMode === "why" ? null : "why";
-  const chip = $("why-chip");
-  chip.classList.toggle("on", activeMode === "why");
-  if (activeMode === "why") {
-    addMsg("❓ BUT-WHY MODE ON! Ask me anything — and keep asking 'but why?' I never run out!", "bot");
-    speak("But why mode on! Ask me anything!", {});
-    dropSticker("why");
-  } else {
-    addMsg("But-why mode off.", "bot");
-  }
-  const chip2 = $("mode-chip");
-  if (chip2 && activeMode === "why") updateModeChip();
-}
-
 // wire the new buttons into the app
 function wireStage56789() {
   $("mic").onclick = toggleMic;
   $("stop-talk").onclick = stopSpeaking;
   $("games-btn").onclick = openGames;
   $("games-x").onclick = () => $("games-modal").classList.add("hidden");
-  $("stickers-btn").onclick = openStickers;
-  $("stickers-x").onclick = () => $("stickers-modal").classList.add("hidden");
-  $("quests-btn").onclick = openQuests;
-  $("quests-x").onclick = () => $("quests-modal").classList.add("hidden");
+  $("practice-btn").onclick = openPractice;
+  $("practice-x").onclick = () => $("practice-modal").classList.add("hidden");
   $("stories-btn").onclick = openStories;
   $("stories-x").onclick = () => $("stories-modal").classList.add("hidden");
   $("tab-talk").onclick = () => setStoryTab("talk");
@@ -1836,7 +1727,6 @@ function wireStage56789() {
     $("talk-reader").classList.add("hidden");
     $("story-list-view").classList.remove("hidden");
   };
-  $("why-chip").onclick = toggleWhy;
   $("story-prev").onclick = () => storyNav(-1);
   $("story-next").onclick = () => storyNav(1);
   $("story-say").onclick = readStoryLine;
@@ -1846,144 +1736,6 @@ function wireStage56789() {
   };
   $("face-stage").onclick = () => { if (state.pid) openWardrobe(); };
   loadVoices();
-}
-
-// ======================================================================
-// STAGE B — LEVELS: 7 per grade, tasks earn points, points buy levels
-// ======================================================================
-const SUBJ_EMOJI = { math: "🔢", science: "🔬", english: "📖", general: "🌏" };
-let levelState = null;   // /api/levels/{pid} payload
-let currentLevel = null; // level open in the banner
-
-async function openLevels() {
-  const r = await fetch("/api/levels/" + state.pid);
-  if (!r.ok) return;
-  levelState = await r.json();
-  $("levels-points").textContent =
-    `Grade ${levelState.grade} · Points: 💠 ${levelState.points} — finish tasks to earn, spend to unlock`;
-  renderLevelGrid();
-  $("level-detail").classList.add("hidden");
-  $("levels-modal").classList.remove("hidden");
-}
-
-function renderLevelGrid() {
-  const grid = $("level-grid");
-  grid.innerHTML = "";
-  let firstOpen = null;
-  levelState.levels.forEach(L => {
-    const cls = L.completed ? "completed" : L.unlocked ? (L.tasks_done.length ? "current" : "unlocked") : "locked";
-    if (L.unlocked && !L.completed && !firstOpen) firstOpen = L;
-    const card = document.createElement("button");
-    card.type = "button";
-    card.className = "level-card " + cls;
-    card.innerHTML = `<span class="lock">${L.completed ? "✅" : L.unlocked ? "▶" : "🔒"}</span>` +
-      `<div class="ln">Level ${L.level}</div><span class="lst">${L.name}</span>` +
-      `<span class="lprice">${L.completed ? "done!" : L.unlocked ? `${L.tasks_done.length} tasks done` : "💠 " + L.price}</span>`;
-    card.onclick = () => {
-      if (L.unlocked) openLevelDetail(L);
-      else buyLevelFlow(L);
-    };
-    grid.appendChild(card);
-  });
-  if (firstOpen && !currentLevel) currentLevel = firstOpen.level;
-  if (firstOpen) showTaskBanner(firstOpen);
-}
-
-async function openLevelDetail(L) {
-  const r = await fetch(`/api/levels/${state.pid}/${L.level}`);
-  if (!r.ok) return;
-  const d = await r.json();
-  const box = $("level-detail");
-  box.classList.remove("hidden");
-  box.innerHTML = `<h3 style="margin-top:12px">Level ${L.level} — ${L.name} ` +
-    `${L.completed ? "✅" : ""}</h3><div id="task-list"></div>`;
-  const list = box.querySelector("#task-list");
-  const done = new Set(L.tasks_done);
-  d.tasks.forEach(t => {
-    const row = document.createElement("div");
-    row.className = "task-row" + (done.has(t.id) ? " done" : "");
-    row.innerHTML = `<span class="em">${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
-      `<div><div class="tt">${t.title}</div><div class="tp">${t.subject}</div></div>` +
-      `<span class="pts">+${t.points} 💠</span>`;
-    if (!done.has(t.id)) {
-      const b = document.createElement("button");
-      b.textContent = "Start ▶";
-      b.onclick = () => startTask(L.level, t);
-      row.appendChild(b);
-    } else {
-      const s = document.createElement("span");
-      s.textContent = "✅";
-      s.style.marginLeft = "8px";
-      row.appendChild(s);
-    }
-    list.appendChild(row);
-  });
-  if (!d.tasks.length) box.innerHTML += "<i>No tasks here yet — more coming!</i>";
-}
-
-async function buyLevelFlow(L) {
-  const need = L.price;
-  const have = levelState.points;
-  if (have < need) {
-    addMsg(`🔒 Level ${L.level} costs 💠 ${need}. You have 💠 ${have} — finish more tasks first!`, "bot");
-    speak(`You need ${need - have} more points for level ${L.level}. Finish some tasks!`, {});
-    return;
-  }
-  const r = await fetch(`/api/levels/${state.pid}/buy`, {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ level: L.level }),
-  });
-  if (!r.ok) { const d = await r.json(); addMsg("🔒 " + (d.detail || "Cannot unlock yet."), "bot"); return; }
-  const d = await r.json();
-  levelState = null; // refetch
-  faceMood("celebrate", 2.5);
-  speak(`Wow! Level ${L.level}, ${L.name}, unlocked! Let's go!`, {});
-  addMsg(`🔓 Level ${L.level} — ${L.name} unlocked! (−💠 ${d.result.spent})`, "bot");
-  openLevels();
-}
-
-// ---- task banner in chat: the buddy teaches the topic, then Done/Drop ----
-async function startTask(level, t) {
-  $("levels-modal").classList.add("hidden");
-  currentLevel = level;
-  const old = $("task-banner");
-  if (old) old.remove();
-  const banner = document.createElement("div");
-  banner.id = "task-banner";
-  banner.innerHTML = `<span>${SUBJ_EMOJI[t.subject] || "🌏"}</span>` +
-    `<span class="tb-text">Task: ${t.title}</span>` +
-    `<button id="task-done">Done ✓ +${t.points} 💠</button>` +
-    `<button id="task-drop">✕</button>`;
-  $("chatapp").insertBefore(banner, $("messages"));
-  addMsg(`🎯 New task: ${t.title}. ${t.prompt}`, "bot");
-  speak(`New task! ${t.title}. ${t.prompt}`, {});
-  $("task-done").onclick = () => finishTask(level, t, true);
-  $("task-drop").onclick = () => { banner.remove(); addMsg("Task saved for later — it stays in your level list.", "bot"); };
-}
-
-async function finishTask(level, t, done) {
-  const banner = $("task-banner");
-  if (!done) return;
-  const r = await fetch(`/api/levels/${state.pid}/${level}/task`, {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ level, task_id: t.id, score: t.points }),
-  });
-  if (!r.ok) { const d = await r.json(); addMsg("Hmm — " + (d.detail || "try again"), "bot");
-    if (banner) banner.remove(); return; }
-  const d = await r.json();
-  banner.remove();
-  levelState = null;
-  state.profile = d.profile;
-  faceMood("celebrate", 2.2);
-  flyStar($("star-badge"));
-  addMsg("💠 " + d.message, "bot");
-  speak(d.message, {});
-  if (d.result.completed) {
-    setTimeout(() => speak(`Incredible! You finished Level ${level}! A new sticker is in your album!`, {}), 2500);
-    faceMood("celebrate", 4);
-  }
-  // refresh the open level list so finished tasks show as done
-  if (!$("levels-modal").classList.contains("hidden")) await openLevels();
 }
 
 // ======================================================================
@@ -1999,8 +1751,6 @@ function wire() {
   $("wardrobe-x").onclick = () => $("wardrobe-modal").classList.add("hidden");
   $("world-chip").onclick = openWorldModal;
   $("world-x").onclick = () => $("world-modal").classList.add("hidden");
-  $("levels-btn").onclick = openLevels;
-  $("levels-x").onclick = () => $("levels-modal").classList.add("hidden");
   $("buddy-btn").onclick = openBuddyModal;
   $("buddy-x").onclick = () => $("buddy-modal").classList.add("hidden");
   $("info-x").onclick = () => $("info-modal").classList.add("hidden");

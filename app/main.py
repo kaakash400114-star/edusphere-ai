@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import characters, conversation, knowledge, levels, neural_voice, profiles, tutor, worlds
+from . import characters, conversation, knowledge, neural_voice, practice, profiles, tutor, worlds
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -66,18 +66,9 @@ class PinRequest(BaseModel):
     pin: str = Field(min_length=4, max_length=8)
 
 
-class QuestDoneRequest(BaseModel):
-    quest: str = Field(min_length=1, max_length=40)
-
-
 class TaskDoneRequest(BaseModel):
-    level: int = Field(ge=1, le=7)
-    task_id: str = Field(min_length=1, max_length=80)
-    score: int = Field(default=10, ge=0, le=200)
-
-
-class LevelBuyRequest(BaseModel):
-    level: int = Field(ge=1, le=7)
+    topic_id: str = Field(min_length=1, max_length=80)
+    grade: int = Field(default=0, ge=0, le=12)
 
 
 # ---------------- API ----------------
@@ -212,7 +203,6 @@ def chat(body: ChatRequest):
         if memory_note:
             profiles.remember(body.pid, memory_note)
     answer = answer.strip()
-    # stage 6: sticker for the first chat of the session comes from frontend
     return {"answer": answer, "subject": subject, "topic": topic,
             "stars": updated["stars"] if updated else 0,
             "memory_saved": memory_note,
@@ -221,19 +211,6 @@ def chat(body: ChatRequest):
             "world": world["id"], "world_name": world["name"],
             "world_emoji": world["emoji"],
             "voice": voice}
-
-
-class StickerRequest(BaseModel):
-    sticker: str = Field(min_length=1, max_length=40)
-
-
-@app.post("/api/profile/{pid}/sticker")
-def award_sticker(pid: str, body: StickerRequest):
-    """Stage 6: drop a sticker into the child's album."""
-    profile = profiles.award_sticker(pid, body.sticker)
-    if not profile:
-        raise HTTPException(404, "profile not found")
-    return {"profile": profile}
 
 
 class RememberBody(BaseModel):
@@ -259,38 +236,34 @@ class GameResult(BaseModel):
 
 @app.post("/api/game/result")
 def game_result(body: GameResult):
-    """Stage 5: record a game result, award stars + a sticker."""
+    """Record one arcade game result: stars + one practice event."""
     profile = profiles.record_activity(
         body.pid, "game:" + body.game, body.topic or body.game,
         stars=body.stars)
     if not profile:
         raise HTTPException(404, "profile not found")
-    profile = profiles.award_sticker(body.pid, body.game)
-    return {"profile": profile}
+    profiles.log_practice(
+        body.pid, subject=_subject_from_game(body.game),
+        correct=body.score, total=_game_total(body.game, body.score),
+        source="game:" + body.game)
+    return {"profile": profiles.get_profile(body.pid)}
 
 
-@app.get("/api/quests")
-def list_quests():
-    """Stage 9: today's home quests (real-world mini missions)."""
-    return {"quests": conversation.quest_public()}
+def _subject_from_game(game: str) -> str:
+    return {"math_sprint": "math", "boss_battle": "math",
+            "quiz_quest": "general", "spelling_bee": "english"}.get(game, "general")
 
 
-@app.post("/api/profile/{pid}/quest/{quest_id}")
-def quest_done(pid: str, quest_id: str):
-    """Stage 9: complete a home quest -> stars + a sticker."""
-    if not any(q["id"] == quest_id for q in conversation.quest_public()):
-        raise HTTPException(400, "unknown quest")
-    profile = profiles.record_activity(pid, "quest:" + quest_id,
-                                       "quest:" + quest_id, stars=2)
-    if not profile:
-        raise HTTPException(404, "profile not found")
-    profile = profiles.award_sticker(pid, "quest_" + quest_id)
-    return {"profile": profile}
+def _game_total(game: str, score: int) -> int:
+    # total questions each game asks at full play (upper-bounded by score)
+    totals = {"math_sprint": score, "quiz_quest": 10,
+              "spelling_bee": 8, "boss_battle": score}
+    return totals.get(game, max(1, score))
 
 
 @app.get("/api/stories")
 def list_stories():
-    """Stage 9: read-along stories."""
+    """Read-along stories."""
     return {"stories": conversation.stories_roster()}
 
 
@@ -368,8 +341,6 @@ def story_tell(body: StoryTellRequest):
             spoken = reacted
     profiles.record_activity(body.pid, "story:" + body.story,
                              "interactive story")
-    if final:
-        profiles.award_sticker(body.pid, "story_" + body.story)
     return {"beat": body.beat, "final": final, "spoken": spoken,
             "moral": s["moral"] if final else ""}
 
@@ -397,70 +368,45 @@ def grade_meta():
                          for g in range(1, 13)}}
 
 
-# ---------------- levels (stage B) ----------------
+# ---------------- practice (free, replaces paid levels) ----------------
 
-@app.get("/api/levels/{pid}")
-def get_levels(pid: str):
-    """The 7 levels of the kid's grade with progress + points."""
+@app.get("/api/practice/{pid}")
+def get_practice(pid: str):
+    """All free practice topics for the kid's grade, with done marks."""
     profile = profiles.get_profile(pid)
     if not profile:
         raise HTTPException(404, "profile not found")
-    raw = profiles._raw(pid) or {}
-    return levels.view_levels(raw, profile["grade"])
+    return {"grade": profile["grade"],
+            "points": profiles.get_points(profile),
+            "topics": practice.grade_topics(profile["grade"])}
 
 
-@app.get("/api/levels/{pid}/{level}")
-def get_level_tasks(pid: str, level: int):
-    """Task list for one level of the kid's grade (curriculum-fed)."""
+@app.get("/api/practice/{pid}/{topic_id}")
+def get_topic(pid: str, topic_id: str):
+    """One practice topic's full prompt (frontend starts the chat task)."""
     profile = profiles.get_profile(pid)
     if not profile:
         raise HTTPException(404, "profile not found")
-    if not 1 <= level <= levels.LEVELS_PER_GRADE:
-        raise HTTPException(400, "bad level")
-    from . import curriculum_feed
-    return {"grade": profile["grade"], "level": level,
-            "theme": levels.level_theme(profile["grade"], level),
-            "tasks": curriculum_feed.level_tasks(profile["grade"], level)}
+    t = practice.topic_by_id(profile["grade"], topic_id)
+    if not t:
+        raise HTTPException(404, "topic not found")
+    return {"topic": t, "grade": profile["grade"]}
 
 
-@app.post("/api/levels/{pid}/{level}/task")
-def do_task(pid: str, level: int, body: TaskDoneRequest):
-    """Complete one task inside a level: awards score points."""
+@app.post("/api/practice/{pid}/{topic_id}/done")
+def finish_topic(pid: str, topic_id: str, body: TaskDoneRequest):
+    """Mark one practice topic done: +points, no locks, no price."""
     profile = profiles.get_profile(pid)
     if not profile:
         raise HTTPException(404, "profile not found")
-    from . import curriculum_feed
-    if not curriculum_feed.task_by_id(profile["grade"], body.task_id):
-        raise HTTPException(400, "unknown task")
-    raw = profiles._raw(pid) or {}
-    payload, ok, msg = levels.complete_task(
-        raw, profile["grade"], level, body.task_id, body.score)
-    if not ok:
-        raise HTTPException(400, msg)
+    t = practice.topic_by_id(profile["grade"], topic_id)
+    if not t:
+        raise HTTPException(400, "unknown topic")
+    raw = profiles._raw(pid)
+    payload = practice.mark_done(raw, t)
     profiles._write_raw(pid, raw)
-    if payload.get("completed"):
-        profiles.award_sticker(pid, f"grade{profile['grade']}_level{level}")
-        profiles.record_activity(pid, f"level:{level}", f"grade{profile['grade']} L{level}")
-        world = worlds.world_for_profile(profile)
-        if level == 4:  # mid-world milestone -> rare world sticker
-            profiles.award_sticker(pid, f"world_{world['id']}_rare")
-        if level == levels.LEVELS_PER_GRADE:  # grade mastered -> epic sticker
-            profiles.award_sticker(pid, f"grade{profile['grade']}_master_epic")
-    return {"result": payload, "message": msg,
-            "profile": profiles.get_profile(pid)}
-
-
-@app.post("/api/levels/{pid}/buy")
-def buy_level(pid: str, body: LevelBuyRequest):
-    """Buy the next level with points."""
-    profile = profiles.get_profile(pid)
-    if not profile:
-        raise HTTPException(404, "profile not found")
-    raw = profiles._raw(pid) or {}
-    payload, ok = levels.unlock_level(raw, profile["grade"], body.level)
-    if not ok:
-        raise HTTPException(400, payload.get("error", "cannot buy"))
-    profiles._write_raw(pid, raw)
+    profiles.log_practice(pid, subject=t["subject"], correct=1, total=1,
+                          source="practice")
     return {"result": payload, "profile": profiles.get_profile(pid)}
 
 
@@ -504,12 +450,7 @@ def icons(rest: str):
     path = STATIC_DIR / "icons" / f"icon-{rest}"
     if path.exists():
         return FileResponse(path)
-    raise HTTPException(404)
 
 
-@app.get("/health")
-def health():
-    return {"ok": True, "model": tutor.MODEL}
-
-
-app.mount("/", StaticFiles(directory=str(STATIC_DIR), html=True), name="static")
+# static frontend last, so API routes above win
+app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")

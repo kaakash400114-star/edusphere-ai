@@ -80,8 +80,6 @@ def ask(name: str, grade: int, buddy: str, question: str,
     mode_def = characters.MODES.get(buddy)
     if mode and mode_def and mode_def["trigger"] == mode:
         system += "\n" + mode_def["instructions"] + "\n"
-    if mode == "why":
-        system += "\n" + conversation.WHY_RULES + "\n"
     if mode == "story":
         system += "\n" + conversation.STORY_RULES + "\n"
     if excerpt:
