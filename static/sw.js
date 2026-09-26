@@ -1,5 +1,5 @@
 /* EduSphere AI service worker — app-shell caching for offline opens. */
-const CACHE = "edusphere-v5";  /* v5: living-buddy actions (acts while talking) */
+const CACHE = "edusphere-v6";  /* v6: camera homework helper + album */
 const SHELL = [
   "/", "/index.html", "/manifest.json",
   "/animals.js", "/buddy-life.js", "/buddy-actions.js", "/kinder.js", "/tracing.js",

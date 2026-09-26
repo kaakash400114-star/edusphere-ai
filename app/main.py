@@ -15,9 +15,9 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import (animations, boards, characters, conversation, improvement,
-               knowledge, knowledge_fresh, kinder, neural_voice, practice,
-               profiles, tutor, worlds, llm)
+from . import (animations, boards, camera, characters, conversation,
+               improvement, knowledge, knowledge_fresh, kinder, neural_voice,
+               practice, profiles, tutor, worlds, llm)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -35,6 +35,7 @@ app = FastAPI(title="EduSphere AI", docs_url=None, redoc_url=None,
               lifespan=lifespan)
 
 
+_FLOOD_MSG = "Whoa, slow down little star! Take a tiny breath and try again."
 # tiny in-memory rate limiter: pid -> last request ts
 _last_req: dict[str, float] = {}
 # hourly LLM budget per profile: pid -> [timestamps]
@@ -359,6 +360,52 @@ class GameResult(BaseModel):
     score: int = Field(ge=0)
     stars: int = Field(default=0, ge=0, le=20)
     topic: str = Field(default="", max_length=80)
+
+
+
+# ── camera homework helper (Stage 3) ──────────────────────────────────────────
+
+class HomeworkBody(BaseModel):
+    image_b64: str = Field(min_length=16, max_length=9_000_000)
+    mime: str | None = None
+    note: str = Field(default="", max_length=200)
+
+
+@app.post("/api/homework/{pid}")
+def homework_ask(pid: str, body: HomeworkBody):
+    if not _rate_ok(pid) or not _burst_ok(pid):
+        raise HTTPException(status_code=429, detail=_FLOOD_MSG)
+    prof = profiles.get_profile(pid)
+    if not prof:
+        raise HTTPException(status_code=404, detail="profile not found")
+    text, meta = camera.vision_guide(
+        pid, prof.get("grade", 3), prof.get("name", "friend"),
+        prof.get("character", "leo"), body.image_b64, body.mime, body.note)
+    return {"ok": meta.get("ok", False), "guidance": text,
+            "id": meta.get("id"), "file": meta.get("file")}
+
+
+@app.get("/api/homework/{pid}")
+def homework_album(pid: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(status_code=404, detail="profile not found")
+    return {"photos": camera.album(pid)}
+
+
+@app.get("/api/homework/{pid}/{hid}")
+def homework_one(pid: str, hid: str):
+    for r in camera.album(pid):
+        if r.get("id") == hid:
+            return r
+    raise HTTPException(status_code=404, detail="not found")
+
+
+@app.get("/api/homework-photo/{pid}/{fname}")
+def homework_photo(pid: str, fname: str):
+    path = camera.photo_path(pid, fname)
+    if not path:
+        raise HTTPException(status_code=404, detail="not found")
+    return FileResponse(path, media_type="image/jpeg")
 
 
 @app.post("/api/game/result")
