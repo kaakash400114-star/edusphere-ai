@@ -3,7 +3,7 @@
 No human is ever required. Three loops, all automatic:
 
 1. HEAL   — any `## ` section whose body is missing or too thin (<60 words)
-            gets real curriculum content written by the tutor LLM,
+            gets real curriculum content written by the LLM (any provider),
             validated, and written back atomically.
 2. ROTATE — every 6 hours a background thread re-audits the next slice of
             files (oldest-verified first), so every file is re-checked on a
@@ -14,6 +14,8 @@ No human is ever required. Three loops, all automatic:
 
 Every write is atomic (tmp file + replace) and validated; a section that
 fails validation twice is left untouched rather than corrupted.
+
+Provider: resolved by app.llm (GLM / OpenAI / Anthropic / Ollama / Groq).
 """
 from __future__ import annotations
 
@@ -22,14 +24,11 @@ import os
 import re
 import threading
 import time
-import httpx
 from pathlib import Path
 
 from . import boards as _boards
+from . import llm as _llm
 
-BASE_URL = os.environ.get(
-    "GLM_BASE_URL", "https://api.z.ai/api/coding/paas/v4").rstrip("/")
-MODEL = os.environ.get("EDUSPHERE_MODEL", "glm-4.5-flash")
 
 ROOT = Path(__file__).resolve().parent.parent
 LIB = ROOT / "knowledge" / "boards"
@@ -163,8 +162,7 @@ def _self_check(board: str, subject: str, grade: int, title: str,
                 body: str) -> tuple[bool, int]:
     """Second LLM call: the model GRADES its own draft for factual
     correctness and grade-fit. Returns (ok, score/10). Fails closed."""
-    api_key = os.environ.get("GLM_API_KEY", "")
-    if not api_key:
+    if not _llm.is_configured():
         return False, 0
     info = _boards.BOARDS.get(board, {})
     prompt = (
@@ -176,51 +174,27 @@ def _self_check(board: str, subject: str, grade: int, title: str,
         "any factual error, invented formula, or wrong grade level means 5 "
         "or less. Answer with ONLY the number.\n\n"
         f"SUMMARY:\n{body}")
-    try:
-        r = httpx.post(
-            f"{BASE_URL}/chat/completions",
-            headers={"Authorization": f"Bearer {api_key}"},
-            json={"model": MODEL,
-                  "messages": [{"role": "user", "content": prompt}],
-                  "max_tokens": 8, "temperature": 0.0,
-                  "thinking": {"type": "disabled"}},
-            timeout=45.0)
-        if r.status_code == 429:
-            time.sleep(3.0)
-            return True, 9          # throttled: accept draft, rotator re-checks later
-        m = re.search(r"(\d+)\s*/?\s*10?", r.text)
-        score = int(m.group(1)) if m else 0
-        return (score >= 8, min(10, score))
-    except (httpx.HTTPError, ValueError):
-        return False, 0             # network dead: reject, retry later
+    text, err = _llm.quick(prompt, max_tokens=8, temperature=0.0, timeout=45.0)
+    if err or not text:
+        return False, 0
+    m = re.search(r"(\d+)\s*/?\\s*10?", text)
+    if not m:
+        m = re.search(r"(\d+)", text)
+    score = int(m.group(1)) if m else 0
+    return (score >= 8, min(10, score))
 
 
 def write_section_body(board: str, subject: str, grade: int,
                        title: str) -> str | None:
     """Write a section body, then have the model judge its own output.
     Only self-checked, high-scoring content is ever written to disk."""
-    api_key = os.environ.get("GLM_API_KEY", "")
-    if not api_key:
+    if not _llm.is_configured():
         return None
-    body = {
-        "model": MODEL,
-        "messages": [{"role": "user",
-                      "content": _writer_prompt(board, subject, grade, title)}],
-        "max_tokens": 500,
-        "temperature": 0.3,
-        "thinking": {"type": "disabled"},
-    }
-    for attempt in range(4):              # write + validate, with backoff
-        try:
-            r = httpx.post(f"{BASE_URL}/chat/completions",
-                           headers={"Authorization": f"Bearer {api_key}"},
-                           json=body, timeout=60.0)
-            if r.status_code == 429:      # throttled — wait and retry
-                time.sleep(3.0 * (attempt + 1))
-                continue
-            text = ((r.json().get("choices") or [{}])[0].get("message") or {}
-                    ).get("content") or ""
-        except (httpx.HTTPError, ValueError, KeyError, IndexError):
+    prompt = _writer_prompt(board, subject, grade, title)
+    for attempt in range(4):          # write + validate, with backoff
+        text, err = _llm.quick(prompt, max_tokens=500, temperature=0.3,
+                               timeout=60.0)
+        if err:
             time.sleep(2.0 * (attempt + 1))
             continue
         ok = validate_body(text)
@@ -228,7 +202,6 @@ def write_section_body(board: str, subject: str, grade: int,
             good, score = _self_check(board, subject, grade, title, ok)
             if good:
                 return ok
-            # self-check failed: the draft was bad — try a fresh rewrite
         time.sleep(1.0)
     return None
 

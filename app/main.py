@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import os
 import time
+from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -14,20 +15,24 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import (boards, characters, conversation, improvement, knowledge,
-               knowledge_fresh, kinder, neural_voice, practice, profiles,
-               tutor, worlds)
+from . import (animations, boards, characters, conversation, improvement,
+               knowledge, knowledge_fresh, kinder, neural_voice, practice,
+               profiles, tutor, worlds, llm)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
 
-app = FastAPI(title="EduSphere AI", docs_url=None, redoc_url=None)
 
-
-@app.on_event("startup")
-def _start_self_updating_knowledge() -> None:
-    """The curriculum maintains itself from the moment the app boots."""
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Modern lifespan: start the self-updating curriculum engine on boot."""
     knowledge_fresh.start()
+    yield
+    # (shutdown: daemon threads stop automatically)
+
+
+app = FastAPI(title="EduSphere AI", docs_url=None, redoc_url=None,
+              lifespan=lifespan)
 
 
 # tiny in-memory rate limiter: pid -> last request ts
@@ -319,6 +324,11 @@ def chat(body: ChatRequest):
         if memory_note:
             profiles.remember(body.pid, memory_note)
     answer = answer.strip()
+    # Animation context: was this a correct answer, a story, a greeting, or just talking?
+    anim_context = "on_talking"
+    if body.mode == "story":
+        anim_context = "on_story"
+    anim = animations.context_actions(buddy["id"], anim_context)
     return {"answer": answer, "subject": subject, "topic": topic,
             "stars": updated["stars"] if updated else 0,
             "memory_saved": memory_note,
@@ -326,7 +336,8 @@ def chat(body: ChatRequest):
             "character_emoji": buddy["emoji"],
             "world": world["id"], "world_name": world["name"],
             "world_emoji": world["emoji"],
-            "voice": voice}
+            "voice": voice,
+            "animation": anim}
 
 
 class RememberBody(BaseModel):
@@ -486,7 +497,16 @@ def grade_meta():
                          for g in range(1, 13)}}
 
 
-# ---------------- practice (free, replaces paid levels) ----------------
+@app.get("/api/provider")
+def provider_info():
+    """Diagnostic: which LLM provider is active."""
+    return {
+        "provider": llm.provider_name(),
+        "model": llm.model_name(),
+        "configured": llm.is_configured(),
+    }
+
+
 
 @app.get("/api/practice/{pid}")
 def get_practice(pid: str):
@@ -526,7 +546,44 @@ def finish_topic(pid: str, topic_id: str, body: TaskDoneRequest):
     profiles._write_raw(pid, raw)
     profiles.log_practice(pid, subject=t["subject"], correct=1, total=1,
                           source="practice")
+    # SRS: schedule this topic for spaced review
+    from . import srs
+    raw2 = profiles._raw(pid)
+    if raw2:
+        srs.update_card(raw2, topic_id, t.get("title", topic_id),
+                        t["subject"], quality=4)
+        profiles._write_raw(pid, raw2)
     return {"result": payload, "profile": profiles.get_profile(pid)}
+
+
+@app.get("/api/srs/{pid}")
+def srs_due(pid: str):
+    """Topics due for spaced-repetition review today."""
+    from . import srs
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    raw = profiles._raw(pid) or {}
+    return {
+        "due": srs.due_topics(raw),
+        "upcoming": srs.upcoming_topics(raw),
+        "summary": srs.srs_summary(raw),
+    }
+
+
+@app.post("/api/srs/{pid}/update")
+def srs_update(pid: str, body: TaskDoneRequest):
+    """Record a spaced-repetition review result."""
+    from . import srs
+    raw = profiles._raw(pid)
+    if not raw:
+        raise HTTPException(404, "profile not found")
+    # quality encoded in grade field (0-5); default 4 = correct
+    quality = max(0, min(5, int(body.grade) if body.grade <= 5 else 4))
+    card = srs.update_card(raw, body.topic_id, body.topic_id,
+                           "general", quality)
+    profiles._write_raw(pid, raw)
+    return {"card": card, "summary": srs.srs_summary(raw)}
 
 
 def _topic_from(subject: str, message: str) -> str:
@@ -614,7 +671,38 @@ def tts_audio(fname: str):
     raise HTTPException(404)
 
 
-# ---------------- static + PWA ----------------
+# ---------------- character animations ----------------
+
+@app.get("/api/animate/{buddy_id}/{context}")
+def animate(buddy_id: str, context: str):
+    """Return the animation sequence for a buddy in a given context.
+
+    context: on_greet | on_correct | on_wrong | on_thinking | on_talking |
+             on_story | on_quiz | on_party | idle
+    """
+    if buddy_id not in characters.CHARACTERS:
+        raise HTTPException(404, "unknown buddy")
+    return animations.context_actions(buddy_id, context)
+
+
+@app.get("/api/animate/{buddy_id}")
+def animate_contexts(buddy_id: str):
+    """All animation contexts available for this buddy."""
+    if buddy_id not in characters.CHARACTERS:
+        raise HTTPException(404, "unknown buddy")
+    return {
+        "buddy": buddy_id,
+        "contexts": animations.buddy_contexts(buddy_id),
+        "actions": animations.all_actions(),
+    }
+
+
+@app.get("/api/particles")
+def particles_catalog():
+    """All particle effect definitions (for the frontend renderer)."""
+    return {"particles": animations.PARTICLES}
+
+
 
 @app.get("/manifest.json")
 def manifest():

@@ -21,11 +21,15 @@ def _mk(name="Boardy", grade=7, **kw):
 
 # ---------- board roster and normalisation ----------
 def test_six_boards_exposed():
+    """World-class board registry — must contain at least the core boards."""
     r = client.get("/api/boards")
     assert r.status_code == 200
     ids = {b["id"] for b in r.json()["boards"]}
-    assert ids == {"cbse", "icse", "matriculation", "tn_state",
-                   "american", "british"}
+    # Original 6 boards must always be present
+    required = {"cbse", "icse", "matriculation", "tn_state", "american", "british"}
+    assert required.issubset(ids), f"Missing boards: {required - ids}"
+    # World-class expansion: at least 15 boards total
+    assert len(ids) >= 15, f"Expected 15+ boards, got {len(ids)}"
 
 
 def test_board_normalisation_and_default():
@@ -80,7 +84,8 @@ def test_cbse_resolution_prefers_board_files():
 
 
 def test_every_board_resolves_all_grades_and_subjects():
-    # all six boards now have full coverage grades 1-12
+    # The six boards with committed knowledge files have full coverage grades 1-12.
+    # New world boards fall back to the global curriculum until their files ship.
     for board in ("cbse", "icse", "matriculation", "tn_state",
                   "american", "british"):
         for g in range(1, 13):
@@ -104,7 +109,7 @@ def test_english_directives_differ():
     d_uk = boards.english_directive("british")
     assert "NCERT" in d_cbse
     assert "Common Core" in d_us and "color" in d_us
-    assert "GCSE" in d_uk and "colour" in d_uk
+    assert "British" in d_uk and "colour" in d_uk
     assert d_cbse != d_us != d_uk
 
 
