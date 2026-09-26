@@ -91,6 +91,7 @@ function showKinderTask() {
       if (o.id === t.answer) {
         Kinder.correct++;
         b.classList.add("kinder-right");
+        if (typeof buddyAct === "function") buddyAct($("hero-stage"), "cheer", 1.4);
         animalMood("celebrate", 1.4);
         cheerBuddy();
         speak(pickCheer(), {});
@@ -124,7 +125,8 @@ function finishKinderUI() {
     `${Kinder.correct} / ${Kinder.tasks.length} — hooray!</div>`;
   $("kinder-opts").innerHTML = "";
   $("kinder-karaoke").innerHTML = "";
-  animalMood("dance", 3);
+  if (typeof buddyDance === "function") buddyDance($("hero-stage"), 3);
+  else animalMood("dance", 3);
   speak("Hooray! You finished! " + Kinder.correct + " out of " +
     Kinder.tasks.length + "!", {});
   const again = document.createElement("button");

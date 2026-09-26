@@ -52,8 +52,8 @@ const ANIMALS = {
       <path d="M50 46 l-3.5 -3 h7 z" fill="#8a5416"/>
       ${_mouth(50, 51, 12)}
       ${_blush(30, 48)}${_blush(70, 48)}
-      <ellipse cx="38" cy="90" rx="7" ry="4" fill="#ffdfa8" stroke="#d97f18" stroke-width="1.5"/>
-      <ellipse cx="62" cy="90" rx="7" ry="4" fill="#ffdfa8" stroke="#d97f18" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="38" cy="90" rx="7" ry="4" fill="#ffdfa8" stroke="#d97f18" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="62" cy="90" rx="7" ry="4" fill="#ffdfa8" stroke="#d97f18" stroke-width="1.5"/></g>
     </g>`,
   /* ---- Miko the panda ---- */
   miko: (look) => `
@@ -70,8 +70,8 @@ const ANIMALS = {
       <ellipse cx="50" cy="49" rx="3.4" ry="2.6" fill="#26263a"/>
       ${_mouth(50, 53, 12)}
       ${_blush(29, 50)}${_blush(71, 50)}
-      <ellipse cx="37" cy="90" rx="8" ry="4.5" fill="#3f4756"/>
-      <ellipse cx="63" cy="90" rx="8" ry="4.5" fill="#3f4756"/>
+      <g data-part="pawL"><ellipse cx="37" cy="90" rx="8" ry="4.5" fill="#3f4756"/></g>
+      <g data-part="pawR"><ellipse cx="63" cy="90" rx="8" ry="4.5" fill="#3f4756"/></g>
     </g>`,
   /* ---- Pip the squirrel ---- */
   pip: (look) => `
@@ -89,8 +89,8 @@ const ANIMALS = {
       ${_blush(30, 47)}${_blush(66, 47)}
       <path d="M30 20 Q 36 12 44 16" fill="none" stroke="#7a3c17" stroke-width="2" stroke-linecap="round"/>
       <path d="M58 16 Q 66 12 68 20" fill="none" stroke="#7a3c17" stroke-width="2" stroke-linecap="round"/>
-      <ellipse cx="37" cy="89" rx="7" ry="4" fill="#ffe3c2" stroke="#96451f" stroke-width="1.5"/>
-      <ellipse cx="59" cy="89" rx="7" ry="4" fill="#ffe3c2" stroke="#96451f" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="37" cy="89" rx="7" ry="4" fill="#ffe3c2" stroke="#96451f" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="59" cy="89" rx="7" ry="4" fill="#ffe3c2" stroke="#96451f" stroke-width="1.5"/></g>
     </g>`,
   /* ---- Chintu the elephant ---- */
   chintu: (look) => `
@@ -105,8 +105,8 @@ const ANIMALS = {
       ${_eyes(50, 40, look)}
       ${_mouth(52, 51, 10)}
       ${_blush(31, 50)}${_blush(70, 50)}
-      <ellipse cx="38" cy="90" rx="8.5" ry="4.5" fill="#aab3c9" stroke="#7b849e" stroke-width="1.5"/>
-      <ellipse cx="62" cy="90" rx="8.5" ry="4.5" fill="#aab3c9" stroke="#7b849e" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="38" cy="90" rx="8.5" ry="4.5" fill="#aab3c9" stroke="#7b849e" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="62" cy="90" rx="8.5" ry="4.5" fill="#aab3c9" stroke="#7b849e" stroke-width="1.5"/></g>
     </g>`,
   /* ---- Zara the fox ---- */
   zara: (look) => `
@@ -123,8 +123,8 @@ const ANIMALS = {
       <path d="M50 46 l-3 -2.6 h6 z" fill="#6e3612"/>
       ${_mouth(50, 51, 11)}
       ${_blush(31, 47)}${_blush(69, 47)}
-      <ellipse cx="38" cy="89" rx="7" ry="4" fill="#fff4e8" stroke="#b34e1e" stroke-width="1.5"/>
-      <ellipse cx="62" cy="89" rx="7" ry="4" fill="#fff4e8" stroke="#b34e1e" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="38" cy="89" rx="7" ry="4" fill="#fff4e8" stroke="#b34e1e" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="62" cy="89" rx="7" ry="4" fill="#fff4e8" stroke="#b34e1e" stroke-width="1.5"/></g>
     </g>`,
   /* ---- Toko the parrot ---- */
   toko: (look) => `
@@ -141,8 +141,8 @@ const ANIMALS = {
       ${_eyes(49, 38, look)}
       <g data-part="beak"><path d="M49 46 Q 60 46 58 54 Q 54 58 49 54 Q 52 50 49 46" fill="#ffb703" stroke="#d97706" stroke-width="1.6"/></g>
       ${_blush(31, 47)}
-      <ellipse cx="40" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/>
-      <ellipse cx="56" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="40" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="56" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/></g>
     </g>`,
   /* ---- Kiko the dolphin ---- */
   kiko: (look) => `
@@ -154,7 +154,8 @@ const ANIMALS = {
       ${_eyes(50, 56, look)}
       ${_mouth(50, 66, 12)}
       ${_blush(33, 63)}
-      <g data-part="fin"><path d="M40 74 Q 34 84 26 82 Q 32 74 38 70 Z" fill="#4aa8d8" stroke="#2b7cab" stroke-width="2"/></g>
+      <g data-part="pawL"><g data-part="fin"><path d="M40 74 Q 34 84 26 82 Q 32 74 38 70 Z" fill="#4aa8d8" stroke="#2b7cab" stroke-width="2"/></g></g>
+      <g data-part="pawR"><path d="M60 74 Q 66 84 74 82 Q 68 74 62 70 Z" fill="#4aa8d8" stroke="#2b7cab" stroke-width="2"/></g>
       <ellipse cx="34" cy="50" rx="4" ry="6" fill="#fff" opacity=".5" transform="rotate(-24 34 50)"/>
     </g>`,
   /* ---- Bip the robot ---- */
@@ -172,8 +173,8 @@ const ANIMALS = {
              : `<g data-part="eyes"><rect x="38" y="35" width="6" height="7" rx="2.5" fill="#7ef29a"/><rect x="54" y="35" width="6" height="7" rx="2.5" fill="#7ef29a"/></g>`}
       ${_mouth(50, 53, 12)}
       ${_blush(32, 52)}${_blush(68, 52)}
-      <ellipse cx="40" cy="89" rx="7.5" ry="4" fill="#94a3b8"/>
-      <ellipse cx="60" cy="89" rx="7.5" ry="4" fill="#94a3b8"/>
+      <g data-part="pawL"><ellipse cx="40" cy="89" rx="7.5" ry="4" fill="#94a3b8"/></g>
+      <g data-part="pawR"><ellipse cx="60" cy="89" rx="7.5" ry="4" fill="#94a3b8"/></g>
     </g>`,
   /* ---- Dodo the baby dragon ---- */
   dodo: (look) => `
@@ -190,8 +191,8 @@ const ANIMALS = {
       <g><path d="M42 50 q8 6 16 0 l-2 5 q-6 4 -12 0 z" fill="#ff7b54" opacity=".9"/></g>
       ${_mouth(50, 55, 11)}
       ${_blush(30, 48)}${_blush(70, 48)}
-      <ellipse cx="38" cy="90" rx="8" ry="4.2" fill="#f3e3ff" stroke="#6d3bb8" stroke-width="1.5"/>
-      <ellipse cx="62" cy="90" rx="8" ry="4.2" fill="#f3e3ff" stroke="#6d3bb8" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="38" cy="90" rx="8" ry="4.2" fill="#f3e3ff" stroke="#6d3bb8" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="62" cy="90" rx="8" ry="4.2" fill="#f3e3ff" stroke="#6d3bb8" stroke-width="1.5"/></g>
       <g data-part="wing"><path d="M28 62 Q 12 58 14 44 Q 24 52 30 56 Z" fill="#9d5ce8" stroke="#6d3bb8" stroke-width="2"/></g>
     </g>`,
   /* ---- Professor Nova the owl ---- */
@@ -211,8 +212,8 @@ const ANIMALS = {
       </g>
       <path d="M50 42 l-4 4 h8 z" fill="#ffb703" stroke="#d97706" stroke-width="1.4"/>
       ${_mouth(50, 52, 10)}
-      <ellipse cx="36" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/>
-      <ellipse cx="64" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/>
+      <g data-part="pawL"><ellipse cx="36" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/></g>
+      <g data-part="pawR"><ellipse cx="64" cy="88" rx="6" ry="3.5" fill="#ffb703" stroke="#d97706" stroke-width="1.5"/></g>
     </g>`,
 };
 
