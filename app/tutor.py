@@ -16,7 +16,7 @@ import re
 import time
 
 from . import boards, characters, conversation, knowledge, kinder, \
-    language, neural_voice, worlds, llm
+    language, mathsafe, neural_voice, worlds, llm
 
 MAX_HISTORY      = 10
 EXCERPT_BUDGET   = 10_000     # curriculum chars per turn
@@ -104,6 +104,10 @@ def _system_prompt(name: str, grade: int, buddy_id: str,
         "refuse, never lecture — the only limits are the safety rules below.\n"
         "- Keep answers under 200 words unless asked to go deeper.\n"
         "- End with ONE small question to check understanding.\n"
+        "- NEVER-ANSWER RULE: for sums and exercises, guide step by step "
+        "and let the child do the last step themselves. Give the final "
+        "answer ONLY if the child has already tried twice, or says they "
+        "just want to check their work. Never answer-dump.\n"
         "- If asked about anything not school-related (violence, adult content, "
         "strangers, personal info), kindly steer back to learning.\n"
         "- Never ask for personal details beyond the first name.\n"
@@ -300,6 +304,27 @@ def ask(name: str, grade: int, buddy: str, question: str,
                 _lint1 = language.lint(simpler, grade)
                 if _lint1["ok"] or len(_lint1["violations"]) < len(_lint0["violations"]):
                     answer = simpler
+    except Exception:
+        pass
+
+    # Stage 5: MATH gate — verify every arithmetic claim against the
+    # safe calculator; auto-patch wrong numbers; LLM rewrite as the
+    # last resort when patching cannot fix it.
+    try:
+        answer, _mmeta = mathsafe.guard(answer, grade)
+        if _mmeta.get("rewrite_prompt"):
+            messages_fix3 = messages[:-1] + [
+                {"role": "user", "content": question[:2000]},
+                {"role": "assistant", "content": answer},
+                {"role": "user", "content": _mmeta["rewrite_prompt"]},
+            ]
+            fixed, _ = llm.complete(messages_fix3, max_tokens=3000,
+                                    temperature=0.3, timeout=90.0)
+            fixed = _strip_meta(fixed or "")
+            if fixed:
+                fixed2, _m2 = mathsafe.guard(fixed, grade)
+                if not _m2.get("rewrite_prompt"):
+                    answer = fixed2
     except Exception:
         pass
 
