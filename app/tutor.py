@@ -16,7 +16,7 @@ import re
 import time
 
 from . import boards, characters, conversation, knowledge, kinder, \
-    neural_voice, worlds, llm
+    language, neural_voice, worlds, llm
 
 MAX_HISTORY      = 10
 EXCERPT_BUDGET   = 10_000     # curriculum chars per turn
@@ -96,7 +96,8 @@ def _system_prompt(name: str, grade: int, buddy_id: str,
         "- The WORLD STYLE decides how playful, how short, and how gentle "
         "your replies are — follow it strictly.\n"
         "- Age-appropriate language for the grade. Warm, patient, encouraging.\n"
-        "- Speak kindly ALWAYS: soft, patient, never cross, never sarcastic. "
+        + language.language_directive(grade)
+        + "- Speak kindly ALWAYS: soft, patient, never cross, never sarcastic. "
         "Praise effort before correcting mistakes.\n"
         "- Do what the child asks, cheerfully and right away. If their ask is "
         "unclear, guess the friendly interpretation and run with it. Never "
@@ -171,6 +172,10 @@ def _review(answer: str, question: str, grade: int,
         "was asked, vocabulary fits the grade, warm and encouraging "
         "tone. Deduct for: any factual error, ignoring the question, "
         "too-hard words, cold or sarcastic tone, invented facts. "
+        "Language rules for grade "
+        + str(grade) + ": every sentence at most "
+        + str(language.band_limits(grade)["max_words"]) + " words; simple "
+        "everyday vocabulary. Count a few real sentences before scoring. "
         "Reply in EXACTLY this shape:\n"
         "SCORE: <number>\n"
         "FIX: <one short sentence of the biggest problem, or 'none'>"
@@ -182,6 +187,21 @@ def _review(answer: str, question: str, grade: int,
     mf = re.search(r"FIX:\s*(.+)", text)
     score = int(ms.group(1)) if ms else 10
     return min(10, max(1, score)), (mf.group(1).strip() if mf else "")
+
+
+_META_RE = re.compile(
+    r"^\s*(sure|okay|ok|i see|certainly|of course|let me|i'll|i will|"
+    r"here is|here's|trying|as (you|instructed|requested))[^.!?]{0,80}[.!?]\s*",
+    re.I)
+
+def _strip_meta(text: str) -> str:
+    """Drop any leading line where the model narrates its instructions."""
+    for _ in range(2):
+        m = _META_RE.match(text or "")
+        if not m:
+            break
+        text = text[m.end():]
+    return (text or "").strip()
 
 
 # ── main ask ─────────────────────────────────────────────────────────────────
@@ -249,14 +269,39 @@ def ask(name: str, grade: int, buddy: str, question: str,
                 {"role": "assistant", "content": answer},
                 {"role": "user", "content":
                     "Rewrite your reply, fixing this criticism: "
-                    f"{fix}. Keep your character and warmth."},
+                    f"{fix}. Keep your character and warmth. "
+                    "Output ONLY the new reply in character - never "
+                    "mention instructions or rewriting."},
             ]
             better, _ = llm.complete(messages_fix, max_tokens=3000,
                                      temperature=0.4, timeout=90.0)
             if better:
-                answer = better
+                answer = _strip_meta(better) or answer
     except Exception:
         pass    # reviewer must never break chat
+
+    # Stage 2: deterministic LANGUAGE gate — lint the (possibly rewritten)
+    # answer against the grade's contract; force a simplification rewrite
+    # and keep the lint-cleaner of the two. Never regress, never raise.
+    try:
+        _lint0 = language.lint(answer, grade)
+        if not _lint0["ok"]:
+            messages_fix2 = messages[:-1] + [
+                {"role": "user", "content": question[:2000]},
+                {"role": "assistant", "content": answer},
+                {"role": "user", "content":
+                    "Rewrite your reply: "
+                    + language.criticism(_lint0["violations"], grade)},
+            ]
+            simpler, _ = llm.complete(messages_fix2, max_tokens=3000,
+                                      temperature=0.4, timeout=90.0)
+            simpler = _strip_meta(simpler)
+            if simpler:
+                _lint1 = language.lint(simpler, grade)
+                if _lint1["ok"] or len(_lint1["violations"]) < len(_lint0["violations"]):
+                    answer = simpler
+    except Exception:
+        pass
 
     return answer
 
