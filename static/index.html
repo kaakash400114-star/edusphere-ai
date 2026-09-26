@@ -425,8 +425,8 @@ body.kg-mode .msg.bot{font-size:1.12rem}
       <div id="ob-chars" class="char-grid"></div>
     </label>
 
-    <label class="fld">Parent: set a 4–8 digit PIN
-      <input id="ob-pin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN">
+    <label class="fld">Parents only: PIN to lock the report <small>(optional — skip if you like)</small>
+      <input id="ob-pin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN (optional)">
     </label>
 
     <label class="consent">
@@ -620,13 +620,22 @@ body.kg-mode .msg.bot{font-size:1.12rem}
       <button id="set-voice-save" class="btn-primary">Save voice</button>
     </div>
 
-    <div class="set-sec">
-      <h4>Parent PIN</h4>
-      <label class="set-row"><span>Current PIN</span>
-        <input id="set-pin-old" type="password" inputmode="numeric" maxlength="8"></label>
-      <label class="set-row"><span>New PIN</span>
-        <input id="set-pin-new" type="password" inputmode="numeric" maxlength="8"></label>
-      <button id="set-pin-save" class="btn-primary">Change PIN</button>
+    <div class="set-sec" id="set-pin-sec">
+      <h4>Parent PIN <small id="set-pin-hint"></small></h4>
+      <div id="set-pin-set" class="hidden">
+        <label class="set-row"><span>Current PIN</span>
+          <input id="set-pin-old" type="password" inputmode="numeric" maxlength="8"></label>
+        <label class="set-row"><span>New PIN</span>
+          <input id="set-pin-new" type="password" inputmode="numeric" maxlength="8"></label>
+        <button id="set-pin-save" class="btn-primary">Change PIN</button>
+        <button id="set-pin-clear" class="btn-primary">Remove PIN</button>
+      </div>
+      <div id="set-pin-add">
+        <p class="modal-sub">No PIN set. Add one to lock this report from your kid.</p>
+        <label class="set-row"><span>New PIN</span>
+          <input id="set-pin-new2" type="password" inputmode="numeric" maxlength="8"></label>
+        <button id="set-pin-add-save" class="btn-primary">Set PIN</button>
+      </div>
     </div>
 
     <div class="set-sec">
@@ -825,8 +834,8 @@ async function startLearning() {
   if (state.grade === null || state.grade === undefined ||
       !(state.grade >= 0 && state.grade <= 12))
     return err.textContent = "Pick your grade (KG or 1 to 12)!";
-  if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Parents: PIN must be 4–8 digits.";
-  if (!$("ob-consent").checked) return err.textContent = "Parent consent is required.";
+  if (pin && !/^\d{4,8}$/.test(pin))
+    return err.textContent = "PIN must be 4–8 digits (or leave it empty).";
   err.textContent = "";
   const r = await fetch("/api/profile", {
     method: "POST", headers: { "Content-Type": "application/json" },
@@ -875,11 +884,15 @@ function enterApp(profile, world) {
   $("onboard").classList.add("hidden");
   $("worldgate").classList.add("hidden");
   $("chatapp").classList.remove("hidden");
-  // KG voice-first mode: hide typing, one big mic, kinder + trace buttons
+  // KG voice-first mode: hide typing, one big mic, kinder + trace buttons.
+  // BUT if this browser has no speech recognition (Firefox / iPhone Safari),
+  // keep the keyboard visible — text chat still works everywhere.
   const kg = (profile.grade || 0) <= 0;
-  document.body.classList.toggle("kg-mode", kg);
-  if (kg) $("kg-note").textContent =
-    "🎙️ Just tap the mic and talk — I'm listening!";
+  const canListen = micSupported();
+  document.body.classList.toggle("kg-mode", kg && canListen);
+  if (kg) $("kg-note").textContent = canListen
+    ? "🎙️ Just tap the mic and talk — I'm listening!"
+    : "⌨️ Type to talk to me — this browser can't listen, but I still hear you by text! 💛";
   if ($("kinder-btn")) $("kinder-btn").classList.toggle("hidden", !kg);
   if ($("trace-btn")) $("trace-btn").classList.toggle("hidden", (profile.grade || 0) > 2);
   if (kg) addMsg("Welcome to Sunny Meadow! 🌸 Tap 🐣 Kinder for fun games, ✏️ Trace to draw letters, or tap the mic and just talk to me!", "bot");
@@ -1162,7 +1175,9 @@ async function openBuddyModal() {
 async function openReport() {
   const pin = $("parent-pin").value.trim();
   const err = $("parent-err");
-  if (!/^\d{4,8}$/.test(pin)) return err.textContent = "Enter your PIN.";
+  if (pin && !/^\d{4,8}$/.test(pin)) return err.textContent = "PIN must be 4–8 digits.";
+  if (!pin && (state.profile ? state.profile.has_pin : true))
+    return err.textContent = "Enter your PIN.";
   err.textContent = "";
   const r = await fetch("/api/parent/report", {
     method: "POST", headers: { "Content-Type": "application/json" },
@@ -1405,6 +1420,10 @@ function stopListening() {
 
 // tap-tap: tap mic while listening = auto-continue conversation mode
 function toggleMic() {
+  if (!micSupported()) {
+    addMsg("🎤 This browser can't listen (Chrome or Edge works) — type to me instead, I'll still reply out loud!", "bot");
+    return;
+  }
   if (Buddy.listening) { stopListening(); return; }
   if (Buddy.speaking) { stopSpeaking(); return; }  // tap mic to interrupt buddy
   Buddy.autoListen = !Buddy.autoListen;
@@ -1841,6 +1860,7 @@ async function openSettings() {
   $("set-speed").value = p.voice_speed || 1.0;
   $("set-speed-val").textContent = (p.voice_speed || 1.0).toFixed(2) + "×";
   $("set-improve").innerHTML = impBlock(d.improvement);
+  refreshPinSection();
   $("settings-modal").classList.remove("hidden");
 }
 
@@ -1890,7 +1910,43 @@ function wireSettings() {
     if (!r.ok) return $("set-msg").textContent = d.detail || "Could not change PIN.";
     $("set-msg").textContent = "PIN changed ✓";
     $("set-pin-old").value = ""; $("set-pin-new").value = "";
+    refreshPinSection();
   };
+  $("set-pin-add-save").onclick = async () => {
+    const newPin = $("set-pin-new2").value.trim();
+    if (!/^\d{4,8}$/.test(newPin)) return $("set-msg").textContent = "PIN must be 4-8 digits.";
+    const r = await fetch("/api/settings/" + state.pid, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ new_pin: newPin }),
+    });
+    const d = await r.json();
+    if (!r.ok) return $("set-msg").textContent = d.detail || "Could not set PIN.";
+    $("set-msg").textContent = "PIN set ✓ Report is now locked.";
+    $("set-pin-new2").value = "";
+    refreshPinSection();
+  };
+  $("set-pin-clear").onclick = async () => {
+    const oldPin = $("set-pin-old").value.trim();
+    const r = await fetch("/api/settings/" + state.pid, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ current_pin: oldPin, new_pin: "" }),
+    });
+    const d = await r.json();
+    if (!r.ok) return $("set-msg").textContent = d.detail || "Could not remove PIN.";
+    $("set-msg").textContent = "PIN removed ✓ Report is open again.";
+    $("set-pin-old").value = ""; $("set-pin-new").value = "";
+    refreshPinSection();
+  };
+}
+
+function refreshPinSection() {
+  // Decides which PIN sub-panel shows, based on whether a PIN exists.
+  fetch("/api/profile/" + state.pid).then(r => r.json()).then(d => {
+    const hasPin = !!(d.profile && d.profile.has_pin);
+    $("set-pin-set").classList.toggle("hidden", !hasPin);
+    $("set-pin-add").classList.toggle("hidden", hasPin);
+    $("set-pin-hint").textContent = hasPin ? "(PIN is ON)" : "(no PIN)";
+  });
 }
 
 // ======================================================================
@@ -2072,7 +2128,7 @@ async function submitTalk() {
 }
 
 function talkMic() {
-  if (!micSupported()) { addMsg("This device has no microphone support.", "bot"); return; }
+  if (!micSupported()) { addMsg("This browser can't listen (try Chrome) — but you can type instead!", "bot"); return; }
   if (talkRecog) { try { talkRecog.abort(); } catch (e) {} talkRecog = null; return; }
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   talkRecog = new SR();
@@ -2232,11 +2288,20 @@ function wire() {
   $("buddy-x").onclick = () => $("buddy-modal").classList.add("hidden");
   $("info-x").onclick = () => $("info-modal").classList.add("hidden");
   $("mode-chip").onclick = toggleMode;
-  $("parent-btn").onclick = () => {
+  $("parent-btn").onclick = async () => {
     $("parent-modal").classList.remove("hidden");
-    $("parent-pin-row").classList.remove("hidden");
     $("parent-report").classList.add("hidden");
     $("parent-pin").value = ""; $("parent-err").textContent = "";
+    // No PIN set → report opens straight away; PIN set → ask first.
+    try {
+      const d = await (await fetch("/api/profile/" + state.pid)).json();
+      if (d.profile && d.profile.has_pin) {
+        $("parent-pin-row").classList.remove("hidden");
+      } else {
+        $("parent-pin-row").classList.add("hidden");
+        openReport();
+      }
+    } catch { $("parent-pin-row").classList.remove("hidden"); }
   };
   $("parent-x").onclick = () => $("parent-modal").classList.add("hidden");
   $("parent-go").onclick = openReport;

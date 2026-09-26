@@ -15,15 +15,25 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from . import (boards, characters, conversation, improvement, knowledge,
-               kinder, neural_voice, practice, profiles, tutor, worlds)
+               knowledge_fresh, kinder, neural_voice, practice, profiles,
+               tutor, worlds)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
 
 app = FastAPI(title="EduSphere AI", docs_url=None, redoc_url=None)
 
+
+@app.on_event("startup")
+def _start_self_updating_knowledge() -> None:
+    """The curriculum maintains itself from the moment the app boots."""
+    knowledge_fresh.start()
+
+
 # tiny in-memory rate limiter: pid -> last request ts
 _last_req: dict[str, float] = {}
+# hourly LLM budget per profile: pid -> [timestamps]
+_chat_hist: dict[str, list[float]] = {}
 
 
 def _rate_ok(pid: str, min_gap: float = 2.0) -> bool:
@@ -31,6 +41,23 @@ def _rate_ok(pid: str, min_gap: float = 2.0) -> bool:
     if now - _last_req.get(pid, 0) < min_gap:
         return False
     _last_req[pid] = now
+    # prune old entries so the dict cannot grow forever
+    if len(_last_req) > 5000:
+        cutoff = now - 3600
+        for k in [k for k, v in _last_req.items() if v < cutoff]:
+            _last_req.pop(k, None)
+    return True
+
+
+def _burst_ok(pid: str, max_per_hour: int = 240) -> bool:
+    """Hourly cap per profile (default: 4 LLM chats a minute sustained)."""
+    now = time.time()
+    hist = [t for t in _chat_hist.get(pid, []) if now - t < 3600]
+    if len(hist) >= max_per_hour:
+        _chat_hist[pid] = hist
+        return False
+    hist.append(now)
+    _chat_hist[pid] = hist
     return True
 
 
@@ -39,7 +66,9 @@ def _rate_ok(pid: str, min_gap: float = 2.0) -> bool:
 class ProfileCreate(BaseModel):
     name: str = Field(min_length=1, max_length=20)
     grade: int = Field(ge=0, le=12)  # grade 0 = KG little learners
-    parent_pin: str = Field(min_length=4, max_length=8)
+    # PIN is OPTIONAL now — parents MAY set one to lock the report; kids can
+    # sign up alone and are never blocked.
+    parent_pin: str | None = Field(default=None, min_length=4, max_length=8)
     character: str = "auto"
     board: str = boards.DEFAULT_BOARD
 
@@ -73,8 +102,9 @@ class SettingsUpdate(BaseModel):
     board: str | None = None
     voice_speed: float | None = Field(default=None, ge=0.5, le=2.0)
     voice_on: bool | None = None
-    current_pin: str | None = Field(default=None, min_length=4, max_length=8)
-    new_pin: str | None = Field(default=None, min_length=4, max_length=8)
+    current_pin: str | None = Field(default=None, max_length=8)
+    # Empty string allowed = "remove the PIN"; 4-8 digits = set/change.
+    new_pin: str | None = Field(default=None, max_length=8)
 
 
 class ChatRequest(BaseModel):
@@ -86,7 +116,8 @@ class ChatRequest(BaseModel):
 
 class PinRequest(BaseModel):
     pid: str
-    pin: str = Field(min_length=4, max_length=8)
+    # Empty allowed: profiles with NO parent PIN never need one to read the report.
+    pin: str = Field(default="", max_length=8)
 
 
 class TaskDoneRequest(BaseModel):
@@ -140,6 +171,8 @@ def get_settings(pid: str):
         "profile": profile,
         "boards": boards.board_public(),
         "improvement": improvement.improvement_report(raw, profile["grade"]),
+        # Frontend shows the PIN row only when a parent actually set one.
+        "has_pin": profiles.has_pin(pid),
     }
 
 
@@ -156,6 +189,8 @@ def save_settings(pid: str, body: SettingsUpdate):
         if not profiles.check_pin(pid, body.current_pin or ""):
             raise HTTPException(403, "current PIN is wrong")
         changes["parent_pin"] = body.new_pin
+    elif body.current_pin is not None and body.current_pin == "":
+        changes["parent_pin"] = ""   # explicit clear — remove the PIN
     if changes.get("grade") is not None:
         raw = profiles._raw(pid)
         if raw and raw.get("grade") != changes["grade"]:
@@ -242,9 +277,9 @@ def chat(body: ChatRequest):
     profile = profiles.get_profile(body.pid)
     if not profile:
         raise HTTPException(404, "profile not found")
-    if not _rate_ok(body.pid):
+    if not _rate_ok(body.pid) or not _burst_ok(body.pid):
         return JSONResponse(
-            {"error": "easy there! try again in a couple of seconds."},
+            {"error": "easy there! take a short break and try again."},
             status_code=429)
     subject = tutor.detect_subject(body.message, max(1, profile["grade"]))
     answer = tutor.ask(
@@ -441,6 +476,7 @@ def parent_report(body: PinRequest):
     if not report:
         raise HTTPException(404, "profile not found")
     report["improvement"] = profiles.improvement_section(body.pid)
+    report["pin_protected"] = profiles.has_pin(body.pid)
     return {"report": report}
 
 
@@ -549,6 +585,20 @@ def kinder_finish(pid: str, body: KinderFinish):
                               source="kinder:" + body.kind)
     profiles.record_activity(pid, "kinder:" + body.kind, "kinder corner")
     return {"result": payload, "profile": profiles.get_profile(pid)}
+
+
+# ---------------- self-updating knowledge ----------------
+
+@app.get("/api/knowledge/health")
+def knowledge_health():
+    """Live self-check: is every curriculum section backed by real content?"""
+    return knowledge_fresh.health()
+
+
+@app.post("/api/knowledge/refresh")
+def knowledge_refresh():
+    """Manual trigger for one healing pass (also runs automatically)."""
+    return knowledge_fresh.refresh_pass(max_files=6)
 
 
 # ---------------- neural TTS audio serving ----------------

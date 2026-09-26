@@ -28,7 +28,7 @@ def _path(pid: str) -> Path:
     return PROFILES_DIR / f"{_safe_pid(pid)}.json"
 
 
-def create_profile(name: str, grade: int, parent_pin: str,
+def create_profile(name: str, grade: int, parent_pin: str | None,
                    character: str = "auto", board: str = "cbse") -> dict:
     from . import boards as _boards
     name = name.strip()[:MAX_NAME_LEN]
@@ -43,7 +43,9 @@ def create_profile(name: str, grade: int, parent_pin: str,
         "grade": grade,
         "character": character,
         "board": _boards.normalize_board(board),
-        "parent_pin_hash": _hash_pin(parent_pin),
+        # PIN is OPTIONAL — a parent may set one to lock the report; a kid can
+        # sign up alone and is never blocked. Empty hash = no PIN set.
+        "parent_pin_hash": _hash_pin(parent_pin) if parent_pin else "",
         "parent_consent": True,
         "consent_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -70,12 +72,24 @@ def get_profile(pid: str) -> dict | None:
     return _public(json.loads(p.read_text(encoding="utf-8")))
 
 
+def has_pin(pid: str) -> bool:
+    """True when a parent actually set a PIN on this profile."""
+    p = _path(pid)
+    if not p.exists():
+        return False
+    raw = json.loads(p.read_text(encoding="utf-8"))
+    return bool(raw.get("parent_pin_hash"))
+
+
 def check_pin(pid: str, pin: str) -> bool:
     p = _path(pid)
     if not p.exists():
         return False
     raw = json.loads(p.read_text(encoding="utf-8"))
-    return secrets.compare_digest(raw.get("parent_pin_hash", ""), _hash_pin(pin))
+    stored = raw.get("parent_pin_hash", "")
+    if not stored:          # no PIN set → nothing to check, never block
+        return True
+    return secrets.compare_digest(stored, _hash_pin(pin))
 
 
 def update_profile(pid: str, **changes) -> dict | None:
@@ -93,8 +107,10 @@ def update_profile(pid: str, **changes) -> dict | None:
             raw[key] = changes[key]
     if "board" in changes and changes["board"] is not None:
         raw["board"] = _boards.normalize_board(changes["board"])
-    if "parent_pin" in changes and changes["parent_pin"] is not None:
-        raw["parent_pin_hash"] = _hash_pin(str(changes["parent_pin"]))
+    if "parent_pin" in changes:
+        # Empty string = clear the PIN; a real value sets/changes it.
+        raw["parent_pin_hash"] = (_hash_pin(str(changes["parent_pin"]))
+                                  if changes["parent_pin"] else "")
     if "accessory" in changes and changes["accessory"] is not None:
         item = changes["accessory"]
         if item and item not in raw.get("wardrobe", []):
@@ -249,7 +265,9 @@ def _write_raw(pid: str, raw: dict) -> None:
 
 
 def _public(raw: dict) -> dict:
-    return {k: v for k, v in raw.items() if k != "parent_pin_hash"}
+    out = {k: v for k, v in raw.items() if k != "parent_pin_hash"}
+    out["has_pin"] = bool(raw.get("parent_pin_hash"))
+    return out
 
 
 def _hash_pin(pin: str) -> str:
