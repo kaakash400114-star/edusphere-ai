@@ -15,9 +15,9 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
-from . import (animations, boards, camera, characters, conversation,
-               habits, improvement, knowledge, knowledge_fresh, kinder,
-               neural_voice, practice, profiles, tutor, worlds, llm)
+from . import (adaptive, animations, boards, camera, characters,
+               conversation, habits, improvement, knowledge, knowledge_fresh,
+               kinder, neural_voice, practice, profiles, tutor, worlds, llm)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -599,6 +599,20 @@ def get_practice(pid: str):
     return {"grade": profile["grade"],
             "points": profiles.get_points(profile),
             "topics": topics}
+
+
+
+@app.get("/api/practice/{pid}/smart")
+def practice_smart(pid: str, limit: int = 6):
+    """Adaptive picks: reviews due, weak spots, fresh topics — with reasons."""
+    profile = profiles.get_profile(pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    if profile["grade"] < 1:
+        return {"grade": 0, "picks": []}
+    picks = adaptive.smart_topics(profiles._raw(pid) or {},
+                                  profile["grade"], limit)
+    return {"grade": profile["grade"], "picks": picks}
 
 
 @app.get("/api/practice/{pid}/{topic_id}")

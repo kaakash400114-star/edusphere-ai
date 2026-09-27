@@ -521,6 +521,9 @@ body.dark-mode .onboard-card, body.dark-mode .modal-card { background: #2d2a45; 
   50% { transform: rotate(5deg); }
 }
 
+.pt-row.smart { background: linear-gradient(90deg, rgba(250,204,21,.14), transparent); }
+.pt-row.smart .tp { color:#b45309; font-weight:700; }
+
 /* ===== EXTENDED CHARACTER ANIMATIONS ===== */
 /* Action: idle — gentle float */
 .anim-idle { animation: esIdleFloat 3s ease-in-out infinite; }
@@ -2289,6 +2292,27 @@ async function openPractice() {
     `Grade ${d.grade} · Points: 💠 ${d.points} — every topic is free, finish one to earn!`;
   const list = $("practice-list");
   list.innerHTML = "";
+  // adaptive picks first (reviews due, weak spots, fresh)
+  try {
+    const sr = await fetch("/api/practice/" + state.pid + "/smart?limit=3");
+    if (sr.ok) {
+      const sd = await sr.json();
+      (sd.picks || []).forEach(pk => {
+        const t = pk.topic;
+        const row = document.createElement("div");
+        row.className = "pt-row smart";
+        row.dataset.subject = t.subject;
+        row.innerHTML = `<span class="em">⭐</span>` +
+          `<div><div class="tt">${t.title}</div><div class="tp">${pk.reason}</div></div>` +
+          `<span class="pts">+${t.points} 💠</span>`;
+        const b = document.createElement("button");
+        b.textContent = "Start ▶";
+        b.onclick = () => startPractice(t);
+        row.appendChild(b);
+        list.appendChild(row);
+      });
+    }
+  } catch (e) {}
   const doneIds = new Set(Object.keys(state.profile.practice_done || {}));
   (d.topics || []).forEach(t => {
     const row = document.createElement("div");
