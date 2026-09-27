@@ -1810,7 +1810,13 @@ function startListening(auto) {
     }
     $("chat-input").value = said;
   };
-  Buddy.recog.onerror = () => {};
+  Buddy.recog.onerror = (e) => {
+    const why = { "not-allowed": "Microphone is blocked — allow it in the address bar",
+                  "no-speech": "I didn't hear anything — try again",
+                  "audio-capture": "No microphone found",
+                  "network": "Network problem with the microphone" }[e.error];
+    if (why) addMsg("🎤 " + why + ".", "bot");
+  };
   Buddy.recog.onend = () => {
     Buddy.listening = false;
     $("mic").classList.remove("listening");
@@ -2766,6 +2772,11 @@ async function restore() {
 }
 
 restore();
+// Launch safety: if anything raced during restore(), re-bind every button once
+// the page has fully loaded (idempotent — assignments simply overwrite).
+window.addEventListener("load", () => setTimeout(() => {
+  try { wire(); } catch (e) { console.warn("wire rebind failed:", e); }
+}, 50));
 
 // ================= camera homework helper (Stage 3) =================
 const HW = { stream: null, shot: null };
@@ -3033,7 +3044,13 @@ function liveListen() {
     liveCaption("You: " + said, true);
     liveSend(said);
   };
-  Live.recog.onerror = () => {};
+  Live.recog.onerror = (e) => {
+    const why = { "not-allowed": "Microphone blocked — allow it in the address bar",
+                  "no-speech": "I didn't hear anything — try again",
+                  "audio-capture": "No microphone found",
+                  "network": "Network problem" }[e.error];
+    if (why) liveCaption("🎤 " + why, true);
+  };
   Live.recog.onend = () => {
     Live.listening = false;
     $("live-mic").classList.remove("listening");

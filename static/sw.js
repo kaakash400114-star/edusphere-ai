@@ -1,5 +1,5 @@
 /* EduSphere AI service worker — app-shell caching for offline opens. */
-const CACHE = "edusphere-v12"; /* v12: help section placement fix */
+const CACHE = "edusphere-v14"; /* v14: mic error feedback */
 const SHELL = [
   "/", "/index.html", "/manifest.json",
   "/animals.js", "/buddy-life.js", "/buddy-actions.js", "/kinder.js", "/tracing.js",
