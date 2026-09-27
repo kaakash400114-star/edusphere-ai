@@ -1,0 +1,13 @@
+# UAE Curriculum (MOE) Grade 2 Science
+## Living Things and Their Needs
+Living things need air, water, food, and shelter to survive. Plants make their own food using sunlight, water, and carbon dioxide. Animals get food by eating plants or other animals. In the UAE, a date palm tree needs little water and grows well in the hot desert. A camel is an animal that can go for days without water. All living things grow, change, and have babies. They are found in different places, like the desert or an oasis.
+## Materials and Their Properties
+Materials can be grouped based on their properties. We sort materials as hard, soft, shiny, or dull. A dirham coin is hard and shiny. A blanket is soft. We also sort materials as waterproof or absorbent. An umbrella is waterproof. A sponge is absorbent. Some materials, like wood, can float on water, while others, like a metal key, will sink. We use different materials to make things that are useful for us every day.
+## Weather and Seasons
+The weather is how the air feels outside. It can be hot, cold, sunny, rainy, or windy. In the UAE, it is usually hot and sunny. Sometimes, there is sand from a sandstorm. The year is divided into four seasons: summer, autumn, winter, and spring. In the UAE, summer is very hot, and winter is mild. The weather affects what clothes we wear and the activities we can do, like playing outside in the park or visiting a souk.
+## Observing the Sky
+We can see the sun, the moon, and stars in the sky. During the day, the sun gives us light and heat. At night, the moon and stars shine. The sun rises in the east in the morning and sets in the west in the evening. We use the sun to tell the time. In the desert, the sun can feel very strong on a hot day. Sometimes, we see clouds in the sky. Clouds are made of tiny drops of water and can change shape.
+## Pushes and Pulls
+A push is a force that makes something move away. A pull is a force that makes something come closer. When you push a swing, it moves forward. When you pull a rope, it comes towards you. Forces can make things go faster, slower, or change direction. You can push a shopping cart in a souk or pull a heavy bag. Without pushes and pulls, things would stay still. We use forces in all our actions every day.
+## Caring for Our Environment
+We must take care of our environment to stay healthy. We do not litter. We put rubbish in bins. We can recycle things like plastic bottles and paper to save materials. Water is precious, so we turn off the tap to save it. Plants give us clean air, so we look after them, like the trees in a park. We should protect special places like the coast and respect beautiful buildings, such as the Sheikh Zayed Grand Mosque.

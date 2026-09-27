@@ -1,0 +1,18 @@
+# Cambridge IGCSE Grade 5 Mathematics
+## Numbers and Operations
+Students understand place value to at least 100,000, reading, writing, and comparing numbers. They use the four operations: addition, subtraction, multiplication, and division, using formal written methods for numbers up to 5,000. A student might calculate 4,562 - 1,234 or solve 78 x 6. They recall multiplication facts to 10x10 and use inverse operations to check calculations. They solve simple, one-step word problems involving money and measurements in both metric (like finding the total cost of 5 items costing $1.20 each) and imperial units, such as adding weights in pounds and ounces.
+
+## Fractions, Decimals, and Percentages
+Students learn to recognise and name equivalent fractions, finding them using diagrams or number lines. They order and compare fractions with the same denominator or related numerators. They add and subtract fractions with the same denominator, for example, 3/8 + 1/8. They understand tenths, hundredths, and thousandths, and can write decimals with up to three decimal places. They order decimals and convert between simple fractions and decimals, such as 1/2 = 0.5. They are also introduced to percentages, recognising that 100% represents a whole and relating percentages to fractions and decimals with denominators of 2, 4, 5, 10, and 100.
+
+## Geometry and Shapes
+Students identify, describe, and draw properties of 2D shapes, including polygons, circles, and regular shapes. They know the properties of quadrilaterals like squares, rectangles, and parallelograms. For 3D shapes, they name common solids such as cubes, cuboids, cylinders, pyramids, and spheres. They identify nets for 3D shapes and can sort shapes based on their properties like the number of sides or angles. They begin to understand and use the language of position, direction, and movement, including terms like clockwise, anti-clockwise, and right angles, to follow simple instructions on a grid.
+
+## Measurement
+Students use standard units for length (km, m, cm, mm), mass (kg, g), and volume (l, ml) to estimate, measure, and compare. They solve problems involving length, perimeter, and area using the correct units, for example, finding the perimeter of a rectangle 8 cm by 3 cm. They read time on analogue and digital clocks, including 12-hour and 24-hour formats, and calculate simple durations, such as the time between two events. They convert between different units of time, like minutes to hours, and use timetables to solve real-world problems.
+
+## Handling Data
+Students construct and interpret pictograms, bar charts, and tables using simple scales. They understand that one symbol or block can represent more than one item. They collect data through tally charts and present it in lists, tables, or block graphs. They find the mode, median, and range for small sets of data, such as finding the most common eye colour in a class. They begin to understand and use the language of probability, describing the likelihood of events using words like 'impossible', 'unlikely', 'certain', and 'equally likely'.
+
+## Problem Solving and Algebraic Thinking
+Students solve multi-step word problems in all areas, requiring them to choose the correct operations. They begin to understand and use simple algebraic expressions, for example, finding the missing number in an equation like 5 + ? = 12. They describe and extend linear number patterns, such as counting on in steps of 3 or 4. They can formulate their own problems from given information and use logical reasoning to justify their answers. They explore the commutative and associative properties of addition and multiplication through practical examples.

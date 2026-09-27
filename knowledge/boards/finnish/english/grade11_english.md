@@ -1,0 +1,19 @@
+# Finnish (FNBE) Grade 11 English
+
+## Understanding Cultural Context in Analytical Writing
+Students learn to identify and analyse cultural references and nuances in English texts. They apply methods for decoding idioms, humour, and political allusions, developing sensitivity to different cultural lenses. Key competencies involve comparing Finnish concepts like 'sisu' (perseverance) with their English equivalents. Examples include analysing how references to saunas or the Northern Lights function as symbols of national identity in literature, enabling students to write analytical essays that interpret cultural symbols and their significance in both local and global contexts.
+
+## Deconstructing Media and Rhetoric in the Digital Age
+This module focuses on deconstructing media messages using the FNBE transversal competence of critical thinking. Students learn to identify rhetorical devices, logical fallacies, and persuasive techniques in news articles, political speeches, and online content. They apply methodologies for verifying sources and detecting bias. Finnish examples are used, such as analysing EU-related campaign materials for rhetorical strategies. Students develop the ability to produce structured arguments in essays and presentations, evaluating the persuasive power of language in shaping public opinion.
+
+## Advanced Linguistic Structures for Academic Argumentation
+Students master advanced English grammatical structures to build precise and persuasive academic arguments. The curriculum covers complex sentence forms, inversion, and cleft sentences for emphasis. Factual content includes rules for subordinate clauses and participle phrases to enhance fluency. Students learn to apply these structures in formal writing, for instance, constructing nuanced discussions on Finnish EU contributions or the economic implications of the euro, thereby refining their ability to articulate sophisticated viewpoints with linguistic accuracy and clarity.
+
+## Developing Narrative Voice in Comparative Literature
+This topic guides students in analysing and employing narrative voice and perspective. They study techniques such as stream of consciousness and unreliable narration, comparing their application in classic and contemporary texts. The core learning involves writing from multiple perspectives, for example, narrating a Moomin story from a secondary character's viewpoint. This develops transversal competence in communication and cultural understanding, enabling students to craft original narratives with distinct voices and reflect on how perspective influences the construction of meaning in a story.
+
+## Globalisation and Local Identity in Professional Communication
+Students explore the relationship between globalisation and local identity in professional English. They learn to write culturally sensitive emails, reports, and proposals for international contexts. The curriculum provides methodologies for adapting communication style to different audiences. Examples include drafting a business proposal for a sustainable tourism venture in Finnish Lapland, incorporating local elements like the Northern Lights to create a unique marketable identity while adhering to global professional standards, thus honing pragmatic and intercultural communication skills.
+
+## Research and Citation for Senior Secondary Depth
+This section equips students with advanced research and citation skills required for senior secondary depth. They learn the FNBE-based research process, from formulating questions to evaluating sources. Factual content includes mastering the specific rules for in-text citations and reference lists using an academic style. Students practise synthesising information to write research papers, for instance, investigating the cultural impact of the Moomin books internationally and correctly citing all sources to avoid plagiarism, a key component of academic integrity and evidence-based argumentation.

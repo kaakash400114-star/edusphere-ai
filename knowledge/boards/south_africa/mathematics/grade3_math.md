@@ -1,0 +1,19 @@
+# South African (CAPS) Grade 3 Mathematics
+
+## Numbers, Operations and Relationships
+Learners are able to order, describe, compare and represent numbers, and their relationships, to at least 1000. They build number sense by counting forwards and backwards in 1s, 2s, 3s, 5s, 10s, 50s and 100s. They can read and write number symbols and names. Learners solve problems involving addition and subtraction of whole numbers with answers to at least 100, using appropriate symbols (+, -, =). They build an understanding of multiplication as repeated addition, for example, 3 x 4 is 3 + 3 + 3 + 3. Division is understood as sharing, for example, 12 ÷ 3 means sharing 12 sweets equally among 3 friends.
+
+## Patterns, Functions and Algebra
+Learners are able to recognise, describe, copy, extend and create physical, numeric and geometric patterns. They identify and describe patterns in their own environment, such as the arrangement of bricks or beads on a necklace. Using numbers up to 100, they complete simple number patterns like 2, 4, 6, 8, or 5, 10, 15. Learners can describe the rule for a simple pattern, such as "we are adding 2 each time." They also use number symbols to record solutions, reinforcing links between number sentences and their concrete representations, like drawing 5 groups of 3 apples to show 5 x 3.
+
+## Space and Shape (Geometry)
+Learners are able to identify, sort, describe and compare 2D shapes and 3D objects in their environment. They name, sort and describe 2D shapes like circles, triangles, squares and rectangles, and 3D objects like spheres, cubes, cylinders and pyramids. They recognise and name geometric properties such as the number of sides, corners (vertices) and faces. For example, a square has four equal sides and four corners. Learners can create models using 3D objects and identify shapes in pictures of local landmarks like Table Mountain, which has a distinct triangular shape, or a circular braai stand used during a family braai.
+
+## Measurement
+Learners are able to use appropriate standard units to measure, estimate, compare and order objects. They measure length using metres (m) and centimetres (cm), for example, the height of a learner or the length of a desk. They measure capacity using litres (L) and millilitres (mL), like the size of a cool drink bottle. Mass is measured in kilograms (kg) and grams (g), for instance, the weight of a loaf of bread or a cricket ball used by the Proteas. Learners also read time in hours, half-hours and quarter-hours on analogue clocks, and they are introduced to rand and cents for money, calculating simple totals like R15.50 for a cool drink and chips.
+
+## Data Handling
+Learners are able to collect, organise, display and interpret data to answer questions and solve problems. They collect data by conducting simple surveys, such as asking their classmates "What is your favourite fruit?" They record data using tallies and lists. They represent this information by drawing pictographs, where one picture might represent two learners. They interpret the data to answer questions, for example, "Which fruit got the most votes?" or "How many more learners prefer apples than oranges?" This skill helps them understand the world around them, like counting the number of cars of different colours passing the school.
+
+## Problem Solving
+Learners are able to use the following skills to solve mathematical problems in realistic contexts: identifying the problem, making a plan, choosing and doing calculations, interpreting and checking the solution. They apply their knowledge of numbers, operations, measurement and data to everyday situations. A problem could be: "You have R50. You buy a book for R25 and a snack for R15. How much money do you have left?" Learners can draw pictures, use objects, or write number sentences to find the answer. This builds confidence and shows them how mathematics is a practical tool for solving real-life problems.

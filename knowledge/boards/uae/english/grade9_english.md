@@ -1,0 +1,18 @@
+# UAE Curriculum (MOE) Grade 9 English
+## Literary Devices and Figurative Language
+Students will learn to identify and analyse a range of literary devices to deepen comprehension of texts. They will study simile (e.g., "The desert sand was as soft as talcum powder"), metaphor ("The Sheikh's wisdom was a guiding light"), personification ("The harsh desert wind whispered secrets"), and hyperbole ("I've told you a million times"). They will learn to distinguish between these devices and explain their effect, focusing on how they enhance imagery, convey emotion, and create a powerful impact on the reader, using local examples like descriptions of the souk's bustling energy.
+
+## Narrative Structure and Plot Development
+This section focuses on the key components of a well-constructed narrative. Students will learn to map a plot using a five-point structure: exposition (introducing characters in a modern Emirati city), rising action (a conflict over a lost camel in the desert), climax (a tense search during a sandstorm), falling action (the discovery of the camel in an oasis), and resolution (the family's reunion). They will analyse how authors use foreshadowing and suspense, and practice creating their own plots using a setting familiar to them, such as the Sheikh Zayed Grand Mosque.
+
+## Argumentative Writing and Rhetorical Appeals
+Students will learn to construct and deconstruct persuasive arguments. The core structure of claim, evidence, and reasoning will be mastered. They will study the three rhetorical appeals: ethos (establishing credibility by referencing the UAE's Founding Father, Sheikh Zayed), pathos (appealing to emotions through stories of family and heritage), and logos (using logical data, for example, comparing the cost of goods in dirhams at different souks). Students will practice writing a formal argument essay on a relevant local topic, such as the importance of cultural preservation.
+
+## Grammatical Precision and Complex Sentences
+This unit advances grammatical knowledge for academic writing. Students will focus on constructing complex sentences using subordinate clauses (e.g., "While the heat was intense, the children played happily in the shade"). Key topics include mastering the correct use of commas, semicolons, and colons to structure ideas clearly. A particular focus is on subject-verb agreement in complex sentences and ensuring clarity in pronoun references. Exercises will involve correcting errors in sentences about life in the UAE, ensuring grammatical accuracy in formal communication.
+
+## Media Literacy and Advertisement Analysis
+Students will develop critical skills to analyse and deconstruct media messages. They will learn to identify the target audience, purpose, and persuasive techniques used in advertisements. Analysis will focus on print, digital, and broadcast media common in the UAE. Students will evaluate how stereotypes (such as those related to gender or nationality) are used and how the values of Emirati culture are portrayed. They will learn to distinguish between factual information and opinionated language in news articles about regional development projects.
+
+## Research and Information Synthesis
+Students will learn the fundamentals of conducting structured research. They will practise identifying credible sources, such as official government portals (.gov.ae) and recognised academic journals. The skill of paraphrasing and summarising information to avoid plagiarism is central to this unit. They will learn to synthesise information from multiple sources to create a coherent report on a UAE-related topic, such as the history of the pearling industry or the architectural innovations of the Burj Khalifa, properly citing all references using a standard format.

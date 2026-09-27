@@ -1,0 +1,18 @@
+# Singapore Curriculum (MOE) Grade 10 Science
+## Chemical Bonding and Structure
+Students explore how atoms achieve stable electron configurations through ionic and covalent bonding. Ionic compounds like sodium chloride (table salt) form when metals transfer electrons to non-metals, creating charged ions held in a crystal lattice. Covalent bonds involve the sharing of electrons, as seen in methane (CH₄), where carbon shares four electrons with hydrogen atoms. They also learn to draw Lewis dot-and-cross diagrams to represent these electron transfers and shared pairs, understanding how the number of valence electrons determines bonding type and molecular structure.
+
+## Thermochemistry and Energy Changes
+Students investigate the energy changes accompanying chemical reactions through the concepts of enthalpy and calorimetry. They perform experiments to measure heat change, like determining the energy content in a single almond using a calorimeter, linking the results in joules per gram (J/g) to everyday energy. The distinction between exothermic (heat-releasing, such as combustion of gas for HDB cooking stoves) and endothermic (heat-absorbing) reactions is solidified through analyses of reaction profiles and the calculation of enthalpy changes using Hess's Law.
+
+## Kinetic Particle Model of Matter
+This topic deepens the understanding of matter by connecting its macroscopic properties to the microscopic behaviour of particles. Students apply the kinetic theory to explain the three states of matter, using the model to differentiate between particles in solid (vibrate in fixed position), liquid (free to slide past each other), and gas (move rapidly and randomly). Real-world applications like the expansion of the MRT tracks on a hot day are used to illustrate the relationship between particle motion, temperature, and pressure, reinforcing core scientific principles with local context.
+
+## Energy Conversion and Transfer
+Students study the various forms of energy and the principles governing their conversion and transfer, particularly focusing on electricity generation. They trace the conversion from chemical energy in natural gas to thermal energy, and finally to electrical energy in a power plant, which then powers Singapore's HDB estates. Efficiency calculations are performed to quantify energy loss, and the laws of thermodynamics are applied to understand why no energy transfer is ever 100% perfect, with heat being a common waste product in systems like air-conditioners in shopping malls.
+
+## Inheritance and Genetics
+Students explore the principles of heredity, including Mendel's laws of segregation and independent assortment. They use Punnett squares to predict the inheritance of traits such as blood types or genetic disorders, using simple monohybrid and dihybrid crosses. The topic connects to local examples by discussing the genetic diversity required in crops grown in Singapore's vertical farms and the ethical considerations of genetic screening, providing students with a balanced view of how biological principles apply to both health and agricultural challenges in a dense urban environment.
+
+## Application of Forces
+The topic extends the concept of forces to real-world systems, analysing the balance of forces in static and dynamic situations. Students apply Newton's laws of motion to explain phenomena like the braking of an MRT train, where friction provides a force opposing its forward motion. They resolve forces into their components, calculate moments (torque) for systems like see-saws, and understand stability, linking these concepts to the design of stable structures in Singapore, from the towering Supertrees to the foundations of HDB buildings to withstand strong winds.

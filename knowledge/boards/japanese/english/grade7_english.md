@@ -1,0 +1,18 @@
+# Japanese (MEXT) Grade 7 English
+## Basic Sentence Structure and Verb Conjugation
+Students master the fundamental structure of simple, declarative sentences in English, focusing on the Subject-Verb-Object pattern. They learn to accurately conjugate regular verbs in the simple present, past, and future tenses. For example, "I study English," "They studied for the test," and "She will visit Kyoto." Instruction emphasizes clear subject-verb agreement, such as "He plays tennis" versus "They play tennis." Students practice forming negative sentences using "do not" or "does not" and constructing questions with the appropriate auxiliary verb.
+
+## Core Vocabulary for Daily Life and Descriptions
+Students expand their vocabulary to describe daily routines, personal interests, and the world around them. They learn terms related to school subjects, food, and common activities, using Japanese examples to solidify understanding. For instance, they can describe a typical lunch using words like "bento" and "rice ball." They also learn adjectives for physical description (e.g., "tall," "short," "kind") and personality (e.g., "hardworking," "friendly"). Students practice applying this vocabulary to write simple paragraphs about themselves and their family members.
+
+## Reading Comprehension of Short Texts
+Students develop the ability to read and understand short, structured texts, such as simple narratives, letters, and informational paragraphs. They focus on identifying the main idea and specific details. Using a text about "hanami," students can answer questions like "When do people celebrate hanami?" and "What do people do during this event?" Instruction includes strategies for understanding unfamiliar words from context and grasping the chronological order of events in a story. This builds a foundation for more complex literary analysis in later grades.
+
+## Writing Coherent Short Paragraphs
+Students are taught to write short, coherent paragraphs consisting of a topic sentence, supporting details, and a concluding sentence. They learn to structure their writing logically to convey a single idea clearly. For example, a student might write a paragraph about their favorite season, including reasons why they like it and what they do during that time. Emphasis is placed on correct punctuation, including commas in a list, periods, and capitalization. Students also learn to use basic connecting words like "and," "but," and "because" to link their ideas.
+
+## Listening for Specific Information
+Students practice their listening skills to extract specific information from short dialogues and announcements. They are trained to listen for key details such as names, times, places, and prices. For example, they can listen to a conversation about a weekend trip and identify the destination and the mode of transport. Instruction often includes recordings of conversations set in familiar contexts, such as ordering food or asking for directions. This develops their ability to understand spoken English at a natural pace and prepares them for real-life interactions.
+
+## Speaking Skills for Simple Interactions
+Students learn to speak clearly and confidently in simple, controlled interactions. They practice introducing themselves, asking and answering basic questions about personal information, hobbies, and daily routines. Dialogues often incorporate Japanese cultural elements, such as asking, "Have you seen the shinkansen?" or discussing prices in yen. Emphasis is placed on correct pronunciation and intonation. Students participate in pair work and role-playing activities to build fluency and prepare for more spontaneous communication in the future.

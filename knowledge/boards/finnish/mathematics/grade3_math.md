@@ -1,0 +1,19 @@
+# Finnish (FNBE) Grade 3 Mathematics
+
+## Number Sense and Calculation
+Grade 3 students solidify their skills in arithmetic within the number range 0-1000. They learn mental calculation strategies, such as breaking down numbers into hundreds, tens, and units, and using number bonds for addition and subtraction. A key method is the column method for addition and subtraction. Students practice multiplication tables up to 10, understanding multiplication as repeated addition. For example, they might calculate the cost of three 5-euro sauna tickets, which is 3 x 5 = 15 euros. This forms the basis for solving practical, everyday problems involving money and quantities.
+
+## Geometry and Spatial Sense
+In geometry, students explore two- and three-dimensional shapes. They identify, name, and compare properties like the number of sides, vertices, and faces of shapes such as triangles, rectangles, cubes, and pyramids. A practical example involves building Moomin house models using simple prisms. They learn to describe and draw shapes based on these properties, using simple technical drawing tools. This work connects to the environment, as they recognize geometric shapes in Northern Light formations or traditional Finnish wooden architecture, fostering spatial reasoning and observation skills.
+
+## Measurement
+Students learn to measure and compare different quantities. They use the basic units of measurement for length (metre, centimetre), mass (kilogram, gram), volume (litre), and time. They learn to choose the correct unit for a task, such as measuring the distance to a sauna in metres or the weight of rye flour in kilograms for baking. Using the 24-hour clock, they calculate durations and plan daily schedules. For instance, they might calculate how long a Northern Lights display lasts by comparing start and end times, linking mathematical precision to real-world phenomena and cultural activities.
+
+## Data Handling and Statistics
+Pupils collect, organize, and interpret simple data. They create and read pictograms, bar charts, and tally charts to represent information. For example, they might survey their class to find out who has seen a Moominvalley cartoon and present the results in a bar chart. They practice interpreting the data to answer questions, such as finding the most or least popular answer. This skill helps them understand information presented in newspapers or on news websites, connecting mathematical literacy to their community and national media, encouraging critical thinking about factual information.
+
+## Patterns and Algebraic Thinking
+Students recognize, describe, and continue numerical and geometric patterns. They work with number sequences, identifying the rule to find the next number, such as in counting by 2s, 5s, or 10s. This is linked to understanding multiplication as a pattern. Students also solve simple missing number problems and understand the concept of equality, using balance scales. For example, they might figure out that five 2-euro coins are equal in value to one 10-euro coin, laying the groundwork for understanding variables and equations in later grades.
+
+## Practical Problem Solving and Financial Literacy
+This focus is on applying mathematical knowledge to solve realistic, context-rich problems. Students tackle problems involving everyday Finnish life, such as calculating the total cost of sauna supplies or planning a trip using euros. They develop strategies for breaking down a problem into manageable steps, choosing the correct operations, and checking the reasonableness of their answer. This includes budgeting for a small event with a fixed amount of euros. This competency prepares students to manage real-life mathematical challenges with confidence, supporting their development as responsible and resourceful citizens.

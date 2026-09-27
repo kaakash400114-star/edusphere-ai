@@ -1,0 +1,18 @@
+# South Korean (NCCE) Grade 12 Science
+## Thermodynamics and Energy Efficiency
+The first law of thermodynamics, or the law of energy conservation, states that the change in a system's internal energy equals the heat added to the system minus the work done by the system (ΔU = Q - W). In South Korea, industrial applications focus on maximizing energy efficiency. For example, thermal power plants in Dangjin convert chemical energy from coal into electrical energy, but a significant portion is lost as waste heat. Engineers work to improve the Carnot cycle efficiency to reduce reliance on fossil fuels and lower operational costs measured in Korean Won.
+
+## Chemical Equilibrium and Reaction Rates
+The equilibrium constant (Kc) expresses the ratio of product concentrations to reactant concentrations at equilibrium, each raised to their stoichiometric coefficients. For instance, the Haber process, crucial for Korea's fertilizer industry, synthesizes ammonia from nitrogen and hydrogen (N₂ + 3H₂ ⇌ 2NH₃). A high Kc value indicates a product-favored reaction. Reaction rates are influenced by concentration, temperature, and the presence of catalysts used in petrochemical complexes like Ulsan to optimize the production of plastics and other essential materials.
+
+## Advanced Genetics and Biotechnology
+Mendelian inheritance provides the foundation for understanding genetic disorders. Punnett squares predict the probability of phenotypes, such as the 3:1 ratio in monohybrid crosses. In modern biotechnology, Polymerase Chain Reaction (PCR) amplifies DNA segments, enabling applications like forensic analysis to solve criminal cases in Seoul. Recombinant DNA technology involves inserting genes from one organism into another, a method used to develop genetically modified crops with enhanced traits, a growing field of research in Korean agricultural institutes.
+
+## Electromagnetic Induction and Power Generation
+Faraday's law of induction states that a changing magnetic flux induces an electromotive force (EMF) in a conductor. The magnitude is given by EMF = -N(ΔΦ/Δt), where N is the number of turns in a coil. This principle is fundamental to electric generators in power plants. For example, transformers in the national grid use electromagnetic induction to step up voltage for efficient transmission over long distances from power plants to cities like Seoul and then step it down for residential use, stabilizing the supply for homes and businesses.
+
+## Quantum Mechanics and Atomic Structure
+Quantum mechanics describes atomic behavior through wave functions and probability distributions. The Heisenberg Uncertainty Principle states that it is impossible to simultaneously know the exact position and momentum of an electron (ΔxΔp ≥ ħ/2). Electrons occupy quantized energy levels, or shells, around the nucleus. The Bohr model, while simplified, explains the line emission spectra of elements. This knowledge is essential for developing advanced semiconductors, which are the backbone of South Korea's leading electronics industry and the design of next-generation computer chips.
+
+## Evolution and Biodiversity
+Natural selection is the primary mechanism driving evolution, where organisms with advantageous traits are more likely to survive and reproduce. This leads to changes in allele frequencies within a population over generations. Genetic drift and gene flow are other factors influencing biodiversity. Korea's unique ecosystems, such as the DMZ (Demilitarized Zone), have become unintentional sanctuaries for rare species like the red-crowned crane, providing a living laboratory for studying evolution and conservation efforts to preserve national heritage and ecological balance.

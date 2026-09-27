@@ -1,0 +1,19 @@
+# German (Lehrplan) Grade 7 English
+
+## Grammar: Tense Forms and Progressive Aspects
+Students master the use of present simple for general truths and routines, using examples like 'The Bundesliga season usually starts in August'. They learn to form present continuous for actions happening now, such as 'We are visiting the Christmas market tonight'. The curriculum covers past simple for completed actions, including 'She travelled to Berlin last weekend'. Students also study past continuous for actions in progress, e.g. 'While they were driving on the Autobahn, it started to snow'. The future simple 'will' is introduced for predictions, like 'I think Germany will win the next match'.
+
+## Vocabulary: Thematic Lexical Sets
+Students expand vocabulary through thematic units. They learn terms related to 'Daily Life' (e.g., 'commute', 'errands', 'household chores'), 'Environment' (e.g., 'sustainability', 'recycling', 'carbon footprint'), and 'Hobbies' (e.g., 'hiking', 'photography', 'collecting stamps'). German examples are integrated, such as 'Ich fahre mit der S-Bahn zur Arbeit' (I commute to work by S-Bahn) and 'Wir recyceln Papier und Plastik' (We recycle paper and plastic). Students practice using these words in context through sentence construction and gap-fill exercises.
+
+## Reading Comprehension: Information Retrieval
+Students develop skills in reading for specific information and main ideas. They analyze factual texts about German culture, such as descriptions of Christmas markets in Munich or Dresden. Texts include articles on topics like the history of the Euro or the rules of the Autobahn. Students learn to identify key details, such as opening hours of markets or speed limits on different road sections. They practice skimming for the general purpose and scanning for specific numbers, dates, or names. Questions focus on direct information retrieval and simple inference from the text.
+
+## Writing: Structured Paragraphs
+Students learn to write structured paragraphs on familiar topics. They focus on organizing ideas with a clear topic sentence, supporting details, and a concluding sentence. Writing tasks include describing a place, like 'My Favourite Christmas Market in Cologne', or explaining a process, such as 'How to Plan a Trip to Hamburg'. Students practice using connectors like 'first', 'then', 'however', and 'finally'. They are expected to write 80-100 words, using correct punctuation and varied sentence structures. Emphasis is placed on coherence and logical flow within the paragraph.
+
+## Listening: Identifying Main Points
+Students practice listening to short, clear audio recordings, such as announcements at a train station or a weather forecast for Berlin. They learn to identify the main topic and key details, such as departure times or temperatures. Recordings include dialogues about daily routines, e.g., planning a visit to a museum, or simple discussions about hobbies. Students are trained to distinguish between specific information (like ticket prices) and general opinions. Tasks involve multiple-choice questions or true/false statements based on the audio content, focusing on comprehension of main ideas and specific details.
+
+## Speaking: Role-Planned Dialogues
+Students engage in simple role-plays to practice functional language. They learn to exchange personal information, make suggestions, and express preferences using phrases like 'What do you think about visiting the Berlin TV Tower?' or 'I would prefer to visit the Brandenburg Gate'. Dialogues are based on scenarios like planning a weekend trip, ordering food at a market stall, or discussing a favourite football team. Students practice using polite forms and appropriate intonation. The goal is to develop confidence in initiating and responding to simple exchanges, with a focus on clarity and basic interactive skills.

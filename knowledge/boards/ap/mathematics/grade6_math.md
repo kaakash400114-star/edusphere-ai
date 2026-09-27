@@ -1,0 +1,18 @@
+# Advanced Placement (AP) Grade 6 Mathematics  
+## Number Systems and Operations  
+Students master the rational number system, extending their understanding of integers, fractions, and decimals to include all rational numbers. They fluently add, subtract, multiply, and divide multi-digit decimals using the standard U.S. algorithms, ensuring precision in each step. Students explore the relationship between fractions and decimals, converting between them (e.g., 3/4 = 0.75) and using visual models like number lines to represent rational numbers. They apply these operations to solve real-world problems, such as calculating discounts with percentages or adjusting recipe measurements, reinforcing practical mathematical literacy.  
+
+## Expressions and Equations  
+Students write and evaluate numerical expressions with whole-number exponents and variables. They use the order of operations (PEMDAS) to simplify expressions like 2 + 3(4² - 5). Students solve one-variable equations and inequalities, learning to isolate the variable through inverse operations (e.g., solving 3x + 5 = 20 by subtracting 5 and dividing by 3). They translate word problems into algebraic expressions, such as representing "twice a number increased by 7" as 2x + 7, and justify their solutions using substitution to check for accuracy.  
+
+## Ratios and Proportional Relationships  
+Students analyze ratios and rates, using them to describe relationships between quantities. They solve unit rate problems (e.g., "60 miles in 2 hours is 30 miles per hour") and recognize proportional relationships in tables, graphs, and equations. Students use cross-multiplication to solve proportions, like finding x in 2/3 = 8/x, and apply this to scale drawings and maps (e.g., 1 inch = 50 miles). They compare unit prices in real-world contexts, such as determining the better buy between 12 ounces for $1.50 and 18 ounces for $2.25.  
+
+## Geometry and Measurement  
+Students find the area of triangles, quadrilaterals, and composite shapes by decomposing them into rectangles or triangles. They calculate the volume of right rectangular prisms using the formula V = l × w × h, with whole-number or fractional edge lengths. Students analyze nets to find the surface area of three-dimensional figures. They work with the coordinate plane, solving problems involving polygons (e.g., finding the area of a triangle with vertices at (1,2), (4,2), and (4,6)) and understanding the effects of dilations on area and perimeter.  
+
+## Statistics and Probability  
+Students recognize statistical questions and distinguish between samples and populations. They display numerical data in dot plots, histograms, and box plots, and calculate measures of center (mean, median) and variability (range, interquartile range). Students summarize data sets, explaining how outliers affect measures of center. In probability, they develop models to represent simple events (e.g., rolling a die) and calculate probabilities as fractions (e.g., P(rolling a 3) = 1/6). They compare experimental and theoretical probabilities through repeated trials, like flipping a coin 20 times and recording outcomes.  
+
+## Functional Relationships  
+Students use functions to model relationships between quantities. They represent functions with equations, tables, and graphs (e.g., y = 2x + 1), and identify the dependent and independent variables. Students analyze graphs to describe functional relationships, such as whether a function is increasing or decreasing. They explore real-world functions like the cost of a taxi ride (base fare + rate × miles) and write linear equations to represent them. Students interpret functions in context, explaining how a change in the independent variable affects the dependent variable.

@@ -1,0 +1,18 @@
+# Finnish (FNBE) Grade 8 Science
+## Particles, Energy, and Change
+The structure of matter is understood through atoms and molecules, which are in constant motion. Temperature is a measure of this kinetic energy. Students learn that energy is transferred through conduction, convection, and radiation. A practical example is warming up a sauna stove: thermal energy is conducted through the metal, convected by the air, and radiated as infrared waves, all demonstrating the First Law of Thermodynamics where energy is neither created nor destroyed, only transformed. The joule (J) is the SI unit for energy.
+
+## Chemical Reactions and Bonds
+Chemical reactions involve the breaking and forming of bonds between atoms. They are described by balanced chemical equations, such as the combustion of methane: CH₄ + 2O₂ → CO₂ + 2H₂O. Reactions can be endothermic (absorb energy) or exothermic (release energy). Students study the properties of acids and bases (pH scale) and examine real-world reactions, like the fizzing from a drop of vinegar on baking soda, demonstrating a classic acid-base neutralization reaction that produces carbon dioxide gas.
+
+## Forces, Motion, and Technology
+Isaac Newton’s laws of motion describe the relationship between an object and the forces acting upon it. The law of inertia (F = m × a) explains that a force is needed to change an object's velocity. Students apply this concept to understand how friction and air resistance affect objects in motion. A Finnish example is designing and testing a model of a sledge used for the annual Air Mail sledge competition, where minimizing friction and maximizing the applied force are crucial for reaching the highest velocity on a snow track.
+
+## Electricity, Magnetism, and Electronics
+An electric circuit requires a closed path for electric current, measured in amperes (A), to flow. Voltage, measured in volts (V), is the potential difference that drives the current, while resistance, measured in ohms (Ω), opposes it. Ohm's Law (U = R × I) defines this relationship. Students construct simple circuits and learn about series and parallel connections. A relevant example is analyzing the electrical system of an electric car like the Nokia, understanding how a battery provides voltage to the motor, which has a specific resistance to produce the necessary force for motion.
+
+## The Universe and Earth's Place
+The solar system is heliocentric, with the Sun at the center. Planets orbit the Sun following Kepler's laws. Students learn to differentiate between planets, dwarf planets (like Pluto), and other celestial bodies. They study the Earth's rotation (day/night cycle) and revolution (year) and how these, combined with the 23.5-degree axial tilt, create the seasons. A spectacular Finnish example used to illustrate atmospheric phenomena is the Aurora Borealis (Northern Lights), which occurs when charged particles from the solar wind collide with gases in the Earth's magnetosphere, primarily above the Arctic Circle.
+
+## Sustainable Development and Environmental Choices
+Environmental studies focus on the interaction between humans and the environment, emphasizing the importance of a sustainable society. Students learn about the carbon cycle and the impacts of fossil fuel combustion, which increases greenhouse gas concentrations and contributes to climate change. They analyze resource management and waste reduction strategies. A key concept is the carbon footprint. For example, a student might calculate the carbon footprint of their daily commute to school, comparing the environmental impact of taking a bus versus driving a personal car in terms of kilograms of CO₂ emitted.

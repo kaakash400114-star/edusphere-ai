@@ -1,0 +1,18 @@
+# International Baccalaureate (IB) Grade 8 Science
+## Atomic Structure and the Periodic Table
+Learners investigate how atoms are composed of protons, neutrons, and electrons, with protons and neutrons forming a dense nucleus. The atomic number defines an element and equals the number of protons. Electrons occupy energy shells or levels around the nucleus. The periodic table arranges elements in order of increasing atomic number, with groups (columns) sharing similar chemical properties due to identical valence electron configurations. For example, sodium (Na, atomic number 11) has one electron in its outer shell, similar to lithium (Li) and potassium (K).
+
+## Forces and Motion
+Learners explore Isaac Newton’s three laws of motion, which explain how forces affect objects. An object’s acceleration is directly proportional to the net force acting on it and inversely proportional to its mass (F=ma). Friction is a force that opposes motion, converting kinetic energy into heat. For example, a 10 kg box requires a force of 50 N to accelerate at 5 m/s² on a frictionless surface. In the real world, air resistance and friction slow falling objects, leading to a terminal velocity where the force of gravity equals the upward drag force.
+
+## Energy Transfer and Conservation
+Learners investigate energy transfer through conduction, convection, and radiation, understanding that energy cannot be created or destroyed, only transformed. Conduction is the transfer of thermal energy through direct particle contact in solids. Convection occurs in fluids (liquids and gases) where warmer, less dense regions rise and cooler, denser regions sink. Radiation is the emission of energy via electromagnetic waves, such as heat from the Sun reaching Earth. For instance, a metal spoon in hot tea becomes hot quickly due to conduction, while a radiator heats a room via convection and radiation.
+
+## Chemical Reactions and Equations
+Learners investigate chemical reactions, where substances (reactants) transform into new substances (products) with different properties. The law of conservation of mass states that atoms are neither created nor destroyed, so chemical equations must be balanced to reflect this. The reactants are written on the left and the products on the right, with coefficients indicating the number of molecules. For example, the reaction between hydrogen (H₂) and oxygen (O₂) to form water (H₂O) is balanced as: 2H₂ + O₂ → 2H₂O.
+
+## Ecosystem Dynamics and Biodiversity
+Learners investigate the interdependence within ecosystems, focusing on food webs and energy pyramids. Organisms are grouped by trophic levels, with energy transferring from producers (e.g., plants) to primary, secondary, and tertiary consumers. Biodiversity refers to the variety of life within an ecosystem and is crucial for resilience and stability. For example, a coral reef ecosystem supports high biodiversity by providing habitat for countless species, such as fish, mollusks, and algae, forming complex food chains.
+
+## The Rock Cycle and Plate Tectonics
+Learners investigate the rock cycle, where igneous, sedimentary, and metamorphic rocks are continuously formed and transformed by geological processes. Igneous rocks form from cooled magma or lava (e.g., basalt). Sedimentary rocks form from accumulated sediments (e.g., sandstone). Metamorphic rocks form when existing rocks are subjected to heat and pressure (e.g., marble). Plate tectonics drive this cycle as the movement of Earth’s crustal plates creates volcanoes, mountains, and ocean basins, such as the formation of the Himalayan range from the collision of the Indian and Eurasian plates.

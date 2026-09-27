@@ -1,0 +1,19 @@
+# German (Lehrplan) Grade 8 Science
+
+## Electricity and Circuits
+Students analyse direct current circuits with Ohm's Law (V = I × R). They construct series and parallel circuits, calculating total resistance and current flow. Using a 9V battery and resistors of 100Ω and 220Ω, they measure voltage drops and amperage. Components include switches, lamps, and fuses. Students differentiate between conductors (copper wiring) and insulators (plastic casing). They interpret circuit symbols and build a model of a simple control circuit for a model train on a scaled Autobahn layout, ensuring correct voltage distribution across track segments.
+
+## Forces and Pressure
+Students explore Newton's Laws of Motion, specifically calculating force (F = m × a) with mass in kilograms and acceleration in metres per second squared. They investigate pressure (p = F/A) using examples like a football boot kicking a Bundesliga ball versus a snowshoe distributing weight. Experiments include measuring the pressure exerted by a person on different types of flooring. Concepts include atmospheric pressure at sea level and its application in weather systems. Students analyse forces in equilibrium, such as a bridge supporting traffic, and calculate the buoyant force on objects using Archimedes' principle.
+
+## Energy Forms and Transformations
+The focus is on energy conservation and the distinction between kinetic and potential energy. Students calculate gravitational potential energy (E_pot = m × g × h) using a 2kg object lifted to 5 metres. They analyse energy transformations in systems, such as a roller coaster or wind turbines generating electricity near the North Sea. Examples include the chemical energy in a meal converted to kinetic energy during sports. Students evaluate the efficiency of energy transfer in different devices, comparing a traditional incandescent bulb to an LED, using data on input and output energy in joules.
+
+## Chemical Reactions and Equations
+Students write and balance chemical equations for decomposition, synthesis, and single-displacement reactions. They identify reactants and products, using state symbols (s), (l), (g), (aq). Experiments include observing the reaction between zinc and hydrochloric acid to produce hydrogen gas, and the electrolysis of water (2H₂O → 2H₂ + O₂). Students apply the law of conservation of mass in closed systems, such as a sealed flask where mass remains constant before and after a reaction, and discuss industrial processes like the Haber process for ammonia production.
+
+## Astronomy and Our Solar System
+This unit covers the structure of our solar system, focusing on the motion of planets and moons according to Kepler's Laws. Students calculate the orbital period using the formula T² ∝ a³, comparing Earth's orbit to that of Mars. They analyse phenomena such as solar and lunar eclipses, explaining the required alignment of the Sun, Earth, and Moon. Using data from the Rosetta mission, students study comets and their composition. The unit also explores stellar classification, using the Hertzsprung-Russell diagram to understand the lifecycle of stars like our Sun.
+
+## Materials and Properties
+Students explore the classification of materials into metals, ceramics, polymers, and composites. They investigate properties like density, conductivity, and malleability through experiments. For example, comparing the thermal conductivity of aluminium foil (used in Christmas market food stalls) to that of wood. Students analyse the stress-strain graph for materials like steel used in Autobahn bridges, identifying the elastic limit and yield point. They also study the atomic structure of materials, linking the arrangement of atoms to properties such as electrical conductivity in copper wires versus the insulation provided by PVC.

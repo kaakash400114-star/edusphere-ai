@@ -1,0 +1,18 @@
+# South Korean (NCCE) Grade 11 Mathematics
+## Functions and Limits
+Students analyze the behavior of functions using limits. They master the limit laws, including the sum, difference, product, quotient, and power rules. For example, to find lim(x→2) (x² - 4)/(x - 2), students simplify to lim(x→2) (x + 2), resulting in 4. They explore continuity and the properties of continuous functions. The concept of an approaching value is central, with applications to understanding instantaneous rates of change. Limits are also applied to finding derivatives, forming the foundation for differential calculus, a key component for the CSAT.
+
+## Derivatives and Applications
+Students learn to compute derivatives using the limit definition and standard rules, such as the power, product, quotient, and chain rules. For instance, the derivative of f(x) = (3x² + 1)² is found using the chain rule to be f'(x) = 12x(3x² + 1). They apply derivatives to solve problems involving rates of change and related rates. For example, if the radius of a kimjang kimchi jar is increasing, students can determine the rate at which the volume increases. This knowledge is crucial for optimization and motion problems tested on the CSAT.
+
+## Integrals
+Students are introduced to the concept of integration as the inverse operation of differentiation. They learn the fundamental theorem of calculus, which connects differentiation and integration. Students master basic integration rules, including the power rule and substitution. For example, the integral of ∫(2x cos(x²))dx is solved using substitution, yielding sin(x²) + C. They calculate definite integrals to find the area under a curve. Applications include calculating the area of a plot of land in Seoul or the accumulated production of a company over time, linking abstract math to real-world scenarios.
+
+## Sequences and Series
+Students analyze arithmetic and geometric sequences, understanding their recursive and explicit formulas. They identify common differences (d) and common ratios (r). For example, the sequence 5, 9, 13, 17 is arithmetic with d=4. Students explore finite and infinite geometric series. The sum of an infinite geometric series with |r| < 1 is S = a₁ / (1 - r). They apply these concepts to financial calculations, such as calculating the total cost of a hanbok purchased in an installment plan or the long-term savings of a national pension fund.
+
+## Probability and Statistics
+Students delve deeper into probability, focusing on conditional probability and independent events. They learn the formula P(A|B) = P(A∩B) / P(B). The concept of random variables and their probability distributions is introduced, including the binomial distribution. For instance, calculating the probability of getting exactly three heads in five coin flips. Students use statistical methods for sampling and data analysis. A practical example is analyzing survey data on the consumption of kimchi in different regions of South Korea to understand consumer trends and make predictions.
+
+## Vectors and Matrices
+Students study vectors in two and three dimensions, performing operations such as addition, scalar multiplication, and the dot product. The dot product formula A · B = |A||B|cosθ is used to find the angle between two vectors. They learn about matrices, including their addition, multiplication, and finding determinants. The inverse of a matrix is used to solve systems of linear equations. For example, a matrix can represent the price fluctuations of currency exchange rates between the Korean won (KRW), US dollar (USD), and Euro (EUR), allowing for complex financial modeling.

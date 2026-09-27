@@ -1,0 +1,19 @@
+# German (Lehrplan) Grade 12 Mathematics
+
+## Analysis of Functions and Their Graphs
+Students master the analysis of complex functions, including polynomial, rational, exponential, and logarithmic functions. They apply differentiation to determine local extrema, inflection points, and sketch graphs precisely. The second derivative test is used to confirm the nature of critical points. This involves applying rules like the product and chain rule. For instance, a student can derive the function f(x) = x³ - 6x² + 9x + 1, find its critical points, and use this information to accurately plot its graph, demonstrating the relationship between a function's algebraic form and its geometric representation.
+
+## Integration Techniques and Applications
+Students learn advanced integration methods, including integration by parts and substitution for definite and indefinite integrals. They apply these techniques to solve problems involving areas between curves and volumes of revolution of solids. The fundamental theorem of calculus is used to connect differentiation and integration. For example, a student can calculate the volume of a solid formed by rotating the curve y = √x around the x-axis from x=0 to x=4 using the disk method, demonstrating practical application of integral calculus in geometric contexts.
+
+## Differential Equations
+Students focus on first-order and second-order ordinary differential equations (ODEs). They learn methods for solving separable, linear, and homogeneous ODEs, as well as the application of initial conditions to find particular solutions. Second-order linear differential equations with constant coefficients are solved by finding the characteristic equation. This knowledge is applied to model real-world phenomena. For instance, a student can model the population growth of a city or the depreciation value of a new car using a first-order differential equation and interpret the solution within a practical context.
+
+## Probability and Statistics
+Students extend their knowledge to advanced probability, including conditional probability, the law of total probability, and Bayes' theorem. In statistics, they analyse data using hypothesis testing for means and proportions, understanding concepts like p-values and confidence intervals. The Central Limit Theorem is applied to make inferences about population parameters from sample data. A practical example involves calculating the probability of a Fußball Bundesliga team winning at home based on historical win rates and current season performance data, applying conditional probability to assess risk.
+
+## Vector Geometry and Linear Algebra
+Students work extensively with vectors in two and three-dimensional space, performing operations like dot and cross products. These are used to calculate angles between vectors, areas of parallelograms, and volumes of parallelepipeds. Lines and planes are described using vector equations and parametric forms. The concept of linear independence is explored. For example, a student can determine the shortest distance between two non-intersecting lines in 3D space using vector projections, a vital skill in fields like computer graphics and navigation systems.
+
+## Financial Mathematics and Sequences
+Students solve problems involving compound and simple interest, calculating future values of investments and present values of annuities. Geometric and arithmetic sequences and series are analysed for their convergence or divergence. The formula for the sum of an infinite geometric series is applied to solve problems. A practical application is calculating the total repayment amount for a mortgage taken out to purchase a house in Munich, or determining the long-term value of a savings plan for a Christmas market stall, using the principles of geometric series to model financial growth over time.

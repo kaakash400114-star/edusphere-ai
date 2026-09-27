@@ -1,0 +1,18 @@
+# Japanese (MEXT) Grade 10 Science
+## Newton's Second Law of Motion
+Newton's second law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass, expressed as F = ma. A 500 kg object experiencing a net force of 1,000 N will accelerate at 2 m/s². This principle explains the rapid acceleration of the Shinkansen, where a large force overcomes its considerable mass to achieve high speeds. In Japan, precision engineering ensures that the force applied by the electric motors is perfectly calculated to achieve the train's performance goals safely and efficiently.
+
+## Chemical Bonding and Molecular Structure
+Chemical bonding occurs through the transfer or sharing of valence electrons to achieve stable electron configurations. Ionic bonds form when one atom, like sodium (Na), donates an electron to another, like chlorine (Cl), creating Na⁺Cl⁻. Covalent bonds involve shared electrons, as in water (H₂O), where oxygen shares one electron with each hydrogen atom. Students learn to draw Lewis structures, representing these bonds. This precise understanding of molecular structure is vital in designing everything from the preservatives in a bento lunchbox to new industrial polymers.
+
+## Homeostasis in Living Organisms
+Homeostasis refers to the maintenance of stable physiological conditions. The human body tightly regulates blood glucose levels through hormonal control. After eating a meal containing carbohydrates, blood glucose rises, prompting the pancreas to release insulin, which signals cells to absorb glucose, bringing levels back to a set point of around 100 mg/dL. During hanami picnics, the body must also maintain water and temperature balance. This regulatory system, involving organs like the kidneys and liver, is a core concept in understanding life at a molecular level.
+
+## Electromagnetic Induction
+Electromagnetic induction is the process of generating an electromotive force (EMF) by changing the magnetic flux through a circuit. Faraday's law states that the induced EMF is equal to the rate of change of magnetic flux. If a magnet is moved into a coil of 100 turns at a rate that changes the flux by 0.5 Wb in 2 seconds, an EMF of 25 V is induced. This principle is the foundation for generating electricity in Japan's power plants. The precision of this process is essential for providing a stable power supply to a society where electronics are ubiquitous.
+
+## Population Dynamics and Ecology
+Population dynamics study how and why the size of a population changes. The exponential growth model describes a population under ideal conditions (N = N₀eʳᵗ), while the logistic model incorporates carrying capacity (K), the maximum population size an environment can sustain. A bento box provides a good analogy: it has a finite carrying capacity for its contents. In Japan, managing the population of wild animals, such as the sika deer, requires careful ecological study to prevent overpopulation and its impact on forests and agriculture.
+
+## Stoichiometry and Chemical Calculations
+Stoichiometry involves using the mole concept to calculate quantities of reactants and products in a chemical reaction. Given the balanced equation 2H₂ + O₂ → 2H₂O, if 5 moles of hydrogen react with excess oxygen, they will produce exactly 5 moles of water. This quantitative precision is fundamental in chemical manufacturing. For example, a company producing a popular Japanese beverage must use stoichiometric calculations to ensure the precise concentration of each flavour chemical, ensuring consistency for every can sold.

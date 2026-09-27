@@ -1,0 +1,18 @@
+# Nigerian (NERDC) Grade 8 Mathematics
+## Linear Equations in One Variable
+Students learn to solve linear equations with one unknown. The core method is to maintain balance: any operation performed on one side of the equals sign must also be performed on the other. To solve for 'x', students will isolate the variable through inverse operations, such as adding the opposite of a number to both sides or dividing both sides by a coefficient. For instance, to solve 3x - 12 = 15, one would first add 12 to both sides to get 3x = 27, then divide both sides by 3 to find x = 9. These skills are fundamental for solving many practical problems involving unknown quantities.
+
+## Basic Geometry: Angles and Triangles
+This topic focuses on the properties of angles and triangles. Students will define and identify acute, obtuse, and right angles. They learn that the sum of angles in a triangle is always 180 degrees. This principle is used to calculate the measure of an unknown angle in a triangle. For example, if two angles in a triangular plot of land in Ibadan measure 65° and 50°, the third angle must be 180° - 65° - 50° = 65°. Students will also distinguish between different types of triangles, such as equilateral, isosceles, and scalene, based on their side lengths and angle measures.
+
+## Financial Mathematics: Profit, Loss, and Simple Interest
+Students apply percentage concepts to real-world financial transactions. They learn to calculate profit or loss as a percentage of the cost price. For instance, if a market trader buys bags of rice for ₦2,000 and sells them for ₦2,500, the profit is ₦500, which is a 25% profit on the cost price. The topic also introduces simple interest, calculated using the formula I = P × R × T, where P is the principal amount, R is the rate of interest per year, and T is the time in years. This helps students understand the growth of savings or the cost of a small loan.
+
+## Statistics: Data Collection and Presentation
+Pupils are introduced to data handling. They learn to collect, organize, and present data using frequency tables, bar charts, and pie charts. A common Nigerian example is conducting a survey on the favourite types of street food among their peers, such as jollof rice, puff-puff, or moi-moi. The collected data can be displayed in a bar chart where the height of each bar represents the frequency (number of students) who prefer that food. This visual representation makes it easy to compare different categories and identify trends.
+
+## Directed Numbers and the Number Line
+Students extend their understanding of numbers to include positive and negative integers. They learn to represent these numbers on a number line, with positive numbers to the right of zero and negative numbers to the left. The rules for adding and subtracting directed numbers are mastered. A real-world example is temperature: the harmattan season might bring a temperature of 15°C, while a hot afternoon in Kano could be 38°C. The difference between them is 38 - 15 = 23. Subtracting a negative, like 10 - (-2), is equivalent to adding its positive, so the answer is 12.
+
+## Construction of Geometrical Figures
+Students develop their practical skills using a mathematical set (compass and ruler). They learn to perform basic constructions, including the bisection of lines and angles, and constructing perpendicular lines. A key skill is constructing a 60-degree angle, which is used to create an equilateral triangle. These constructions are precise, step-by-step processes. For example, to bisect an angle, one would draw an arc from the vertex that intersects both arms, then from those two intersection points, draw further arcs that cross, and finally draw a straight line from the vertex through this crossing point.

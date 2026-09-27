@@ -1,0 +1,19 @@
+# Finnish (FNBE) Grade 12 Science
+
+## Quantum Physics and Applications
+Students analyze the probabilistic nature of quantum mechanics, contrasting it with classical physics. They learn the de Broglie wavelength formula (λ = h/p) and the Heisenberg uncertainty principle (ΔxΔp ≥ ħ/2). The Schrödinger equation is used for simple systems. A key application is in Finland's emerging quantum computing sector, with research institutions like Aalto University developing prototypes. Students also study how superconductivity, operating at extremely low temperatures found in Finnish Lapland, forms the basis for Magnetic Resonance Imaging (MRI) technology in healthcare.
+
+## Energy, Technology, and Sustainability
+This module explores advanced energy conversion and storage systems, focusing on efficiency and sustainability. Students calculate the Carnot efficiency for thermal power plants and analyze the performance of photovoltaic cells using Finland's high-latitude solar data. They model the energy balance of a modern Finnish district heating system, which often utilizes waste heat from data centers powering the digital euro infrastructure. Lifecycle analysis is performed on technologies like the Stora Enso biomass plant, comparing its environmental impact to traditional fossil fuel sources in the context of EU Green Deal targets.
+
+## Advanced Genetics and Biotechnology
+Students delve into gene regulation mechanisms, including epigenetics and non-coding RNA. They use CRISPR-Cas9 gene-editing techniques to model the correction of genetic disorders, analyzing the ethical implications outlined by Finnish bioethics councils. The application of industrial biotechnology is explored through the case of Neste, a Finnish company that uses microbial fermentation to produce renewable diesel from organic waste. Students also study the population genetics of native Finnish species like the brown bear, analyzing how genetic bottlenecks impact conservation efforts.
+
+## Climate Science and Modeling
+This section covers the chemical and physical processes controlling Earth's climate system. Students use advanced climate models to simulate the impact of rising greenhouse gases on Arctic circulation, analyzing data from the Sodankylä Arctic research station. They calculate the radiative forcing from various gases and study the effects of climate change on Finnish phenology, such as the delayed arrival of autumn and the potential disruption to the reindeer herding cycle in Sápmi. The concept of climate tipping points is linked to the destabilization of the Greenland ice sheet.
+
+## Materials Science and Engineering
+Students analyze the atomic and electronic structures of materials to understand their macroscopic properties. They apply band theory to explain the conductivity of semiconductors used in Finnish electronics like the Nokia brand. The mechanical properties of modern composites are studied, including carbon fiber-reinforced polymers used in icebreaker hulls designed for navigating the Northern Sea Route. Phase diagrams are used to design alloy compositions for superior strength, focusing on applications from medical implants to components in the F-35 fighter jet, a key part of Finland's defense integration.
+
+## Science, Society, and Ethics
+This capstone module examines the societal impact of scientific and technological advancements. Students analyze bioethical case studies, such as the use of personal genetic data by companies like 23andMe, referencing Finland’s strict data privacy laws. They debate the ethics of developing artificial general intelligence through the lens of transhumanist philosophies. A major project involves analyzing the scientific and cultural controversy surrounding the Moomin characters' commercialization and their impact on Finland's national identity and cultural export.

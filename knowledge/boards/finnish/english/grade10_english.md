@@ -1,0 +1,19 @@
+# Finnish (FNBE) Grade 10 English
+
+## Global Perspectives in Media Analysis
+Students critically analyse international and Finnish media texts, identifying how information and values are constructed. They use source evaluation frameworks to assess reliability, distinguishing between facts and opinions in news articles from outlets like Yle and Helsingin Sanomat. The course explores media ownership and its potential influence on narratives, using examples of how European topics like the Euro or Arctic policy are represented. Learners develop strategies to identify bias and propaganda, enhancing their skills in an increasingly digital information landscape.
+
+## Advanced Expressive Writing for Real-World Contexts
+Students master a range of formal and informal genres required for civic and professional life in Finland. They practice structuring compelling argumentative essays on topics like sustainable tourism or the Sámi culture, using persuasive techniques and evidence. This unit also covers composing professional emails, formal letters, and clear project proposals, applying correct formatting and tone. The importance of clarity, conciseness, and audience awareness is emphasized, preparing them to communicate effectively in academic and future workplace settings.
+
+## Intercultural Communication and Literature
+Students analyse how literary texts reflect and shape cultural identities, focusing on both Finnish and global authors. They compare themes in works from different traditions, exploring how universal human experiences are expressed uniquely. For instance, a discussion might connect the quiet resilience of characters in Väinö Linna’s *The Unknown Soldier* to broader European narratives. Students examine how cultural symbols, like the sauna or Moomins, convey deeper social values, fostering an appreciation of diverse perspectives and enhancing their ability to navigate cross-cultural interactions respectfully.
+
+## Mastering Argumentative and Persuasive Discourse
+Students develop sophisticated skills in constructing and deconstructing persuasive arguments. They learn to identify rhetorical appeals (ethos, pathos, logos) in speeches, advertisements, and political commentary, using Finnish parliamentary debates as case studies. The course teaches how to formulate a clear thesis statement, build a logical case using evidence, and anticipate counter-arguments. Students practice delivering structured, evidence-based presentations on topics of national or international interest, honing their ability to articulate and defend a position with nuance and confidence.
+
+## Functional Language in Academic and Professional Settings
+Students expand their academic vocabulary and grammatical precision for senior secondary and future university studies. This includes mastering discipline-specific terminology for subjects like science or history, and understanding complex sentence structures. The unit covers formal presentation skills, including how to introduce a topic, present data, and conclude effectively. Students also practice writing structured research abstracts and summaries, ensuring their language is precise, objective, and adheres to the conventions of formal Finnish academic discourse.
+
+## Language, Power, and Societal Discourse
+Students investigate the relationship between language and social power structures in Finland and globally. They analyse how language use can reinforce or challenge stereotypes and inequalities, using examples from political discourse or media representation of minority groups. This unit explores the concept of ‘transversal competence’ by examining how language skills empower individuals to participate actively in democratic processes. Students learn to identify and critique manipulative language, enabling them to engage more thoughtfully with societal issues.

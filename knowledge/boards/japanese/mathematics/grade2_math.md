@@ -1,0 +1,18 @@
+# Japanese (MEXT) Grade 2 Mathematics
+## Numbers and Calculations
+Students solidify their understanding of numbers up to 100, focusing on place value (tens and units). They practice reading and writing numerals and number words with precision. Using objects like blocks, they learn to compare numbers using greater than (>) and less than (<) symbols. The core skill is mastering addition and subtraction within 100, including regrouping (carrying and borrowing). Students learn methods like the vertical algorithm and apply them to solve word problems about everyday items, such as calculating the total cost of two bento boxes priced at 350 yen and 480 yen.
+
+## Quantities and Measurements
+This area deepens understanding of length, mass, and time using standard Japanese units. Students measure lengths in centimeters (cm) and meters (m), and masses in grams (g) and kilograms (kg) using rulers and scales. They learn to estimate and compare these quantities. For time, they tell time accurately to the five-minute interval on an analog clock and understand the relationship between hours and minutes. Word problems involve practical scenarios, such as finding the total travel time for a Shinkansen trip that takes 2 hours and 15 minutes, or comparing the weights of different fruits at a market.
+
+## Geometric Figures
+Students explore the properties of two- and three-dimensional shapes with a focus on accurate identification and description. They learn the names and key characteristics of plane figures like triangles, squares, rectangles, and circles. For solid figures, they study cubes, rectangular prisms, spheres, and cylinders. They use these shapes to create patterns and understand spatial relationships through hands-on activities like building with blocks. A common task is to sort shapes based on the number of corners or faces, such as distinguishing a square-based bento box from a round one.
+
+## Quantitative Relationships
+Students develop the ability to recognize, describe, and extend simple numerical and geometric patterns. They learn to identify rules governing sequences of numbers, such as counting by 2s, 5s, or 10s. Using real-world data, they create simple bar graphs to represent and compare quantities, like the number of different types of flowers seen during hanami. This fosters an early understanding of data analysis. They also solve problems involving equal shares, dividing a group of objects into two, three, or four equal parts using concrete materials to ensure mastery.
+
+## Life and Mathematical Problems
+Students apply their computational and reasoning skills to solve multi-step problems rooted in daily life. They practice reading and interpreting simple word problems that involve addition, subtraction, and comparison. A key focus is on identifying the necessary information to find a solution. For example, a problem might ask a student to calculate the remaining money after buying a toy for 620 yen with a 1000-yen bill and how much more is needed to buy a 450-yen book. This builds logical thinking and the ability to connect mathematics to real-world contexts.
+
+## Expressions and Calculations
+Students learn to formulate and solve simple mathematical expressions using the four operations. They are introduced to the correct sequence of operations, though at this level, expressions are straightforward and solved left to right. They practice writing number sentences that model a given story problem. For instance, for a problem about combining two groups of apples, they would write "8 + 7 = 15". This section solidifies the link between a real-world situation and its symbolic mathematical representation, emphasizing accuracy in writing and solving equations.

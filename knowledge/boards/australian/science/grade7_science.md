@@ -1,0 +1,18 @@
+# Australian Curriculum (ACARA) Grade 7 Science
+## Separating Mixtures
+Students learn that mixtures are combinations of substances that can be separated using physical methods. They explore techniques such as filtration to separate solids from liquids, like using filter paper to separate sand from water. Distillation is used to separate liquids with different boiling points, for example, purifying water to remove dissolved salts. Sieving separates particles based on size, like sorting different grades of soil in an outback landscape. Magnets can attract and separate magnetic materials, such as iron filings from a mixture. Evaporation is used to recover dissolved solids, like leaving saltwater in the sun until the water evaporates, leaving salt crystals behind.
+
+## Forces and Motion
+Students investigate the concept of force as a push or pull that can change an object's motion. They learn Newton's first law, an object will remain at rest or in uniform motion unless acted upon by an unbalanced force. Unbalanced forces cause acceleration, which is a change in speed or direction. Students explore friction, a force that opposes motion, and identify examples such as air resistance slowing down a parachute or the grip on a football boot stopping a player on the footy field. They also learn that forces are measured in Newtons (N) and can be represented using arrows to show size and direction.
+
+## Earth's Structure
+Students understand that Earth is composed of layers: the solid crust, the mantle, and the core. They learn that the crust is divided into tectonic plates that are constantly moving. This movement, known as plate tectonics, causes earthquakes and volcanoes. Students explore the rock cycle, where igneous, sedimentary, and metamorphic rocks are formed and changed over time. They relate this to Australian landscapes, like the ancient rocks of the outback or the volcanic activity that formed places like the Glass House Mountains in Queensland.
+
+## Energy Transfer
+Students investigate how energy is transferred from one object to another through heat, light, sound, and electricity. They learn that heat energy can be transferred by conduction, where heat moves through a solid like a metal spoon in a cup of billy tea. Convection occurs in liquids and gases, like warm air rising over the Australian desert. Radiation is the transfer of energy through waves, such as from the sun warming the sand at the Gold Coast. They explore electrical circuits and understand that energy from a battery powers a light globe or a buzzer to complete a task.
+
+## Classifying Living Things
+Students learn about the classification of living things into hierarchical groups: domain, kingdom, phylum, class, order, family, genus, and species. They focus on classifying plants and animals found in Australia, such as the kangaroo (Macropus rufus) or the eucalypt tree (Eucalyptus). Students explore the concept of biodiversity and understand that it refers to the variety of life in an area. They learn about the relationships between organisms, like producers (plants), consumers (animals), and decomposers (fungi), and how they form food webs, including those around the Great Barrier Reef.
+
+## Chemical Science: Properties of Matter
+Students examine the properties of materials to classify them as solids, liquids, or gases. They learn that particles are tightly packed in solids, move around in liquids, and are far apart in gases. Students explore chemical and physical changes. A physical change alters the form of a substance, like freezing water into ice for a cool drink. A chemical change creates a new substance, like rust forming on a metal gate or the chemical reaction in a heat pack used on a cold day in the Australian Alps.

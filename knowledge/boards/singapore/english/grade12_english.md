@@ -1,0 +1,19 @@
+# Singapore Curriculum (MOE) Grade 12 English
+
+## Language for Academic and Professional Purposes
+Students master the conventions of formal and academic writing, developing arguments with logical precision and evidence. They learn to structure complex essays and reports using topic sentences, cohesive devices, and rhetorical strategies. For instance, an essay on urban planning might critique Singapore's MRT expansion, analysing data on commuter growth and economic impact. Students also practice composing professional emails and formal proposals, adhering to a clear subject line, salutation, and concise, purpose-driven content suitable for the Singaporean workplace context.
+
+## Critical Literacy and Media Analysis
+Students critically evaluate the reliability and objectivity of diverse information sources, including local news portals and social media. They learn to identify logical fallacies, bias, and propaganda techniques used in texts. For example, they analyse a commentary on HDB policies, assessing the author's use of loaded language and selective statistics. Students develop the ability to deconstruct advertisements for hawker centres, understanding the persuasive techniques of branding, imagery, and cultural appeal to construct a nuanced, multi-faceted interpretation.
+
+## Advanced Reading Comprehension and Textual Analysis
+Students in-depth analyse literary and non-fiction texts from local and global contexts. They explore complex themes, character development, and authorial intent in works by Singaporean authors such as Balli Kaur Jaswal or Cyril Wong. For non-fiction, students critically examine expository texts, such as a speech on Singapore's nation-building journey. They use skills like inference, contextualisation, and thematic analysis to articulate insightful interpretations, demonstrating a sophisticated understanding of the writer's craft and the cultural and social milieu of the text.
+
+## Effective Listening and Oral Communication
+Students refine advanced listening and speaking skills for academic and professional settings. They learn to comprehend and critically evaluate complex oral texts, such as panel discussions on Singapore's economic future or parliamentary debates. In oral presentations, students deliver structured arguments on topics like the sustainability of hawker culture, employing clear articulation, persuasive language, and engaging visual aids. They also practice formal interview techniques, responding to questions with relevant, concise examples that demonstrate their suitability for a role or academic programme.
+
+## Writing for Different Purposes and Audiences
+Students develop the versatility to write for a wide range of contexts. They produce persuasive texts like letters to the editor on a local issue, analytical reports for a hypothetical government body reviewing education policy, and narratives that incorporate Singaporean cultural elements. For instance, a narrative task might involve creating a short story set in a void deck or HDB common area. Students meticulously adapt their tone, vocabulary, and structure to suit their audience, whether it is a university admissions panel, a corporate client, or the general public.
+
+## Understanding and Using Linguistic Features
+Students analyse and employ a sophisticated range of linguistic features for precise and impactful communication. They study the nuances of Singapore Colloquial English (Singlish) versus Standard English, understanding the appropriate context for each. They learn to use advanced vocabulary, varied sentence structures, and rhetorical devices like metaphors and allusions. For example, in an essay on national identity, a student might employ a metaphor like "Singapore is a tapestry woven from diverse cultures," to create a vivid and memorable effect for their audience.

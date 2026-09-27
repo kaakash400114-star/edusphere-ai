@@ -1,0 +1,18 @@
+# Australian Curriculum (ACARA) Grade 6 Science
+## Science Understanding: Biological Sciences
+Students understand that all living things have adaptations to suit their environment. They classify organisms using observable features and explain how changes to an environment, such as the Great Barrier Reef, can affect survival. Students investigate the structure and function of plant and animal systems, for instance, how a kangaroo’s legs are adapted for hopping in the outback. They explore how energy is transferred through ecosystems and describe the roles of producers, consumers, and decomposers in maintaining the balance of nature.
+
+## Science Understanding: Chemical Sciences
+Students explore how materials can be changed physically and chemically. They investigate properties of matter, such as solubility by dissolving sugar in water. Students learn to distinguish between chemical changes, like burning wood, and physical changes, like freezing water into ice. They examine reversible and irreversible processes, understanding that some changes, such as baking a cake, cannot be undone. The concept of atoms and molecules as the building blocks of substances is introduced to explain the composition of materials they encounter daily.
+
+## Science Understanding: Earth and Space Sciences
+Students understand that Earth is part of a solar system with the Sun, planets, and moons. They explore the water cycle and how it influences weather and climate, explaining why northern Australia experiences a wet and dry season. Students investigate the distribution of water on Earth and its importance for life. They analyse how natural processes, including erosion and weathering, shape landscapes and explain how natural events like bushfires can significantly alter ecosystems, providing both challenges and opportunities for new growth.
+
+## Science Inquiry Skills: Questioning and Predicting
+Students formulate questions and make predictions based on prior knowledge and observations. They design and plan scientific investigations by identifying variables to be controlled and measured. For example, when testing the effect of sunlight on plant growth, they predict that the plant in the sun will grow taller. Students justify their predictions using scientific reasoning and identify what needs to be observed to test their hypothesis. This skill allows them to approach problems methodically and build a foundation for critical thinking.
+
+## Science Inquiry Skills: Planning and Conducting
+Students work methodically to plan and conduct investigations following safety procedures. They select appropriate materials and equipment, such as using a thermometer to measure temperature or a stopwatch to time an event. Students follow instructions carefully and record their findings systematically using tables, diagrams, or simple graphs. They demonstrate precision and accuracy in their measurements, ensuring their data collection is reliable. This hands-on experience teaches them the importance of procedure and order in scientific exploration.
+
+## Science Inquiry Skills: Processing and Analysing Data
+Students collect and sort data to identify patterns and relationships in their results. They use appropriate tools to analyse information, like creating a line graph to show how temperature changes over time. Students draw conclusions based on their evidence, distinguishing between observation and inference. For instance, after collecting data on AUD spent on groceries for a week, they calculate the total average expenditure. This equips them with the skills to make sense of information and communicate their findings effectively.

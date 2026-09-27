@@ -1,0 +1,19 @@
+# New Zealand Curriculum (NZC) Grade 6 Science
+
+## Living World: Classification of Native Species
+Students explore how scientists classify New Zealand's unique flora and fauna. They learn the hierarchical system: domain, kingdom, phylum, class, order, family, genus, species. A key example is the classification of the kiwi (Apteryx): domain Eukarya, kingdom Animalia, phylum Chordata, class Aves, order Apterygiformes, family Apterygidae, genus Apteryx. Students compare this to the pūngao (silver fern, Cyathea dealbata), identifying its plant kingdom classification. This helps them understand the diversity and relationships within Aotearoa's ecosystems, including why many species are endemic.
+
+## Planet Earth and Beyond: Earth's Resources and Their Use
+This topic covers the distribution and use of New Zealand's geological resources. Students learn about igneous, sedimentary, and metamorphic rocks and specific examples like greywacke and pounamu (greenstone). They explore renewable resources such as geothermal energy used in places like Wairākei, and non-renewable resources like coal from the West Coast. The focus is on sustainable management, comparing the small ecological footprint of our 100% renewable electricity goal with the environmental impact of mining, fostering responsible citizenship and kaitiakitanga (guardianship).
+
+## Physical World: Forces and Motion in Everyday Life
+Students investigate how forces affect motion in the world around them. They learn Newton's first law (inertia), second law (F=ma), and third law (action-reaction), with practical examples. A student might calculate the force needed to push a rugby pack by measuring mass and acceleration. The concept of friction is explored by analysing why players wear boots with studs on a wet field. Forces also explain the powerful hā, the force of a Māori warrior's strike during a pōwhiri, connecting science to cultural practices and sporting achievements like those of the All Blacks.
+
+## Material World: Properties of Substances and Changes
+This area focuses on identifying the properties of materials and distinguishing between physical and chemical changes. Students learn terms such as solubility, conductivity, and magnetism. They design experiments, like testing which material (e.g., wool, aluminium, pūrerehua [spin top]) is the best insulator for a lunchbox. A chemical change is demonstrated by mixing baking soda and vinegar to create carbon dioxide gas. An example of a physical change is the dissolving of salt in water to make a brine solution used in traditional food preservation.
+
+## Science as a Process: Investigating with Fair Tests
+Students develop their understanding of the nature of science through planning and conducting fair tests. They learn to identify variables: independent (what is changed), dependent (what is measured), and controlled (kept the same). An investigation might test how the mass of a piupiu (flax skirt) affects the time it takes to fall to the ground. Students write a hypothesis, gather data (e.g., 5 trials with 50g, 100g, 150g), display results in a table or graph, and conclude whether their data supports their initial idea, demonstrating scientific literacy and critical thinking.
+
+## The Nature of Science: Connecting Science to Culture
+Students explore how science is intertwined with Māori worldviews. They learn about concepts like kaitiakitanga, the guardianship of natural resources, and its application in modern conservation, like protecting the takahē. They examine the science behind traditional practices, such as māra kai (gardening) using knowledge of soil and seasons (e.g., planting kūmara when the Pleiades star cluster, Matariki, rises). They also consider the role of technology, like waka hourua (double-hulled canoes), which was developed through generations of empirical observation and practical testing of design principles.

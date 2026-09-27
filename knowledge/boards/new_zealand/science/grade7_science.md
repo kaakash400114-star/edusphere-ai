@@ -1,0 +1,18 @@
+# New Zealand Curriculum (NZC) Grade 7 Science  
+## Living World: Classification of Living Things  
+In the Living World strand, students explore how scientists classify organisms. They learn about the five kingdoms: Monera, Protista, Fungi, Plantae, and Animalae. Aotearoa’s unique biodiversity is highlighted, such as the classification of the kiwi (Apteryx) as a flightless bird in the Animalia kingdom. Students use dichotomous keys to identify local species, incorporating te reo Māori terms like *ngā momo kohanga* (types of habitats). This helps them understand the importance of classification in studying Aotearoa’s endemic species and their ecological roles.  
+
+## Planet Earth and Beyond: Earth’s Geological Timescale  
+Students examine Earth’s geological timescale, focusing on major eras like the Mesozoic, when dinosaurs roamed. They learn about Aotearoa’s geological features, formed by tectonic activity, such as the Southern Alps. The concept of *whakapapa* (genealogy) is used to explain how rocks and fossils provide a history of the planet. Students analyse rock layers in local contexts, understanding how they tell the story of ancient environments. This fosters an appreciation for the deep time and natural processes that shaped Aotearoa.  
+
+## Physical World: Forces and Motion  
+In the Physical World strand, students investigate forces and motion, including Newton’s laws. They explore how forces like gravity and friction affect objects, using examples like the All Blacks’ rugby ball trajectory. Te reo Māori terms like *kaha* (force) and *whiwhinga* (motion) are integrated. Through practical experiments, students measure speed and acceleration, applying formulas like speed = distance/time. They link these concepts to everyday Aotearoa contexts, such as the physics behind a *haka* performance or the movement of piupiu skirts during a *kapa haka*.  
+
+## Material World: Properties of Matter  
+Students explore the properties of matter, focusing on states (solid, liquid, gas) and changes of state. They investigate how materials like wood, water, and air behave under different conditions, using Aotearoa-specific examples like pounamu (greenstone). Te reo Māori terms such as *ehara* (not) or *he* (a) are used to describe material properties. Experiments include testing the conductivity of metals and the solubility of salts, linking these to real-world applications like traditional Māori tool-making and modern industries in Aotearoa.  
+
+## Nature of Science: Scientific Method and Investigation  
+The Nature of Science strand teaches students to apply the scientific method. They learn to formulate questions, design experiments, and collect data. For instance, they might investigate the effect of soil pH on native plant growth, like the *kōwhai*. Te reo Māori terms like *pātai* (question) and *whakatika* (solution) are incorporated. Students analyse results, identify variables, and draw evidence-based conclusions. This develops critical thinking and an understanding of how science, including Māori knowledge systems (*mātauranga Māori*), helps explain the world.  
+
+## Science and Society: Sustainability and Aotearoa’s Environment  
+Students explore sustainability in Aotearoa, focusing on human impact on the environment. They learn about conservation efforts for species like the kiwi and the importance of *kaitiakitanga* (guardianship). Discussions cover topics like climate change, renewable energy (e.g., geothermal power in Taupō), and waste reduction. Te reo Māori terms like *whenua* (land) and *wai* (water) are used to emphasise connections to the environment. Students evaluate how individuals and communities can contribute to a sustainable future for Aotearoa.

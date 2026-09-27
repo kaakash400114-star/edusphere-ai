@@ -1,0 +1,18 @@
+# Japanese (MEXT) Grade 11 Science
+## Quantum Mechanics and Atomic Structure
+Electrons occupy quantized energy levels in atoms, described by wave functions (ψ) that yield probability densities. The Schrödinger equation, Hψ = Eψ, governs their states. For example, the ground state of hydrogen has n=1, l=0, and a spherical orbital. Electron configuration follows the Aufbau principle, filling orbitals like 1s² 2s² 2p⁶ for neon. An electron's energy depends on its principal quantum number (n), but also its azimuthal quantum number (l) due to penetration effects, as observed in the subtle energy differences between s and p orbitals in elements like carbon.
+
+## Chemical Bonding and Molecular Geometry
+Chemical bonds form through the sharing or transfer of electrons to achieve stable electron configurations. Valence Bond Theory explains sigma (σ) and pi (π) bonds using orbital hybridization, such as sp³ hybridization in methane (CH₄), which forms a tetrahedral geometry with 109.5° bond angles. Molecular Orbital Theory delves into delocalized electrons in molecules like benzene, where p-orbitals form a continuous π-system above and below the plane, contributing to its stability. The VSEPR model predicts molecular shapes by minimizing electron pair repulsion, as seen in the linear CO₂ molecule.
+
+## Nuclear Physics and Radioactivity
+The nucleus is composed of protons and neutrons, bound by the strong nuclear force, which overcomes electrostatic repulsion. Radioactive decay involves the spontaneous emission of particles: alpha (α, helium nuclei), beta (β, electrons or positrons), and gamma (γ, high-energy photons). A key concept is the half-life (t½), the time required for half of a radioactive sample to decay; for example, Carbon-14 has a t½ of 5,730 years, used in dating historical artefacts like wooden statues from the Nara period. Radioactive decay follows an exponential law: N = N₀e^(-λt), where λ is the decay constant.
+
+## Electromagnetic Induction and AC Circuits
+Electromagnetic induction, discovered by Faraday, states that a changing magnetic flux induces an electromotive force (EMF) in a conductor. Faraday's Law is EMF = -dΦB/dt. Transformers utilize this principle, stepping up or down voltage; a device in a Shinkansen train might use a step-down transformer to convert high-voltage AC to a safer 100V for on-board systems. Alternating current (AC) circuits involve impedances (Z), where Z = √(R² + X_L² - X_C²), combining resistance (R), inductive reactance (X_L), and capacitive reactance (X_C).
+
+## Thermodynamics and Energy Conversion
+The First Law of Thermodynamics, ΔU = Q - W, states that the change in a system's internal energy (ΔU) equals heat added (Q) minus work done by the system (W). The Second Law introduces entropy (S), a measure of disorder, stating that the total entropy of an isolated system always increases. For instance, a bento box left at room temperature will naturally cool down (heat transfer, Q < 0), increasing the entropy of the surroundings. The maximum efficiency of a heat engine is given by the Carnot efficiency: η = 1 - (T_C / T_H), where temperatures are in Kelvin.
+
+## Waves and Optics
+Wave-particle duality is fundamental; light exhibits both wave-like interference and particle-like photon properties. The photoelectric effect demonstrates that photons carry energy E = hν, where h is Planck's constant and ν is the frequency. Diffraction gratings separate light into spectra, and the formula is dsinθ = mλ, where d is the slit spacing, θ is the diffraction angle, and m is the order. In daily life, this is why a CD shows rainbow colours—its surface acts as a reflection diffraction grating, separating white light into its constituent wavelengths.

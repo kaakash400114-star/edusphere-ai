@@ -1,0 +1,18 @@
+# Cambridge IGCSE Grade 10 Mathematics
+## Algebraic Manipulation and Expressions
+Students expand and simplify linear and quadratic expressions, including those with brackets and powers. They factorise quadratic expressions of the form x² + bx + c and difference of squares, such as 4a² - 9. The method of completing the square is used to rewrite expressions like x² + 6x + 10 into the form (x + p)² + q. Students also manipulate algebraic fractions, simplifying by factorising numerators and denominators, for example, (x² - 4)/(x + 2). The understanding of algebraic laws, including the index laws for multiplication and division, is fundamental for all manipulation.
+
+## Equations and Inequalities
+Students solve linear and quadratic equations by factorisation, using the formula, or by completing the square. They apply the quadratic formula to find roots for equations like 2x² - 4x - 3 = 0. Simultaneous equations in two variables are solved using substitution or elimination methods, including cases where one is linear and one is quadratic. Students also solve linear and quadratic inequalities in one variable, representing the solution set on a number line. Word problems are translated into algebraic equations to find unknown values in real-world contexts.
+
+## Geometry and Trigonometry
+Students calculate the perimeter and area of 2D shapes, including composite figures made from circles, sectors, and triangles. For 3D solids, they find the surface area and volume of prisms, pyramids, cones, and spheres. In trigonometry, they apply the sine, cosine, and tangent ratios to find unknown angles and sides in right-angled triangles. The sine and cosine rules are used to solve non-right-angled triangles. Students also apply the formula A = ½ ab sin C to find the area of a triangle when two sides and the included angle are known.
+
+## Graphs and Functions
+Students plot linear and quadratic equations, identifying the gradient and y-intercept of a line from its equation, y = mx + c. They sketch graphs of functions like y = ax² + bx + c, determining the coordinates of the turning point. Distance-time and velocity-time graphs are interpreted to find speed, acceleration, and total distance travelled. Students also plot and interpret graphs representing real-life situations, such as exchange rates or population growth, using tables of values. The concept of a function is introduced, with notation such as f(x) and finding composite functions.
+
+## Probability and Statistics
+Students calculate and interpret probabilities for single and combined events, using the formula P(A or B) = P(A) + P(B) - P(A and B). They construct and interpret frequency tables, histograms, and cumulative frequency graphs, and calculate the mean, median, mode, and range for discrete and continuous data. Box-and-whisker plots are used to represent the spread of a dataset. Students also understand the concepts of independent and dependent events, and use tree diagrams to model and calculate probabilities for multi-stage experiments.
+
+## Number and Financial Mathematics
+Students apply and extend their understanding of number systems, including calculations with fractions, decimals, percentages, and standard form. They calculate compound interest and depreciation using the formula A = P(1 + r/n)^(nt), where P is the principal amount. Students also solve problems involving ratio, proportion, and direct/inverse variation, such as scaling recipes or calculating currency conversions. The order of operations (BODMAS) is strictly followed to ensure accuracy in multi-step calculations, and the use of calculators is appropriately employed for complex numerical problems.

@@ -1,0 +1,18 @@
+# New Zealand Curriculum (NZC) Grade 12 English
+## Visual Language: Analysing Media Representations
+Students critically deconstruct how media constructs versions of reality and identity, evaluating the use of symbolic codes, camera angles, and editing techniques to convey meaning. They examine how a viral video of a haku performance on social media can represent Māori culture both authentically and through a stereotypical lens, analysing choices in colour grading and soundtrack. Learners apply the NZC level 8 objective of understanding how texts shape world views by comparing the narrative arc of an All Blacks All Blacks 'behind the scenes' documentary versus a news report on their tournament strategy.
+
+## Close Reading of Poetry
+Students apply a formalist lens to analyse complex poetic structures, including metre, rhyme scheme, and enjambment, to uncover a poet’s thematic intentions. They identify and discuss the function of evocative diction, such as the use of 'piupiu' or 'pōhutukawa', to evoke a specific sense of place or cultural belonging. Learners at NZC level 8 evaluate how poets like Selina Tusitala Marsh use mythological allusions and symbolic language to critique post-colonial identities, constructing evidence-based arguments about the socio-political messages within the text.
+
+## Crafting Persuasive Speeches
+Students develop arguments using rhetorical devices such as anaphora, ethos, pathos, and kaiako (teacher-led) modelling of persuasive structure. They learn to formulate a clear thesis statement, supported by logical reasoning and relevant evidence. A key task involves writing a persuasive speech arguing for the funding of a local community marae, employing techniques to appeal to both emotional and logical sensibilities while demonstrating respect for the cultural context, adhering to the NZC level 8 requirement to create texts that respond to and analyse significant issues.
+
+## Shakespearean Drama: Text in Context
+Students engage with a Shakespearean play, such as *Othello*, analysing its dramatic forms, conventions, and language. They investigate the socio-political context of Jacobean England, drawing parallels to issues of power, jealousy, and racism in Aotearoa New Zealand. Learners explore themes through performance-based activities, analysing how a character’s motivation is revealed through soliloquy and dialogue, meeting the NZC level 8 standard of understanding how texts are shaped by and reflect different contexts.
+
+## Research and Academic Writing
+Students learn to formulate a research question and conduct a systematic inquiry using academic databases and primary sources. They synthesise information from varied texts, integrating evidence through effective quotation and paraphrasing while adhering to a consistent referencing style, such as APA or MLA. A major project involves researching a significant kiwi conservation issue, organising findings into a structured academic report that evaluates different perspectives, fulfilling the NZC level 8 objective of forming and expressing independent viewpoints.
+
+## The Gothic Genre: Conventions and Critique
+Students analyse the key conventions of the Gothic genre, including the supernatural, the decaying setting, and psychological turmoil, as presented in classic or contemporary New Zealand literature. They examine how authors manipulate these elements to create suspense and explore deeper themes of guilt, isolation, or the uncanny. By texts such as *The Luminaries* or a localised ghost story, learners critique how the genre reflects societal anxieties, demonstrating the NZC level 8 ability to understand how language features and structure shape a reader's response.

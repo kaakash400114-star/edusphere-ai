@@ -1,0 +1,19 @@
+# Advanced Placement (AP) Grade 2 Mathematics
+
+## Base Ten Number System
+Students in Grade 2 mathematics develop a deep understanding of the base-ten number system. They learn to understand place value, recognizing that in a three-digit number like 342, the 3 represents 3 hundreds, the 4 represents 4 tens, and the 2 represents 2 ones. Students learn to read and write numbers to 1,000 using numeral, word, and expanded forms (e.g., 342 = 300 + 40 + 2). They compare two three-digit numbers by understanding the value of hundreds, tens, and ones, using symbols such as >, <, and =. For example, they recognize that 571 is less than 615 because the hundreds digit is smaller.
+
+## Addition and Subtraction within 100
+Second-grade students build fluency in addition and subtraction within 100. They learn to solve one- and two-step word problems involving situations of adding to, taking from, putting together, taking apart, and comparing with unknowns in all positions. Students develop strategies based on place value, properties of operations, and the relationship between addition and subtraction. They learn to mentally add and subtract 10 or 100 from a given number (e.g., 458 + 10 = 468). Students also learn to add up to four two-digit numbers using strategies that rely on place value and properties of operations.
+
+## Length Measurement
+Students in Grade 2 focus on measuring and estimating lengths in standard units. They learn to use appropriate tools such as rulers, yardsticks, meter sticks, and measuring tapes. They measure objects to the nearest whole unit, such as an inch, a foot, a centimeter, or a meter. Students solve addition and subtraction word problems involving lengths, for example, finding the difference in length between two pencils. They also learn to represent lengths on a number line, understanding that the length of an object can be represented by a number line segment from 0 to the object's measure.
+
+## Shapes and Their Attributes
+Grade 2 mathematics introduces students to the attributes of shapes. Students learn to recognize and draw shapes based on specific attributes, such as the number of sides (e.g., triangles, quadrilaterals, pentagons) or angles (e.g., right angles). They partition rectangles into rows and columns of same-size squares and count them to find the area. Students also learn to identify and describe two-dimensional shapes as polygons. They are introduced to the concept of three-dimensional figures, recognizing that cubes have square faces and pyramids have a polygonal base with triangular faces.
+
+## Foundations for Multiplication
+Students in Grade 2 lay the foundational concepts for multiplication. They learn to determine whether a group of objects has an odd or even number by pairing them up or counting them by 2s. This leads to an understanding that even numbers can be expressed as a sum of two equal addends. Students interpret multiplication as combining equal groups. For example, they understand that 3 groups of 4 objects can be represented as 3 x 4 = 12. They learn to use repeated addition to model multiplication situations, such as 5 + 5 + 5 = 15 to represent 3 x 5 = 15.
+
+## Representing and Interpreting Data
+Second-grade students begin to work with data representation. They learn to generate measurement data by measuring lengths of several objects to the nearest whole unit. They organize this data on a line plot, where the horizontal scale is marked in whole numbers. Students also learn to represent categorical data using a picture graph or a bar graph with single-unit scale. They solve simple problems based on the information presented in the graphs, such as comparing the number of students who voted for different favorite fruits. This work prepares them for more complex data analysis in later grades.

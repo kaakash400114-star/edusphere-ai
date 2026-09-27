@@ -1,0 +1,19 @@
+# International Baccalaureate (IB) Grade 6 Science
+
+## The Structure and Properties of Matter
+Learners investigate the particle model of matter, differentiating between solids, liquids, and gases based on particle arrangement and energy. They understand that matter can change state through processes like melting, freezing, evaporation, and condensation, which are physical changes. For example, water (H₂O) boils at 100°C and freezes at 0°C at standard atmospheric pressure. Students classify substances as pure (elements or compounds) or mixtures (solutions or suspensions), distinguishing between heterogeneous and homogeneous mixtures using observable properties like colour and texture.
+
+## Forces and Motion
+Learners explore Newton's laws of motion to explain everyday phenomena. They understand that an object's motion is changed by unbalanced forces, with force measured in Newtons (N). For instance, a 10 N force applied to a 1 kg object produces an acceleration of 10 m/s². They investigate concepts like gravity, friction, and air resistance through simple experiments. Learners also distinguish between speed (distance over time, e.g., 60 km/h) and velocity, which includes direction, applying these concepts to real-world examples like a car journey or a thrown ball.
+
+## Energy Transformations
+Learners investigate different forms of energy, including kinetic, potential, thermal, and electrical, and how they can be transformed from one type to another. They understand the law of conservation of energy, stating that energy cannot be created or destroyed, only converted. For example, a falling ball transforms potential energy (due to height) into kinetic energy (motion). Students explore renewable and non-renewable energy sources, such as solar panels converting light into electrical energy or burning coal releasing chemical energy as heat, examining their impact on the environment.
+
+## Ecosystems and Interdependence
+Learners analyze how organisms interact within their environment. They study the roles of producers, consumers, and decomposers in food chains and webs, tracing the flow of energy. For example, grass is eaten by a rabbit, which is then eaten by a fox. Students investigate the concept of a habitat and the factors that affect an organism's survival, such as temperature, water availability, and food sources. They explore how human activities, like deforestation or pollution, can disrupt ecosystems, impacting biodiversity and the balance of nature in local and global contexts.
+
+## Earth's Systems
+Learners investigate the structure of the Earth, including the crust, mantle, and core, and how these layers interact. They explore the rock cycle, understanding how igneous, sedimentary, and metamorphic rocks form and change over time. For instance, magma cooling forms granite. Students examine the causes and effects of natural phenomena like earthquakes and volcanoes, relating them to plate tectonics. They also study the water cycle, tracing the continuous movement of water through evaporation, condensation, precipitation, and collection, and its importance for life on Earth.
+
+## The Nature of Scientific Inquiry
+Learners develop skills in scientific investigation by formulating testable questions and designing fair experiments. They practice making observations, recording data systematically using tables and graphs, and identifying variables (independent, dependent, and controlled). For example, in an experiment testing plant growth, the amount of water (independent variable) affects the height (dependent variable), while light and soil type are controlled. Students analyze results to draw evidence-based conclusions and communicate their findings, understanding the importance of reliability, accuracy, and objectivity in scientific research.

@@ -1,0 +1,19 @@
+# UAE Curriculum (MOE) Grade 10 English
+
+## The Structure of Complex Literary Texts
+Students will analyse how the structural elements of a text shape meaning. They will learn to identify and explain the function of narrative techniques such as foreshadowing, symbolism, and flashbacks within a work like *The Kite Runner*. A key task involves mapping the plot arc of a novel, identifying the inciting incident, climax, and resolution, and justifying how these points build tension. They will also examine how an author's choice of narrative perspective, such as first-person or third-person limited, influences the reader's understanding of characters and events, using specific textual evidence to support their analysis.
+
+## Advanced Argumentative Writing and Rhetoric
+This module focuses on constructing sophisticated persuasive essays. Students will master the formal Toulmin model of argument, including claim, grounds, warrant, and backing. They will learn to differentiate between types of evidence—statistical, anecdotal, and expert—and evaluate their effectiveness. A critical skill is recognising and countering counter-arguments to build a more robust case. For example, they might argue for the importance of desert conservation and must anticipate rebuttals regarding economic development, using data from the UAE's Environmental Agency to strengthen their position.
+
+## The Art of Rhetorical Criticism
+Students will apply the SOAPSTone framework (Speaker, Occasion, Audience, Purpose, Subject, Tone) to deconstruct non-fiction texts and speeches. They will analyse how these elements work together to create a persuasive effect. For instance, they will examine a Sheikh Mohammed bin Rashid speech, identifying the authoritative speaker, the formal national occasion, and the unifying purpose to determine the persuasive impact. This unit also teaches students to identify and analyse figurative language, including metaphors and allusions, and explain their contribution to a text's overall rhetorical power.
+
+## Thematic Analysis in Global and Gulf Literature
+Students will compare and contrast themes across various literary works. A core study will explore the theme of 'tradition versus modernity' by pairing a novel set in the Gulf with a classic British text. They will learn to form a clear thesis about a shared theme and support it with textual evidence from both works. For example, a student might analyse the tension between preserving heritage and embracing change in both a story about life in a Dubai souk and a Victorian-era novel, using specific character interactions and plot developments from each text.
+
+## Non-Fiction Textual Analysis and Evaluation
+This unit equips students with the tools to critically evaluate complex non-fiction. They will learn to identify an author's central argument and distinguish between facts, opinions, and assumptions. A key focus is on analysing the structure and purpose of a text, such as a report on Dubai's economic diversification from the Dubai Statistics Centre. Students must evaluate the credibility of sources, questioning potential bias, and assess how effectively the author uses features like headings, data, and case studies to achieve their goal of informing a specific audience.
+
+## Academic Writing and Research Integrity
+Students will learn to conduct structured academic research and present their findings formally. This includes developing a research question, creating a bibliography using standard citation styles, and avoiding plagiarism. They will practice synthesising information from multiple sources, such as an article on the architectural marvel of the Sheikh Zayed Grand Mosque and a historical text on its construction, to form their own unique analysis. The final output is a formal research paper that presents a clear argument on a relevant topic, demonstrating the ability to integrate source material seamlessly and attribute ideas correctly.

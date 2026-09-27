@@ -1,0 +1,19 @@
+# Canadian Curriculum Grade 8 Science
+
+## Cells and Systems
+Students learn that all living things are composed of cells and identify the distinguishing features of plant and animal cells, including the nucleus, cytoplasm, and cell membrane. They explore the hierarchical organization of systems from cells to tissues to organs. Using microscopes, students observe and compare single-celled organisms like amoebas with cells in multicellular organisms. They understand that specialized cells perform different functions, such as nerve cells transmitting signals and muscle cells enabling movement, demonstrating the basis for complex life forms like the loon, a bird with specialized cells for diving.
+
+## Fluids and Dynamics
+This topic covers the properties of fluids and their application in Pascal’s principle and pressure calculations. Students learn that pressure is force divided by area (P = F/A) and apply this to real-world examples like hydraulic systems in car brakes. They explore buoyancy through Archimedes' principle, explaining how heavy ships float and why the common loon is so buoyant. Students design experiments to test the viscosity of different fluids, such as maple syrup and water, and relate their findings to fluid dynamics in both natural and engineered systems.
+
+## Water Systems on Earth
+Students examine the Earth’s water systems, focusing on the water cycle, watersheds, and the impact of human activity on water quality. They learn about the water cycle's stages: evaporation, condensation, and precipitation, and identify major Canadian watersheds like the Great Lakes and the Mackenzie River. Students investigate how pollution from industries or agricultural runoff affects water systems. They use data to analyze the impact of climate change on water availability, such as droughts in British Columbia or floods in Manitoba, connecting local issues to global environmental challenges.
+
+## Optics and Light
+In this section, students explore the properties of light and its interaction with different materials. They learn the law of reflection (angle of incidence equals angle of reflection) and apply it to understand how periscopes work. Students investigate refraction by observing how light bends when passing from air to water, explaining why a straw looks bent in a glass. They examine the visible spectrum and how different colours of light are absorbed and reflected, relating this to why the Canadian flag appears red and white and how the CN Tower’s lighting creates various colours at night.
+
+## Heat and Thermal Energy
+Students learn about heat transfer by conduction, convection, and radiation. They conduct experiments to compare the thermal conductivity of different materials, such as metal versus wood, and explain why a metal spoon left in hot cocoa gets hot quickly. They explore phase changes, such as melting and freezing, using the example of maple sap being boiled to make syrup. Students analyze how thermal energy is used in Canadian homes, from insulating against cold winters in the prairies to using heat pumps in milder coastal climates like British Columbia.
+
+## Atoms, Elements, and Compounds
+This topic introduces the basic structure of atoms, including protons, neutrons, and electrons, and how they define elements. Students use the periodic table to identify properties of elements, such as oxygen and carbon, and understand how elements combine to form compounds, like water (H₂O) or carbon dioxide (CO₂). They explore chemical reactions through examples like rusting (iron oxidizing) and combustion (burning fossil fuels). Students learn about the conservation of mass in reactions and apply this to understand everyday processes, such as the chemical reactions that occur when baking a hockey rink to form a smooth ice surface.

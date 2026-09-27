@@ -1,0 +1,19 @@
+# French (Éducation nationale) Grade 12 English
+
+## Analytical Study of a Literary Work
+Students conduct an in-depth thematic analysis of a 20th-century Anglophone novel, such as *The Great Gatsby*. They examine key concepts like the American Dream and social critique through formalist and socio-historical lenses. Students are expected to identify recurrent motifs (e.g., the green light) and analyze their symbolic significance. Lessons focus on structuring a detailed dissertation (dissertation) with a clear thesis (thèse), a three-part argument (plan en trois parties), and evidence-based paragraphs. Students practice writing sample analyses on specific passages.
+
+## Argumentation and Debate on Contemporary Issues
+The curriculum focuses on constructing sophisticated arguments on global topics like sustainable development or digital privacy. Students learn to master the art of la plume et la parole, developing both written and spoken persuasive discourse. They are trained to identify rhetorical devices (logos, pathos, ethos) in texts from international media such as The Guardian or Le Monde International. Class activities involve formal debates (débat) on issues like the impact of AI on employment, requiring students to defend a position with structured evidence and rebut opposing viewpoints.
+
+## Rhetorical Strategies in Media and Advertising
+Students deconstruct persuasive texts from a range of media, focusing on advertising campaigns and political discourse from both British and French contexts. They learn to identify specific persuasive techniques such as euphemism (euphémisme), dysphemism, and hyperbole within a given corpus. Analysis targets how these techniques are used to manipulate public opinion, for instance, in describing economic policy with "prudent management" (euphemism) instead of "spending cuts." Students apply this knowledge to evaluate the rhetorical effectiveness of a contemporary campaign, like a French boulangerie's promotional materials for pain bio.
+
+## Advanced Grammar and Linguistic Nuances
+This section consolidates mastery of complex grammatical structures, with an emphasis on the subjunctive (subjonctif) mood and its application in expressing doubt, necessity, and emotion. Students study nuanced uses of modal verbs to convey politeness or speculation in formal and informal registers. Exercises involve correcting errors in sentences such as "It is essential that the government invests in public transport" (should be "invest"). Students also analyze the evolution of English, incorporating examples from French media, like the hybrid language used in articles about the Tour de France.
+
+## Cinema Studies: Narrative and Ideology
+Students analyze the narrative techniques and ideological underpinnings of a major film, for instance, *Parasite*. They learn terminology for film analysis, including plan, séquence, and champ/contrechamp. The course explores how directors use cinematic elements like mise-en-scène and editing to convey themes of social inequality. Students compare and contrast the film's portrayal of class with representations found in other cultural products. The final exercise is a plan détaillé for an essay analyzing how the film's visual rhetoric (rhétorique visuelle) critiques capitalist structures.
+
+## Globalisation and English as a Lingua Franca
+Students examine the global role of English in international business, science, and diplomacy, using the European Union as a primary case study. They study the concept of "Français de l'international," a French variety of English used in international contexts. Discussions explore the impact of anglicisms on contemporary French, including terms like "le weekend" or "le marketing." Students analyze a corpus of business documents from companies like Airbus to identify standard lingua franca phrases and then write a justification for the use of English in a simulated multinational merger contract.

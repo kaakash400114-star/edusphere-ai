@@ -1,0 +1,18 @@
+# Cambridge IGCSE Grade 4 English
+## Nouns and Verbs
+Students learn to identify common nouns, naming people, places, things, and ideas (e.g., teacher, city, book, friendship), and proper nouns, which name specific items and begin with a capital letter (e.g., Sarah, London, The Very Hungry Caterpillar). They distinguish between singular nouns (one) and plural nouns (more than one), adding -s, -es, or changing irregular spellings like child to children. Verbs are action words (e.g., run, read, write) or state of being (e.g., is, are, seem). Students practice using correct verb tenses for simple actions in the present (e.g., I walk), past (e.g., I walked), and future (e.g., I will walk).
+
+## Sentence Structure
+A complete sentence must express a complete thought and contain a subject (who or what) and a predicate (the action or state). Students learn to distinguish between statements (e.g., The dog barks), questions (e.g., Does the dog bark?), commands (e.g., Be quiet), and exclamations (e.g., What a loud dog!). They practice writing simple sentences and combining them correctly with a comma and the word 'and' to make compound sentences (e.g., The cat was sleeping, and the dog was barking). Capital letters are used to start sentences and for proper nouns, while a period or full stop ends a statement.
+
+## Spelling Patterns
+Students explore common spelling patterns, such as consonant digraphs (two letters making one sound, e.g., 'sh' in *ship*, 'ch' in *chicken*) and vowel teams (two vowels working together, e.g., 'ai' in *rain*, 'ee' in *see*). They learn to add suffixes like -ing, -ed, and -es to base words, applying the rule 'drop the e' before adding -ing (e.g., make * making) and doubling the final consonant for one-syllable words with a short vowel (e.g., run * running). Weekly spelling lists focus on these patterns, and students practice writing words in sentences.
+
+## Comprehension Skills
+Students learn to find the main idea, which is the most important thought in a paragraph, and identify supporting details that explain it. They sequence events in the correct order using time-order words like 'first,' 'next,' and 'last.' For characters in a story, students describe their physical appearance, feelings, and actions using evidence from the text (e.g., "The girl felt happy because she smiled and laughed"). They also learn to make simple predictions about what might happen next in a story based on the information provided.
+
+## Writing a Descriptive Paragraph
+Students learn to write a descriptive paragraph about a person, place, or animal. They begin by choosing a specific topic (e.g., 'My School Playground') and brainstorming sensory details: what it looks like, sounds like, and feels like. They use descriptive adjectives (e.g., 'colourful,' 'noisy,' 'smooth') and precise nouns (e.g., 'swings,' 'bark,' 'slide') to create a clear picture. Each sentence focuses on one detail, and the sentences are joined logically to form a cohesive paragraph that starts with a topic sentence and ends with a concluding sentence.
+
+## Listening for Instructions
+Students practice their listening skills by following multi-step instructions accurately, both spoken and written. They learn to listen for key details and important action verbs. For example, given the instructions "Take out your blue notebook, write your name at the top, and draw a picture of a tree," students must perform each step in the correct order. They also practice listening to short stories or informational texts and answering simple 'who,' 'what,' 'where,' 'when,' and 'why' questions to demonstrate their understanding of the spoken content.

@@ -1,0 +1,19 @@
+# Cambridge IGCSE Grade 12 English
+
+## Textual Analysis and Critique
+Students develop advanced analytical skills to deconstruct a wide range of literary and non-literary texts. They learn to identify and evaluate structural devices such as foreshadowing, irony, and symbolism. For example, in George Orwell's *Nineteen Eighty-Four*, students analyse the use of Newspeak as a tool for political control. They apply formalist and critical theory lenses to interpret themes, form, and purpose. A key method involves close reading, where students examine word choice, syntax, and narrative voice to determine an author's intended effect and a text's socio-historical context.
+
+## Advanced Composition and Rhetoric
+This unit focuses on constructing sophisticated written arguments and persuasive texts. Students master rhetorical strategies, including ethos, pathos, and logos, to craft compelling essays. They learn to structure complex arguments using logical progression, counter-arguments, and concession-rebuttal techniques. For instance, a student might write an opinion piece on climate change, citing scientific data (logos), appealing to ethical responsibility (ethos), and using emotive language to describe future consequences (pathos). Emphasis is placed on developing a clear, authoritative thesis supported by relevant evidence and cohesive paragraphing.
+
+## Global Literatures in English
+Students explore literature from diverse Anglophone and post-colonial cultures. They study novels, plays, and poetry that reflect the cultural, social, and political landscapes of regions such as Africa, the Caribbean, and South Asia. A key text might be Chinua Achebe's *Things Fall Apart*, which provides a critical perspective on colonialism from an Igbo viewpoint. Students analyse how authors use literature to challenge dominant narratives, preserve cultural identity, and explore universal human experiences, fostering a nuanced understanding of global literary movements.
+
+## Shakespearean Drama and its Context
+Students undertake an in-depth study of one of Shakespeare's major tragedies or comedies. They analyse the play's themes of power, morality, and human nature within the context of the Elizabethan/Jacobean era. For example, studying *Macbeth* involves examining its depiction of ambition and the supernatural. Students learn to interpret the language, including soliloquies, metaphors, and iambic pentameter. They also consider the play's performance history and its modern relevance, drawing comparisons to contemporary political and social issues to understand its enduring significance.
+
+## Spoken Language and Oratory
+This hones students' ability to prepare, deliver, and evaluate formal spoken presentations. Students learn to structure a speech with a compelling introduction, well-organised body, and powerful conclusion. They master the use of vocal techniques such as pace, pitch, and tone to engage an audience. For instance, in a debate on artificial intelligence, a student must clearly state their position, present supporting data, and respond to opposing viewpoints with persuasive counterarguments. The focus is on building confidence, clarity, and charisma in public speaking for various academic and professional contexts.
+
+## Language Change and Linguistic Investigation
+Students investigate the evolution of the English language, including historical, social, and technological influences. They study key linguistic concepts such as phonology, morphology, and semantics. For example, students analyse the impact of digital communication on modern English, examining the use of abbreviations (e.g., "lol"), emojis, and new grammatical structures emerging from social media. This involves collecting and analysing real-world language data, such as text messages or online forums, to form and substantiate theories about how language adapts to reflect the changing needs of its users.

@@ -1,0 +1,18 @@
+# Advanced Placement (AP) Grade 11 English
+## Rhetorical Analysis and the SOAPSTone Method
+Students learn to identify and analyze the persuasive elements of nonfiction texts. They apply the SOAPSTone method (Speaker, Occasion, Audience, Purpose, Subject, Tone) to deconstruct arguments. This involves examining diction, syntax, and imagery to understand how an author constructs meaning and achieves a specific rhetorical effect. Students practice using these textual evidence to support claims about the author's purpose and intended audience. For instance, they might analyze a historical speech by Abraham Lincoln, identifying his purpose to unify a divided nation by emphasizing shared values and solemnity.
+
+## Synthesis of Multiple Sources for Argument
+Students develop skills in reading and evaluating multiple sources on a single topic. They learn to synthesize information from diverse texts—such as articles, essays, and data—to form a well-reasoned, evidence-based argument. This requires identifying common themes, contradictions, and gaps between sources. Students practice crafting thesis statements that address complex issues and then structuring arguments that logically incorporate evidence from at least three sources to support their position, a skill directly tested on the AP English Language and Composition exam.
+
+## Close Reading of Foundational American Literature
+This unit focuses on a rigorous close reading of seminal works in American literature, including texts by authors like Mark Twain, F. Scott Fitzgerald, or Zora Neale Hurston. Students analyze the stylistic choices, historical context, and thematic development within these novels and essays. Emphasis is placed on understanding how literary devices such as symbolism, irony, and narrative perspective contribute to the work's overall meaning and its place in the American literary canon, preparing for analysis on the AP English Literature exam.
+
+## Understanding and Developing Argumentative Claims
+Students master the structure of an effective argumentative essay, moving beyond simple opinion to complex claims. They learn to distinguish between a debatable claim and a statement of fact. The course focuses on developing a nuanced thesis and supporting it with logical reasoning, relevant evidence, and effective counterarguments. Students practice anticipating and refuting opposing viewpoints to strengthen their own position, a critical skill for success on both the AP Language and AP Literature free-response questions.
+
+## Mastery of Rhetorical Modes and Stylistic Analysis
+Students deepen their understanding of various rhetorical modes, including narration, description, exemplification, and cause-and-effect. They learn to identify how an author's choice of mode shapes the reader's experience and supports the text's purpose. The analysis extends to examining an author's style by scrutinizing sentence structure (e.g., periodic vs. cumulative sentences), figurative language, and tone shifts. Students practice writing essays that analyze how a writer's stylistic choices create a powerful effect on the audience.
+
+## Grammar, Mechanics, and Concision for Academic Writing
+This section reinforces the rules of standard American English grammar and usage as required for high-stakes academic writing. Students focus on mastering sentence structure, including avoiding comma splices and run-on sentences, and correctly using punctuation. A primary objective is achieving conciseness by eliminating wordiness and strengthening verbs. These skills are essential for crafting the clear, precise, and polished prose necessary for both the AP exams and subsequent college-level writing tasks.

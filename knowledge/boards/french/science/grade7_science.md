@@ -1,0 +1,18 @@
+# French (Éducation nationale) Grade 7 Science
+## The Particle Nature of Matter
+Students learn that all substances are composed of particles, either atoms or molecules, which are in constant motion. They understand the three states of matter—solid, liquid, and gas—through the behaviour of these particles. In solids, particles are tightly packed and vibrate in place. In liquids, they are close but can move past one another, allowing liquids to flow. In gases, particles are far apart and move freely at high speeds. The energy of the particles increases with temperature, causing state changes like the melting of glace (ice) at 0°C or the boiling of water at 100°C.
+
+## Energy Transfer in Everyday Systems
+Students explore different forms of energy—kinetic, potential, thermal, and electrical—and how they are transformed. They learn that energy cannot be created or destroyed, only converted from one form to another, a principle known as conservation d'énergie. For example, a falling vélo converts gravitational potential energy into kinetic energy. When a cyclist brakes, kinetic energy is transformed into thermal energy in the brake pads. This process is observed when a warm croissant cools down, transferring thermal energy to its surroundings until thermal equilibrium is reached.
+
+## The Structure of an Atom
+Students are introduced to the basic structure of atoms, identifying protons, neutrons, and electrons. They learn that protons and neutrons are located in the noyau (nucleus) at the atom's center, while electrons orbit in a cloud. The number of protons determines the élément chimique (chemical element). For example, all carbon atoms have 6 protons. Students understand that the periodic table classifies elements based on their atomic number. They learn about isotopes, like carbon-12 and carbon-14, which have different numbers of neutrons but the same chemical properties.
+
+## Forces and Motion in Our World
+Students study Newton's laws of motion. They learn that an object at rest stays at rest, and an object in motion stays in motion unless acted upon by a force. Force is measured in newtons (N). They explore friction, a force that opposes motion, such as when a metro train brakes on its tracks. Gravity is a force that pulls objects toward the Earth; its strength depends on an object's mass. Students apply this to calculate the weight of a 50 kg student using the formula Poids = masse × g (g ≈ 9.81 m/s²).
+
+## Chemical Reactions and the Conservation of Mass
+Students understand that a réaction chimique (chemical reaction) is a process that involves the formation of new substances with different properties. They learn the fundamental principle of conservation de masse (conservation of mass): in a closed system, the total mass of reactants equals the total mass of products. For example, when baking a cake, the mass of all ingredients (flour, eggs, sucre/sugar) combined equals the mass of the final product, even though it looks and tastes different. They distinguish between physical changes, like ice melting, and chemical changes.
+
+## Electricity and Magnetism
+Students learn the difference between conductors and insulators. Conductors, like copper in electrical wires, allow electricity to flow, while insulators, like plastic coating, prevent it. They explore how magnets create a champ magnétique (magnetic field) with a north and south pole. Like poles repel each other, and unlike poles attract. Students apply this to understand everyday applications, such as how a compass needle always points north because it aligns with Earth's magnetic field or how the high-speed TGV uses magnetic forces for levitation.

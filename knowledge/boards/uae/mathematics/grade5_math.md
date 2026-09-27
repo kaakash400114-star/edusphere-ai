@@ -1,0 +1,18 @@
+# UAE Curriculum (MOE) Grade 5 Mathematics
+## Place Value and Number Operations
+In Grade 5, students master place value up to hundred millions. They read, write, and compare numbers like 45,678,321 using place value charts. They practise rounding to the nearest ten, hundred, thousand, and million. Students perform addition and subtraction with numbers up to seven digits, using the column method. For example, 3,452,189 - 1,234,567 = 2,217,622. Multiplication is extended to multiply four-digit numbers by one-digit numbers using the grid method. Division is taught using long division to divide four-digit numbers by one-digit numbers, ensuring accurate remainders.
+
+## Fractions, Decimals, and Percentages
+Students compare and order fractions with different denominators by finding equivalent fractions using a common denominator. They add and subtract fractions with the same denominator, simplifying the result, such as 5/8 + 1/8 = 6/8, which simplifies to 3/4. They convert between improper fractions and mixed numbers, like 11/4 to 2 3/4. Decimals are extended to three decimal places, and students place them on number lines. They relate decimals to fractions and percentages, understanding that 0.75 is 3/4 or 75%. Real-world examples include calculating discounts in dirhams, like a 25% saving on a AED 100 item.
+
+## Measurement and Geometry
+Students convert between different metric units of length, mass, and capacity, such as converting 1.5 kilometres to 1,500 metres or 2 kilograms to 2,000 grams. They solve problems involving perimeter and area of rectangles and squares, using formulas like Area = length × width. For example, a 5m by 4m souq stall has an area of 20m². Geometry focuses on identifying and drawing 2D shapes, including triangles, quadrilaterals, and polygons. They learn about angles, classifying them as acute, obtuse, or right angles, and use a protractor to measure them.
+
+## Money and Financial Literacy
+Students calculate with money using UAE dirhams and fils, adding and subtracting amounts like AED 45.30 + AED 27.50 = AED 72.80. They solve problems involving real-life transactions, such as calculating the total cost of items bought at a souk. They understand profit and loss, for instance, if a merchant buys a rug for AED 500 and sells it for AED 650, they make a profit of AED 150. Students also explore budgeting for a class trip, estimating costs for transport, entry fees, and food in dirhams.
+
+## Data Handling and Probability
+Students collect, organise, and interpret data using tally charts, frequency tables, and bar graphs. For example, they might survey classmates on their favourite desert animal and present the results in a bar graph. They calculate the mean (average) of a set of data, such as finding the average temperature over a week in Dubai. Probability is introduced using simple language, like likely, unlikely, and certain. They conduct experiments, such as spinning a spinner with four colours, and predict outcomes using fractions, like a 1/4 chance of landing on red.
+
+## Problem Solving and Logical Reasoning
+Students apply their mathematical knowledge to solve multi-step word problems. Problems involve real-life UAE contexts, such as calculating the distance to Sheikh Zayed Grand Mosque or the time taken to travel there at a given speed. They use logical reasoning to identify patterns and rules in number sequences, like 2, 4, 8, 16, which double each time. Students are encouraged to check their answers for reasonableness and explain their methods, such as estimating the total cost of building materials for a new school in the Emirates.

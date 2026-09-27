@@ -1,0 +1,18 @@
+# New Zealand Curriculum (NZC) Grade 12 Mathematics  
+## Algebraic Methods and Calculus  
+Students expand their algebraic skills to solve complex equations and inequalities. They manipulate expressions involving exponents, logarithms, and surds, applying the laws of indices and the quadratic formula. The study of calculus begins with differentiation, using first and second principles to find gradients and rates of change. Examples include modelling the height of a piupiu dancer during a haka or calculating the speed of an All Blacks player during a game. Students learn to apply the chain, product, and quotient rules to polynomial, trigonometric, and exponential functions.  
+
+## Probability Distributions  
+Students explore discrete and continuous probability distributions, focusing on the binomial, Poisson, and normal distributions. They calculate probabilities using probability density functions and cumulative distribution functions, with real-world applications like predicting the success rate of a rugby conversion or the number of kiwi sightings in a forest. The central limit theorem is used to make inferences about populations from samples. Students apply z-scores and standard normal tables to solve problems involving normally distributed variables, such as test scores or physical measurements.  
+
+## Trigonometry and Coordinate Geometry  
+Students deepen their understanding of trigonometric functions, identities, and equations. They solve problems involving trigonometric graphs, including amplitude, period, and phase shifts. Coordinate geometry extends to finding equations of lines, circles, and parabolas, and calculating distances and midpoints. Examples include calculating the trajectory of a ball during a game of Kiwi cricket or using trigonometry to determine the height of a mountain. Students also use the trigonometric area formula and the sine and cosine rules to solve problems in two and three dimensions.  
+
+## Systems of Equations and Matrices  
+Students solve systems of linear and non-linear equations using substitution, elimination, and graphical methods. Matrices are introduced to represent and solve systems of equations, with operations including addition, subtraction, scalar multiplication, and matrix multiplication. The determinant and inverse of a 2x2 matrix are used to find unique solutions. Applications include modeling the flow of a river or the cost of producing traditional Māori crafts. Students also explore the use of matrices in cryptography and transformations of geometric shapes.  
+
+## Statistical Inference  
+Students learn to make inferences about populations using sample data. They calculate confidence intervals for population means and proportions and perform hypothesis tests using critical values and p-values. Examples include testing whether a new training method improves the All Blacks' performance or estimating the average weight of kiwi birds. Students interpret statistical results in context, considering Type I and Type II errors. The use of random sampling and experimental design is emphasized to ensure reliable and valid conclusions.  
+
+## Geometry and Measurement  
+Students extend their geometric knowledge to solve problems involving volume, surface area, and similarity. They calculate the volumes of prisms, pyramids, spheres, and cones, and the surface areas of composite solids. Trigonometry is applied to solve right-angled and non-right-angled triangles, and to find bearings and angles of elevation or depression. Examples include designing a marae or calculating the amount of fabric needed for a piupiu. Students also explore the properties of circles, including chords, tangents, and sectors, and use scale drawings for real-world applications.

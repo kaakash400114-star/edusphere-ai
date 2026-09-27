@@ -1,0 +1,18 @@
+# International Baccalaureate (IB) Grade 10 English
+## Literary Analysis and Comparative Text Study
+Learners investigate how authors use narrative structure, characterisation, and literary devices to convey theme. They analyse texts, such as *To Kill a Mockingbird* by Harper Lee and a non-European play like *A Raisin in the Sun* by Lorraine Hansberry, to explore universal themes of justice and identity. Students learn to formulate evidence-based arguments, comparing how context shapes meaning and authorial intent, while applying key concepts such as perspective and audience to evaluate texts within their socio-cultural frameworks.
+
+## Argumentative Writing and Rhetorical Devices
+Learners investigate the principles of constructing cogent, persuasive arguments. They learn to identify and employ rhetorical devices, including ethos, pathos, and logos, to build compelling cases on global issues like climate change or digital privacy. Students practice structuring essays with clear thesis statements, logical progression, and counter-arguments, using credible sources and academic referencing conventions (e.g., MLA). The focus is on developing a sophisticated voice capable of nuanced, culturally sensitive discourse.
+
+## Shakespearean Drama and Performance
+Learners investigate the enduring power of Shakespearean language and its performance on a global stage. They study a key play, such as *Macbeth* or *Romeo and Juliet*, analysing themes, soliloquies, and iambic pentameter. Through performance-based activities, students explore how vocal delivery, physicality, and staging reveal character motivation and thematic depth. This unit connects classical texts to modern contexts, fostering an understanding of cultural exchange and the evolution of dramatic traditions.
+
+## Global Perspectives in Non-Fiction
+Learners investigate how writers craft non-fiction narratives to inform, persuade, and challenge perspectives. They analyse texts such as *I Am Malala* by Malala Yousafzai and articles from international publications like *The Guardian*, focusing on narrative voice, structure, and use of evidence. Students learn to distinguish between fact and opinion, identify bias, and evaluate texts as cultural products. The investigation culminates in synthesising multiple sources to create a personal response to a contemporary global issue, promoting critical international-mindedness.
+
+## Language and Identity
+Learners investigate the intricate relationship between language and personal, cultural, and national identity. They explore how dialect, code-switching, and rhetoric reflect social hierarchies and power dynamics. Through the study of speeches, poetry, and autobiographies from diverse cultures, students analyse how language constructs and communicates identity. The investigation includes examining their own linguistic practices and how they navigate different linguistic and cultural contexts, fostering an appreciation for linguistic diversity as a core component of global citizenship.
+
+## Research and Extended Writing
+Learners investigate the process of conducting independent research and synthesising information into a formal academic paper. They identify a research question of personal significance, related to a global issue, and employ appropriate methodologies to gather and evaluate sources. Students learn to structure a formal research essay, using in-text citations and a bibliography to avoid plagiarism. The emphasis is on developing critical thinking skills to navigate complex information and articulate a well-substantiated, original argument with clarity and precision.

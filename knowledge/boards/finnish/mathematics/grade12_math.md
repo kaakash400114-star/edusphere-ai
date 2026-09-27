@@ -1,0 +1,18 @@
+# Finnish (FNBE) Grade 12 Mathematics
+## Applications of Advanced Calculus
+Students learn to model real-world phenomena using definite integrals, such as calculating the volume of a Sámi reindeer hide quiver or the work done to pump water out of a lake. They apply integration to find average values of continuous functions, like the average temperature of a Helsinki winter month. Students also master techniques for solving first-order differential equations, which they use to model exponential growth in a sauna heating element or the cooling of lingonberry soup on a veranda, connecting abstract concepts to tangible Finnish experiences.
+
+## Multivariable Analysis and Vector Calculus
+This unit introduces functions of several variables and their graphical representation, using the topography of the fell of Ylläs as a practical example. Students learn to compute partial derivatives and the gradient to determine the steepest ascent on a ski slope in Levi. The study culminates in applying the divergence and curl of vector fields to analyse electromagnetic phenomena, such as the auroral Borealis dancing over the Arctic Circle, demonstrating the power of calculus in understanding natural forces and Finnish landscapes.
+
+## Probability Theory and Statistical Inference
+Students delve into the fundamentals of probability, focusing on continuous random variables and probability density functions. They learn to apply the normal distribution to real-world scenarios, such as the distribution of daily temperatures in Rovaniemi or the lifespan of Moomin characters. The unit covers advanced sampling techniques, hypothesis testing, and constructing confidence intervals, allowing students to statistically validate claims, for instance, whether a sample of Finnish rye bread meets a specific density standard, fostering a deep understanding of data-driven decision-making.
+
+## Financial Mathematics and Optimisation
+Students master mathematical models for financial planning, including the calculation of compound interest for a savings account intended for a Lapland holiday and annuities for retirement, often referencing the use of Euros. The unit introduces linear programming techniques to solve optimisation problems, such as determining the most profitable mix of traditional crafts like wooden spoons and bark products to maximise revenue, demonstrating how mathematical constraints govern economic choices in a small business context.
+
+## Advanced Euclidean and Analytical Geometry
+This section explores the properties of three-dimensional space, focusing on vectors and their applications. Students learn to calculate the angle between the paths of Northern Lights as viewed from different locations using the dot product. The course covers parametric equations of lines and planes, enabling students to define the exact geometric structure of a modern log cabin or the optimal angle for a sauna bench, linking abstract geometric principles to functional design in Finnish architecture and craft.
+
+## Discrete Mathematics and Mathematical Logic
+Students formalise mathematical reasoning using propositional and predicate logic, analysing the validity of arguments, such as those found in Moominvalley character dialogue. The unit introduces graph theory to solve practical problems like optimising a postal delivery route through a city laid out on a grid or modelling social connections. Students apply concepts like Eulerian paths and graph colouring to plan an efficient sauna shift schedule for a shared cottage, showcasing how discrete mathematics provides tools for structuring complex, real-life systems.

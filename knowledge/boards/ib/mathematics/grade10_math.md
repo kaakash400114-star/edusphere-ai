@@ -1,0 +1,18 @@
+# International Baccalaureate (IB) Grade 10 Mathematics  
+## Algebraic Expressions and Equations  
+Learners investigate linear, quadratic, and exponential functions, focusing on algebraic manipulation. They learn to expand and factorize expressions, including the difference of squares and perfect square trinomials. Solving equations involves applying the quadratic formula, discriminant analysis for roots, and completing the square. For example, solving \(2x^2 - 5x + 3 = 0\) yields roots \(x = 1.5\) and \(x = 1\). Real-world applications include modeling population growth or financial depreciation using exponential functions, emphasizing precise notation and algebraic reasoning.  
+
+## Trigonometry and Trigonometric Functions  
+Learners explore trigonometric ratios—sine, cosine, and tangent—in right-angled and non-right-angled triangles using the sine and cosine rules. They solve problems involving angles of elevation, bearings, and wave patterns. For instance, calculating the height of a lighthouse given an angle of elevation and distance. Using radians, they model periodic phenomena like tides or sound waves. The Pythagorean theorem and identities, such as \(\sin^2\theta + \cos^2\theta = 1\), are foundational for deriving solutions and understanding trigonometric relationships.  
+
+## Geometry and Measurement  
+Learners investigate properties of 2D and 3D shapes, including area, volume, and surface area formulas for prisms, pyramids, and spheres. They apply theorems such as the Pythagorean theorem and similarity of triangles to solve spatial problems. For example, calculating the volume of a composite solid or the length of an inaccessible side using trigonometry. Coordinate geometry involves finding gradients, midpoints, and equations of lines. Metric and imperial units are compared, emphasizing precision in measurement and geometric proof.  
+
+## Statistics and Probability  
+Learners analyze data using measures of central tendency (mean, median, mode) and dispersion (range, standard deviation). They construct and interpret histograms, box plots, and scatter plots, drawing lines of best fit to model correlations. Probability includes calculating theoretical probabilities for single and compound events, including tree diagrams. For instance, determining the likelihood of winning a game or predicting weather patterns. Sampling methods and bias are discussed, with global examples like election polling or environmental data analysis.  
+
+## Functions and Graphs  
+Learners investigate linear, quadratic, exponential, and piecewise functions, sketching their graphs and identifying key features like intercepts, turning points, and asymptotes. They transform functions through translations, reflections, and stretches. For example, graphing \(f(x) = 2(x-3)^2 + 1\) shows a vertical shift. Real-world applications include modeling profit curves or depreciation rates. Domain and range are defined, and function notation is used to describe relationships, emphasizing graphical and algebraic connections.  
+
+## Financial Mathematics  
+Learners explore simple and compound interest, calculating future values and time periods using formulas like \(A = P(1 + r/n)^{nt}\). They analyze loans, investments, and annuities, considering inflation and exchange rates. For example, comparing returns on savings accounts in different countries. Currency conversions and budgeting problems highlight real-world financial literacy. Percentages, depreciation, and taxation are applied to personal and global economics, fostering responsible financial decision-making and understanding economic interdependence.

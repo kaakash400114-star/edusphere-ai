@@ -1,0 +1,19 @@
+# South Korean (NCCE) Grade 10 English
+
+## Understanding Narrative Structures
+Students analyze the underlying components of both fictional and non-fictional narratives. A plot must contain a clear exposition, rising action, climax, falling action, and resolution. Character development is examined through direct and indirect characterization methods, such as a character's thoughts, actions, or dialogue with others. For instance, a protagonist in a story set in Seoul might overcome internal conflicts about their family's expectations, which is a common theme. Students learn to identify the central conflict, whether it is person versus self, society, or nature, to understand the narrative's purpose and direction.
+
+## Mastering Academic and Persuasive Writing
+The focus is on constructing well-structured academic essays, including argumentative and expository forms. A formal essay requires a clear thesis statement, typically placed at the end of the introduction, followed by logically sequenced body paragraphs, each with a topic sentence and supporting evidence. Students practice using rhetorical strategies such as ethos, pathos, and logos. A writing task could require them to persuade a reader about the cultural importance of the *hanbok* using facts about its history and symbolism, ensuring their argument is coherent and evidence-based.
+
+## Deepening Literary Analysis
+Students engage in close reading to explore the thematic and stylistic elements of diverse literary texts, including poetry, prose, and drama. The analysis involves identifying literary devices like metaphors, similes, irony, and symbolism. For example, a poem about the changing seasons in Korea could be analyzed for its use of imagery to reflect the cycle of life. Students must support their interpretations with specific textual evidence and understand how the author's choice of language and structure contributes to the overall meaning and emotional impact of the work.
+
+## Expanding Vocabulary in Context
+Vocabulary acquisition is achieved through extensive reading and dedicated word study. Students learn to identify and understand words with multiple meanings, nuance, and connotation. Root words, prefixes, and suffixes are used to decipher unfamiliar terms. The curriculum includes discipline-specific terminology, such as economic terms like 'deficit' and 'surplus' or cultural terms like 'jeong' (정). Practice activities involve using new words correctly in sentences related to Korean culture, for example, "The *kimchi* fermentation process requires a specific balance of ingredients and a cool environment."
+
+## Developing Listening and Speaking Skills
+This section emphasizes active listening for comprehension, including identifying the main idea, supporting details, and the speaker's purpose and tone. Students practice delivering structured presentations and participating in formal debates. They are taught to use clear pronunciation, appropriate pacing, and rhetorical devices to enhance their delivery. Role-playing scenarios, such as a discussion about the economic impact of the *won*'s fluctuation, allow students to practice exchanging ideas politely and persuasively, demonstrating their ability to articulate complex thoughts in a second language.
+
+## Integrating Critical Thinking and Media Literacy
+Students learn to analyze and evaluate various forms of media, including news articles, advertisements, and digital content. This involves identifying bias, propaganda techniques, and the purpose of the message. A key activity is comparing different sources reporting on the same event, such as a festival in Seoul, to detect potential misinformation. Students are taught to question the credibility of sources, distinguish between fact and opinion, and form their own well-reasoned judgments, which is essential for success in the CSAT and for responsible civic engagement.

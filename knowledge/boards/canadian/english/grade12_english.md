@@ -1,0 +1,18 @@
+# Canadian Curriculum Grade 12 English
+## Literary Forms and Devices
+Students analyze complex literary forms, including the Canadian novel, poetry, and drama. They identify and evaluate rhetorical devices such as metaphor, symbolism, and irony, with specific focus on their use in texts by authors like Margaret Atwood or Michael Ondaatje. Lessons examine how setting and mood contribute to thematic development. Students apply formalist and post-colonial lenses to interpret texts, understanding how cultural context influences meaning. Assignments involve close reading passages, identifying devices, and structuring analytical essays to support interpretations with textual evidence.
+
+## Academic and Critical Writing
+Students craft formal, argumentative essays on literary or social issues, employing clear thesis statements and logical progression. They master the integration of secondary sources using proper in-text citations and a standardized works cited page. Lessons teach critical analysis of arguments, identifying logical fallacies and bias in texts like newspaper editorials or political speeches. Students practice peer review, providing constructive feedback on clarity, evidence, and structure. The goal is to develop a persuasive, academic voice suitable for university-level discourse.
+
+## Media and Digital Literacy
+This unit deconstructs media forms including news, advertising, and social media. Students learn to analyze audience, purpose, and persuasive techniques used in Canadian campaigns, from federal health announcements to provincial tourism ads. They evaluate the impact of digital platforms on discourse, including algorithmic bias and the spread of misinformation. Lessons teach students to create multimodal texts, like a podcast or a blog post, effectively communicating a researched position. The emphasis is on responsible consumption and creation of media in a digital world.
+
+## Oral Communication and Rhetoric
+Students prepare and deliver persuasive oral presentations, applying principles of classical rhetoric like ethos, pathos, and logos. They practice structuring arguments for formal debates on topics relevant to Canadian society, such as climate policy or Indigenous reconciliation. Active listening and concise questioning are honed during Socratic seminars on complex texts. The course emphasizes clear articulation, confident delivery, and effective use of visual aids. These skills are essential for participating thoughtfully in civic and academic forums.
+
+## Language Conventions and Style
+Students refine their command of the English language, focusing on complex sentence structures and precise diction. They differentiate between regional spellings (e.g., colour/center) and apply Canadian conventions consistently. Grammar instruction addresses advanced syntax, including subordinate clauses and appositives, to enhance clarity and style. Lessons analyze the stylistic choices of accomplished Canadian writers, teaching students to emulate effective techniques. The goal is to achieve a sophisticated and adaptable writing voice for various academic and professional contexts.
+
+## Canadian Literature and Identity
+This unit explores the diversity of Canadian voices through a range of authors from different regions, backgrounds, and cultural traditions. Students analyze themes of identity, wilderness, and nationhood in works that reflect Canada's multicultural fabric. Texts may include Indigenous oral traditions, stories by immigrant writers, and narratives set in iconic Canadian locations like the Prairies or the Maritimes. Students compare and contrast these perspectives to understand the complex, evolving nature of Canadian identity and its representation in literature.

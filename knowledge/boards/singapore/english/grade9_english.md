@@ -1,0 +1,18 @@
+# Singapore Curriculum (MOE) Grade 9 English  
+## Advanced Argumentative Writing  
+Students learn to construct persuasive, well-structured essays using the Toulmin model (claim, grounds, warrant, backing). They master counter-argument rebuttals and concession techniques. Lessons include analysing model answers from past O-Level examinations. Students apply MOE's PEEL (Point, Evidence, Elaboration, Link) structure to develop paragraphs on local issues, such as the benefits of a zero-waste lifestyle for Singapore's environment. They practice using logical fallacies and rhetorical devices like anecdotes and statistics to strengthen their reasoning.  
+
+## Literary Analysis of Unseen Prose and Poetry  
+Students develop close-reading skills to analyse unseen texts, identifying themes, tone, and narrative voice. They learn to use context clues to infer meaning in unfamiliar words. Lessons focus on dissecting figurative language, including metaphors and personification, in classic and modern poems. For prose, students examine character motivations and plot devices using passages from Singaporean authors. They practice annotation techniques and write structured comparisons, such as contrasting the urban settings in stories set in the Central Business District versus those in HDB estates.  
+
+## Grammar and Stylistic Devices for Academic Writing  
+Students master complex grammatical structures, including subordinate clauses and participial phrases, to enhance sentence variety. They learn to identify and use stylistic devices like antithesis and chiasmus for emphasis. Lessons focus on editing for conciseness and clarity, particularly in formal writing. Students practice transforming simple sentences into more sophisticated constructions, such as rephrasing "The government is strict" to "The government enforces stringent regulations." Exercises include editing sentences about Singapore's laws or MRT punctuality to improve precision.  
+
+## Media Literacy and Information Evaluation  
+Students learn to critically evaluate sources for bias, credibility, and purpose. They apply S.O.P.A.P.S. (Speaker, Occasion, Purpose, Audience, Platform, Subject) to analyse news articles and social media posts on topics like hawker centre gentrification. Lessons include distinguishing between fact and opinion in online content about Singapore's housing policies. Students practice creating fact-checking reports by verifying claims against official government websites, such as the Singapore Land Authority or the National Environment Agency.  
+
+## Transactional and Functional Writing  
+Students master formal writing genres, including emails, letters, and reports, with specific attention to MOE's format requirements. They learn to structure formal complaints, such as feedback to the Singapore Food Agency about hygiene standards at a hawker centre. Lessons include persuasive writing for proposals, like advocating for better facilities at their school or HDB estate. Students practice using formal register and persuasive language in tasks like writing to the Town Council to request additional recycling bins.  
+
+## Oral Communication and Presentation Skills  
+Students learn to deliver structured presentations using the P.O.W.E.R. method (Purpose, Organization, Word choice, Engaging delivery, Refinement). They practice impromptu speeches on familiar topics, such as their favourite local dish or the impact of the MRT on daily life. Lessons include techniques for engaging an audience, using rhetorical questions and personal anecdotes. Students receive feedback on clarity, pronunciation, and pacing, with exercises focused on articulating complex ideas about Singapore's multicultural society confidently and persuasively.

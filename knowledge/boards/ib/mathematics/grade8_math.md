@@ -1,0 +1,18 @@
+# International Baccalaureate (IB) Grade 8 Mathematics  
+## Linear Equations and Inequalities  
+Learners solve multi-step linear equations and inequalities with variables on both sides, applying the distributive property and combining like terms. They explore real-world applications, such as calculating costs or comparing speeds. For example, they might solve 3(x + 2) = 2x + 10 to find the value of x or interpret 2y + 5 > 15 as a constraint on a variable representing a quantity. Emphasis is placed on verifying solutions and understanding inequalities' graphical representations on number lines, linking mathematical reasoning to practical scenarios.  
+
+## Systems of Linear Equations  
+Learners investigate systems of two linear equations using substitution and elimination methods. They analyze graphs to identify parallel, intersecting, or coinciding lines, determining the number of solutions. Real-world contexts, such as comparing phone plans or mixing solutions, are used to frame problems. For instance, they might solve x + y = 10 and 2x - y = 5 to find unknown values. Learners develop skills in interpreting solutions and understanding their significance in representing real-life dependencies and trade-offs.  
+
+## Exponents and Scientific Notation  
+Learners extend their understanding of exponents, applying laws to simplify expressions with integer and fractional exponents. They convert between standard and scientific notation, particularly for very large or small numbers like the Earth's mass or a virus's size. Examples include calculating population growth or astronomical distances. Learners also perform operations with numbers in scientific notation, reinforcing the utility of this notation in scientific and global contexts, fostering appreciation for precision in measurement and communication.  
+
+## Geometric Transformations and Congruence  
+Learners explore translations, reflections, rotations, and dilations on the coordinate plane. They analyze how these transformations affect figures' properties, such as size and orientation, and use them to prove congruence and similarity. International examples, like designing tessellations for cultural patterns or analyzing architectural symmetries, are incorporated. Learners apply geometric reasoning to solve problems involving scale factors and congruent triangles, connecting abstract concepts to tangible, culturally diverse artifacts and designs.  
+
+## Introduction to Functions and Graphing  
+Learners define functions as relationships where one input corresponds to exactly one output. They represent functions using equations, tables, and graphs, focusing on linear and quadratic relationships. For example, they might graph y = 2x + 3 or interpret a table showing distance over time. Learners analyze key features, such as slope and intercepts, and explore real-world applications like profit modeling or motion, emphasizing the universality of functions in describing natural and human-made phenomena.  
+
+## Statistical Analysis and Probability  
+Learners calculate and interpret measures of central tendency (mean, median, mode) and variability (range, interquartile range) for datasets. They create box plots and histograms to represent distributions, comparing data sets globally, such as literacy rates across countries. Probability concepts include theoretical and experimental probabilities, calculating the likelihood of events like weather patterns or sports outcomes. Learners develop critical thinking skills to analyze data ethically and recognize its role in informed decision-making in diverse societies.

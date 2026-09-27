@@ -1,0 +1,18 @@
+# Canadian Curriculum Grade 10 English
+## Canadian Literary Analysis
+Students analyze classic and contemporary Canadian literature to understand themes, character development, and narrative structure. They identify how setting, such as the vast prairies or coastal fishing villages, influences the story. Students use textual evidence to support their interpretations, learning to distinguish between a protagonist's internal and external conflicts. For instance, they might analyze the struggle of a character in Mordecai Richler's *The Apprenticeship of Duddy Kravitz* against a backdrop of 1940s Montreal, connecting personal ambition to broader societal pressures.
+
+## Communication Skills and Rhetoric
+This unit focuses on developing persuasive communication skills. Students learn to structure arguments using a clear thesis statement, supporting evidence, and logical reasoning. They analyze rhetorical devices, such as analogy and rhetorical questions, in speeches by Canadian figures like Prime Minister Justin Trudeau or historical figures like Tommy Douglas. They practice crafting their own persuasive essays on topics relevant to Canadian society, such as the impact of hockey on national identity, ensuring arguments are well-supported and respectfully address diverse perspectives.
+
+## Functional and Media Literacy
+Students deconstruct various media forms to understand how messages are constructed and interpreted. They examine news articles, advertisements, and social media posts for bias, purpose, and audience. For example, they might compare a CBC News report on the loonie with a corporate press release from the Royal Canadian Mint, identifying the differences in tone and informational focus. Students learn to evaluate the credibility of sources and understand how media ownership can influence information, a critical skill in the digital age.
+
+## Creative Writing and Composition
+Students explore different genres of creative writing, including short stories, personal narratives, and poetry. They develop their skills in using descriptive language, imagery, and figurative language, such as metaphors comparing the Canadian Shield to an ancient, sleeping giant. Writing assignments often draw on Canadian themes, like a personal narrative about a family trip to see the Northern Lights in Yukon or a short story inspired by the vibrant culture of a local powwow. Emphasis is placed on developing a unique voice and revising for clarity and impact.
+
+## Critical Research and Information Fluency
+Students learn the process of conducting academic research, from formulating inquiry questions to properly citing sources. They use both primary and secondary sources to write a research paper on a Canadian topic of their choice, such as the history of the CN Tower or the cultural significance of maple syrup. Students practice evaluating sources for reliability and relevance, integrating information ethically and paraphrasing effectively. The final paper requires a formal structure, including an introduction, body paragraphs with evidence, and a conclusion that synthesizes findings.
+
+## Grammar, Mechanics, and Canadian Conventions
+This unit reinforces essential grammar and writing conventions, with a focus on Canadian spelling conventions (e.g., 'colour', 'labour', 'centre'). Students study complex sentence structures, including the use of subordinate clauses, to enhance the sophistication of their writing. They learn to correctly use punctuation, such as semicolons and dashes, to clarify meaning. Practical application includes editing peer work for common errors and understanding the stylistic choices of Canadian authors, who often blend British and American spelling within a uniquely Canadian context.

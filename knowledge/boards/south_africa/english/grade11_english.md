@@ -1,0 +1,18 @@
+# South African (CAPS) Grade 11 English
+## Language Structures
+Learners are able to apply complex grammatical rules in written and spoken communication. This includes mastering subject-verb agreement with collective nouns like 'the team' or 'government', using the correct sequence of tenses, and applying punctuation rules for complex sentences, such as semicolons to join independent clauses. Learners analyse the functions of clauses within a sentence and learn to vary sentence structures for stylistic effect. For example, using a compound sentence to join two related independent ideas about the Proteas' performance in a tournament.
+
+## Language and Literature
+Learners are able to analyse the relationship between literature and society. They explore how novels, plays, and poems reflect and critique social, political, and historical contexts in South Africa and globally. Learners engage critically with texts by identifying themes like identity, power, and reconciliation. For instance, analysing how a poem about Table Mountain uses the landscape as a metaphor for a divided past. They are able to support interpretations with evidence from the text and consider the impact of the writer's choices on the reader's understanding.
+
+## Writing and Presenting
+Learners are able to write for a variety of purposes and audiences in different genres. They plan, draft, and edit texts such as argumentative essays, formal business letters, and feature articles. Learners use appropriate structure, language, and style for each context. For example, writing a persuasive letter to a local newspaper about the rising cost of fuel in rand or creating a presentation script arguing for the conservation of a national park. They are able to incorporate research and cite sources correctly, while refining their work for clarity, coherence, and grammatical accuracy.
+
+## Critical Language Awareness
+Learners are able to deconstruct the use of language in media and advertising. They examine how language can shape public opinion, construct ideologies, and reinforce or challenge stereotypes. Learners identify persuasive techniques like loaded language, euphemism, and emotional appeal. For instance, critiquing an advertisement for a fast-food braai that uses phrases like 'the ultimate family moment' to promote a product. They are able to assess the credibility of sources and recognise bias in written and spoken texts from various media platforms.
+
+## Language Usage in Context
+Learners are able to use language effectively in functional and transactional contexts. This includes understanding and applying the conventions of spoken communication in formal and informal settings. Learners participate in discussions, debates, and interviews, demonstrating active listening and appropriate turn-taking. They are able to interpret and convey information through visual and graphic texts, such as analysing a graph showing fluctuations in the rand/dollar exchange rate or interpreting data from a consumer survey about a popular brand.
+
+## Comprehensive Language Study
+Learners are able to analyse the structure and meaning of words in context. They explore etymology, word formation processes like affixation and compounding, and the nuances of connotation and denotation. Learners use a variety of dictionaries and thesauri to expand their vocabulary and understand register. For example, distinguishing between the formal term 'fiscal' and the more common 'budgetary' when discussing government finances. They are able to explain how word choice contributes to tone and meaning in a specific text, such as a political speech.

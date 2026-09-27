@@ -1,0 +1,19 @@
+# German (Lehrplan) Grade 12 English
+
+## Advanced Literary Analysis
+Students will apply a range of critical theories to complex texts, including post-colonial and feminist perspectives. They will learn to deconstruct character motivation and thematic development through the lens of the author's socio-historical context. For instance, a study of Theodor Fontane's *Effi Briest* will involve analysing the constraints of 19th-century Prussian society and its impact on female characters. Students will produce a comparative essay arguing how a single work reflects or challenges the cultural values of its era, using textual evidence and secondary sources to support their thesis.
+
+## Rhetoric and Persuasion in Public Discourse
+This module examines sophisticated rhetorical strategies in influential speeches, such as Angela Merkel's addresses to the Bundestag or Martin Luther King Jr.'s "I Have a Dream". Students will identify and evaluate the use of ethos, pathos, and logos, as well as rhetorical devices like anaphora and tricolon. They will learn to deconstruct how persuasive language is shaped by audience, purpose, and context. The capstone task is to deliver and analyse their own formal speech on a contemporary German issue, employing studied techniques to persuade a specific audience.
+
+## Research-Based Academic Writing
+Students will master the conventions of university-level academic writing. This includes developing a researchable question, formulating a clear hypothesis, and structuring a formal academic paper. They will learn to integrate sources effectively using the MLA or APA citation style and to differentiate between primary and secondary sources. A key project involves researching a German cultural topic, such as the history of the Autobahn or the economics of the Bundesliga, to produce an extended argumentative essay with a properly formatted bibliography and in-text citations.
+
+## Intercultural Communication in a Global Context
+Students will study theories of intercultural communication, focusing on high-context versus low-context cultures and the impact of cultural dimensions on business and diplomacy. They will analyse case studies of successful and failed international negotiations, for example, between German and Japanese firms. Through role-playing scenarios, students will practice navigating cultural misunderstandings and adapting their communication style. The final assessment is a presentation comparing communication norms in Germany and another country, focusing on business etiquette or social interaction, with practical examples.
+
+## Mediated Discourse and Media Literacy
+This unit critically examines the construction of reality in modern media, focusing on news, advertising, and social media platforms. Students will learn deconstructive techniques to identify bias, framing, and propaganda. They will analyse how German news outlets report on European issues like the Eurozone crisis and compare it to international sources. A core activity is a case study on the portrayal of a major event, such as the Oktoberfest, in a range of media, evaluating the persuasive techniques used to shape public perception and cultural identity.
+
+## Synthesising Language for Professional and Academic Purposes
+This module focuses on mastering advanced grammatical structures and lexical precision required for university and professional settings. Students will study complex syntax, including nominalization and subordinate clauses, to achieve a more formal tone. Through practical exercises, they will learn to paraphrase academic sources without plagiarising and to craft professional emails, reports, and abstracts. A final project requires students to write a formal proposal for a university exchange program, demonstrating sophisticated control of language, structure, and persuasive tone suitable for an academic selection committee.

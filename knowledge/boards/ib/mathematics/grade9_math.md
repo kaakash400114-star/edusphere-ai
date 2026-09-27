@@ -1,0 +1,18 @@
+# International Baccalaureate (IB) Grade 9 Mathematics  
+## Algebraic Expressions and Equations  
+Learners investigate how to manipulate and simplify algebraic expressions using the laws of exponents and distributive property. They learn to solve linear and quadratic equations by factoring, completing the square, and using the quadratic formula. For example, solving \(2x^2 - 8x = 0\) by factoring yields \(x = 0\) or \(x = 4\). Students apply these skills to model real-world problems, such as calculating the time it takes for an object to fall, linking to physics principles. International-mindedness is emphasized by examining financial literacy across different economies.  
+
+## Functions and Graphs  
+Learners explore linear, quadratic, and exponential functions, analyzing their properties and transformations. They learn to graph functions on the coordinate plane, identifying key features like intercepts, slope, and vertex. For instance, the function \(y = 2x + 3\) has a y-intercept at (0, 3) and a slope of 2. Students use technology to plot data, such as population growth trends in different countries, fostering a global perspective. Inquiry questions like "How do functions describe change?" encourage critical thinking about patterns in nature and human behavior.  
+
+## Geometry and Trigonometry  
+Learners investigate the properties of triangles, circles, and polygons, applying the Pythagorean theorem and trigonometric ratios (sine, cosine, tangent). They solve problems involving angles of elevation and depression, such as determining the height of a building using shadows. For example, if a 5-meter pole casts a 3-meter shadow, the angle of elevation is \(\tan^{-1}(5/3)\). International-mindedness is highlighted by studying architectural designs, like the Pyramids of Giza, to understand geometric principles in historical contexts.  
+
+## Statistics and Probability  
+Learners collect, organize, and interpret data using measures of central tendency (mean, median, mode) and spread (range, standard deviation). They analyze probability through tree diagrams and Venn diagrams, calculating the likelihood of events. For instance, the probability of rolling a 3 on a fair die is \(1/6\). Students explore global issues, such as climate data trends, to apply statistical methods in real-world scenarios. Inquiry questions like "How can we use data to inform decisions?" promote evidence-based reasoning across cultures.  
+
+## Financial Mathematics  
+Learners investigate simple and compound interest, annuities, and depreciation. They calculate interest earned on savings, such as \$1000 at 5% annual interest for 3 years, yielding \$150 in simple interest. Students examine real-world applications, like loan repayments or investment growth in different economies. International-mindedness is addressed by comparing financial systems worldwide, such as microfinance in developing nations. These skills empower learners to make informed personal and global economic decisions, fostering financial literacy.  
+
+## Mathematical Reasoning and Problem Solving  
+Learners develop logical reasoning skills through proofs and deductive arguments. They solve multi-step problems, such as optimizing area with fixed perimeter, using algebraic and geometric methods. For example, a rectangle with perimeter 40m has maximum area when it is a 10m × 10m square. Students engage in collaborative problem-solving, exploring diverse strategies from various cultures. Inquiry questions like "What makes a solution elegant?" encourage creativity and critical thinking, preparing learners for complex challenges in an interconnected world.

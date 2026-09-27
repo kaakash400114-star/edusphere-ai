@@ -1,0 +1,18 @@
+# Japanese (MEXT) Grade 11 Mathematics
+## Sequences and Series
+Students explore arithmetic and geometric sequences to identify patterns and predict future terms. An arithmetic sequence, like 5, 8, 11, 14,..., has a constant difference ($d = 3$). The general term is $a_n = a_1 + (n-1)d$. A geometric sequence, like 100, 200, 400, 800,..., has a constant ratio ($r = 2$). Its general term is $a_n = a_1 \cdot r^{n-1}$. They apply these concepts to financial problems, such as calculating interest payments on a savings account depositing ¥50,000 annually at a fixed interest rate.
+
+## Trigonometric Functions and Their Applications
+Students extend their knowledge of trigonometric functions beyond acute angles. They study the sine, cosine, and tangent functions for angles of any measure, defining them using the unit circle. Key identities, such as $\sin^2\theta + \cos^2\theta = 1$, are proven and used to simplify expressions. For example, to find the height of a Mount Fuji observation point, they use the tangent of an angle of elevation. The application of the Law of Sines and Cosines is essential for solving triangulation problems in fields like surveying and architecture.
+
+## Differentiation I: Rules and Applications
+Students learn the fundamental rules of differentiation to analyse the rate of change of functions. The power rule states that if $y = x^n$, then $dy/dx = nx^{n-1}. They apply this to find the derivative of polynomial functions. They learn the sum, difference, and constant multiple rules. Geometrically, the derivative represents the slope of a tangent line. For instance, to determine the time a Shinkansen train reaches its maximum speed, students find the derivative of its velocity function and set it to zero to identify critical points.
+
+## Integration I: Basic Concepts and Applications
+Students are introduced to integration as the process of finding the antiderivative, the inverse operation of differentiation. They learn the power rule for integration: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$. Students use definite integrals to calculate the exact area under a curve. A practical application is calculating the area of a bento box's irregularly shaped compartment or determining the total distance travelled by a vehicle whose changing velocity is described by a function. The Fundamental Theorem of Calculus links differentiation and integration.
+
+## Vectors in Two and Three Dimensions
+Students study vectors as quantities with both magnitude and direction. They represent vectors using components, e.g., $\vec{v} = (3, 4)$ in 2D or $\vec{v} = (2, -1, 5)$ in 3D. Students learn to add and subtract vectors using their components and calculate the magnitude (length) of a vector using the formula $|\vec{v}| = \sqrt{v_1^2 + v_2^2}$. They apply these concepts to solve problems involving forces and displacements, such as determining the resultant force acting on a building during an earthquake or plotting a course for a ship in 3D ocean space.
+
+## Probability and Statistics
+Students study advanced probability concepts, including conditional probability and independent events. The conditional probability of event A given event B is calculated as $P(A|B) = \frac{P(A \cap B)}{P(B)}$. They distinguish between independent events, where $P(A \cap B) = P(A) \cdot P(B)$, and dependent events. For example, they calculate the probability of drawing two specific cards from a deck without replacement. In statistics, they use scatter plots and the method of least squares to find the line of best fit (linear regression) for data, such as the relationship between cherry blossom (sakura) viewing dates (hanami) and average spring temperatures.
