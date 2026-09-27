@@ -167,8 +167,8 @@ def main() -> None:
 
     jobs: list[tuple[str, str, int, Path]] = []
     for board in boards_mod.BOARDS:
-        if boards_mod.has_own_content(board):
-            continue                              # 6 original boards done
+        # per-file _needs_file() check below handles both full and partial
+        # boards (resume-safe: a board with a few files still gets the rest)
         for subject, _, _s in SUBJECTS:
             for grade in range(1, 13):
                 path = _file_path(board, subject, grade)
