@@ -2607,6 +2607,10 @@ function wire() {
   $("hw-file").onchange = hwPickFile;
   $("hw-send").onclick = hwSend;
   $("album-x").onclick = () => $("album-modal").classList.add("hidden");
+  $("streak-badge").onclick = openQuests;
+  $("streak-badge").style.cursor = "pointer";
+  $("quest-x").onclick = () => $("quest-modal").classList.add("hidden");
+  $("freeze-buy").onclick = buyFreeze;
   $("send").onclick = () => send();
   $("chat-input").addEventListener("keydown", e => {
     if (e.key === "Enter") send();
@@ -2776,6 +2780,66 @@ async function openAlbum() {
 }
 // ================= end camera helper =================
 
+
+// ================= habit engine UI (Stage 6) =================
+async function openQuests() {
+  if (!state.pid) return;
+  $("quest-modal").classList.remove("hidden");
+  $("quest-msg").textContent = "";
+  try {
+    const r = await fetch("/api/quests/" + state.pid);
+    const d = await r.json();
+    renderQuests(d);
+  } catch (e) { $("quest-msg").textContent = "Could not load quests."; }
+}
+
+function renderQuests(d) {
+  const st = d.streak || {};
+  const fr = d.freezes || 0;
+  $("quest-streak").textContent =
+    "🔥 " + (st.count || 0) + "-day streak!" +
+    (fr ? "  ·  🧊 " + fr + " freeze" + (fr > 1 ? "s" : "") + " ready" : "");
+  const list = $("quest-list");
+  list.innerHTML = "";
+  (d.quests || []).forEach(q => {
+    const row = document.createElement("div");
+    row.style.cssText = "display:flex;align-items:center;gap:8px;padding:9px 6px;border-bottom:1px solid var(--border)";
+    row.innerHTML = `<span style="font-size:1.3rem">${q.emoji}</span>` +
+      `<span style="flex:1">${q.label}</span>` +
+      `<span style="font-weight:800;color:${q.done ? "#16a34a" : "var(--muted)"}">` +
+      `${q.progress}/${q.goal}</span>`;
+    const btn = document.createElement("button");
+    btn.className = "badge badge-btn";
+    btn.style.cssText = "padding:7px 10px";
+    btn.textContent = q.claimed ? "✅" : (q.done ? "+" + q.stars + " ⭐" : "…");
+    btn.disabled = !q.done || q.claimed;
+    btn.onclick = async () => {
+      const rr = await fetch("/api/quests/" + state.pid + "/claim", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quest_id: q.id }) });
+      const dd = await rr.json();
+      $("quest-msg").textContent = dd.ok ? "Nice! +" + dd.reward + " stars ⭐"
+                                          : (dd.reason || "");
+      if (dd.ok) { state.profile.stars = dd.stars;
+        $("star-badge").textContent = "⭐ " + dd.stars; }
+      openQuests();
+    };
+    row.appendChild(btn);
+    list.appendChild(row);
+  });
+}
+
+async function buyFreeze() {
+  const rr = await fetch("/api/streak/" + state.pid + "/freeze", { method: "POST" });
+  const dd = await rr.json();
+  $("quest-msg").textContent = dd.ok ? "🧊 Freeze got it! Your streak is protected."
+                                      : (dd.reason || "");
+  if (dd.ok) { state.profile.stars = dd.stars;
+    $("star-badge").textContent = "⭐ " + dd.stars; }
+  openQuests();
+}
+// ================= end habit UI =================
+
 </script>
 
 <button id="dark-toggle" title="Toggle dark mode" onclick="document.body.classList.toggle('dark-mode');localStorage.setItem('edusphere_dark',document.body.classList.contains('dark-mode'))">🌙</button>
@@ -2806,6 +2870,18 @@ async function openAlbum() {
     <button class="modal-x" id="album-x">✕</button>
     <h3 style="margin:.1rem 0 .4rem">🗂️ Homework Album</h3>
     <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;max-height:60vh;overflow:auto;margin-top:6px"></div>
+  </div>
+</div>
+
+<!-- DAILY QUESTS MODAL (Stage 6) -->
+<div id="quest-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="quest-x">✕</button>
+    <h3 style="margin:.1rem 0 .2rem">🎯 Today's Quests</h3>
+    <div id="quest-streak" style="font-weight:800;color:#f59e0b;margin-bottom:8px"></div>
+    <div id="quest-list"></div>
+    <button id="freeze-buy" class="badge badge-btn" style="margin-top:12px;font-size:.95rem;padding:10px 14px">🧊 Get streak freeze (10 ⭐)</button>
+    <div id="quest-msg" class="modal-sub" style="margin-top:6px;min-height:1.2em"></div>
   </div>
 </div>
 </body>

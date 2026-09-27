@@ -16,8 +16,8 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from . import (animations, boards, camera, characters, conversation,
-               improvement, knowledge, knowledge_fresh, kinder, neural_voice,
-               practice, profiles, tutor, worlds, llm)
+               habits, improvement, knowledge, knowledge_fresh, kinder,
+               neural_voice, practice, profiles, tutor, worlds, llm)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -406,6 +406,40 @@ def homework_photo(pid: str, fname: str):
     if not path:
         raise HTTPException(status_code=404, detail="not found")
     return FileResponse(path, media_type="image/jpeg")
+
+
+
+# ── habit engine: streak freeze + daily quests (Stage 6) ─────────────────────
+
+class QuestClaim(BaseModel):
+    quest_id: str = Field(min_length=1, max_length=40)
+
+
+@app.get("/api/quests/{pid}")
+def quests_get(pid: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(status_code=404, detail="profile not found")
+    return habits.daily_quests(pid)
+
+
+@app.post("/api/quests/{pid}/claim")
+def quests_claim(pid: str, body: QuestClaim):
+    if not profiles.get_profile(pid):
+        raise HTTPException(status_code=404, detail="profile not found")
+    res = habits.claim_quest(pid, body.quest_id)
+    if not res.get("ok"):
+        return JSONResponse(res, status_code=400)
+    return res
+
+
+@app.post("/api/streak/{pid}/freeze")
+def streak_freeze_buy(pid: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(status_code=404, detail="profile not found")
+    res = habits.buy_freeze(pid)
+    if not res.get("ok"):
+        return JSONResponse(res, status_code=400)
+    return res
 
 
 @app.post("/api/game/result")
