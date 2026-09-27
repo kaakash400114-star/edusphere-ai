@@ -427,6 +427,9 @@ body.dark-mode .msg.bot { background: #2d2a45; color: #e2e0ff; }
 body.dark-mode .topbar { background: rgba(30,27,46,0.95); }
 body.dark-mode .onboard-card, body.dark-mode .modal-card { background: #2d2a45; color: #e2e0ff; }
 
+/* grades 3+: the visual animal cast is hidden entirely (text-first UI) */
+body.no-char #face-stage, body.no-char #hero-stage { display: none !important; }
+
 /* ====== living-buddy actions (KG-2): the buddy acts while talking ====== */
 .an-stage [data-part], .an-stage .an-eye {
   transform-box: fill-box;
@@ -839,6 +842,7 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="settings-btn" class="btn-ghost" title="Account settings">⚙️</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
+      <button id="help-btn" class="btn-ghost" title="Help & feedback">🆘</button>
     </div>
   </header>
 
@@ -1275,6 +1279,9 @@ function applyBuddyUI(profile) {
   const bid = profile.character && EMOJI[profile.character]
     ? profile.character : "leo";
   state.buddyId = bid;
+  // visual characters are a little-learner feature (KG-2 only)
+  const showChar = (profile.grade || 0) <= 2;
+  document.body.classList.toggle("no-char", !showChar);
   $("buddy-name").textContent =
     (state.buddies.find(x => x.id === bid) || { name: "Leo" }).name;
   $("kid-line").textContent = `${profile.name} · ` +
@@ -1774,7 +1781,16 @@ function startListening(auto) {
   $("mic").classList.add("listening");
   $("mic").textContent = "👂";
   Buddy.recog.onresult = (e) => {
-    const said = e.results[0][0].transcript;
+    const res = e.results[0];
+    let best = res[0], conf = res[0].confidence || 0;
+    for (let i = 1; i < res.length; i++) {
+      if ((res[i].confidence || 0) > conf) { best = res[i]; conf = res[i].confidence; }
+    }
+    let said = best.transcript.trim();
+    if (conf > 0 && conf < 0.45) {           // too unsure -> say so honestly
+      addMsg("🎤 I heard something unclear — please say that again?", "bot");
+      return;
+    }
     $("chat-input").value = said;
   };
   Buddy.recog.onerror = () => {};
@@ -2688,6 +2704,9 @@ function wire() {
   $("live-keyboard").onclick = liveKeyboard;
   $("streak-badge").style.cursor = "pointer";
   $("quest-x").onclick = () => $("quest-modal").classList.add("hidden");
+  $("help-btn").onclick = openHelp;
+  $("help-x").onclick = () => $("help-modal").classList.add("hidden");
+  $("help-send").onclick = sendHelp;
   $("freeze-buy").onclick = buyFreeze;
   $("send").onclick = () => send();
   $("chat-input").addEventListener("keydown", e => {
@@ -2945,6 +2964,8 @@ function exitLive() {
   $("live-btn").classList.remove("hidden");
   liveDisarm();
   if (Live.camStream) { Live.camStream.getTracks().forEach(t => t.stop()); Live.camStream = null; }
+  const cam = $("live-cam");
+  if (cam) cam.srcObject = null;          // release the preview too
   $("live-caption").classList.remove("show");
 }
 
@@ -2982,7 +3003,18 @@ function liveListen() {
   $("live-mic").classList.add("listening");
   liveCaption("Listening…", true);
   Live.recog.onresult = (e) => {
-    const said = e.results[0][0].transcript;
+    const res = e.results[0];
+    let best = res[0], conf = res[0].confidence || 0;
+    for (let i = 1; i < res.length; i++) {
+      if ((res[i].confidence || 0) > conf) { best = res[i]; conf = res[i].confidence; }
+    }
+    const said = best.transcript.trim();
+    if (!said) return;
+    if (conf > 0 && conf < 0.45) {           // garbled capture -> retry
+      liveCaption("I didn't catch that — say it again?", true);
+      speak("I didn't catch that — say it again?", {});
+      return;
+    }
     liveCaption("You: " + said, true);
     liveSend(said);
   };
@@ -3037,6 +3069,53 @@ function liveKeyboard() {
 
 // ================= end live mode =================
 
+
+// ================= help & feedback =================
+let helpKind = "question";
+async function openHelp() {
+  if (!state.pid) return;
+  $("help-modal").classList.remove("hidden");
+  $("help-status").textContent = "";
+  $("help-msg").value = "";
+  document.querySelectorAll(".help-kind").forEach(b => {
+    b.style.outline = b.dataset.kind === helpKind ? "3px solid #6d28d9" : "none";
+    b.onclick = () => { helpKind = b.dataset.kind; openHelpKindMarks(); };
+  });
+  loadMyHelp();
+}
+function openHelpKindMarks() {
+  document.querySelectorAll(".help-kind").forEach(b => {
+    b.style.outline = b.dataset.kind === helpKind ? "3px solid #6d28d9" : "none";
+  });
+}
+async function loadMyHelp() {
+  try {
+    const r = await fetch("/api/help/" + state.pid);
+    const d = await r.json();
+    const box = $("help-mine");
+    box.innerHTML = (d.tickets || []).slice(0, 5).map(t =>
+      `<div style="padding:4px 0;border-bottom:1px solid var(--border)">` +
+      `<b>${t.kind === "complaint" ? " :( " : t.kind === "suggestion" ? "💡" : "❓"}</b> ` +
+      `${t.message.slice(0, 60)}… <span style="color:var(--muted)">(${t.status})</span></div>`
+    ).join("");
+  } catch (e) {}
+}
+async function sendHelp() {
+  const msg = $("help-msg").value.trim();
+  if (msg.length < 3) { $("help-status").textContent = "Please write a little more."; return; }
+  $("help-send").disabled = true;
+  try {
+    const r = await fetch("/api/help/" + state.pid, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: msg, kind: helpKind }) });
+    const d = await r.json();
+    $("help-status").textContent = d.ok ? "Sent! Thank you 💜" : (d.reason || "Could not send.");
+    if (d.ok) { $("help-msg").value = ""; loadMyHelp(); }
+  } catch (e) { $("help-status").textContent = "Connection problem."; }
+  $("help-send").disabled = false;
+}
+// ================= end help =================
+
 </script>
 
 <button id="dark-toggle" title="Toggle dark mode" onclick="document.body.classList.toggle('dark-mode');localStorage.setItem('edusphere_dark',document.body.classList.contains('dark-mode'))">🌙</button>
@@ -3087,6 +3166,25 @@ function liveKeyboard() {
     <div id="quest-list"></div>
     <button id="freeze-buy" class="badge badge-btn" style="margin-top:12px;font-size:.95rem;padding:10px 14px">🧊 Get streak freeze (10 ⭐)</button>
     <div id="quest-msg" class="modal-sub" style="margin-top:6px;min-height:1.2em"></div>
+  </div>
+</div>
+
+<!-- HELP MODAL -->
+<div id="help-modal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="help-x">✕</button>
+    <h3 style="margin:.1rem 0 .2rem">🆘 Help &amp; Feedback</h3>
+    <p class="modal-sub" style="margin:0 0 8px">Found a problem? Have a question about EduSphere? Tell us!</p>
+    <div style="display:flex;gap:6px;margin:8px 0">
+      <button class="badge badge-btn help-kind" data-kind="question" style="padding:8px 12px">❓ Question</button>
+      <button class="badge badge-btn help-kind" data-kind="complaint" style="padding:8px 12px"> :( Problem</button>
+      <button class="badge badge-btn help-kind" data-kind="suggestion" style="padding:8px 12px">💡 Idea</button>
+    </div>
+    <textarea id="help-msg" maxlength="2000" rows="4" placeholder="Type here…"
+      style="width:100%;padding:10px 12px;border-radius:10px;border:2px solid var(--border);font-family:inherit"></textarea>
+    <button id="help-send" class="btn-primary" style="margin-top:8px">Send ✉️</button>
+    <div id="help-status" class="modal-sub" style="margin-top:6px;min-height:1.2em"></div>
+    <div id="help-mine" style="margin-top:8px;font-size:.85rem"></div>
   </div>
 </div>
 </body>

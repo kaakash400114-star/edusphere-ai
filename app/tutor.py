@@ -184,7 +184,7 @@ def _review(answer: str, question: str, grade: int,
         "SCORE: <number>\n"
         "FIX: <one short sentence of the biggest problem, or 'none'>"
     )
-    text, err = llm.quick(prompt, max_tokens=300, temperature=0.0)
+    text, err = llm.quick(prompt, max_tokens=60, temperature=0.0, timeout=30.0)
     if err or not text:
         return 10, ""          # reviewer down: trust the draft
     ms = re.search(r"SCORE:\s*(\d+)", text)
@@ -276,8 +276,10 @@ def ask(name: str, grade: int, buddy: str, question: str,
                 f"(error: {last_err})")
 
     # Self-check rewrite pass (skipped in live mode: latency first)
+    _trivial = len(question.strip()) < 12 and "?" not in question
     try:
-        score, fix = (10, "none") if live else _review(answer, question, grade, name)
+        score, fix = ((10, "none") if (live or _trivial)
+                      else _review(answer, question, grade, name))
         if score < VERIFY_PASS and fix and fix.lower() != "none":
             messages_fix = messages[:-1] + [
                 {"role": "user", "content": question[:2000]},

@@ -6,6 +6,7 @@ Serves the kid chat PWA + JSON API. Run:
 from __future__ import annotations
 
 import os
+import re
 import time
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -16,8 +17,9 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from . import (adaptive, animations, boards, camera, characters,
-               conversation, habits, improvement, knowledge, knowledge_fresh,
-               kinder, neural_voice, practice, profiles, tutor, worlds, llm)
+               conversation, habits, help as help_mod, improvement, knowledge,
+               knowledge_fresh, kinder, neural_voice, practice, profiles,
+               tutor, worlds, llm)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -456,6 +458,35 @@ def streak_freeze_buy(pid: str):
     if not res.get("ok"):
         return JSONResponse(res, status_code=400)
     return res
+
+
+
+# ── help & feedback ───────────────────────────────────────────────────────────
+
+class HelpBody(BaseModel):
+    message: str = Field(min_length=3, max_length=2000)
+    kind: str = Field(default="question", max_length=20)
+
+
+@app.post("/api/help/{pid}")
+def help_submit(pid: str, body: HelpBody):
+    if not profiles.get_profile(pid):
+        raise HTTPException(status_code=404, detail="profile not found")
+    prof = profiles.get_profile(pid)
+    res = help_mod.submit(pid, prof.get("name", "friend"),
+                          body.message, body.kind)
+    if not res.get("ok"):
+        return JSONResponse(res, status_code=400)
+    return res
+
+
+@app.get("/api/help/{pid}")
+def help_list(pid: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(status_code=404, detail="profile not found")
+    mine = [r for r in help_mod.list_all() if r.get("pid") ==
+            re.sub(r"[^a-zA-Z0-9_-]", "", pid)[:40]]
+    return {"tickets": mine[:20]}
 
 
 @app.post("/api/game/result")

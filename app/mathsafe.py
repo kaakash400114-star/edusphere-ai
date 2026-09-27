@@ -123,7 +123,14 @@ def verify_text(text: str) -> tuple[bool, list[str], list[tuple[int, int, str]]]
     """
     problems: list[str] = []
     spans: list[tuple[int, int, str]] = []
-    hay = text or ""
+    hay = re.sub(
+        r"(?P<a>-?\d+(?:,\d{3})*(?:\.\d+)?)\s*"
+        r"(?P<op>plus|minus|times|multiplied\s+by|divided\s+by)\s*"
+        r"(?P<b>-?\d+(?:,\d{3})*(?:\.\d+)?)",
+        lambda m: f"{m.group('a')} "
+                  f"{ {'plus':'+','minus':'-','times':'*','multiplied by':'*','divided by':'/'}[m.group('op').lower()] } "
+                  f"{m.group('b')}",
+        text or "", flags=re.I)
     for raw, truth in extract_expressions(hay):
         if truth is None:
             continue
@@ -132,11 +139,39 @@ def verify_text(text: str) -> tuple[bool, list[str], list[tuple[int, int, str]]]
             continue
         tail_start = tail_idx + len(raw)
         tail = hay[tail_start: tail_start + 40]
-        m = re.search(r"(?P<pre>\s*(?:is|:|=|equals|gives|makes|get)\s*)"
-                      r"(?P<num>-?\d+(?:,\d{3})*(?:\.\d+)?)", tail, re.I)
+        _sent_end = re.search(r"[.!?]", tail)
+        if _sent_end:
+            tail = tail[:_sent_end.start()]     # never cross a sentence
+        # "of" after a fraction is usually a denominator phrase
+        # ("the common denominator of 6"), not an answer claim.
+        if re.match(r"\s*of\b", tail, re.I):
+            continue
+        m = re.search(r"(?P<pre>\s*(?:=|equals|gives|makes|get|is\s+equal\s+to)\s*"
+                      r"(?P<num>-?\d+(?:,\d{3})*(?:\.\d+)?(?:\s*/\s*\d+)?))",
+                      tail, re.I)
+        if not m:
+            # "X is N" only counts when N immediately follows "is " (no words)
+            m = re.match(r"(?P<pre>\s+is\s+)"
+                         r"(?P<num>-?\d+(?:,\d{3})*(?:\.\d+)?(?:\s*/\s*\d+)?)",
+                         tail, re.I)
         if not m:
             continue
-        claimed = m.group("num").replace(",", "")
+        if not m:
+            continue
+        claimed = m.group("num").replace(",", "").replace(" ", "")
+        # fraction answer (a/b): compare as a value
+        if "/" in claimed:
+            fv = compute(claimed)
+            if fv is None:
+                continue
+            if abs(fv - truth) <= 1e-9:
+                continue                       # 5/6 == 0.8333... correct
+            # genuinely different -> report the fraction form
+            problems.append(f"{raw} = {_fmt(truth)}, text says {claimed}")
+            sp_start = tail_start + m.start("num")
+            sp_end = tail_start + m.end("num")
+            spans.append((sp_start, sp_end, _fmt(truth)))
+            continue
         try:
             claimed_val = float(claimed)
         except ValueError:
