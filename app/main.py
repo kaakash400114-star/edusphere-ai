@@ -114,6 +114,7 @@ class SettingsUpdate(BaseModel):
 
 
 class ChatRequest(BaseModel):
+    live: bool = False
     pid: str
     message: str = Field(min_length=1, max_length=2000)
     history: list[dict] = Field(default_factory=list, max_length=20)
@@ -295,7 +296,7 @@ def chat(body: ChatRequest):
         weak_areas=list(profile.get("weak_areas", {}).keys()),
         mode=body.mode,
         memories=list(profile.get("memories", [])),
-        board=profile.get("board"))
+        board=profile.get("board"), live=body.live)
     topic = _topic_from(subject, body.message)
     updated = profiles.record_activity(body.pid, "chat", topic)
     buddy = characters.public(profile.get("character") or "leo")

@@ -213,21 +213,23 @@ def _strip_meta(text: str) -> str:
 def ask(name: str, grade: int, buddy: str, question: str,
         history: list[dict] | None = None, subject: str = "general",
         weak_areas: list[str] | None = None, mode: str | None = None,
-        memories: list[str] | None = None, board: str | None = None) -> str:
+        memories: list[str] | None = None, board: str | None = None,
+        live: bool = False) -> str:
     """One tutor turn: wide retrieval → draft → SELF-REVIEW → answer."""
     grade = max(0, min(12, int(grade or 0)))
     buddy = characters.character_for(grade, buddy)["id"]
     world = worlds.resolve_world(grade)
     subject_hint = worlds.knowledge_subject_hint(world["id"], subject)
 
-    # Curriculum retrieval
+    # Curriculum retrieval — skipped in live mode for response speed
     excerpt = ""
-    if grade >= 1:
-        excerpt = _gather_corpus(subject_hint, grade, question, board)
-    else:
-        kc = kinder.kinder_context(question)
-        if kc:
-            excerpt = kc
+    if not live:
+        if grade >= 1:
+            excerpt = _gather_corpus(subject_hint, grade, question, board)
+        else:
+            kc = kinder.kinder_context(question)
+            if kc:
+                excerpt = kc
 
     # Build system prompt
     system = _system_prompt(name, grade, buddy, weak_areas or [],
@@ -239,6 +241,15 @@ def ask(name: str, grade: int, buddy: str, question: str,
     if mode == "story":
         system += "\n" + conversation.STORY_RULES + "\n"
     system += "\n" + neural_voice.grade_style_directive(grade) + "\n"
+    if live:
+        system += (
+            "LIVE VOICE MODE: your words are SPOKEN aloud by a human-like "
+            "voice. Sound like a real person talking: warm interjections "
+            "(oh, wow, hmm, aha), short natural rhythms, one breath per "
+            "sentence. Mark the ONE most important word of a sentence "
+            "like *this* so the voice stresses it. React to feeling first "
+            "(great question!, ooh!), then teach. Keep it under 60 words "
+            "unless the child asks for more.\n")
     if excerpt:
         system += (
             "\n\nCURRICULUM KNOWLEDGE (real data from every board's "
@@ -258,15 +269,15 @@ def ask(name: str, grade: int, buddy: str, question: str,
                 "Set GLM_API_KEY, OPENAI_API_KEY, ANTHROPIC_API_KEY, "
                 "GROQ_API_KEY, or OLLAMA_BASE_URL in your environment.")
 
-    answer, last_err = llm.complete(messages, max_tokens=3000,
+    answer, last_err = llm.complete(messages, max_tokens=900 if live else 3000,
                                     temperature=0.4, timeout=90.0)
     if not answer:
         return (f"Hmm, my brain took a nap 😅. Try again in a moment! "
                 f"(error: {last_err})")
 
-    # Self-check rewrite pass
+    # Self-check rewrite pass (skipped in live mode: latency first)
     try:
-        score, fix = _review(answer, question, grade, name)
+        score, fix = (10, "none") if live else _review(answer, question, grade, name)
         if score < VERIFY_PASS and fix and fix.lower() != "none":
             messages_fix = messages[:-1] + [
                 {"role": "user", "content": question[:2000]},
@@ -287,9 +298,10 @@ def ask(name: str, grade: int, buddy: str, question: str,
     # Stage 2: deterministic LANGUAGE gate — lint the (possibly rewritten)
     # answer against the grade's contract; force a simplification rewrite
     # and keep the lint-cleaner of the two. Never regress, never raise.
+    # (LLM rewrite skipped in live mode; the directive already enforces it.)
     try:
         _lint0 = language.lint(answer, grade)
-        if not _lint0["ok"]:
+        if not _lint0["ok"] and not live:
             messages_fix2 = messages[:-1] + [
                 {"role": "user", "content": question[:2000]},
                 {"role": "assistant", "content": answer},

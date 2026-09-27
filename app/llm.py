@@ -186,7 +186,8 @@ def complete(messages: list[dict], max_tokens: int = 3000,
     if not cfg["api_key"] or cfg["api_key"] == "":
         return "", "no API key configured"
 
-    for attempt in range(2):
+    attempts = 4 if cfg["provider"] == "glm" else 2
+    for attempt in range(attempts):
         if cfg["provider"] == "anthropic":
             text, err = _anthropic_complete(cfg, messages, max_tokens,
                                             temperature, timeout)
@@ -200,7 +201,8 @@ def complete(messages: list[dict], max_tokens: int = 3000,
         if text:
             return text, None
         if err == "rate-limited":
-            time.sleep(2.0 * (attempt + 1))
+            # account-level concurrency limit: wait it out patiently
+            time.sleep(min(12.0, 2.5 * (attempt + 1)))
         else:
             time.sleep(1.5 * (attempt + 1))
 
