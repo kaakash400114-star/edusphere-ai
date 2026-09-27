@@ -842,7 +842,7 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="settings-btn" class="btn-ghost" title="Account settings">⚙️</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
-      <button id="help-btn" class="btn-ghost" title="Help & feedback">🆘</button>
+      
     </div>
   </header>
 
@@ -1012,7 +1012,22 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
     <div class="set-sec">
       <h4>Improvement — honest rating</h4>
       <div id="set-improve"></div>
+    
+    <div class="set-sec">
+      <h4>🆘 Help &amp; Feedback</h4>
+      <p class="modal-sub" style="margin:0 0 6px">Problem with the app? Question? Tell us — we read everything.</p>
+      <div style="display:flex;gap:6px;margin:6px 0">
+        <button class="badge badge-btn help-kind" data-kind="question" style="padding:8px 12px">❓ Question</button>
+        <button class="badge badge-btn help-kind" data-kind="complaint" style="padding:8px 12px"> :( Problem</button>
+        <button class="badge badge-btn help-kind" data-kind="suggestion" style="padding:8px 12px">💡 Idea</button>
+      </div>
+      <textarea id="help-msg" maxlength="2000" rows="3" placeholder="Type here…"
+        style="width:100%;padding:10px 12px;border-radius:10px;border:2px solid var(--border);font-family:inherit"></textarea>
+      <button id="help-send" class="btn-primary" style="margin-top:6px">Send ✉️</button>
+      <div id="help-status" class="modal-sub" style="margin-top:6px;min-height:1.2em"></div>
+      <div id="help-mine" style="margin-top:6px;font-size:.85rem"></div>
     </div>
+</div>
   </div>
 </div>
 
@@ -1063,7 +1078,10 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
         <button id="story-close">✕ Close book</button>
       </div>
     </div>
-  </div>
+  
+    
+    </div>
+</div>
 </div>
 
 <script src="/animals.js"></script>
@@ -2258,7 +2276,7 @@ async function openSettings() {
 }
 
 function wireSettings() {
-  $("settings-btn").onclick = openSettings;
+  $("settings-btn").onclick = () => { openSettings(); setTimeout(openHelp, 300); };
   $("settings-x").onclick = () => $("settings-modal").classList.add("hidden");
   $("set-speed").oninput = () =>
     $("set-speed-val").textContent = parseFloat($("set-speed").value).toFixed(2) + "×";
@@ -2704,8 +2722,6 @@ function wire() {
   $("live-keyboard").onclick = liveKeyboard;
   $("streak-badge").style.cursor = "pointer";
   $("quest-x").onclick = () => $("quest-modal").classList.add("hidden");
-  $("help-btn").onclick = openHelp;
-  $("help-x").onclick = () => $("help-modal").classList.add("hidden");
   $("help-send").onclick = sendHelp;
   $("freeze-buy").onclick = buyFreeze;
   $("send").onclick = () => send();
@@ -3074,7 +3090,6 @@ function liveKeyboard() {
 let helpKind = "question";
 async function openHelp() {
   if (!state.pid) return;
-  $("help-modal").classList.remove("hidden");
   $("help-status").textContent = "";
   $("help-msg").value = "";
   document.querySelectorAll(".help-kind").forEach(b => {
@@ -3169,23 +3184,5 @@ async function sendHelp() {
   </div>
 </div>
 
-<!-- HELP MODAL -->
-<div id="help-modal" class="modal hidden">
-  <div class="modal-card">
-    <button class="modal-x" id="help-x">✕</button>
-    <h3 style="margin:.1rem 0 .2rem">🆘 Help &amp; Feedback</h3>
-    <p class="modal-sub" style="margin:0 0 8px">Found a problem? Have a question about EduSphere? Tell us!</p>
-    <div style="display:flex;gap:6px;margin:8px 0">
-      <button class="badge badge-btn help-kind" data-kind="question" style="padding:8px 12px">❓ Question</button>
-      <button class="badge badge-btn help-kind" data-kind="complaint" style="padding:8px 12px"> :( Problem</button>
-      <button class="badge badge-btn help-kind" data-kind="suggestion" style="padding:8px 12px">💡 Idea</button>
-    </div>
-    <textarea id="help-msg" maxlength="2000" rows="4" placeholder="Type here…"
-      style="width:100%;padding:10px 12px;border-radius:10px;border:2px solid var(--border);font-family:inherit"></textarea>
-    <button id="help-send" class="btn-primary" style="margin-top:8px">Send ✉️</button>
-    <div id="help-status" class="modal-sub" style="margin-top:6px;min-height:1.2em"></div>
-    <div id="help-mine" style="margin-top:8px;font-size:.85rem"></div>
-  </div>
-</div>
 </body>
 </html>
