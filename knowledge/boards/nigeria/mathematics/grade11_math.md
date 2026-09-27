@@ -1,5 +1,6 @@
 # Nigerian (NERDC) Grade 11 Mathematics
 
+
 ## Indices and Logarithms
 Students study laws of indices, extending to fractional and negative powers. They learn to simplify expressions like (a²)³ * a⁻⁴. The core concept of logarithms as the inverse of exponentiation is introduced. They apply the laws of logarithms, such as logₐ(xy) = logₐx + logₐy, to expand and condense expressions. Students solve simple exponential equations by converting them to their logarithmic form, for example, finding x in 3ˣ = 81, and use logarithm tables or calculators for computation.
 
@@ -16,4 +17,4 @@ This section focuses on solving quadratic equations of the form ax² + bx + c = 
 Students deepen their knowledge of trigonometric ratios (sine, cosine, tangent) for angles between 0° and 360°. They use the trigonometric identities, such as sin²θ + cos²θ = 1, to prove other identities and simplify expressions. The sine and cosine rules are applied to solve problems in non-right-angled triangles. This includes calculating the height of the Iganmu Bridge or the distance across the Lagos Lagoon using bearings and known angles, demonstrating practical application in Nigerian geography and engineering.
 
 ## Statistics
-Students calculate and interpret measures of central tendency, including mean, median, and mode, for both grouped and ungrouped data. They also compute measures of dispersion, such as range, variance, and standard deviation. Using data from a jollof rice cook-off or a harmattan season survey, students learn to represent data with pie charts and bar charts, calculate cumulative frequencies, and estimate the median and quartiles from a cumulative frequency curve.
+Students master the calculation of mean, median, and mode for both grouped and ungrouped data sets, such as recording scores from a local school debate competition. They apply formulas to compute measures of dispersion like range, variance, and standard deviation to understand data spread. Using data from a harmattan season survey, they learn to represent information with pie and bar charts. Furthermore, they construct a cumulative frequency table and plot a curve to estimate the median and quartiles, gaining a comprehensive understanding of statistical distribution.

@@ -1,5 +1,6 @@
 # Cambridge IGCSE Grade 2 English
 
+
 ## Phonics and Word Recognition
 Children learn to identify and blend letter sounds (phonemes) to read simple words with consonant-vowel-consonant (CVC) structures. They focus on high-frequency 'tricky words' like 'the', 'go', and 'I' that cannot be decoded using phonics alone. Guided by their teacher, they practice using picture cues and initial sounds to predict and confirm unknown words, developing early reading fluency through daily shared and independent reading activities with simple, internationally relevant texts like animal stories or familiar tales.
 
@@ -7,7 +8,7 @@ Children learn to identify and blend letter sounds (phonemes) to read simple wor
 Students develop proper pencil grip and posture for writing. They learn to form all 26 letters of the English alphabet, both uppercase and lowercase, consistently and correctly. Using a continuous cursive style, they are taught the correct starting and finishing points for each letter to improve flow and speed. They practice writing their full name, simple words, and short phrases, focusing on correct sizing and spacing of letters on a line.
 
 ## Spelling Patterns
-Children explore common letter-sound correspondences to begin spelling. They learn to identify and spell simple vowel digraphs like 'ai' in 'rain' and 'ee' in 'feet'. They are introduced to basic consonant clusters (blends) like 'cl' in 'cloud' and 'st' in 'star'. Students practice these patterns through dictation, building games, and by spelling simple, common words from their reading vocabulary, such as 'book', 'fish', and 'sun'.
+Cambridge IGCSE English Language Arts introduces students to essential spelling patterns, beginning with core letter-sound correspondences for single consonants and short vowels. Pupils then progress to identifying and spelling common vowel digraphs, such as 'ai' in 'rain' and 'ee' in 'feet', where two letters create one sound. They also learn basic consonant blends where individual sounds are maintained, like 'cl' in 'cloud' and 'st' in 'star'. Students apply these rules by spelling high-frequency words from their reading vocabulary, including 'book', 'fish', and 'sun'. Reinforcement occurs through structured activities like dictation and word-building games to consolidate pattern recognition and application.
 
 ## Sentence Structure
 Students learn to construct simple sentences that express a complete thought. They are taught to use a capital letter to start a sentence and a full stop to end it. They practice adding descriptive details by learning to use basic adjectives like 'big', 'red', and 'happy' before nouns. For example, they learn to change 'the dog' to 'the big, red dog'. They also begin to write questions using a question mark, such as 'What is that?'.

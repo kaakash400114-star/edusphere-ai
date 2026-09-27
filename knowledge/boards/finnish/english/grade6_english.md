@@ -1,5 +1,6 @@
 # Finnish (FNBE) Grade 6 English
 
+
 ## Structuring Narrative Texts
 Students learn to organize extended stories with clear narrative arcs. They focus on the classic story structure: an exposition to set the scene and introduce characters like a family on a holiday to Northern Finland, a rising action involving a problem such as getting lost in the forest, a climax with a tense moment like encountering an elk, and a falling action and resolution. Pupils practice developing characters with depth and settings that feel authentic, using specific Finnish details to make the world believable.
 
@@ -10,7 +11,7 @@ In this module, students are introduced to the conventions of formal writing for
 Students critically examine various forms of media, including news articles, advertisements, and social media posts. They learn to identify the target audience, purpose, and persuasive techniques used. For example, they analyze an advertisement for a new sauna product, evaluating the choice of language and imagery. A key skill is distinguishing between facts and opinions, particularly in online content, and understanding how digital platforms can shape public perception on topics like public transport funding or environmental issues in Finland.
 
 ## Finnish Cultural Expressions in English
-This section focuses on accurately and respectfully translating Finnish cultural concepts into English. Students learn the correct translations and contexts for key terms such as 'sisu' (perseverance, grit), 'kalsarikännit' (a sauna session where one drinks at home in underwear), and the Euro as the Finnish currency. They practice incorporating these terms into sentences and short paragraphs, explaining their cultural significance to a non-Finnish audience to promote better understanding.
+Students will develop precise methods for translating complex Finnish cultural concepts, analysing their unique semantic nuances to select the most appropriate English equivalents. This involves analysing terms such as 'sisu', a concept of extraordinary perseverance in the face of extreme adversity, and 'kalsarikännit', describing the cultural practice of home drinking while wearing only underwear. The curriculum provides structured exercises for students to embed these terms within contextual sentences and short expository paragraphs. These compositions will require students to meticulously define and explain the cultural significance of each expression for an international audience, thereby fostering cross-cultural comprehension.
 
 ## Collaborative Project Work: Planning a Guide
 Students engage in collaborative project work by planning and drafting a guide to their local area for an international audience. The process includes brainstorming ideas for sections like history, famous landmarks, and natural phenomena, assigning roles within the group, and conducting research. They use project management skills to set deadlines and create outlines, ensuring the final text is informative, well-structured, and highlights unique local features, such as a specific viewpoint for viewing the Northern Lights.

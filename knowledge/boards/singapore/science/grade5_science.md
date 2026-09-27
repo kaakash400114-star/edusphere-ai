@@ -1,5 +1,6 @@
 # Singapore Curriculum (MOE) Grade 5 Science
 
+
 ## Diversity of Living Things
 Living things are classified into groups like plants, animals, fungi, and microorganisms. They all carry out life processes such as nutrition, respiration, and reproduction. For example, a hawker centre fish and a HDB plant pot's plant are both living organisms. We use a classification system to group them based on shared features like having a backbone (vertebrates) or not (invertebrates) to better understand the rich biodiversity in Singapore's parks and reservoirs.
 
@@ -16,4 +17,4 @@ Energy exists in different forms and can be converted from one to another. Light
 An electrical circuit is a complete path along which electricity can flow. It needs a source (like a battery), conductors (like copper wires), and an output device (like a bulb). A simple circuit has one path for the current. If the circuit is broken, for example, by a switch in the 'off' position, the bulb will not light up. In Singapore, understanding circuits is essential for using the many electrical appliances and MRT systems safely every day.
 
 ## The Human Body
-The human body is made up of systems that work together. The digestive system breaks down food for energy, and the circulatory system transports this energy and oxygen around the body. Your lungs help you breathe in oxygen and breathe out carbon dioxide. A balanced diet, including the variety of food available at a local hawker centre, provides the necessary nutrients for your body to grow and stay healthy.
+The human body comprises several systems that work together to maintain life. The digestive system breaks down food into simpler substances, such as glucose, using mechanical and chemical processes like chewing and enzyme action. The circulatory system, powered by the heart, transports these nutrients along with oxygen from the respiratory system to all body cells via blood. For example, chewing a piece of chicken at a hawker centre begins mechanical digestion in the mouth, while its proteins are broken down into amino acids for muscle growth. This coordinated system ensures the body receives the building blocks it needs for energy, repair, and healthy function.

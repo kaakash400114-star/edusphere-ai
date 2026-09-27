@@ -1,5 +1,6 @@
 # French (Éducation nationale) Grade 1 Science
 
+
 ## Les sens et le corps
 Les élèves utilisent leurs sens (vue, ouïe, odorat, toucher, goût) pour observer le monde. Ils apprennent à nommer les parties du corps (la tête, les bras, les jambes) et décrire ce qu'ils ressentent. Par exemple, le chaud et le froid, le doux et le rugueux. Ils comparent des objets en les touchant, comme un éponge douce et un rocher rugueux. Ils utilisent leur nez pour identifier des odeurs différentes, comme celles d'une boulangerie ou d'un parc.
 
@@ -7,7 +8,7 @@ Les élèves utilisent leurs sens (vue, ouïe, odorat, toucher, goût) pour obse
 Les enfants observent des plantes (les arbres, les fleurs) et des animaux (les oiseaux, les insectes, les chiens) dans leur environnement. Ils apprennent que les plantes ont besoin de terre, d'eau et de lumière du soleil pour pousser. Ils reconnaissent les différentes parties d'une plante (les racines, la tige, les feuilles, les fleurs). Ils observent que les animaux mangent, bougent et ont des bébés. Un exemple est le papillon, qui se transforme d'un chenille.
 
 ## L'eau et les états de la matière
-Les enfants explorent les différentes états de l'eau (liquide, solide) à travers des expériences simples. Ils observent comment l'eau se transforme en glace au congélateur et revient à l'état liquide à température ambiante. Ils utilisent des verres mesureurs pour comprendre la capacité et le volume. Par exemple, ils mesurent 250 ml d'eau, la versent dans un verre et constatent qu'elle remplit le verre à mi-hauteur.
+L'eau existe principalement sous trois états physiques : solide, liquide et gazeux. En classe, les enfants identifient l'état solide de la glace, l'état liquide de l’eau du robinet et l’état gazeux de la vapeur d’eau lors de l’ébullition. Ils réalisent des expériences pour observer les changements d’état : la congélation transforme l’eau liquide en glace (solidification), et son chauffage dans un bêcher provoque une vaporisation. Pour quantifier l’eau, ils utilisent le millilitre (ml) comme unité de volume ; par exemple, verser 500 ml d’eau dans un bocal d’un litre montre que ce dernier a une capacité de 1000 ml. Ces manipulations permettent de distinguer le volume (la quantité d’espace occupé) de la masse (la quantité de matière).
 
 ## Les objets et leurs propriétés
 Les élèves manipulent des objets de tous les jours pour décrire leurs propriétés. Ils apprennent à distinguer les matériaux (bois, métal, plastique, verre) par leur apparence et leur texture. Ils testent si les objets flottent ou coulent dans l'eau, comme un bateau en plastique qui flotte et une clé en métal qui coule. Ils utilisent une balance pour comparer la masse de deux objets, comme une pomme et une orange.

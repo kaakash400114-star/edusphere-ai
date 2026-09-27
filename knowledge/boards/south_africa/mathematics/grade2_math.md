@@ -1,5 +1,6 @@
 # South African (CAPS) Grade 2 Mathematics
 
+
 ## Numbers, Operations and Relationships
 Learners are able to count forwards and backwards in ones from any number between 0 and 200. They build up and break down numbers up to 200 using concrete objects like counters, ensuring they understand place value (hundreds, tens, ones). They use addition and subtraction number sentences with numbers up to 100, solving practical problems. For example, buying 2 cooldrinks for R8 each means calculating 8 + 8 or 8 x 2 to find the total cost of R16. Mental strategies like using doubles are key.
 
@@ -16,4 +17,4 @@ Learners are able to estimate, measure, compare and order objects using non-stan
 Learners are able to collect data by asking simple questions and sorting objects into categories. They tally information like favourite fruits or types of shoes worn to school. They represent this data using pictographs, where one picture stands for one object or person. For instance, they could draw a picture of a rand coin for every learner who saves money, creating a visual graph that shows how many save R5 or R10 each week.
 
 ## Problem Solving
-Learners are able to solve simple word problems using addition and subtraction, drawing on their own experiences. They read a problem, decide whether to add or take away, and use objects or drawings to find the answer. For example: 'Sipho has 15 oranges. He gives 5 to his friend. How many does he have left?' The process encourages logical thought and applying mathematical skills to real-life situations they understand.
+In Grade 2, learners solve word problems requiring addition or subtraction by first identifying the required operation from key terms like "left over" or "in total." They represent the problem concretely using physical objects or drawings, such as drawing 15 oranges and crossing out 5, to find the solution. The method emphasizes breaking down a problem into manageable steps, applying the correct calculation (15 - 5 = 10), and stating the final answer in the context of the question, such as "Sipho has 10 oranges left." This process develops logical reasoning and applies arithmetic skills to practical, everyday scenarios familiar to the learner.

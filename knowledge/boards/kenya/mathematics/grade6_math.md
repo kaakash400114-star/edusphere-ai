@@ -1,4 +1,5 @@
 # Kenyan CBC Grade 6 Mathematics
+
 ## Whole Numbers and Operations
 The learner is guided to understand place value up to billions and to perform the four operations on whole numbers. They are taught to solve multi-step word problems involving addition, subtraction, multiplication, and division, including real-life scenarios like calculating the total cost of 50 bags of maize flour at Ksh 3,500 per bag or finding the number of students who can share 144 textbooks equally. Emphasis is placed on verifying answers through estimation and inverse operations.
 
@@ -9,7 +10,7 @@ The learner is guided to perform operations (addition, subtraction, multiplicati
 The learner is guided to understand and convert units of measurement for length, mass, capacity, and time between the metric system and customary units used in Kenya. They solve problems involving time schedules, such as planning a trip to Nairobi National Park, and money, like calculating the cost of a boda boda ride of 8 km at Ksh 150 per kilometre plus a Ksh 50 booking fee. They also find the perimeter and area of rectangles and squares.
 
 ## Geometry
-The learner is guided to identify, describe, and classify properties of two-dimensional and three-dimensional shapes. They learn about lines, angles, and the relationship between them, such as angles formed by intersecting roads. Learners are guided to construct and identify symmetrical shapes and use them to create patterns inspired by Kenyan art. They also calculate the volume of cubes and rectangular prisms, like the volume of a water tank.
+In geometry, learners identify, describe, and classify properties of 2D and 3D shapes, including prisms and pyramids. They measure and classify angles as acute, obtuse, or right, and explore relationships such as vertically opposite angles formed by intersecting lines. Using a line of symmetry, learners construct and identify symmetrical figures to create patterns inspired by Kenyan fabrics and art. They calculate the volume of cubes and rectangular prisms using the formula length × width × height, applying this to find the capacity of water tanks and other containers.
 
 ## Algebra and Patterns
 The learner is guided to recognise, extend, and create number and shape patterns using symbols and objects. They find the rule governing a sequence, such as the cost of hiring a boda boda over increasing distances. Learners are guided to use letters to represent unknown numbers (variables) in simple number sentences and to solve for the unknown value in equations like 3x + 10 = 40, which could represent sharing money.

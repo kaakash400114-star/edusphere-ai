@@ -1,54 +1,25 @@
-# Rainbow Kindergarten - Play Lessons (Ages 4-5)
+# Kindergarten Activities (Little Learners)
 
-> World: Rainbow Kindergarten 🌈 - letters sing, numbers play, magic sand
-> traces shapes. Playful teaching through songs, stories, and sound-outs.
-> Every small win gets a sticker moment; 'almost' is the only wrong answer.
+## Phonics play
+Letters make sounds, and sounds build words. Children practise the sound of each letter with actions — a a apple, b buh ball — then blend sounds to read small words: c-a-t makes cat. Sound games like I-spy with letter sounds train the ear for reading.
 
-## Letter of the Day (A-Z)
-Teach one letter per session, this exact recipe:
-1. SHOW: "This is A! A says 'a' like APPle." (big, friendly, 2 times)
-2. SONG: two sing-song lines using the letter sound - "a-a-apple, a-a-ant,
-   A is happy, A can dance!"
-3. FRIENDS: three words that start with it (apple, ant, alligator), each
-   with an action to act out.
-4. TRACE: describe drawing it in magic sand - "Round the apple, down the
-   leaf - that's the letter A!" (air-trace with finger)
-5. CHECK: "Can you find A in APPle? Listen: a-a-apple!"
-Celebrate: "You found it! STICKER TIME! ⭐"
+## Number work 1 to 20
+Children count objects up to twenty, write numbers in the air and on paper, and match numbers to groups of things. They learn what comes before and after — five comes after four and before six. Simple adding with objects starts here: two toys and one more toy makes three toys.
 
-## Sound-Out Words (phonics)
-- c-a-t = cat, d-o-g = dog, s-u-n = sun, h-a-t = hat, m-a-p = map,
-  b-e-d = bed, c-u-p = cup, p-i-g = pig.
-Recipe: say each sound slowly with a clap between ("c... a... t..."),
-then blend faster ("cat!"), then the child says it alone. Praise the blend,
-not just the answer: "You squished the sounds together - that's READING!"
+## Tracing and writing
+Tracing lines, curves, circles and zigzags prepares little hands for letters. Then children trace letters starting from the top, always moving the same way, and finally write them on their own. Their name is the proudest word they learn to write.
 
-## Counting to 20 (mangoes, stars, jumps)
-- Count objects 1-10 first: mangoes in a basket, stars in the sky, hops.
-- Then 11-20 as "ten and more": 10+1 = 11 ... 10+10 = 20.
-- Recipe: count aloud together, touch each item, then "how many?"
-- If lost, restart from 10 - never from 1. Keeps wins close.
+## Talking and listening
+Show and tell builds speaking courage: hold a favourite toy, say its name, and tell one thing about it. Listening games — clap when you hear an animal word — train careful ears. Taking turns to talk teaches children that conversation goes back and forth.
 
-## Magic Sand Tracing
-- Letter recipes in words: S = "snake path, ssssss"; O = "round like an
-  orange"; L = "down then foot"; E = "down, three little arms".
-- Numbers: 2 = "curve and slide"; 3 = "two bumps"; 5 = "down, around, hat".
-- Buddy describes, child traces in the air or on the palm. Then "erase
-  with a magic blow!" - blow, giggle, next letter.
+## Opposite day
+Big and small, up and down, hot and cold, day and night, open and closed, happy and sad. Opposite pairs teach children to compare and use describing words. Acting opposites out — stretching tall, crouching small — makes the words stick in body and mind.
 
-## Rhyme Time
-- Twinkle twinkle little star • Rain rain go away • Head, shoulders,
-  knees and toes • One two three four five, once I caught a fish alive.
-- Buddy chants line by line, child echoes. Actions for every line.
+## Nature walk discoveries
+A walk outside is a science lesson: leaves come in different shapes, ants walk in lines, clouds change shape, flowers smell sweet, stones feel smooth or rough. Children collect safe treasures — leaves, petals, feathers — and talk about what they saw, heard, and smelled.
 
-## Shapes and Colors
-- Circle = ball/sun/cookie; square = window/box; triangle = roof/hat/samosa;
-  star = sky star; rectangle = door/book.
-- Colors with meadow friends: red apple, blue sky, yellow sun, green grass.
-- Recipe: name it, find it in the room, then "what else is ROUND?"
+## Puzzles and building
+Fitting puzzle pieces teaches shapes, patience, and looking carefully. Building with blocks teaches balance, sizes, and planning. Finishing a puzzle all alone is a big confidence moment — children learn that trying again and again is how we solve things.
 
-## Kindness Rules for Kindergarten
-- Sentences under 12 words. One idea per sentence.
-- Numbers to 20 max, letters one at a time.
-- 'Almost!' is celebrated: "ALMOST! Try again with me - c... a... t..."
-- End every session with a sticker and a warm goodbye from the buddy.
+## Feelings and friends
+Happy, sad, angry, scared, excited — all feelings are okay, and words help us share them. Children learn to say "I feel sad" instead of crying, to wait for a turn, to share, and to use gentle hands. Kind words and helping hands make good friends.

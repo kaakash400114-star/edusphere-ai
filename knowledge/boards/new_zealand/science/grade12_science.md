@@ -1,5 +1,6 @@
 # New Zealand Curriculum (NZC) Grade 12 Science
 
+
 ## Quantum Mechanics and Atomic Structure
 Students explore the dual nature of light and matter. Wave-particle duality is demonstrated through the photoelectric effect, where photons of sufficient energy eject electrons from a metal surface, described by the equation E = hf - Φ. The Heisenberg uncertainty principle, ΔxΔp ≥ h/4π, is studied. Niels Bohr's model explains electron energy levels in the hydrogen atom, with quantised orbits. For instance, an electron transitioning from n=3 to n=2 emits a photon with a specific wavelength, as seen in the emission spectra of elements like sodium.
 
@@ -16,4 +17,4 @@ Students apply Newton's laws of motion to projectile problems. The equations of 
 Students investigate nutrient cycling, energy flow, and human impacts. The structure of a food web for a native beech forest is examined, with keystone species like the kākā. Carbon and nitrogen cycles are modelled, such as the role of decomposing fungi like pūriri. Human impacts, including introduced predators like stoats, are evaluated. Conservation strategies like the 1080 drops to control possum populations, protecting native birds like the kiwi, are a key focus of ecological management in Aotearoa.
 
 ## Organic Chemistry and Reaction Mechanisms
-Students study hydrocarbons, functional groups, and organic reactions. The IUPAC naming system is applied to alkanes, alkenes, and alkynes. Electrophilic addition to ethene (C₂H₄ + Br₂ → C₂H₄Br₂) is explained. In Aotearoa, biofuels like ethanol from biomass are discussed as a renewable energy alternative to petrol. Polymers such as polypropylene, used in piupiu and other traditional garments, are synthesised and their properties linked to their structure.
+Students will apply IUPAC nomenclature rules to systematically name alkanes, alkenes, and alkynes, distinguishing structural isomers. They will describe functional groups and explain characteristic reactions, such as electrophilic addition of bromine to ethene. Mechanisms for nucleophilic substitution and elimination reactions will be analysed using curved-arrow notation to illustrate electron movement. In a local context, they will evaluate biofuels like ethanol, comparing the sustainability of fermentation from biomass to petrol. Furthermore, students will analyse polymer synthesis, such as the formation of polypropylene, to explain how its structure determines properties like durability and flexibility for use in traditional Māori garments.

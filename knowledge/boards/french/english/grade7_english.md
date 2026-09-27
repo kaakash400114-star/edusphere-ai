@@ -1,5 +1,6 @@
 # French (Éducation nationale) Grade 7 English
 
+
 ## Present Tense Regular Verbs
 Students master conjugating regular -er, -ir, and -re verbs in the present tense. They learn to form the stem by removing the ending (-er, -ir, -re) and add the appropriate present tense endings, such as -e, -es, -e, -ons, -ez, -ent. For example, the verb "parler" becomes "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent". This foundational skill is essential for forming accurate sentences in the present tense, which is used to describe daily routines and current facts, such as visiting a *boulangerie* or discussing the *Tour de France*.
 
@@ -10,7 +11,7 @@ Students learn the English indefinite articles: 'a', 'an', and 'some'. They unde
 Students learn a range of adjectives to describe people's physical appearance. This includes vocabulary for hair (curly, straight, blonde), eyes (blue, green, brown), and height (tall, short). They learn to combine these adjectives with the verb 'to be' for descriptions, such as 'She has long, brown hair' or 'He is tall and thin'. This unit expands their ability to give detailed descriptions, for instance, of a cyclist in the *Tour de France* or a customer in a Parisian shop.
 
 ## Asking for and Giving Directions
-Students learn common phrases for asking for directions, such as 'Where is...?', 'Could you tell me the way to...?', and 'How do I get to...?'. They also learn to respond with directional language, including 'Go straight ahead', 'Turn left/right', and 'It's on your left'. This practical skill is reinforced with real-world examples like finding a *boulangerie* near the *métro station* or navigating to a museum in central Paris.
+Students master the formulaic structures for seeking and providing directions, learning to pose questions such as *« Où est... ? »* and *« Pouvez-vous m'indiquer le chemin vers... ? »*. They acquire a precise set of directional imperatives, including fundamental commands like *« Allez tout droit »*, *« Tournez à gauche/droite »*, and prepositional phrases for location, such as *« C'est à gauche »*. This practical application is solidified through contextual scenarios requiring the interpretation of simple maps and the description of routes between landmarks. Learners are tasked with navigating from a *boulangerie* to the nearest *métro station* or providing instructions to reach a museum, ensuring functional competence in authentic French environments.
 
 ## Simple Past Tense (Irregular Verbs)
 Students focus on mastering common irregular verbs in the simple past tense. These high-frequency verbs like 'go/went', 'see/saw', 'have/had', and 'eat/ate' do not follow a standard conjugation pattern. Students practice forming the simple past to recount completed actions in the past, for example, 'We visited the Eiffel Tower last year' or 'She saw a film at the cinema'. This allows them to tell personal stories and historical events, such as the history of France.

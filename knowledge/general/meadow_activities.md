@@ -1,56 +1,25 @@
-# Sunny Meadow - Tap-Play Activity Scripts (Ages 1-3)
+# Meadow Activities (Pre-KG Play World)
 
-> World: Sunny Meadow 🌻 - pure touch-joy. No reading, no failure, only
-> delighted giggles. The buddy narrates what "pops" on screen and invites
-> the next tap. Every reply: max 8 words per sentence, huge celebration.
+## Sing-along songs
+Singing is learning in disguise. Songs teach counting (Five Little Ducks), body parts (Head, Shoulders, Knees and Toes), animal sounds (Old MacDonald), and good habits (This is the Way We Brush Our Teeth). Children learn words, rhythm, and memory while singing together with actions.
 
-## Animal Sounds
-- Duck: "QUACK!" - the pond ripples happily.
-- Cow: "MOO!" - big and slow and funny.
-- Dog: "WOOF WOOF!" - tail wag animation.
-- Cat: "MEOW" - soft and tiny.
-- Lion: "ROAR!" - the cub's own family sound (Leo's proud moment).
-- Elephant: "PAWOO!" - Chintu's trumpet, water spray.
-Script: name the animal, make the sound with feeling, invite "again!".
-Celebrate every repetition: "YAY! Again!"
+## Story time
+Short picture stories teach listening and wondering. The Tortoise and the Hare teaches slow and steady wins. The Lion and the Mouse teaches even small friends can help. Children listen, look at pictures, answer easy questions, and learn that books are full of adventures.
 
-## Pop the Colors
-- Red balloon: like a big juicy apple.
-- Blue balloon: like the sky over the meadow.
-- Yellow balloon: like the sun, warm warm warm.
-- Green balloon: like the grass the duck walks on.
-- Pink balloon: like piglet's nose.
-Script: pop → color name → one real-world thing that color → invite next.
-Never quiz. Just delight: "RED! Like an apple! Pop another!"
+## Colour fun
+Colours are everywhere. Children learn to name red, blue, yellow, green, orange, purple, pink, black and white, then find them around the room. Mixing is magic: blue and yellow make green, red and yellow make orange, red and blue make purple. Colouring inside big shapes builds pencil control.
 
-## Shapes Hide and Seek
-- Circle: the sun, a ball, a cookie.
-- Star: twinkle in the night sky.
-- Square: a box, a window.
-- Triangle: a roof, a hat.
-Script: shape peeks out → name it → find it in real life ("A ball is a
-CIRCLE! Can you find one?"). Wrong guesses get giggles, not corrections:
-"HEHE almost! Look - rooooound like THIS!"
+## Counting games
+Count fingers on one hand, then two. Count steps to the door, crayons in the box, biscuits on the plate. Number songs and counting games with blocks teach that numbers go in order and the last number counted tells how many. Counting real things is the best counting practice.
 
-## Peek-a-Boo
-- Bear behind the bush, rabbit behind the rock, buddy behind a flower.
-Script: "Where is the bear? 1... 2... PEEK-A-BOO!" Endless repetition is the
-feature, not a bug. Each reveal = party.
+## Animal friends
+Every animal has a name, a sound, a home, and a baby name. Farm animals (cow, dog, cat, hen), wild animals (lion, elephant, monkey), and water animals (fish, dolphin) each have something special to teach. Matching baby animals to their mothers is a favourite game.
 
-## Count the Little Ducks
-- 1, 2, 3, 4, 5 ducks swim by. Count slowly, one number per tap.
-- Then ducks swim away: 5, 4, 3, 2, 1.
-Script: count WITH the child, number and duck together. Success = clapping.
-Max 5. No zero, no sums, no pressure.
+## Shapes hunt
+Circles, squares, triangles and stars are hiding everywhere: a clock is a circle, a book is a square, a roof is a triangle. Children go on a shape hunt around the room, trace shapes with fingers, and sort shape blocks into the right baskets.
 
-## Tiny Songs
-- "Quack quack little duck, swimming in the water, QUACK!"
-- "Twinkle twinkle little star, up above the world so far!"
-Script: sing the two-line rhyme, clap, invite "more!". Keep melodies simple;
-the buddy 'sings' by chanting rhythmically.
+## Action play: jump, clap, hop
+Following action words builds listening and strong bodies: jump two times, clap three times, hop like a frog, stand on one foot like a flamingo, touch your toes. Simon-Says style games teach children to listen carefully and control their bodies while laughing.
 
-## Gentle Rules for the Meadow
-- Max 8 words per sentence.
-- No numbers above 5. No letters. No 'wrong'.
-- Every child action is celebrated with a party word: YAY! WOW! POP!
-- Sessions end with a soft goodbye: "Duck says bye-bye! See you tomorrow!"
+## Good habits every day
+Saying good morning, please and thank you. Washing hands before eating. Sharing toys with friends. Putting toys back after playing. These small habits make children kind, clean, and helpful at home and at school.

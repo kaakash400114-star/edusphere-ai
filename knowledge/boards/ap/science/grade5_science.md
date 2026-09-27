@@ -1,5 +1,6 @@
 # Advanced Placement (AP) Grade 5 Science
 
+
 ## States of Matter
 Matter exists in three common states: solid, liquid, and gas. A solid has a definite shape and volume because its particles are packed tightly together. For example, a wooden block keeps its rectangular form. A liquid has a definite volume but takes the shape of its container, like water poured into a glass. A gas has no definite shape or volume and will expand to fill any space, such as the helium in a balloon filling a whole room. Matter can change states through heating and cooling.
 
@@ -13,7 +14,7 @@ A force is any push or pull that can change an object's motion. Gravity is a for
 Plants have different structures that help them survive. Roots anchor the plant in the soil and absorb water and nutrients, like the roots of a corn plant pulling nitrogen from the soil. The stem transports these materials throughout the plant and provides support. Leaves contain chlorophyll, which captures sunlight to make food through photosynthesis, producing glucose for the plant to grow. Flowers are involved in reproduction, producing seeds for new plants.
 
 ## Ecosystems and Interdependence
-An ecosystem is a community of living organisms interacting with their physical environment. For example, a forest ecosystem includes trees (producers), deer (primary consumers that eat plants), and wolves (secondary consumers that eat deer). These organisms depend on each other for food, forming a food chain. Decomposers, like fungi, break down dead matter, returning nutrients to the soil for plants to use, maintaining the balance of the ecosystem.
+An ecosystem is a community of living and non-living components interacting as a system. Living organisms are categorized by their trophic level: producers, like oak trees, create their own food; consumers, such as insects, obtain energy by eating other organisms; and decomposers, like earthworms, break down dead material, recycling nutrients. These relationships form complex food webs, showing how energy and matter flow through the system, such as when a hawk eats a snake that has eaten a mouse. Every species has a specific niche, or role, which determines how it interacts with its environment. The stability of an ecosystem depends on maintaining a balance among producers, consumers, and decomposers.
 
 ## Earth's Resources
 Earth's resources can be classified as renewable or nonrenewable. Renewable resources, like solar energy and wood, can be replenished naturally over a short period. Nonrenewable resources, such as coal, oil, and natural gas, are finite and take millions of years to form. Humans use these resources for energy, but their overuse can lead to depletion. Conserving water, recycling materials, and using alternative energy sources are important to protect these resources for future generations.

@@ -1,5 +1,6 @@
 # Japanese (MEXT) Grade 1 Science
 
+
 ## Observing Living Things
 Students learn that living things grow and change. They observe plants like cherry trees and radish sprouts, noting how they develop from seeds. They also observe small animals such as goldfish and mealworms, describing their movements and features. By caring for these living things, students understand that they need food, water, and air to live and grow. This hands-on experience develops an appreciation for nature and the basic requirements for life.
 
@@ -16,4 +17,4 @@ Students learn that some materials, like magnets, can attract or repel certain o
 Students investigate the properties of water in its different states. They observe liquid water, see how ice is a solid form of water, and note that water turns into a gas (steam) when heated. They conduct simple experiments, like seeing if objects float or sink in a bowl of water. They also learn how water is used in daily life, such as for drinking, cooking, and cleaning, reinforcing its essential role for all living things.
 
 ## Observing Light and Sound
-Students explore how light travels and how sound is made. They observe that light allows us to see objects and that shadows are formed when an object blocks a light source. For sound, they experiment with different materials like drums, bells, and shinkansen models to see how making an object vibrate creates sound. They learn to distinguish between loud and quiet sounds, connecting these observations to their everyday environment.
+Students investigate the properties of light by observing that it travels in straight lines and allows them to perceive objects. They experiment with light sources to understand that shadows form when an opaque object blocks the path of light. For sound, they discover that it is produced by vibrations, which they observe by touching a ringing bell or the surface of a drum. Students learn to categorize sounds as loud or quiet by comparing the noise levels of different objects, such as a shinkansen model and a bell. They also recognize how materials affect the volume and quality of the sound produced, connecting these scientific principles to their daily lives.

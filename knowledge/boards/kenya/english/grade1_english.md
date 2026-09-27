@@ -1,10 +1,11 @@
 # Kenyan CBC Grade 1 English
 
+
 ## Letter Sounds and Formation
 The learner is guided to identify and produce the main sounds (phonemes) of the alphabet, focusing on short vowel sounds and common consonants like /b/, /c/, /d/, /f/, /g/, and /h/. They are guided to form uppercase and lowercase letters correctly, learning the starting point and stroke direction, for example, writing 'A' starting with the slanted line on the left. They are guided to associate letters with their sounds, such as 'b' for 'ball' and 'd' for 'dog', using familiar Kenyan words like 'boda boda' and 'dala dala'.
 
 ## Simple Word Building
-The learner is guided to blend sounds together to read simple Consonant-Vowel-Consonant (CVC) words like 'mat', 'sun', and 'pen'. They are guided to segment these words into their individual sounds, for example, hearing 'c-a-t' in the word 'cat'. They are guided to build new words by changing the first letter, such as changing 'bat' to 'cat' or 'hat', using their knowledge of letter-sound relationships.
+Learners explore phonological awareness through segmenting and blending CVC words, such as hearing and forming the individual sounds /p/-/i/-/g/ in 'pig'. This foundational skill is developed by manipulating phonemes to build new words, for example, changing the initial sound in 'sun' to create 'run' or 'fun'. The instruction focuses on the one-to-one correspondence between letter sounds and their written symbols, reinforcing knowledge of consonant-vowel-consonant structures. Concrete activities involve using letter cards to construct and deconstruct words like 'mat' and 'pen', ensuring a practical application of decoding and encoding principles. This systematic approach equips learners with the essential skills for early reading and spelling by understanding the relationship between letters and sounds.
 
 ## Reading Simple Sentences
 The learner is guided to read short, decodable sentences that follow a left-to-right progression. They are guided to use their knowledge of letter sounds and blending to read sentences like 'I am a boy' and 'The cat is big'. They are guided to recognize common high-frequency sight words such as 'the', 'I', 'am', and 'is'. They are guided to read these sentences aloud with clarity and expression, using familiar contexts like 'I see a bus' or 'We go to school'.

@@ -1,10 +1,11 @@
 # Singapore Curriculum (MOE) Grade 11 Mathematics
 
+
 ## Quadratic Functions and Equations
 Students learn to solve quadratic equations using the quadratic formula and completing the square. They analyse the nature of roots by calculating the discriminant, D = b² - 4ac. For word problems involving projectile motion or profit maximisation, they form quadratic models. Example: An object's height, h(t) = -5t² + 20t + 2, models its path over time t in seconds. Students find when the object hits the ground by solving -5t² + 20t + 2 = 0. This mirrors the precision needed for HDB structural calculations.
 
 ## Indices and Surds
-Students master laws of indices, including fractional and negative exponents, such as a^(m/n) = n√a^m. They simplify expressions involving surds, like √18 + √8 = 3√2 + 2√2 = 5√2. For MRT route planning problems, they use index notation to express large numbers, e.g., the daily passenger count of 2.5 million is 2.5 x 10^6. This level of numerical abstraction is essential for engineering Singapore's infrastructure.
+Students master the laws of indices, including negative and fractional exponents, such as \( a^{m/n} = \sqrt[n]{a^m} \). They simplify expressions involving surds, like \( \sqrt{18} + \sqrt{8} = 3\sqrt{2} + 2\sqrt{2} = 5\sqrt{2} \), and rationalise denominators to express answers in simplest surd form. For practical applications, such as modelling population growth or transport flows, they use index notation to handle large numbers, like expressing Singapore's daily passenger count of 2.5 million as \( 2.5 \times 10^6 \). Proficiency in these concepts is essential for solving complex problems in science, engineering, and economics.
 
 ## Coordinate Geometry and Graphs
 Students find the equation of a straight line, y = mx + c, and interpret its slope and y-intercept. They study the conditions for parallel (m₁ = m₂) and perpendicular lines (m₁m₂ = -1). For real-world applications, they calculate the gradient of an escalator in a shopping mall to determine its speed, relating rise over run to passenger throughput. This skill is crucial for urban planning and optimising public transport flow.

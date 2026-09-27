@@ -1,5 +1,6 @@
 # New Zealand Curriculum (NZC) Grade 2 Mathematics
 
+
 ## Number Knowledge
 Students learn to read, write, and order whole numbers to at least 100, grouping them in tens and ones. They understand simple fractions like one-half and one-quarter by dividing objects like piupiu or kākano (seeds). Students can count forwards and backwards in twos, fives, and tens. For example, they might count pairs of pōhā (traditional kelp bags) or sets of five kete (baskets), connecting number patterns to everyday activities in te ao Māori (the Māori world).
 
@@ -16,4 +17,4 @@ Students measure objects using non-standard units like hand spans or pencils, th
 Students identify and name 2D shapes such as triangles, circles, squares, and rectangles in their environment, like the shape of a tukutuku panel or a paua shell. They describe features, like how many sides or corners a shape has. For 3D shapes, they recognise spheres, cubes, and cylinders, perhaps using natural objects like rīnga (circles of wood) or stones. They learn to create and continue simple patterns with shapes and colours.
 
 ## Statistics
-Students gather data by sorting or counting objects, such as collecting leaves or shells. they display the data in simple pictographs, where one picture represents one object (e.g., one picture of a kiwi for each one seen). They can answer questions about the data, like "How many more kiwi than tūī?" This provides a playful introduction to organising information and making sense of data in their world.
+In Year 2, students learn to pose simple questions and gather data through sorting and counting objects like leaves or classroom items. They record data systematically using tally marks and then present the findings using one-to-one correspondence in pictographs, where each image represents one data point. Pupils interpret their own graphs by asking and answering comparison questions, such as "How many more shells than stones?". They also learn to sort data into categories and represent this information using simple bar graphs with a single scale. These foundational skills develop their ability to collect, organise, and interpret data in meaningful ways.

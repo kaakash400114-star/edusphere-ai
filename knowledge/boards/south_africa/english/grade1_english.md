@@ -1,4 +1,5 @@
 # South African (CAPS) Grade 1 English
+
 ## Listening and Speaking
 Learners are able to listen and respond appropriately in conversations. They learn to take turns when speaking and listen to others without interrupting. They are taught to follow simple, two-step instructions given by the teacher, such as 'Pick up your book and sit on the mat.' Learners also practice answering basic 'who', 'what', and 'where' questions about stories and everyday events, using familiar vocabulary like 'braai', 'Proteas', or 'Table Mountain'.
 
@@ -9,7 +10,7 @@ Learners are able to read simple, high-frequency words with increasing accuracy.
 Learners are able to write their own names using a correct pencil grip and letter formation. They are taught to form the letters of the alphabet both in upper and lower case. Learners practice writing high-frequency words by copying them from the board or a word chart. They also learn to write simple sentences using known words and drawings to express ideas, such as drawing a Proteas player and writing 'the ball'.
 
 ## Language and Grammar
-Learners are able to understand and use basic grammatical structures correctly. They are taught to identify and name common nouns like 'dog', 'sun', 'Table Mountain', and 'rand'. Learners practice using the simple present tense of common verbs, such as 'I walk', 'he plays', and 'they sing'. They also learn to ask and answer simple questions using correct question words like 'What is this?' or 'Who is that?'.
+Learners acquire foundational grammatical concepts through the classification of concrete nouns like ‘ball’, ‘chair’, and ‘book’ using singular and plural forms. They correctly form simple present tense sentences, applying the rule of adding ‘-s’ for third-person singular subjects, for example, ‘I run’ and ‘she runs’. Question formation is taught using question words such as ‘What’, ‘Who’, and ‘Where’ to construct interrogative sentences like ‘What is this?’. Learners are guided to use capital letters for the beginning of sentences and proper nouns, and full stops to mark the end of statements. The curriculum focuses on these elements as building blocks for constructing simple, meaningful sentences.
 
 ## Thinking and Reasoning
 Learners are able to solve simple problems and express opinions. They are taught to identify differences and similarities between pictures, for example, spotting the differences in two pictures of a braai. Learners practice making predictions about a story based on the title or the cover picture. They also learn to share their likes and dislikes using simple sentences, such as 'I like the red ball' or 'I do not like the rain'.

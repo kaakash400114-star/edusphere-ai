@@ -1,5 +1,6 @@
 # International Baccalaureate (IB) Grade 1 Mathematics
 
+
 ## Number Sense
 Learners investigate numbers to 20. They read, write, and order them, understanding the value of each digit. They use concrete materials like counters and number lines to compare numbers (e.g., 14 is more than 8) and identify one more or one less. Learners count forwards and backwards to and from 20, recognizing patterns. They begin to understand simple addition and subtraction using objects, like having 5 apples and getting 3 more makes 8 apples, fostering a foundation for mental calculation.
 
@@ -10,7 +11,7 @@ Learners investigate the attributes of objects by comparing their length, weight
 Learners investigate 2D and 3D shapes in their environment. They name and describe common shapes like circles, triangles, squares, and cubes, using terms like 'sides', 'corners', and 'faces'. They explore these shapes by building with blocks or drawing, identifying them in everyday objects such as a round clock or a cuboid lunchbox. Learners develop spatial awareness by understanding concepts like 'on', 'under', and 'beside', and by creating simple patterns with different shapes.
 
 ## Patterns and Algebra
-Learners investigate patterns in sounds, actions, objects, and numbers. They identify, describe, and extend repeating patterns, such as red-blue-red-blue or clap-stomp-clap-stomp. Using materials like beads or counters, they create their own patterns and predict what comes next. Learners explore simple number sequences, like counting by 2s or 5s, laying the groundwork for understanding algebraic relationships and logical reasoning through the recognition of order and repetition.
+Learners analyse patterns by identifying core units of repetition, such as in the sequence ABAB (red-blue) or an action pattern like clap-stomp. They extend these patterns by predicting subsequent elements, confirming that the rule of repetition is consistently maintained. Students explore numerical patterns by counting in multiples, recognizing the repeating digit in sequences like 2, 4, 6, 8 or 5, 10, 15. They also create their own patterns using concrete materials like beads or counters, demonstrating their understanding of a prescribed rule. This foundational work develops the ability to recognize order and apply logical reasoning to identify predictable relationships.
 
 ## Handling Operations
 Learners investigate addition and subtraction through practical, play-based scenarios. They use manipulatives like counters or toy cars to act out 'joining groups' for addition (e.g., 2 + 3 = 5) and 'taking away' for subtraction (e.g., 7 - 2 = 5). They learn the related vocabulary ('add', 'sum', 'subtract', 'left') and record their findings with simple drawings or numerals. This builds a conceptual understanding of the four operations, focusing on part-whole relationships.

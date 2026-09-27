@@ -1,5 +1,6 @@
 # Australian Curriculum (ACARA) Grade 4 Mathematics
 
+
 ## Number and Algebra: Place Value
 Students recognise, represent and order numbers to tens of thousands. They use partitioning to understand numbers are made of parts, like 48 263 being 40 000 + 8 000 + 200 + 60 + 3. Children read and write numbers in words and numerals, and place them on a number line. They also round numbers to the nearest ten, hundred or thousand, such as rounding 3 471 to 3 500. This helps when estimating the cost of several items, like a cricket bat ($120) and football boots ($85), to check if you have enough money.
 
@@ -13,7 +14,7 @@ Students develop efficient strategies for multiplication and division. They lear
 Students tell time to the minute using both analogue and digital clocks, calculating the duration of events. They learn to convert between hours, minutes, and seconds (e.g., 150 minutes is 2 hours and 30 minutes). In money, students count and order small collections of notes and coins, using the dollar sign ($) and decimal point (e.g., $45.75). They calculate simple change, for instance, finding the change from a $100 bill for a pair of UGG boots priced at $89.95.
 
 ## Measurement and Geometry: Properties of Shapes
-Students identify and describe features of two-dimensional shapes, including number of sides, angles, and line symmetry. They name and compare common shapes like squares, rectangles, triangles, and hexagons. For three-dimensional objects, students identify and describe faces, edges, and vertices. They use this knowledge to classify objects such as dice (cubes), pyramids, and cylinders, and find lines of symmetry in natural objects like leaves from the Australian bush.
+In Grade 4, students formally define two-dimensional shapes by their properties, counting sides, identifying right angles, and determining if shapes possess line symmetry. For example, a rectangle has four sides with opposite sides equal and four right angles, while a regular triangle has three equal sides and three equal angles. The study extends to three-dimensional objects, where students identify faces (flat surfaces), edges (lines where faces meet), and vertices (corners). They apply this knowledge to classify prisms and pyramids, such as recognising a cube as a prism with six square faces. Finally, students explore symmetry by finding and drawing lines of symmetry in both geometric shapes and natural objects like gum leaves.
 
 ## Statistics and Probability: Data Collection
 Students pose questions and collect data through surveys, tally marks, or observation. They represent data in different ways, using lists, tables, and picture or column graphs with scales marked in ones, twos, fives, or tens. For example, they might survey their class on their favourite footy team (Collingwood, Brisbane Lions, etc.) and display the results in a column graph. They then interpret the data to answer questions, such as "Which team is the most popular?" or "How many more students prefer one team than another?"

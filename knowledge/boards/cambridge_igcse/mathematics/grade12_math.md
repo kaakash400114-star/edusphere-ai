@@ -1,7 +1,8 @@
 # Cambridge IGCSE Grade 12 Mathematics
 
+
 ## Algebra and Graphs
-Students manipulate algebraic expressions, including expanding, factorising, and simplifying quadratic and cubic expressions. They solve linear and quadratic equations using factorisation, completing the square, and the quadratic formula, where necessary. Students interpret and sketch graphs of quadratic, cubic, and reciprocal functions, identifying features such as roots, turning points, and asymptotes. Real-world contexts, like calculating projectile motion or profit functions, are modelled using these algebraic techniques and graphical interpretations.
+Students expand, factorise, and simplify expressions involving quadratic and cubic terms, applying algebraic identities like (a ± b)² = a² ± 2ab + b². They solve quadratic equations of the form ax² + bx + c = 0 using factorisation, completing the square to find the vertex, and the quadratic formula, with example problems like 2x² - 7x + 3 = 0. Graphically, they sketch the parabolic, cubic, and reciprocal functions y = ax² + bx + c, y = ax³ + bx² + cx + d, and y = a/x, identifying roots, turning points, and asymptotes. These concepts are applied to model real-world situations, for instance, using a quadratic equation to determine the maximum height of a projectile or a cubic function to represent a company's profit over time.
 
 ## Functions and Coordinate Geometry
 Students explore the concepts of functions, including notation (e.g., f(x)) and the distinction between one-to-one and many-to-one mappings. They find and interpret composite and inverse functions. In coordinate geometry, students find the equation of a straight line given two points or its gradient and a point, and they determine the conditions for parallel and perpendicular lines. They apply these methods to solve problems involving real-world scenarios, such as determining the optimal path for a delivery vehicle based on its speed and direction.
