@@ -309,10 +309,25 @@ def chat(body: ChatRequest):
     # human-like neural voice: pre-synthesize the reply mp3 server-side,
     # with the grade-scaled pace baked in (Stage 3)
     audio_url = None
-    mp3 = neural_voice.synth(buddy["id"], answer[:600],
-                             pace=conversation.pace_for_grade(profile.get("grade")))
-    if mp3:
-        audio_url = "/tts/" + os.path.basename(mp3)
+    if body.live:
+        # live mode: reply INSTANTLY with the browser voice; warm the neural
+        # mp3 cache in the background so later plays upgrade automatically.
+        import threading as _th
+
+        def _warm():
+            try:
+                neural_voice.synth(buddy["id"], answer[:600],
+                                   pace=conversation.pace_for_grade(
+                                       profile.get("grade")))
+            except Exception:
+                pass
+        _th.Thread(target=_warm, daemon=True).start()
+    else:
+        mp3 = neural_voice.synth(buddy["id"], answer[:600],
+                                 pace=conversation.pace_for_grade(
+                                     profile.get("grade")))
+        if mp3:
+            audio_url = "/tts/" + os.path.basename(mp3)
     voice["engine"] = "edge" if audio_url else "browser"
     voice["audio_url"] = audio_url
     # stage 2: the buddy may tuck a 'MEMORY: ...' line into its answer —
