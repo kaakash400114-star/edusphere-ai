@@ -1662,9 +1662,8 @@ async function openWardrobe() {
 function applyAccessoryUI() {
   const map = { hat: "🎩", cape: "🦸", glasses: "🕶️", crown: "👑" };
   const item = state.profile && state.profile.accessory;
-  const acc = $("face-acc");
-  if (item && map[item]) acc.textContent = map[item];
-  else acc.textContent = "";
+  const acc = $("acc-float");          // accessory floats on the topbar face
+  if (acc) acc.textContent = (item && map[item]) ? map[item] : "";
 }
 
 // ======================================================================
