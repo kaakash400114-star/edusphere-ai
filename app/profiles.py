@@ -229,14 +229,25 @@ def parent_report(pid: str) -> dict | None:
         return None
     weak = sorted(raw.get("weak_areas", {}).items(), key=lambda kv: -kv[1])[:8]
     strong = sorted(raw.get("strong_areas", {}).items(), key=lambda kv: -kv[1])[:8]
-    import collections
-    per_day = collections.Counter(
-        e["t"][:10] for e in raw.get("log", []) if e.get("t"))
-    days = sorted(per_day.items())[-7:]  # last 7 active days
+    # habit + memory summary (Stage 6/7): streak health, freezes held,
+    # quests claimed today, spaced-repetition load
+    import collections as _cl
+    per_day = _cl.Counter(e["t"][:10] for e in raw.get("log", []) if e.get("t"))
+    days = sorted(per_day.items())[-7:]
+    today = time.strftime("%Y-%m-%d")
+    quests_today = len((raw.get("quests_claimed") or {}).get(today, []))
+    srs_cards = raw.get("srs_cards") or {}
+    now = time.time()
+    srs_due = sum(1 for c in srs_cards.values()
+                  if isinstance(c.get("due"), (int, float)) and c["due"] <= now)
     return {
         "name": raw["name"], "grade": raw["grade"], "stars": raw["stars"],
         "points": raw.get("points", 0),
-        "streak": raw.get("streak", {}), "weak_areas": weak,
+        "streak": raw.get("streak", {}),
+        "freezes": raw.get("freezes", 0),
+        "quests_today": quests_today,
+        "srs": {"cards": len(srs_cards), "due": srs_due},
+        "weak_areas": weak,
         "strong_areas": strong,
         "recent_activity": [e for e in raw.get("log", [])[-30:]],
         "topics_covered": raw.get("topics_covered", [])[-20:],
