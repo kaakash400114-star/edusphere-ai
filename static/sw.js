@@ -1,5 +1,5 @@
 /* EduSphere AI service worker — app-shell & CDN asset caching for offline opens. */
-const CACHE = "edusphere-v15"; /* v15: KaTeX + Mermaid offline cache + streaming + study tools */
+const CACHE = "edusphere-v15"; /* v15: no parent pin at signup, buddy optional */
 const SHELL = [
   "/", "/index.html", "/manifest.json",
   "/animals.js", "/buddy-life.js", "/buddy-actions.js", "/kinder.js", "/tracing.js",

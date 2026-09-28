@@ -793,10 +793,6 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
       <div id="ob-chars" class="char-grid"></div>
     </label>
 
-    <label class="fld">Parents only: PIN to lock the report <small>(optional — skip if you like)</small>
-      <input id="ob-pin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN (optional)">
-    </label>
-
     <label class="consent">
       <input id="ob-consent" type="checkbox">
       I am the parent/guardian and I consent to my child using EduSphere AI
@@ -1289,6 +1285,18 @@ function buildOnboard() {
   cr.innerHTML = "";
   loadBoards().then(bs => fillBoardSelect($("ob-board"), "cbse"));
   loadBuddies().then(buddies => {
+    const surprise = document.createElement("button");
+    surprise.type = "button";
+    surprise.className = "char-card";
+    surprise.dataset.buddy = "surprise";
+    surprise.innerHTML = `<span class="em">✨</span>` +
+      `<span class="nm">Surprise me!</span><span class="tg">Pick a buddy for me</span>`;
+    surprise.onclick = () => {
+      state.character = null;              // decided at Start
+      [...cr.children].forEach(x => x.classList.remove("sel"));
+      surprise.classList.add("sel");
+    };
+    cr.appendChild(surprise);
     buddies.forEach(c => {
       const card = document.createElement("button");
       card.type = "button";
@@ -1309,19 +1317,21 @@ function buildOnboard() {
 
 async function startLearning() {
   const name = $("ob-name").value.trim();
-  const pin = $("ob-pin").value.trim();
   const err = $("ob-error");
   if (!name) return err.textContent = "Tell me your name first! 😊";
   if (state.grade === null || state.grade === undefined ||
       !(state.grade >= 0 && state.grade <= 12))
     return err.textContent = "Pick your grade (KG or 1 to 12)!";
-  if (pin && !/^\d{4,8}$/.test(pin))
-    return err.textContent = "PIN must be 4–8 digits (or leave it empty).";
   err.textContent = "";
+  let chosen = state.character;
+  if (!chosen || chosen === "surprise") {
+    const pool = (state.buddies || []).map(c => c.id);
+    chosen = pool.length ? pool[Math.random() * pool.length | 0] : "leo";
+  }
   const r = await fetch("/api/profile", {
     method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, grade: state.grade, parent_pin: pin,
-      character: state.character, board: $("ob-board").value || "cbse" }),
+    body: JSON.stringify({ name, grade: state.grade,
+      character: chosen, board: $("ob-board").value || "cbse" }),
   });
   const data = await r.json();
   if (!r.ok) {
