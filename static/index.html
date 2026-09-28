@@ -789,7 +789,7 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
       <select id="ob-board" class="board-select"></select>
     </label>
 
-    <label class="fld">Choose your study buddy
+    <label class="fld">Pick a study buddy <small>(optional — or let us surprise you!)</small>
       <div id="ob-chars" class="char-grid"></div>
     </label>
 
@@ -1291,6 +1291,8 @@ function buildOnboard() {
       surprise.classList.add("sel");
     };
     cr.appendChild(surprise);
+    surprise.classList.add("sel");          // optional by default: surprise = no pick needed
+    state.character = null;
     buddies.forEach(c => {
       const card = document.createElement("button");
       card.type = "button";

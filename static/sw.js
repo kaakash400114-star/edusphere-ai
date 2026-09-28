@@ -1,5 +1,5 @@
 /* EduSphere AI service worker — app-shell & CDN asset caching for offline opens. */
-const CACHE = "edusphere-v16"; /* v16: no parent consent gate at signup */
+const CACHE = "edusphere-v17"; /* v17: buddy pre-selected to Surprise-me (fully optional) */
 const SHELL = [
   "/", "/index.html", "/manifest.json",
   "/animals.js", "/buddy-life.js", "/buddy-actions.js", "/kinder.js", "/tracing.js",
