@@ -74,7 +74,7 @@ _SHAPES = [
 _COLOR_THINGS = [
     ("Red", "🍎", ["Banana", "Leaf", "Cloud"]),
     ("Yellow", "🍌", ["Apple", "Frog", "Grape"]),
-    ("Green", " leaf", ["Sun", "Crow", "Strawberry"]),
+    ("Green", "🍃", ["Sun", "Crow", "Strawberry"]),
     ("Blue", "🫐", ["Tomato", "Sun", "Banana"]),
     ("Orange", "🍊", ["Sky", "Milk", "Frog"]),
 ]

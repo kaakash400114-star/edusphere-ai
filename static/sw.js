@@ -1,5 +1,5 @@
-/* EduSphere AI service worker — app-shell caching for offline opens. */
-const CACHE = "edusphere-v14"; /* v14: mic error feedback */
+/* EduSphere AI service worker — app-shell & CDN asset caching for offline opens. */
+const CACHE = "edusphere-v15"; /* v15: KaTeX + Mermaid offline cache + streaming + study tools */
 const SHELL = [
   "/", "/index.html", "/manifest.json",
   "/animals.js", "/buddy-life.js", "/buddy-actions.js", "/kinder.js", "/tracing.js",
@@ -25,6 +25,23 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (event.request.method !== "GET") return;           // never cache API POSTs
   if (url.pathname.startsWith("/api/")) return;         // always live
+
+  // CDN caching for KaTeX and Mermaid (supports offline math & diagrams)
+  if (url.hostname.includes("jsdelivr.net") || url.pathname.endsWith(".woff2") || url.pathname.endsWith(".ttf")) {
+    event.respondWith(
+      caches.match(event.request).then((hit) => {
+        if (hit) return hit;
+        return fetch(event.request).then((res) => {
+          if (res && res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(event.request, copy));
+          }
+          return res;
+        }).catch(() => hit);
+      })
+    );
+    return;
+  }
 
   // static + shell: cache-first, refresh in background
   event.respondWith(

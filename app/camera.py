@@ -22,6 +22,7 @@ from __future__ import annotations
 import base64
 import binascii
 import json
+import os
 import re
 import time
 from pathlib import Path
@@ -34,6 +35,20 @@ ALLOWED_MIME = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp"
 MIME_BY_MAGIC = {b"\xff\xd8\xff": "image/jpeg", b"\x89PNG\r\n": "image/png"}
 
 _VISION_MODELS = ["glm-5.3-flash", "glm-4.6v"]
+
+
+def _resolve_vision_models() -> list[str]:
+    custom = os.environ.get("EDUSPHERE_VISION_MODEL")
+    if custom:
+        return [custom.strip()]
+    prov = llm.provider_name()
+    if prov == "gemini":
+        return ["gemini-2.0-flash", "gemini-1.5-flash"]
+    if prov == "openai":
+        return ["gpt-4o-mini", "gpt-4o"]
+    if prov == "anthropic":
+        return ["claude-3-5-haiku-20241022", "claude-3-5-sonnet-20241022"]
+    return list(_VISION_MODELS)
 
 
 def _album_path(pid: str) -> Path:
@@ -156,7 +171,7 @@ def vision_guide(pid: str, grade: int, name: str, character: str,
         {"type": "text", "text": _vision_prompt(grade, name, note)},
     ]}
     last_err = None
-    for model in _VISION_MODELS:
+    for model in _resolve_vision_models():
         text, err = llm.complete(
             [message], max_tokens=1200, temperature=0.3, timeout=120.0,
             extra={"model": model})

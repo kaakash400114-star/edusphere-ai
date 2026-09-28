@@ -210,14 +210,14 @@ def _strip_meta(text: str) -> str:
 
 # ── main ask ─────────────────────────────────────────────────────────────────
 
-def ask(name: str, grade: int, buddy: str, question: str,
-        history: list[dict] | None = None, subject: str = "general",
-        weak_areas: list[str] | None = None, mode: str | None = None,
-        memories: list[str] | None = None, board: str | None = None,
-        live: bool = False) -> str:
-    """One tutor turn: wide retrieval → draft → SELF-REVIEW → answer."""
+def _prepare_messages(name: str, grade: int, buddy: str, question: str,
+                      history: list[dict] | None = None, subject: str = "general",
+                      weak_areas: list[str] | None = None, mode: str | None = None,
+                      memories: list[str] | None = None, board: str | None = None,
+                      live: bool = False) -> tuple[list[dict], dict]:
     grade = max(0, min(12, int(grade or 0)))
-    buddy = characters.character_for(grade, buddy)["id"]
+    buddy_info = characters.character_for(grade, buddy)
+    buddy_id = buddy_info["id"]
     world = worlds.resolve_world(grade)
     subject_hint = worlds.knowledge_subject_hint(world["id"], subject)
 
@@ -232,10 +232,10 @@ def ask(name: str, grade: int, buddy: str, question: str,
                 excerpt = kc
 
     # Build system prompt
-    system = _system_prompt(name, grade, buddy, weak_areas or [],
+    system = _system_prompt(name, grade, buddy_id, weak_areas or [],
                             memories=memories, board=board)
     system += kinder.kinder_tone(grade)
-    mode_def = characters.MODES.get(buddy)
+    mode_def = characters.MODES.get(buddy_id)
     if mode and mode_def and mode_def["trigger"] == mode:
         system += "\n" + mode_def["instructions"] + "\n"
     if mode == "story":
@@ -263,10 +263,39 @@ def ask(name: str, grade: int, buddy: str, question: str,
         if h.get("role") in ("user", "assistant") and h.get("content"):
             messages.append({"role": h["role"], "content": h["content"][:2000]})
     messages.append({"role": "user", "content": question[:2000]})
+    meta = {"grade": grade, "buddy": buddy_id, "world": world, "subject_hint": subject_hint}
+    return messages, meta
+
+
+def ask_stream(name: str, grade: int, buddy: str, question: str,
+               history: list[dict] | None = None, subject: str = "general",
+               weak_areas: list[str] | None = None, mode: str | None = None,
+               memories: list[str] | None = None, board: str | None = None,
+               live: bool = False):
+    """Stream response tokens directly from active LLM provider."""
+    messages, _ = _prepare_messages(
+        name=name, grade=grade, buddy=buddy, question=question,
+        history=history, subject=subject, weak_areas=weak_areas,
+        mode=mode, memories=memories, board=board, live=live)
+    yield from llm.complete_stream(messages, max_tokens=1500 if live else 3000,
+                                   temperature=0.4, timeout=90.0)
+
+
+def ask(name: str, grade: int, buddy: str, question: str,
+        history: list[dict] | None = None, subject: str = "general",
+        weak_areas: list[str] | None = None, mode: str | None = None,
+        memories: list[str] | None = None, board: str | None = None,
+        live: bool = False) -> str:
+    """One tutor turn: wide retrieval → draft → SELF-REVIEW → answer."""
+    messages, meta = _prepare_messages(
+        name=name, grade=grade, buddy=buddy, question=question,
+        history=history, subject=subject, weak_areas=weak_areas,
+        mode=mode, memories=memories, board=board, live=live)
+    grade = meta["grade"]
 
     if not llm.is_configured():
         return ("Setup needed: no LLM API key is configured. "
-                "Set GLM_API_KEY, OPENAI_API_KEY, ANTHROPIC_API_KEY, "
+                "Set GEMINI_API_KEY, GLM_API_KEY, OPENAI_API_KEY, ANTHROPIC_API_KEY, "
                 "GROQ_API_KEY, or OLLAMA_BASE_URL in your environment.")
 
     answer, last_err = llm.complete(messages, max_tokens=900 if live else 3000,

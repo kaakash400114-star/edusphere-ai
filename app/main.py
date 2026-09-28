@@ -12,14 +12,14 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from . import (adaptive, animations, boards, camera, characters,
                conversation, habits, help as help_mod, improvement, knowledge,
                knowledge_fresh, kinder, neural_voice, practice, profiles,
-               tutor, worlds, llm)
+               study_tools, tutor, worlds, llm)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = ROOT / "static"
@@ -357,6 +357,66 @@ def chat(body: ChatRequest):
             "world_emoji": world["emoji"],
             "voice": voice,
             "animation": anim}
+
+
+@app.post("/api/chat/stream")
+def chat_stream(body: ChatRequest):
+    """Server-Sent Events streaming chat response."""
+    import json as _json
+    profile = profiles.get_profile(body.pid)
+    if not profile:
+        raise HTTPException(404, "profile not found")
+    if not _rate_ok(body.pid) or not _burst_ok(body.pid):
+        raise HTTPException(429, "easy there! take a short break and try again.")
+
+    subject = tutor.detect_subject(body.message, max(1, profile["grade"]))
+    topic = _topic_from(subject, body.message)
+    buddy = characters.public(profile.get("character") or "leo")
+    world = worlds.world_for_profile(profile)
+
+    def event_stream():
+        full_text = []
+        try:
+            for token in tutor.ask_stream(
+                name=profile["name"], grade=profile["grade"],
+                buddy=profile.get("character") or "auto",
+                question=body.message, history=body.history, subject=subject,
+                weak_areas=list(profile.get("weak_areas", {}).keys()),
+                mode=body.mode,
+                memories=list(profile.get("memories", [])),
+                board=profile.get("board"), live=body.live,
+            ):
+                full_text.append(token)
+                yield f"data: {_json.dumps({'token': token})}\n\n"
+        except Exception as exc:
+            yield f"data: {_json.dumps({'error': str(exc)})}\n\n"
+
+        complete_ans = "".join(full_text).strip()
+        memory_note = ""
+        upper = complete_ans.upper()
+        pos = upper.find("MEMORY:")
+        if pos != -1:
+            memory_note = complete_ans[pos + len("MEMORY:"):].strip().splitlines()[0][:120]
+            if memory_note:
+                profiles.remember(body.pid, memory_note)
+
+        updated = profiles.record_activity(body.pid, "chat", topic)
+        done_payload = {
+            "done": True,
+            "subject": subject,
+            "topic": topic,
+            "stars": updated["stars"] if updated else 0,
+            "memory_saved": memory_note,
+            "character": buddy["id"],
+            "character_name": buddy["name"],
+            "character_emoji": buddy["emoji"],
+            "world": world["id"],
+            "world_name": world["name"],
+            "world_emoji": world["emoji"],
+        }
+        yield f"data: {_json.dumps(done_payload)}\n\n"
+
+    return StreamingResponse(event_stream(), media_type="text/event-stream")
 
 
 class RememberBody(BaseModel):
@@ -844,6 +904,114 @@ def particles_catalog():
     """All particle effect definitions (for the frontend renderer)."""
     return {"particles": animations.PARTICLES}
 
+
+# ── Study Tools: Flashcards, Notes, Quizzes (Stage Enhancement) ─────────────
+
+class DeckGenerateRequest(BaseModel):
+    subject: str = Field(default="general", max_length=50)
+    topic: str = Field(min_length=1, max_length=100)
+    count: int = Field(default=5, ge=1, le=15)
+    difficulty: str = Field(default="medium", max_length=20)
+
+
+class CardReviewRequest(BaseModel):
+    deck_id: str
+    card_id: str
+    quality: int = Field(ge=0, le=5)
+
+
+class NoteSaveRequest(BaseModel):
+    title: str = Field(default="Untitled", max_length=100)
+    subject: str = Field(default="general", max_length=50)
+    content: str = Field(default="", max_length=20000)
+    note_id: str | None = None
+
+
+class QuizGenerateRequest(BaseModel):
+    subject: str = Field(default="general", max_length=50)
+    topic: str = Field(min_length=1, max_length=100)
+    count: int = Field(default=5, ge=2, le=10)
+    difficulty: str = Field(default="medium", max_length=20)
+
+
+class QuizSubmitRequest(BaseModel):
+    quiz_id: str
+    answers: dict[str, int]
+
+
+@app.get("/api/study/flashcards/{pid}")
+def study_list_flashcards(pid: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    return {"decks": study_tools.list_decks(pid)}
+
+
+@app.post("/api/study/flashcards/{pid}/generate")
+def study_generate_flashcards(pid: str, body: DeckGenerateRequest):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    deck = study_tools.generate_deck(pid, body.subject, body.topic, body.count, body.difficulty)
+    return {"deck": deck}
+
+
+@app.post("/api/study/flashcards/{pid}/review")
+def study_review_card(pid: str, body: CardReviewRequest):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    res = study_tools.review_card(pid, body.deck_id, body.card_id, body.quality)
+    if not res.get("ok"):
+        raise HTTPException(400, "card review failed")
+    return res
+
+
+@app.get("/api/study/notes/{pid}")
+def study_list_notes(pid: str, subject: str | None = None):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    return {"notes": study_tools.list_notes(pid, subject)}
+
+
+@app.post("/api/study/notes/{pid}")
+def study_save_note(pid: str, body: NoteSaveRequest):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    note = study_tools.save_note(pid, body.title, body.subject, body.content, body.note_id)
+    return {"note": note}
+
+
+@app.delete("/api/study/notes/{pid}/{note_id}")
+def study_delete_note(pid: str, note_id: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    ok = study_tools.delete_note(pid, note_id)
+    if not ok:
+        raise HTTPException(404, "note not found")
+    return {"ok": True}
+
+
+@app.get("/api/study/quizzes/{pid}")
+def study_list_quizzes(pid: str):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    return {"quizzes": study_tools.list_quizzes(pid)}
+
+
+@app.post("/api/study/quiz/{pid}/generate")
+def study_generate_quiz(pid: str, body: QuizGenerateRequest):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    quiz = study_tools.generate_quiz(pid, body.subject, body.topic, body.count, body.difficulty)
+    return {"quiz": quiz}
+
+
+@app.post("/api/study/quiz/{pid}/submit")
+def study_submit_quiz(pid: str, body: QuizSubmitRequest):
+    if not profiles.get_profile(pid):
+        raise HTTPException(404, "profile not found")
+    res = study_tools.submit_quiz(pid, body.quiz_id, body.answers)
+    if not res.get("ok"):
+        raise HTTPException(400, res.get("reason", "quiz submit failed"))
+    return res
 
 
 @app.get("/manifest.json")

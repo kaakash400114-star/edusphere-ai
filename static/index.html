@@ -839,6 +839,7 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
       <button id="mode-chip" class="mode-chip hidden" title="Special mode"></button>
       <button id="games-btn" class="badge badge-btn" title="Games arcade">🎮 Games</button>
       <button id="stories-btn" class="badge badge-btn" title="Read-along stories">📚 Stories</button>
+      <button id="study-btn" class="badge badge-btn" title="Study Tools: Flashcards, Notes & Quizzes">📑 Study</button>
       <button id="buddy-btn" class="btn-ghost" title="Switch buddy">🔄</button>
       <button id="settings-btn" class="btn-ghost" title="Account settings">⚙️</button>
       <button id="parent-btn" class="btn-ghost" title="Parent corner">👤</button>
@@ -1040,6 +1041,96 @@ body.dark-mode #dark-toggle { background:#2d2a45;border-color:#818cf8;color:#e2e
       <div id="game-grid" class="arcade-grid"></div>
     </div>
     <div id="arena-play" class="arena hidden"></div>
+  </div>
+</div>
+
+<!-- STUDY TOOLS MODAL (Flashcards, Notes, Quizzes) -->
+<div id="study-modal" class="modal hidden">
+  <div class="modal-card" style="max-width:680px;width:95%">
+    <button class="modal-x" id="study-x">✕</button>
+    <h2>📑 Study Tools</h2>
+    <div style="display:flex;gap:8px;margin:12px 0;border-bottom:1px solid #e2e8f0;padding-bottom:8px">
+      <button id="study-tab-cards" class="lang-pill on">🗂️ Flashcards</button>
+      <button id="study-tab-notes" class="lang-pill">📝 Notes</button>
+      <button id="study-tab-quiz" class="lang-pill">📋 Quiz Arena</button>
+    </div>
+
+    <!-- FLASHCARDS VIEW -->
+    <div id="study-view-cards">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h3 style="margin:0;font-size:1.05rem">Spaced Repetition Decks</h3>
+        <button id="study-btn-new-deck" class="btn-primary" style="padding:6px 12px;font-size:0.85rem">+ New Deck</button>
+      </div>
+      <div id="study-cards-create-box" class="hidden" style="background:#f8fafc;padding:12px;border-radius:12px;margin-bottom:12px;border:1px solid #e2e8f0">
+        <div style="display:flex;gap:8px;margin-bottom:8px">
+          <input id="study-card-subject" placeholder="Subject (e.g. Science)" style="flex:1;padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1">
+          <input id="study-card-topic" placeholder="Topic (e.g. Photosynthesis)" style="flex:2;padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1">
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:8px">
+          <button id="study-card-cancel" class="btn-ghost" style="padding:6px 12px">Cancel</button>
+          <button id="study-card-generate" class="btn-primary" style="padding:6px 12px">Generate with Buddy 🪄</button>
+        </div>
+      </div>
+      <div id="study-cards-deck-list" style="display:grid;gap:8px;max-height:300px;overflow-y:auto"></div>
+      <div id="study-card-player" class="hidden" style="text-align:center;padding:10px 0">
+        <div id="study-card-flip" style="background:#fff;border:2px solid #818cf8;border-radius:16px;min-height:150px;display:flex;align-items:center;justify-content:center;padding:20px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.06);margin-bottom:14px">
+          <div id="study-card-content" style="font-size:1.15rem;font-weight:500">Tap to flip</div>
+        </div>
+        <div id="study-card-actions" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+          <button class="btn-ghost srs-btn" data-q="1" style="background:#fee2e2;color:#991b1b;padding:6px 10px">Again (1d)</button>
+          <button class="btn-ghost srs-btn" data-q="2" style="background:#fef3c7;color:#92400e;padding:6px 10px">Hard (2d)</button>
+          <button class="btn-ghost srs-btn" data-q="3" style="background:#dcfce7;color:#166534;padding:6px 10px">Good (4d)</button>
+          <button class="btn-ghost srs-btn" data-q="4" style="background:#e0e7ff;color:#3730a3;padding:6px 10px">Easy (7d)</button>
+        </div>
+        <button id="study-card-back" class="btn-ghost" style="margin-top:12px;font-size:0.85rem">← Back to Decks</button>
+      </div>
+    </div>
+
+    <!-- NOTES VIEW -->
+    <div id="study-view-notes" class="hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h3 style="margin:0;font-size:1.05rem">My Notebook</h3>
+        <button id="study-btn-new-note" class="btn-primary" style="padding:6px 12px;font-size:0.85rem">+ New Note</button>
+      </div>
+      <div id="study-note-editor" class="hidden" style="margin-bottom:12px">
+        <input id="study-note-title" placeholder="Note Title" style="width:100%;padding:8px 12px;border-radius:8px;border:1px solid #cbd5e1;margin-bottom:6px;font-weight:600">
+        <input id="study-note-subject" placeholder="Subject" style="width:100%;padding:6px 12px;border-radius:8px;border:1px solid #cbd5e1;margin-bottom:6px">
+        <textarea id="study-note-body" placeholder="Write study notes (supports Markdown and $...$ math)..." rows="6" style="width:100%;padding:8px 12px;border-radius:8px;border:1px solid #cbd5e1;font-family:inherit;resize:vertical"></textarea>
+        <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:6px">
+          <button id="study-note-cancel" class="btn-ghost" style="padding:6px 12px">Cancel</button>
+          <button id="study-note-save" class="btn-primary" style="padding:6px 12px">Save Note</button>
+        </div>
+      </div>
+      <div id="study-notes-list" style="display:grid;gap:8px;max-height:300px;overflow-y:auto"></div>
+    </div>
+
+    <!-- QUIZ VIEW -->
+    <div id="study-view-quiz" class="hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h3 style="margin:0;font-size:1.05rem">Curriculum Quizzes</h3>
+        <button id="study-btn-new-quiz" class="btn-primary" style="padding:6px 12px;font-size:0.85rem">+ Take Quiz</button>
+      </div>
+      <div id="study-quiz-create-box" class="hidden" style="background:#f8fafc;padding:12px;border-radius:12px;margin-bottom:12px;border:1px solid #e2e8f0">
+        <div style="display:flex;gap:8px;margin-bottom:8px">
+          <input id="study-quiz-subject" placeholder="Subject" style="flex:1;padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1">
+          <input id="study-quiz-topic" placeholder="Topic to quiz on" style="flex:2;padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1">
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:8px">
+          <button id="study-quiz-cancel" class="btn-ghost" style="padding:6px 12px">Cancel</button>
+          <button id="study-quiz-start" class="btn-primary" style="padding:6px 12px">Start Quiz 🚀</button>
+        </div>
+      </div>
+      <div id="study-quiz-list" style="display:grid;gap:8px;max-height:300px;overflow-y:auto"></div>
+      <div id="study-quiz-arena" class="hidden" style="padding:10px 0">
+        <div id="study-quiz-qhead" style="font-weight:600;font-size:1.1rem;margin-bottom:12px"></div>
+        <div id="study-quiz-options" style="display:grid;gap:8px;margin-bottom:14px"></div>
+        <div id="study-quiz-feedback" class="hidden" style="padding:10px;border-radius:8px;margin-bottom:12px"></div>
+        <div style="display:flex;justify-content:space-between">
+          <button id="study-quiz-exit" class="btn-ghost">Exit</button>
+          <button id="study-quiz-next" class="btn-primary hidden">Next Question →</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -1419,6 +1510,22 @@ function flyStar(fromBadge) {
   setTimeout(() => s.remove(), 1300);
 }
 
+function renderMath(el) {
+  if (window.renderMathInElement && window._katexLoaded) {
+    try {
+      renderMathInElement(el, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ],
+        throwOnError: false
+      });
+    } catch (e) {}
+  }
+}
+
 let busy = false;
 async function send(preset) {
   if (busy) return;
@@ -1432,40 +1539,109 @@ async function send(preset) {
   const t = addMsg("", "bot"); t.innerHTML =
     '<span class="typing"><span></span><span></span><span></span></span>';
   busy = true; $("send").disabled = true;
+
+  let streamWorked = false;
+  let fullAnswer = "";
+
+  // 1. Try streaming SSE for instant responsiveness
   try {
-    const r = await fetch("/api/chat", {
+    const res = await fetch("/api/chat/stream", {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pid: state.pid, message: text,
         history: state.history.slice(-8), mode: activeMode }),
     });
-    const data = await r.json();
-    t.textContent = r.ok ? data.answer : (data.detail || data.error || "Oops, try again!");
-    if (r.ok) {
-      state.history.push({ role: "assistant", content: data.answer });
-      if (state.history.length > 12) state.history = state.history.slice(-12);
-      if (data.stars > (state.profile.stars || 0)) flyStar($("star-badge"));
-      state.profile.stars = data.stars;
-      $("star-badge").textContent = "⭐ " + data.stars;
-      // stage 1+2: buddy's voice profile for this reply
-      if (data.voice) {
-        data.voice.text = data.answer;
-        state.lastVoice = data.voice;
-        Buddy.lang = "en-US";
+
+    if (res.ok && res.body && window.ReadableStream) {
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      t.textContent = "";
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const parts = buffer.split("\n\n");
+        buffer = parts.pop();
+
+        for (const block of parts) {
+          const trimmed = block.trim();
+          if (!trimmed.startsWith("data:")) continue;
+          try {
+            const data = JSON.parse(trimmed.slice(5).trim());
+            if (data.token) {
+              fullAnswer += data.token;
+              t.textContent = fullAnswer;
+              $("messages").scrollTop = $("messages").scrollHeight;
+            }
+            if (data.done) {
+              streamWorked = true;
+              if (data.stars > (state.profile.stars || 0)) flyStar($("star-badge"));
+              state.profile.stars = data.stars;
+              $("star-badge").textContent = "⭐ " + data.stars;
+              if (data.memory_saved) {
+                addMsg("🧠 (I'll remember that: " + data.memory_saved + ")", "bot");
+              }
+            }
+          } catch (e) {}
+        }
       }
-      if (data.memory_saved) {
-        addMsg("🧠 (I'll remember that: " + data.memory_saved + ")", "bot");
+      if (fullAnswer.trim()) {
+        streamWorked = true;
+        renderMath(t);
+        state.history.push({ role: "assistant", content: fullAnswer });
+        if (state.history.length > 12) state.history = state.history.slice(-12);
+        const a = fullAnswer.toLowerCase();
+        if (/\b(correct|right|yes!|amazing|brilliant|roar|great job|well done)\b/.test(a))
+          faceMood("celebrate", 2);
+        else if (/\bhmm|let's see|tricky|almost\b/.test(a))
+          faceMood("confused", 2);
+        else faceMood("excited", 1.6);
+        speak(fullAnswer, { autoListen: Buddy.autoListen, rawText: fullAnswer });
       }
-      const a = (data.answer || "").toLowerCase();
-      if (/\b(correct|right|yes!|amazing|brilliant|roar|great job|well done)\b/.test(a))
-        faceMood("celebrate", 2);
-      else if (/\bhmm|let's see|tricky|almost\b/.test(a))
-        faceMood("confused", 2);
-      else faceMood("excited", 1.6);
-      // stage 1: speak the answer aloud; walkie-talkie relistens after
-      speak(data.answer, { autoListen: Buddy.autoListen, rawText: data.answer });
     }
-  } catch (e) {
-    t.textContent = "Network hiccup — check the connection and try again!";
+  } catch (err) {
+    // Stream fallback
+  }
+
+  // 2. Fallback to standard /api/chat if streaming wasn't successful
+  if (!streamWorked) {
+    try {
+      const r = await fetch("/api/chat", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pid: state.pid, message: text,
+          history: state.history.slice(-8), mode: activeMode }),
+      });
+      const data = await r.json();
+      t.textContent = r.ok ? data.answer : (data.detail || data.error || "Oops, try again!");
+      if (r.ok) {
+        renderMath(t);
+        state.history.push({ role: "assistant", content: data.answer });
+        if (state.history.length > 12) state.history = state.history.slice(-12);
+        if (data.stars > (state.profile.stars || 0)) flyStar($("star-badge"));
+        state.profile.stars = data.stars;
+        $("star-badge").textContent = "⭐ " + data.stars;
+        // stage 1+2: buddy's voice profile for this reply
+        if (data.voice) {
+          data.voice.text = data.answer;
+          state.lastVoice = data.voice;
+          Buddy.lang = "en-US";
+        }
+        if (data.memory_saved) {
+          addMsg("🧠 (I'll remember that: " + data.memory_saved + ")", "bot");
+        }
+        const a = (data.answer || "").toLowerCase();
+        if (/\b(correct|right|yes!|amazing|brilliant|roar|great job|well done)\b/.test(a))
+          faceMood("celebrate", 2);
+        else if (/\bhmm|let's see|tricky|almost\b/.test(a))
+          faceMood("confused", 2);
+        else faceMood("excited", 1.6);
+        // stage 1: speak the answer aloud; walkie-talkie relistens after
+        speak(data.answer, { autoListen: Buddy.autoListen, rawText: data.answer });
+      }
+    } catch (e) {
+      t.textContent = "Network hiccup — check the connection and try again!";
+    }
   }
   busy = false; $("send").disabled = false;
   $("messages").scrollTop = $("messages").scrollHeight;
@@ -2661,6 +2837,346 @@ function storyNav(d) {
   renderStoryPage();
 }
 
+function escapeHtml(s) {
+  return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+let currentStudyTab = "cards";
+let activeDeck = null;
+let activeDeckCardIdx = 0;
+let cardFlipped = false;
+let activeQuiz = null;
+let activeQuizQIdx = 0;
+let quizAnswers = {};
+
+function openStudyTools() {
+  if (!state.pid) return;
+  $("study-modal").classList.remove("hidden");
+  switchStudyTab(currentStudyTab);
+}
+
+function switchStudyTab(tab) {
+  currentStudyTab = tab;
+  $("study-tab-cards").classList.toggle("on", tab === "cards");
+  $("study-tab-notes").classList.toggle("on", tab === "notes");
+  $("study-tab-quiz").classList.toggle("on", tab === "quiz");
+  $("study-view-cards").classList.toggle("hidden", tab !== "cards");
+  $("study-view-notes").classList.toggle("hidden", tab !== "notes");
+  $("study-view-quiz").classList.toggle("hidden", tab !== "quiz");
+
+  if (tab === "cards") loadStudyDecks();
+  if (tab === "notes") loadStudyNotes();
+  if (tab === "quiz") loadStudyQuizzes();
+}
+
+async function loadStudyDecks() {
+  $("study-cards-deck-list").classList.remove("hidden");
+  $("study-card-player").classList.add("hidden");
+  $("study-cards-create-box").classList.add("hidden");
+  try {
+    const res = await fetch(`/api/study/flashcards/${state.pid}`);
+    const data = await res.json();
+    renderDecksList(data.decks || []);
+  } catch (e) {}
+}
+
+function renderDecksList(decks) {
+  const list = $("study-cards-deck-list");
+  list.innerHTML = "";
+  if (!decks.length) {
+    list.innerHTML = '<div style="color:var(--muted);text-align:center;padding:24px">No flashcard decks yet! Tap "+ New Deck" to generate revision cards with your buddy.</div>';
+    return;
+  }
+  decks.forEach(d => {
+    const item = document.createElement("div");
+    item.style = "background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;display:flex;justify-content:space-between;align-items:center";
+    item.innerHTML = `<div><div style="font-weight:700">${escapeHtml(d.topic)}</div><div style="font-size:0.8rem;color:var(--muted)">${escapeHtml(d.subject)} · ${d.cards.length} cards</div></div><button class="btn-primary start-deck" style="padding:6px 14px;font-size:0.85rem">Practice ▶</button>`;
+    item.querySelector(".start-deck").onclick = () => playDeck(d);
+    list.appendChild(item);
+  });
+}
+
+function playDeck(deck) {
+  activeDeck = deck;
+  activeDeckCardIdx = 0;
+  cardFlipped = false;
+  $("study-cards-deck-list").classList.add("hidden");
+  $("study-card-player").classList.remove("hidden");
+  showDeckCard();
+}
+
+function showDeckCard() {
+  if (!activeDeck || !activeDeck.cards || activeDeckCardIdx >= activeDeck.cards.length) {
+    $("study-card-content").innerHTML = "🎉 <b>Deck complete!</b><br><span style='font-size:0.9rem;color:var(--muted)'>All cards reviewed. Spaced repetition scheduled your next review!</span>";
+    $("study-card-actions").classList.add("hidden");
+    return;
+  }
+  $("study-card-actions").classList.remove("hidden");
+  cardFlipped = false;
+  const card = activeDeck.cards[activeDeckCardIdx];
+  $("study-card-content").textContent = `Q (${activeDeckCardIdx + 1}/${activeDeck.cards.length}): ${card.question}`;
+  renderMath($("study-card-content"));
+}
+
+function flipCard() {
+  if (!activeDeck || activeDeckCardIdx >= activeDeck.cards.length) return;
+  const card = activeDeck.cards[activeDeckCardIdx];
+  cardFlipped = !cardFlipped;
+  $("study-card-content").textContent = cardFlipped
+    ? `A: ${card.answer}`
+    : `Q (${activeDeckCardIdx + 1}/${activeDeck.cards.length}): ${card.question}`;
+  renderMath($("study-card-content"));
+}
+
+async function rateCard(quality) {
+  if (!activeDeck || activeDeckCardIdx >= activeDeck.cards.length) return;
+  const card = activeDeck.cards[activeDeckCardIdx];
+  try {
+    const res = await fetch(`/api/study/flashcards/${state.pid}/review`, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ deck_id: activeDeck.id, card_id: card.id, quality: Number(quality) })
+    });
+    if (res.ok) {
+      if (quality >= 3) {
+        flyStar($("star-badge"));
+        state.profile.stars = (state.profile.stars || 0) + 1;
+        $("star-badge").textContent = "⭐ " + state.profile.stars;
+      }
+    }
+  } catch (e) {}
+  activeDeckCardIdx++;
+  showDeckCard();
+}
+
+async function loadStudyNotes() {
+  $("study-note-editor").classList.add("hidden");
+  try {
+    const res = await fetch(`/api/study/notes/${state.pid}`);
+    const data = await res.json();
+    renderNotesList(data.notes || []);
+  } catch (e) {}
+}
+
+function renderNotesList(notes) {
+  const list = $("study-notes-list");
+  list.innerHTML = "";
+  if (!notes.length) {
+    list.innerHTML = '<div style="color:var(--muted);text-align:center;padding:24px">No notes saved yet! Tap "+ New Note" to take structured notes.</div>';
+    return;
+  }
+  notes.forEach(n => {
+    const item = document.createElement("div");
+    item.style = "background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:8px";
+    item.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><div style="font-weight:700">${escapeHtml(n.title)}</div><button class="btn-ghost del-note" style="color:#ef4444;font-size:0.8rem">Delete</button></div><div style="font-size:0.8rem;color:var(--brand);margin-bottom:6px">${escapeHtml(n.subject)}</div><div class="note-body" style="font-size:0.9rem;white-space:pre-wrap;line-height:1.5">${escapeHtml(n.content)}</div>`;
+    item.querySelector(".del-note").onclick = async (e) => {
+      e.stopPropagation();
+      await fetch(`/api/study/notes/${state.pid}/${n.id}`, { method: "DELETE" });
+      loadStudyNotes();
+    };
+    renderMath(item.querySelector(".note-body"));
+    list.appendChild(item);
+  });
+}
+
+async function loadStudyQuizzes() {
+  $("study-quiz-list").classList.remove("hidden");
+  $("study-quiz-arena").classList.add("hidden");
+  $("study-quiz-create-box").classList.add("hidden");
+  try {
+    const res = await fetch(`/api/study/quizzes/${state.pid}`);
+    const data = await res.json();
+    renderQuizList(data.quizzes || []);
+  } catch (e) {}
+}
+
+function renderQuizList(quizzes) {
+  const list = $("study-quiz-list");
+  list.innerHTML = "";
+  if (!quizzes.length) {
+    list.innerHTML = '<div style="color:var(--muted);text-align:center;padding:24px">No quizzes taken yet. Tap "+ Take Quiz" to generate an interactive challenge!</div>';
+    return;
+  }
+  quizzes.forEach(q => {
+    const item = document.createElement("div");
+    item.style = "background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;display:flex;justify-content:space-between;align-items:center";
+    const scoreBadge = q.submitted ? `<span style="font-weight:700;color:${q.score >= 60 ? '#16a34a' : '#ea580c'}">${q.score}% (${q.correct}/${q.total})</span>` : '<span style="color:var(--muted)">Incomplete</span>';
+    item.innerHTML = `<div><div style="font-weight:700">${escapeHtml(q.topic)}</div><div style="font-size:0.8rem;color:var(--muted)">${escapeHtml(q.subject)} · ${scoreBadge}</div></div>`;
+    list.appendChild(item);
+  });
+}
+
+function startQuizPlay(quiz) {
+  activeQuiz = quiz;
+  activeQuizQIdx = 0;
+  quizAnswers = {};
+  $("study-quiz-list").classList.add("hidden");
+  $("study-quiz-create-box").classList.add("hidden");
+  $("study-quiz-arena").classList.remove("hidden");
+  showQuizQuestion();
+}
+
+function showQuizQuestion() {
+  const q = activeQuiz.questions[activeQuizQIdx];
+  $("study-quiz-qhead").textContent = `Question ${activeQuizQIdx + 1} of ${activeQuiz.questions.length}: ${q.question}`;
+  renderMath($("study-quiz-qhead"));
+  const opts = $("study-quiz-options");
+  opts.innerHTML = "";
+  $("study-quiz-feedback").classList.add("hidden");
+  $("study-quiz-next").classList.add("hidden");
+
+  q.options.forEach((opt, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "btn-ghost";
+    btn.style = "text-align:left;padding:10px 14px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;font-size:0.95rem";
+    btn.textContent = `${['A', 'B', 'C', 'D'][idx]}. ${opt}`;
+    btn.onclick = () => selectQuizOption(idx);
+    renderMath(btn);
+    opts.appendChild(btn);
+  });
+}
+
+function selectQuizOption(choiceIdx) {
+  const q = activeQuiz.questions[activeQuizQIdx];
+  quizAnswers[q.id] = choiceIdx;
+  const opts = $("study-quiz-options").children;
+  for (let i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (i === q.answer) opts[i].style.background = "#dcfce7";
+    else if (i === choiceIdx) opts[i].style.background = "#fee2e2";
+  }
+  const isCorrect = (choiceIdx === q.answer);
+  const fb = $("study-quiz-feedback");
+  fb.classList.remove("hidden");
+  fb.style.background = isCorrect ? "#f0fdf4" : "#fef2f2";
+  fb.style.color = isCorrect ? "#166534" : "#991b1b";
+  fb.innerHTML = `<b>${isCorrect ? "✅ Correct!" : "❌ Not quite!"}</b> ${escapeHtml(q.explanation || "")}`;
+  renderMath(fb);
+  $("study-quiz-next").classList.remove("hidden");
+  $("study-quiz-next").textContent = (activeQuizQIdx < activeQuiz.questions.length - 1) ? "Next Question →" : "Submit Quiz 🏁";
+}
+
+async function nextQuizOrSubmit() {
+  if (activeQuizQIdx < activeQuiz.questions.length - 1) {
+    activeQuizQIdx++;
+    showQuizQuestion();
+  } else {
+    try {
+      const res = await fetch(`/api/study/quiz/${state.pid}/submit`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quiz_id: activeQuiz.id, answers: quizAnswers })
+      });
+      const data = await res.json();
+      if (data.ok) {
+        if (data.stars_earned > 0) {
+          flyStar($("star-badge"));
+          state.profile.stars = (state.profile.stars || 0) + data.stars_earned;
+          $("star-badge").textContent = "⭐ " + state.profile.stars;
+        }
+        $("study-quiz-arena").innerHTML = `
+          <div style="text-align:center;padding:20px">
+            <div style="font-size:2.5rem;margin-bottom:8px">${data.score >= 60 ? "🎉" : "💪"}</div>
+            <h3>Quiz Completed!</h3>
+            <p style="font-size:1.2rem;font-weight:700;color:${data.score >= 60 ? '#16a34a' : '#ea580c'}">${data.score}% (${data.correct}/${data.total} correct)</p>
+            <p>Earned: <b>+${data.stars_earned} ⭐</b></p>
+            <button id="study-quiz-done-btn" class="btn-primary" style="margin-top:12px;padding:8px 18px">Back to Quizzes</button>
+          </div>
+        `;
+        $("study-quiz-done-btn").onclick = loadStudyQuizzes;
+      }
+    } catch (e) {
+      loadStudyQuizzes();
+    }
+  }
+}
+
+function wireStudyTools() {
+  $("study-tab-cards").onclick = () => switchStudyTab("cards");
+  $("study-tab-notes").onclick = () => switchStudyTab("notes");
+  $("study-tab-quiz").onclick = () => switchStudyTab("quiz");
+
+  $("study-btn-new-deck").onclick = () => {
+    $("study-cards-create-box").classList.toggle("hidden");
+    $("study-card-subject").value = "";
+    $("study-card-topic").value = "";
+  };
+  $("study-card-cancel").onclick = () => $("study-cards-create-box").classList.add("hidden");
+  $("study-card-generate").onclick = async () => {
+    const sub = $("study-card-subject").value.trim() || "General";
+    const top = $("study-card-topic").value.trim() || "Key Concepts";
+    $("study-card-generate").disabled = true;
+    $("study-card-generate").textContent = "Creating...";
+    try {
+      const res = await fetch(`/api/study/flashcards/${state.pid}/generate`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subject: sub, topic: top, count: 5 })
+      });
+      const data = await res.json();
+      $("study-cards-create-box").classList.add("hidden");
+      await loadStudyDecks();
+      if (data.deck) playDeck(data.deck);
+    } catch (e) {}
+    $("study-card-generate").disabled = false;
+    $("study-card-generate").textContent = "Generate with Buddy 🪄";
+  };
+
+  $("study-card-flip").onclick = flipCard;
+  document.querySelectorAll(".srs-btn").forEach(btn => {
+    btn.onclick = () => rateCard(btn.dataset.q);
+  });
+  $("study-card-back").onclick = loadStudyDecks;
+
+  $("study-btn-new-note").onclick = () => {
+    $("study-note-editor").classList.toggle("hidden");
+    $("study-note-title").value = "";
+    $("study-note-subject").value = "";
+    $("study-note-body").value = "";
+  };
+  $("study-note-cancel").onclick = () => $("study-note-editor").classList.add("hidden");
+  $("study-note-save").onclick = async () => {
+    const title = $("study-note-title").value.trim() || "Untitled Note";
+    const sub = $("study-note-subject").value.trim() || "General";
+    const content = $("study-note-body").value.trim();
+    if (!content) return;
+    $("study-note-save").disabled = true;
+    try {
+      await fetch(`/api/study/notes/${state.pid}`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, subject: sub, content })
+      });
+      $("study-note-editor").classList.add("hidden");
+      loadStudyNotes();
+    } catch (e) {}
+    $("study-note-save").disabled = false;
+  };
+
+  $("study-btn-new-quiz").onclick = () => {
+    $("study-quiz-create-box").classList.toggle("hidden");
+    $("study-quiz-subject").value = "";
+    $("study-quiz-topic").value = "";
+  };
+  $("study-quiz-cancel").onclick = () => $("study-quiz-create-box").classList.add("hidden");
+  $("study-quiz-start").onclick = async () => {
+    const sub = $("study-quiz-subject").value.trim() || "Science";
+    const top = $("study-quiz-topic").value.trim() || "General Concepts";
+    $("study-quiz-start").disabled = true;
+    $("study-quiz-start").textContent = "Generating...";
+    try {
+      const res = await fetch(`/api/study/quiz/${state.pid}/generate`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subject: sub, topic: top, count: 5 })
+      });
+      const data = await res.json();
+      $("study-quiz-create-box").classList.add("hidden");
+      if (data.quiz) startQuizPlay(data.quiz);
+    } catch (e) {}
+    $("study-quiz-start").disabled = false;
+    $("study-quiz-start").textContent = "Start Quiz 🚀";
+  };
+
+  $("study-quiz-next").onclick = nextQuizOrSubmit;
+  $("study-quiz-exit").onclick = loadStudyQuizzes;
+}
+
 // wire the new buttons into the app
 function wireStage56789() {
   $("mic").onclick = toggleMic;
@@ -2671,6 +3187,9 @@ function wireStage56789() {
   $("practice-x").onclick = () => $("practice-modal").classList.add("hidden");
   $("stories-btn").onclick = openStories;
   $("stories-x").onclick = () => $("stories-modal").classList.add("hidden");
+  if ($("study-btn")) $("study-btn").onclick = openStudyTools;
+  if ($("study-x")) $("study-x").onclick = () => $("study-modal").classList.add("hidden");
+  wireStudyTools();
   $("tab-talk").onclick = () => setStoryTab("talk");
   $("tab-read").onclick = () => setStoryTab("read");
   $("talk-go").onclick = submitTalk;

@@ -1,10 +1,12 @@
 """Multi-provider LLM adapter for EduSphere AI.
 
-Supports any OpenAI-compatible API (GLM/Z.AI default, OpenAI, Mistral,
+Supports any OpenAI-compatible API (GLM/Z.AI default, Google Gemini, OpenAI, Mistral,
 Together, Ollama local, Groq, Perplexity), plus Anthropic Claude natively.
 
 Configuration (environment variables):
-  EDUSPHERE_PROVIDER   = glm | openai | anthropic | ollama | groq | auto
+  EDUSPHERE_PROVIDER   = gemini | glm | openai | anthropic | ollama | groq | auto
+  GEMINI_API_KEY       = your Google AI Studio / Gemini key
+  GEMINI_BASE_URL      = https://generativelanguage.googleapis.com/v1beta/openai
   GLM_API_KEY          = your Z.AI key (default provider)
   GLM_BASE_URL         = https://api.z.ai/api/coding/paas/v4
   OPENAI_API_KEY       = your OpenAI key
@@ -14,17 +16,31 @@ Configuration (environment variables):
   GROQ_API_KEY         = your Groq key
   EDUSPHERE_MODEL      = model name override (default: auto-selects best free)
 
-The adapter presents ONE interface to tutor.py and knowledge_fresh.py:
-  complete(messages, max_tokens, temperature, timeout) -> str
-  quick(prompt, max_tokens, temperature, timeout) -> str   (single-turn)
+The adapter presents ONE unified interface to tutor.py, camera.py, and knowledge_fresh.py:
+  complete(messages, max_tokens, temperature, timeout) -> tuple[str, Any]
+  complete_stream(messages, max_tokens, temperature, timeout) -> Iterator[str]
+  quick(prompt, max_tokens, temperature, timeout) -> tuple[str, Any]
 """
 from __future__ import annotations
 
+import json
 import os
+import re
 import time
-from typing import Any
+from typing import Any, Iterator
 
 import httpx
+
+# Shared HTTP client for connection pooling
+_HTTP_CLIENT: httpx.Client | None = None
+
+
+def _get_client() -> httpx.Client:
+    global _HTTP_CLIENT
+    if _HTTP_CLIENT is None or _HTTP_CLIENT.is_closed:
+        _HTTP_CLIENT = httpx.Client(timeout=90.0, follow_redirects=True)
+    return _HTTP_CLIENT
+
 
 # ── Provider resolution ────────────────────────────────────────────────────────
 
@@ -33,6 +49,8 @@ def _resolve_provider() -> str:
     if prov and prov != "auto":
         return prov
     # auto-detect by which key is present
+    if os.environ.get("GEMINI_API_KEY"):
+        return "gemini"
     if os.environ.get("ANTHROPIC_API_KEY"):
         return "anthropic"
     if os.environ.get("OPENAI_API_KEY"):
@@ -41,11 +59,18 @@ def _resolve_provider() -> str:
         return "groq"
     if os.environ.get("OLLAMA_BASE_URL"):
         return "ollama"
-    # default: Z.AI / GLM (the original EduSphere backend)
+    if os.environ.get("GLM_API_KEY"):
+        return "glm"
+    # default fallback: glm (the original EduSphere backend)
     return "glm"
 
 
 _PROVIDER_DEFAULTS: dict[str, dict] = {
+    "gemini": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "model":    "gemini-2.0-flash",
+        "key_env":  "GEMINI_API_KEY",
+    },
     "glm": {
         "base_url": "https://api.z.ai/api/coding/paas/v4",
         "model":    "glm-4.5-flash",
@@ -78,7 +103,7 @@ _PROVIDER_DEFAULTS: dict[str, dict] = {
     },
     "anthropic": {
         "base_url": "https://api.anthropic.com/v1",
-        "model":    "claude-haiku-3-5",
+        "model":    "claude-3-5-haiku-20241022",
         "key_env":  "ANTHROPIC_API_KEY",
     },
 }
@@ -90,7 +115,8 @@ def _cfg() -> dict:
     defaults = _PROVIDER_DEFAULTS.get(prov, _PROVIDER_DEFAULTS["glm"])
     # Environment can override base_url and model
     base_url = (
-        os.environ.get("OPENAI_BASE_URL", "")
+        os.environ.get("GEMINI_BASE_URL", "")
+        or os.environ.get("OPENAI_BASE_URL", "")
         or os.environ.get("GLM_BASE_URL", "")
         or os.environ.get("OLLAMA_BASE_URL", "")
         or defaults["base_url"]
@@ -102,7 +128,7 @@ def _cfg() -> dict:
             "api_key": api_key}
 
 
-# ── OpenAI-compatible (GLM, OpenAI, Groq, Mistral, Together, Ollama) ──────────
+# ── OpenAI-compatible (Gemini, GLM, OpenAI, Groq, Mistral, Together, Ollama) ─
 
 def _oai_complete(cfg: dict, messages: list[dict], max_tokens: int,
                   temperature: float, timeout: float,
@@ -119,8 +145,9 @@ def _oai_complete(cfg: dict, messages: list[dict], max_tokens: int,
     headers = {"Authorization": f"Bearer {cfg['api_key']}",
                "Content-Type": "application/json"}
     try:
-        r = httpx.post(f"{cfg['base_url']}/chat/completions",
-                       headers=headers, json=body, timeout=timeout)
+        client = _get_client()
+        r = client.post(f"{cfg['base_url']}/chat/completions",
+                        headers=headers, json=body, timeout=timeout)
         if r.status_code == 429:
             return "", "rate-limited"
         data = r.json()
@@ -133,19 +160,84 @@ def _oai_complete(cfg: dict, messages: list[dict], max_tokens: int,
         return "", exc
 
 
+def _oai_stream(cfg: dict, messages: list[dict], max_tokens: int,
+                temperature: float, timeout: float,
+                extra: dict | None = None) -> Iterator[str]:
+    """Stream from any OpenAI-compatible /chat/completions."""
+    body: dict[str, Any] = {
+        "model": cfg["model"],
+        "messages": messages,
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+        "stream": True,
+    }
+    if extra:
+        body.update(extra)
+    headers = {"Authorization": f"Bearer {cfg['api_key']}",
+               "Content-Type": "application/json"}
+    try:
+        with httpx.stream("POST", f"{cfg['base_url']}/chat/completions",
+                          headers=headers, json=body, timeout=timeout) as response:
+            if response.status_code != 200:
+                yield f"[Error: status {response.status_code}]"
+                return
+            for line in response.iter_lines():
+                line = line.strip()
+                if not line or not line.startswith("data:"):
+                    continue
+                data_str = line[5:].strip()
+                if data_str == "[DONE]":
+                    break
+                try:
+                    chunk = json.loads(data_str)
+                    delta = chunk.get("choices", [{}])[0].get("delta", {})
+                    content = delta.get("content") or ""
+                    if content:
+                        yield content
+                except Exception:
+                    continue
+    except Exception as exc:
+        yield f"[Connection error: {exc}]"
+
+
 # ── Anthropic-native ───────────────────────────────────────────────────────────
 
-def _anthropic_complete(cfg: dict, messages: list[dict], max_tokens: int,
-                        temperature: float, timeout: float) -> tuple[str, object]:
-    """POST to Anthropic Messages API."""
-    # Separate system message from turns
+def _format_anthropic_turns(messages: list[dict]) -> tuple[str, list[dict]]:
     system = ""
     turns = []
     for m in messages:
         if m["role"] == "system":
             system = m["content"]
         else:
-            turns.append(m)
+            content = m.get("content")
+            # Convert OpenAI vision structure to Anthropic if present
+            if isinstance(content, list):
+                adapted = []
+                for part in content:
+                    if isinstance(part, dict) and part.get("type") == "image_url":
+                        url = part.get("image_url", {}).get("url", "")
+                        match = re.match(r"^data:([^;]+);base64,(.+)$", url)
+                        if match:
+                            adapted.append({
+                                "type": "image",
+                                "source": {
+                                    "type": "base64",
+                                    "media_type": match.group(1),
+                                    "data": match.group(2),
+                                },
+                            })
+                    else:
+                        adapted.append(part)
+                turns.append({"role": m["role"], "content": adapted})
+            else:
+                turns.append(m)
+    return system, turns
+
+
+def _anthropic_complete(cfg: dict, messages: list[dict], max_tokens: int,
+                        temperature: float, timeout: float) -> tuple[str, object]:
+    """POST to Anthropic Messages API."""
+    system, turns = _format_anthropic_turns(messages)
 
     body: dict[str, Any] = {
         "model": cfg["model"],
@@ -162,8 +254,9 @@ def _anthropic_complete(cfg: dict, messages: list[dict], max_tokens: int,
         "content-type": "application/json",
     }
     try:
-        r = httpx.post(f"{cfg['base_url']}/messages",
-                       headers=headers, json=body, timeout=timeout)
+        client = _get_client()
+        r = client.post(f"{cfg['base_url']}/messages",
+                        headers=headers, json=body, timeout=timeout)
         if r.status_code == 429:
             return "", "rate-limited"
         data = r.json()
@@ -171,6 +264,49 @@ def _anthropic_complete(cfg: dict, messages: list[dict], max_tokens: int,
         return text, None
     except (httpx.HTTPError, ValueError, KeyError, IndexError) as exc:
         return "", exc
+
+
+def _anthropic_stream(cfg: dict, messages: list[dict], max_tokens: int,
+                      temperature: float, timeout: float) -> Iterator[str]:
+    """Stream from Anthropic Messages API."""
+    system, turns = _format_anthropic_turns(messages)
+    body: dict[str, Any] = {
+        "model": cfg["model"],
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+        "messages": turns,
+        "stream": True,
+    }
+    if system:
+        body["system"] = system
+    headers = {
+        "x-api-key": cfg["api_key"],
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json",
+    }
+    try:
+        with httpx.stream("POST", f"{cfg['base_url']}/messages",
+                          headers=headers, json=body, timeout=timeout) as response:
+            if response.status_code != 200:
+                yield f"[Error: status {response.status_code}]"
+                return
+            for line in response.iter_lines():
+                line = line.strip()
+                if not line or not line.startswith("data:"):
+                    continue
+                data_str = line[5:].strip()
+                try:
+                    event = json.loads(data_str)
+                    if event.get("type") == "content_block_delta":
+                        delta = event.get("delta", {})
+                        if delta.get("type") == "text_delta":
+                            text = delta.get("text", "")
+                            if text:
+                                yield text
+                except Exception:
+                    continue
+    except Exception as exc:
+        yield f"[Connection error: {exc}]"
 
 
 # ── Public interface ───────────────────────────────────────────────────────────
@@ -207,6 +343,24 @@ def complete(messages: list[dict], max_tokens: int = 3000,
             time.sleep(1.5 * (attempt + 1))
 
     return "", err
+
+
+def complete_stream(messages: list[dict], max_tokens: int = 3000,
+                    temperature: float = 0.4, timeout: float = 90.0,
+                    extra: dict | None = None) -> Iterator[str]:
+    """Stream token chunks from the active LLM provider."""
+    cfg = _cfg()
+    if not cfg["api_key"] or cfg["api_key"] == "":
+        yield "Setup needed: no LLM API key is configured. Set GEMINI_API_KEY, GLM_API_KEY, or OPENAI_API_KEY."
+        return
+
+    if cfg["provider"] == "anthropic":
+        yield from _anthropic_stream(cfg, messages, max_tokens, temperature, timeout)
+    else:
+        ex = extra or {}
+        if cfg["provider"] == "glm":
+            ex = {"thinking": {"type": "disabled"}, **ex}
+        yield from _oai_stream(cfg, messages, max_tokens, temperature, timeout, ex)
 
 
 def quick(prompt: str, max_tokens: int = 400,
