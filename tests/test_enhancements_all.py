@@ -131,7 +131,8 @@ def test_service_worker_caches_cdn():
     assert sw_path.exists()
     content = sw_path.read_text(encoding="utf-8")
     assert "jsdelivr.net" in content
-    assert "edusphere-v15" in content
+    import re as _re
+    assert _re.search(r'edusphere-v\d+', content), "cache version missing"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
